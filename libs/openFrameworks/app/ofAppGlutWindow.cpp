@@ -1,4 +1,5 @@
 #include "ofAppGlutWindow.h"
+#ifndef TARGET_OPENGLES
 #include "ofBaseApp.h"
 #include "ofEvents.h"
 #include "ofUtils.h"
@@ -730,3 +731,4 @@ void ofAppGlutWindow::resize_cb(int w, int h) {
 
 	nFramesSinceWindowResized = 0;
 }
+#endif
