@@ -31,6 +31,9 @@ enum ofLoopType{
 #elif defined (ANDROID)
 	#define TARGET_ANDROID
 	#define TARGET_OPENGLES
+#elif defined (__ARMEL__)
+	#define TARGET_LINUX
+	#define TARGET_OPENGLES
 #else
 	#define TARGET_LINUX
 #endif
