@@ -1,6 +1,5 @@
 #include "ofFmodSoundPlayer.h"
 
-#ifdef OF_SOUND_PLAYER_FMOD
 
 #include "ofUtils.h"
 
@@ -257,7 +256,7 @@ void ofFmodSoundPlayer::setPosition(float pct){
 	}
 }
 
-void ofFmodSoundPlayer::setPositionMS(int ms);{
+void ofFmodSoundPlayer::setPositionMS(int ms) {
 	if (getIsPlaying() == true){
 		FMOD_Channel_SetPosition(channel, ms, FMOD_TIMEUNIT_MS);
 	}
@@ -369,4 +368,3 @@ void ofFmodSoundPlayer::stop(){
 	FMOD_Channel_Stop(channel);
 }
 
-#endif

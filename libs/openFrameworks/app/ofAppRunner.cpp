@@ -20,12 +20,8 @@
 //========================================================================
 // static variables:
 
-ofPtr<ofBaseApp>				OFSAptr;
-bool 						bMousePressed;
-bool						bRightButton;
-int							width, height;
-
-static ofPtr<ofAppBaseWindow> window;
+static ofPtr<ofBaseApp>				OFSAptr;
+static ofPtr<ofAppBaseWindow> 		window;
 
 
 //========================================================================
@@ -59,11 +55,6 @@ void ofRunApp(ofBaseApp * OFSA){
 		OFSAptr->mouseX = 0;
 		OFSAptr->mouseY = 0;
 	}
-
-	#ifdef TARGET_OSX
-		//this internally checks the executable path for osx
-		ofSetDataPathRoot("../../../data/");
-	#endif
 
 	atexit(ofExitCallback);
 
@@ -126,6 +117,8 @@ void ofSetupOpenGL(int w, int h, int screenMode){
 
 void ofExitCallback(){
 
+	ofNotifyExit();
+
 	//------------------------
 	// try to close engine if needed:
 	ofSoundShutdown();
@@ -148,7 +141,6 @@ void ofExitCallback(){
 		timeEndPeriod(1);
 	#endif
 
-	ofNotifyExit();
 }
 
 //--------------------------------------
@@ -159,11 +151,6 @@ void ofRunApp(ofPtr<ofBaseApp> OFSA){
 		OFSAptr->mouseX = 0;
 		OFSAptr->mouseY = 0;
 	}
-
-	#ifdef TARGET_OSX 
-		//this internally checks the executable path for osx
-		ofSetDataPathRoot("../../../data/");
-	#endif
 
 	atexit(ofExitCallback);
 

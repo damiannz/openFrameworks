@@ -83,11 +83,15 @@ class ofColor_{
 		PixelType & operator [] (int n);
 		
 		friend ostream& operator<<(ostream& os, const ofColor_<PixelType>& color) {
-			os << color.r << ", " << color.g << ", " << color.b << ", " << color.a;
+			if(sizeof(PixelType) == 1) {
+				os << (int) color.r << ", " << (int) color.g << ", " << (int) color.b << ", " << (int) color.a;
+			} else {
+				os << color.r << ", " << color.g << ", " << color.b << ", " << color.a;
+			}
 			return os;
 		}
 
-		friend istream& operator>>(istream& is, const ofColor_<PixelType>& color) {
+		friend istream& operator>>(istream& is, ofColor_<PixelType>& color) {
 			is >> color.r;
 			is.ignore(2);
 			is >> color.g;

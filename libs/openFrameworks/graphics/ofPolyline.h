@@ -48,7 +48,7 @@ public:
 	/// cubic bezier
 	void bezierTo( const ofPoint & cp1, const ofPoint & cp2, const ofPoint & to, int curveResolution = 16);
 	void bezierTo(float cx1, float cy1, float cx2, float cy2, float x, float y, int curveResolution=16){
-		bezierTo(ofPoint(cx1,cy1),ofPoint(cx2,cy2),ofPoint(x,y));
+		bezierTo(ofPoint(cx1,cy1),ofPoint(cx2,cy2),ofPoint(x,y),curveResolution);
 	}
 	void bezierTo(float cx1, float cy1, float cz1, float cx2, float cy2, float cz2, float x, float y, float z, int curveResolution=16){
 		bezierTo(ofPoint(cx1,cy1,cz1),ofPoint(cx2,cy2,cz2),ofPoint(x,y,z),curveResolution);
@@ -77,6 +77,14 @@ public:
 	// find the closest point 'target' on a polyline
 	// optionally pass a pointer to/address of an unsigned int to get the index of the closest vertex
 	ofPoint getClosestPoint(const ofPoint& target, unsigned int* nearestIndex = NULL);
+	
+	// check wheteher a point is inside the area enclosed by the polyline
+	static bool inside(float x, float y, const ofPolyline & polyline);
+	static bool inside(const ofPoint & p, const ofPolyline & polyline);
+    
+    // non-static versions
+    bool inside(float x, float y);
+    bool inside(const ofPoint & p);
 
 	void simplify(float tolerance=0.3);
 
