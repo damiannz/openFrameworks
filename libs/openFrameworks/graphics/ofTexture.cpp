@@ -4,6 +4,8 @@
 
 static bool bTexHackEnabled = true;
 
+
+
 //---------------------------------
 void ofEnableTextureEdgeHack(){
 	bTexHackEnabled = true;
@@ -86,7 +88,11 @@ void ofTexture::allocate(int w, int h, int internalGlDataType, bool bUseARBExten
 
 	//our graphics card might not support arb so we have to see if it is supported.
 	#ifndef TARGET_OPENGLES
+<<<<<<< HEAD
 		if (bUseARBExtention && GL_ARB_texture_rectangle){
+=======
+		if (bUseARBExtention && GLEE_ARB_texture_rectangle){
+>>>>>>> added apps/damian dir with fbo test
 			texData.tex_w = w;
 			texData.tex_h = h;
 			texData.tex_t = w;
@@ -111,7 +117,10 @@ void ofTexture::allocate(int w, int h, int internalGlDataType, bool bUseARBExten
 	switch(texData.glTypeInternal) {
 #ifndef TARGET_OPENGLES	
 		case GL_RGBA32F_ARB:
+<<<<<<< HEAD
 		case GL_RGBA16F_ARB:
+=======
+>>>>>>> added apps/damian dir with fbo test
 			texData.glType		= GL_RGBA;
 			texData.pixelType	= GL_FLOAT;
 			break;
@@ -178,8 +187,11 @@ void ofTexture::loadData(float * data, int w, int h, int glDataType){
 
 //----------------------------------------------------------
 void ofTexture::loadData(void * data, int w, int h, int glDataType){
+<<<<<<< HEAD
 
 	//SOSOLIMITED: image load step 5 - sets tex.glType to match 
+=======
+>>>>>>> added apps/damian dir with fbo test
 
 	//	can we allow for uploads bigger then texture and
 	//	just take as much as the texture can?
@@ -239,6 +251,7 @@ void ofTexture::loadData(void * data, int w, int h, int glDataType){
 	glGetIntegerv(GL_UNPACK_ALIGNMENT, &prevAlignment);
 	glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
 
+<<<<<<< HEAD
 	
 	//Sosolimited: texture compression
 	if (texData.compressionType == OF_COMPRESS_NONE)
@@ -324,6 +337,13 @@ void ofTexture::loadData(void * data, int w, int h, int glDataType){
 		glDisable(texData.textureTarget);
 
 	}
+=======
+	// update the texture image:
+	glEnable(texData.textureTarget);
+		glBindTexture(texData.textureTarget, (GLuint)texData.textureID);
+ 		glTexSubImage2D(texData.textureTarget, 0, 0, 0, w, h, texData.glType, texData.pixelType, data); // MEMO: important to use pixelType here
+	glDisable(texData.textureTarget);
+>>>>>>> added apps/damian dir with fbo test
 
 	//------------------------ back to normal.
 	glPixelStorei(GL_UNPACK_ALIGNMENT, prevAlignment);
@@ -401,6 +421,7 @@ void ofTexture::bind(){
 	//we could check if it has been allocated - but we don't do that in draw() 
 	glEnable(texData.textureTarget);
 	glBindTexture( texData.textureTarget, (GLuint)texData.textureID);
+<<<<<<< HEAD
 	
 	if(ofGetUsingNormalizedTexCoords()) {
 		glMatrixMode(GL_TEXTURE);
@@ -416,6 +437,8 @@ void ofTexture::bind(){
 		
 		glMatrixMode(GL_MODELVIEW);  		
 	}
+=======
+>>>>>>> added apps/damian dir with fbo test
 }
 
 //----------------------------------------------------------
@@ -519,6 +542,82 @@ void ofTexture::draw(const ofRectangle & r){
 void ofTexture::draw(const ofPoint & p, float w, float h){
 	draw(p.x, p.y, p.z, w, h);
 }
+
+
+//----------------------------------------------------------
+ofPoint ofTexture::getCoordFromPoint(float xPos, float yPos){
+	
+	ofPoint temp;
+	
+	if (!bAllocated()) return temp;
+	
+	
+	if (texData.textureTarget == GL_TEXTURE_RECTANGLE_ARB){
+		
+		temp.set(xPos, yPos);
+		
+	} else {
+		
+		// non arb textures are 0 to 1, so we 
+		// (a) convert to a pct: 
+		
+		float pctx = xPos / texData.width;
+		float pcty = yPos / texData.height;
+		
+		// (b) mult by our internal pct (since we might not be 0-1 insternally)
+		
+		pctx *= texData.tex_t;
+		pcty *= texData.tex_u;
+		
+		temp.set(pctx, pcty);
+
+	}
+	
+	return temp;
+	
+}
+
+//----------------------------------------------------------
+ofPoint ofTexture::getCoordFromPercent(float xPct, float yPct){
+	
+	ofPoint temp;
+	
+	if (!bAllocated()) return temp;
+
+	
+	if (texData.textureTarget == GL_TEXTURE_RECTANGLE_ARB){
+		
+		temp.set(xPct * texData.width, yPct * texData.height);
+		
+	} else {
+	
+		xPct *= texData.tex_t;
+		yPct *= texData.tex_u;
+		temp.set(xPct, yPct);
+		
+	}
+	
+	return temp;
+}
+
+
+//----------------------------------------------------------
+void ofTexture::setTextureWrap(GLint wrapModeHorizontal, GLint wrapModeVertical) {
+	bind();
+	glTexParameterf(texData.textureTarget, GL_TEXTURE_WRAP_S, wrapModeHorizontal);
+	glTexParameterf(texData.textureTarget, GL_TEXTURE_WRAP_T, wrapModeVertical);
+	unbind();
+}
+
+//----------------------------------------------------------
+void ofTexture::setTextureMinMagFilter(GLint minFilter, GLint maxFilter){
+	bind();
+	glTexParameteri(texData.textureTarget, GL_TEXTURE_MAG_FILTER, maxFilter);
+	glTexParameteri(texData.textureTarget, GL_TEXTURE_MIN_FILTER, minFilter);
+	unbind();
+}
+
+
 
 //----------------------------------------------------------
 void ofTexture::draw(float x, float y, float w, float h){
