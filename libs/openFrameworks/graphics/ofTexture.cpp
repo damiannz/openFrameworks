@@ -4,25 +4,27 @@
 
 static bool bTexHackEnabled = true;
 
+
+
 //---------------------------------
 void ofEnableTextureEdgeHack(){
 	bTexHackEnabled = true;
 }
 
 //---------------------------------
-void ofDisableTectureEdgeHack(){
+void ofDisableTextureEdgeHack(){
 	bTexHackEnabled = false;
 }
 
 //----------------------------------------------------------
 ofTexture::ofTexture(){
 	texData.bAllocated		= false;
-	texData.textureName[0]	= 0;
 	texData.textureID		= 0;
 	texData.bFlipTexture	= false;
 	texData.textureTarget	= GL_TEXTURE_2D;
 	texData.glTypeInternal  = 0;
 	texData.glType			= 0;
+	texData.pixelType		= GL_UNSIGNED_BYTE;
 	texData.width			= 0;
 	texData.height			= 0;
 	texData.tex_w			= 0;
@@ -40,12 +42,12 @@ bool ofTexture::bAllocated(){
 
 //----------------------------------------------------------
 ofTexture::ofTexture(const ofTexture& mom){
-	texData = mom.texData;
+	ofLog(OF_LOG_WARNING, "overloaded ofTexture copy constructor to do nothing. please use FBO or other means to copy textures");
 }
 
 //----------------------------------------------------------
 ofTexture& ofTexture::operator=(const ofTexture& mom){
-	texData = mom.texData;
+	ofLog(OF_LOG_WARNING, "overloaded ofTexture = operator to do nothing. please use FBO or other means to copy textures");
 	return *this;
 }
 
@@ -66,8 +68,8 @@ ofTexture::~ofTexture(){
 void ofTexture::clear(){
 	// try to free up the texture memory so we don't reallocate
 	// http://www.opengl.org/documentation/specs/man_pages/hardcopy/GL/html/gl/deletetextures.html
-	if (texData.textureName[0] != 0){
-		glDeleteTextures(1, (GLuint *)texData.textureName);
+	if (texData.textureID != 0){
+		glDeleteTextures(1, (GLuint *)&texData.textureID);
 	}
 
 	texData.bAllocated = false;
@@ -82,7 +84,7 @@ void ofTexture::allocate(int w, int h, int internalGlDataType){
 void ofTexture::allocate(int w, int h, int internalGlDataType, bool bUseARBExtention){
 
 	//our graphics card might not support arb so we have to see if it is supported.
-	#ifndef TARGET_OF_IPHONE
+	#ifndef TARGET_OPENGLES
 		if (bUseARBExtention && GLEE_ARB_texture_rectangle){
 			texData.tex_w = w;
 			texData.tex_h = h;
@@ -103,28 +105,56 @@ void ofTexture::allocate(int w, int h, int internalGlDataType, bool bUseARBExten
 
 	texData.glTypeInternal = internalGlDataType;
 
+	
+	// MEMO: todo, add more types
+	switch(texData.glTypeInternal) {
+#ifndef TARGET_OPENGLES	
+		case GL_RGBA32F_ARB:
+			texData.glType		= GL_RGBA;
+			texData.pixelType	= GL_FLOAT;
+			break;
+			
+		case GL_RGB32F_ARB:
+			texData.glType		= GL_RGB;
+			texData.pixelType	= GL_FLOAT;
+			break;
+
+		case GL_LUMINANCE32F_ARB:
+			texData.glType		= GL_LUMINANCE;
+			texData.pixelType	= GL_FLOAT;
+			break;
+#endif			
+			
+		default:
+			texData.glType		= GL_LUMINANCE;
+			texData.pixelType	= GL_UNSIGNED_BYTE;
+	}
+
 	// attempt to free the previous bound texture, if we can:
 	clear();
 
-	glGenTextures(1, (GLuint *)texData.textureName);   // could be more then one, but for now, just one
+	glGenTextures(1, (GLuint *)&texData.textureID);   // could be more then one, but for now, just one
 
 	glEnable(texData.textureTarget);
 
-		glBindTexture(texData.textureTarget, (GLuint)texData.textureName[0]);
-	#ifndef TARGET_OF_IPHONE 
+		glBindTexture(texData.textureTarget, (GLuint)texData.textureID);
+	#ifndef TARGET_OPENGLES
 		// can't do this on OpenGL ES: on full-blown OpenGL, 
 		// internalGlDataType and glDataType (GL_LUMINANCE below)
 		// can be different; on ES they must be exactly the same.
-		glTexImage2D(texData.textureTarget, 0, texData.glTypeInternal, (GLint)texData.tex_w, (GLint)texData.tex_h, 0, GL_LUMINANCE, GL_UNSIGNED_BYTE, 0);  // init to black...
+//		glTexImage2D(texData.textureTarget, 0, texData.glTypeInternal, (GLint)texData.tex_w, (GLint)texData.tex_h, 0, GL_LUMINANCE, PIXEL_TYPE, 0);  // init to black...
+		glTexImage2D(texData.textureTarget, 0, texData.glTypeInternal, (GLint)texData.tex_w, (GLint)texData.tex_h, 0, texData.glType, texData.pixelType, 0);  // init to black...
 	#else
 		glTexImage2D(texData.textureTarget, 0, texData.glTypeInternal, texData.tex_w, texData.tex_h, 0, texData.glTypeInternal, GL_UNSIGNED_BYTE, 0);
 	#endif
 
-		glTexParameterf(texData.textureTarget, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-		glTexParameterf(texData.textureTarget, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-		glTexParameterf(texData.textureTarget, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-		glTexParameterf(texData.textureTarget, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-		glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
+	
+	glTexParameterf(texData.textureTarget, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	glTexParameterf(texData.textureTarget, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameterf(texData.textureTarget, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+	glTexParameterf(texData.textureTarget, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+	
+	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
 
 	glDisable(texData.textureTarget);
 
@@ -140,6 +170,16 @@ void ofTexture::allocate(int w, int h, int internalGlDataType, bool bUseARBExten
 
 //----------------------------------------------------------
 void ofTexture::loadData(unsigned char * data, int w, int h, int glDataType){
+	loadData( (void *)data, w, h, glDataType);
+}
+
+//----------------------------------------------------------
+void ofTexture::loadData(float * data, int w, int h, int glDataType){
+	loadData( (void *)data, w, h, glDataType);
+}
+
+//----------------------------------------------------------
+void ofTexture::loadData(void * data, int w, int h, int glDataType){
 
 	//	can we allow for uploads bigger then texture and
 	//	just take as much as the texture can?
@@ -201,8 +241,8 @@ void ofTexture::loadData(unsigned char * data, int w, int h, int glDataType){
 
 	// update the texture image:
 	glEnable(texData.textureTarget);
-		glBindTexture(texData.textureTarget, (GLuint)texData.textureName[0]);
- 		glTexSubImage2D(texData.textureTarget,0,0,0,w,h,texData.glType,GL_UNSIGNED_BYTE,data);
+		glBindTexture(texData.textureTarget, (GLuint)texData.textureID);
+ 		glTexSubImage2D(texData.textureTarget, 0, 0, 0, w, h, texData.glType, texData.pixelType, data); // MEMO: important to use pixelType here
 	glDisable(texData.textureTarget);
 
 	//------------------------ back to normal.
@@ -249,7 +289,7 @@ void ofTexture::loadScreenData(int x, int y, int w, int h){
 
 
 	glEnable(texData.textureTarget);
-	glBindTexture(texData.textureTarget, (GLuint)texData.textureName[0]);
+	glBindTexture(texData.textureTarget, (GLuint)texData.textureID);
 	glCopyTexSubImage2D(texData.textureTarget, 0,0,0,x,y,w,h);
 	glDisable(texData.textureTarget);
 }
@@ -284,7 +324,7 @@ void ofTexture::resetAnchor(){
 void ofTexture::bind(){
 	//we could check if it has been allocated - but we don't do that in draw() 
 	glEnable(texData.textureTarget);
-	glBindTexture( texData.textureTarget, (GLuint)texData.textureName[0]);
+	glBindTexture( texData.textureTarget, (GLuint)texData.textureID);
 }
 
 //----------------------------------------------------------
@@ -292,13 +332,89 @@ void ofTexture::unbind(){
 	glDisable(texData.textureTarget);
 }
 
+
+//----------------------------------------------------------
+ofPoint ofTexture::getCoordFromPoint(float xPos, float yPos){
+	
+	ofPoint temp;
+	
+	if (!bAllocated()) return temp;
+	
+	
+	if (texData.textureTarget == GL_TEXTURE_RECTANGLE_ARB){
+		
+		temp.set(xPos, yPos);
+		
+	} else {
+		
+		// non arb textures are 0 to 1, so we 
+		// (a) convert to a pct: 
+		
+		float pctx = xPos / texData.width;
+		float pcty = yPos / texData.height;
+		
+		// (b) mult by our internal pct (since we might not be 0-1 insternally)
+		
+		pctx *= texData.tex_t;
+		pcty *= texData.tex_u;
+		
+		temp.set(pctx, pcty);
+
+	}
+	
+	return temp;
+	
+}
+
+//----------------------------------------------------------
+ofPoint ofTexture::getCoordFromPercent(float xPct, float yPct){
+	
+	ofPoint temp;
+	
+	if (!bAllocated()) return temp;
+
+	
+	if (texData.textureTarget == GL_TEXTURE_RECTANGLE_ARB){
+		
+		temp.set(xPct * texData.width, yPct * texData.height);
+		
+	} else {
+	
+		xPct *= texData.tex_t;
+		yPct *= texData.tex_u;
+		temp.set(xPct, yPct);
+		
+	}
+	
+	return temp;
+}
+
+
+//----------------------------------------------------------
+void ofTexture::setTextureWrap(GLint wrapModeHorizontal, GLint wrapModeVertical) {
+	bind();
+	glTexParameterf(texData.textureTarget, GL_TEXTURE_WRAP_S, wrapModeHorizontal);
+	glTexParameterf(texData.textureTarget, GL_TEXTURE_WRAP_T, wrapModeVertical);
+	unbind();
+}
+
+//----------------------------------------------------------
+void ofTexture::setTextureMinMagFilter(GLint minFilter, GLint maxFilter){
+	bind();
+	glTexParameteri(texData.textureTarget, GL_TEXTURE_MAG_FILTER, maxFilter);
+	glTexParameteri(texData.textureTarget, GL_TEXTURE_MIN_FILTER, minFilter);
+	unbind();
+}
+
+
+
 //----------------------------------------------------------
 void ofTexture::draw(float x, float y, float w, float h){
 
 	glEnable(texData.textureTarget);
 
 	// bind the texture
-	glBindTexture( texData.textureTarget, (GLuint)texData.textureName[0] );
+	glBindTexture( texData.textureTarget, (GLuint)texData.textureID );
 
 		GLfloat px0 = 0;		// up to you to get the aspect ratio right
 		GLfloat py0 = 0;
