@@ -4,6 +4,8 @@
 
 static bool bTexHackEnabled = true;
 
+
+
 //---------------------------------
 void ofEnableTextureEdgeHack(){
 	bTexHackEnabled = true;
