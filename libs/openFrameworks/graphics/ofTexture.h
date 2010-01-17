@@ -11,7 +11,6 @@ typedef struct{
 	int glType;
 	int glTypeInternal;
 	int textureTarget;
-	int pixelType;  // MEMO: added this (GL_FLOAT, GL_UNSIGNED_BYTE etc.
 	float tex_t;
 	float tex_u;
 	float tex_w;
@@ -19,17 +18,23 @@ typedef struct{
 	float width;
 	float height;
 	bool bFlipTexture;
-	unsigned int textureID;
 
+	//we do this because openGL expects an array
+	//but we don't want people to work with textureName[1]
+	//so we make textureID point to the same location
+	union{
+		struct{
+			unsigned int textureID;	//use me
+		};		
+		unsigned int textureName[1];  //don't use me
+	};
 		
 }ofTextureData;
 
 //enable / disable the slight offset we add to ofTexture's texture coords to compensate for bad edge artifiacts
 //enabled by default
 void ofEnableTextureEdgeHack();
-void ofDisableTextureEdgeHack();
-
-
+void ofDisableTectureEdgeHack();
 
 class ofTexture : public ofBaseDraws{
 
@@ -51,10 +56,7 @@ class ofTexture : public ofBaseDraws{
 	void allocate(int w, int h, int internalGlDataType); //uses the currently set OF texture type - default ARB texture
 	void allocate(int w, int h, int internalGlDataType, bool bUseARBExtention); //lets you overide the default OF texture type
 	void clear();
-
-	void loadData(float * data, int w, int h, int glDataType);
 	void loadData(unsigned char * data, int w, int h, int glDataType);
-
 	void loadScreenData(int x, int y, int w, int h);
 
 	//the anchor is the point the image is drawn around.
@@ -69,15 +71,6 @@ class ofTexture : public ofBaseDraws{
 	//for the advanced user who wants to draw textures in their own way
 	void bind();
 	void unbind();
-	
-	// these are helpers to allow you to get points for the texture ala "glTexCoordf" 
-	// but are texture type independent. 
-	// use them for immediate or non immediate mode
-	ofPoint getCoordFromPoint(float xPos, float yPos);		
-	ofPoint getCoordFromPercent(float xPts, float yPts);		
-	
-	void setTextureWrap(GLint wrapModeHorizontal, GLint wrapModeVertical);
-	void setTextureMinMagFilter(GLint minFilter, GLint maxFilter);
 
 	bool bAllocated();
 
@@ -88,8 +81,6 @@ class ofTexture : public ofBaseDraws{
 
 	ofTextureData texData;
 protected:
-	void loadData(void * data, int w, int h, int glDataType);
-
 	ofPoint anchor;
 	bool bAnchorIsPct;
 
