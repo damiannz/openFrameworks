@@ -5,13 +5,22 @@
 void testApp::setup(){
 	counter = 0;
 	ofSetCircleResolution(50);
-	ofBackground(255,255,255);
+	ofBackground(0,0,0);
 	bSmooth = false;
 	ofSetWindowTitle("graphics example");
 
 	ofSetFrameRate(60); // if vertical sync is off, we can go a bit fast... this caps the framerate at 60fps.
 	
-	fbo.allocate( 256, 256 /*, GL_RGBA32F_ARB*/ );
+	fbo1 = new ofxFBOTexture();
+	fbo2 = new ofxFBOTexture();
+	
+	fbo1->allocate( 512, 512, GL_RGBA16F_ARB );
+	fbo2->allocate( 512, 512, GL_RGBA16F_ARB );
+	fbo1->clear( 0,0,0,0 );
+	fbo2->clear( 0,0,0,0 );
+	
+	ofBackground( 255,255,255 );
+	ofSetBackgroundAuto( false );
 }
 
 //--------------------------------------------------------------
@@ -21,15 +30,16 @@ void testApp::update(){
 
 //--------------------------------------------------------------
 void testApp::draw(){
-	ofxFBOTexture myFbo;
 	
-	myFbo.allocate( 256, 256 /*, GL_RGBA32F_ARB*/ );
+	fbo1->clear( 1,1,1,1 );
+	fbo1->begin();
+	ofEnableAlphaBlending();
+	//ofSetColor( 255,255,255,254 );
+	glColor4f( 1,1,1,0.9999f );
+	fbo2->draw( 0, 0 );
 
-	myFbo.begin();
-	
-/*	ofEnableAlphaBlending();
-	ofSetColor( 0, 0, 0, 1 );
-	ofRect( 0,0,640,480 );*/
+	ofSetColor( 64, 254, 22, 64 );
+	ofCircle( mouseX, mouseY, 5 );
 	
 	//--------------------------- circles
 	//let's draw a circle:
@@ -95,10 +105,15 @@ void testApp::draw(){
 	ofDrawBitmapString("lines\npress 's' to toggle smoothness", 600,500);
 	
 
-	myFbo.end();
-
-	ofSetColor( 0xff,0x5f,0xff,0xff );
-	myFbo.draw( 20,20 );
+	fbo1->end();
+	
+	ofSetColor( 255,255,255,255 );
+	fbo1->draw( 0,0 );
+	
+	ofxFBOTexture* temp = fbo1;
+	fbo1 = fbo2;
+	fbo2 = temp;
+	
 }
 
 

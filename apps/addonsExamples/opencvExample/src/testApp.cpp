@@ -17,6 +17,7 @@ void testApp::setup(){
 	grayImage.allocate(320,240);
 	grayBg.allocate(320,240);
 	grayDiff.allocate(320,240);
+	grayDiffRaw.allocate(320,240);
 
 	bLearnBakground = true;
 	threshold = 80;
@@ -52,6 +53,7 @@ void testApp::update(){
 
 		// take the abs value of the difference between background and incoming and then threshold:
 		grayDiff.absDiff(grayBg, grayImage);
+		grayDiffRaw = grayDiff;
 		grayDiff.threshold(threshold);
 
 		// find contours which are between the size of 20 pixels and 1/3 the w*h pixels.
@@ -68,6 +70,7 @@ void testApp::draw(){
 	ofSetHexColor(0xffffff);
 	colorImg.draw(20,20);
 	grayImage.draw(360,20);
+	grayDiffRaw.draw( 360+320+20, 20 );
 	grayBg.draw(20,280);
 	grayDiff.draw(360,280);
 
