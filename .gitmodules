@@ -1,0 +1,3 @@
+[submodule "apps/damian"]
+	path = apps/damian
+	url = git@github.com:damiannz/damian_of_apps.git
