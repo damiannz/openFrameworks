@@ -1,5 +1,7 @@
 #include "ofSerial.h"
 #include "ofMain.h"
+#include <sys/ioctl.h>
+
 
 
 //---------------------------------------------
@@ -682,4 +684,40 @@ int ofSerial::available(){
 
 	return numBytes;
 }
+
+
+//-------------------------------------------------------------
+bool ofSerial::drain()
+{
+	if (!bInited){
+		ofLog(OF_LOG_ERROR,"ofSerial: serial not inited");
+		return false;
+	}
+	
+	
+    //---------------------------------------------
+	#if	defined( TARGET_OSX ) || defined( TARGET_LINUX )
+	int res = tcdrain( fd );
+	if ( res != 0 )
+	{
+		// failed
+		ofLog( OF_LOG_ERROR, "ofSerial::drain(): problem calling tcdrain() (err %i '%s')", errno, strerror(errno));
+		return false;
+	}	
+	#endif
+	//---------------------------------------------
+	
+	//---------------------------------------------
+	#ifdef TARGET_WIN32
+	BOOL res = FlushFileBuffers( hComm );
+	if ( res == 0 )
+	{
+		// failed
+		ofLog( OF_LOG_ERROR,"ofSerial::drain(): problem calling FlushFileBuffers() (%i)", GetLastError() );
+		return false;
+	}
+	#endif
+	//---------------------------------------------
+}
+
 
