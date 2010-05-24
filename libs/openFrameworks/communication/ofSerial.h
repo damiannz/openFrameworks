@@ -57,6 +57,7 @@ class ofSerial : public ofBaseHasDevices {
 			bool			writeByte(unsigned char singleByte);
 			int             readByte();  // returns -1 on no read or error...
 			void			flush(bool flushIn = true, bool flushOut = true);
+			bool			drain(); // wait until all serial data has been sent. returns false on error.
 			int				available();
 
 			bool 			bVerbose;

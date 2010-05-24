@@ -1,5 +1,7 @@
 #include "ofSerial.h"
 #include "ofMain.h"
+#include <sys/ioctl.h>
+
 
 
 //---------------------------------------------
