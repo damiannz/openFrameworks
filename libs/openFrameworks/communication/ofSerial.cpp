@@ -1,6 +1,9 @@
 #include "ofSerial.h"
 #include "ofMain.h"
+
+#if defined TARGET_OSX  || defined TARGET_LINUX
 #include <sys/ioctl.h>
+#endif
 
 
 
