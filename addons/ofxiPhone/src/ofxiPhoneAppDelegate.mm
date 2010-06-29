@@ -126,7 +126,6 @@
 	
 
 	// call testApp::setup()
-	printf("now calling testApp::setup()");
 	ofGetAppPtr()->setup();
 
 	#ifdef OF_USING_POCO

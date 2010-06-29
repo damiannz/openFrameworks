@@ -53,6 +53,7 @@ public:
 	
 	virtual int			getFrameNum();
 	virtual float		getFrameRate();
+	virtual double		getLastFrameTime() { return lastFrameTime; }
 	
 	virtual ofPoint		getWindowPosition();
 	virtual ofPoint		getWindowSize();
@@ -104,6 +105,7 @@ protected:
 	bool antiAliasingEnabled;
 	bool retinaEnabled;
 	int antiAliasingSamples;
+	double				lastFrameTime;
 };
 
 
