@@ -44,7 +44,11 @@
 @private
     id <ESRenderer> renderer;
 	NSMutableDictionary		*activeTouches;
+<<<<<<< HEAD
 	int touchScaleFactor;
+=======
+
+>>>>>>> brought in iphone fixes; reverted my edits to ofAppGlutWindow
 }
 
 - (void) startRender;

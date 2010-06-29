@@ -56,6 +56,17 @@ enum {
         glBindFramebuffer(GL_FRAMEBUFFER, defaultFramebuffer);
         glBindRenderbuffer(GL_RENDERBUFFER, colorRenderbuffer);
         glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_RENDERBUFFER, colorRenderbuffer);
+		
+		
+		// depth
+		glBindRenderbuffer(GL_RENDERBUFFER, depthRenderbuffer);
+		glRenderbufferStorage(GL_RENDERBUFFER, 
+								 GL_DEPTH_COMPONENT16, 
+								 backingWidth, backingHeight);
+		
+    	glDepthMask( GL_TRUE );
+		glEnable( GL_DEPTH_TEST );
+		
     }
 
     return self;
@@ -264,6 +275,12 @@ enum {
     glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_WIDTH, &backingWidth);
     glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_HEIGHT, &backingHeight);
 
+	// depth
+    glBindRenderbuffer(GL_RENDERBUFFER, depthRenderbuffer);
+    glRenderbufferStorage(GL_RENDERBUFFER, 
+                             GL_DEPTH_COMPONENT16, 
+                             backingWidth, backingHeight);
+	
     if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
     {
         NSLog(@"Failed to make complete framebuffer object %x %ix%i", glCheckFramebufferStatus(GL_FRAMEBUFFER), backingWidth, backingHeight);
@@ -287,6 +304,12 @@ enum {
         glDeleteRenderbuffers(1, &colorRenderbuffer);
         colorRenderbuffer = 0;
     }
+	
+	if (depthRenderbuffer)
+	{
+		glDeleteRenderbuffers(1,&depthRenderbuffer);
+		depthRenderbuffer = 0;
+	}
 
     if (program)
     {
