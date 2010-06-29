@@ -78,7 +78,6 @@
     glRenderbufferStorageOES(GL_RENDERBUFFER_OES, 
                              GL_DEPTH_COMPONENT16_OES, 
                              backingWidth, backingHeight);
-	printf("resized depth buffer %i to %i %i\n", depthRenderbuffer, backingWidth, backingHeight );
 
     if (glCheckFramebufferStatusOES(GL_FRAMEBUFFER_OES) != GL_FRAMEBUFFER_COMPLETE_OES)
     {
