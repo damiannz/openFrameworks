@@ -47,6 +47,8 @@
 }
 
 
+
+
 - (id) initWithFrame:(CGRect)frame
 {
 	if((self = [super initWithFrame:frame])) {
@@ -56,7 +58,7 @@
         eaglLayer.opaque = true;
 		eaglLayer.drawableProperties = [NSDictionary dictionaryWithObjectsAndKeys:
 										[NSNumber numberWithBool:YES], kEAGLDrawablePropertyRetainedBacking, kEAGLColorFormatRGBA8, kEAGLDrawablePropertyColorFormat, nil];
-		
+
 		// TODO: add initSettings to override ES2Renderer even if available
         renderer = [[ES2Renderer alloc] init];
 		
@@ -69,7 +71,9 @@
 		}
         }
 		
-		[[self context] renderbufferStorage:GL_RENDERBUFFER_OES fromDrawable:eaglLayer];
+		//[[self context] renderbufferStorage:GL_RENDERBUFFER_OES fromDrawable:eaglLayer];
+		//[[self context] renderbufferStorage:<#(NSUInteger)target#> fromDrawable:<#(id <EAGLDrawable>)drawable#>
+		[renderer resizeFromLayer:eaglLayer];
 		
 		
 		self.multipleTouchEnabled = true;

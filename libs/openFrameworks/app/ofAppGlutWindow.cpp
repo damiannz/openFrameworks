@@ -428,22 +428,15 @@ void ofAppGlutWindow::display(void){
 	glViewport( 0, 0, width, height );
 	float * bgPtr = ofBgColorPtr();
 	bool bClearAuto = ofbClearBg();
-	static bool prevbClearAuto = !bClearAuto;
 
-	// if we have just changed the clear auto state, possibly change the drawing also:
-	// this seems necessary to fix something broken from OSX10.6
-	if ( prevbClearAuto != bClearAuto )
-	{
-		if (bClearAuto == false){
-			// set current buffer to front; will switch on next call to glutSwapBuffers()
-			glDrawBuffer (GL_FRONT);
-		}
-		else {
-			// draw to both front and back buffers
-			glDrawBuffer( GL_FRONT_AND_BACK );
-		}
-	}
-	
+    // to do non auto clear on PC for now - we do something like "single" buffering --
+    // it's not that pretty but it work for the most part
+
+    #ifdef TARGET_WIN32
+    if (bClearAuto == false){
+        glDrawBuffer (GL_FRONT);
+    }
+    #endif
 
 	if ( bClearAuto == true || nFrameCount < 3){
 		glClearColor(bgPtr[0],bgPtr[1],bgPtr[2], bgPtr[3]);

@@ -44,11 +44,13 @@
 @private
     id <ESRenderer> renderer;
 	NSMutableDictionary		*activeTouches;
+
 }
 
 - (void) startRender;
 - (void) finishRender;
 - (EAGLContext*) context;
+
 
 
 

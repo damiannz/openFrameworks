@@ -121,6 +121,7 @@ ofPoint	ofAppiPhoneWindow::getWindowPosition() {
 ofPoint	ofAppiPhoneWindow::getWindowSize() {
 	if(windowSize.x == NOT_INITIALIZED) {
 		CGSize s = [[[UIApplication sharedApplication] keyWindow] bounds].size;
+		printf( "ofAppiPhoneWindow got window size %f %f\n", s.width, s.height );
 		if(orientation == OFXIPHONE_ORIENTATION_PORTRAIT || orientation == OFXIPHONE_ORIENTATION_UPSIDEDOWN)
 		{
 			windowSize.set(s.width, s.height, 0);
@@ -138,6 +139,7 @@ ofPoint	ofAppiPhoneWindow::getWindowSize() {
 ofPoint	ofAppiPhoneWindow::getScreenSize() {
 	if(screenSize.x == NOT_INITIALIZED) {
 		CGSize s = [[UIScreen mainScreen] bounds].size;
+		printf( "ofAppiPhoneWindow got screen size %f %f\n", s.width, s.height );
 		if(orientation == OFXIPHONE_ORIENTATION_PORTRAIT || orientation == OFXIPHONE_ORIENTATION_UPSIDEDOWN)
 		{
 			screenSize.set(s.width, s.height, 0);

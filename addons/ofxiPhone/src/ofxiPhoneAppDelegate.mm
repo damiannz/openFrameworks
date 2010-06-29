@@ -76,11 +76,15 @@
 	
 	// get screen bounds
 	CGRect screenBounds = [[UIScreen mainScreen] bounds];
-	
+
 	// create fullscreen window
 	UIWindow *window = [[UIWindow alloc] initWithFrame:screenBounds];
 	
-	// create the OpenGL view and add it to the window
+/*	// create the OpenGL view and add it to the window
+	glView = [[EAGLView alloc] initWithFrame:screenBounds];
+						pixelFormat:kEAGLColorFormatRGBA8
+						depthFormat:GL_DEPTH_COMPONENT24_OES
+				 preserveBackbuffer:NO];*/
 	glView = [[EAGLView alloc] initWithFrame:screenBounds];// pixelFormat:GL_RGB565_OES depthFormat:GL_DEPTH_COMPONENT16_OES preserveBackbuffer:NO];
 	[window addSubview:glView];
 	//	[glView release];	// do not release, incase app wants to removeFromSuper and add later
@@ -122,6 +126,7 @@
 	
 
 	// call testApp::setup()
+	printf("now calling testApp::setup()");
 	ofGetAppPtr()->setup();
 
 	#ifdef OF_USING_POCO

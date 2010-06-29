@@ -22,10 +22,23 @@
         // Create default framebuffer object. The backing will be allocated for the current layer in -resizeFromLayer
         glGenFramebuffersOES(1, &defaultFramebuffer);
         glGenRenderbuffersOES(1, &colorRenderbuffer);
+		glGenRenderbuffersOES(1, &depthRenderbuffer);
         glBindFramebufferOES(GL_FRAMEBUFFER_OES, defaultFramebuffer);
         glBindRenderbufferOES(GL_RENDERBUFFER_OES, colorRenderbuffer);
         glFramebufferRenderbufferOES(GL_FRAMEBUFFER_OES, GL_COLOR_ATTACHMENT0_OES, GL_RENDERBUFFER_OES, colorRenderbuffer);
-    }
+
+		// depth
+		glGenRenderbuffersOES(1, &depthRenderbuffer);
+		glBindRenderbufferOES(GL_RENDERBUFFER_OES, depthRenderbuffer);
+		glFramebufferRenderbufferOES(GL_FRAMEBUFFER_OES, 
+									 GL_DEPTH_ATTACHMENT_OES, 
+									 GL_RENDERBUFFER_OES, 
+									 depthRenderbuffer);
+		
+		// back to color
+        glBindRenderbufferOES(GL_RENDERBUFFER_OES, colorRenderbuffer);
+
+	}
 
     return self;
 }
@@ -41,15 +54,14 @@
 	
     // This application only creates a single default framebuffer which is already bound at this point.
     // This call is redundant, but needed if dealing with multiple framebuffers.
-//    glBindFramebufferOES(GL_FRAMEBUFFER_OES, defaultFramebuffer);
+	//glBindFramebufferOES(GL_FRAMEBUFFER_OES, defaultFramebuffer);
 }
 	
 
 - (void)finishRender
 {
-    // This application only creates a single color renderbuffer which is already bound at this point.
-    // This call is redundant, but needed if dealing with multiple renderbuffers.
-//    glBindRenderbufferOES(GL_RENDERBUFFER_OES, colorRenderbuffer);
+    // This call is needed because we are dealing with multiple renderbuffers.
+    glBindRenderbufferOES(GL_RENDERBUFFER_OES, colorRenderbuffer);
     [context presentRenderbuffer:GL_RENDERBUFFER_OES];
 }
 
@@ -60,6 +72,13 @@
     [context renderbufferStorage:GL_RENDERBUFFER_OES fromDrawable:layer];
     glGetRenderbufferParameterivOES(GL_RENDERBUFFER_OES, GL_RENDERBUFFER_WIDTH_OES, &backingWidth);
     glGetRenderbufferParameterivOES(GL_RENDERBUFFER_OES, GL_RENDERBUFFER_HEIGHT_OES, &backingHeight);
+
+	// depth
+    glBindRenderbufferOES(GL_RENDERBUFFER_OES, depthRenderbuffer);
+    glRenderbufferStorageOES(GL_RENDERBUFFER_OES, 
+                             GL_DEPTH_COMPONENT16_OES, 
+                             backingWidth, backingHeight);
+	printf("resized depth buffer %i to %i %i\n", depthRenderbuffer, backingWidth, backingHeight );
 
     if (glCheckFramebufferStatusOES(GL_FRAMEBUFFER_OES) != GL_FRAMEBUFFER_COMPLETE_OES)
     {
@@ -85,6 +104,12 @@
         colorRenderbuffer = 0;
     }
 
+	if (depthRenderbuffer)
+	{
+		glDeleteRenderbuffersOES(1,&depthRenderbuffer);
+		depthRenderbuffer = 0;
+	}
+	
     // Tear down context
     if ([EAGLContext currentContext] == context)
         [EAGLContext setCurrentContext:nil];
