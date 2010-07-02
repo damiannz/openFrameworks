@@ -4,3 +4,6 @@
 [submodule "apps/damian"]
 	patch = apps/damian
 	url = git@github.com:damiannz/damian_public_of_apps.git
+[submodule "apps/Writer"]
+	path = apps/Writer
+	url = git@github.com:ofTheo/Writer.git
