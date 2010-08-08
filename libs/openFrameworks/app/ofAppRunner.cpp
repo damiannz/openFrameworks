@@ -251,7 +251,7 @@ void ofSetVerticalSync(bool bSync){
 	//--------------------------------------
 
 	//--------------------------------------
-	#ifdef TARGET_LINUX
+	#if defined TARGET_LINUX && !defined TARGET_OF_BEAGLEBOARD
 	//--------------------------------------
 		//if (GLEW_GLX_SGI_swap_control)
 		void (*swapInterval)(int)  = (void (*)(int)) glXGetProcAddress((const GLubyte*) "glXSwapIntervalSGI");
