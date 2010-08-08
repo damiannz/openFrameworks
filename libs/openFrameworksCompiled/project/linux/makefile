@@ -23,7 +23,7 @@
 # edit the following  vars to customize the makefile
 
 
-COMPILER_OPTIMIZATION = -march=native -mtune=native -finline-functions -funroll-all-loops  -O3
+COMPILER_OPTIMIZATION = -march=armv7-a -mtune=cortex-a8 -finline-functions -funroll-all-loops  -O3
 EXCLUDE_FROM_SOURCE=_
 USER_CFLAGS = 
 USER_LD_FLAGS = 
@@ -116,6 +116,7 @@ all: $(TARGET)
 #endif
 
 #This is the rule for creating the dependency files
+depends: $(DEPFILES)
 $(DEPFILES): $(SOURCES)
 	echo "creating dependencies"
 	mkdir -p $(@D)
@@ -123,7 +124,8 @@ $(DEPFILES): $(SOURCES)
 	
 
 #This rule does the compilation
-$(OBJS): $(SOURCES) $(DEPFILES)
+#$(OBJS): $(SOURCES) $(DEPFILES)
+$(OBJS): $(SOURCES)
 	echo "compiling objects"
 	mkdir -p $(@D)
 	$(CXX) $(TARGET_CFLAGS) $(CFLAGS) $(USER_CFLAGS) -MMD -MP -MF $(patsubst %.o,%.d,$@) -o $@ -c $(patsubst $(OBJ_OUTPUT)%.o,../../../%.cpp,$@)

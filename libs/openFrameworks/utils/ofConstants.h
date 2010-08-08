@@ -29,7 +29,12 @@
 		#define TARGET_OSX
 	#endif
 #else
+	#warning LINUX
 	#define TARGET_LINUX
+	#if defined(ARMEL) || defined(__arm__) || defined (__arm)
+		#define TARGET_OF_BEAGLEBOARD
+		#warning BEAGLE
+	#endif
 #endif
 //-------------------------------
 

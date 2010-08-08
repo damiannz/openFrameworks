@@ -725,6 +725,8 @@ bool ofSerial::drain()
 	}
 	#endif
 	//---------------------------------------------
+	
+	return true;
 }
 
 
