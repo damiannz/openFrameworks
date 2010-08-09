@@ -29,11 +29,13 @@
 		#define TARGET_OSX
 	#endif
 #else
-	#warning LINUX
 	#define TARGET_LINUX
+	// check for BeagleBoard
 	#if defined(ARMEL) || defined(__arm__) || defined (__arm)
+		// must be on BeagleBoard
 		#define TARGET_OF_BEAGLEBOARD
-		#warning BEAGLE
+		// also use OpenGL ES
+		#define TARGET_OPENGLES
 	#endif
 #endif
 //-------------------------------
