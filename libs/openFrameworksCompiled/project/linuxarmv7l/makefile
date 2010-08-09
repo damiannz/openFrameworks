@@ -23,7 +23,6 @@
 # edit the following  vars to customize the makefile
 
 
-COMPILER_OPTIMIZATION = -march=armv7-a -mtune=cortex-a8 -finline-functions -funroll-all-loops  -O3
 EXCLUDE_FROM_SOURCE=_
 USER_CFLAGS = 
 USER_LD_FLAGS = 
@@ -39,10 +38,13 @@ CXX =  g++
 ARCH = $(shell uname -m)
 ifeq ($(ARCH),x86_64)
 	LIBSPATH=linux64
+	COMPILER_OPTIMIZATION = -march=native -mtune=native -finline-functions -funroll-all-loops  -O3
 else ifeq ($(ARCH),armv7l)
-	LIBSPATH=linuxarmv7
+	LIBSPATH=linuxarmv7l
+	COMPILER_OPTIMIZATION = -march=armv7-a -mtune=cortex-a8 -finline-functions -funroll-all-loops  -O3
 else
 	LIBSPATH=linux
+	COMPILER_OPTIMIZATION = -march=native -mtune=native -finline-functions -funroll-all-loops  -O3
 endif
 
 NODEPS = clean
