@@ -47,7 +47,7 @@ void ofExitCallback(){
 
 	//------------------------
 	// try to close FMOD:
-	ofSoundPlayer::closeFmod();
+//	ofSoundPlayer::closeFmod();
 	//------------------------
 
 	//------------------------

@@ -12,8 +12,13 @@
 	#include <GLUT/glut.h>
 #endif
 #ifdef TARGET_LINUX
-	#include <GL/glut.h>
+	#ifdef TARGET_OF_BEAGLEBOARD
+		#include <GLES/glutes.h>
+	#else
+		#include <GL/glut.h>
+	#endif
 #endif
+
 
 class ofPoint;
 class ofBaseApp;
