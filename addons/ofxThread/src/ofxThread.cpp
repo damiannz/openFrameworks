@@ -4,18 +4,10 @@
 ofxThread::ofxThread(){ 
    threadRunning = false; 
    verbose = false;
-   #ifdef TARGET_WIN32 
-      InitializeCriticalSection(&critSec); 
-   #else 
-      pthread_mutex_init(&myMutex, NULL); 
-   #endif 
 } 
 
 //------------------------------------------------- 
 ofxThread::~ofxThread(){ 
-   #ifndef TARGET_WIN32 
-      pthread_mutex_destroy(&myMutex); 
-   #endif 
    stopThread(); 
 } 
 
@@ -52,44 +44,31 @@ void ofxThread::startThread(bool _blocking, bool _verbose){
 //returns false if it can't lock 
 bool ofxThread::lock(){ 
 
-   #ifdef TARGET_WIN32 
-      if(blocking)EnterCriticalSection(&critSec); 
-      else { 
-         if(!TryEnterCriticalSection(&critSec)){ 
-            if(verbose)printf("ofxThread: mutext is busy \n"); 
-            return false; 
-         } 
-      } 
-      if(verbose)printf("ofxThread: we are in -- mutext is now locked \n"); 
-   #else 
-
-      if(blocking){ 
-         if(verbose)printf("ofxThread: waiting till mutext is unlocked\n"); 
-         pthread_mutex_lock(&myMutex); 
-         if(verbose)printf("ofxThread: we are in -- mutext is now locked \n"); 
-      }else{ 
-         int value = pthread_mutex_trylock(&myMutex); 
-         if(value == 0){ 
-            if(verbose)printf("ofxThread: we are in -- mutext is now locked \n"); 
-         } 
-         else{ 
-            if(verbose)printf("ofxThread: mutext is busy - already locked\n"); 
-            return false; 
-         } 
-      } 
-   #endif 
-
-   return true; 
+	if ( blocking )
+	{
+		mutex.lock();
+		if(verbose)printf("ofxThread: we are in -- mutex is now locked \n"); 
+		return true;
+	} 
+	else
+	{
+		bool res = mutex.tryLock();
+		if(verbose)
+		{
+			if ( res )
+				printf("ofxThread: mutex is busy - already locked\n"); 
+			else
+				printf("ofxThread: we are in -- mutex is now locked \n"); 
+		}
+		return res;
+	}
+		
 } 
 
 //------------------------------------------------- 
 bool ofxThread::unlock(){ 
 
-   #ifdef TARGET_WIN32 
-      LeaveCriticalSection(&critSec); 
-   #else 
-      pthread_mutex_unlock(&myMutex); 
-   #endif 
+	mutex.unlock();
 
    if(verbose)printf("ofxThread: we are out -- mutext is now unlocked \n"); 
 

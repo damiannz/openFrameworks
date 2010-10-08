@@ -7,8 +7,9 @@
 	#include <process.h>
 #else
     #include <pthread.h>
-    #include <semaphore.h>
 #endif
+
+#include <ofxMutex.h>
 
 class ofxThread{
 
@@ -49,12 +50,11 @@ class ofxThread{
 		#endif
 
 
+	ofxMutex mutex;
 	#ifdef TARGET_WIN32
 			HANDLE            myThread;
-			CRITICAL_SECTION  critSec;  	//same as a mutex
 	#else
 			pthread_t        myThread;
-			pthread_mutex_t  myMutex;
 	#endif
 
 	bool threadRunning;
