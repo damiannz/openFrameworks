@@ -19,6 +19,9 @@
 #endif
 
 #ifndef TARGET_WIN32
+	#ifdef CALLBACK
+		#undef CALLBACK
+	#endif
     #define CALLBACK
 #endif
 
@@ -793,7 +796,7 @@ std::vector <double*> newVectrices;
 std::vector <float> tessVertices;
 
 //---------------------------- store all the polygon vertices:
-std::vector <double*> polyVertices;
+std::vector <GLdouble*> polyVertices;
 //---------------------------- and for curve vertexes, since we need 4 to make a curve
 std::vector <double*> curveVertices;
 
@@ -861,7 +864,7 @@ void CALLBACK tessCombine( GLdouble coords[3], void* vertex_data[4], GLfloat wei
 void clearTessVertices(){
 	// -------------------------------------------------
     // ---------------- delete newly created vertices !
-     for(vector<double*>::iterator itr=polyVertices.begin();
+     for(vector<GLdouble*>::iterator itr=polyVertices.begin();
         itr!=polyVertices.end();
         ++itr){
         delete [] (*itr);
@@ -995,7 +998,7 @@ void ofBeginShape(){
 
 //----------------------------------------------------------
 void ofVertex(float x, float y){
- 	double* point = new double[3];
+ 	GLdouble* point = new GLdouble[3];
  	point[0] = x;
 	point[1] = y;
 	point[2] = 0;
@@ -1059,7 +1062,7 @@ void ofCurveVertex(float x, float y){
 			( 2.0f * y0 - 5.0f * y1 + 4 * y2 - y3 ) * t2 +
 			( -y0 + 3.0f * y1 - 3.0f * y2 + y3 ) * t3 );
 
-			double* newPoint = new double[3];
+			GLdouble* newPoint = new GLdouble[3];
 			newPoint[0] = x;
 			newPoint[1] = y;
 			newPoint[2] = 0;
@@ -1125,7 +1128,7 @@ void ofNextContour(bool bClose){
 		//---------------------------
 		if ((int)polyVertices.size() > currentStartVertex){
 
-			double* point = new double[3];
+			GLdouble* point = new GLdouble[3];
 	 		point[0] = polyVertices[currentStartVertex][0];
 			point[1] = polyVertices[currentStartVertex][1];
 			point[2] = 0;
@@ -1183,7 +1186,7 @@ void ofEndShape(bool bClose){
 		//---------------------------
 		if ((int)polyVertices.size() > currentStartVertex){
 
-			double* point = new double[3];
+			GLdouble* point = new GLdouble[3];
 	 		point[0] = polyVertices[currentStartVertex][0];
 			point[1] = polyVertices[currentStartVertex][1];
 			point[2] = 0;

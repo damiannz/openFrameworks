@@ -30,6 +30,14 @@
 	#endif
 #else
 	#define TARGET_LINUX
+	// check for BeagleBoard
+	#if defined(ARMEL) || defined(__arm__) || defined (__arm)
+		// #error BEAGLEBAORD defined
+		// must be on BeagleBoard
+		#define TARGET_OF_BEAGLEBOARD
+		// also use OpenGL ES
+		#define TARGET_OPENGLES
+	#endif
 #endif
 //-------------------------------
 
@@ -97,8 +105,13 @@
 
 #ifdef TARGET_LINUX
         #include <unistd.h>
-        #include "GLee.h"
-        #include <GL/glu.h>
+		#ifdef TARGET_OPENGLES
+			#include <GLES/gl.h>
+			#include <GLES/glext.h>
+		#else
+        	#include "GLee.h"
+       		#include <GL/glu.h>
+		#endif
 
     // for some reason, this isn't defined at compile time,
     // so this hack let's us work

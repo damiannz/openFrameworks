@@ -30,7 +30,9 @@
 //--------------------------
 // audio
 #include "ofSoundStream.h"
+#ifndef TARGET_OF_BEAGLEBOARD
 #include "ofSoundPlayer.h"
+#endif
 
 //--------------------------
 // video

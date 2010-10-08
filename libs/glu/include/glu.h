@@ -34,7 +34,12 @@
 #include "glu_mangle.h"
 #endif
 
+#ifdef TARGET_OF_BEAGLEBOARD
+#include <GLES/gl.h>
+#else
+#warning NO_BEAGLEBOARD
 #include <GL/gl.h>
+#endif
 
 
 #ifndef CALLBACK
@@ -42,7 +47,11 @@
 #endif
 
 #ifndef GLAPIENTRY
+#ifdef TARGET_OF_BEAGLEBOARD
+#define GLAPIENTRY
+#else
 #define GLAPIENTRY APIENTRY
+#endif
 #endif
 
 #ifndef GLAPIENTRYP
