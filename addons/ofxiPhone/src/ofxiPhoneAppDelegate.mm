@@ -276,4 +276,18 @@
 }
 
 
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+	
+	
+	cout<<"uhh"<<endl;
+	
+	NSString *urlData = [url absoluteString];
+	
+	char response[ [urlData length]+1 ];
+	[urlData getCString:response];
+	
+	
+	ofxiPhoneAlerts.launchedWithURL(response);
+}
+
 @end

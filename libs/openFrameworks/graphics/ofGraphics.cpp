@@ -721,9 +721,10 @@ void ofSetupGraphicDefaults(){
 	glDisableClientState(GL_TEXTURE_COORD_ARRAY);
 
 	ofDisableSmoothing();
-	ofDisableAlphaBlending();
+	ofEnableAlphaBlending();
 	ofBackground(200, 200, 200);
 	ofSetColor(255, 255, 255, 255);
+	
 }
 
 //----------------------------------------------------------
