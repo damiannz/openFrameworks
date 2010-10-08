@@ -23,7 +23,6 @@
 # edit the following  vars to customize the makefile
 
 
-COMPILER_OPTIMIZATION = -march=native -mtune=native -finline-functions -funroll-all-loops  -O3
 EXCLUDE_FROM_SOURCE=_
 USER_CFLAGS = 
 USER_LD_FLAGS = 
@@ -39,11 +38,16 @@ CXX =  g++
 ARCH = $(shell uname -m)
 ifeq ($(ARCH),x86_64)
 	LIBSPATH=linux64
+	COMPILER_OPTIMIZATION = -march=native -mtune=native -finline-functions -funroll-all-loops  -O3
+else ifeq ($(ARCH),armv7l)
+	LIBSPATH=linuxarmv7l
+	COMPILER_OPTIMIZATION = -march=armv7-a -mtune=cortex-a8 -finline-functions -funroll-all-loops  -O3 -funsafe-math-optimizations -mfpu=neon -ftree-vectorize -mfloat-abi=softfp
 else
 	LIBSPATH=linux
+	COMPILER_OPTIMIZATION = -march=native -mtune=native -finline-functions -funroll-all-loops  -O3
 endif
 
-NODEPS = clean depend
+NODEPS = clean CleanDebug CleanRelease
 SOURCE_DIRS = $(shell find ../../../openFrameworks -maxdepth 1 -mindepth 1 -type d )
 SOURCES = $(shell find $(SOURCE_DIRS) -name "*.cpp")
 OBJFILES = $(patsubst ../../../%.cpp,%.o,$(SOURCES))
@@ -102,6 +106,7 @@ ifeq ($(MAKECMDGOALS),)
 	SED_OUTPUT = obj\\/Release\\/
 	TARGET_NAME = Release
 	TARGET = ../../lib/$(LIBSPATH)/libopenFrameworks.a
+	CLEANTARGET = CleanRelease
 endif
 
 ifeq ($(MAKECMDGOALS),clean)
@@ -111,7 +116,8 @@ endif
 DEPFILES = $(addprefix $(OBJ_OUTPUT),$(patsubst ../../../%.cpp,%.d,$(SOURCES)))
 OBJS = $(addprefix $(OBJ_OUTPUT), $(OBJFILES))
 
-.PHONY: Debug Release all after depend
+
+.PHONY: Debug Release all after depend 
 
 Release: $(TARGET) 
 
@@ -123,8 +129,21 @@ depend:
 	make depend-Release 
 	make depend-Debug
 
-# include dependencies
--include $(DEPFILES)
+debugging_blah:
+	@echo MSG: 
+	@echo $(MSG)
+	@echo source dirs:
+	@echo $(SOURCE_DIRS)
+	@echo sources:
+	@echo $(SOURCES)
+	@echo obj_output:
+	@echo $(OBJ_OUTPUT) 
+	@echo objs:
+	@echo $(OBJS)
+	@echo makecmdgoals:
+	@echo $(MAKECMDGOALS)
+	@echo target:
+	@echo $(TARGET)
 
 
 # we need separate rules for Debug and Release because of different obj/ paths
@@ -148,9 +167,10 @@ $(OBJ_OUTPUT)%.o : ../../../%.cpp $(OBJ_OUTPUT)%.d
 	@echo compiling $@ from $< 
 	@mkdir -p $(@D)
 	@# -MMD: update the dependency file
-	$(CXX) $(TARGET_CFLAGS) $(CFLAGS) $(USER_CFLAGS) -MMD -o $@ -c $(patsubst $(OBJ_OUTPUT)%.o,../../../%.cpp,$@)
+	$(CXX) $(TARGET_CFLAGS) $(CFLAGS) $(USER_CFLAGS) -MMD -o $@ -c $(patsubst $(OBJ_OUTPUT)%.o,../../../%.cpp,$@) 
 
-$(TARGET) : $(OBJS)
+
+$(TARGET) : $(OBJS) 
 	@echo "creating " $(TARGET)
 	ar cr $@ $(OBJS)
 
@@ -170,12 +190,14 @@ $(CLEANTARGET):
 .PHONY: help
 help:
  
-	# openFrameworks universal makefile
-	#
+	@echo 
+	@echo openFrameworks compiled library makefile
+	@echo
 	# targets:
 	# make Debug:  makes the application with debug symbols
 	# make Release: makes the app with optimizations
 	# make: the same as make Release
+	# make all: make Debug + make Release
 	# make CleanDebug: cleans the Debug target
 	# make CleanRelease: cleans the Release target
 	# make clean: cleans everything
@@ -191,3 +213,14 @@ help:
 	# in this directory and add the names of the addons you want to
 	# include
 	#
+
+
+# include dependencies
+ifeq (0,$(words $(findstring $(MAKECMDGOALS),$(NODEPS))))
+	#MSG = \'$(findstring $(MAKECMDGOALS),$(NODEPS))\' : depfiles included
+	-include $(DEPFILES)
+else
+	#MSG = \'$(findstring $(MAKECMDGOALS),$(NODEPS))\' : depfiles not included $(MAKECMDGOALS) $(NODEPS)
+endif
+
+
