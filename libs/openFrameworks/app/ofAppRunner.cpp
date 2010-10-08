@@ -53,7 +53,7 @@ void ofExitCallback(){
 
 	//------------------------
 	// try to close FMOD:
-	ofSoundPlayer::closeFmod();
+//	ofSoundPlayer::closeFmod();
 	//------------------------
 	// try to close quicktime, for non-linux systems:
 
@@ -257,7 +257,7 @@ void ofSetVerticalSync(bool bSync){
 	//--------------------------------------
 
 	//--------------------------------------
-	#ifdef TARGET_LINUX
+	#if defined TARGET_LINUX && !defined TARGET_OF_BEAGLEBOARD
 	//--------------------------------------
 		if (GLEE_GLX_SGI_swap_control) glXSwapIntervalSGI(bSync ? 1 : 0);
 	//--------------------------------------

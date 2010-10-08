@@ -1,4 +1,8 @@
 #include "ofSoundStream.h"
+
+//#ifndef TARGET_LINUX
+#if 1
+
 #include "RtAudio.h"
 
 //----------------------------------- static variables:
@@ -68,6 +72,9 @@ void ofSoundStreamSetup(int nOutputs, int nInputs, int sampleRate, int bufferSiz
 
 //---------------------------------------------------------
 void ofSoundStreamSetup(int nOutputs, int nInputs, ofBaseApp * OFSA, int sampleRate, int bufferSize, int nBuffers){
+
+
+	printf("*** ofSoundStreamSetup \n");
 
 	nInputChannels 		=  nInputs;
 	nOutputChannels 	=  nOutputs;
@@ -174,3 +181,5 @@ void ofSoundStreamListDevices(){
 	}
 	delete audioTemp;
 }
+
+#endif

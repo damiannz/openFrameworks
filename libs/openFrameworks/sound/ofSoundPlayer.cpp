@@ -10,8 +10,10 @@ float fftSpectrum[8192];		// maximum # is 8192, in fmodex....
 
 
 // ---------------------  static vars
+#ifndef TARGET_OF_BEAGLEBOARD
 static FMOD_CHANNELGROUP * channelgroup;
 static FMOD_SYSTEM       * sys;
+#endif
 
 // these are global functions, that affect every sound / channel:
 // ------------------------------------------------------------
@@ -20,19 +22,25 @@ static FMOD_SYSTEM       * sys;
 //--------------------
 void ofSoundStopAll(){
 	ofSoundPlayer::initializeFmod();
+#ifndef TARGET_OF_BEAGLEBOARD
 	FMOD_ChannelGroup_Stop(channelgroup);
+#endif
 }
 
 //--------------------
 void ofSoundSetVolume(float vol){
 	ofSoundPlayer::initializeFmod();
+#ifndef TARGET_OF_BEAGLEBOARD
 	FMOD_ChannelGroup_SetVolume(channelgroup, vol);
+#endif
 }
 
 //--------------------
 void ofSoundUpdate(){
 	if (bFmodInitialized){
+#ifndef TARGET_OF_BEAGLEBOARD
 		FMOD_System_Update(sys);
+#endif
 	}
 }
 
@@ -61,8 +69,10 @@ float * ofSoundGetSpectrum(int nBands){
 	if (nBandsToGet < 64) nBandsToGet = 64;  // can't seem to get fft of 32, etc from fmodex
 
 	// 	get the fft
+#ifndef TARGET_OF_BEAGLEBOARD
 	FMOD_System_GetSpectrum(sys, fftSpectrum, nBandsToGet, 0, FMOD_DSP_FFT_WINDOW_HANNING);
 
+#endif
 	// 	convert to db scale
 	for(int i = 0; i < nBandsToGet; i++){
         fftValues[i] = 10.0f * (float)log10(1 + fftSpectrum[i]) * 2.0f;
@@ -148,12 +158,14 @@ ofSoundPlayer::~ofSoundPlayer(){
 // this should only be called once
 void ofSoundPlayer::initializeFmod(){
 	if(!bFmodInitialized){
+#ifndef TARGET_OF_BEAGLEBOARD
 		FMOD_System_Create(&sys);
 		#ifdef TARGET_LINUX
 			FMOD_System_SetOutput(sys,FMOD_OUTPUTTYPE_ALSA);
 		#endif
 		FMOD_System_Init(sys, 32, FMOD_INIT_NORMAL, NULL);  //do we want just 32 channels?
 		FMOD_System_GetMasterChannelGroup(sys, &channelgroup);
+#endif
 		bFmodInitialized = true;
 	}
 }
@@ -162,7 +174,9 @@ void ofSoundPlayer::initializeFmod(){
 //---------------------------------------
 void ofSoundPlayer::closeFmod(){
 	if(bFmodInitialized){
+#ifndef TARGET_OF_BEAGLEBOARD
 		FMOD_System_Close(sys);
+#endif
 		bFmodInitialized = false;
 	}
 }
@@ -194,6 +208,7 @@ void ofSoundPlayer::loadSound(string fileName, bool stream){
 	// [3] load sound
 
 	//choose if we want streaming
+#ifndef TARGET_OF_BEAGLEBOARD
 	int fmodFlags =  FMOD_SOFTWARE;
 	if(stream)fmodFlags =  FMOD_SOFTWARE | FMOD_CREATESTREAM;
 
@@ -208,13 +223,16 @@ void ofSoundPlayer::loadSound(string fileName, bool stream){
 		isStreaming = stream;
 	}
 
+#endif
 }
 
 //------------------------------------------------------------
 void ofSoundPlayer::unloadSound(){
 	if (bLoadedOk){
 		stop();						// try to stop the sound
+#ifndef TARGET_OF_BEAGLEBOARD
 		if(!isStreaming)FMOD_Sound_Release(sound);
+#endif
 	}
 }
 
@@ -224,7 +242,9 @@ bool ofSoundPlayer::getIsPlaying(){
 	if (!bLoadedOk) return false;
 
 	int playing = 0;
+#ifndef TARGET_OF_BEAGLEBOARD
 	FMOD_Channel_IsPlaying(channel, &playing);
+#endif
 	return (playing != 0 ? true : false);
 }
 
@@ -241,7 +261,9 @@ float ofSoundPlayer::getPan(){
 //------------------------------------------------------------
 void ofSoundPlayer::setVolume(float vol){
 	if (getIsPlaying() == true){
+#ifndef TARGET_OF_BEAGLEBOARD
 		FMOD_Channel_SetVolume(channel, vol);
+#endif
 	}
 	volume = vol;
 }
@@ -250,7 +272,9 @@ void ofSoundPlayer::setVolume(float vol){
 void ofSoundPlayer::setPosition(float pct){
 	if (getIsPlaying() == true){
 		int sampleToBeAt = (int)(length * pct);
+#ifndef TARGET_OF_BEAGLEBOARD
 		FMOD_Channel_SetPosition(channel, sampleToBeAt, FMOD_TIMEUNIT_PCM);
+#endif
 	}
 }
 
@@ -259,7 +283,9 @@ float ofSoundPlayer::getPosition(){
 	if (getIsPlaying() == true){
 		unsigned int sampleImAt;
 
+#ifndef TARGET_OF_BEAGLEBOARD
 		FMOD_Channel_GetPosition(channel, &sampleImAt, FMOD_TIMEUNIT_PCM);
+#endif
 
 		float pct = 0.0f;
 		if (length > 0){
@@ -274,7 +300,9 @@ float ofSoundPlayer::getPosition(){
 //------------------------------------------------------------
 void ofSoundPlayer::setPan(float p){
 	if (getIsPlaying() == true){
+#ifndef TARGET_OF_BEAGLEBOARD
 		FMOD_Channel_SetPan(channel,p);
+#endif
 	}
 	pan = p;
 }
@@ -283,7 +311,9 @@ void ofSoundPlayer::setPan(float p){
 //------------------------------------------------------------
 void ofSoundPlayer::setPaused(bool bP){
 	if (getIsPlaying() == true){
+#ifndef TARGET_OF_BEAGLEBOARD
 		FMOD_Channel_SetPaused(channel,bP);
+#endif
 		bPaused = bP;
 	}
 }
@@ -292,7 +322,9 @@ void ofSoundPlayer::setPaused(bool bP){
 //------------------------------------------------------------
 void ofSoundPlayer::setSpeed(float spd){
 	if (getIsPlaying() == true){
+#ifndef TARGET_OF_BEAGLEBOARD
 			FMOD_Channel_SetFrequency(channel, internalFreq * spd);
+#endif
 	}
 	speed = spd;
 }
@@ -301,7 +333,9 @@ void ofSoundPlayer::setSpeed(float spd){
 //------------------------------------------------------------
 void ofSoundPlayer::setLoop(bool bLp){
 	if (getIsPlaying() == true){
+#ifndef TARGET_OF_BEAGLEBOARD
 		FMOD_Channel_SetMode(channel,  (bLp == true) ? FMOD_LOOP_NORMAL : FMOD_LOOP_OFF);
+#endif
 	}
 	bLoop = bLp;
 }
@@ -314,6 +348,7 @@ void ofSoundPlayer::setMultiPlay(bool bMp){
 // ----------------------------------------------------------------------------
 void ofSoundPlayer::play(){
 
+#ifndef TARGET_OF_BEAGLEBOARD
 	// if it's a looping sound, we should try to kill it, no?
 	// or else people will have orphan channels that are looping
 	if (bLoop == true){
@@ -340,9 +375,12 @@ void ofSoundPlayer::play(){
 	//solves the channel bug
 	FMOD_System_Update(sys);
 
+#endif
 }
 
 // ----------------------------------------------------------------------------
 void ofSoundPlayer::stop(){
+#ifndef TARGET_OF_BEAGLEBOARD
 	FMOD_Channel_Stop(channel);
+#endif
 }
