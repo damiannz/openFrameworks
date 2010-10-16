@@ -144,15 +144,28 @@ debugging_blah:
 	@echo $(MAKECMDGOALS)
 	@echo target:
 	@echo $(TARGET)
+	@echo depfiles:
+	@echo $(DEPFILES)
 
 
 # we need separate rules for Debug and Release because of different obj/ paths
 depend-Release: $(DEPFILES)
 depend-Debug: $(DEPFILES)
 
+
+# include dependencies
+#ifeq (0,$(words $(findstring $(MAKECMDGOALS),$(NODEPS))))
+#	MSG= \'$(findstring $(MAKECMDGOALS),$(NODEPS))\' : depfiles included
+#	-include $(DEPFILES)
+#else
+#	MSG= \'$(findstring $(MAKECMDGOALS),$(NODEPS))\' : depfiles not included $(MAKECMDGOALS) $(NODEPS)
+#endif
+
+-include $(DEPFILES)
+
 # This is the rule for creating the dependency files
 $(OBJ_OUTPUT)%.d : ../../../%.cpp
-	@echo creating dependency file $@ for $<
+	@echo " * creating dependency file" $@ for $<
 	@mkdir -p $(@D)
 	@# dependency creation flags
 	@# -MM: exclude system headers
@@ -164,7 +177,7 @@ $(OBJ_OUTPUT)%.d : ../../../%.cpp
 #This rule does the compilation
 #$(OBJS): $(SOURCES) $(DEPFILES)
 $(OBJ_OUTPUT)%.o : ../../../%.cpp $(OBJ_OUTPUT)%.d 
-	@echo compiling $@ from $< 
+	@echo " * compiling" $@ from $< 
 	@mkdir -p $(@D)
 	@# -MMD: update the dependency file
 	$(CXX) $(TARGET_CFLAGS) $(CFLAGS) $(USER_CFLAGS) -MMD -o $@ -c $(patsubst $(OBJ_OUTPUT)%.o,../../../%.cpp,$@) 
@@ -174,7 +187,7 @@ $(TARGET) : $(OBJS)
 	@echo "creating " $(TARGET)
 	ar cr $@ $(OBJS)
 
-.PHONY: clean CleanDebug CleanRelease
+.PHONY: clean CleanDebug CleanRelease debugging_blah
 clean:
 	rm -Rf obj
 	rm -f -v $(TARGET)
@@ -214,13 +227,5 @@ help:
 	# include
 	#
 
-
-# include dependencies
-ifeq (0,$(words $(findstring $(MAKECMDGOALS),$(NODEPS))))
-	#MSG = \'$(findstring $(MAKECMDGOALS),$(NODEPS))\' : depfiles included
-	-include $(DEPFILES)
-else
-	#MSG = \'$(findstring $(MAKECMDGOALS),$(NODEPS))\' : depfiles not included $(MAKECMDGOALS) $(NODEPS)
-endif
 
 
