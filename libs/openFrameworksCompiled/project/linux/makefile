@@ -152,15 +152,6 @@ debugging_blah:
 depend-Release: $(DEPFILES)
 depend-Debug: $(DEPFILES)
 
-
-# include dependencies
-#ifeq (0,$(words $(findstring $(MAKECMDGOALS),$(NODEPS))))
-#	MSG= \'$(findstring $(MAKECMDGOALS),$(NODEPS))\' : depfiles included
-#	-include $(DEPFILES)
-#else
-#	MSG= \'$(findstring $(MAKECMDGOALS),$(NODEPS))\' : depfiles not included $(MAKECMDGOALS) $(NODEPS)
-#endif
-
 -include $(DEPFILES)
 
 # This is the rule for creating the dependency files
