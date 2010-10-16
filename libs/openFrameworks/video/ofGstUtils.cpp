@@ -1,5 +1,7 @@
+
 #include "ofGstUtils.h"
 #include "ofUtils.h"
+#include "ofAppRunner.h"
 #include <gst/app/gstappsink.h>
 #include <gst/video/video.h>
 
@@ -433,6 +435,36 @@ static void get_supported_video_formats (ofGstDevice &webcam_device, GstCaps &ca
 	}
 }
 
+
+// look for an error message on pipeline's message bus
+// return false on error
+// if no error found, return true
+bool checkForError( GstElement* pipeline )
+{
+	// Check if any error messages were posted on the bus
+	GstBus * bus = gst_element_get_bus (pipeline);
+	GstMessage * msg = gst_bus_poll (bus, GST_MESSAGE_ERROR, 0);
+	gst_object_unref (bus);
+
+	if (msg == NULL){
+		return true;
+	}
+	else
+   	{
+		gchar *debug;
+		GError* err = NULL;
+		gst_message_parse_error(msg, &err, &debug);
+
+		ofLog(OF_LOG_ERROR, "ofGstUtils: error getting device data; module '%s' reported: %s",
+			  gst_element_get_name(GST_MESSAGE_SRC (msg)), err->message);
+
+		g_error_free(err);
+		g_free(debug);
+
+		return false;
+	}
+}
+
 static void get_device_data (ofGstDevice &webcam_device, int desired_framerate)
 {
     string pipeline_desc = webcam_device.gstreamer_src + " name=source device=" +
@@ -455,39 +487,50 @@ static void get_device_data (ofGstDevice &webcam_device, int desired_framerate)
 	// TODO: try to lower seconds,
     // Start the pipeline and wait for max. 10 seconds for it to start up
 	gst_element_set_state (pipeline, GST_STATE_PLAYING);
+	ofLog( OF_LOG_NOTICE, "ofGstUtils: get_device_data waiting for pipeline to reach PLAYING state (10s timeout)" );
 	GstStateChangeReturn ret = gst_element_get_state (pipeline, NULL, NULL, 10 * GST_SECOND);
 
-	// Check if any error messages were posted on the bus
-	GstBus * bus = gst_element_get_bus (pipeline);
-	GstMessage * msg = gst_bus_poll (bus, GST_MESSAGE_ERROR, 0);
-	gst_object_unref (bus);
-
-	if ((msg == NULL) && (ret == GST_STATE_CHANGE_SUCCESS)){
-		gst_element_set_state (pipeline, GST_STATE_PAUSED);
-
-		GstElement *src = gst_bin_get_by_name (GST_BIN (pipeline), "source");
-		char       *name;
-		g_object_get (G_OBJECT (src), "device-name", &name, (void*)NULL);
-
-		ofLog(OF_LOG_VERBOSE, "Device: %s (%s)\n", name==NULL?"":name, webcam_device.video_device.c_str());
-		GstPad     *pad  = gst_element_get_pad (src, "src");
-		GstCaps    *caps = gst_pad_get_caps (pad);
-		gst_object_unref (pad);
-
-		get_supported_video_formats (webcam_device, *caps, desired_framerate);
-
-		gst_caps_unref (caps);
-	}else if(msg){
-		gchar *debug;
-		gst_message_parse_error(msg, &err, &debug);
-
-		ofLog(OF_LOG_ERROR, "ofGstUtils: error getting device data; module %s reported: %s",
-			  gst_element_get_name(GST_MESSAGE_SRC (msg)), err->message);
-
-		g_error_free(err);
-		g_free(debug);
+	if ( ret != GST_STATE_CHANGE_SUCCESS )
+	{
+		ofLog( OF_LOG_ERROR, "ofGstUtils: get_device_data: gst_element_get_state returned %i on trying to reach PLAYING state", ret );
 	}
+	else
+	{
+		bool success = checkForError( pipeline );
+		if ( success )
+		{
+			gst_element_set_state (pipeline, GST_STATE_PAUSED);
+
+			GstElement *src = gst_bin_get_by_name (GST_BIN (pipeline), "source");
+			char       *name;
+			g_object_get (G_OBJECT (src), "device-name", &name, (void*)NULL);
+
+			ofLog(OF_LOG_VERBOSE, "Device: %s (%s)\n", name==NULL?"":name, webcam_device.video_device.c_str());
+			GstPad     *pad  = gst_element_get_pad (src, "src");
+			GstCaps    *caps = gst_pad_get_caps (pad);
+			gst_object_unref (pad);
+
+			get_supported_video_formats (webcam_device, *caps, desired_framerate);
+
+			gst_caps_unref (caps);
+		}
+		else
+		{
+			ofLog( OF_LOG_ERROR, "ofGstUtils: get_device_data: error setting device to playing");
+		}
+	}
+
+	// shut down pipeline
 	gst_element_set_state (pipeline, GST_STATE_NULL);
+//	ofLog( OF_LOG_NOTICE, "ofGstUtils: get_device_data waiting for pipeline to reach NULL state (10s timeout)" );
+	ret = gst_element_get_state (pipeline, NULL, NULL, 10 * GST_SECOND);
+	if ( ret != GST_STATE_CHANGE_SUCCESS )
+	{
+		ofLog( OF_LOG_ERROR, "ofGstUtils: get_device_data: gst_element_get_state returned %i on trying to reach NULL state", ret );
+	}
+	else
+		ofLog( OF_LOG_NOTICE, "ofGstUtils: get_device_data: appears to have successfully reached NULL state\n");
+	// finished with this pipeline
 	gst_object_unref (pipeline);
 
 }
@@ -644,6 +687,7 @@ bool ofGstUtils::initGrabber(int w, int h, int framerate){
 	bpp = 24;
 	if(!camData.bInited) get_video_devices(camData);
 
+	gstHandleMessage();
 	if(camData.webcam_devices.size()==0){
 		ofLog(OF_LOG_ERROR,"ofGstUtils: no devices found exiting without initializing");
 		return false;
@@ -663,9 +707,7 @@ bool ofGstUtils::initGrabber(int w, int h, int framerate){
 
 
 	const char * decodebin = "";
-	if(format.mimetype == "video/x-raw-bayer")
-		decodebin = "bayer2rgb !";
-	else if(format.mimetype != "video/x-raw-yuv" && format.mimetype != "video/x-raw-rgb")
+	if(format.mimetype != "video/x-raw-yuv" && format.mimetype != "video/x-raw-rgb")
 		decodebin = "decodebin !";
 
 	const char * scale = "ffmpegcolorspace !";
@@ -689,18 +731,50 @@ bool ofGstUtils::initGrabber(int w, int h, int framerate){
 				      decodebin, scale,
 				      w,h);
 
-	ofLog(OF_LOG_NOTICE, "gstreamer pipeline: %s", pipeline_string);
+	ofLog(OF_LOG_NOTICE, "ofGstUtils::initGrabber: launching gstreamer pipeline: %s", pipeline_string);
 
 	GError * error = NULL;
 	gstPipeline = gst_parse_launch (pipeline_string, &error);
+	if ( gstPipeline != NULL && error != NULL )
+	{
+		// error but pipeline still created
+		ofLog( OF_LOG_WARNING, "ofGstUtils::initGrabber: recoverable error creating pipeline '%s': %i %s", pipeline_string, error->code, error->message );
+	}
+	if ( gstPipeline == NULL )
+	{
+		// error
+		ofLog(OF_LOG_ERROR, "ofGstUtils::initGrabber: couldn't create gstreamer pipeline '%s': %i %s\n", pipeline_string, error->code, error->message );
+		return false;
+	}
+	ofLog( OF_LOG_NOTICE, "ofGstUtils::initGrabber: pipeline appears to have launched ok" );
+
+	gstHandleMessage();
 
 	gstSink = gst_bin_get_by_name(GST_BIN(gstPipeline),"sink");
+	if ( gstSink == NULL )
+	{
+		ofLog( OF_LOG_ERROR, "ofGstUtils::initGrabber: gst_bin_get_by_name couldn't find 'sink' in pipeline");
+		return false;
+	}
 
 	gst_base_sink_set_sync(GST_BASE_SINK(gstSink), true);
 
+	gstHandleMessage();
+
+	// get current pipeline state
+	GstStateChangeReturn ret = gst_element_get_state( gstPipeline, NULL, NULL, 10*GST_SECOND );
+	ofLog( OF_LOG_VERBOSE, "ofGstUtils::initGrabber: on starting, state of pipeline is %i", ret );
+	gstHandleMessage();
 
 	if(startPipeline()){
+		ofLog(OF_LOG_NOTICE, "ofGstUtils::initGrabber: pipeline started, now trying to play");
 		play();
+		/*ofLog(OF_LOG_NOTICE, "played, waiting until ready\n");
+		// TODO: try to lower seconds,
+	    // Start the pipeline and wait for max. 10 seconds for it to start up
+		GstStateChangeReturn ret = gst_element_get_state (gstPipeline, NULL, NULL, 10 * GST_SECOND);
+		ofLog(OF_LOG_NOTICE, "ret was %i\n", ret );
+	*/
 		return true;
 	}else{
 		return false;
@@ -709,6 +783,7 @@ bool ofGstUtils::initGrabber(int w, int h, int framerate){
 
 
 bool ofGstUtils::setPipeline(string pipeline, int bpp, bool isStream, int w, int h){
+	gstHandleMessage();
 	this->bpp = bpp;
 	bHavePixelsChanged 	= false;
 	bIsStream = isStream;
@@ -733,10 +808,11 @@ bool ofGstUtils::setPipeline(string pipeline, int bpp, bool isStream, int w, int
 
 	GError * error = NULL;
 	gstPipeline = gst_parse_launch (pipeline_string, &error);
+	gstHandleMessage();
 
 	ofLog(OF_LOG_NOTICE, "gstreamer pipeline: %s", pipeline_string);
 	if(error!=NULL){
-		ofLog(OF_LOG_ERROR,"couldnt create pipeline: " + string(error->message));
+		ofLog(OF_LOG_ERROR,"couldn't create pipeline: %i %s", error->code, error->message);
 		return false;
 	}
 
@@ -753,6 +829,7 @@ bool ofGstUtils::setPipelineWithSink(string pipeline){
 	bHavePixelsChanged 	= false;
 	bIsCustomWithSink	= true;
 
+	gstHandleMessage();
 	gstData.loop		= g_main_loop_new (NULL, FALSE);
 
 	gchar* pipeline_string =
@@ -761,12 +838,14 @@ bool ofGstUtils::setPipelineWithSink(string pipeline){
 	GError * error = NULL;
 	gstPipeline = gst_parse_launch (pipeline_string, &error);
 
+	gstHandleMessage();
 	ofLog(OF_LOG_NOTICE, "gstreamer pipeline: %s", pipeline_string);
-	if(error!=NULL){
+	if(gstPipeline == NULL){
 		ofLog(OF_LOG_ERROR,"couldnt create pipeline: " + string(error->message));
 		return false;
 	}
 
+	gstHandleMessage();
 	gstSink = gst_bin_get_by_name(GST_BIN(gstPipeline),"sink");
 
 	gst_base_sink_set_sync(GST_BASE_SINK(gstSink), true);
@@ -785,14 +864,29 @@ void ofGstUtils::setFrameByFrame(bool _bFrameByFrame){
 
 bool ofGstUtils::startPipeline(){
 	gstData.pipeline=gstPipeline;
+	gstHandleMessage();
 
 	// pause the pipeline
-	if(gst_element_set_state(GST_ELEMENT(gstPipeline), GST_STATE_PAUSED) ==
-	   GST_STATE_CHANGE_FAILURE) {
-		ofLog(OF_LOG_ERROR, "GStreamer: unable to set pipeline to paused\n");
-
-		return false;
+	int times = 0;
+	GstStateChangeReturn result;
+	while(times < 8 && 
+			(result=gst_element_set_state(GST_ELEMENT(gstPipeline), GST_STATE_PAUSED)) 
+				== GST_STATE_CHANGE_FAILURE )
+	{
+		gstHandleMessage();
+		++times;
+		if ( times > 8 )
+		{
+			ofLog( OF_LOG_ERROR, "GStreamer: unable to set pipeline to PAUSED, giving up" );
+			return false;
+		}
+		ofLog(OF_LOG_WARNING, "GStreamer: unable to set pipeline to PAUSED (GST_STATE_CHANGE_FAILURE), try %i, retrying in 1s..", times);
+		ofSleepMillis(1000);
 	}
+	//ofLog( OF_LOG_VERBOSE, "GStreamer: gst_element_set_state returned %i\n", result );
+
+	gstHandleMessage();
+
 
 	bool ret = false;
 
@@ -825,6 +919,7 @@ bool ofGstUtils::startPipeline(){
 
 	setSpeed(1.0);
 
+	gstHandleMessage();
 	return ret;
 }
 
@@ -908,7 +1003,6 @@ void ofGstUtils::update(){
 	if (bLoaded == true){
 		if(!bFrameByFrame){
 			ofGstDataLock(&gstData);
-
 				bHavePixelsChanged = gstData.bHavePixelsChanged;
 				if (bHavePixelsChanged){
 					gstData.bHavePixelsChanged=false;
@@ -919,7 +1013,6 @@ void ofGstUtils::update(){
 			ofGstDataUnlock(&gstData);
 		}else{
 			GstBuffer *buffer;
-
 
 			//get the buffer from appsink
 			if(bPaused) buffer = gst_app_sink_pull_preroll (GST_APP_SINK (gstSink));
@@ -942,6 +1035,7 @@ void ofGstUtils::update(){
 
 void ofGstUtils::play(){
 	bPlaying = true;
+	gstHandleMessage();
 	setPaused(false);
 }
 
@@ -949,6 +1043,7 @@ void ofGstUtils::setPaused(bool _bPause){
 	bPaused = _bPause;
 	//timeLastIdle = ofGetElapsedTimeMillis();
 	if(bLoaded){
+		gstHandleMessage();
 		if(bPaused)
 			gst_element_set_state (gstPipeline, GST_STATE_PAUSED);
 		else
@@ -1236,6 +1331,14 @@ void ofGstUtils::gstHandleMessage(){
 
 			}break;
 
+			case GST_MESSAGE_STREAM_STATUS: {
+				GstStreamStatusType type;
+				GstElement* owner;
+				gst_message_parse_stream_status( msg, &type, &owner );
+				ofLog( OF_LOG_VERBOSE, "GStreamer: stream has new status %i", type );
+											
+			}break;
+
 			case GST_MESSAGE_EOS:
 				ofLog(OF_LOG_VERBOSE,"GStreamer: end of the stream.");
 				bIsMovieDone = true;
@@ -1291,7 +1394,7 @@ void ofGstUtils::gstHandleMessage(){
 			break;
 
 			default:
-				ofLog(OF_LOG_VERBOSE,"GStreamer: unhandled message");
+				ofLog(OF_LOG_VERBOSE,"GStreamer: unhandled '%s' message", GST_MESSAGE_TYPE_NAME(msg) );
 			break;
 		}
 		gst_message_unref(msg);
