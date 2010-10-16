@@ -8,3 +8,6 @@
 [submodule "apps/writer"]
 	path = apps/writer
 	url = git@github.com:ofTheo/Writer.git
+[submodule "addons/ofxPd"]
+	path = addons/ofxPd
+	url = git@github.com:damiannz/ofxPd.git

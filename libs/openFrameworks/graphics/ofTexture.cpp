@@ -31,7 +31,6 @@ ofTexture::ofTexture(){
 	texData.tex_u			= 0;
 
 	//Sosolimited
-	texData.useCompression	= false;
 	texData.compressionType = OF_COMPRESS_NONE;
 
 	resetAnchor();
@@ -72,8 +71,8 @@ void ofTexture::clear(){
 	// http://www.opengl.org/documentation/specs/man_pages/hardcopy/GL/html/gl/deletetextures.html
 	if (texData.textureID != 0){
 		glDeleteTextures(1, (GLuint *)&texData.textureID);
+		texData.textureID  = 0;
 	}
-
 	texData.bAllocated = false;
 }
 
@@ -242,7 +241,7 @@ void ofTexture::loadData(void * data, int w, int h, int glDataType){
 
 	
 	//Sosolimited: texture compression
-	if ((!texData.useCompression) || (texData.compressionType == OF_COMPRESS_NONE))
+	if (texData.compressionType == OF_COMPRESS_NONE)
 	{
 		//STANDARD openFrameworks: no compression
 
@@ -509,7 +508,6 @@ void ofTexture::setTextureMinMagFilter(GLint minFilter, GLint maxFilter){
 
 void ofTexture::setCompression(ofTexCompression compression){
 	texData.compressionType = compression;
-	if(compression!=OF_COMPRESS_NONE) texData.useCompression = true;
 }
 
 

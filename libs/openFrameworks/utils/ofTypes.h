@@ -229,10 +229,10 @@ class ofRectangle {
 	}
 
 	bool inside(float px, float py){
-		if( px < x && py < y && px > x + width && py > y + height ){
-		    return false;
+		if( px > x && py > y && px < x + width && py < y + height ){
+		    return true;
 		}
-		return true;
+		return false;
 	}
 
    float x;
@@ -309,48 +309,60 @@ class ofStyle{
 //----------------------------------------------------------
 
 class ofBuffer{
-public:
+
 	long 	size;
 	char * 	buffer;
+	long 	nextLinePos;
+public:
 
 	ofBuffer(){
 		size 	= 0;
 		buffer 	= NULL;
-	}
-
-	ofBuffer(const string & path){
-		readFile(path);
+		nextLinePos = 0;
 	}
 
 	ofBuffer(int _size, char * _buffer){
 		size 	= _size;
 		buffer 	= _buffer;
+		nextLinePos = 0;
 	}
 
-	bool readFile(const string & path){
-		ifstream * file = new ifstream(ofToDataPath(path,true).c_str());
-
-		if(!file || !file->is_open()){
-			size   = 0;
-			buffer = NULL;
-			ofLog(OF_LOG_ERROR, "couldn't open " + path);
-			return false;
-		}
-
-		filebuf *pbuf=file->rdbuf();
-
-		// get file size using buffer's members
-		size = (long)pbuf->pubseekoff (0,ios::end,ios::in);
-		pbuf->pubseekpos (0,ios::in);
-
-		// get file data
-		buffer = new char[size];
-		pbuf->sgetn (buffer,size);
-		return true;
+	ofBuffer(const ofBuffer & mom){
+		size = mom.size;
+		nextLinePos = mom.nextLinePos;
+		memcpy(buffer,mom.buffer,size);
 	}
 
 	~ofBuffer(){
 		if(buffer) delete[] buffer;
+	}
+
+	void allocate(long _size){
+		if(buffer) delete[] buffer;
+		buffer = new char[_size];
+		size = _size;
+	}
+
+	char * getBuffer(){
+		return buffer;
+	}
+
+	long getSize(){
+		return size;
+	}
+
+	string getNextLine(){
+		if( size <= 0 ) return "";
+		long currentLinePos = nextLinePos;
+		while(nextLinePos<size && buffer[nextLinePos]!='\n') nextLinePos++;
+		string line(buffer + currentLinePos,nextLinePos-currentLinePos);
+		if(nextLinePos<size-1) nextLinePos++;
+		return line;
+	}
+
+	string getFirstLine(){
+		nextLinePos = 0;
+		return getNextLine();
 	}
 };
 
@@ -419,7 +431,6 @@ public:
 class ofBaseVideo: public ofBaseImage, public ofBaseUpdates{
 public:
 	virtual ~ofBaseVideo(){}
-	virtual unsigned char * getPixels()=0;
 	virtual bool isFrameNew()=0;
 	virtual void close()=0;
 };

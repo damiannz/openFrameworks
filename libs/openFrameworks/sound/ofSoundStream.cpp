@@ -6,8 +6,8 @@
 #include "RtAudio.h"
 
 //----------------------------------- static variables:
-static ofBaseApp 	* 		OFSAptr;
-RtAudio				*		audio;
+static ofBaseApp 	* 		OFSAptr = NULL;
+RtAudio				*		audio = NULL;
 int 						nInputChannels;
 int 						nOutputChannels;
 ofAudioEventArgs 			audioEventArgs;
@@ -37,7 +37,7 @@ int receiveAudioBufferAndCallSimpleApp(void *outputBuffer, void *inputBuffer, un
 
 
 	if (nInputChannels > 0){
-		OFSAptr->audioReceived(fPtrIn, bufferSize, nInputChannels);
+		if(OFSAptr) OFSAptr->audioReceived(fPtrIn, bufferSize, nInputChannels);
 		#ifdef OF_USING_POCO
 			audioEventArgs.buffer = fPtrIn;
 			audioEventArgs.bufferSize = bufferSize;
@@ -49,7 +49,7 @@ int receiveAudioBufferAndCallSimpleApp(void *outputBuffer, void *inputBuffer, un
 
 
 	if (nOutputChannels > 0) {
-		OFSAptr->audioRequested(fPtrOut, bufferSize, nOutputChannels);
+		if(OFSAptr) OFSAptr->audioRequested(fPtrOut, bufferSize, nOutputChannels);
 		#ifdef OF_USING_POCO
 			audioEventArgs.buffer = fPtrOut;
 			audioEventArgs.bufferSize = bufferSize;
@@ -145,6 +145,7 @@ void ofSoundStreamStart(){
 
 //---------------------------------------------------------
 void ofSoundStreamClose(){
+	if(!audio) return;
 	try {
     	audio->stopStream();
     	audio->closeStream();
