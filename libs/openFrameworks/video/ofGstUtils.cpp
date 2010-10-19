@@ -687,7 +687,6 @@ bool ofGstUtils::initGrabber(int w, int h, int framerate){
 	bpp = 24;
 	if(!camData.bInited) get_video_devices(camData);
 
-	gstHandleMessage();
 	if(camData.webcam_devices.size()==0){
 		ofLog(OF_LOG_ERROR,"ofGstUtils: no devices found exiting without initializing");
 		return false;
