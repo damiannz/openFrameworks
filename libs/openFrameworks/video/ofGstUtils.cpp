@@ -250,7 +250,7 @@ static void get_supported_framerates (ofGstVideoFormat &video_format, GstStructu
 		framerate.numerator   = gst_value_get_fraction_numerator (framerates);
 		framerate.denominator = gst_value_get_fraction_denominator (framerates);
 		video_format.framerates.push_back(framerate);
-		ofLog(OF_LOG_NOTICE,"%d/%d ", framerate.numerator,
+		ofLog(OF_LOG_VERBOSE,"%d/%d ", framerate.numerator,
 						framerate.denominator);
 	}else if (GST_VALUE_HOLDS_LIST (framerates)){
 		int num_framerates = gst_value_list_get_size (framerates);
@@ -259,7 +259,7 @@ static void get_supported_framerates (ofGstVideoFormat &video_format, GstStructu
 			framerate.numerator   = gst_value_get_fraction_numerator (value);
 			framerate.denominator = gst_value_get_fraction_denominator (value);
 			video_format.framerates.push_back(framerate);
-			ofLog(OF_LOG_NOTICE,"%d/%d ", framerate.numerator,
+			ofLog(OF_LOG_VERBOSE,"%d/%d ", framerate.numerator,
 							framerate.denominator);
 		}
 	}else if (GST_VALUE_HOLDS_FRACTION_RANGE (framerates)){
@@ -275,7 +275,7 @@ static void get_supported_framerates (ofGstVideoFormat &video_format, GstStructu
 		numerator_max      = gst_value_get_fraction_numerator (fraction_range_max);
 		denominator_max    = gst_value_get_fraction_denominator (fraction_range_max);
 
-		ofLog(OF_LOG_NOTICE,"from %d/%d to %d/%d", numerator_min,
+		ofLog(OF_LOG_VERBOSE,"from %d/%d to %d/%d", numerator_min,
 				denominator_max, numerator_max, denominator_min);
 
 		for (int i = numerator_min; i <= numerator_max; i++){
@@ -336,7 +336,7 @@ static void add_video_format (ofGstDevice &webcam_device,
   ofGstVideoFormat &video_format, GstStructure &format_structure, int desired_framerate)
 {
 
-	ofLog(OF_LOG_NOTICE,"%s %d x %d framerates:",
+	ofLog(OF_LOG_VERBOSE,"%s %d x %d framerates:",
 				video_format.mimetype.c_str(), video_format.width,
 				video_format.height);
 	get_supported_framerates (video_format, format_structure);
@@ -465,7 +465,7 @@ bool checkForError( GstElement* pipeline )
 	}
 }
 
-static void get_device_data (ofGstDevice &webcam_device, int desired_framerate)
+void ofGstUtils::get_device_data (ofGstDevice &webcam_device, int desired_framerate)
 {
     string pipeline_desc = webcam_device.gstreamer_src + " name=source device=" +
             webcam_device.video_device + " ! fakesink";
@@ -486,11 +486,12 @@ static void get_device_data (ofGstDevice &webcam_device, int desired_framerate)
 
 	// TODO: try to lower seconds,
     // Start the pipeline and wait for max. 10 seconds for it to start up
+	gstHandleMessage( GST_PIPELINE(pipeline) );	
 	gst_element_set_state (pipeline, GST_STATE_PLAYING);
 	ofLog( OF_LOG_NOTICE, "ofGstUtils: get_device_data waiting for pipeline to reach PLAYING state (10s timeout)" );
 	GstStateChangeReturn ret = gst_element_get_state (pipeline, NULL, NULL, 10 * GST_SECOND);
 
-	if ( ret != GST_STATE_CHANGE_SUCCESS )
+	if ( ret == GST_STATE_CHANGE_FAILURE )
 	{
 		ofLog( OF_LOG_ERROR, "ofGstUtils: get_device_data: gst_element_get_state returned %i on trying to reach PLAYING state", ret );
 	}
@@ -499,6 +500,7 @@ static void get_device_data (ofGstDevice &webcam_device, int desired_framerate)
 		bool success = checkForError( pipeline );
 		if ( success )
 		{
+			gstHandleMessage( GST_PIPELINE(pipeline) );	
 			gst_element_set_state (pipeline, GST_STATE_PAUSED);
 
 			GstElement *src = gst_bin_get_by_name (GST_BIN (pipeline), "source");
@@ -519,17 +521,10 @@ static void get_device_data (ofGstDevice &webcam_device, int desired_framerate)
 			ofLog( OF_LOG_ERROR, "ofGstUtils: get_device_data: error setting device to playing");
 		}
 	}
+	ofLog( OF_LOG_NOTICE, "ofGstUtils: get_device_data: shutting down the pipeline" );
 
 	// shut down pipeline
-	gst_element_set_state (pipeline, GST_STATE_NULL);
-//	ofLog( OF_LOG_NOTICE, "ofGstUtils: get_device_data waiting for pipeline to reach NULL state (10s timeout)" );
-	ret = gst_element_get_state (pipeline, NULL, NULL, 10 * GST_SECOND);
-	if ( ret != GST_STATE_CHANGE_SUCCESS )
-	{
-		ofLog( OF_LOG_ERROR, "ofGstUtils: get_device_data: gst_element_get_state returned %i on trying to reach NULL state", ret );
-	}
-	else
-		ofLog( OF_LOG_NOTICE, "ofGstUtils: get_device_data: appears to have successfully reached NULL state\n");
+	ret = gst_element_set_state (pipeline, GST_STATE_NULL );
 	// finished with this pipeline
 	gst_object_unref (pipeline);
 
@@ -666,6 +661,7 @@ ofGstVideoFormat & ofGstUtils::selectFormat(int w, int h, int desired_framerate)
 	int minDiff=999999;
 	int mostSimilarFormat=0;
 
+
 	get_device_data (camData.webcam_devices[deviceID], desired_framerate);
 
 	for(unsigned i=0; i<camData.webcam_devices[deviceID].video_formats.size(); i++){
@@ -685,6 +681,8 @@ ofGstVideoFormat & ofGstUtils::selectFormat(int w, int h, int desired_framerate)
 
 bool ofGstUtils::initGrabber(int w, int h, int framerate){
 	bpp = 24;
+	ofLog( OF_LOG_NOTICE, "ofGstUtils::initGrabber attempting to initialise camera at %ix%i...", w, h );
+	bIsCamera = true;
 	if(!camData.bInited) get_video_devices(camData);
 
 	if(camData.webcam_devices.size()==0){
@@ -692,17 +690,24 @@ bool ofGstUtils::initGrabber(int w, int h, int framerate){
 		return false;
 	}
 
+	gstData.loop		= g_main_loop_new (NULL, FALSE);
+	
 	ofGstVideoFormat & format = selectFormat(w, h, framerate);
+	ofLog( OF_LOG_NOTICE, "ofGstUTils::initGrabber sleeping 8s" );
+	for ( int i=8; i>0; i-- )
+	{
+		usleep( 1000*1000 );
+		ofLog( OF_LOG_VERBOSE, "ofGstUtils::initGrabber %i", i-1 );
+	}
 
-	ofLog(OF_LOG_NOTICE,"ofGstUtils: selected format: " + ofToString(format.width) + "x" + ofToString(format.height) + " " + format.mimetype + " framerate: " + ofToString(format.choosen_framerate.numerator) + "/" + ofToString(format.choosen_framerate.denominator));
 
-	bIsCamera = true;
+
+	ofLog(OF_LOG_NOTICE,"ofGstUtils:initGrabber selected format: " + ofToString(format.width) + "x" + ofToString(format.height) + " " + format.mimetype + " framerate: " + ofToString(format.choosen_framerate.numerator) + "/" + ofToString(format.choosen_framerate.denominator));
+
 	bHavePixelsChanged 	= false;
 
 	width = w;
 	height = h;
-
-	gstData.loop		= g_main_loop_new (NULL, FALSE);
 
 
 	const char * decodebin = "";
@@ -745,7 +750,7 @@ bool ofGstUtils::initGrabber(int w, int h, int framerate){
 		ofLog(OF_LOG_ERROR, "ofGstUtils::initGrabber: couldn't create gstreamer pipeline '%s': %i %s\n", pipeline_string, error->code, error->message );
 		return false;
 	}
-	ofLog( OF_LOG_NOTICE, "ofGstUtils::initGrabber: pipeline appears to have launched ok" );
+	ofLog( OF_LOG_NOTICE, "ofGstUtils::initGrabber: pipeline launch string parsed ok" );
 
 	gstHandleMessage();
 
@@ -761,10 +766,12 @@ bool ofGstUtils::initGrabber(int w, int h, int framerate){
 	gstHandleMessage();
 
 	// get current pipeline state
-	GstStateChangeReturn ret = gst_element_get_state( gstPipeline, NULL, NULL, 10*GST_SECOND );
-	ofLog( OF_LOG_VERBOSE, "ofGstUtils::initGrabber: on starting, state of pipeline is %i", ret );
+	GstState current_state, pending_state;
+	GstStateChangeReturn ret = gst_element_get_state( gstPipeline, &current_state, &pending_state, 10*GST_SECOND );
+	ofLog( OF_LOG_VERBOSE, "ofGstUtils::initGrabber: on starting, state of pipeline is %i, pending %i, ret %i", current_state, pending_state, ret );
 	gstHandleMessage();
 
+	ofLog( OF_LOG_VERBOSE, "ofGstUtils::initGrabber: now calling startPipeline()");
 	if(startPipeline()){
 		ofLog(OF_LOG_NOTICE, "ofGstUtils::initGrabber: pipeline started, now trying to play");
 		play();
@@ -774,6 +781,7 @@ bool ofGstUtils::initGrabber(int w, int h, int framerate){
 		GstStateChangeReturn ret = gst_element_get_state (gstPipeline, NULL, NULL, 10 * GST_SECOND);
 		ofLog(OF_LOG_NOTICE, "ret was %i\n", ret );
 	*/
+		ofLog( OF_LOG_NOTICE, "ofGstUtils::initGrabber initialised camera successfully" );
 		return true;
 	}else{
 		return false;
@@ -864,10 +872,21 @@ void ofGstUtils::setFrameByFrame(bool _bFrameByFrame){
 bool ofGstUtils::startPipeline(){
 	gstData.pipeline=gstPipeline;
 	gstHandleMessage();
+	
+	{
+		GstState current_state;
+		GstState pending_state;
+		GstStateChangeReturn ret = gst_element_get_state (gstPipeline, &current_state, &pending_state, 10 * GST_SECOND);
+		ofLog( OF_LOG_VERBOSE, "ofGstUtils::startPipeline(): on entry, current state %i, pending %i, ret %i\n", current_state, pending_state, ret );
+	}
 
 	// pause the pipeline
 	int times = 0;
 	GstStateChangeReturn result;
+	ofLog( OF_LOG_VERBOSE, "ofGstUtils::startPipeline() setting pipeline to READY" );
+	result = gst_element_set_state( gstPipeline, GST_STATE_READY );
+	gstHandleMessage();
+	ofLog( OF_LOG_VERBOSE, "ofGstUtils::startPipeline() result %i, now setting pipeline to PAUSED", result );
 	while(times < 8 && 
 			(result=gst_element_set_state(GST_ELEMENT(gstPipeline), GST_STATE_PAUSED)) 
 				== GST_STATE_CHANGE_FAILURE )
@@ -882,8 +901,12 @@ bool ofGstUtils::startPipeline(){
 		ofLog(OF_LOG_WARNING, "GStreamer: unable to set pipeline to PAUSED (GST_STATE_CHANGE_FAILURE), try %i, retrying in 1s..", times);
 		ofSleepMillis(1000);
 	}
-	//ofLog( OF_LOG_VERBOSE, "GStreamer: gst_element_set_state returned %i\n", result );
+	ofLog( OF_LOG_VERBOSE, "GStreamer: gst_element_set_state returned %i", result );
 
+	GstState current_state, pending_state;
+	result = gst_element_get_state( gstPipeline, &current_state, &pending_state, result );
+	ofLog( OF_LOG_VERBOSE, "ofGstUtils::startPipeline() current state %i, pending %i, result %i", current_state, pending_state, result );
+	
 	gstHandleMessage();
 
 
@@ -1044,9 +1067,23 @@ void ofGstUtils::setPaused(bool _bPause){
 	if(bLoaded){
 		gstHandleMessage();
 		if(bPaused)
+		{
 			gst_element_set_state (gstPipeline, GST_STATE_PAUSED);
+		}
 		else
-			gst_element_set_state (gstPipeline, GST_STATE_PLAYING);
+		{
+			GstStateChangeReturn ret;
+			ret = gst_element_set_state (gstPipeline, GST_STATE_PLAYING);
+			if ( ret == GST_STATE_CHANGE_FAILURE )
+				ofLog( OF_LOG_ERROR, "ofGstUtils::setPaused() couldn't set to GST_STATE_PLAYING (GST_STATE_CHANGE_FAILURE)");
+			else if (bIsCamera)
+			{
+				ofLog( OF_LOG_NOTICE, "ofGstUtils: setPaused() set result %i, now waiting for pipeline to reach PLAYING state (10s timeout)", ret );
+				ret = gst_element_get_state (gstPipeline, NULL, NULL, 10 * GST_SECOND);
+				ofLog( OF_LOG_NOTICE, "ofGstUtils: setPaused() (get result %i)", ret );
+				gstHandleMessage();	
+			}
+		}
 	}
 }
 
@@ -1258,8 +1295,10 @@ string getName(GstState state){
 
 }
 
-void ofGstUtils::gstHandleMessage(){
-	GstBus *bus = gst_pipeline_get_bus(GST_PIPELINE(gstPipeline));
+void ofGstUtils::gstHandleMessage( GstPipeline* pipeline ){
+	if ( pipeline == NULL )
+		pipeline = GST_PIPELINE(gstPipeline);
+	GstBus *bus = gst_pipeline_get_bus( pipeline );
 	while(gst_bus_have_pending(bus)) {
 		GstMessage* msg = gst_bus_pop(bus);
 
