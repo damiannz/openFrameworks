@@ -101,7 +101,8 @@ public:
 protected:
 	void                seek_lock();
 	void                seek_unlock();
-	void 				gstHandleMessage();
+	/// handle messages. if pipeline==NULL use the member gstPipeline.
+	void 				gstHandleMessage( GstPipeline* pipeline=NULL );
 	bool 				allocate();
 	bool				startPipeline();
 	ofGstVideoFormat&	selectFormat(int w, int h, int desired_framerate);
@@ -149,6 +150,10 @@ protected:
 
 	//camera only
 	int					deviceID;
+
+
+	void		 		get_device_data( ofGstDevice &webcam_device, int desired_framerate);
+
 
 };
 
