@@ -33,10 +33,29 @@
         // Create default framebuffer object. The backing will be allocated for the current layer in -resizeFromLayer
         glGenFramebuffersOES(1, &defaultFramebuffer);
         glGenRenderbuffersOES(1, &colorRenderbuffer);
+<<<<<<< HEAD
+		glGenRenderbuffersOES(1, &depthRenderbuffer);
+=======
+		
+>>>>>>> upstream/master
         glBindFramebufferOES(GL_FRAMEBUFFER_OES, defaultFramebuffer);
         glBindRenderbufferOES(GL_RENDERBUFFER_OES, colorRenderbuffer);
 
         glFramebufferRenderbufferOES(GL_FRAMEBUFFER_OES, GL_COLOR_ATTACHMENT0_OES, GL_RENDERBUFFER_OES, colorRenderbuffer);
+<<<<<<< HEAD
+
+		// depth
+		glGenRenderbuffersOES(1, &depthRenderbuffer);
+		glBindRenderbufferOES(GL_RENDERBUFFER_OES, depthRenderbuffer);
+		glFramebufferRenderbufferOES(GL_FRAMEBUFFER_OES, 
+									 GL_DEPTH_ATTACHMENT_OES, 
+									 GL_RENDERBUFFER_OES, 
+									 depthRenderbuffer);
+		
+		// back to color
+        glBindRenderbufferOES(GL_RENDERBUFFER_OES, colorRenderbuffer);
+
+=======
 		
 		const GLubyte * extensions = glGetString(GL_EXTENSIONS);
 		if(extensions != NULL && fsaa)
@@ -49,6 +68,7 @@
 			glGenRenderbuffersOES(1, &fsaaColorRenderBuffer);
 		}
 		
+>>>>>>> upstream/master
 	}
 
     return self;
@@ -71,6 +91,10 @@
 
 - (void)finishRender
 {
+<<<<<<< HEAD
+    // This call is needed because we are dealing with multiple renderbuffers.
+    glBindRenderbufferOES(GL_RENDERBUFFER_OES, colorRenderbuffer);
+=======
     // This application only creates a single color renderbuffer which is already bound at this point.
     // This call is redundant, but needed if dealing with multiple renderbuffers.
 //    glBindRenderbufferOES(GL_RENDERBUFFER_OES, colorRenderbuffer);
@@ -93,6 +117,7 @@
 		}
 	}
 	
+>>>>>>> upstream/master
     [context presentRenderbuffer:GL_RENDERBUFFER_OES];
 	
 	if(fsaaEnabled)
@@ -108,6 +133,14 @@
     glGetRenderbufferParameterivOES(GL_RENDERBUFFER_OES, GL_RENDERBUFFER_WIDTH_OES, &backingWidth);
     glGetRenderbufferParameterivOES(GL_RENDERBUFFER_OES, GL_RENDERBUFFER_HEIGHT_OES, &backingHeight);
 
+<<<<<<< HEAD
+	// depth
+    glBindRenderbufferOES(GL_RENDERBUFFER_OES, depthRenderbuffer);
+    glRenderbufferStorageOES(GL_RENDERBUFFER_OES, 
+                             GL_DEPTH_COMPONENT16_OES, 
+                             backingWidth, backingHeight);
+
+=======
 	if(fsaaEnabled)
 	{
 		glBindFramebufferOES(GL_FRAMEBUFFER_OES, fsaaFrameBuffer);
@@ -138,6 +171,7 @@
 	
 	glBindRenderbufferOES(GL_RENDERBUFFER_OES, colorRenderbuffer);
 	
+>>>>>>> upstream/master
     if (glCheckFramebufferStatusOES(GL_FRAMEBUFFER_OES) != GL_FRAMEBUFFER_COMPLETE_OES)
     {
         NSLog(@"Failed to make complete framebuffer object %x %ix%i", glCheckFramebufferStatusOES(GL_FRAMEBUFFER_OES), backingWidth, backingHeight);
@@ -162,8 +196,16 @@
         colorRenderbuffer = 0;
     }
 
-	if (depthRenderbuffer) {
+<<<<<<< HEAD
+	if (depthRenderbuffer)
+	{
 		glDeleteRenderbuffersOES(1,&depthRenderbuffer);
+		depthRenderbuffer = 0;
+	}
+	
+=======
+	if(depthRenderbuffer) {
+		glDeleteRenderbuffersOES(1, &depthRenderbuffer);
 		depthRenderbuffer = 0;
 	}
 	
@@ -177,6 +219,7 @@
 		fsaaColorRenderBuffer = 0;
 	}
 	
+>>>>>>> upstream/master
     // Tear down context
     if ([EAGLContext currentContext] == context)
         [EAGLContext setCurrentContext:nil];

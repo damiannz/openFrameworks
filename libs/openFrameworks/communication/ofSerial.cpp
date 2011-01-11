@@ -6,11 +6,6 @@
 #endif
 
 
-#if defined TARGET_OSX  || defined TARGET_LINUX
-#include <sys/ioctl.h>
-#endif
-
-
 
 //---------------------------------------------
 #ifdef TARGET_WIN32
