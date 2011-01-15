@@ -24,7 +24,15 @@ ofVbo::ofVbo() {
 	colorUsage		 = -1;
 	normUsage		 = -1;
 	texUsage		 = -1;
+	
+	vertId = 0;
+	indexId = 0;
+	normalId = 0;
+	texCoordId = 0;
+	colorId = 0;
+	
 }
+
 
 //--------------------------------------------------------------
 ofVbo::~ofVbo(){
@@ -198,13 +206,18 @@ void ofVbo::draw(int amt, int drawMode) {
 
 //--------------------------------------------------------------
 void ofVbo::clear(){
-	glDeleteBuffers(1, &vertId);
-	glDeleteBuffers(1, &indexId);
-	glDeleteBuffers(1, &normalId);
-	glDeleteBuffers(1, &colorId);
-	glDeleteBuffers(1, &texCoordId);
+	if ( vertId )
+		glDeleteBuffers(1, &vertId);
+	if ( indexId )
+		glDeleteBuffers(1, &indexId);
+	if ( normalId )
+		glDeleteBuffers(1, &normalId);
+	if ( colorId )
+		glDeleteBuffers(1, &colorId);
+	if ( texCoordId )
+		glDeleteBuffers(1, &texCoordId);
 	
-	indexId = 0;
+	vertId = 0;
 	indexId = 0;
 	normalId = 0;
 	texCoordId = 0;
