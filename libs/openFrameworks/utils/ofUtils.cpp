@@ -3,6 +3,7 @@
 #include "ofTypes.h"
 #include "ofGraphics.h"
 #include "Poco/String.h"
+#include "Poco/StringTokenizer.h"
 #include "ofAppRunner.h"
 
 #include <Poco/LocalDateTime.h>
@@ -69,7 +70,7 @@ unsigned long ofGetSystemTime( ) {
 
 //--------------------------------------------------
 unsigned int ofGetUnixTime(){
-	return (unsigned int)time;
+	return (unsigned int)time(NULL);
 }
 
 //default ofGetTimestampString returns in this format: 2011-01-15-18-29-35-299
@@ -246,10 +247,6 @@ string ofToDataPath(string path, bool makeAbsolute){
 	return path;
 }
 
-ofGetDataPath(){
-
-}
-
 //----------------------------------------
 template <>
 string ofToHex(const string& value) {
@@ -415,23 +412,30 @@ string ofBinaryToString(const string& value) {
 }
 
 //--------------------------------------------------
-vector <string> ofSplitString(const string& str, const string& delimiter = " "){
-    vector<string> elements;
-	// Skip delimiters at beginning.
-    string::size_type lastPos = str.find_first_not_of(delimiter, 0);
-    // Find first "non-delimiter".
-    string::size_type pos     = str.find_first_of(delimiter, lastPos);
-
-    while (string::npos != pos || string::npos != lastPos)
-    {
-        // Found a token, add it to the vector.
-    	elements.push_back(str.substr(lastPos, pos - lastPos));
-        // Skip delimiters.  Note the "not_of"
-        lastPos = str.find_first_not_of(delimiter, pos);
-        // Find next "non-delimiter"
-        pos = str.find_first_of(delimiter, lastPos);
-    }
-    return elements;
+vector <string> ofSplitString(const string & source, const string & delimiters, bool ignoreEmpty, bool trim) {
+	using namespace Poco;
+	
+	int flags = 0;
+	if(ignoreEmpty) {
+		flags |= StringTokenizer::TOK_IGNORE_EMPTY;
+	}
+	if(trim) {
+		flags |= StringTokenizer::TOK_TRIM;
+	}
+	
+	// tokenize the sring using poco
+	StringTokenizer tokens(source, delimiters, flags);
+	vector<string> result;
+	result.assign(tokens.begin(), tokens.end());
+	
+	// poco ignores trailing delimiters, which is inconsistent with everything else
+	string lastCharacter;
+	lastCharacter += source[source.size() - 1];
+	if(ofIsStringInString(delimiters, lastCharacter)) {
+		result.push_back("");
+	}
+	
+	return result;
 }
 
 //--------------------------------------------------
@@ -442,6 +446,8 @@ string ofJoinString(vector <string> stringElements, const string & delimiter){
 	for(int k = 0; k < numElements; k++){
 		if( k < numElements-1 ){
 			resultString += stringElements[k] + delimiter;
+		} else {
+			resultString += stringElements[k];
 		}
 	}
 	
