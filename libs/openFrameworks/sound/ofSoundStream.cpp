@@ -69,7 +69,7 @@ vector<ofSoundSource*> ofSoundStreamGetAllSoundSources() {
 }
 
 
-long unsigned long ofSoundStreamGetCurrentTick() {
+unsigned long ofSoundStreamGetCurrentTick() {
 	return tickCount;
 }
 

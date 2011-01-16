@@ -164,7 +164,11 @@ void ofSoundMixer::audioRequested( float* output, int numFrames, int numChannels
 	mutex.lock();
 	
 	// allocate working space
-	float working[numFrames*numChannels];
+	if ( !working ) {
+		working = new float[numFrames*numChannels];
+	}
+	vector<float> volumePerChannel;
+	volumePerChannel.resize( numChannels );
 	for ( int i=0; i<(int)inputs.size(); i++ )
 	{
 		// clear working
@@ -174,16 +178,13 @@ void ofSoundMixer::audioRequested( float* output, int numFrames, int numChannels
 		inputs[i].input->audioRequested( working, numFrames, numChannels );
 		
 		// construct precalculated volume + pan array (for efficiency)
-		float volumePerChannel[numChannels];
 		float vol_l = inputs[i].volume*(1.0f-inputs[i].pan);
 		float vol_r = inputs[i].volume*inputs[i].pan;
-		for ( int j=0; j<numChannels; j++ )
-		{
+		for ( int j=0; j<numChannels; j++ ) {
 			volumePerChannel[j] = (j==0?vol_l:vol_r);
 		}
 		// mix working into output, respecting pan and volume and preserving interleaving
-		for ( int j=0; j<numFrames*numChannels; j++ )
-		{
+		for ( int j=0; j<numFrames*numChannels; j++ ) {
 			output[j] += working[j]*volumePerChannel[i%numChannels];
 		}
 	}
@@ -211,6 +212,7 @@ bool ofSoundMixer::addInputFrom( ofSoundSource* source )
 	inputs.push_back( MixerInput( source, 1.0f, 0.5f ) );
 	source->setSampleRate( sampleRate );
 	mutex.unlock();
+	
 	return true;
 }
 
@@ -219,8 +221,7 @@ vector<ofSoundSource*> ofSoundMixer::getInputs()
 {
 	vector<ofSoundSource*> result;
 	mutex.lock();
-	for ( int i =0; i<(int)inputs.size(); i++ )
-	{
+	for ( int i =0; i<(int)inputs.size(); i++ ) {
 		result.push_back( inputs[i].input );
 	}
 	mutex.unlock();
@@ -231,8 +232,7 @@ vector<ofSoundSource*> ofSoundMixer::getInputs()
 void ofSoundMixer::setSampleRate( int rate )
 {
 	mutex.lock();
-	for ( int i =0; i<(int)inputs.size(); i++ )
-	{
+	for ( int i =0; i<(int)inputs.size(); i++ ) {
 		inputs[i].input->setSampleRate( rate );
 	}
 	mutex.unlock();
@@ -311,7 +311,7 @@ void ofSoundSinkMicrophone::audioRequested( float* output, int numFrames, int nu
 
 
 void ofSoundSourceMultiplexor::audioRequested( float* output, int numFrames, int numChannels ) {
-	long unsigned long tick = ofSoundStreamGetCurrentTick();
+	unsigned long tick = ofSoundStreamGetCurrentTick();
 	
 	// new tick: render upstream into input buffer
 	if ( tick != lastRenderedTick ) {

@@ -28,6 +28,7 @@ using namespace std;
 class ofSoundEffect: public ofSoundSource, public ofSoundSink
 {
 public:
+	virtual ~ofSoundEffect() {};
 	
 	/// Pass sample rate changes through; if your override this remember to call base.
 	void setSampleRate( int rate );

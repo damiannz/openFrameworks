@@ -23,7 +23,7 @@ void ofSoundStreamRemoveSoundSink( ofSoundSink* sink );
 vector<ofSoundSource*> ofSoundStreamGetAllSoundSources();
 
 /// Return the current tick count
-long unsigned long ofSoundStreamGetCurrentTick();
+unsigned long ofSoundStreamGetCurrentTick();
 
 void ofSoundStreamStop();
 void ofSoundStreamStart();

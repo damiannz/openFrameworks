@@ -28,6 +28,7 @@ class ofSoundSource;
 class ofSoundUnit
 {
 public:	
+	virtual ~ofSoundUnit() {};
 	
 	/// Return the name of this synth unit.
 	virtual string getName() = 0;
@@ -54,6 +55,7 @@ protected:
 class ofSoundSource: public virtual ofSoundUnit
 {
 public:
+	virtual ~ofSoundSource() {};
 
 	/// Set the sample rate. If you need to know about sample rate changes, override this function.
 	virtual void setSampleRate( int rate ) {};
@@ -205,6 +207,9 @@ protected:
 class ofSoundMixer : public ofSoundSink, public ofSoundSource
 {
 public:	
+	ofSoundMixer() { working = NULL; }
+	~ofSoundMixer() { if ( working ) delete[] working; }
+	
 	string getName() { return "ofSoundMixer"; }
 	
 	/// Set the volume of the mixer input for the given unit to vol.
@@ -226,13 +231,14 @@ private:
 	
 	
 	// Inputs into the mixer, with volume and pan
-	struct MixerInput
+	class MixerInput
 	{
+	public:
 		ofSoundSource* input;
 		ofSoundBuffer inputBuffer;
 		float volume;
 		float pan;
-		MixerInput( ofSoundSource* i, float v, float p )
+		MixerInput( ofSoundSource* i, float v, float p ) : inputBuffer()
 		{
 			input = i;
 			volume = v; 
@@ -240,6 +246,8 @@ private:
 		}
 	};
 	vector<MixerInput> inputs;
+	
+	float* working;
 	
 };
 
@@ -375,7 +383,7 @@ private:
  @author damian
  */
 
-static const string OF_SOUND_SOURCE_MULTIPLEXOR_NAME = "ofSoundSourceMultiplexor";
+static const char* OF_SOUND_SOURCE_MULTIPLEXOR_NAME = "ofSoundSourceMultiplexor";
 
 class ofSoundSourceMultiplexor: public ofSoundSink, public ofSoundSource
 {
@@ -392,6 +400,6 @@ public:
 	
 private:
 	
-	long unsigned long lastRenderedTick;
+	unsigned long lastRenderedTick;
 	
 };
