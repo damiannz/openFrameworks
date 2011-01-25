@@ -3,35 +3,26 @@
 //--------------------------------------------------------------
 void testApp::setup(){
 	
-    ofSetLogLevel(OF_LOG_VERBOSE);
-    
-    // we need GL_TEXTURE_2D for our models coords.
-    ofDisableArbTex();
-    //ofSetVerticalSync(true);
-	
-    //model.loadModel("astroBoy_walk.dae");
-	
+	ofSetLogLevel(OF_LOG_VERBOSE);
     model.loadMeshes("astroBoy_walk.dae",meshes);
 
-    //model.loadModel("astroBoy_walk.dae");
-    //model.loadModel("rally.obj");
-    //model.loadModel("CARGT.3DS");
-    //model.loadModel("Poseidon_compiled.OBJ");
+	for(int i =0; i < meshes.size();i++){
+		vboMeshes.push_back(ofVboMesh());
+		vboMeshes.back().meshElement = &meshes[i];
+	}
 	
     ofEnableBlendMode(OF_BLENDMODE_ALPHA);
     
     glEnable(GL_DEPTH_TEST);
-    
-    //some model / light stuff
-	/*
-    glShadeModel(GL_SMOOTH);
-    glEnable(GL_LIGHTING);
-    glEnable(GL_LIGHT0);
-	 */
+	
+	whichMesh = 0;
+	
+	glPointSize(3);
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
+
 }
 
 //--------------------------------------------------------------
@@ -43,23 +34,32 @@ void testApp::draw(){
     glPushMatrix();
 
 	glScalef(30,30,30);
-	glTranslatef(17,0,0);
+	glTranslatef(17,20,0);
+	glRotatef(180,0,0,1);
+	glRotatef(ofGetWidth()*.5 - mouseX,0,1,0);		
 
-	for (int i =0; i < meshes.size();i++){
-		meshes[i].drawWireframe();
-		/*
-		for (int j=0; j<meshes[i].mesh->vertices.size(); j++){
-			glVertex3f(meshes[i].mesh->vertices[j].x,meshes[i].mesh->vertices[j].y,meshes[i].mesh->vertices[j].z);
-		}
-		 */
+	for (int i =0; i < vboMeshes.size(); i++){
+		ofSetColor(i*255.0/(vboMeshes.size()-1),0,255 - i*255.0/(vboMeshes.size()-1));
+		vboMeshes[i].drawFaces();
+
+		ofSetColor(120,i*255.0/(vboMeshes.size()-1),i*255.0/(vboMeshes.size()-1));
+		vboMeshes[i].drawVertices();
+
+		ofSetColor(i*255.0/(vboMeshes.size()-1),i*255.0/(vboMeshes.size()-1),0);
+		vboMeshes[i].drawWireframe();
 	}
 
     glPopMatrix();
     
-    ofDrawBitmapString("fps: "+ofToString(ofGetFrameRate(), 2), 10, 15);}
+    ofDrawBitmapString("fps: "+ofToString(ofGetFrameRate(), 2), 10, 15);
+}
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
+	if(key= ' ') {
+		whichMesh++;
+		whichMesh%=meshes.size();
+	}
 }
 
 //--------------------------------------------------------------

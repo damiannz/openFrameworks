@@ -1,20 +1,40 @@
+//Keith Pasko, Memo Akten
+
 #pragma once
 
-#include "ofMesh.h"
+#include "ofMeshElement.h"
 #include "ofVbo.h"
+
+//TODO:
+// vector of VBOs, 2 per element
+
+//enum for drawing mode status
+enum{
+	OF_MESH_POINTS,
+	OF_MESH_WIREFRAME,
+	OF_MESH_FILL
+};
+
 
 class ofVboMesh{
 public:
 	ofVboMesh();
 	~ofVboMesh();
 	
-	void setMesh(ofMesh* m);
+	ofVboMesh(const ofVboMesh& v);
+	ofVboMesh& operator=(const ofVboMesh& v);
+	void clone(const ofVboMesh& v);
 	
-	ofMesh* getMesh();
+	void setMeshElement(ofMeshElement* m);
 	
-	void setupVertices(int usage);
-	void setupColors(int usage);
-	void setupIndices();
+	ofMeshElement* getMeshElement();
+	ofMeshElement* getMeshElement() const;
+	
+	bool setupVertices(int usage);
+	bool setupColors(int usage);
+	bool setupNormals(int usage);
+	bool setupTexCoords(int usage);
+	bool setupIndices(int indexMode);
 	
 //	void setupNormals(int usage);
 //	void setupTextures(int usage);
@@ -27,12 +47,10 @@ public:
 	void addTriangleFan(const vector<ofVec3f>& verts);
 	void addTriangleStrip(const vector<ofVec3f>& verts);
 	
-	// build index array from faces as int* 
-	vector<int> indices;
+	void addMeshVertices(const vector<ofVec3f>& verts);
 	
-	//TODO: wrapper classes for ofMesh, so we don't have to use ->
 	//TODO: update methods, generic update
 	
-    ofMesh* mesh;
+    ofMeshElement* meshElement;
 	ofVbo vbo;
 };
