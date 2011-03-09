@@ -3,33 +3,57 @@
 //--------------------------------------------------------------
 void testApp::setup(){
 	
-	ofSetLogLevel(OF_LOG_VERBOSE);
-    model.loadMeshes("astroBoy_walk.dae",meshes);
-
-	for(int i =0; i < meshes.size();i++){
-		vboMeshes.push_back(ofVboMesh());
-		vboMeshes.back().meshElement = &meshes[i];
-	}
+//	ofSetLogLevel(OF_LOG_VERBOSE);
+    ofLoadModel("astroBoy_walk.dae", model);
+	model.setRenderMethod(OF_MESH_USING_VBO);
 	
-    ofEnableBlendMode(OF_BLENDMODE_ALPHA);
-    
+	ofEnableNormalizedTexCoords();
+	model.enableTextures();
+	model.enableNormals();
+	
     glEnable(GL_DEPTH_TEST);
 	
-	whichMesh = 0;
-	
-	glPointSize(3);
+	lightsOn = true;
+	wiggleModel = false;
+	glEnable(GL_SMOOTH);
+	glEnable(GL_POINT_SMOOTH);
+	glPointSize(4);
+	glEnable(GL_LIGHTING);
+	glEnable(GL_LIGHT0);
+	glEnable(GL_COLOR_MATERIAL);
+	glEnable(GL_NORMALIZE);
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
-
+	/*
+	if(wiggleModel){
+		for (int i =0; i < (int)model.meshes.size();i++){
+			for (int j=0; j<model.meshes[i].vertexData->getNumVertices();j++){
+				ofVec3f curVert = model.meshes[i].vertexData->getVertex(j);
+				float phi = .006*ofGetFrameNum() + .05*PI*curVert.x;
+				float theta = .009*ofGetFrameNum() + .15*PI*curVert.x;
+				ofVec3f modVert = .01*ofVec3f(0,sin(theta)*sin(phi),0);
+				model.meshes[i].vertexData->setVertex(j,curVert+modVert);
+			}
+		}
+		
+		for (int i =0; i < (int)model.meshes.size();i++){
+			for (int j=0; j<model.meshes[i].vertexData->getNumTexCoords();j++){
+				ofVec3f curVert = model.meshes[i].vertexData->getTexCoord(j);
+				float theta = .002*ofGetFrameNum();
+				ofVec2f modVert = .001*ofVec3f(cos(theta),sin(theta));
+				model.meshes[i].vertexData->setTexCoord(j,curVert+modVert);
+			}
+		}
+	}
+	*/
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
+	lightsOn ? glEnable(GL_LIGHTING) : glDisable(GL_LIGHTING);
 	ofBackground(50, 50, 50, 0);
-	
-    ofSetColor(255, 0, 255, 255);
     
     glPushMatrix();
 
@@ -38,27 +62,32 @@ void testApp::draw(){
 	glRotatef(180,0,0,1);
 	glRotatef(ofGetWidth()*.5 - mouseX,0,1,0);		
 
-	for (int i =0; i < vboMeshes.size(); i++){
-		ofSetColor(i*255.0/(vboMeshes.size()-1),0,255 - i*255.0/(vboMeshes.size()-1));
-		vboMeshes[i].drawFaces();
+	ofSetColor(255,255,255);
+	model.drawFaces();
 
-		ofSetColor(120,i*255.0/(vboMeshes.size()-1),i*255.0/(vboMeshes.size()-1));
-		vboMeshes[i].drawVertices();
-
-		ofSetColor(i*255.0/(vboMeshes.size()-1),i*255.0/(vboMeshes.size()-1),0);
-		vboMeshes[i].drawWireframe();
+	glPointSize(20);
+	glDisable(GL_LIGHTING);
+	ofFill();
+	
+	for (int i =0; i < model.meshNodes.size();i++){
+		model.meshNodes.at(i).transformGL();
+		ofDrawAxis(0.1);
+		model.meshNodes.at(i).restoreTransformGL();
 	}
 
     glPopMatrix();
     
-    ofDrawBitmapString("fps: "+ofToString(ofGetFrameRate(), 2), 10, 15);
+	ofSetColor(255, 255, 255, 255);
+    ofDrawBitmapString("fps: "+ofToString(ofGetFrameRate(), 2), 10, 15,0);
 }
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
-	if(key= ' ') {
-		whichMesh++;
-		whichMesh%=meshes.size();
+	if(key== ' ') {
+		lightsOn = !lightsOn;
+	}
+	if (key == 'w'){
+		wiggleModel = !wiggleModel;
 	}
 }
 

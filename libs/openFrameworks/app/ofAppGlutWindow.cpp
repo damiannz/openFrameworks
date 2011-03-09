@@ -1,7 +1,10 @@
 #include "ofAppGlutWindow.h"
 #include "ofBaseApp.h"
-#include "ofMain.h"
 #include "ofEvents.h"
+#include "ofUtils.h"
+#include "ofGraphics.h"
+#include "ofAppRunner.h"
+#include "ofConstants.h"
 
 #ifdef TARGET_WIN32
 	#define GLUT_BUILDING_LIB
@@ -9,6 +12,7 @@
 #endif
 #ifdef TARGET_OSX
 	#include "../../../libs/glut/lib/osx/GLUT.framework/Versions/A/Headers/glut.h"
+	#include <Carbon/Carbon.h>
 #endif
 #ifdef TARGET_LINUX
 	#include <GL/glut.h>
@@ -43,6 +47,7 @@ static int			windowW;
 static int			windowH;
 static ofBaseApp *	ofAppPtr;
 static int          nFramesSinceWindowResized;
+static ofOrientation	orientation;
 
 #ifdef TARGET_WIN32
 
@@ -186,6 +191,7 @@ ofAppGlutWindow::ofAppGlutWindow(){
 	nonFullScreenY		= -1;
 	lastFrameTime		= 0.0;
 	displayString		= "";
+	orientation			= OF_ORIENTATION_DEFAULT;
 
 }
 
@@ -340,6 +346,32 @@ ofPoint ofAppGlutWindow::getScreenSize(){
 }
 
 //------------------------------------------------------------
+int ofAppGlutWindow::getWidth(){
+	if( orientation == OF_ORIENTATION_DEFAULT || orientation == OF_ORIENTATION_180 ){
+		return windowW;
+	}
+	return windowH;
+}
+
+//------------------------------------------------------------
+int ofAppGlutWindow::getHeight(){
+	if( orientation == OF_ORIENTATION_DEFAULT || orientation == OF_ORIENTATION_180 ){
+		return windowH;
+	}
+	return windowW;	
+}
+
+//------------------------------------------------------------
+void ofAppGlutWindow::setOrientation(ofOrientation orientationIn){
+	orientation = orientationIn;
+}
+
+//------------------------------------------------------------
+ofOrientation ofAppGlutWindow::getOrientation(){
+	return orientation;
+}
+
+//------------------------------------------------------------
 void ofAppGlutWindow::setWindowPosition(int x, int y){
 	glutPositionWindow(x,y);
 }
@@ -471,14 +503,8 @@ void ofAppGlutWindow::display(void){
 		}
 	}
 
-	int width, height;
-
-	width  = ofGetWidth();
-	height = ofGetHeight();
-
-	height = height > 0 ? height : 1;
 	// set viewport, clear the screen
-	ofViewport(0, 0, width, height );		// used to be glViewport( 0, 0, width, height );
+	ofViewport(0, 0, glutGet(GLUT_WINDOW_WIDTH), glutGet(GLUT_WINDOW_HEIGHT));		// used to be glViewport( 0, 0, width, height );
 	float * bgPtr = ofBgColorPtr();
 	bool bClearAuto = ofbClearBg();
 
@@ -492,8 +518,7 @@ void ofAppGlutWindow::display(void){
     #endif
 
 	if ( bClearAuto == true || nFrameCount < 3){
-		glClearColor(bgPtr[0],bgPtr[1],bgPtr[2], bgPtr[3]);
-		glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+		ofClear(bgPtr[0]*255,bgPtr[1]*255,bgPtr[2]*255, bgPtr[3]*255);
 	}
 
 	if( bEnableSetupScreen )ofSetupScreen();
@@ -505,8 +530,7 @@ void ofAppGlutWindow::display(void){
         // on a PC resizing a window with this method of accumulation (essentially single buffering)
         // is BAD, so we clear on resize events.
         if (nFramesSinceWindowResized < 3){
-            glClearColor(bgPtr[0],bgPtr[1],bgPtr[2], bgPtr[3]);
-            glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        	ofClear(bgPtr[0]*255,bgPtr[1]*255,bgPtr[2]*255, bgPtr[3]*255);
         } else {
             if (nFrameCount < 3 || nFramesSinceWindowResized < 3)    glutSwapBuffers();
             else                                                     glFlush();
@@ -518,8 +542,7 @@ void ofAppGlutWindow::display(void){
 		if (bClearAuto == false){
 			// in accum mode resizing a window is BAD, so we clear on resize events.
 			if (nFramesSinceWindowResized < 3){
-				glClearColor(bgPtr[0],bgPtr[1],bgPtr[2], bgPtr[3]);
-				glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+				ofClear(bgPtr[0]*255,bgPtr[1]*255,bgPtr[2]*255, bgPtr[3]*255);
 			}
 		}
         glutSwapBuffers();
@@ -538,8 +561,36 @@ void ofAppGlutWindow::display(void){
 }
 
 //------------------------------------------------------------
-void ofAppGlutWindow::mouse_cb(int button, int state, int x, int y) {
+void rotateMouseXY(ofOrientation orientation, int &x, int &y) {
+	int savedY;
+	switch(orientation) {
+		case OF_ORIENTATION_180:
+			x = ofGetWidth() - x;
+			y = ofGetHeight() - y;
+			break;
+			
+		case OF_ORIENTATION_90_RIGHT:
+			savedY = y;
+			y = x;
+			x = ofGetWidth()-savedY;
+			break;
+			
+		case OF_ORIENTATION_90_LEFT:
+			savedY = y;
+			y = ofGetHeight() - x;
+			x = savedY;
+			break;
+			
+		case OF_ORIENTATION_DEFAULT:
+		default:
+			break;
+	}
+}
 
+//------------------------------------------------------------
+void ofAppGlutWindow::mouse_cb(int button, int state, int x, int y) {
+	rotateMouseXY(orientation, x, y);
+	
 	if (nFrameCount > 0){
 		if (state == GLUT_DOWN) {
 			ofNotifyMousePressed(x, y, button);
@@ -553,6 +604,7 @@ void ofAppGlutWindow::mouse_cb(int button, int state, int x, int y) {
 
 //------------------------------------------------------------
 void ofAppGlutWindow::motion_cb(int x, int y) {
+	rotateMouseXY(orientation, x, y);
 
 	if (nFrameCount > 0){
 		ofNotifyMouseDragged(x, y, buttonInUse);
@@ -562,12 +614,14 @@ void ofAppGlutWindow::motion_cb(int x, int y) {
 
 //------------------------------------------------------------
 void ofAppGlutWindow::passive_motion_cb(int x, int y) {
+	rotateMouseXY(orientation, x, y);
 
 	if (nFrameCount > 0){
 		ofNotifyMouseMoved(x, y);
 	}
 }
 
+//------------------------------------------------------------
 void ofAppGlutWindow::dragEvent(char ** names, int howManyFiles, int dragX, int dragY){
 	
 	// TODO: we need position info on mac passed through

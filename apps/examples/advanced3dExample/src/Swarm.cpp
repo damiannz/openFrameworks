@@ -40,6 +40,7 @@ void Swarm::init(int _nParticles, float positionDispersion, float velocityDisper
 	//Swarm's internal variable set from argument
 	nParticles = _nParticles;	
 	
+	
 	///////////////////////////////////////////
 	// SETUP ARRAYS
 	///////////////////////////////////////////
@@ -50,9 +51,12 @@ void Swarm::init(int _nParticles, float positionDispersion, float velocityDisper
 	//
 	///////////////////////////////////////////
 	
+	
 	///////////////////////////////////////////
 	// INITIALISE VALUES
 	///////////////////////////////////////////
+	//
+	ofSeedRandom();
 	//
 	for (int i=0; i< nParticles; i++)
 	{
@@ -79,10 +83,13 @@ void Swarm::customDraw()
 	///we run the update ourselves manually
 	update();
 	
+	//we use the position of the first
+	//particle as the position of the
+	//light
 	ofPushStyle();
 	ofEnableLighting();
 	light.enable();
-	light.move(positions[0]);
+	light.setPosition(positions[0]);
 
 	///////////////////////////////////////////
 	// DRAW SPHERES
@@ -103,9 +110,11 @@ void Swarm::customDraw()
 	light.disable();
 	ofDisableLighting();
 	
-	//show light
+	//render light as white sphere
 	ofSetColor(255, 255, 255);
 	ofSphere(positions[0], 2.0);
+	ofSetDrawBitmapMode(OF_BITMAPMODE_MODEL);
+	ofDrawBitmapString(" light", (ofPoint)positions[0]);
 	ofPopStyle();
 }
 

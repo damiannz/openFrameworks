@@ -9,6 +9,7 @@
 #include "ofEvents.h"
 #include "ofMath.h"
 #include "ofGraphics.h"
+#include "ofGLRenderer.h"
 
 // TODO: closing seems wonky. 
 // adding this for vc2010 compile: error C3861: 'closeQuicktime': identifier not found
@@ -24,13 +25,15 @@ bool 						bMousePressed;
 bool						bRightButton;
 int							width, height;
 
-ofAppBaseWindow *			window = NULL;
+static ofAppBaseWindow *			window = NULL;
 
 
 //========================================================================
 // default windowing
 #ifdef TARGET_OF_IPHONE
 	#include "ofAppiPhoneWindow.h"
+#elif defined TARGET_ANDROID
+	#include "ofAppAndroidWindow.h"
 #else
 	#include "ofAppGlutWindow.h"
 #endif
@@ -41,16 +44,17 @@ void ofSetupOpenGL(ofAppBaseWindow * windowPtr, int w, int h, int screenMode){
 	window = windowPtr;
 	window->setupOpenGL(w, h, screenMode);
 	
-#ifndef TARGET_OF_IPHONE
+#ifndef TARGET_OPENGLES
 	GLenum err = glewInit();
 	if (GLEW_OK != err)
 	{
 		/* Problem: glewInit failed, something is seriously wrong. */
 		ofLog(OF_LOG_ERROR, "Error: %s\n", glewGetErrorString(err));
 	}
-	//Default colors etc are now in ofGraphics - ofSetupGraphicDefaults
-	ofSetupGraphicDefaults();
 #endif
+	ofSetDefaultRenderer(new ofGLRenderer(false));
+	//Default colors etc are now in ofGraphics - ofSetupGraphicDefaults
+	//ofSetupGraphicDefaults();
 }
 
 
@@ -58,6 +62,8 @@ void ofSetupOpenGL(ofAppBaseWindow * windowPtr, int w, int h, int screenMode){
 void ofSetupOpenGL(int w, int h, int screenMode){
 	#ifdef TARGET_OF_IPHONE
 		window = new ofAppiPhoneWindow();
+	#elif defined TARGET_ANDROID
+		window = new ofAppAndroidWindow();
 	#else
 		window = new ofAppGlutWindow();
 	#endif
@@ -80,6 +86,8 @@ void ofExitCallback(){
 	//------------------------
 	// try to close rtAudio:
 	ofSoundStreamClose();
+	//------------------------
+
 
 	// try to close quicktime, for non-linux systems:
 	#if defined( TARGET_OSX ) || defined( TARGET_WIN32 )
@@ -189,6 +197,15 @@ void ofShowCursor(){
 	window->showCursor();
 }
 
+//--------------------------------------
+void ofSetOrientation(ofOrientation orientation){
+	window->setOrientation(orientation);
+}
+
+//--------------------------------------
+int ofGetOrientation(){
+	return window->getOrientation();
+}
 
 //--------------------------------------
 void ofSetWindowPosition(int x, int y){
@@ -222,11 +239,11 @@ int ofGetScreenHeight(){
 
 //--------------------------------------------------
 int ofGetWidth(){
-	return (int)window->getWindowSize().x;
+	return (int)window->getWidth();
 }
 //--------------------------------------------------
 int ofGetHeight(){
-	return (int)window->getWindowSize().y;
+	return (int)window->getHeight();
 }
 
 //--------------------------------------------------

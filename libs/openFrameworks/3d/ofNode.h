@@ -71,9 +71,7 @@ public:
 	// Set Transformations
 
 	// directly set transformation matrix
-	// TODO:
-	void setTransformMatrix(ofMatrix4x4 &m44) {}
-	void setTransformMatrix(float *m44) {}
+	void setTransformMatrix(const ofMatrix4x4 &m44);
 	
 	// position
 	void setPosition(float px, float py, float pz);
@@ -113,6 +111,7 @@ public:
 	void rotate(float degrees, const ofVec3f& v);	// rotate around arbitrary axis by angle
 	void rotate(float degrees, float vx, float vy, float vz);
 	
+	// TODO: immplement these
 	void rotateAround(const ofQuaternion& q, const ofVec3f& point);	// rotate by quaternion around point
 	void rotateAround(float degrees, const ofVec3f& axis, const ofVec3f& point);	// rotate around arbitrary axis by angle around point
 	
@@ -153,12 +152,6 @@ public:
 protected:
 	ofNode *parent;
 	
-	ofVec3f position;
-	ofQuaternion orientation;
-	ofVec3f scale;
-	
-	ofVec3f axis[3];
-	
 	void createMatrix();
 	
 	
@@ -168,6 +161,12 @@ protected:
 	virtual void onScaleChanged() {}
 
 private:
+	ofVec3f position;
+	ofQuaternion orientation;
+	ofVec3f scale;
+	
+	ofVec3f axis[3];
+	
 	ofMatrix4x4 localTransformMatrix;
 //	ofMatrix4x4 globalTransformMatrix;
 };

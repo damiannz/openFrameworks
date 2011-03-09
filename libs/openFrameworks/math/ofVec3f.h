@@ -39,8 +39,8 @@ public:
 	
     // Check similarity/equality.
     //
-    bool operator==( const ofVec3f& vec );
-    bool operator!=( const ofVec3f& vec );
+    bool operator==( const ofVec3f& vec ) const;
+    bool operator!=( const ofVec3f& vec ) const;
     bool match( const ofVec3f& vec, float tollerance=0.0001 ) const;
     /**
 	 * Checks if vectors look in the same direction.
@@ -51,7 +51,6 @@ public:
 	
     // Operator overloading for ofVec3f
     //
-    void 	  operator=( const ofVec3f& vec );
     ofVec3f  operator+( const ofVec3f& pnt ) const;
     ofVec3f& operator+=( const ofVec3f& pnt );
     ofVec3f  operator-( const ofVec3f& vec ) const;
@@ -268,11 +267,11 @@ inline void ofVec3f::set( const ofVec3f& vec ) {
 // Check similarity/equality.
 //
 //
-inline bool ofVec3f::operator==( const ofVec3f& vec ) {
+inline bool ofVec3f::operator==( const ofVec3f& vec ) const {
 	return (x == vec.x) && (y == vec.y) && (z == vec.z);
 }
 
-inline bool ofVec3f::operator!=( const ofVec3f& vec ) {
+inline bool ofVec3f::operator!=( const ofVec3f& vec ) const {
 	return (x != vec.x) || (y != vec.y) || (z != vec.z);
 }
 
@@ -312,12 +311,6 @@ inline istream& operator>>(istream& is, ofVec3f& vec) {
 	is.ignore(2);
 	is >> vec.z;
 	return is;
-}
-
-inline void ofVec3f::operator=( const ofVec3f& vec ){
-	x = vec.x;
-	y = vec.y;
-	z = vec.z;
 }
 
 inline ofVec3f ofVec3f::operator+( const ofVec3f& pnt ) const {

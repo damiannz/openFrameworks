@@ -13,7 +13,12 @@
 #include "ofPoint.h"
 #include "ofRectangle.h"
 #include "ofConstants.h"
+#include "ofColor.h"
+#include "ofPrimitive.h"
 class ofPixels;
+class ofShape;
+class ofPolyline;
+typedef ofPixels& ofPixelsRef;
 
 
 //----------------------------------------------------------
@@ -73,8 +78,7 @@ class ofBaseHasPixels{
 public:
 	virtual ~ofBaseHasPixels(){}
 	virtual unsigned char * getPixels()=0;
-//	virtual ofPixels getOFPixels()=0;
-//	virtual ofPixels getOFPixels() const=0;
+	virtual ofPixelsRef getPixelsRef()=0;
 };
 
 //----------------------------------------------------------
@@ -109,7 +113,7 @@ class ofBaseVideoGrabber: public ofBaseVideo{
 	//needs implementing
 	virtual void	listDevices() = 0;		
 	virtual bool	initGrabber(int w, int h) = 0;
-	//virtual void	grabFrame() = 0;
+	virtual void	update() = 0;
 	virtual bool	isFrameNew() = 0;
 	
 	virtual unsigned char 	* getPixels() = 0;
@@ -125,6 +129,7 @@ class ofBaseVideoGrabber: public ofBaseVideo{
 	virtual void setDesiredFrameRate(int framerate);
 	virtual void videoSettings();
 	virtual void setPixelFormat(ofPixelFormat pixelFormat);
+	virtual ofPixelFormat getPixelFormat();
 	
 };
 
@@ -142,7 +147,7 @@ public:
 	//needs implementing
 	virtual bool				loadMovie(string name) = 0;
 	virtual void				close() = 0;
-	//virtual void				idleMovie() = 0;
+	virtual void				update() = 0;
 	
 	virtual void				play() = 0;
 	virtual void				stop() = 0;		
@@ -182,5 +187,96 @@ public:
 	
 };
 
+//----------------------------------------------------------
+// base renderers
+//----------------------------------------------------------
+
+class ofBaseRenderer{
+public:
+	virtual ~ofBaseRenderer(){}
+	virtual void draw(ofPolyline & poly)=0;
+	virtual void draw(ofShape & shape)=0;
+	virtual void draw(ofPrimitive & vertexData)=0;
+	virtual void draw(vector<ofPoint> & vertexData, ofPrimitiveMode drawMode)=0;
+
+	//--------------------------------------------
+	// transformations
+	virtual void pushView(){};
+	virtual void popView(){};
+
+	// setup matrices and viewport (upto you to push and pop view before and after)
+	// if width or height are 0, assume windows dimensions (ofGetWidth(), ofGetHeight())
+	// if nearDist or farDist are 0 assume defaults (calculated based on width / height)
+	virtual void viewport(ofRectangle viewport){};
+	virtual void viewport(float x = 0, float y = 0, float width = 0, float height = 0, bool invertY = true){};
+	virtual void setupScreenPerspective(float width = 0, float height = 0, int orientation=0, bool vFlip = true, float fov = 60, float nearDist = 0, float farDist = 0){}
+	virtual void setupScreenOrtho(float width = 0, float height = 0, bool vFlip = true, float nearDist = -1, float farDist = 1){};
+	virtual ofRectangle getCurrentViewport(){return ofRectangle();};
+	virtual int getViewportWidth(){return 0;};
+	virtual int getViewportHeight(){return 0;};
+
+	virtual void setCoordHandedness(ofHandednessType handedness){};
+	virtual ofHandednessType getCoordHandedness(){return OF_LEFT_HANDED;};
+
+	//our openGL wrappers
+	virtual void pushMatrix(){};
+	virtual void popMatrix(){};
+	virtual void translate(float x, float y, float z = 0){};
+	virtual void translate(const ofPoint & p){};
+	virtual void scale(float xAmnt, float yAmnt, float zAmnt = 1){};
+	virtual void rotate(float degrees, float vecX, float vecY, float vecZ){};
+	virtual void rotateX(float degrees){};
+	virtual void rotateY(float degrees){};
+	virtual void rotateZ(float degrees){};
+	virtual void rotate(float degrees){};
+
+	// screen coordinate things / default gl values
+	virtual void setupGraphicDefaults(){};
+	virtual void setupScreen(){};
+
+	// drawing modes
+	virtual void setRectMode(ofRectMode mode)=0;
+	virtual ofRectMode getRectMode()=0;
+	virtual void setFillMode(ofFillFlag fill)=0;
+	virtual ofFillFlag getFillMode()=0;
+	virtual void setLineWidth(float lineWidth)=0;
+	virtual void setBlendMode(ofBlendMode blendMode)=0;
+	virtual void setLineSmoothing(bool smooth)=0;
+	virtual void setCircleResolution(int res){};
+	virtual void enablePointSprites(){};
+	virtual void disablePointSprites(){};
+
+	// color options
+	virtual void setColor(int r, int g, int b){}; // 0-255
+	virtual void setColor(int r, int g, int b, int a){}; // 0-255
+	virtual void setColor(const ofColor & color){};
+	virtual void setColor(const ofColor & color, int _a){};
+	virtual void setColor(int gray){}; // new set a color as grayscale with one argument
+	virtual void setHexColor( int hexColor ){}; // hex, like web 0xFF0033;
+
+	// bg color
+	virtual ofColor & getBgColor()=0;
+	virtual bool bClearBg(){return true;};
+	virtual void background(const ofColor & c){};
+	virtual void background(float brightness){};
+	virtual void background(int hexColor, float _a=255.0f){};
+	virtual void background(int r, int g, int b, int a=255){};
+
+	virtual void setBackgroundAuto(bool bManual){};		// default is true
+
+	virtual void clear(float r, float g, float b, float a=0){};
+	virtual void clear(float brightness, float a=0){};
+	virtual void clearAlpha(){};
+
+	// drawing
+	virtual void drawLine(float x1, float y1, float z1, float x2, float y2, float z2)=0;
+	virtual void drawRectangle(float x, float y, float z, float w, float h)=0;
+	virtual void drawTriangle(float x1, float y1, float z1, float x2, float y2, float z2, float x3, float y3, float z3)=0;
+	virtual void drawCircle(float x, float y, float z, float radius)=0;
+	virtual void drawEllipse(float x, float y, float z, float width, float height)=0;
+	virtual void drawString(string text, float x, float y, float z, ofDrawBitmapMode mode)=0;
 
 
+	// returns true if the renderer can render curves without decomposing them
+	virtual bool rendersPathPrimitives()=0;
+};
