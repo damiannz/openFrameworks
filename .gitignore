@@ -1,5 +1,6 @@
 *.mode*
 *.pbxuser
+xcuserdata/
 build/
 obj/
 *.o
