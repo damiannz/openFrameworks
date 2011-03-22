@@ -53,6 +53,7 @@ public:
 	
 	virtual int			getFrameNum();
 	virtual float		getFrameRate();
+	virtual double		getLastFrameTime();
 	
 	virtual ofPoint		getWindowPosition();
 	virtual ofPoint		getWindowSize();
@@ -101,6 +102,7 @@ protected:
 	int					nFrameCount;
 	bool				bEnableSetupScreen;
 	float				frameRate;
+	double				lastFrameTime;
 	int					orientation;
 	
 	bool depthEnabled;

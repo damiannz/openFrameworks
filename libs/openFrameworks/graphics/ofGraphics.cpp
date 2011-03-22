@@ -1389,8 +1389,19 @@ void ofDrawBitmapString(string textString, float x, float y, float z){
 			GLdouble modelview[16], projection[16];
 			GLint view[4];
 			double dScreenX, dScreenY, dScreenZ;
+#ifdef TARGET_OPENGLES
+			GLfloat modelview_f[16], projection_f[16];
+			glGetFloatv(GL_MODELVIEW_MATRIX, modelview_f);
+			glGetFloatv(GL_PROJECTION_MATRIX, projection_f);
+			for ( int i=0; i<16; i++ )
+			{
+				modelview[i]=modelview_f[i];
+				projection[i]=projection_f[i];
+			}
+#else
 			glGetDoublev(GL_MODELVIEW_MATRIX, modelview);
 			glGetDoublev(GL_PROJECTION_MATRIX, projection);
+#endif			
 			glGetIntegerv(GL_VIEWPORT, view);
 			view[0] = 0; view[1] = 0; //we're already drawing within viewport
 			gluProject(x, y, z, modelview, projection, view, &dScreenX, &dScreenY, &dScreenZ);
@@ -1410,8 +1421,13 @@ void ofDrawBitmapString(string textString, float x, float y, float z){
 			glTranslatef(-1, -1, 0);
 			glScalef(2/rViewport.width, 2/rViewport.height, 1);
 			
+#ifdef TARGET_OPENGLES
+			glTranslatef(dScreenX, dScreenY, 0);
+			glScalef(1, -1, 1);
+#else
 			glTranslated(dScreenX, dScreenY, 0);
 			glScaled(1, -1, 1);
+#endif
 			break;
 
 		default:

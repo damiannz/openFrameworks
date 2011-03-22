@@ -54,6 +54,7 @@ ofAppiPhoneWindow::ofAppiPhoneWindow() {
 	if(_instance == NULL) _instance = this;
 	else ofLog(OF_LOG_ERROR, "Instanciating ofAppiPhoneWindow more than once! how come?");
 	nFrameCount = 0;
+	lastFrameTime = 0;
 	bEnableSetupScreen = true;
 	
 	windowPos.set(NOT_INITIALIZED, NOT_INITIALIZED);
@@ -344,8 +345,15 @@ void ofAppiPhoneWindow::timerLoop() {
 		frameRate *= 0.9f;
         frameRate += 0.1f*fps;
 	}
+	lastFrameTime = diff;
 	timeThen = timeNow;
   	// --------------
 	
 	nFrameCount++;		// increase the overall frame count
+}
+
+
+double ofAppiPhoneWindow::getLastFrameTime() 
+{ 
+	return lastFrameTime; 
 }
