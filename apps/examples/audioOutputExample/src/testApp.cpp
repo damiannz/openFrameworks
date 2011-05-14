@@ -23,6 +23,11 @@ void testApp::setup(){
 	rAudio = new float[256];
 	ofSoundStreamSetup(2,0,this, sampleRate,256, 4);
 
+
+	targetFrequency=500.0f;
+	phaseAdderTarget=(targetFrequency/ (float)sampleRate) * TWO_PI;
+	pan = 0.5f;
+
 	ofSetFrameRate(60);
 
 }
