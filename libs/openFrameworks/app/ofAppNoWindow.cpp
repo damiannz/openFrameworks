@@ -4,7 +4,7 @@
 
 
 
-#if defined TARGET_OSX || defined TARGET_LINUX
+#if defined (TARGET_OSX) || defined (TARGET_LINUX) || defined (TARGET_ANDROID)
 #include <stdlib.h>
 #include <string.h>
 #include <sys/select.h>
