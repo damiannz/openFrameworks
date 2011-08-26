@@ -19,6 +19,14 @@ USER_CFLAGS =
 
 USER_LDFLAGS =
 
+
+EXCLUDE_FROM_SOURCE="bin,.xcodeproj,obj"
+
+# change this to add different compiler optimizations to your project
+
+USER_COMPILER_OPTIMIZATION = -march=native -mtune=native -Os
+
+
 # android specific, in case you want to use different optimizations
 USER_LIBS_ARM = 
 USER_LIBS_ARM7 = 
@@ -28,5 +36,15 @@ USER_LIBS_NEON =
 
 ANDROID_COMPILER_OPTIMIZATION = -Os
 
+NDK_PLATFORM = android-8
 
-EXCLUDE_FROM_SOURCE="bin,.xcodeproj,obj"
+
+
+
+
+# linux arm flags
+
+LINUX_ARM7_COMPILER_OPTIMIZATIONS = -march=armv7-a -mtune=cortex-a8 -finline-functions -funroll-all-loops  -O3 -funsafe-math-optimizations -mfpu=neon -ftree-vectorize -mfloat-abi=softfp 
+
+
+

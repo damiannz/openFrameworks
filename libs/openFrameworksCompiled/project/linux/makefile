@@ -50,7 +50,15 @@ ifneq ($(ARCH),android)
 		LIBSPATH=linux
 	endif
 else
-	LIBSPATH = android
+	ifeq ($(findstring Release_arm7,$(MAKECMDGOALS)),Release_arm7)
+	    LIBSPATH =android/armeabi-v7a
+    else
+        ifeq ($(findstring Release_neon,$(MAKECMDGOALS)),Release_neon)
+    	    LIBSPATH =android/armeabi-neon
+    	else
+        	LIBSPATH =android/armeabi
+    	endif
+    endif
 	#NDK_ROOT = $(shell cat ndk_path.make)
 	TOOLCHAIN=arm-linux-androideabi-4.4.3
 	TOOLCHAIN_PATH=$(NDK_ROOT)/toolchains/$(TOOLCHAIN)/prebuilt/$(HOST_PLATFORM)/bin/
@@ -116,12 +124,10 @@ endif
 
 ifeq ($(findstring Release_arm7,$(MAKECMDGOALS)),Release_arm7)
 	TARGET_CFLAGS += -march=armv7-a -mfloat-abi=softfp 
-	TARGET = ../../lib/$(LIBSPATH)/libopenFrameworks_arm7.a
 endif
 
 ifeq ($(findstring Release_neon,$(MAKECMDGOALS)),Release_neon)
 	TARGET_CFLAGS += -march=armv7-a -mfloat-abi=softfp -mfpu=neon
-	TARGET = ../../lib/$(LIBSPATH)/libopenFrameworks_neon.a
 endif
 
 ifeq ($(MAKECMDGOALS),)
@@ -175,6 +181,7 @@ $(OBJ_OUTPUT)%.o: ../../../%.cpp
 
 $(TARGET) : $(OBJS) 
 	echo "creating " $(TARGET)
+	mkdir -p $(@D)
 	$(AR) -r "$@" $(OBJS)
 
 -include $(DEPFILES)
