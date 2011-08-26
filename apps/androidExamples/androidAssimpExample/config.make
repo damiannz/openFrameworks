@@ -41,8 +41,8 @@ NDK_PLATFORM = android-8
 # uncomment this for custom application name (if the folder name is different than the application name)
 #APPNAME = folderName
 
-# uncomment this for custom package name, default: cc.openframeworks.APPNAME
-#PKGNAME = com.reactable
+# uncomment this for custom package name, must be the same as the java package that contains OFActivity
+#PKGNAME = cc.openframeworks.$(APPNAME)
 
 
 
