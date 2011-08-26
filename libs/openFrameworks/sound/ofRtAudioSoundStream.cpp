@@ -1,5 +1,6 @@
 #include "ofRtAudioSoundStream.h"
 
+#ifdef OF_SOUNDSTREAM_RTAUDIO
 #include "ofSoundStream.h"
 #include "ofMath.h"
 #include "ofUtils.h"
@@ -21,7 +22,6 @@ ofRtAudioSoundStream::ofRtAudioSoundStream(){
 
 //------------------------------------------------------------------------------
 ofRtAudioSoundStream::~ofRtAudioSoundStream(){
-	stop();
 	close();
 }
 
@@ -134,7 +134,7 @@ bool ofRtAudioSoundStream::setup(ofBaseApp * app, int outChannels, int inChannel
 
 //------------------------------------------------------------------------------
 void ofRtAudioSoundStream::start(){
-	if( audio == NULL )return;
+	if( audio == NULL ) return;
 	
 	try{
 		audio->startStream();
@@ -145,10 +145,12 @@ void ofRtAudioSoundStream::start(){
 
 //------------------------------------------------------------------------------
 void ofRtAudioSoundStream::stop(){
-	if( audio == NULL )return;
+	if( audio == NULL ) return;
 	
 	try {
-    	audio->stopStream();
+		if(audio->isStreamRunning()) {
+    		audio->stopStream();
+		}
   	} catch (RtError &error) {
    		error.printMessage();
  	}
@@ -156,15 +158,18 @@ void ofRtAudioSoundStream::stop(){
 
 //------------------------------------------------------------------------------
 void ofRtAudioSoundStream::close(){
-	if(audio == NULL) return;
+	if( audio == NULL ) return;
 	
 	try {
-    	audio->closeStream();
+		if(audio->isStreamOpen()) {
+    		audio->closeStream();
+		}
   	} catch (RtError &error) {
    		error.printMessage();
  	}
 	soundOutputPtr	= NULL;
-	soundInputPtr	= NULL;	
+	soundInputPtr	= NULL;
+	audio = ofPtr<RtAudio>();	// delete
 }
 
 //------------------------------------------------------------------------------
@@ -204,7 +209,7 @@ int ofRtAudioSoundStream::rtAudioCallback(void *outputBuffer, void *inputBuffer,
 
 	if(nInputChannels > 0){
 		if( rtStreamPtr->soundInputPtr != NULL ){
-			rtStreamPtr->soundInputPtr->audioIn((float*)inputBuffer, bufferSize, nInputChannels, rtStreamPtr->tickCount);
+			rtStreamPtr->soundInputPtr->audioIn((float*)inputBuffer, bufferSize, nInputChannels, rtStreamPtr->deviceID, rtStreamPtr->tickCount);
 		}
 		memset(fPtrIn, 0, bufferSize * nInputChannels * sizeof(float));
 	}
@@ -212,7 +217,7 @@ int ofRtAudioSoundStream::rtAudioCallback(void *outputBuffer, void *inputBuffer,
 	if (nOutputChannels > 0) {
 		memset(fPtrOut, 0, sizeof(float) * bufferSize * nOutputChannels);
 		if( rtStreamPtr->soundOutputPtr != NULL ){
-			rtStreamPtr->soundOutputPtr->audioOut((float*)outputBuffer, bufferSize, nOutputChannels, rtStreamPtr->tickCount);
+			rtStreamPtr->soundOutputPtr->audioOut((float*)outputBuffer, bufferSize, nOutputChannels, rtStreamPtr->deviceID, rtStreamPtr->tickCount);
 		}
 	}
 	
@@ -221,4 +226,4 @@ int ofRtAudioSoundStream::rtAudioCallback(void *outputBuffer, void *inputBuffer,
 
 	return 0;
 }
-
+#endif

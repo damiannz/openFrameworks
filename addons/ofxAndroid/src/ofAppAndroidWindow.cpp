@@ -48,11 +48,14 @@ static double			lastFrameTime;
 
 static JavaVM *ofJavaVM=0;
 
-
-static ofPtr<ofBaseApp> OFApp;
 static ofxAndroidApp * androidApp;
 
 static ofOrientation orientation = OF_ORIENTATION_DEFAULT;
+
+static queue<ofTouchEventArgs> touchEventArgsQueue;
+static ofMutex mutex;
+static bool threadedTouchEvents = false;
+
 //static ofAppAndroidWindow window;
 
 JavaVM * ofGetJavaVMPtr(){
@@ -74,7 +77,7 @@ JNIEnv * ofGetJNIEnv(){
 }
 
 jclass ofGetJavaOFAndroid(){
-	return ofGetJNIEnv()->FindClass("cc.openframeworks.OFAndroid");
+	return ofGetJNIEnv()->FindClass("cc/openframeworks/OFAndroid");
 }
 
 /*void ofRunApp( ofxAndroidApp * app){
@@ -92,38 +95,7 @@ void ofxRegisterMultitouch(ofxAndroidApp * app){
 }
 
 
-void ofxAndroidPauseApp(){
-	jclass javaClass = ofGetJavaOFAndroid();
 
-	if(javaClass==0){
-		ofLog(OF_LOG_ERROR,"cannot find OFAndroid java class");
-		return;
-	}
-
-	jmethodID pauseApp = ofGetJNIEnv()->GetStaticMethodID(javaClass,"pauseApp","()V");
-	if(!pauseApp){
-		ofLog(OF_LOG_ERROR,"cannot find OFAndroid pauseApp method");
-		return;
-	}
-	ofGetJNIEnv()->CallStaticObjectMethod(javaClass,pauseApp);
-}
-
-void ofxAndroidAlertBox(string msg){
-	jclass javaClass = ofGetJavaOFAndroid();
-
-	if(javaClass==0){
-		ofLog(OF_LOG_ERROR,"cannot find OFAndroid java class");
-		return;
-	}
-
-	jmethodID alertBox = ofGetJNIEnv()->GetStaticMethodID(javaClass,"alertBox","(Ljava/lang/String;)V");
-	if(!alertBox){
-		ofLog(OF_LOG_ERROR,"cannot find OFAndroid alertBox method");
-		return;
-	}
-	jstring jMsg = ofGetJNIEnv()->NewStringUTF(msg.c_str());
-	ofGetJNIEnv()->CallStaticObjectMethod(javaClass,alertBox,jMsg);
-}
 
 ofAppAndroidWindow::ofAppAndroidWindow() {
 	// TODO Auto-generated constructor stub
@@ -134,9 +106,8 @@ ofAppAndroidWindow::~ofAppAndroidWindow() {
 	// TODO Auto-generated destructor stub
 }
 
-void ofAppAndroidWindow::runAppViaInfiniteLoop(ofPtr<ofBaseApp> appPtr){
-	androidApp = dynamic_cast<ofxAndroidApp*>( appPtr.get() );
-	OFApp = appPtr;
+void ofAppAndroidWindow::runAppViaInfiniteLoop(ofBaseApp * appPtr){
+	androidApp = dynamic_cast<ofxAndroidApp*>( appPtr );
 }
 
 ofPoint	ofAppAndroidWindow::getWindowSize(){
@@ -173,9 +144,9 @@ void ofAppAndroidWindow::disableSetupScreen(){
 }
 
 void ofAppAndroidWindow::setOrientation(ofOrientation _orientation){
-	if(orientation==_orientation) return;
+	//if(orientation==_orientation) return;
 	orientation = _orientation;
-	jclass javaClass = ofGetJNIEnv()->FindClass("cc.openframeworks.OFAndroid");
+	jclass javaClass = ofGetJNIEnv()->FindClass("cc/openframeworks/OFAndroid");
 
 	if(javaClass==0){
 		ofLog(OF_LOG_ERROR,"setOrientation: cannot find OFAndroid java class");
@@ -187,7 +158,10 @@ void ofAppAndroidWindow::setOrientation(ofOrientation _orientation){
 		ofLog(OF_LOG_ERROR,"cannot find OFAndroid setScreenOrientation method");
 		return;
 	}
-	ofGetJNIEnv()->CallStaticObjectMethod(javaClass,setScreenOrientation,orientation);
+	if(orientation==OF_ORIENTATION_UNKNOWN)
+		ofGetJNIEnv()->CallStaticVoidMethod(javaClass,setScreenOrientation,-1);
+	else
+		ofGetJNIEnv()->CallStaticVoidMethod(javaClass,setScreenOrientation,ofOrientationToDegrees(orientation));
 }
 
 ofOrientation ofAppAndroidWindow::getOrientation(){
@@ -195,7 +169,7 @@ ofOrientation ofAppAndroidWindow::getOrientation(){
 }
 
 void ofAppAndroidWindow::setFullscreen(bool fullscreen){
-	jclass javaClass = ofGetJNIEnv()->FindClass("cc.openframeworks.OFAndroid");
+	jclass javaClass = ofGetJNIEnv()->FindClass("cc/openframeworks/OFAndroid");
 
 	if(javaClass==0){
 		ofLog(OF_LOG_ERROR,"setFullscreen: cannot find OFAndroid java class");
@@ -207,7 +181,7 @@ void ofAppAndroidWindow::setFullscreen(bool fullscreen){
 		ofLog(OF_LOG_ERROR,"cannot find OFAndroid setFullscreen method");
 		return;
 	}
-	ofGetJNIEnv()->CallStaticObjectMethod(javaClass,setFullscreen,fullscreen);
+	ofGetJNIEnv()->CallStaticVoidMethod(javaClass,setFullscreen,fullscreen);
 }
 
 void ofAppAndroidWindow::toggleFullscreen(){
@@ -218,6 +192,10 @@ void ofAppAndroidWindow::setFrameRate(float _targetRate){
 	targetRate = _targetRate;
 	oneFrameTime = 1000.f/targetRate;
 	bFrameRateSet = true;
+}
+
+void ofAppAndroidWindow::setThreadedEvents(bool threadedEvents){
+	threadedTouchEvents = threadedEvents;
 }
 
 void reloadTextures(){
@@ -262,6 +240,8 @@ Java_cc_openframeworks_OFAndroid_setAppDataDir( JNIEnv*  env, jobject  thiz, jst
 			chdir(ofToDataPath("",true).c_str());
 			do_extract(zip,0,1,NULL);
 			chdir(current_dir);
+
+			resources.remove();
 		}
     }
 }
@@ -290,6 +270,7 @@ Java_cc_openframeworks_OFAndroid_onResume( JNIEnv*  env, jobject  thiz ){
 		androidApp->reloadTextures();
 	}
 	paused = false;
+	ofxAndroidSoundStreamResume();
 }
 
 void
@@ -358,7 +339,29 @@ Java_cc_openframeworks_OFAndroid_render( JNIEnv*  env, jclass  thiz )
 	int beginFrameMillis = ofGetElapsedTimeMillis();
 
 	if(paused) return;
-	//LOGI("update");
+
+	if(!threadedTouchEvents){
+		mutex.lock();
+		while(!touchEventArgsQueue.empty()){
+			switch(touchEventArgsQueue.front().type){
+			case ofTouchEventArgs::down:
+				ofNotifyEvent(ofEvents.touchDown,touchEventArgsQueue.front());
+				break;
+			case ofTouchEventArgs::up:
+				ofNotifyEvent(ofEvents.touchUp,touchEventArgsQueue.front());
+				break;
+			case ofTouchEventArgs::move:
+				ofNotifyEvent(ofEvents.touchMoved,touchEventArgsQueue.front());
+				break;
+			case ofTouchEventArgs::doubleTap:
+				ofNotifyEvent(ofEvents.touchDoubleTap,touchEventArgsQueue.front());
+				break;
+			}
+			touchEventArgsQueue.pop();
+		}
+		mutex.unlock();
+	}
+
 	ofNotifyUpdate();
 
 
@@ -418,7 +421,14 @@ Java_cc_openframeworks_OFAndroid_onTouchDown(JNIEnv*  env, jclass  thiz, jint id
 	touch.x = x;
 	touch.y = y;
 	touch.pressure = pressure;
-	ofNotifyEvent(ofEvents.touchDown,touch);
+	touch.type = ofTouchEventArgs::down;
+	if(threadedTouchEvents){
+		ofNotifyEvent(ofEvents.touchDown,touch);
+	}else{
+		mutex.lock();
+		touchEventArgsQueue.push(touch);
+		mutex.unlock();
+	}
 }
 
 void
@@ -429,7 +439,14 @@ Java_cc_openframeworks_OFAndroid_onTouchUp(JNIEnv*  env, jclass  thiz, jint id,j
 	touch.x = x;
 	touch.y = y;
 	touch.pressure = pressure;
-	ofNotifyEvent(ofEvents.touchUp,touch);
+	touch.type = ofTouchEventArgs::up;
+	if(threadedTouchEvents){
+		ofNotifyEvent(ofEvents.touchUp,touch);
+	}else{
+		mutex.lock();
+		touchEventArgsQueue.push(touch);
+		mutex.unlock();
+	}
 }
 
 void
@@ -441,7 +458,14 @@ Java_cc_openframeworks_OFAndroid_onTouchMoved(JNIEnv*  env, jclass  thiz, jint i
 	touch.x = x;
 	touch.y = y;
 	touch.pressure = pressure;
-	ofNotifyEvent(ofEvents.touchMoved,touch);
+	touch.type = ofTouchEventArgs::move;
+	if(threadedTouchEvents){
+		ofNotifyEvent(ofEvents.touchMoved,touch);
+	}else{
+		mutex.lock();
+		touchEventArgsQueue.push(touch);
+		mutex.unlock();
+	}
 }
 
 void
@@ -452,7 +476,14 @@ Java_cc_openframeworks_OFAndroid_onTouchDoubleTap(JNIEnv*  env, jclass  thiz, ji
 	touch.x = x;
 	touch.y = y;
 	touch.pressure = pressure;
-	ofNotifyEvent(ofEvents.touchDoubleTap,touch);
+	touch.type = ofTouchEventArgs::doubleTap;
+	if(threadedTouchEvents){
+		ofNotifyEvent(ofEvents.touchDoubleTap,touch);
+	}else{
+		mutex.lock();
+		touchEventArgsQueue.push(touch);
+		mutex.unlock();
+	}
 }
 
 void
@@ -478,6 +509,24 @@ Java_cc_openframeworks_OFAndroid_onMenuItemSelected( JNIEnv*  env, jobject  thiz
 	const char *menu_id_str = env->GetStringUTFChars(menu_id, &iscopy);
 	if(androidApp) return androidApp->menuItemSelected(menu_id_str);
 	else return false;
+}
+
+jboolean
+Java_cc_openframeworks_OFAndroid_onMenuItemChecked( JNIEnv*  env, jobject  thiz, jstring menu_id, jboolean checked){
+	jboolean iscopy;
+	const char *menu_id_str = env->GetStringUTFChars(menu_id, &iscopy);
+	if(androidApp && menu_id_str) return androidApp->menuItemChecked(menu_id_str,checked);
+	else return false;
+}
+
+void
+Java_cc_openframeworks_OFAndroid_okPressed( JNIEnv*  env, jobject  thiz ){
+	if(androidApp) androidApp->okPressed();
+}
+
+void
+Java_cc_openframeworks_OFAndroid_cancelPressed( JNIEnv*  env, jobject  thiz ){
+	if(androidApp) androidApp->cancelPressed();
 }
 }
 

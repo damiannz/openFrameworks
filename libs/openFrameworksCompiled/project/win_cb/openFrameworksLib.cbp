@@ -55,6 +55,7 @@
 			<Add directory="..\..\..\openFrameworks\gl" />
 			<Add directory="..\..\..\openFrameworks\math" />
 			<Add directory="..\..\..\poco\include" />
+			<Add directory="..\..\..\tess2\include" />
 		</Compiler>
 		<Unit filename="..\..\..\openFrameworks\3d\of3dUtils.cpp">
 			<Option virtualFolder="openframeworks\3d\" />
@@ -206,22 +207,10 @@
 		<Unit filename="..\..\..\openFrameworks\graphics\ofPath.h">
 			<Option virtualFolder="openframeworks\graphics\" />
 		</Unit>
-		<Unit filename="..\..\..\openFrameworks\graphics\ofPixelUtils.cpp">
-			<Option virtualFolder="openframeworks\graphics\" />
-		</Unit>
-		<Unit filename="..\..\..\openFrameworks\graphics\ofPixelUtils.h">
-			<Option virtualFolder="openframeworks\graphics\" />
-		</Unit>
 		<Unit filename="..\..\..\openFrameworks\graphics\ofPixels.cpp">
 			<Option virtualFolder="openframeworks\graphics\" />
 		</Unit>
 		<Unit filename="..\..\..\openFrameworks\graphics\ofPixels.h">
-			<Option virtualFolder="openframeworks\graphics\" />
-		</Unit>
-		<Unit filename="..\..\..\openFrameworks\graphics\ofPolyUtils.cpp">
-			<Option virtualFolder="openframeworks\graphics\" />
-		</Unit>
-		<Unit filename="..\..\..\openFrameworks\graphics\ofPolyUtils.h">
 			<Option virtualFolder="openframeworks\graphics\" />
 		</Unit>
 		<Unit filename="..\..\..\openFrameworks\graphics\ofPolyline.cpp">
@@ -296,10 +285,22 @@
 		<Unit filename="..\..\..\openFrameworks\sound\ofBaseSoundPlayer.h">
 			<Option virtualFolder="openframeworks\sound\" />
 		</Unit>
+		<Unit filename="..\..\..\openFrameworks\sound\ofBaseSoundStream.cpp">
+			<Option virtualFolder="openframeworks\sound\" />
+		</Unit>
+		<Unit filename="..\..\..\openFrameworks\sound\ofBaseSoundStream.h">
+			<Option virtualFolder="openframeworks\sound\" />
+		</Unit>
 		<Unit filename="..\..\..\openFrameworks\sound\ofFmodSoundPlayer.cpp">
 			<Option virtualFolder="openframeworks\sound\" />
 		</Unit>
 		<Unit filename="..\..\..\openFrameworks\sound\ofFmodSoundPlayer.h">
+			<Option virtualFolder="openframeworks\sound\" />
+		</Unit>
+		<Unit filename="..\..\..\openFrameworks\sound\ofRtAudioSoundStream.cpp">
+			<Option virtualFolder="openframeworks\sound\" />
+		</Unit>
+		<Unit filename="..\..\..\openFrameworks\sound\ofRtAudioSoundStream.h">
 			<Option virtualFolder="openframeworks\sound\" />
 		</Unit>
 		<Unit filename="..\..\..\openFrameworks\sound\ofSoundPlayer.cpp">
@@ -342,12 +343,6 @@
 			<Option virtualFolder="openframeworks\types\" />
 		</Unit>
 		<Unit filename="..\..\..\openFrameworks\utils\ofConstants.h">
-			<Option virtualFolder="openframeworks\utils\" />
-		</Unit>
-		<Unit filename="..\..\..\openFrameworks\utils\ofDirectoryLister.cpp">
-			<Option virtualFolder="openframeworks\utils\" />
-		</Unit>
-		<Unit filename="..\..\..\openFrameworks\utils\ofDirectoryLister.h">
 			<Option virtualFolder="openframeworks\utils\" />
 		</Unit>
 		<Unit filename="..\..\..\openFrameworks\utils\ofFileUtils.cpp">

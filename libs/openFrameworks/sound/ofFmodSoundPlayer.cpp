@@ -1,4 +1,7 @@
 #include "ofFmodSoundPlayer.h"
+
+#ifdef OF_SOUND_PLAYER_FMOD
+
 #include "ofUtils.h"
 
 
@@ -254,6 +257,12 @@ void ofFmodSoundPlayer::setPosition(float pct){
 	}
 }
 
+void ofFmodSoundPlayer::setPositionMS(int ms);{
+	if (getIsPlaying() == true){
+		FMOD_Channel_SetPosition(channel, ms, FMOD_TIMEUNIT_MS);
+	}
+}
+
 //------------------------------------------------------------
 float ofFmodSoundPlayer::getPosition(){
 	if (getIsPlaying() == true){
@@ -266,6 +275,19 @@ float ofFmodSoundPlayer::getPosition(){
 			pct = sampleImAt / (float)length;
 		}
 		return pct;
+	} else {
+		return 0;
+	}
+}
+
+//------------------------------------------------------------
+int ofFmodSoundPlayer::getPositionMS(){
+	if (getIsPlaying() == true){
+		unsigned int sampleImAt;
+
+		FMOD_Channel_GetPosition(channel, &sampleImAt, FMOD_TIMEUNIT_MS);
+
+		return sampleImAt;
 	} else {
 		return 0;
 	}
@@ -346,3 +368,5 @@ void ofFmodSoundPlayer::play(){
 void ofFmodSoundPlayer::stop(){
 	FMOD_Channel_Stop(channel);
 }
+
+#endif

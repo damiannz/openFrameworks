@@ -3,6 +3,8 @@ package cc.openframeworks;
 import java.util.HashSet;
 import java.util.Set;
 
+import android.app.Activity;
+
 
 public abstract class OFAndroidObject {
 
@@ -22,22 +24,27 @@ public abstract class OFAndroidObject {
 	}
 	
     public void onPause(){
-    	pause();
+    	appPause();
     	state = State.Paused;
     }
     public void onResume(){
-    	resume();
+    	appResume();
     	state = State.Running;
     }
     public void onStop(){
-    	stop();
+    	appStop();
     	state = State.Stopped;
     }
     public void release(){
     	ofObjects.remove(this);
     }
     
-    abstract protected void pause();
-    abstract protected void resume();
-    abstract protected void stop();
+    abstract protected void appPause();
+    abstract protected void appResume();
+    abstract protected void appStop();
+    
+    public static void setActivity(Activity activity){
+    	OFAndroidObject.activity = activity;
+    }
+	protected static Activity activity;
 }

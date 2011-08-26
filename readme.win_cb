@@ -36,7 +36,7 @@ choose the "project", ie, imageSaverExample as opposed to the openframeworks lib
 
 
 
-2) if you want to make a new project:
+3) if you want to make a new project:
 --------------------------------------------------------------------------------
 
 a) copy the folder inside of apps and paste in the same directory
@@ -60,6 +60,14 @@ line 4: <Project filename="emptyExample.cbp" active="1" />
 to whatever you've renamed the cbp to.
 
 
+
+4) codeblocks wizard
+--------------------------------------------------------------------------------
+
+From 007 there's a codeblocks wizard to create projects, you can find instructions
+on how to install it in scripts/win_cb/codeblocks_wizard.
+	
+	
 
 
 as always if you have issues, check or post on the forum:  openframeworks.cc/forum

@@ -80,12 +80,20 @@ public:
 };
 
 //----------------------------------------------------------
+// ofAbstractHasPixels
+//----------------------------------------------------------
+class ofAbstractHasPixels{
+public:
+	virtual ~ofAbstractHasPixels(){}
+};
+
+//----------------------------------------------------------
 // ofBaseHasPixels
 //----------------------------------------------------------
 template<typename T>
-class ofBaseHasPixels_{
+class ofBaseHasPixels_: public ofAbstractHasPixels{
 public:
-	virtual ~ofBaseHasPixels_(){}
+	virtual ~ofBaseHasPixels_<T>(){}
 	virtual T * getPixels()=0;
 	virtual ofPixels_<T> & getPixelsRef()=0;
 };
@@ -94,12 +102,20 @@ typedef ofBaseHasPixels_<unsigned char> ofBaseHasPixels;
 typedef ofBaseHasPixels_<float> ofBaseHasFloatPixels;
 
 //----------------------------------------------------------
+// ofAbstractImage    ->   to be able to put different types of images in vectors...
+//----------------------------------------------------------
+class ofAbstractImage: public ofBaseDraws, public ofBaseHasTexture{
+public:
+	virtual ~ofAbstractImage(){}
+};
+
+//----------------------------------------------------------
 // ofBaseImage
 //----------------------------------------------------------
 template<typename T>
-class ofBaseImage_: public ofBaseDraws, public ofBaseHasTexture, public ofBaseHasPixels_<T>{
+class ofBaseImage_: public ofAbstractImage, public ofBaseHasPixels_<T>{
 public:
-	
+	virtual ~ofBaseImage_<T>(){};
 };
 
 typedef ofBaseImage_<unsigned char> ofBaseImage;
@@ -113,7 +129,7 @@ class ofBaseSoundInput{
 	public:
         virtual ~ofBaseSoundInput() {};
     
-		virtual void audioIn( float * input, int bufferSize, int nChannels, long unsigned long tickCount ){
+		virtual void audioIn( float * input, int bufferSize, int nChannels, int deviceID, long unsigned long tickCount ){
 			audioIn(input, bufferSize, nChannels);
 		}
 
@@ -132,7 +148,7 @@ class ofBaseSoundOutput{
 	public:
         virtual ~ofBaseSoundOutput() {};
     
-		virtual void audioOut( float * output, int bufferSize, int nChannels, long unsigned long tickCount  ){
+		virtual void audioOut( float * output, int bufferSize, int nChannels, int deviceID, long unsigned long tickCount  ){
 			audioOut(output, bufferSize, nChannels);
 		}
 
@@ -141,7 +157,8 @@ class ofBaseSoundOutput{
 		}
 
 		//legacy
-		virtual void audioRequested( float * output, int bufferSize, int nChannels ){}
+		virtual void audioRequested( float * output, int bufferSize, int nChannels ){
+		}
 };
 
 
@@ -156,22 +173,22 @@ public:
 };
 
 
-// common base for ofVideoGrabber and ofVideoPlayer
+//----------------------------------------------------------
+// ofBaseVideoDraws
+//----------------------------------------------------------
 class ofBaseVideoDraws: virtual public ofBaseVideo, public ofBaseDraws, public ofBaseHasTexture{
-
+public:
+	virtual ~ofBaseVideoDraws(){}
 };
-
 
 //----------------------------------------------------------
 // ofBaseVideoGrabber
 //----------------------------------------------------------
-class ofBaseVideoGrabber: public ofBaseVideo{
+class ofBaseVideoGrabber: virtual public ofBaseVideo{
 	
 	public :
-	
-	ofBaseVideoGrabber();
 	virtual ~ofBaseVideoGrabber();
-	
+
 	//needs implementing
 	virtual void	listDevices() = 0;		
 	virtual bool	initGrabber(int w, int h) = 0;
@@ -199,11 +216,9 @@ class ofBaseVideoGrabber: public ofBaseVideo{
 //----------------------------------------------------------
 // ofBaseVideoPlayer
 //----------------------------------------------------------
-class ofBaseVideoPlayer: public ofBaseVideo{
+class ofBaseVideoPlayer: virtual public ofBaseVideo{
 	
 public:
-	
-	ofBaseVideoPlayer();
 	virtual ~ofBaseVideoPlayer();
 	
 	//needs implementing
@@ -256,6 +271,11 @@ public:
 class ofBaseRenderer{
 public:
 	virtual ~ofBaseRenderer(){}
+
+	virtual string getType()=0;
+
+	virtual void update()=0;
+
 	virtual void draw(ofPolyline & poly)=0;
 	virtual void draw(ofPath & shape)=0;
 	virtual void draw(ofMesh & vertexData)=0;
@@ -321,7 +341,7 @@ public:
 	virtual void setHexColor( int hexColor ){}; // hex, like web 0xFF0033;
 
 	// bg color
-	virtual ofColor & getBgColor()=0;
+	virtual ofFloatColor & getBgColor()=0;
 	virtual bool bClearBg(){return true;};
 	virtual void background(const ofColor & c){};
 	virtual void background(float brightness){};

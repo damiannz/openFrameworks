@@ -1,4 +1,7 @@
 #include "ofOpenALSoundPlayer.h"
+
+#ifdef OF_SOUND_PLAYER_OPENAL
+
 #include "ofUtils.h"
 #include "ofMath.h"
 #include "ofFileUtils.h"
@@ -73,8 +76,8 @@ void ofOpenALSoundPlayer::createWindow(int size){
 		windowSum = 0;
 		window.resize(size);
 		// hanning window
-		for(int i = 0; i < 511*2; i++){
-			window[i] = .54 - .46 * cos((TWO_PI * i) / (511*2 - 1));
+		for(int i = 0; i < size; i++){
+			window[i] = .54 - .46 * cos((TWO_PI * i) / (size - 1));
 			windowSum += window[i];
 		}
 	}
@@ -591,6 +594,23 @@ void ofOpenALSoundPlayer::setPosition(float pct){
 	}
 }
 
+void ofOpenALSoundPlayer::setPositionMS(int ms){
+	if(sources.empty()) return;
+#ifdef OF_USING_MPG123
+	if(mp3streamf){
+		mpg123_seek(mp3streamf,float(ms)/1000.f*samplerate*channels,SEEK_SET);
+	}else
+#endif
+	if(streamf){
+		sf_seek(streamf,float(ms)/1000.f*samplerate*channels,SEEK_SET);
+		stream_samples_read = 0;
+	}else{
+		for(int i=0;i<(int)channels;i++){
+			alSourcef(sources[sources.size()-channels+i],AL_SEC_OFFSET,float(ms)/1000.f);
+		}
+	}
+}
+
 //------------------------------------------------------------
 float ofOpenALSoundPlayer::getPosition(){
 	if(duration==0) return 0;
@@ -609,23 +629,50 @@ float ofOpenALSoundPlayer::getPosition(){
 	return pos/duration;
 }
 
+
+//------------------------------------------------------------
+int ofOpenALSoundPlayer::getPositionMS(){
+	if(duration==0) return 0;
+	if(sources.empty()) return 0;
+	float pos;
+#ifdef OF_USING_MPG123
+	if(mp3streamf){
+		pos = float(mpg123_tell(mp3streamf)) / float(channels) / float(samplerate);
+	}else
+#endif
+	if(streamf){
+		pos = float(stream_samples_read) / float(channels) / float(samplerate);
+	}else{
+		alGetSourcef(sources[sources.size()-1],AL_SEC_OFFSET,&pos);
+	}
+	return pos * 1000.f;
+}
+
 //------------------------------------------------------------
 void ofOpenALSoundPlayer::setPan(float p){
 	if(sources.empty()) return;
+	pan = p;
+	p=p*2-1;
 	if(channels==1){
-		p=p*2-1;
 		float pos[3] = {p,0,0};
 		alSourcefv(sources[sources.size()-1],AL_POSITION,pos);
 	}else{
+        // calculates left/right volumes from pan-value (constant panning law)
+        // see: Curtis Roads: Computer Music Tutorial p 460
+		// thanks to jasch
+        float angle = p * 0.7853981633974483f; // in radians from -45. to +45.
+        float cosAngle = cos(angle);
+        float sinAngle = sin(angle);
+        float leftVol  = (cosAngle - sinAngle) * 0.7071067811865475; // multiplied by sqrt(2)/2
+        float rightVol = (cosAngle + sinAngle) * 0.7071067811865475; // multiplied by sqrt(2)/2
 		for(int i=0;i<(int)channels;i++){
 			if(i==0){
-				alSourcef(sources[sources.size()-channels+i],AL_GAIN,(1-p)*volume);
+				alSourcef(sources[sources.size()-channels+i],AL_GAIN,leftVol*volume);
 			}else{
-				alSourcef(sources[sources.size()-channels+i],AL_GAIN,p*volume);
+				alSourcef(sources[sources.size()-channels+i],AL_GAIN,rightVol*volume);
 			}
 		}
 	}
-	pan = p;
 }
 
 
@@ -828,3 +875,5 @@ void ofOpenALSoundPlayer::runWindow(vector<float> & signal){
 	for(int i = 0; i < (int)signal.size(); i++)
 		signal[i] *= window[i];
 }
+
+#endif

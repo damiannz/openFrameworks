@@ -11,7 +11,6 @@
 #include "ofAppRunner.h"
 #include "ofUtils.h"
 #include "ofVideoGrabber.h"
-#include "ofPixelUtils.h"
 
 static int cameraId;
 static bool newPixels;
@@ -26,7 +25,7 @@ static bool paused=true;
 static jclass getJavaClass(){
 	JNIEnv *env = ofGetJNIEnv();
 
-	jclass javaClass = env->FindClass("cc.openframeworks.OFAndroidVideoGrabber");
+	jclass javaClass = env->FindClass("cc/openframeworks/OFAndroidVideoGrabber");
 
 	if(javaClass==NULL){
 		ofLog(OF_LOG_ERROR,"cannot find OFAndroidVideoGrabber java class");
@@ -112,7 +111,7 @@ static void releaseJavaObject(){
 
 ofxAndroidVideoGrabber::ofxAndroidVideoGrabber(){
 
-	attemptFramerate = 30;
+	attemptFramerate = -1;
 	newPixels = false;
 	InitConvertTable();
 	bGrabberInited = false;
@@ -163,7 +162,7 @@ bool ofxAndroidVideoGrabber::initGrabber(int w, int h){
 	JNIEnv *env = ofGetJNIEnv();
 	if(!env) return false;
 
-	jclass javaClass = env->FindClass("cc.openframeworks.OFAndroidVideoGrabber");
+	jclass javaClass = env->FindClass("cc/openframeworks/OFAndroidVideoGrabber");
 
 	jobject camera = getCamera(env, javaClass, cameraId);
 	jmethodID javaInitGrabber = env->GetMethodID(javaClass,"initGrabber","(III)V");
@@ -183,7 +182,6 @@ bool ofxAndroidVideoGrabber::initGrabber(int w, int h){
 }
 
 void ofxAndroidVideoGrabber::videoSettings(){
-
 }
 
 unsigned char * ofxAndroidVideoGrabber::getPixels(){
@@ -200,6 +198,19 @@ void ofxAndroidVideoGrabber::setVerbose(bool bTalkToMe){
 
 void ofxAndroidVideoGrabber::setDeviceID(int _deviceID){
 
+	JNIEnv *env = ofGetJNIEnv();
+	if(!env) return;
+
+	jclass javaClass = env->FindClass("cc.openframeworks.OFAndroidVideoGrabber");
+
+	jobject camera = getCamera(env, javaClass, cameraId);
+	jmethodID javasetDeviceID = env->GetMethodID(javaClass,"setDeviceID","(I)V");
+	if(camera && javasetDeviceID){
+		env->CallVoidMethod(camera,javasetDeviceID,_deviceID);
+	}else{
+		ofLog(OF_LOG_ERROR, "cannot get OFAndroidVideoGrabber setDeviceID method");
+		return;
+	}
 }
 
 void ofxAndroidVideoGrabber::setDesiredFrameRate(int framerate){
@@ -467,7 +478,7 @@ Java_cc_openframeworks_OFAndroidVideoGrabber_newFrame(JNIEnv*  env, jobject  thi
 		buffer = (unsigned char*)env->GetPrimitiveArrayCritical(array, NULL);
 		if(!buffer) return 1;
 
-		static ofPixels aux_buffer;
+		//static ofPixels aux_buffer;
 		ofxAndroidVideoGrabber* grabber = (ofxAndroidVideoGrabber*)instances[cameraId]->getGrabber().get();
 
 		unsigned char * dst = instances[cameraId]->getPixels();
@@ -494,7 +505,7 @@ Java_cc_openframeworks_OFAndroidVideoGrabber_newFrame(JNIEnv*  env, jobject  thi
 		}
 
 		if(int(instances[cameraId]->getWidth())!=width || int(instances[cameraId]->getHeight())!=height){
-			ofPixelUtils::resize(grabber->getAuxBuffer(),instances[cameraId]->getPixelsRef());
+			grabber->getAuxBuffer().resizeTo(instances[cameraId]->getPixelsRef());
 		}
 		/*acc_time += ofGetSystemTime() - time_one_frame;
 		num_frames ++;

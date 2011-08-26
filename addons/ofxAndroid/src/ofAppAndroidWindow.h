@@ -17,7 +17,7 @@ public:
 
 	void setupOpenGL(int w, int h, int screenMode) {}
 	void initializeWindow() {}
-	void runAppViaInfiniteLoop(ofPtr<ofBaseApp> appPtr);
+	void runAppViaInfiniteLoop(ofBaseApp * appPtr);
 
 	void hideCursor() {}
 	void showCursor() {}
@@ -51,6 +51,8 @@ public:
 
 	void			setOrientation(ofOrientation orientation);
 	ofOrientation	getOrientation();
+
+	void	setThreadedEvents(bool threadedEvents);
 
 };
 

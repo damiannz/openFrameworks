@@ -27,6 +27,10 @@ void ofCamera::setFov(float f) {
 	fov = f;
 }
 
+float ofCamera::getFov(){
+	return fov;
+}
+
 //----------------------------------------
 void ofCamera::setNearClip(float f) {
 	nearClip = f;
@@ -74,6 +78,10 @@ void ofCamera::begin(ofRectangle viewport) {
 		//			else 
 #ifndef TARGET_OPENGLES
 		glOrtho(0, viewport.width, 0, viewport.height, nearClip, farClip);
+#else
+		ofMatrix4x4 ortho;
+		ortho.makeOrthoMatrix(0, viewport.width, 0, viewport.height, nearClip, farClip);
+		glLoadMatrixf(ortho.getPtr());
 #endif		
 	} else {
 		gluPerspective(fov, viewport.width/viewport.height, nearClip, farClip);

@@ -33,8 +33,8 @@ ofLogLevel ofGetLogLevel(){
 }
 
 //--------------------------------------------------
-void ofLogToFile(const string & path){
-	ofLog::setChannel(ofPtr<ofFileLoggerChannel>(new ofFileLoggerChannel(path)));
+void ofLogToFile(const string & path, bool append){
+	ofLog::setChannel(ofPtr<ofFileLoggerChannel>(new ofFileLoggerChannel(path,append)));
 }
 
 //--------------------------------------------------
@@ -77,6 +77,10 @@ ofLog::ofLog(ofLogLevel logLevel, const char* format, ...){
 ofLog::~ofLog(){
 	// don't log if we printed in the constructor already
 	if(!bPrinted){
+		if(message.str().empty()){
+			message << module;
+			module = "OF";
+		}
 		_log(level,module,message.str());
 	}
 }
@@ -191,10 +195,15 @@ void ofConsoleLoggerChannel::log(ofLogLevel level, const string & module, const 
 }
 
 void ofConsoleLoggerChannel::log(ofLogLevel logLevel, const string & module, const char* format, ...){
+	va_list args;
+	va_start(args, format);
+	log(logLevel, module, format, args);
+	va_end(args);
+}
+
+void ofConsoleLoggerChannel::log(ofLogLevel logLevel, const string & module, const char* format, va_list args){
 	//thanks stefan!
 	//http://www.ozzu.com/cpp-tutorials/tutorial-writing-custom-printf-wrapper-function-t89166.html
-	va_list args;
-	va_start( args, format );
 	if(logLevel<OF_LOG_ERROR){
 		printf("%s: ", module.c_str());
 		printf("%s: ", ofGetLogLevelName(logLevel).c_str());
@@ -206,16 +215,14 @@ void ofConsoleLoggerChannel::log(ofLogLevel logLevel, const string & module, con
 		vfprintf( stderr, format, args );
 		fprintf(stderr,"\n");
 	}
-
-	va_end( args );
 }
 
 ofFileLoggerChannel::ofFileLoggerChannel(){
 
 }
 
-ofFileLoggerChannel::ofFileLoggerChannel(const string & path){
-	setFile(path);
+ofFileLoggerChannel::ofFileLoggerChannel(const string & path, bool append){
+	setFile(path,append);
 }
 
 ofFileLoggerChannel::~ofFileLoggerChannel(){
@@ -226,9 +233,11 @@ void ofFileLoggerChannel::close(){
 	file.close();
 }
 
-void ofFileLoggerChannel::setFile(const string & path){
-	file.open(path,ofFile::WriteOnly);
-
+void ofFileLoggerChannel::setFile(const string & path,bool append){
+	file.open(path,append?ofFile::Append:ofFile::WriteOnly);
+	file << endl;
+	file << endl;
+	file << "---------------------------------------  " << ofGetTimestampString() << endl;
 }
 
 void ofFileLoggerChannel::log(ofLogLevel level, const string & module, const string & message){
@@ -236,9 +245,13 @@ void ofFileLoggerChannel::log(ofLogLevel level, const string & module, const str
 }
 
 void ofFileLoggerChannel::log(ofLogLevel logLevel, const string & module, const char* format, ...){
-	file << module << ": " << ofGetLogLevelName(logLevel) << ": ";
 	va_list args;
-	va_start( args, format );
-	file << ofVAArgsToString(format,args) << endl;
+	va_start(args, format);
+	log(logLevel, module, format, args);
 	va_end(args);
+}
+
+void ofFileLoggerChannel::log(ofLogLevel logLevel, const string & module, const char* format, va_list args){
+	file << module << ": " << ofGetLogLevelName(logLevel) << ": ";
+	file << ofVAArgsToString(format,args) << endl;
 }

@@ -26,13 +26,14 @@ void ofSoundUpdate(){
 	#endif
 }
 
+#ifndef TARGET_ANDROID
 //--------------------
 void ofSoundShutdown(){
 	#ifdef OF_SOUND_PLAYER_FMOD
 		ofFmodSoundPlayer::closeFmod();
 	#endif
 }
-
+#endif
 
 //--------------------
 float * ofSoundGetSpectrum(int nBands){
@@ -142,11 +143,27 @@ void ofSoundPlayer::setPosition(float pct){
 } 
 
 //--------------------------------------------------------------------
+void ofSoundPlayer::setPositionMS(int ms){
+	if( player != NULL ){
+		player->setPositionMS(ms);
+	}
+}
+
+//--------------------------------------------------------------------
 float ofSoundPlayer::getPosition(){
 	if( player != NULL ){
 		return player->getPosition();
 	} else {
 		return 0; 
+	}
+}
+
+//--------------------------------------------------------------------
+int ofSoundPlayer::getPositionMS(){
+	if( player != NULL ){
+		return player->getPositionMS();
+	} else {
+		return 0;
 	}
 }
 
