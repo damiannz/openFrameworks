@@ -63,7 +63,9 @@ ifneq (,$(USER_SOURCE_DIR))
 	USER_OBJFILES =  $(subst $(USER_SOURCE_DIR)/, ,$(patsubst %.c,%.o,$(patsubst %.cpp,%.o,$(patsubst %.cc,%.o,$(USER_SOURCES)))))
 endif
 
-APPNAME = $(shell basename `pwd`)
+ifeq ($(APPNAME),)
+    APPNAME = $(shell basename `pwd`)
+endif
 CORE_INCLUDES = $(shell find $(OF_ROOT)/libs/openFrameworks/ -type d)
 CORE_INCLUDE_FLAGS = $(addprefix -I,$(CORE_INCLUDES))
 INCLUDES = $(shell find $(OF_ROOT)/libs/*/include -type d | grep -v glu | grep -v quicktime | grep -v poco)
