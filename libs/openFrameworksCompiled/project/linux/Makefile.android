@@ -136,6 +136,10 @@ afterReleaseAndroid:$(TARGET)
 
 RESNAME=$(shell echo $(APPNAME)Resources | tr '[A-Z]' '[a-z]')
 
+ifeq ($(PKGNAME),)
+    PKGNAME = cc.openframeworks.$(APPNAME)
+endif
+
 AndroidInstall:	
 	if [ -d "bin/data" ]; then \
 		mkdir -p res/raw; \
@@ -158,5 +162,5 @@ AndroidInstall:
 	#if [ "$(shell $(SDK_ROOT)/platform-tools/adb get-state)" = "device" ]; then
 	$(SDK_ROOT)/platform-tools/adb install -r bin/$(APPNAME).apk;
 	#fi
-	$(SDK_ROOT)/platform-tools/adb shell am start -a android.intent.action.MAIN -n cc.openframeworks.$(APPNAME)/cc.openframeworks.$(APPNAME).OFActivity
+	$(SDK_ROOT)/platform-tools/adb shell am start -a android.intent.action.MAIN -n $(PKGNAME)/$(PKGNAME).OFActivity
 	
