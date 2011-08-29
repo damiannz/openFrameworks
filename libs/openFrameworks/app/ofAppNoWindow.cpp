@@ -97,10 +97,10 @@ void ofAppNoWindow::runAppViaInfiniteLoop(ofBaseApp * appPtr){
 		ofNotifyEvent( ofEvents.update, voidEventArgs );
 	#endif
 
-    printf(	"***\n***\n*** ofAppNoWindow running a headerless openFrameworks app\n"
+    ofLogNotice()<<	"***\n***\n*** ofAppNoWindow running a headerless openFrameworks app\n"
 			"***\n*** keyboard input works here\n"
 			"***\n*** press Esc or Ctrl-C to quit\n"
-			"***\n");
+			"***\n";
 	while (true)
 	{
 	    if (nFrameCount != 0 && bFrameRateSet == true){
@@ -135,7 +135,7 @@ void ofAppNoWindow::runAppViaInfiniteLoop(ofBaseApp * appPtr){
 			}
 			else if ( key == /* ctrl-c */ 3 )
 			{
-				printf("Ctrl-C pressed\n");
+				ofLogNotice()<<	"Ctrl-C pressed\n";
 				OF_EXIT_APP(0);
 			}
 			else
