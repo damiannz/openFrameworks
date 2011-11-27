@@ -100,6 +100,7 @@ template<typename PixelType>
 void ofPixels_<PixelType>::setFromAlignedPixels(const PixelType * newPixels, int width, int height, int channels, int stride) {
 	allocate(width, height, channels);
 	int dstStride = width * getBytesPerPixel();
+    printf("setting from aligned pixels: newPixels is %x, dstStride is %i\n", newPixels, dstStride );
 	const unsigned char* src = (unsigned char*) newPixels;
 	unsigned char* dst =  (unsigned char*) pixels;
 	for(int i = 0; i < height; i++) {
@@ -199,12 +200,15 @@ template<typename PixelType>
 void ofPixels_<PixelType>::swapRgb(){
 	if (channels >= 3){
 		int sizePixels		= width*height;
-		int cnt				= 0;
+		int cnt				= sizePixels;
 		PixelType * pixels_ptr = pixels;
 
-		while (cnt < sizePixels){
+        printf("in swapRgb: sizePixels %i, channels %i, pixels %x\n", sizePixels, channels, pixels );
+		while (cnt > 2){
 			std::swap(pixels_ptr[0],pixels_ptr[2]);
-			cnt++;
+            if ( (cnt <= 100) )
+                printf("sp %i, cnt %i, pixels_ptr %x\n", sizePixels, cnt, pixels_ptr);
+			cnt--;
 			pixels_ptr+=channels;
 		}
 	}

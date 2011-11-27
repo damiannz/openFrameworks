@@ -751,7 +751,6 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = openFrameworksDebug;
-				SDKROOT = "";
 			};
 			name = Debug;
 		};
@@ -792,7 +791,6 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = openFrameworks;
-				SDKROOT = "";
 			};
 			name = Release;
 		};
@@ -800,6 +798,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E432815F138AC0470047C5CB /* Debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 			};
 			name = Debug;
 		};
@@ -807,6 +808,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4328160138AC04A0047C5CB /* Release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 			};
 			name = Release;
 		};
