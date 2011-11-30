@@ -34,6 +34,8 @@ static ofPtr<ofAppBaseWindow> window;
 	#include "ofAppiPhoneWindow.h"
 #elif defined TARGET_ANDROID
 	#include "ofAppAndroidWindow.h"
+#elif defined TARGET_ARMV7L_GENERIC
+
 #else
 	#include "ofAppGlutWindow.h"
 #endif
@@ -56,9 +58,12 @@ void ofRunApp(ofBaseApp * OFSA){
 //--------------------------------------
 void ofSetupOpenGL(ofPtr<ofAppBaseWindow> windowPtr, int w, int h, int screenMode){
 	window = windowPtr;
+	printf("window -> setupOpenGL\n");
 	window->setupOpenGL(w, h, screenMode);
-	
+
 #ifndef TARGET_OPENGLES
+	printf("glewInit\n");
+
 	GLenum err = glewInit();
 	if (GLEW_OK != err)
 	{
@@ -66,7 +71,9 @@ void ofSetupOpenGL(ofPtr<ofAppBaseWindow> windowPtr, int w, int h, int screenMod
 		ofLog(OF_LOG_ERROR, "Error: %s\n", glewGetErrorString(err));
 	}
 #endif
+	printf("about to ofSetDefaultRenderer\n");
 	ofSetDefaultRenderer(ofPtr<ofBaseRenderer>(new ofGLRenderer(false)));
+	printf("ofSetupOpenGL done\n");
 	//Default colors etc are now in ofGraphics - ofSetupGraphicDefaults
 	//ofSetupGraphicDefaults();
 }
@@ -78,6 +85,8 @@ void ofSetupOpenGL(int w, int h, int screenMode){
 		window = ofPtr<ofAppBaseWindow>(new ofAppiPhoneWindow());
 	#elif defined TARGET_ANDROID
 		window = ofPtr<ofAppBaseWindow>(new ofAppAndroidWindow());
+	#elif defined TARGET_ARMV7L_GENERIC
+		printf("needs a default window, will probably crash\n");
 	#else
 		window = ofPtr<ofAppBaseWindow>(new ofAppGlutWindow());
 	#endif
@@ -145,11 +154,12 @@ void ofRunApp(ofPtr<ofBaseApp> OFSA){
 
 	#endif
 
+	printf("initializing window\n");
 	window->initializeWindow();
 
 	ofSeedRandom();
 	ofResetElapsedTimeCounter();
-
+	printf("runappviainfiniteloop\n");
 	window->runAppViaInfiniteLoop(OFSAptr);
 
 
@@ -340,6 +350,7 @@ void ofSetVerticalSync(bool bSync){
 	//--------------------------------------
 	#ifdef TARGET_LINUX
 	//--------------------------------------
+		#ifndef TARGET_OPENGLES
 		//if (GLEW_GLX_SGI_swap_control)
 		void (*swapInterval)(int)  = (void (*)(int)) glXGetProcAddress((const GLubyte*) "glXSwapIntervalSGI");
 		if(!swapInterval)
@@ -348,6 +359,7 @@ void ofSetVerticalSync(bool bSync){
 		if(swapInterval)
 			swapInterval(bSync ? 1 : 0);
 		//glXSwapIntervalSGI(bSync ? 1 : 0);
+		#endif
 	//--------------------------------------
 	#endif
 	//--------------------------------------

@@ -19,6 +19,7 @@ ofGLRenderer::ofGLRenderer(bool useShapeColor){
 
 //----------------------------------------------------------
 void ofGLRenderer::draw(ofMesh & vertexData){
+	printf("drawing mesh, %i vertices\n", vertexData.getNumVertices() );
 	if(vertexData.getNumVertices()){
 		glEnableClientState(GL_VERTEX_ARRAY);
 		glVertexPointer(3, GL_FLOAT, sizeof(ofVec3f), &vertexData.getVerticesPointer()->x);
@@ -39,13 +40,17 @@ void ofGLRenderer::draw(ofMesh & vertexData){
 
 	if(vertexData.getNumIndices()){
 #ifdef TARGET_OPENGLES
+		printf("calling drawElements (opengles)\n");
 		glDrawElements(ofGetGLPrimitiveMode(vertexData.getMode()), vertexData.getNumIndices(),GL_UNSIGNED_SHORT,vertexData.getIndexPointer());
 #else
+		printf("calling drawElements (normal opengl)\n");
 		glDrawElements(ofGetGLPrimitiveMode(vertexData.getMode()), vertexData.getNumIndices(),GL_UNSIGNED_INT,vertexData.getIndexPointer());
 #endif
 	}else{
+		printf("calling drawArrays\n");
 		glDrawArrays(ofGetGLPrimitiveMode(vertexData.getMode()), 0, vertexData.getNumVertices());
 	}
+	printf("drawn\n");
 	if(vertexData.getNumColors()){
 		glDisableClientState(GL_COLOR_ARRAY);
 	}

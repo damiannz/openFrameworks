@@ -3,7 +3,7 @@
 #include "ofConstants.h"
 #include "ofTypes.h"
 
-#if !defined( TARGET_OF_IPHONE ) && !defined(TARGET_ANDROID)
+#if !defined( TARGET_OF_IPHONE ) && !defined(TARGET_ANDROID) && !defined( TARGET_ARMV7L_GENERIC )
 extern "C" {
 #include "fmod.h"
 #include "fmod_errors.h"
@@ -39,7 +39,7 @@ void ofSoundShutdown();
 	#define OF_SOUND_PLAYER_IPHONE
 #elif defined TARGET_LINUX
 	#define OF_SOUND_PLAYER_OPENAL
-#elif !defined(TARGET_ANDROID)
+#elif !defined(TARGET_ANDROID) && !defined(TARGET_ARMV7L_GENERIC)
 	#define OF_SOUND_PLAYER_FMOD
 #else
 	void ofSoundShutdown(){}

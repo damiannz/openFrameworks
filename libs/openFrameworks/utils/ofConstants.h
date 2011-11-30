@@ -31,6 +31,10 @@ enum ofLoopType{
 #elif defined (ANDROID)
 	#define TARGET_ANDROID
 	#define TARGET_OPENGLES
+#elif defined(__ARMEL__)
+	#define TARGET_LINUX
+	#define TARGET_OPENGLES
+	#define TARGET_ARMV7L_GENERIC
 #else
 	#define TARGET_LINUX
 #endif
@@ -107,9 +111,10 @@ enum ofLoopType{
 	#endif
 #endif
 
-#ifdef TARGET_LINUX
-		#define GL_GLEXT_PROTOTYPES
+#ifdef TARGET_LINUX 
         #include <unistd.h>
+	#ifndef TARGET_OPENGLES
+		#define GL_GLEXT_PROTOTYPES
 		#include <GL/glew.h>
 		#include <GL/gl.h>
 		#include <GL/glx.h>
@@ -121,6 +126,8 @@ enum ofLoopType{
 	//#if defined(__LITTLE_ENDIAN__)
 		#define TARGET_LITTLE_ENDIAN		// intel cpu
 	//#endif
+	
+	#endif
 
         // some things for serial compilation:
         #define B14400	14400
@@ -139,6 +146,14 @@ enum ofLoopType{
 
 #ifdef TARGET_ANDROID
 	#include <unistd.h>
+	#include <GLES/gl.h>
+	#include <GLES/glext.h>
+
+	#define TARGET_LITTLE_ENDIAN
+#endif
+
+#ifdef TARGET_ARMV7L_GENERIC
+	#define GL_GLEXT_PROTOTYPES
 	#include <GLES/gl.h>
 	#include <GLES/glext.h>
 
