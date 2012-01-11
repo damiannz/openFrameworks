@@ -22,12 +22,21 @@ ifeq ($(findstring Android,$(MAKECMDGOALS)),Android)
 	endif
 endif
 
+ifndef ARCH
+	ARCH = $(shell uname -m)
+endif
+
 ifeq ($(ARCH),android)
 	COMPILER_OPTIMIZATION = -Os
 	NDK_PLATFORM = android-8
 else
+ifeq ($(ARCH),armv7l)
+	COMPILER_OPTIMIZATION = -march=armv7-a -mtune=cortex-a8 -finline-functions -funroll-all-loops  -O3 -funsafe-math-optimizations -mfpu=neon -ftree-vectorize -mfloat-abi=softfp
+else
 	COMPILER_OPTIMIZATION = -march=native -mtune=native -finline-functions -funroll-all-loops  -Os
 endif
+endif
+
 USER_CFLAGS = 
 
 
@@ -47,18 +56,14 @@ ifneq ($(ARCH),android)
 	ifeq ($(ARCH),x86_64)
 		LIBSPATH=linux64
 	else
-		LIBSPATH=linux
+		ifeq ($(ARCH),armv7l)
+			LIBSPATH=linuxarmv7l
+		else
+			LIBSPATH=linux
+		endif
 	endif
 else
-	ifeq ($(findstring Release_arm7,$(MAKECMDGOALS)),Release_arm7)
-	    LIBSPATH =android/armeabi-v7a
-    else
-        ifeq ($(findstring Release_neon,$(MAKECMDGOALS)),Release_neon)
-    	    LIBSPATH =android/armeabi-neon
-    	else
-        	LIBSPATH =android/armeabi
-    	endif
-    endif
+	LIBSPATH = android
 	#NDK_ROOT = $(shell cat ndk_path.make)
 	TOOLCHAIN=arm-linux-androideabi-4.4.3
 	TOOLCHAIN_PATH=$(NDK_ROOT)/toolchains/$(TOOLCHAIN)/prebuilt/$(HOST_PLATFORM)/bin/
@@ -123,11 +128,8 @@ ifeq ($(findstring Release,$(MAKECMDGOALS)),Release)
 endif
 
 ifeq ($(findstring Release_arm7,$(MAKECMDGOALS)),Release_arm7)
-	TARGET_CFLAGS += -march=armv7-a -mfloat-abi=softfp 
-endif
-
-ifeq ($(findstring Release_neon,$(MAKECMDGOALS)),Release_neon)
 	TARGET_CFLAGS += -march=armv7-a -mfloat-abi=softfp -mfpu=neon
+	TARGET = ../../lib/$(LIBSPATH)/libopenFrameworks_arm7.a
 endif
 
 ifeq ($(MAKECMDGOALS),)
@@ -141,7 +143,7 @@ ifeq ($(MAKECMDGOALS),clean)
 endif
 
 ifeq ($(MAKECMDGOALS),CleanAndroid)
-	TARGET = ../../lib/$(LIBSPATH)/libopenFrameworks.a ../../lib/$(LIBSPATH)/libopenFrameworksDebug.a ../../lib/$(LIBSPATH)/libopenFrameworks_arm7.a ../../lib/$(LIBSPATH)/libopenFrameworks_neon.a
+	TARGET = ../../lib/$(LIBSPATH)/libopenFrameworks.a ../../lib/$(LIBSPATH)/libopenFrameworksDebug.a ../../lib/$(LIBSPATH)/libopenFrameworks_arm7.a
 endif
 
 CLEANTARGET = $(addprefix Clean,$(TARGET_NAME))
@@ -149,7 +151,7 @@ OBJ_OUTPUT = obj/$(TARGET_NAME)/
 DEPFILES = $(addprefix $(OBJ_OUTPUT),$(patsubst ../../../%.cpp,%.d,$(SOURCES)))
 OBJS = $(addprefix $(OBJ_OUTPUT), $(OBJFILES))
 
-.PHONY: all Debug Release after clean CleanDebug CleanRelease help DebugAndroid ReleaseAndroid Release_arm7Android Release_neonAndroid CleanAndroid
+.PHONY: all Debug Release after clean CleanDebug CleanRelease help DebugAndroid ReleaseAndroid Release_arm7Android CleanAndroid
 
 Release: $(TARGET) 
 
@@ -178,7 +180,6 @@ $(OBJ_OUTPUT)%.o: ../../../%.cpp
 	@echo "compiling object for " $<
 	mkdir -p $(@D)
 	$(CXX) $(TARGET_CFLAGS) $(CFLAGS) $(USER_CFLAGS) -MMD -MP -MF$(OBJ_OUTPUT)$*.d -MT$(OBJ_OUTPUT)$*.o -o $@ -c $<
-
 
 $(TARGET) : $(OBJS) 
 	echo "creating " $(TARGET)

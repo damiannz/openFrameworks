@@ -79,7 +79,7 @@ endif
 
 SOURCE_DIRS = $(shell find ../../../openFrameworks -maxdepth 1 -mindepth 1 -type d )
 ifeq ($(ARCH),android)
-	SOURCES = $(shell find $(SOURCE_DIRS) -name "*.cpp" | grep -v "ofAppGlutWindow.cpp" | grep -v ofGstVideoPlayer.cpp | grep -v ofQuickTimeGrabber.cpp | grep -v ofVideoPlayer.cpp | grep -v ofGstVideoGrabber.cpp | grep -v ofSoundPlayer.cpp | grep -v ofOpenALSoundPlayer.cpp)
+	SOURCES = $(shell find $(SOURCE_DIRS) -name "*.cpp" | grep -v "ofAppGlutWindow.cpp" | grep -v ofGstVideoPlayer.cpp | grep -v ofQuickTimeGrabber.cpp | grep -v ofVideoPlayer.cpp | grep -v ofGstVideoGrabber.cpp | grep -v ofOpenALSoundPlayer.cpp)
 else
 	SOURCES = $(shell find $(SOURCE_DIRS) -name "*.cpp") 
 endif
@@ -163,6 +163,8 @@ ReleaseAndroid: $(TARGET)
 
 Release_arm7Android: $(TARGET)
 
+Release_neonAndroid: $(TARGET)
+
 all: 
 	$(MAKE) Debug
 	$(MAKE) Release
@@ -171,15 +173,17 @@ android:
 	$(MAKE) DebugAndroid
 	$(MAKE) ReleaseAndroid
 	$(MAKE) Release_arm7Android
+	$(MAKE) Release_neonAndroid
 
 #This rule does the compilation
 $(OBJ_OUTPUT)%.o: ../../../%.cpp 
 	@echo "compiling object for " $<
 	mkdir -p $(@D)
-	$(CXX) $(TARGET_CFLAGS) $(CFLAGS) $(USER_CFLAGS) -MMD -MP -MF$(OBJ_OUTPUT)$*.d -MT$(OBJ_OUTPUT)$*.d -o $@ -c $<
+	$(CXX) $(TARGET_CFLAGS) $(CFLAGS) $(USER_CFLAGS) -MMD -MP -MF$(OBJ_OUTPUT)$*.d -MT$(OBJ_OUTPUT)$*.o -o $@ -c $<
 
 $(TARGET) : $(OBJS) 
 	echo "creating " $(TARGET)
+	mkdir -p $(@D)
 	$(AR) -r "$@" $(OBJS)
 
 -include $(DEPFILES)
