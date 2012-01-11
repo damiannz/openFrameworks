@@ -81,7 +81,11 @@ SOURCE_DIRS = $(shell find ../../../openFrameworks -maxdepth 1 -mindepth 1 -type
 ifeq ($(ARCH),android)
 	SOURCES = $(shell find $(SOURCE_DIRS) -name "*.cpp" | grep -v "ofAppGlutWindow.cpp" | grep -v ofGstVideoPlayer.cpp | grep -v ofQuickTimeGrabber.cpp | grep -v ofVideoPlayer.cpp | grep -v ofGstVideoGrabber.cpp | grep -v ofOpenALSoundPlayer.cpp)
 else
-	SOURCES = $(shell find $(SOURCE_DIRS) -name "*.cpp") 
+	ifeq ($(ARCH),armv7l)
+		SOURCES = $(shell find $(SOURCE_DIRS) -name "*.cpp" | grep -v "ofAppGlutWindow.cpp" | grep -v ofGstVideoPlayer.cpp | grep -v ofQuickTimeGrabber.cpp | grep -v ofVideoPlayer.cpp | grep -v ofGstVideoGrabber.cpp | grep -v ofSoundPlayer.cpp | grep -v ofOpenALSoundPlayer.cpp | grep -vi ofFModSoundPlayer.cpp )
+	else
+		SOURCES = $(shell find $(SOURCE_DIRS) -name "*.cpp") 
+	endif
 endif
 OBJFILES = $(patsubst ../../../%.cpp,%.o,$(SOURCES))
 CORE_INCLUDES = $(shell find ../../../openFrameworks/ -type d)
@@ -92,8 +96,12 @@ INCLUDES_FLAGS += -I../../../poco/include
 ifeq ($(ARCH),android)
 	INCLUDES_FLAGS += -I../../../glu/include_android
  	INCLUDES_FLAGS += -I../../../../addons/ofxAndroid/src
-else
- 	INCLUDES_FLAGS += -I../../../glu/include
+else 
+	ifeq ($(ARCH),armv7l)
+		INCLUDES_FLAGS += -I../../../glu/include_linuxarmv7l
+	else
+ 		INCLUDES_FLAGS += -I../../../glu/include
+	endif
 endif
 
 CFLAGS += -Wall -fexceptions

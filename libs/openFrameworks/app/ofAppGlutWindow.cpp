@@ -15,7 +15,7 @@
 	#include "../../../libs/glut/lib/osx/GLUT.framework/Versions/A/Headers/glut.h"
 	#include <Carbon/Carbon.h>
 #endif
-#ifdef TARGET_LINUX
+#if defined( TARGET_LINUX) && !defined(TARGET_ARMV7L_GENERIC)
 	#include <GL/glut.h>
 #endif
 
@@ -316,10 +316,13 @@ void ofAppGlutWindow::initializeWindow(){
 void ofAppGlutWindow::runAppViaInfiniteLoop(ofBaseApp * appPtr){
 	ofAppPtr = appPtr;
 
+printf("about to ofNotifySetup and Update\n");
 	ofNotifySetup();
 	ofNotifyUpdate();
+printf(	"about to glutMainLoop\n");
 
 	glutMainLoop();
+printf("glutMainLoop() done\n");
 }
 
 
