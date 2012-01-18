@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="of_easy_cam_8h" kind="file">
+    <compoundname>ofEasyCam.h</compoundname>
+    <includes refid="of_camera_8h" local="yes">ofCamera.h</includes>
+    <includes refid="of_events_8h" local="yes">ofEvents.h</includes>
+    <includedby refid="of_easy_cam_8cpp" local="yes">3d/ofEasyCam.cpp</includedby>
+    <includedby refid="of_main_8h" local="yes">ofMain.h</includedby>
+    <incdepgraph>
+      <node id="257">
+        <label>ofVectorMath.h</label>
+        <link refid="of_vector_math_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+      </node>
+      <node id="246">
+        <label>iomanip</label>
+      </node>
+      <node id="251">
+        <label>ofColor.h</label>
+        <link refid="of_color_8h"/>
+        <childnode refid="252" relation="include">
+        </childnode>
+        <childnode refid="253" relation="include">
+        </childnode>
+      </node>
+      <node id="252">
+        <label>limits</label>
+      </node>
+      <node id="260">
+        <label>ofQuaternion.h</label>
+        <link refid="of_quaternion_8h"/>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+      </node>
+      <node id="273">
+        <label>ofPolyline.h</label>
+        <link refid="of_polyline_8h"/>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+      </node>
+      <node id="248">
+        <label>ofVec4f.h</label>
+        <link refid="of_vec4f_8h"/>
+        <childnode refid="230" relation="include">
+        </childnode>
+      </node>
+      <node id="234">
+        <label>GL/glx.h</label>
+      </node>
+      <node id="271">
+        <label>ofPixels.h</label>
+        <link refid="of_pixels_8h"/>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="251" relation="include">
+        </childnode>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="252" relation="include">
+        </childnode>
+      </node>
+      <node id="229">
+        <label>ofVec2f.h</label>
+        <link refid="of_vec2f_8h"/>
+        <childnode refid="230" relation="include">
+        </childnode>
+      </node>
+      <node id="239">
+        <label>cmath</label>
+      </node>
+      <node id="250">
+        <label>ofTypes.h</label>
+        <link refid="of_types_8h"/>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="251" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+      </node>
+      <node id="228">
+        <label>ofVec3f.h</label>
+        <link refid="of_vec3f_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="242" relation="include">
+        </childnode>
+      </node>
+      <node id="241">
+        <label>string</label>
+      </node>
+      <node id="238">
+        <label>cstdarg</label>
+      </node>
+      <node id="232">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="224">
+        <label>3d/ofEasyCam.h</label>
+        <link refid="ofEasyCam.h"/>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+      </node>
+      <node id="269">
+        <label>Poco/File.h</label>
+      </node>
+      <node id="235">
+        <label>tesselator.h</label>
+      </node>
+      <node id="263">
+        <label>ofBaseTypes.h</label>
+        <link refid="of_base_types_8h"/>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="251" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
+      </node>
+      <node id="272">
+        <label>ofGLRenderer.h</label>
+        <link refid="of_g_l_renderer_8h"/>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+      </node>
+      <node id="247">
+        <label>fstream</label>
+      </node>
+      <node id="258">
+        <label>ofMatrix3x3.h</label>
+        <link refid="of_matrix3x3_8h"/>
+        <childnode refid="230" relation="include">
+        </childnode>
+      </node>
+      <node id="261">
+        <label>of3dUtils.h</label>
+        <link refid="of3d_utils_8h"/>
+      </node>
+      <node id="276">
+        <label>ofEvents.h</label>
+        <link refid="of_events_8h"/>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+      </node>
+      <node id="253">
+        <label>ofMath.h</label>
+        <link refid="of_math_8h"/>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+      </node>
+      <node id="237">
+        <label>cstdio</label>
+      </node>
+      <node id="266">
+        <label>bitset</label>
+      </node>
+      <node id="240">
+        <label>ctime</label>
+      </node>
+      <node id="231">
+        <label>unistd.h</label>
+      </node>
+      <node id="275">
+        <label>stack</label>
+      </node>
+      <node id="243">
+        <label>vector</label>
+      </node>
+      <node id="267">
+        <label>ofLog.h</label>
+        <link refid="of_log_8h"/>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="268" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="225">
+        <label>ofCamera.h</label>
+        <link refid="of_camera_8h"/>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+      </node>
+      <node id="230">
+        <label>ofConstants.h</label>
+        <link refid="of_constants_8h"/>
+        <childnode refid="231" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+        <childnode refid="242" relation="include">
+        </childnode>
+        <childnode refid="243" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+      </node>
+      <node id="245">
+        <label>sstream</label>
+      </node>
+      <node id="227">
+        <label>ofPoint.h</label>
+        <link refid="of_point_8h"/>
+        <childnode refid="228" relation="include">
+        </childnode>
+      </node>
+      <node id="259">
+        <label>ofMatrix4x4.h</label>
+        <link refid="of_matrix4x4_8h"/>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+      </node>
+      <node id="268">
+        <label>ofFileUtils.h</label>
+        <link refid="of_file_utils_8h"/>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="269" relation="include">
+        </childnode>
+      </node>
+      <node id="236">
+        <label>cstdlib</label>
+      </node>
+      <node id="270">
+        <label>ofGLUtils.h</label>
+        <link refid="of_g_l_utils_8h"/>
+      </node>
+      <node id="256">
+        <label>ofNode.h</label>
+        <link refid="of_node_8h"/>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+      <node id="242">
+        <label>iostream</label>
+      </node>
+      <node id="264">
+        <label>ofMesh.h</label>
+        <link refid="of_mesh_8h"/>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="251" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="270" relation="include">
+        </childnode>
+      </node>
+      <node id="274">
+        <label>deque</label>
+      </node>
+      <node id="262">
+        <label>ofGraphics.h</label>
+        <link refid="of_graphics_8h"/>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="251" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="272" relation="include">
+        </childnode>
+      </node>
+      <node id="265">
+        <label>ofUtils.h</label>
+        <link refid="of_utils_8h"/>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+      </node>
+      <node id="249">
+        <label>ofAppRunner.h</label>
+        <link refid="of_app_runner_8h"/>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="226">
+        <label>ofRectangle.h</label>
+        <link refid="of_rectangle_8h"/>
+        <childnode refid="227" relation="include">
+        </childnode>
+      </node>
+      <node id="233">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="255">
+        <label>Poco/Mutex.h</label>
+      </node>
+      <node id="244">
+        <label>cstring</label>
+      </node>
+      <node id="254">
+        <label>tr1/memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="279">
+        <label>ofMain.h</label>
+        <link refid="of_main_8h"/>
+      </node>
+      <node id="277">
+        <label>3d/ofEasyCam.h</label>
+        <link refid="ofEasyCam.h"/>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+      </node>
+      <node id="278">
+        <label>3d/ofEasyCam.cpp</label>
+        <link refid="of_easy_cam_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classof_easy_cam" prot="public">ofEasyCam</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_camera_8h" kindref="compound">ofCamera.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_events_8h" kindref="compound">ofEvents.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classof_easy_cam" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classof_easy_cam" kindref="compound">ofEasyCam</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classof_camera" kindref="compound">ofCamera</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_easy_cam_1ae432309081375a91cacf80c5d9093c14" kindref="member">ofEasyCam</ref>();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_easy_cam_1a00f32e3774a5d9f4733ee43dd6b9b8f7" kindref="member">~ofEasyCam</ref>();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>this<sp/>should<sp/>be<sp/>ofGetViewRect()<sp/>eventually</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_easy_cam_1ac81e95f6c7e4c7c7de9250708c9a5664" kindref="member">begin</ref>(<ref refid="classof_rectangle" kindref="compound">ofRectangle</ref><sp/>viewport<sp/>=<sp/><ref refid="of_graphics_8cpp_1a9b45fc63c10fdf222fcbf20543183220" kindref="member">ofGetCurrentViewport</ref>());</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_easy_cam_1a8833ae781975911013b5f6aa3bec32cd" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>advanced<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_easy_cam_1a16d54adecaba3892262551e5ea8dce25" kindref="member">setTarget</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec3f" kindref="compound">ofVec3f</ref>&amp;<sp/>target);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_easy_cam_1a16d54adecaba3892262551e5ea8dce25" kindref="member">setTarget</ref>(<ref refid="classof_node" kindref="compound">ofNode</ref>&amp;<sp/>target);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_node" kindref="compound">ofNode</ref>&amp;<sp/><ref refid="classof_easy_cam_1afbf5951608a33ebd3c5f32b9fd0f2b1d" kindref="member">getTarget</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_easy_cam_1a4e3ba707cdc44c46bd442641d1b0c25a" kindref="member">setDistance</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>distance);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_easy_cam_1a27eac21ea675b765c599cc3947455efd" kindref="member">getDistance</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>drag<sp/>is<sp/>how<sp/>quickly<sp/>the<sp/>camera<sp/>picks<sp/>up<sp/>and<sp/>slows<sp/>down</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>it<sp/>is<sp/>a<sp/>normalized<sp/>value<sp/>between<sp/>0-1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_easy_cam_1a3c25cc3a6ca19efd4e06667bcc2586b0" kindref="member">setDrag</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>drag);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_easy_cam_1a160c0400017413385c89bb9084073bff" kindref="member">getDrag</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_easy_cam_1adb35a02a3c31cc833cd4d30830e9f006" kindref="member">mouseDragged</ref>(ofMouseEventArgs&amp;<sp/>mouse);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_easy_cam_1a9a0e60352d69fc7a03dc5a9b814e6c9d" kindref="member">mouseMoved</ref>(ofMouseEventArgs&amp;<sp/>mouse);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_easy_cam_1adab10e1df89a77f056663af17bbf5ed3" kindref="member">mousePressed</ref>(ofMouseEventArgs&amp;<sp/>mouse);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_easy_cam_1a4ad97ad37c1d0b737dd1fc0ab7bf9590" kindref="member">mouseReleased</ref>(ofMouseEventArgs&amp;<sp/>mouse);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>enable<sp/>or<sp/>disable<sp/>mouse<sp/>input<sp/>to<sp/>navigate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_easy_cam_1ac267e28e06a92003f6422e0ba707bfae" kindref="member">enableMouseInput</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_easy_cam_1a206a55a70de3bc16bd53cc3b6e9d07f0" kindref="member">disableMouseInput</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_easy_cam_1a47affec73161672979f9ae3e826702d6" kindref="member">getMouseInputEnabled</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_easy_cam_1a4e3ba707cdc44c46bd442641d1b0c25a" kindref="member">setDistance</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>distance,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>save);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_node" kindref="compound">ofNode</ref><sp/>target;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>drag;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>zoomSpeed;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bMouseInputEnabled;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vec3f" kindref="compound">ofVec3f</ref><sp/>mousePosViewPrev;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vec3f" kindref="compound">ofVec3f</ref><sp/>mousePosScreenPrev;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lastFrame;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>lastTap;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>mousePressedPrev[2];</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bDistanceSet;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>lastDistance;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>distanceScaleVelocity;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_quaternion" kindref="compound">ofQuaternion</ref><sp/>rotation;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vec3f" kindref="compound">ofVec3f</ref><sp/>translation;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/3d/ofEasyCam.h"/>
+  </compounddef>
+</doxygen>

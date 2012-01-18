@@ -1,0 +1,1393 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="classof_image__" kind="class" prot="public">
+    <compoundname>ofImage_</compoundname>
+    <basecompoundref refid="classof_base_image__" prot="public" virt="non-virtual">ofBaseImage_&lt; PixelType &gt;</basecompoundref>
+    <includes local="no">ofImage.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename PixelType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classof_image___1a3231ef055c1a443e932b0b5b5089b682" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ofImage_&lt; PixelType &gt;::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="191" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_image___1a0dff5be490aff1649fe8ae6f3d7e923b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ofImage_&lt; PixelType &gt;::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="191" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_image___1aaafb30a796642aafc91119b39a446068" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ofImage_&lt; PixelType &gt;::bpp</definition>
+        <argsstring></argsstring>
+        <name>bpp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="191" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_image___1aaa7a448bc54c19e95f7417a5fb1c4da3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ofImage_&lt; PixelType &gt;::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="192" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classof_image___1a3424a431902ee97f6b152aca1867e30e" prot="protected" static="no" mutable="no">
+        <type><ref refid="classof_pixels__" kindref="compound">ofPixels_</ref>&lt; PixelType &gt;</type>
+        <definition>ofPixels_&lt;PixelType&gt; ofImage_&lt; PixelType &gt;::pixels</definition>
+        <argsstring></argsstring>
+        <name>pixels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="200" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_image___1a2f16aa93579fdc985d54eedaf9accc17" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ofImage_&lt; PixelType &gt;::bUseTexture</definition>
+        <argsstring></argsstring>
+        <name>bUseTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="201" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_image___1ab63929fb957b57afecaa4a0137e7944b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classof_texture" kindref="compound">ofTexture</ref></type>
+        <definition>ofTexture ofImage_&lt; PixelType &gt;::tex</definition>
+        <argsstring></argsstring>
+        <name>tex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="202" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classof_image___1a251b6453435475cb53d4aea13aae236f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ofImage_&lt; PixelType &gt;::ofImage_</definition>
+        <argsstring>()</argsstring>
+        <name>ofImage_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="89" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="508" bodyend="522"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a0235bb745c27f653b7f7753bb970c77b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ofImage_&lt; PixelType &gt;::~ofImage_</definition>
+        <argsstring>()</argsstring>
+        <name>~ofImage_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="90" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="598" bodyend="604"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a1f72a884aafe2c6ae38fb4641db7f558" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ofImage_&lt; PixelType &gt;::ofImage_</definition>
+        <argsstring>(const ofPixels_&lt; PixelType &gt; &amp;pix)</argsstring>
+        <name>ofImage_</name>
+        <param>
+          <type>const <ref refid="classof_pixels__" kindref="compound">ofPixels_</ref>&lt; PixelType &gt; &amp;</type>
+          <declname>pix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="92" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="526" bodyend="541"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1aacfa2ccb43eaca033a8ff7a38a8724ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ofImage_&lt; PixelType &gt;::ofImage_</definition>
+        <argsstring>(const ofFile &amp;file)</argsstring>
+        <name>ofImage_</name>
+        <param>
+          <type>const <ref refid="classof_file" kindref="compound">ofFile</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="93" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="544" bodyend="559"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1afc002dc9a019ad24dbf7dc28d62a8057" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ofImage_&lt; PixelType &gt;::ofImage_</definition>
+        <argsstring>(const string &amp;filename)</argsstring>
+        <name>ofImage_</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="94" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="562" bodyend="577"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a86968a4303907dbaeb008851076eeb8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::allocate</definition>
+        <argsstring>(int w, int h, ofImageType type)</argsstring>
+        <name>allocate</name>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="of_constants_8h_1a9760b6b0bec0314fdc85f44793bbe951" kindref="member">ofImageType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="97" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="734" bodyend="744"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a5c39cc789111896657effabe6a3b5ee9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="98" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="749" bodyend="759"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1aa2438830ca61138d87b9e6d0cf37dfc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ofImage_&lt; PixelType &gt;::ofImage_</definition>
+        <argsstring>(const ofImage_&lt; PixelType &gt; &amp;mom)</argsstring>
+        <name>ofImage_</name>
+        <param>
+          <type>const <ref refid="classof_image__" kindref="compound">ofImage_</ref>&lt; PixelType &gt; &amp;</type>
+          <declname>mom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="101" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="590" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a4af95d2dcba2a9fb04d68ecf45af2f3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_image__" kindref="compound">ofImage_</ref>&lt; PixelType &gt; &amp;</type>
+        <definition>ofImage_&lt; PixelType &gt; &amp; ofImage_&lt; PixelType &gt;::operator=</definition>
+        <argsstring>(const ofImage_&lt; PixelType &gt; &amp;mom)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classof_image__" kindref="compound">ofImage_</ref>&lt; PixelType &gt; &amp;</type>
+          <declname>mom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="102" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="581" bodyend="586"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1adbf7906e3c51be900ab2b1cb1ce3d144" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SrcType</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>ofImage_&lt; PixelType &gt;::ofImage_</definition>
+        <argsstring>(const ofImage_&lt; SrcType &gt; &amp;mom)</argsstring>
+        <name>ofImage_</name>
+        <param>
+          <type>const <ref refid="classof_image__" kindref="compound">ofImage_</ref>&lt; SrcType &gt; &amp;</type>
+          <declname>mom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="105" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" bodystart="225" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1ab95fa924decd9bc024e2d251bd40a9d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SrcType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classof_image__" kindref="compound">ofImage_</ref>&lt; PixelType &gt; &amp;</type>
+        <definition>ofImage_&lt; PixelType &gt; &amp; ofImage_&lt; PixelType &gt;::operator=</definition>
+        <argsstring>(const ofImage_&lt; SrcType &gt; &amp;mom)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classof_image__" kindref="compound">ofImage_</ref>&lt; SrcType &gt; &amp;</type>
+          <declname>mom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="108" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" bodystart="216" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a59eb7d4fed7c69e4323c44ff44f07820" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SrcType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::clone</definition>
+        <argsstring>(const ofImage_&lt; SrcType &gt; &amp;mom)</argsstring>
+        <name>clone</name>
+        <param>
+          <type>const <ref refid="classof_image__" kindref="compound">ofImage_</ref>&lt; SrcType &gt; &amp;</type>
+          <declname>mom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="112" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" bodystart="234" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1aaa44423f95ea0539c98feb848c00433f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::setUseTexture</definition>
+        <argsstring>(bool bUse)</argsstring>
+        <name>setUseTexture</name>
+        <reimplements refid="classof_base_has_texture_1a3d2529a36a39ad5277f3050459cc3c80">setUseTexture</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>bUse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="115" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="875" bodyend="877"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1ac6e264a41eead0b9d978b0f55e85de02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofImage_&lt; PixelType &gt;::isUsingTexture</definition>
+        <argsstring>()</argsstring>
+        <name>isUsingTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="116" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="881" bodyend="883"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a0a8e31f169d9d28dfeb98cce55492ce9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classof_texture" kindref="compound">ofTexture</ref> &amp;</type>
+        <definition>ofTexture &amp; ofImage_&lt; PixelType &gt;::getTextureReference</definition>
+        <argsstring>()</argsstring>
+        <name>getTextureReference</name>
+        <reimplements refid="classof_base_has_texture_1ae0f27d5ca6d5a92ee3d9b3d6088745f6">getTextureReference</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="119" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="782" bodyend="791"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a54e590d2a26a10165106af94146d6ef8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::bind</definition>
+        <argsstring>()</argsstring>
+        <name>bind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="122" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="795" bodyend="798"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a2cb305f1cf4c9b824baba87447bd905d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::unbind</definition>
+        <argsstring>()</argsstring>
+        <name>unbind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="123" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="802" bodyend="805"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1aca661aecbda7615879dbfb57609400df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofImage_&lt; PixelType &gt;::loadImage</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>loadImage</name>
+        <param>
+          <type>string</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="126" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="624" bodyend="635"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a355c3915d484fb4f0972c31d2c0a5c91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofImage_&lt; PixelType &gt;::loadImage</definition>
+        <argsstring>(const ofBuffer &amp;buffer)</argsstring>
+        <name>loadImage</name>
+        <param>
+          <type>const <ref refid="classof_buffer" kindref="compound">ofBuffer</ref> &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="127" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="638" bodyend="649"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1abd944cd213109f0046b36bc76dc318aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofImage_&lt; PixelType &gt;::loadImage</definition>
+        <argsstring>(const ofFile &amp;file)</argsstring>
+        <name>loadImage</name>
+        <param>
+          <type>const <ref refid="classof_file" kindref="compound">ofFile</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="128" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="618" bodyend="620"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1afad1f41b2f1e7178a439b29ea07bb7ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::saveImage</definition>
+        <argsstring>(string fileName, ofImageQualityType compressionLevel=OF_IMAGE_QUALITY_BEST)</argsstring>
+        <name>saveImage</name>
+        <param>
+          <type>string</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type><ref refid="of_image_8h_1a97c478958e8cbaf64d7c0f8178ff4a18" kindref="member">ofImageQualityType</ref></type>
+          <declname>compressionLevel</declname>
+          <defval>OF_IMAGE_QUALITY_BEST</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="129" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="653" bodyend="655"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1ab2429611aa52bde75c5a7628c2426fb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::saveImage</definition>
+        <argsstring>(ofBuffer &amp;buffer, ofImageQualityType compressionLevel=OF_IMAGE_QUALITY_BEST)</argsstring>
+        <name>saveImage</name>
+        <param>
+          <type><ref refid="classof_buffer" kindref="compound">ofBuffer</ref> &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="of_image_8h_1a97c478958e8cbaf64d7c0f8178ff4a18" kindref="member">ofImageQualityType</ref></type>
+          <declname>compressionLevel</declname>
+          <defval>OF_IMAGE_QUALITY_BEST</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="130" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="659" bodyend="661"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a6475b2ca00efe1874c3feb5d3952dda6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::saveImage</definition>
+        <argsstring>(const ofFile &amp;file, ofImageQualityType compressionLevel=OF_IMAGE_QUALITY_BEST)</argsstring>
+        <name>saveImage</name>
+        <param>
+          <type>const <ref refid="classof_file" kindref="compound">ofFile</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type><ref refid="of_image_8h_1a97c478958e8cbaf64d7c0f8178ff4a18" kindref="member">ofImageQualityType</ref></type>
+          <declname>compressionLevel</declname>
+          <defval>OF_IMAGE_QUALITY_BEST</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="131" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="665" bodyend="667"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1ad152464e4b657d848011376cd13966a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::setCompression</definition>
+        <argsstring>(ofTexCompression compression)</argsstring>
+        <name>setCompression</name>
+        <param>
+          <type><ref refid="of_texture_8h_1a218c238fdc83c3d9ac235f31dfd3c895" kindref="member">ofTexCompression</ref></type>
+          <declname>compression</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="134" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="1082" bodyend="1087"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1ace37e73eb6ca7b8165b790ac7b51e715" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PixelType *</type>
+        <definition>PixelType * ofImage_&lt; PixelType &gt;::getPixels</definition>
+        <argsstring>()</argsstring>
+        <name>getPixels</name>
+        <reimplements refid="classof_base_has_pixels___1a680c5d134ff80d892abbe681fa5ce2e0">getPixels</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="137" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="763" bodyend="765"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1acfb1f23287b497700e179a5a2dd37f9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classof_pixels__" kindref="compound">ofPixels_</ref>&lt; PixelType &gt; &amp;</type>
+        <definition>ofPixels_&lt; PixelType &gt; &amp; ofImage_&lt; PixelType &gt;::getPixelsRef</definition>
+        <argsstring>()</argsstring>
+        <name>getPixelsRef</name>
+        <reimplements refid="classof_base_has_pixels___1a0e74503eeea2afb44a8f5d6b65422f45">getPixelsRef</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="138" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="769" bodyend="771"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1aa97e3525b2bb863329a6e6441b1195b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ofImage_&lt; PixelType &gt;::operator ofPixels_&lt; PixelType &gt; &amp;</definition>
+        <argsstring>()</argsstring>
+        <name>operator ofPixels_&lt; PixelType &gt; &amp;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="140" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="775" bodyend="777"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a5c4a07097120233cc46526f367e5bc67" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>ofColor_&lt; PixelType &gt; ofImage_&lt; PixelType &gt;::getColor</definition>
+        <argsstring>(int x, int y) const </argsstring>
+        <name>getColor</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="142" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="809" bodyend="811"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1abf6bb7be85569cfce36cdfe557032e04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::setColor</definition>
+        <argsstring>(int x, int y, ofColor_&lt; PixelType &gt; color)</argsstring>
+        <name>setColor</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="145" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="815" bodyend="817"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a6cfcd829bd778c5636cfca83cc53023b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::setFromPixels</definition>
+        <argsstring>(const PixelType *pixels, int w, int h, ofImageType type, bool bOrderIsRGB=true)</argsstring>
+        <name>setFromPixels</name>
+        <param>
+          <type>const PixelType *</type>
+          <declname>pixels</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="of_constants_8h_1a9760b6b0bec0314fdc85f44793bbe951" kindref="member">ofImageType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bOrderIsRGB</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="146" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="821" bodyend="831"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1adcd1fe954d8fca4575d7b190add5c6f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::setFromPixels</definition>
+        <argsstring>(const ofPixels_&lt; PixelType &gt; &amp;pixels)</argsstring>
+        <name>setFromPixels</name>
+        <param>
+          <type>const <ref refid="classof_pixels__" kindref="compound">ofPixels_</ref>&lt; PixelType &gt; &amp;</type>
+          <declname>pixels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="147" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="835" bodyend="837"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1ad080044ed2ecd701d6c557ef51ef4b8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::setImageType</definition>
+        <argsstring>(ofImageType type)</argsstring>
+        <name>setImageType</name>
+        <param>
+          <type><ref refid="of_constants_8h_1a9760b6b0bec0314fdc85f44793bbe951" kindref="member">ofImageType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="148" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="925" bodyend="928"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1ab59c4c34a2dbbeb3fd9b92b74b5da927" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::resize</definition>
+        <argsstring>(int newWidth, int newHeight)</argsstring>
+        <name>resize</name>
+        <param>
+          <type>int</type>
+          <declname>newWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>newHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="149" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="932" bodyend="943"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1ae66d60c231399bc3dfab9be22a24124e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::grabScreen</definition>
+        <argsstring>(int x, int y, int w, int h)</argsstring>
+        <name>grabScreen</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="150" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="887" bodyend="921"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a036adacebfa1ec3740bd1cdacaea7173" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::crop</definition>
+        <argsstring>(int x, int y, int w, int h)</argsstring>
+        <name>crop</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="153" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="948" bodyend="954"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1aad690ec8d0187544d4f52738b4782190" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::cropFrom</definition>
+        <argsstring>(ofImage_&lt; PixelType &gt; &amp;otherImage, int x, int y, int w, int h)</argsstring>
+        <name>cropFrom</name>
+        <param>
+          <type><ref refid="classof_image__" kindref="compound">ofImage_</ref>&lt; PixelType &gt; &amp;</type>
+          <declname>otherImage</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="157" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="958" bodyend="975"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a0bd4aa6e16a115a17a74be01b785fa9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::rotate90</definition>
+        <argsstring>(int rotation)</argsstring>
+        <name>rotate90</name>
+        <param>
+          <type>int</type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="159" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="979" bodyend="990"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a6e03e205961fa8f2ecf8b3575695e7ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::mirror</definition>
+        <argsstring>(bool vertical, bool horizontal)</argsstring>
+        <name>mirror</name>
+        <param>
+          <type>bool</type>
+          <declname>vertical</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>horizontal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="160" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="994" bodyend="997"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1ae05e8a23c92e28bc4aa8f79621d27dda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="166" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="848" bodyend="871"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a9339282eaa5f99419cdc25e739680f65" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::setAnchorPercent</definition>
+        <argsstring>(float xPct, float yPct)</argsstring>
+        <name>setAnchorPercent</name>
+        <reimplements refid="classof_base_draws_1a3cf9dd7a898b3503ac0509574eaaeff3">setAnchorPercent</reimplements>
+        <param>
+          <type>float</type>
+          <declname>xPct</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>yPct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="170" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="674" bodyend="676"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1afb1368077f520e88abae9b4d60870247" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::setAnchorPoint</definition>
+        <argsstring>(float x, float y)</argsstring>
+        <name>setAnchorPoint</name>
+        <reimplements refid="classof_base_draws_1aefa6eaad3d976a6c1717105ea4443e56">setAnchorPoint</reimplements>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="171" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="680" bodyend="682"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a40741723f2ef1f969e7fbba3fa20c29c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::resetAnchor</definition>
+        <argsstring>()</argsstring>
+        <name>resetAnchor</name>
+        <reimplements refid="classof_base_draws_1a8e60af373caa636320b505ca07f274ae">resetAnchor</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="172" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="686" bodyend="688"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1aef9ce48512fa0372759dd46438270273" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::draw</definition>
+        <argsstring>(const ofRectangle &amp;r)</argsstring>
+        <name>draw</name>
+        <reimplements refid="classof_base_draws_1a0ae112e1709647d6dd84d0787876cb8a">draw</reimplements>
+        <param>
+          <type>const <ref refid="classof_rectangle" kindref="compound">ofRectangle</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="175" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="692" bodyend="694"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1aa59a33f383155231b5dd92be88952e1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::draw</definition>
+        <argsstring>(const ofPoint &amp;p, float w, float h)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>const <ref refid="classof_vec3f" kindref="compound">ofPoint</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="176" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="698" bodyend="700"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a6656ffac4fcf989d97ab15bb42501af3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::draw</definition>
+        <argsstring>(float x, float y, float w, float h)</argsstring>
+        <name>draw</name>
+        <reimplements refid="classof_base_draws_1a34e129056ed6238b2cc0b8b13cfab676">draw</reimplements>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="177" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="704" bodyend="706"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1ab8c105554e5168e25d0996ea84df8c98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::draw</definition>
+        <argsstring>(float x, float y, float z, float w, float h)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="178" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="710" bodyend="712"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a05172d53b163d17009d73469eb7197cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::draw</definition>
+        <argsstring>(const ofPoint &amp;p)</argsstring>
+        <name>draw</name>
+        <reimplements refid="classof_base_draws_1a768768895b8cb95515094c958f9ec0f0">draw</reimplements>
+        <param>
+          <type>const <ref refid="classof_vec3f" kindref="compound">ofPoint</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="179" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="716" bodyend="718"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a0b1b3cbe3443fd7aa31f80a6eb6fa2bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::draw</definition>
+        <argsstring>(float x, float y)</argsstring>
+        <name>draw</name>
+        <reimplements refid="classof_base_draws_1aa672814ee548835e571561863855262e">draw</reimplements>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="180" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="722" bodyend="724"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a9fac8fb44d0ab243c6139e494325076a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::draw</definition>
+        <argsstring>(float x, float y, float z)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="181" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="728" bodyend="730"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1af39591f8ff0e19177725ccfd379063f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float ofImage_&lt; PixelType &gt;::getHeight</definition>
+        <argsstring>()</argsstring>
+        <name>getHeight</name>
+        <reimplements refid="classof_base_draws_1ac192eb9129a4548f64ed05c504c84b45">getHeight</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="183" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="1068" bodyend="1070"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a298b4bbeb121ad7285e82f6df9e64068" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float ofImage_&lt; PixelType &gt;::getWidth</definition>
+        <argsstring>()</argsstring>
+        <name>getWidth</name>
+        <reimplements refid="classof_base_draws_1ab85c73ed90a60ab75453f1e9ca831a84">getWidth</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="184" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="1074" bodyend="1076"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1afdbeb1292cb8fcd0dc012a11ba111653" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofImage_&lt; PixelType &gt;::bAllocated</definition>
+        <argsstring>()</argsstring>
+        <name>bAllocated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="186" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" bodystart="186" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a8954304ef0cf7a6cf64d0b9bf81b5f76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofImage_&lt; PixelType &gt;::isAllocated</definition>
+        <argsstring>()</argsstring>
+        <name>isAllocated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="187" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" bodystart="187" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a39101e7401e3708dba08bba4c95b46de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::reloadTexture</definition>
+        <argsstring>()</argsstring>
+        <name>reloadTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="189" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="609" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1a86c24e92b9a3ccd113f7fa37f50b5b4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_image__" kindref="compound">ofImage_</ref>&lt; PixelType &gt; &amp;</type>
+        <definition>ofImage_&lt; PixelType &gt; &amp; ofImage_&lt; PixelType &gt;::operator=</definition>
+        <argsstring>(ofPixels_&lt; PixelType &gt; &amp;pixels)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classof_pixels__" kindref="compound">ofPixels_</ref>&lt; PixelType &gt; &amp;</type>
+          <declname>pixels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="194" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="841" bodyend="844"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classof_image___1af658fb70ab45c55af03e884c14f93c1d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::changeTypeOfPixels</definition>
+        <argsstring>(ofPixels_&lt; PixelType &gt; &amp;pix, ofImageType type)</argsstring>
+        <name>changeTypeOfPixels</name>
+        <param>
+          <type><ref refid="classof_pixels__" kindref="compound">ofPixels_</ref>&lt; PixelType &gt; &amp;</type>
+          <declname>pix</declname>
+        </param>
+        <param>
+          <type><ref refid="of_constants_8h_1a9760b6b0bec0314fdc85f44793bbe951" kindref="member">ofImageType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="197" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="1026" bodyend="1064"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_image___1ad70c45ca878848e888f1d2f83a985eb1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofImage_&lt; PixelType &gt;::resizePixels</definition>
+        <argsstring>(ofPixels_&lt; PixelType &gt; &amp;pix, int newWidth, int newHeight)</argsstring>
+        <name>resizePixels</name>
+        <param>
+          <type><ref refid="classof_pixels__" kindref="compound">ofPixels_</ref>&lt; PixelType &gt; &amp;</type>
+          <declname>pix</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>newWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>newHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="198" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.cpp" bodystart="1012" bodyend="1022"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="367">
+        <label>ofBaseImage_&lt; PixelType &gt;</label>
+        <link refid="classof_base_image__"/>
+        <childnode refid="368" relation="public-inheritance">
+        </childnode>
+        <childnode refid="371" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="366">
+        <label>ofImage_&lt; PixelType &gt;</label>
+        <link refid="classof_image__"/>
+        <childnode refid="367" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="368">
+        <label>ofAbstractImage</label>
+        <link refid="classof_abstract_image"/>
+        <childnode refid="369" relation="public-inheritance">
+        </childnode>
+        <childnode refid="370" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="369">
+        <label>ofBaseDraws</label>
+        <link refid="classof_base_draws"/>
+      </node>
+      <node id="371">
+        <label>ofBaseHasPixels_&lt; PixelType &gt;</label>
+        <link refid="classof_base_has_pixels__"/>
+        <childnode refid="372" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="370">
+        <label>ofBaseHasTexture</label>
+        <link refid="classof_base_has_texture"/>
+      </node>
+      <node id="372">
+        <label>ofAbstractHasPixels</label>
+        <link refid="classof_abstract_has_pixels"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="382">
+        <label>ofVec3f</label>
+        <link refid="classof_vec3f"/>
+      </node>
+      <node id="374">
+        <label>ofBaseImage_&lt; PixelType &gt;</label>
+        <link refid="classof_base_image__"/>
+        <childnode refid="375" relation="public-inheritance">
+        </childnode>
+        <childnode refid="378" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="373">
+        <label>ofImage_&lt; PixelType &gt;</label>
+        <link refid="classof_image__"/>
+        <childnode refid="374" relation="public-inheritance">
+        </childnode>
+        <childnode refid="380" relation="usage">
+          <edgelabel>tex</edgelabel>
+        </childnode>
+      </node>
+      <node id="380">
+        <label>ofTexture</label>
+        <link refid="classof_texture"/>
+        <childnode refid="376" relation="public-inheritance">
+        </childnode>
+        <childnode refid="381" relation="usage">
+          <edgelabel>texData</edgelabel>
+        </childnode>
+        <childnode refid="382" relation="usage">
+          <edgelabel>anchor</edgelabel>
+        </childnode>
+      </node>
+      <node id="375">
+        <label>ofAbstractImage</label>
+        <link refid="classof_abstract_image"/>
+        <childnode refid="376" relation="public-inheritance">
+        </childnode>
+        <childnode refid="377" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="376">
+        <label>ofBaseDraws</label>
+        <link refid="classof_base_draws"/>
+      </node>
+      <node id="378">
+        <label>ofBaseHasPixels_&lt; PixelType &gt;</label>
+        <link refid="classof_base_has_pixels__"/>
+        <childnode refid="379" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="381">
+        <label>ofTextureData</label>
+        <link refid="classof_texture_data"/>
+      </node>
+      <node id="377">
+        <label>ofBaseHasTexture</label>
+        <link refid="classof_base_has_texture"/>
+      </node>
+      <node id="379">
+        <label>ofAbstractHasPixels</label>
+        <link refid="classof_abstract_has_pixels"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" line="85" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofImage.h" bodystart="85" bodyend="204"/>
+    <listofallmembers>
+      <member refid="classof_image___1a86968a4303907dbaeb008851076eeb8a" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>allocate</name></member>
+      <member refid="classof_image___1afdbeb1292cb8fcd0dc012a11ba111653" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>bAllocated</name></member>
+      <member refid="classof_image___1a54e590d2a26a10165106af94146d6ef8" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>bind</name></member>
+      <member refid="classof_image___1aaafb30a796642aafc91119b39a446068" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>bpp</name></member>
+      <member refid="classof_image___1a2f16aa93579fdc985d54eedaf9accc17" prot="protected" virt="non-virtual"><scope>ofImage_</scope><name>bUseTexture</name></member>
+      <member refid="classof_image___1af658fb70ab45c55af03e884c14f93c1d" prot="protected" virt="non-virtual"><scope>ofImage_</scope><name>changeTypeOfPixels</name></member>
+      <member refid="classof_image___1a5c39cc789111896657effabe6a3b5ee9" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>clear</name></member>
+      <member refid="classof_image___1a59eb7d4fed7c69e4323c44ff44f07820" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>clone</name></member>
+      <member refid="classof_image___1a036adacebfa1ec3740bd1cdacaea7173" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>crop</name></member>
+      <member refid="classof_image___1aad690ec8d0187544d4f52738b4782190" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>cropFrom</name></member>
+      <member refid="classof_image___1aef9ce48512fa0372759dd46438270273" prot="public" virt="virtual"><scope>ofImage_</scope><name>draw</name></member>
+      <member refid="classof_image___1aa59a33f383155231b5dd92be88952e1c" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>draw</name></member>
+      <member refid="classof_image___1a6656ffac4fcf989d97ab15bb42501af3" prot="public" virt="virtual"><scope>ofImage_</scope><name>draw</name></member>
+      <member refid="classof_image___1ab8c105554e5168e25d0996ea84df8c98" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>draw</name></member>
+      <member refid="classof_image___1a05172d53b163d17009d73469eb7197cf" prot="public" virt="virtual"><scope>ofImage_</scope><name>draw</name></member>
+      <member refid="classof_image___1a0b1b3cbe3443fd7aa31f80a6eb6fa2bd" prot="public" virt="virtual"><scope>ofImage_</scope><name>draw</name></member>
+      <member refid="classof_image___1a9fac8fb44d0ab243c6139e494325076a" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>draw</name></member>
+      <member refid="classof_image___1a5c4a07097120233cc46526f367e5bc67" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>getColor</name></member>
+      <member refid="classof_image___1af39591f8ff0e19177725ccfd379063f9" prot="public" virt="virtual"><scope>ofImage_</scope><name>getHeight</name></member>
+      <member refid="classof_image___1ace37e73eb6ca7b8165b790ac7b51e715" prot="public" virt="virtual"><scope>ofImage_</scope><name>getPixels</name></member>
+      <member refid="classof_image___1acfb1f23287b497700e179a5a2dd37f9a" prot="public" virt="virtual"><scope>ofImage_</scope><name>getPixelsRef</name></member>
+      <member refid="classof_image___1a0a8e31f169d9d28dfeb98cce55492ce9" prot="public" virt="virtual"><scope>ofImage_</scope><name>getTextureReference</name></member>
+      <member refid="classof_image___1a298b4bbeb121ad7285e82f6df9e64068" prot="public" virt="virtual"><scope>ofImage_</scope><name>getWidth</name></member>
+      <member refid="classof_image___1ae66d60c231399bc3dfab9be22a24124e" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>grabScreen</name></member>
+      <member refid="classof_image___1a0dff5be490aff1649fe8ae6f3d7e923b" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>height</name></member>
+      <member refid="classof_image___1a8954304ef0cf7a6cf64d0b9bf81b5f76" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>isAllocated</name></member>
+      <member refid="classof_image___1ac6e264a41eead0b9d978b0f55e85de02" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>isUsingTexture</name></member>
+      <member refid="classof_image___1aca661aecbda7615879dbfb57609400df" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>loadImage</name></member>
+      <member refid="classof_image___1a355c3915d484fb4f0972c31d2c0a5c91" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>loadImage</name></member>
+      <member refid="classof_image___1abd944cd213109f0046b36bc76dc318aa" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>loadImage</name></member>
+      <member refid="classof_image___1a6e03e205961fa8f2ecf8b3575695e7ad" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>mirror</name></member>
+      <member refid="classof_image___1a251b6453435475cb53d4aea13aae236f" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>ofImage_</name></member>
+      <member refid="classof_image___1a1f72a884aafe2c6ae38fb4641db7f558" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>ofImage_</name></member>
+      <member refid="classof_image___1aacfa2ccb43eaca033a8ff7a38a8724ca" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>ofImage_</name></member>
+      <member refid="classof_image___1afc002dc9a019ad24dbf7dc28d62a8057" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>ofImage_</name></member>
+      <member refid="classof_image___1aa2438830ca61138d87b9e6d0cf37dfc8" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>ofImage_</name></member>
+      <member refid="classof_image___1adbf7906e3c51be900ab2b1cb1ce3d144" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>ofImage_</name></member>
+      <member refid="classof_image___1aa97e3525b2bb863329a6e6441b1195b7" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>operator ofPixels_&lt; PixelType &gt; &amp;</name></member>
+      <member refid="classof_image___1a4af95d2dcba2a9fb04d68ecf45af2f3f" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>operator=</name></member>
+      <member refid="classof_image___1ab95fa924decd9bc024e2d251bd40a9d7" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>operator=</name></member>
+      <member refid="classof_image___1a86c24e92b9a3ccd113f7fa37f50b5b4d" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>operator=</name></member>
+      <member refid="classof_image___1a3424a431902ee97f6b152aca1867e30e" prot="protected" virt="non-virtual"><scope>ofImage_</scope><name>pixels</name></member>
+      <member refid="classof_image___1a39101e7401e3708dba08bba4c95b46de" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>reloadTexture</name></member>
+      <member refid="classof_image___1a40741723f2ef1f969e7fbba3fa20c29c" prot="public" virt="virtual"><scope>ofImage_</scope><name>resetAnchor</name></member>
+      <member refid="classof_image___1ab59c4c34a2dbbeb3fd9b92b74b5da927" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>resize</name></member>
+      <member refid="classof_image___1ad70c45ca878848e888f1d2f83a985eb1" prot="protected" virt="non-virtual"><scope>ofImage_</scope><name>resizePixels</name></member>
+      <member refid="classof_image___1a0bd4aa6e16a115a17a74be01b785fa9a" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>rotate90</name></member>
+      <member refid="classof_image___1afad1f41b2f1e7178a439b29ea07bb7ba" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>saveImage</name></member>
+      <member refid="classof_image___1ab2429611aa52bde75c5a7628c2426fb5" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>saveImage</name></member>
+      <member refid="classof_image___1a6475b2ca00efe1874c3feb5d3952dda6" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>saveImage</name></member>
+      <member refid="classof_image___1a9339282eaa5f99419cdc25e739680f65" prot="public" virt="virtual"><scope>ofImage_</scope><name>setAnchorPercent</name></member>
+      <member refid="classof_image___1afb1368077f520e88abae9b4d60870247" prot="public" virt="virtual"><scope>ofImage_</scope><name>setAnchorPoint</name></member>
+      <member refid="classof_image___1abf6bb7be85569cfce36cdfe557032e04" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>setColor</name></member>
+      <member refid="classof_image___1ad152464e4b657d848011376cd13966a3" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>setCompression</name></member>
+      <member refid="classof_image___1a6cfcd829bd778c5636cfca83cc53023b" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>setFromPixels</name></member>
+      <member refid="classof_image___1adcd1fe954d8fca4575d7b190add5c6f1" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>setFromPixels</name></member>
+      <member refid="classof_image___1ad080044ed2ecd701d6c557ef51ef4b8a" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>setImageType</name></member>
+      <member refid="classof_image___1aaa44423f95ea0539c98feb848c00433f" prot="public" virt="virtual"><scope>ofImage_</scope><name>setUseTexture</name></member>
+      <member refid="classof_image___1ab63929fb957b57afecaa4a0137e7944b" prot="protected" virt="non-virtual"><scope>ofImage_</scope><name>tex</name></member>
+      <member refid="classof_image___1aaa7a448bc54c19e95f7417a5fb1c4da3" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>type</name></member>
+      <member refid="classof_image___1a2cb305f1cf4c9b824baba87447bd905d" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>unbind</name></member>
+      <member refid="classof_image___1ae05e8a23c92e28bc4aa8f79621d27dda" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>update</name></member>
+      <member refid="classof_image___1a3231ef055c1a443e932b0b5b5089b682" prot="public" virt="non-virtual"><scope>ofImage_</scope><name>width</name></member>
+      <member refid="classof_abstract_has_pixels_1ad47946469061dbdfbe106f61e80a1b33" prot="public" virt="virtual"><scope>ofImage_</scope><name>~ofAbstractHasPixels</name></member>
+      <member refid="classof_abstract_image_1a9b41e30e8e214c463a20363797c902dc" prot="public" virt="virtual"><scope>ofImage_</scope><name>~ofAbstractImage</name></member>
+      <member refid="classof_base_draws_1af97993d6809a3a3bce934ce2d1fc3fc4" prot="public" virt="virtual"><scope>ofImage_</scope><name>~ofBaseDraws</name></member>
+      <member refid="classof_base_has_pixels___1a62cfed9db02b38b104b6870a542031ee" prot="public" virt="virtual"><scope>ofImage_</scope><name>~ofBaseHasPixels_</name></member>
+      <member refid="classof_base_has_texture_1a45f59246be49ccf62aa090d928cd9096" prot="public" virt="virtual"><scope>ofImage_</scope><name>~ofBaseHasTexture</name></member>
+      <member refid="classof_base_image___1acefe8669dd302f268bc8220d7d29fe28" prot="public" virt="virtual"><scope>ofImage_</scope><name>~ofBaseImage_</name></member>
+      <member refid="classof_image___1a0235bb745c27f653b7f7753bb970c77b" prot="public" virt="virtual"><scope>ofImage_</scope><name>~ofImage_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

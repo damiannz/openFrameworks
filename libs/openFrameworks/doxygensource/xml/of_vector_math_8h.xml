@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="of_vector_math_8h" kind="file">
+    <compoundname>ofVectorMath.h</compoundname>
+    <includes refid="of_vec2f_8h" local="yes">ofVec2f.h</includes>
+    <includes refid="of_vec3f_8h" local="yes">ofVec3f.h</includes>
+    <includes refid="of_vec4f_8h" local="yes">ofVec4f.h</includes>
+    <includes refid="of_matrix3x3_8h" local="yes">ofMatrix3x3.h</includes>
+    <includes refid="of_matrix4x4_8h" local="yes">ofMatrix4x4.h</includes>
+    <includes refid="of_quaternion_8h" local="yes">ofQuaternion.h</includes>
+    <includedby refid="of_node_8h" local="yes">3d/ofNode.h</includedby>
+    <includedby refid="of_main_8h" local="yes">ofMain.h</includedby>
+    <incdepgraph>
+      <node id="3721">
+        <label>math/ofVectorMath.h</label>
+        <link refid="ofVectorMath.h"/>
+        <childnode refid="3722" relation="include">
+        </childnode>
+        <childnode refid="3741" relation="include">
+        </childnode>
+        <childnode refid="3742" relation="include">
+        </childnode>
+        <childnode refid="3743" relation="include">
+        </childnode>
+        <childnode refid="3744" relation="include">
+        </childnode>
+        <childnode refid="3745" relation="include">
+        </childnode>
+      </node>
+      <node id="3739">
+        <label>iomanip</label>
+      </node>
+      <node id="3745">
+        <label>ofQuaternion.h</label>
+        <link refid="of_quaternion_8h"/>
+        <childnode refid="3723" relation="include">
+        </childnode>
+        <childnode refid="3741" relation="include">
+        </childnode>
+        <childnode refid="3742" relation="include">
+        </childnode>
+        <childnode refid="3732" relation="include">
+        </childnode>
+      </node>
+      <node id="3742">
+        <label>ofVec4f.h</label>
+        <link refid="of_vec4f_8h"/>
+        <childnode refid="3723" relation="include">
+        </childnode>
+      </node>
+      <node id="3727">
+        <label>GL/glx.h</label>
+      </node>
+      <node id="3722">
+        <label>ofVec2f.h</label>
+        <link refid="of_vec2f_8h"/>
+        <childnode refid="3723" relation="include">
+        </childnode>
+      </node>
+      <node id="3732">
+        <label>cmath</label>
+      </node>
+      <node id="3741">
+        <label>ofVec3f.h</label>
+        <link refid="of_vec3f_8h"/>
+        <childnode refid="3722" relation="include">
+        </childnode>
+        <childnode refid="3742" relation="include">
+        </childnode>
+        <childnode refid="3723" relation="include">
+        </childnode>
+        <childnode refid="3732" relation="include">
+        </childnode>
+        <childnode refid="3735" relation="include">
+        </childnode>
+      </node>
+      <node id="3734">
+        <label>string</label>
+      </node>
+      <node id="3731">
+        <label>cstdarg</label>
+      </node>
+      <node id="3725">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="3728">
+        <label>tesselator.h</label>
+      </node>
+      <node id="3740">
+        <label>fstream</label>
+      </node>
+      <node id="3743">
+        <label>ofMatrix3x3.h</label>
+        <link refid="of_matrix3x3_8h"/>
+        <childnode refid="3723" relation="include">
+        </childnode>
+      </node>
+      <node id="3730">
+        <label>cstdio</label>
+      </node>
+      <node id="3733">
+        <label>ctime</label>
+      </node>
+      <node id="3724">
+        <label>unistd.h</label>
+      </node>
+      <node id="3736">
+        <label>vector</label>
+      </node>
+      <node id="3723">
+        <label>ofConstants.h</label>
+        <link refid="of_constants_8h"/>
+        <childnode refid="3724" relation="include">
+        </childnode>
+        <childnode refid="3725" relation="include">
+        </childnode>
+        <childnode refid="3726" relation="include">
+        </childnode>
+        <childnode refid="3727" relation="include">
+        </childnode>
+        <childnode refid="3728" relation="include">
+        </childnode>
+        <childnode refid="3729" relation="include">
+        </childnode>
+        <childnode refid="3730" relation="include">
+        </childnode>
+        <childnode refid="3731" relation="include">
+        </childnode>
+        <childnode refid="3732" relation="include">
+        </childnode>
+        <childnode refid="3733" relation="include">
+        </childnode>
+        <childnode refid="3734" relation="include">
+        </childnode>
+        <childnode refid="3735" relation="include">
+        </childnode>
+        <childnode refid="3736" relation="include">
+        </childnode>
+        <childnode refid="3737" relation="include">
+        </childnode>
+        <childnode refid="3738" relation="include">
+        </childnode>
+        <childnode refid="3739" relation="include">
+        </childnode>
+        <childnode refid="3740" relation="include">
+        </childnode>
+      </node>
+      <node id="3738">
+        <label>sstream</label>
+      </node>
+      <node id="3744">
+        <label>ofMatrix4x4.h</label>
+        <link refid="of_matrix4x4_8h"/>
+        <childnode refid="3741" relation="include">
+        </childnode>
+        <childnode refid="3742" relation="include">
+        </childnode>
+        <childnode refid="3745" relation="include">
+        </childnode>
+        <childnode refid="3723" relation="include">
+        </childnode>
+        <childnode refid="3732" relation="include">
+        </childnode>
+      </node>
+      <node id="3729">
+        <label>cstdlib</label>
+      </node>
+      <node id="3735">
+        <label>iostream</label>
+      </node>
+      <node id="3726">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="3737">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3746">
+        <label>math/ofVectorMath.h</label>
+        <link refid="ofVectorMath.h"/>
+        <childnode refid="3747" relation="include">
+        </childnode>
+        <childnode refid="3752" relation="include">
+        </childnode>
+      </node>
+      <node id="3752">
+        <label>ofMain.h</label>
+        <link refid="of_main_8h"/>
+      </node>
+      <node id="3749">
+        <label>3d/ofCamera.cpp</label>
+        <link refid="of_camera_8cpp"/>
+      </node>
+      <node id="3753">
+        <label>3d/ofNode.cpp</label>
+        <link refid="of_node_8cpp"/>
+      </node>
+      <node id="3750">
+        <label>3d/ofEasyCam.h</label>
+        <link refid="of_easy_cam_8h"/>
+        <childnode refid="3751" relation="include">
+        </childnode>
+        <childnode refid="3752" relation="include">
+        </childnode>
+      </node>
+      <node id="3754">
+        <label>gl/ofLight.h</label>
+        <link refid="of_light_8h"/>
+        <childnode refid="3755" relation="include">
+        </childnode>
+        <childnode refid="3752" relation="include">
+        </childnode>
+      </node>
+      <node id="3748">
+        <label>3d/ofCamera.h</label>
+        <link refid="of_camera_8h"/>
+        <childnode refid="3749" relation="include">
+        </childnode>
+        <childnode refid="3750" relation="include">
+        </childnode>
+        <childnode refid="3752" relation="include">
+        </childnode>
+      </node>
+      <node id="3751">
+        <label>3d/ofEasyCam.cpp</label>
+        <link refid="of_easy_cam_8cpp"/>
+      </node>
+      <node id="3747">
+        <label>3d/ofNode.h</label>
+        <link refid="of_node_8h"/>
+        <childnode refid="3748" relation="include">
+        </childnode>
+        <childnode refid="3753" relation="include">
+        </childnode>
+        <childnode refid="3754" relation="include">
+        </childnode>
+        <childnode refid="3752" relation="include">
+        </childnode>
+      </node>
+      <node id="3755">
+        <label>gl/ofLight.cpp</label>
+        <link refid="of_light_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_vec2f_8h" kindref="compound">ofVec2f.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_vec3f_8h" kindref="compound">ofVec3f.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_vec4f_8h" kindref="compound">ofVec4f.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_matrix3x3_8h" kindref="compound">ofMatrix3x3.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_matrix4x4_8h" kindref="compound">ofMatrix4x4.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_quaternion_8h" kindref="compound">ofQuaternion.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofVectorMath.h"/>
+  </compounddef>
+</doxygen>

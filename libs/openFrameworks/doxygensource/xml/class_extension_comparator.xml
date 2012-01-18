@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="class_extension_comparator" kind="class" prot="public">
+    <compoundname>ExtensionComparator</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_extension_comparator_1ada205ae568f0d5104fd18a1a44195be0" prot="public" static="no" mutable="no">
+        <type>vector&lt; string &gt; *</type>
+        <definition>vector&lt;string&gt;* ExtensionComparator::extensions</definition>
+        <argsstring></argsstring>
+        <name>extensions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" line="671" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="671" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_extension_comparator_1a215f44113a42ec040c717b6697de2343" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ExtensionComparator::operator()</definition>
+        <argsstring>(const ofFile &amp;file)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const <ref refid="classof_file" kindref="compound">ofFile</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" line="672" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="672" bodyend="676"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" line="669" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="669" bodyend="677"/>
+    <listofallmembers>
+      <member refid="class_extension_comparator_1ada205ae568f0d5104fd18a1a44195be0" prot="public" virt="non-virtual"><scope>ExtensionComparator</scope><name>extensions</name></member>
+      <member refid="class_extension_comparator_1a215f44113a42ec040c717b6697de2343" prot="public" virt="non-virtual"><scope>ExtensionComparator</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,639 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="of_sound_stream_8cpp" kind="file">
+    <compoundname>ofSoundStream.cpp</compoundname>
+    <includes refid="of_sound_stream_8h" local="yes">ofSoundStream.h</includes>
+    <includes refid="of_app_runner_8h" local="yes">ofAppRunner.h</includes>
+    <incdepgraph>
+      <node id="4275">
+        <label>sound/ofSoundStream.cpp</label>
+        <link refid="ofSoundStream.cpp"/>
+        <childnode refid="4276" relation="include">
+        </childnode>
+        <childnode refid="4318" relation="include">
+        </childnode>
+      </node>
+      <node id="4293">
+        <label>iomanip</label>
+      </node>
+      <node id="4301">
+        <label>ofColor.h</label>
+        <link refid="of_color_8h"/>
+        <childnode refid="4302" relation="include">
+        </childnode>
+        <childnode refid="4303" relation="include">
+        </childnode>
+      </node>
+      <node id="4302">
+        <label>limits</label>
+      </node>
+      <node id="4276">
+        <label>ofSoundStream.h</label>
+        <link refid="of_sound_stream_8h"/>
+        <childnode refid="4277" relation="include">
+        </childnode>
+        <childnode refid="4295" relation="include">
+        </childnode>
+        <childnode refid="4315" relation="include">
+        </childnode>
+        <childnode refid="4310" relation="include">
+        </childnode>
+        <childnode refid="4317" relation="include">
+        </childnode>
+      </node>
+      <node id="4299">
+        <label>ofVec4f.h</label>
+        <link refid="of_vec4f_8h"/>
+        <childnode refid="4277" relation="include">
+        </childnode>
+      </node>
+      <node id="4281">
+        <label>GL/glx.h</label>
+      </node>
+      <node id="4314">
+        <label>ofPixels.h</label>
+        <link refid="of_pixels_8h"/>
+        <childnode refid="4277" relation="include">
+        </childnode>
+        <childnode refid="4305" relation="include">
+        </childnode>
+        <childnode refid="4301" relation="include">
+        </childnode>
+        <childnode refid="4303" relation="include">
+        </childnode>
+        <childnode refid="4302" relation="include">
+        </childnode>
+      </node>
+      <node id="4298">
+        <label>ofVec2f.h</label>
+        <link refid="of_vec2f_8h"/>
+        <childnode refid="4277" relation="include">
+        </childnode>
+      </node>
+      <node id="4286">
+        <label>cmath</label>
+      </node>
+      <node id="4310">
+        <label>ofTypes.h</label>
+        <link refid="of_types_8h"/>
+        <childnode refid="4277" relation="include">
+        </childnode>
+        <childnode refid="4301" relation="include">
+        </childnode>
+        <childnode refid="4311" relation="include">
+        </childnode>
+        <childnode refid="4312" relation="include">
+        </childnode>
+      </node>
+      <node id="4297">
+        <label>ofVec3f.h</label>
+        <link refid="of_vec3f_8h"/>
+        <childnode refid="4298" relation="include">
+        </childnode>
+        <childnode refid="4299" relation="include">
+        </childnode>
+        <childnode refid="4277" relation="include">
+        </childnode>
+        <childnode refid="4286" relation="include">
+        </childnode>
+        <childnode refid="4289" relation="include">
+        </childnode>
+      </node>
+      <node id="4288">
+        <label>string</label>
+      </node>
+      <node id="4285">
+        <label>cstdarg</label>
+      </node>
+      <node id="4279">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="4309">
+        <label>Poco/File.h</label>
+      </node>
+      <node id="4282">
+        <label>tesselator.h</label>
+      </node>
+      <node id="4295">
+        <label>ofBaseTypes.h</label>
+        <link refid="of_base_types_8h"/>
+        <childnode refid="4296" relation="include">
+        </childnode>
+        <childnode refid="4300" relation="include">
+        </childnode>
+        <childnode refid="4277" relation="include">
+        </childnode>
+        <childnode refid="4301" relation="include">
+        </childnode>
+        <childnode refid="4304" relation="include">
+        </childnode>
+        <childnode refid="4314" relation="include">
+        </childnode>
+      </node>
+      <node id="4294">
+        <label>fstream</label>
+      </node>
+      <node id="4316">
+        <label>ofEvents.h</label>
+        <link refid="of_events_8h"/>
+        <childnode refid="4277" relation="include">
+        </childnode>
+        <childnode refid="4296" relation="include">
+        </childnode>
+      </node>
+      <node id="4303">
+        <label>ofMath.h</label>
+        <link refid="of_math_8h"/>
+        <childnode refid="4296" relation="include">
+        </childnode>
+        <childnode refid="4277" relation="include">
+        </childnode>
+      </node>
+      <node id="4284">
+        <label>cstdio</label>
+      </node>
+      <node id="4306">
+        <label>bitset</label>
+      </node>
+      <node id="4287">
+        <label>ctime</label>
+      </node>
+      <node id="4278">
+        <label>unistd.h</label>
+      </node>
+      <node id="4290">
+        <label>vector</label>
+      </node>
+      <node id="4307">
+        <label>ofLog.h</label>
+        <link refid="of_log_8h"/>
+        <childnode refid="4277" relation="include">
+        </childnode>
+        <childnode refid="4308" relation="include">
+        </childnode>
+        <childnode refid="4310" relation="include">
+        </childnode>
+      </node>
+      <node id="4277">
+        <label>ofConstants.h</label>
+        <link refid="of_constants_8h"/>
+        <childnode refid="4278" relation="include">
+        </childnode>
+        <childnode refid="4279" relation="include">
+        </childnode>
+        <childnode refid="4280" relation="include">
+        </childnode>
+        <childnode refid="4281" relation="include">
+        </childnode>
+        <childnode refid="4282" relation="include">
+        </childnode>
+        <childnode refid="4283" relation="include">
+        </childnode>
+        <childnode refid="4284" relation="include">
+        </childnode>
+        <childnode refid="4285" relation="include">
+        </childnode>
+        <childnode refid="4286" relation="include">
+        </childnode>
+        <childnode refid="4287" relation="include">
+        </childnode>
+        <childnode refid="4288" relation="include">
+        </childnode>
+        <childnode refid="4289" relation="include">
+        </childnode>
+        <childnode refid="4290" relation="include">
+        </childnode>
+        <childnode refid="4291" relation="include">
+        </childnode>
+        <childnode refid="4292" relation="include">
+        </childnode>
+        <childnode refid="4293" relation="include">
+        </childnode>
+        <childnode refid="4294" relation="include">
+        </childnode>
+      </node>
+      <node id="4292">
+        <label>sstream</label>
+      </node>
+      <node id="4296">
+        <label>ofPoint.h</label>
+        <link refid="of_point_8h"/>
+        <childnode refid="4297" relation="include">
+        </childnode>
+      </node>
+      <node id="4308">
+        <label>ofFileUtils.h</label>
+        <link refid="of_file_utils_8h"/>
+        <childnode refid="4277" relation="include">
+        </childnode>
+        <childnode refid="4309" relation="include">
+        </childnode>
+      </node>
+      <node id="4283">
+        <label>cstdlib</label>
+      </node>
+      <node id="4313">
+        <label>ofGLUtils.h</label>
+        <link refid="of_g_l_utils_8h"/>
+      </node>
+      <node id="4289">
+        <label>iostream</label>
+      </node>
+      <node id="4304">
+        <label>ofMesh.h</label>
+        <link refid="of_mesh_8h"/>
+        <childnode refid="4297" relation="include">
+        </childnode>
+        <childnode refid="4298" relation="include">
+        </childnode>
+        <childnode refid="4301" relation="include">
+        </childnode>
+        <childnode refid="4305" relation="include">
+        </childnode>
+        <childnode refid="4277" relation="include">
+        </childnode>
+        <childnode refid="4313" relation="include">
+        </childnode>
+      </node>
+      <node id="4305">
+        <label>ofUtils.h</label>
+        <link refid="of_utils_8h"/>
+        <childnode refid="4277" relation="include">
+        </childnode>
+        <childnode refid="4306" relation="include">
+        </childnode>
+        <childnode refid="4307" relation="include">
+        </childnode>
+      </node>
+      <node id="4317">
+        <label>ofBaseSoundStream.h</label>
+        <link refid="of_base_sound_stream_8h"/>
+        <childnode refid="4277" relation="include">
+        </childnode>
+      </node>
+      <node id="4318">
+        <label>ofAppRunner.h</label>
+        <link refid="of_app_runner_8h"/>
+        <childnode refid="4277" relation="include">
+        </childnode>
+        <childnode refid="4296" relation="include">
+        </childnode>
+        <childnode refid="4300" relation="include">
+        </childnode>
+        <childnode refid="4310" relation="include">
+        </childnode>
+      </node>
+      <node id="4300">
+        <label>ofRectangle.h</label>
+        <link refid="of_rectangle_8h"/>
+        <childnode refid="4296" relation="include">
+        </childnode>
+      </node>
+      <node id="4280">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="4312">
+        <label>Poco/Mutex.h</label>
+      </node>
+      <node id="4291">
+        <label>cstring</label>
+      </node>
+      <node id="4311">
+        <label>tr1/memory</label>
+      </node>
+      <node id="4315">
+        <label>ofBaseApp.h</label>
+        <link refid="of_base_app_8h"/>
+        <childnode refid="4296" relation="include">
+        </childnode>
+        <childnode refid="4316" relation="include">
+        </childnode>
+        <childnode refid="4295" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="of_sound_stream_8cpp_1a891d261aa6091770e47c0948190197f2" prot="public" static="no" mutable="no">
+        <type><ref refid="classof_sound_stream" kindref="compound">ofSoundStream</ref></type>
+        <definition>ofSoundStream soundStreamInput</definition>
+        <argsstring></argsstring>
+        <name>soundStreamInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" line="4" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="of_sound_stream_8cpp_1a2fce12f1f46d277818dae5fe16bbf03c" prot="public" static="no" mutable="no">
+        <type><ref refid="classof_sound_stream" kindref="compound">ofSoundStream</ref></type>
+        <definition>ofSoundStream soundStreamOutput</definition>
+        <argsstring></argsstring>
+        <name>soundStreamOutput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" line="5" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="of_sound_stream_8cpp_1a80beb9b0117e2ce24c6a54cf2404185c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSoundStreamSetup</definition>
+        <argsstring>(int nOutputChannels, int nInputChannels, ofBaseApp *appPtr)</argsstring>
+        <name>ofSoundStreamSetup</name>
+        <param>
+          <type>int</type>
+          <declname>nOutputChannels</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nInputChannels</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_base_app" kindref="compound">ofBaseApp</ref> *</type>
+          <declname>appPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" line="8" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" bodystart="8" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="of_sound_stream_8cpp_1a0c56700090e9220c980d65388cd32945" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSoundStreamSetup</definition>
+        <argsstring>(int nOutputChannels, int nInputChannels, int sampleRate, int bufferSize, int nBuffers)</argsstring>
+        <name>ofSoundStreamSetup</name>
+        <param>
+          <type>int</type>
+          <declname>nOutputChannels</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nInputChannels</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sampleRate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bufferSize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nBuffers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" line="16" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="of_sound_stream_8cpp_1a9cc30053279fe0af218834ef4f5216b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSoundStreamSetup</definition>
+        <argsstring>(int nOutputChannels, int nInputChannels, ofBaseApp *appPtr, int sampleRate, int bufferSize, int nBuffers)</argsstring>
+        <name>ofSoundStreamSetup</name>
+        <param>
+          <type>int</type>
+          <declname>nOutputChannels</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nInputChannels</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_base_app" kindref="compound">ofBaseApp</ref> *</type>
+          <declname>appPtr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sampleRate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bufferSize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nBuffers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" line="21" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" bodystart="21" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="of_sound_stream_8cpp_1a05edcafc2e2e3c07edaf1dd27a470126" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSoundStreamStop</definition>
+        <argsstring>()</argsstring>
+        <name>ofSoundStreamStop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" line="26" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="of_sound_stream_8cpp_1ad4409c1a9f960b81d21c2488e6bb2658" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSoundStreamStart</definition>
+        <argsstring>()</argsstring>
+        <name>ofSoundStreamStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" line="32" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="of_sound_stream_8cpp_1a9681a1a9df2e76b3bc178e509aebeb2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSoundStreamClose</definition>
+        <argsstring>()</argsstring>
+        <name>ofSoundStreamClose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" line="38" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="of_sound_stream_8cpp_1a57a71c540e5af2821bdffe33377565b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSoundStreamListDevices</definition>
+        <argsstring>()</argsstring>
+        <name>ofSoundStreamListDevices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" line="44" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" bodystart="44" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_sound_stream_8h" kindref="compound">ofSoundStream.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_app_runner_8h" kindref="compound">ofAppRunner.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><ref refid="classof_sound_stream" kindref="compound">ofSoundStream</ref><sp/><ref refid="of_sound_stream_8cpp_1a891d261aa6091770e47c0948190197f2" kindref="member">soundStreamInput</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="classof_sound_stream" kindref="compound">ofSoundStream</ref><sp/><ref refid="of_sound_stream_8cpp_1a2fce12f1f46d277818dae5fe16bbf03c" kindref="member">soundStreamOutput</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_sound_stream_8cpp_1a80beb9b0117e2ce24c6a54cf2404185c" kindref="member">ofSoundStreamSetup</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nOutputChannels,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nInputChannels,<sp/><ref refid="classof_base_app" kindref="compound">ofBaseApp</ref><sp/>*<sp/>appPtr){</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>appPtr<sp/>==<sp/>NULL<sp/>){</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>appPtr<sp/>=<sp/><ref refid="of_app_runner_8cpp_1a52ce629d4d97b252f9d1391aa2e172aa" kindref="member">ofGetAppPtr</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_sound_stream_8cpp_1a80beb9b0117e2ce24c6a54cf2404185c" kindref="member">ofSoundStreamSetup</ref>(nOutputChannels,<sp/>nInputChannels,<sp/>appPtr,<sp/>44100,<sp/>256,<sp/>4);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_sound_stream_8cpp_1a80beb9b0117e2ce24c6a54cf2404185c" kindref="member">ofSoundStreamSetup</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nOutputChannels,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nInputChannels,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sampleRate,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bufferSize,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nBuffers){</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_sound_stream_8cpp_1a80beb9b0117e2ce24c6a54cf2404185c" kindref="member">ofSoundStreamSetup</ref>(nOutputChannels,<sp/>nInputChannels,<sp/><ref refid="of_app_runner_8cpp_1a52ce629d4d97b252f9d1391aa2e172aa" kindref="member">ofGetAppPtr</ref>(),<sp/>sampleRate,<sp/>bufferSize,<sp/>nBuffers);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_sound_stream_8cpp_1a80beb9b0117e2ce24c6a54cf2404185c" kindref="member">ofSoundStreamSetup</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nOutputChannels,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nInputChannels,<sp/><ref refid="classof_base_app" kindref="compound">ofBaseApp</ref><sp/>*<sp/>appPtr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sampleRate,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bufferSize,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nBuffers){</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>soundStreamOutput.<ref refid="classof_sound_stream_1a6e608c0034437ca0152a1fce35c11af5" kindref="member">setup</ref>(appPtr,<sp/>nOutputChannels,<sp/>nInputChannels,<sp/>sampleRate,<sp/>bufferSize,<sp/>nBuffers);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_sound_stream_8cpp_1a05edcafc2e2e3c07edaf1dd27a470126" kindref="member">ofSoundStreamStop</ref>(){</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>soundStreamOutput.<ref refid="classof_sound_stream_1a7204c4627954ec04e6fd86d3f1b05400" kindref="member">stop</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>soundStreamInput.<ref refid="classof_sound_stream_1a7204c4627954ec04e6fd86d3f1b05400" kindref="member">stop</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_sound_stream_8cpp_1ad4409c1a9f960b81d21c2488e6bb2658" kindref="member">ofSoundStreamStart</ref>(){</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>soundStreamOutput.<ref refid="classof_sound_stream_1a841b585c0c00e5c1475462cee9c86455" kindref="member">start</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>soundStreamInput.<ref refid="classof_sound_stream_1a841b585c0c00e5c1475462cee9c86455" kindref="member">start</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_sound_stream_8cpp_1a9681a1a9df2e76b3bc178e509aebeb2f" kindref="member">ofSoundStreamClose</ref>(){</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>soundStreamOutput.<ref refid="classof_sound_stream_1a4e7be9ede60368dcbe1566b6a7c7937b" kindref="member">close</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>soundStreamInput.<ref refid="classof_sound_stream_1a4e7be9ede60368dcbe1566b6a7c7937b" kindref="member">close</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_sound_stream_8cpp_1a57a71c540e5af2821bdffe33377565b3" kindref="member">ofSoundStreamListDevices</ref>(){</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>soundStreamOutput.<ref refid="classof_sound_stream_1a7ab3c672a357f1b30c8e3b7db6b14fc7" kindref="member">listDevices</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><ref refid="classof_sound_stream_1a47d4cd0827208597bf116bc6fd954c00" kindref="member">ofSoundStream::ofSoundStream</ref>(){</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>OF_SOUND_STREAM_TYPE</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_sound_stream_1ade40e7f39e918994c45c82121e341643" kindref="member">setSoundStream</ref>(<sp/><ref refid="classof_ptr" kindref="compound">ofPtr&lt;OF_SOUND_STREAM_TYPE&gt;</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>OF_SOUND_STREAM_TYPE)<sp/>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_sound_stream_1ade40e7f39e918994c45c82121e341643" kindref="member">ofSoundStream::setSoundStream</ref>(<ref refid="classof_ptr" kindref="compound">ofPtr&lt;ofBaseSoundStream&gt;</ref><sp/>soundStreamPtr){</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" kindref="member">soundStream</ref><sp/>=<sp/>soundStreamPtr;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><ref refid="classof_ptr" kindref="compound">ofPtr&lt;ofBaseSoundStream&gt;</ref><sp/><ref refid="classof_sound_stream_1a646214476abc2b65545e31fb5a7facd7" kindref="member">ofSoundStream::getSoundStream</ref>(){</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" kindref="member">soundStream</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_sound_stream_1a7ab3c672a357f1b30c8e3b7db6b14fc7" kindref="member">ofSoundStream::listDevices</ref>(){</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/><ref refid="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" kindref="member">soundStream</ref><sp/>){</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" kindref="member">soundStream</ref>-&gt;listDevices();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_sound_stream_1ab09bcde2d99186c5a5889da94fec5132" kindref="member">ofSoundStream::setDeviceID</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>deviceID){</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/><ref refid="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" kindref="member">soundStream</ref><sp/>){</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" kindref="member">soundStream</ref>-&gt;setDeviceID(deviceID);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_sound_stream_1a6e608c0034437ca0152a1fce35c11af5" kindref="member">ofSoundStream::setup</ref>(<ref refid="classof_base_app" kindref="compound">ofBaseApp</ref><sp/>*<sp/>app,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>outChannels,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inChannels,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sampleRate,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bufferSize,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nBuffers){</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/><ref refid="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" kindref="member">soundStream</ref><sp/>){</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" kindref="member">soundStream</ref>-&gt;setup(app,<sp/>outChannels,<sp/>inChannels,<sp/>sampleRate,<sp/>bufferSize,<sp/>nBuffers);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_sound_stream_1ab7d7d424d44688489a79e53e3faf1131" kindref="member">ofSoundStream::setInput</ref>(<ref refid="classof_base_sound_input" kindref="compound">ofBaseSoundInput</ref><sp/>*<sp/>soundInput){</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/><ref refid="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" kindref="member">soundStream</ref><sp/>){</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" kindref="member">soundStream</ref>-&gt;setInput(soundInput);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_sound_stream_1abc67980c13dd58bd16c3362c1d87c28e" kindref="member">ofSoundStream::setOutput</ref>(<ref refid="classof_base_sound_output" kindref="compound">ofBaseSoundOutput</ref><sp/>*<sp/>soundOutput){</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/><ref refid="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" kindref="member">soundStream</ref><sp/>){</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" kindref="member">soundStream</ref>-&gt;setOutput(soundOutput);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_sound_stream_1a6e608c0034437ca0152a1fce35c11af5" kindref="member">ofSoundStream::setup</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>outChannels,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inChannels,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sampleRate,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bufferSize,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nBuffers){</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/><ref refid="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" kindref="member">soundStream</ref><sp/>){</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" kindref="member">soundStream</ref>-&gt;setup(outChannels,<sp/>inChannels,<sp/>sampleRate,<sp/>bufferSize,<sp/>nBuffers);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_sound_stream_1a841b585c0c00e5c1475462cee9c86455" kindref="member">ofSoundStream::start</ref>(){</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/><ref refid="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" kindref="member">soundStream</ref><sp/>){</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" kindref="member">soundStream</ref>-&gt;start();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_sound_stream_1a7204c4627954ec04e6fd86d3f1b05400" kindref="member">ofSoundStream::stop</ref>(){</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/><ref refid="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" kindref="member">soundStream</ref><sp/>){</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" kindref="member">soundStream</ref>-&gt;stop();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_sound_stream_1a4e7be9ede60368dcbe1566b6a7c7937b" kindref="member">ofSoundStream::close</ref>(){</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/><ref refid="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" kindref="member">soundStream</ref><sp/>){</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" kindref="member">soundStream</ref>-&gt;close();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classof_sound_stream_1a7987c9afe679fa80a41a622338e181d5" kindref="member">ofSoundStream::getTickCount</ref>(){</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/><ref refid="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" kindref="member">soundStream</ref><sp/>){</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" kindref="member">soundStream</ref>-&gt;getTickCount();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp"/>
+  </compounddef>
+</doxygen>

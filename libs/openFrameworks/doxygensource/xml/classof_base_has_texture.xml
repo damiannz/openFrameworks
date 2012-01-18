@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="classof_base_has_texture" kind="class" prot="public">
+    <compoundname>ofBaseHasTexture</compoundname>
+    <derivedcompoundref refid="classof_abstract_image" prot="public" virt="non-virtual">ofAbstractImage</derivedcompoundref>
+    <derivedcompoundref refid="classof_base_video_draws" prot="public" virt="non-virtual">ofBaseVideoDraws</derivedcompoundref>
+    <derivedcompoundref refid="classof_fbo" prot="public" virt="non-virtual">ofFbo</derivedcompoundref>
+    <includes local="no">ofBaseTypes.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classof_base_has_texture_1a45f59246be49ccf62aa090d928cd9096" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ofBaseHasTexture::~ofBaseHasTexture</definition>
+        <argsstring>()</argsstring>
+        <name>~ofBaseHasTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofBaseTypes.h" line="77" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofBaseTypes.h" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_base_has_texture_1ae0f27d5ca6d5a92ee3d9b3d6088745f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classof_texture" kindref="compound">ofTexture</ref> &amp;</type>
+        <definition>virtual ofTexture&amp; ofBaseHasTexture::getTextureReference</definition>
+        <argsstring>()=0</argsstring>
+        <name>getTextureReference</name>
+        <reimplementedby refid="classof_video_player_1ada9a59b45aca15e990d99dc6cf3fcca9">getTextureReference</reimplementedby>
+        <reimplementedby refid="classof_video_grabber_1a50fccf0206304b7960f2eaf7fe8402a8">getTextureReference</reimplementedby>
+        <reimplementedby refid="classof_image___1a0a8e31f169d9d28dfeb98cce55492ce9">getTextureReference</reimplementedby>
+        <reimplementedby refid="classof_fbo_1a04f7e27fd798152232ae2e1752771e10">getTextureReference</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofBaseTypes.h" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_base_has_texture_1a3d2529a36a39ad5277f3050459cc3c80" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ofBaseHasTexture::setUseTexture</definition>
+        <argsstring>(bool bUseTex)=0</argsstring>
+        <name>setUseTexture</name>
+        <reimplementedby refid="classof_video_player_1a8123063e80de2710185200f6650ec213">setUseTexture</reimplementedby>
+        <reimplementedby refid="classof_video_grabber_1a49dcd268d47664979c5adcf5d9a0826a">setUseTexture</reimplementedby>
+        <reimplementedby refid="classof_image___1aaa44423f95ea0539c98feb848c00433f">setUseTexture</reimplementedby>
+        <reimplementedby refid="classof_fbo_1ae20f7a35e53ff60eb8f6e8bf83aa1f67">setUseTexture</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>bUseTex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofBaseTypes.h" line="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="93">
+        <label>ofFbo</label>
+        <link refid="classof_fbo"/>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>ofBaseImage_&lt; PixelType &gt;</label>
+        <link refid="classof_base_image__"/>
+        <childnode refid="86" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>ofImage_&lt; PixelType &gt;</label>
+        <link refid="classof_image__"/>
+        <childnode refid="88" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>ofVideoPlayer</label>
+        <link refid="classof_video_player"/>
+        <childnode refid="90" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>ofAbstractImage</label>
+        <link refid="classof_abstract_image"/>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>ofBaseVideoDraws</label>
+        <link refid="classof_base_video_draws"/>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>ofBaseImage_&lt; T &gt;</label>
+        <link refid="classof_base_image__"/>
+        <childnode refid="86" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>ofBaseHasTexture</label>
+        <link refid="classof_base_has_texture"/>
+      </node>
+      <node id="91">
+        <label>ofVideoGrabber</label>
+        <link refid="classof_video_grabber"/>
+        <childnode refid="90" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofBaseTypes.h" line="75" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofBaseTypes.h" bodystart="75" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classof_base_has_texture_1ae0f27d5ca6d5a92ee3d9b3d6088745f6" prot="public" virt="pure-virtual"><scope>ofBaseHasTexture</scope><name>getTextureReference</name></member>
+      <member refid="classof_base_has_texture_1a3d2529a36a39ad5277f3050459cc3c80" prot="public" virt="pure-virtual"><scope>ofBaseHasTexture</scope><name>setUseTexture</name></member>
+      <member refid="classof_base_has_texture_1a45f59246be49ccf62aa090d928cd9096" prot="public" virt="virtual"><scope>ofBaseHasTexture</scope><name>~ofBaseHasTexture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

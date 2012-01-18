@@ -1,0 +1,517 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="of_tessellator_8cpp" kind="file">
+    <compoundname>ofTessellator.cpp</compoundname>
+    <includes refid="of_tessellator_8h" local="yes">ofTessellator.h</includes>
+    <incdepgraph>
+      <node id="2719">
+        <label>iomanip</label>
+      </node>
+      <node id="2725">
+        <label>ofColor.h</label>
+        <link refid="of_color_8h"/>
+        <childnode refid="2726" relation="include">
+        </childnode>
+        <childnode refid="2727" relation="include">
+        </childnode>
+      </node>
+      <node id="2726">
+        <label>limits</label>
+      </node>
+      <node id="2701">
+        <label>graphics/ofTessellator.cpp</label>
+        <link refid="ofTessellator.cpp"/>
+        <childnode refid="2702" relation="include">
+        </childnode>
+      </node>
+      <node id="2738">
+        <label>ofPolyline.h</label>
+        <link refid="of_polyline_8h"/>
+        <childnode refid="2728" relation="include">
+        </childnode>
+        <childnode refid="2703" relation="include">
+        </childnode>
+        <childnode refid="2739" relation="include">
+        </childnode>
+        <childnode refid="2740" relation="include">
+        </childnode>
+      </node>
+      <node id="2724">
+        <label>ofVec4f.h</label>
+        <link refid="of_vec4f_8h"/>
+        <childnode refid="2703" relation="include">
+        </childnode>
+      </node>
+      <node id="2702">
+        <label>ofTessellator.h</label>
+        <link refid="of_tessellator_8h"/>
+        <childnode refid="2703" relation="include">
+        </childnode>
+        <childnode refid="2721" relation="include">
+        </childnode>
+        <childnode refid="2734" relation="include">
+        </childnode>
+        <childnode refid="2738" relation="include">
+        </childnode>
+        <childnode refid="2708" relation="include">
+        </childnode>
+      </node>
+      <node id="2707">
+        <label>GL/glx.h</label>
+      </node>
+      <node id="2723">
+        <label>ofVec2f.h</label>
+        <link refid="of_vec2f_8h"/>
+        <childnode refid="2703" relation="include">
+        </childnode>
+      </node>
+      <node id="2712">
+        <label>cmath</label>
+      </node>
+      <node id="2734">
+        <label>ofTypes.h</label>
+        <link refid="of_types_8h"/>
+        <childnode refid="2703" relation="include">
+        </childnode>
+        <childnode refid="2725" relation="include">
+        </childnode>
+        <childnode refid="2735" relation="include">
+        </childnode>
+        <childnode refid="2736" relation="include">
+        </childnode>
+      </node>
+      <node id="2722">
+        <label>ofVec3f.h</label>
+        <link refid="of_vec3f_8h"/>
+        <childnode refid="2723" relation="include">
+        </childnode>
+        <childnode refid="2724" relation="include">
+        </childnode>
+        <childnode refid="2703" relation="include">
+        </childnode>
+        <childnode refid="2712" relation="include">
+        </childnode>
+        <childnode refid="2715" relation="include">
+        </childnode>
+      </node>
+      <node id="2714">
+        <label>string</label>
+      </node>
+      <node id="2711">
+        <label>cstdarg</label>
+      </node>
+      <node id="2705">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="2733">
+        <label>Poco/File.h</label>
+      </node>
+      <node id="2708">
+        <label>tesselator.h</label>
+      </node>
+      <node id="2720">
+        <label>fstream</label>
+      </node>
+      <node id="2727">
+        <label>ofMath.h</label>
+        <link refid="of_math_8h"/>
+        <childnode refid="2728" relation="include">
+        </childnode>
+        <childnode refid="2703" relation="include">
+        </childnode>
+      </node>
+      <node id="2710">
+        <label>cstdio</label>
+      </node>
+      <node id="2730">
+        <label>bitset</label>
+      </node>
+      <node id="2713">
+        <label>ctime</label>
+      </node>
+      <node id="2704">
+        <label>unistd.h</label>
+      </node>
+      <node id="2716">
+        <label>vector</label>
+      </node>
+      <node id="2731">
+        <label>ofLog.h</label>
+        <link refid="of_log_8h"/>
+        <childnode refid="2703" relation="include">
+        </childnode>
+        <childnode refid="2732" relation="include">
+        </childnode>
+        <childnode refid="2734" relation="include">
+        </childnode>
+      </node>
+      <node id="2703">
+        <label>ofConstants.h</label>
+        <link refid="of_constants_8h"/>
+        <childnode refid="2704" relation="include">
+        </childnode>
+        <childnode refid="2705" relation="include">
+        </childnode>
+        <childnode refid="2706" relation="include">
+        </childnode>
+        <childnode refid="2707" relation="include">
+        </childnode>
+        <childnode refid="2708" relation="include">
+        </childnode>
+        <childnode refid="2709" relation="include">
+        </childnode>
+        <childnode refid="2710" relation="include">
+        </childnode>
+        <childnode refid="2711" relation="include">
+        </childnode>
+        <childnode refid="2712" relation="include">
+        </childnode>
+        <childnode refid="2713" relation="include">
+        </childnode>
+        <childnode refid="2714" relation="include">
+        </childnode>
+        <childnode refid="2715" relation="include">
+        </childnode>
+        <childnode refid="2716" relation="include">
+        </childnode>
+        <childnode refid="2717" relation="include">
+        </childnode>
+        <childnode refid="2718" relation="include">
+        </childnode>
+        <childnode refid="2719" relation="include">
+        </childnode>
+        <childnode refid="2720" relation="include">
+        </childnode>
+      </node>
+      <node id="2718">
+        <label>sstream</label>
+      </node>
+      <node id="2728">
+        <label>ofPoint.h</label>
+        <link refid="of_point_8h"/>
+        <childnode refid="2722" relation="include">
+        </childnode>
+      </node>
+      <node id="2732">
+        <label>ofFileUtils.h</label>
+        <link refid="of_file_utils_8h"/>
+        <childnode refid="2703" relation="include">
+        </childnode>
+        <childnode refid="2733" relation="include">
+        </childnode>
+      </node>
+      <node id="2709">
+        <label>cstdlib</label>
+      </node>
+      <node id="2737">
+        <label>ofGLUtils.h</label>
+        <link refid="of_g_l_utils_8h"/>
+      </node>
+      <node id="2715">
+        <label>iostream</label>
+      </node>
+      <node id="2721">
+        <label>ofMesh.h</label>
+        <link refid="of_mesh_8h"/>
+        <childnode refid="2722" relation="include">
+        </childnode>
+        <childnode refid="2723" relation="include">
+        </childnode>
+        <childnode refid="2725" relation="include">
+        </childnode>
+        <childnode refid="2729" relation="include">
+        </childnode>
+        <childnode refid="2703" relation="include">
+        </childnode>
+        <childnode refid="2737" relation="include">
+        </childnode>
+      </node>
+      <node id="2739">
+        <label>deque</label>
+      </node>
+      <node id="2729">
+        <label>ofUtils.h</label>
+        <link refid="of_utils_8h"/>
+        <childnode refid="2703" relation="include">
+        </childnode>
+        <childnode refid="2730" relation="include">
+        </childnode>
+        <childnode refid="2731" relation="include">
+        </childnode>
+      </node>
+      <node id="2740">
+        <label>ofRectangle.h</label>
+        <link refid="of_rectangle_8h"/>
+        <childnode refid="2728" relation="include">
+        </childnode>
+      </node>
+      <node id="2706">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="2736">
+        <label>Poco/Mutex.h</label>
+      </node>
+      <node id="2717">
+        <label>cstring</label>
+      </node>
+      <node id="2735">
+        <label>tr1/memory</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="of_tessellator_8cpp_1aad8d81026c0472c0c4b22958afa2a358" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* memAllocator</definition>
+        <argsstring>(void *userData, unsigned int size)</argsstring>
+        <name>memAllocator</name>
+        <param>
+          <type>void *</type>
+          <declname>userData</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofTessellator.cpp" line="41" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofTessellator.cpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="of_tessellator_8cpp_1a5627c33289fec333038fd360575581d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* memReallocator</definition>
+        <argsstring>(void *userData, void *ptr, unsigned int size)</argsstring>
+        <name>memReallocator</name>
+        <param>
+          <type>void *</type>
+          <declname>userData</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofTessellator.cpp" line="45" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofTessellator.cpp" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="of_tessellator_8cpp_1ab7f70a867405a2bc26dcf2472061608f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void memFree</definition>
+        <argsstring>(void *userData, void *ptr)</argsstring>
+        <name>memFree</name>
+        <param>
+          <type>void *</type>
+          <declname>userData</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofTessellator.cpp" line="49" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofTessellator.cpp" bodystart="49" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_tessellator_8h" kindref="compound">ofTessellator.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//--------------<sp/>polygons<sp/>----------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>do<sp/>polygons,<sp/>we<sp/>need<sp/>tesselation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>do<sp/>tesselation,<sp/>we<sp/>need<sp/>glu<sp/>and<sp/>callbacks....</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>one<sp/>of<sp/>the<sp/>callbacks<sp/>creates<sp/>new<sp/>vertices<sp/>(on<sp/>intersections,<sp/>etc),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>there<sp/>is<sp/>a<sp/>potential<sp/>for<sp/>memory<sp/>leaks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>if<sp/>we<sp/>don&apos;t<sp/>clean<sp/>up<sp/>properly</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>also<sp/>the<sp/>easiest<sp/>system,<sp/>using<sp/>beginShape</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>vertex(),<sp/>endShape,<sp/>will<sp/>also<sp/>use<sp/>dynamically</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>allocated<sp/>memory</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>so,<sp/>therefore,<sp/>we<sp/>will<sp/>be<sp/>using<sp/>a<sp/>static<sp/>vector<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>for<sp/>two<sp/>things:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>a)<sp/>collecting<sp/>vertices</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>b)<sp/>new<sp/>vertices<sp/>on<sp/>combine<sp/>callback</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>important<sp/>note!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>assumes<sp/>single<sp/>threaded<sp/>polygon<sp/>creation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>you<sp/>can<sp/>have<sp/>big<sp/>problems<sp/>if<sp/>creating<sp/>polygons<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>multiple<sp/>threads...<sp/>please<sp/>be<sp/>careful</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(but<sp/>also<sp/>be<sp/>aware<sp/>that<sp/>alot<sp/>of<sp/>opengl<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>is<sp/>single<sp/>threaded<sp/>anyway,<sp/>so<sp/>you<sp/>will<sp/>have<sp/>problems</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>with<sp/>many<sp/>things<sp/>opengl<sp/>related<sp/>across<sp/>threads)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(note:<sp/>this<sp/>implementation<sp/>is<sp/>based<sp/>on<sp/>code<sp/>from<sp/>ftgl)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="of_tessellator_8cpp_1aad8d81026c0472c0c4b22958afa2a358" kindref="member">memAllocator</ref>(<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*userData,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size<sp/>){</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>malloc(size);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="of_tessellator_8cpp_1a5627c33289fec333038fd360575581d0" kindref="member">memReallocator</ref>(<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*userData,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>ptr,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size<sp/>){</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>realloc(ptr,size);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_tessellator_8cpp_1ab7f70a867405a2bc26dcf2472061608f" kindref="member">memFree</ref>(<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*userData,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr<sp/>){</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free<sp/>(ptr);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><ref refid="classof_tessellator_1aeb1a9b4fea623ce67f313bbf564c6900" kindref="member">ofTessellator::ofTessellator</ref>(){</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><ref refid="classof_tessellator_1ad0c67a934bb296bfc8fa4d11660e0612" kindref="member">ofTessellator::~ofTessellator</ref>(){</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tessDeleteTess(cacheTess);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><ref refid="classof_tessellator_1aeb1a9b4fea623ce67f313bbf564c6900" kindref="member">ofTessellator::ofTessellator</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_tessellator" kindref="compound">ofTessellator</ref><sp/>&amp;<sp/>mom){</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(&amp;mom<sp/>!=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">)<sp/>init();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><ref refid="classof_tessellator" kindref="compound">ofTessellator</ref><sp/>&amp;<sp/><ref refid="classof_tessellator_1add15d7ab4c86b31ebbb078068156e377" kindref="member">ofTessellator::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_tessellator" kindref="compound">ofTessellator</ref><sp/>&amp;<sp/>mom){</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(&amp;mom<sp/>!=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">)<sp/>init();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ofTessellator::init(){</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tessAllocator.memalloc<sp/>=<sp/><ref refid="of_tessellator_8cpp_1aad8d81026c0472c0c4b22958afa2a358" kindref="member">memAllocator</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tessAllocator.memrealloc<sp/>=<sp/><ref refid="of_tessellator_8cpp_1a5627c33289fec333038fd360575581d0" kindref="member">memReallocator</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tessAllocator.memfree<sp/>=<sp/><ref refid="of_tessellator_8cpp_1ab7f70a867405a2bc26dcf2472061608f" kindref="member">memFree</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tessAllocator.meshEdgeBucketSize=0;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tessAllocator.meshVertexBucketSize=0;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tessAllocator.meshFaceBucketSize=0;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tessAllocator.dictNodeBucketSize=0;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tessAllocator.regionBucketSize=0;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tessAllocator.extraVertices=0;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cacheTess<sp/>=<sp/>tessNewTess(<sp/>&amp;tessAllocator<sp/>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_tessellator_1a6c3ffcb217b36c6ffd8aaf59decea157" kindref="member">ofTessellator::tessellateToMesh</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_polyline" kindref="compound">ofPolyline</ref>&amp;<sp/>src,<sp/><sp/><ref refid="of_constants_8h_1aca8e53bffcbd2dd34e724531d8a0f375" kindref="member">ofPolyWindingMode</ref><sp/>polyWindingMode,<sp/><ref refid="classof_mesh" kindref="compound">ofMesh</ref>&amp;<sp/>dstmesh,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIs2D){</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_polyline" kindref="compound">ofPolyline</ref>&amp;<sp/>polyline<sp/>=<sp/></highlight><highlight class="keyword">const_cast&lt;</highlight><highlight class="normal"><ref refid="classof_polyline" kindref="compound">ofPolyline</ref>&amp;</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(src);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tessAddContour(<sp/>cacheTess,<sp/>bIs2D?2:3,<sp/>&amp;polyline.<ref refid="classof_polyline_1a193202a0774fe5509f3b90827201fe8a" kindref="member">getVertices</ref>()[0],<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="of_point_8h_1a0e9c5f9596918593de99ee1bd275476f" kindref="member">ofPoint</ref>),<sp/>polyline.<ref refid="classof_polyline_1ad88dd26a8298d54abb9dd3b1f55d00f8" kindref="member" tooltip="points vector access">size</ref>());</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>performTessellation(<sp/>polyWindingMode,<sp/>dstmesh,<sp/>bIs2D<sp/>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_tessellator_1a6c3ffcb217b36c6ffd8aaf59decea157" kindref="member">ofTessellator::tessellateToMesh</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;ofPolyline&gt;&amp;<sp/>src,<sp/><ref refid="of_constants_8h_1aca8e53bffcbd2dd34e724531d8a0f375" kindref="member">ofPolyWindingMode</ref><sp/>polyWindingMode,<sp/><ref refid="classof_mesh" kindref="compound">ofMesh</ref><sp/>&amp;<sp/>dstmesh,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIs2D<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pass<sp/>vertex<sp/>pointers<sp/>to<sp/>GLU<sp/>tessellator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;(int)src.size();<sp/>++i<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_polyline" kindref="compound">ofPolyline</ref>&amp;<sp/>polyline<sp/>=<sp/></highlight><highlight class="keyword">const_cast&lt;</highlight><highlight class="normal"><ref refid="classof_polyline" kindref="compound">ofPolyline</ref>&amp;</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(src[i]);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tessAddContour(<sp/>cacheTess,<sp/>bIs2D?2:3,<sp/>&amp;polyline.<ref refid="classof_polyline_1a193202a0774fe5509f3b90827201fe8a" kindref="member">getVertices</ref>()[0].x,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="of_point_8h_1a0e9c5f9596918593de99ee1bd275476f" kindref="member">ofPoint</ref>),<sp/>polyline.<ref refid="classof_polyline_1ad88dd26a8298d54abb9dd3b1f55d00f8" kindref="member" tooltip="points vector access">size</ref>());</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>performTessellation(<sp/>polyWindingMode,<sp/>dstmesh,<sp/>bIs2D<sp/>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_tessellator_1a13884de2827a33a83edb4da3d41f8d29" kindref="member">ofTessellator::tessellateToPolylines</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_polyline" kindref="compound">ofPolyline</ref>&amp;<sp/>src,<sp/><sp/><ref refid="of_constants_8h_1aca8e53bffcbd2dd34e724531d8a0f375" kindref="member">ofPolyWindingMode</ref><sp/>polyWindingMode,<sp/>vector&lt;ofPolyline&gt;&amp;<sp/>dstpoly,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIs2D){</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_polyline" kindref="compound">ofPolyline</ref>&amp;<sp/>polyline<sp/>=<sp/></highlight><highlight class="keyword">const_cast&lt;</highlight><highlight class="normal"><ref refid="classof_polyline" kindref="compound">ofPolyline</ref>&amp;</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(src);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tessAddContour(<sp/>cacheTess,<sp/>bIs2D?2:3,<sp/>&amp;polyline.<ref refid="classof_polyline_1a193202a0774fe5509f3b90827201fe8a" kindref="member">getVertices</ref>()[0],<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="of_point_8h_1a0e9c5f9596918593de99ee1bd275476f" kindref="member">ofPoint</ref>),<sp/>polyline.<ref refid="classof_polyline_1ad88dd26a8298d54abb9dd3b1f55d00f8" kindref="member" tooltip="points vector access">size</ref>());</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>performTessellation(<sp/>polyWindingMode,<sp/>dstpoly,<sp/>bIs2D<sp/>);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_tessellator_1a13884de2827a33a83edb4da3d41f8d29" kindref="member">ofTessellator::tessellateToPolylines</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;ofPolyline&gt;&amp;<sp/>src,<sp/><ref refid="of_constants_8h_1aca8e53bffcbd2dd34e724531d8a0f375" kindref="member">ofPolyWindingMode</ref><sp/>polyWindingMode,<sp/>vector&lt;ofPolyline&gt;&amp;<sp/>dstpoly,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIs2D<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pass<sp/>vertex<sp/>pointers<sp/>to<sp/>GLU<sp/>tessellator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;(int)src.size();<sp/>++i<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_polyline" kindref="compound">ofPolyline</ref>&amp;<sp/>polyline<sp/>=<sp/></highlight><highlight class="keyword">const_cast&lt;</highlight><highlight class="normal"><ref refid="classof_polyline" kindref="compound">ofPolyline</ref>&amp;</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(src[i]);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tessAddContour(<sp/>cacheTess,<sp/>bIs2D?2:3,<sp/>&amp;polyline.<ref refid="classof_polyline_1a193202a0774fe5509f3b90827201fe8a" kindref="member">getVertices</ref>()[0].x,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="of_point_8h_1a0e9c5f9596918593de99ee1bd275476f" kindref="member">ofPoint</ref>),<sp/>polyline.<ref refid="classof_polyline_1ad88dd26a8298d54abb9dd3b1f55d00f8" kindref="member" tooltip="points vector access">size</ref>());</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>performTessellation(<sp/>polyWindingMode,<sp/>dstpoly,<sp/>bIs2D<sp/>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ofTessellator::performTessellation(<ref refid="of_constants_8h_1aca8e53bffcbd2dd34e724531d8a0f375" kindref="member">ofPolyWindingMode</ref><sp/>polyWindingMode,<sp/><ref refid="classof_mesh" kindref="compound">ofMesh</ref>&amp;<sp/>dstmesh,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIs2D<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!tessTesselate(cacheTess,<sp/>polyWindingMode,<sp/>TESS_POLYGONS,<sp/>3,<sp/>3,<sp/>0)){</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_log" kindref="compound" tooltip="a streaming log interface">ofLog</ref>(<ref refid="of_log_8h_1a6b3aba959377cae6ed3afbb9d5826fe4a64e5a9d8e8727e95ec14005ffd896a6d" kindref="member">OF_LOG_ERROR</ref>,</highlight><highlight class="stringliteral">&quot;ofTessellator:<sp/>tessellation<sp/>failed&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numVertexes<sp/>=<sp/>tessGetVertexCount(<sp/>cacheTess<sp/>);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numIndices<sp/>=<sp/>tessGetElementCount(<sp/>cacheTess<sp/>)*3;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dstmesh.<ref refid="classof_mesh_1a3f84e571d711ee21c45ebaa11bde422e" kindref="member">clear</ref>();</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dstmesh.<ref refid="classof_mesh_1a71e7a3d050abd65ec3cf881535df889e" kindref="member">addVertices</ref>((<ref refid="classof_vec3f" kindref="compound">ofVec3f</ref>*)tessGetVertices(cacheTess),numVertexes);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dstmesh.<ref refid="classof_mesh_1a1378ca9b5cee56274aee9756668ebfc0" kindref="member">addIndices</ref>((<ref refid="of_constants_8h_1ad4acc3774c730c65a67b4419154717d3" kindref="member">ofIndexType</ref>*)tessGetElements(cacheTess),numIndices);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*ofIndexType<sp/>*<sp/>tessElements<sp/>=<sp/>(ofIndexType<sp/>*)tessGetElements(cacheTess);</highlight></codeline>
+<codeline lineno="151"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for(int<sp/>i=0;i&lt;numIndices;i++){</highlight></codeline>
+<codeline lineno="152"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(tessElements[i]!=TESS_UNDEF)</highlight></codeline>
+<codeline lineno="153"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dstmesh.addIndex(tessElements[i]);</highlight></codeline>
+<codeline lineno="154"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dstmesh.<ref refid="classof_mesh_1a472d0c5866e27efd96687ca98c024f14" kindref="member">setMode</ref>(<ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0a56773d485b35d619c99840afc4b02193" kindref="member">OF_PRIMITIVE_TRIANGLES</ref>);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ofTessellator::performTessellation(<ref refid="of_constants_8h_1aca8e53bffcbd2dd34e724531d8a0f375" kindref="member">ofPolyWindingMode</ref><sp/>polyWindingMode,<sp/>vector&lt;ofPolyline&gt;&amp;<sp/>dstpoly,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bIs2D<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!tessTesselate(cacheTess,<sp/>polyWindingMode,<sp/>TESS_BOUNDARY_CONTOURS,<sp/>0,<sp/>3,<sp/>0)){</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_log" kindref="compound" tooltip="a streaming log interface">ofLog</ref>(<ref refid="of_log_8h_1a6b3aba959377cae6ed3afbb9d5826fe4a64e5a9d8e8727e95ec14005ffd896a6d" kindref="member">OF_LOG_ERROR</ref>,</highlight><highlight class="stringliteral">&quot;ofTessellator:<sp/>tessellation<sp/>failed&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref>*<sp/><ref refid="of_bitmap_font_8cpp_1aaebd14048566bff4d6920e945b7de664" kindref="member">verts</ref><sp/>=<sp/>(<ref refid="classof_vec3f" kindref="compound">ofPoint</ref>*)tessGetVertices(cacheTess);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TESSindex*<sp/>elems<sp/>=<sp/>tessGetElements(cacheTess);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nelems<sp/>=<sp/>tessGetElementCount(cacheTess);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dstpoly.resize(nelems);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>nelems;<sp/>++i)</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="of_matrix4x4_8cpp_1ab2d05693952610f937e5acb3c4a8fa1b" kindref="member">b</ref><sp/>=<sp/>elems[i*2];</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>elems[i*2+1];</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dstpoly[i].clear();</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dstpoly[i].addVertexes(&amp;verts[b],n);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dstpoly[i].setClosed(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofTessellator.cpp"/>
+  </compounddef>
+</doxygen>

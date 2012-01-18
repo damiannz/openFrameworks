@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="structof_gst_video_format" kind="struct" prot="public">
+    <compoundname>ofGstVideoFormat</compoundname>
+    <includes local="no">ofGstVideoGrabber.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structof_gst_video_format_1a5a2f9019f50ea6bf84196cde3163e4c4" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ofGstVideoFormat::mimetype</definition>
+        <argsstring></argsstring>
+        <name>mimetype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="11" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structof_gst_video_format_1a1b8646ae51a9f3a7c0e9ffccbada3d63" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ofGstVideoFormat::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="12" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structof_gst_video_format_1a22df8a1a0c5dc4692ab0a0c7961b49f0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ofGstVideoFormat::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="13" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structof_gst_video_format_1a2b275183e3b89ba578a3ee87620f08a5" prot="public" static="no" mutable="no">
+        <type>vector&lt; <ref refid="structof_gst_framerate" kindref="compound">ofGstFramerate</ref> &gt;</type>
+        <definition>vector&lt;ofGstFramerate&gt; ofGstVideoFormat::framerates</definition>
+        <argsstring></argsstring>
+        <name>framerates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="14" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structof_gst_video_format_1a0bef7e243d526026eea3d7a7cb6f24f8" prot="public" static="no" mutable="no">
+        <type><ref refid="structof_gst_framerate" kindref="compound">ofGstFramerate</ref></type>
+        <definition>ofGstFramerate ofGstVideoFormat::choosen_framerate</definition>
+        <argsstring></argsstring>
+        <name>choosen_framerate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="15" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="311">
+        <label>ofGstFramerate</label>
+        <link refid="structof_gst_framerate"/>
+      </node>
+      <node id="310">
+        <label>ofGstVideoFormat</label>
+        <link refid="structof_gst_video_format"/>
+        <childnode refid="311" relation="usage">
+          <edgelabel>choosen_framerate</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="10" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" bodystart="10" bodyend="16"/>
+    <listofallmembers>
+      <member refid="structof_gst_video_format_1a0bef7e243d526026eea3d7a7cb6f24f8" prot="public" virt="non-virtual"><scope>ofGstVideoFormat</scope><name>choosen_framerate</name></member>
+      <member refid="structof_gst_video_format_1a2b275183e3b89ba578a3ee87620f08a5" prot="public" virt="non-virtual"><scope>ofGstVideoFormat</scope><name>framerates</name></member>
+      <member refid="structof_gst_video_format_1a22df8a1a0c5dc4692ab0a0c7961b49f0" prot="public" virt="non-virtual"><scope>ofGstVideoFormat</scope><name>height</name></member>
+      <member refid="structof_gst_video_format_1a5a2f9019f50ea6bf84196cde3163e4c4" prot="public" virt="non-virtual"><scope>ofGstVideoFormat</scope><name>mimetype</name></member>
+      <member refid="structof_gst_video_format_1a1b8646ae51a9f3a7c0e9ffccbada3d63" prot="public" virt="non-virtual"><scope>ofGstVideoFormat</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

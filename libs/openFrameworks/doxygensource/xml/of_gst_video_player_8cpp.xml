@@ -1,0 +1,589 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="of_gst_video_player_8cpp" kind="file">
+    <compoundname>ofGstVideoPlayer.cpp</compoundname>
+    <includes refid="of_gst_video_player_8h" local="yes">ofGstVideoPlayer.h</includes>
+    <includes local="no">gst/video/video.h</includes>
+    <incdepgraph>
+      <node id="6213">
+        <label>iomanip</label>
+      </node>
+      <node id="6223">
+        <label>ofColor.h</label>
+        <link refid="of_color_8h"/>
+        <childnode refid="6224" relation="include">
+        </childnode>
+        <childnode refid="6225" relation="include">
+        </childnode>
+      </node>
+      <node id="6224">
+        <label>limits</label>
+      </node>
+      <node id="6221">
+        <label>ofVec4f.h</label>
+        <link refid="of_vec4f_8h"/>
+        <childnode refid="6197" relation="include">
+        </childnode>
+      </node>
+      <node id="6238">
+        <label>gst/video/video.h</label>
+      </node>
+      <node id="6201">
+        <label>GL/glx.h</label>
+      </node>
+      <node id="6236">
+        <label>ofPixels.h</label>
+        <link refid="of_pixels_8h"/>
+        <childnode refid="6197" relation="include">
+        </childnode>
+        <childnode refid="6227" relation="include">
+        </childnode>
+        <childnode refid="6223" relation="include">
+        </childnode>
+        <childnode refid="6225" relation="include">
+        </childnode>
+        <childnode refid="6224" relation="include">
+        </childnode>
+      </node>
+      <node id="6220">
+        <label>ofVec2f.h</label>
+        <link refid="of_vec2f_8h"/>
+        <childnode refid="6197" relation="include">
+        </childnode>
+      </node>
+      <node id="6206">
+        <label>cmath</label>
+      </node>
+      <node id="6196">
+        <label>ofGstUtils.h</label>
+        <link refid="of_gst_utils_8h"/>
+        <childnode refid="6197" relation="include">
+        </childnode>
+        <childnode refid="6215" relation="include">
+        </childnode>
+        <childnode refid="6216" relation="include">
+        </childnode>
+        <childnode refid="6217" relation="include">
+        </childnode>
+        <childnode refid="6236" relation="include">
+        </childnode>
+        <childnode refid="6232" relation="include">
+        </childnode>
+        <childnode refid="6237" relation="include">
+        </childnode>
+      </node>
+      <node id="6232">
+        <label>ofTypes.h</label>
+        <link refid="of_types_8h"/>
+        <childnode refid="6197" relation="include">
+        </childnode>
+        <childnode refid="6223" relation="include">
+        </childnode>
+        <childnode refid="6233" relation="include">
+        </childnode>
+        <childnode refid="6234" relation="include">
+        </childnode>
+      </node>
+      <node id="6219">
+        <label>ofVec3f.h</label>
+        <link refid="of_vec3f_8h"/>
+        <childnode refid="6220" relation="include">
+        </childnode>
+        <childnode refid="6221" relation="include">
+        </childnode>
+        <childnode refid="6197" relation="include">
+        </childnode>
+        <childnode refid="6206" relation="include">
+        </childnode>
+        <childnode refid="6209" relation="include">
+        </childnode>
+      </node>
+      <node id="6208">
+        <label>string</label>
+      </node>
+      <node id="6205">
+        <label>cstdarg</label>
+      </node>
+      <node id="6199">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="6231">
+        <label>Poco/File.h</label>
+      </node>
+      <node id="6202">
+        <label>tesselator.h</label>
+      </node>
+      <node id="6216">
+        <label>gst/app/gstappsink.h</label>
+      </node>
+      <node id="6217">
+        <label>ofBaseTypes.h</label>
+        <link refid="of_base_types_8h"/>
+        <childnode refid="6218" relation="include">
+        </childnode>
+        <childnode refid="6222" relation="include">
+        </childnode>
+        <childnode refid="6197" relation="include">
+        </childnode>
+        <childnode refid="6223" relation="include">
+        </childnode>
+        <childnode refid="6226" relation="include">
+        </childnode>
+        <childnode refid="6236" relation="include">
+        </childnode>
+      </node>
+      <node id="6214">
+        <label>fstream</label>
+      </node>
+      <node id="6237">
+        <label>ofEvents.h</label>
+        <link refid="of_events_8h"/>
+        <childnode refid="6197" relation="include">
+        </childnode>
+        <childnode refid="6218" relation="include">
+        </childnode>
+      </node>
+      <node id="6225">
+        <label>ofMath.h</label>
+        <link refid="of_math_8h"/>
+        <childnode refid="6218" relation="include">
+        </childnode>
+        <childnode refid="6197" relation="include">
+        </childnode>
+      </node>
+      <node id="6204">
+        <label>cstdio</label>
+      </node>
+      <node id="6195">
+        <label>ofGstVideoPlayer.h</label>
+        <link refid="of_gst_video_player_8h"/>
+        <childnode refid="6196" relation="include">
+        </childnode>
+      </node>
+      <node id="6228">
+        <label>bitset</label>
+      </node>
+      <node id="6207">
+        <label>ctime</label>
+      </node>
+      <node id="6198">
+        <label>unistd.h</label>
+      </node>
+      <node id="6210">
+        <label>vector</label>
+      </node>
+      <node id="6229">
+        <label>ofLog.h</label>
+        <link refid="of_log_8h"/>
+        <childnode refid="6197" relation="include">
+        </childnode>
+        <childnode refid="6230" relation="include">
+        </childnode>
+        <childnode refid="6232" relation="include">
+        </childnode>
+      </node>
+      <node id="6215">
+        <label>gst/gst.h</label>
+      </node>
+      <node id="6197">
+        <label>ofConstants.h</label>
+        <link refid="of_constants_8h"/>
+        <childnode refid="6198" relation="include">
+        </childnode>
+        <childnode refid="6199" relation="include">
+        </childnode>
+        <childnode refid="6200" relation="include">
+        </childnode>
+        <childnode refid="6201" relation="include">
+        </childnode>
+        <childnode refid="6202" relation="include">
+        </childnode>
+        <childnode refid="6203" relation="include">
+        </childnode>
+        <childnode refid="6204" relation="include">
+        </childnode>
+        <childnode refid="6205" relation="include">
+        </childnode>
+        <childnode refid="6206" relation="include">
+        </childnode>
+        <childnode refid="6207" relation="include">
+        </childnode>
+        <childnode refid="6208" relation="include">
+        </childnode>
+        <childnode refid="6209" relation="include">
+        </childnode>
+        <childnode refid="6210" relation="include">
+        </childnode>
+        <childnode refid="6211" relation="include">
+        </childnode>
+        <childnode refid="6212" relation="include">
+        </childnode>
+        <childnode refid="6213" relation="include">
+        </childnode>
+        <childnode refid="6214" relation="include">
+        </childnode>
+      </node>
+      <node id="6212">
+        <label>sstream</label>
+      </node>
+      <node id="6218">
+        <label>ofPoint.h</label>
+        <link refid="of_point_8h"/>
+        <childnode refid="6219" relation="include">
+        </childnode>
+      </node>
+      <node id="6230">
+        <label>ofFileUtils.h</label>
+        <link refid="of_file_utils_8h"/>
+        <childnode refid="6197" relation="include">
+        </childnode>
+        <childnode refid="6231" relation="include">
+        </childnode>
+      </node>
+      <node id="6194">
+        <label>video/ofGstVideoPlayer.cpp</label>
+        <link refid="ofGstVideoPlayer.cpp"/>
+        <childnode refid="6195" relation="include">
+        </childnode>
+        <childnode refid="6238" relation="include">
+        </childnode>
+      </node>
+      <node id="6203">
+        <label>cstdlib</label>
+      </node>
+      <node id="6235">
+        <label>ofGLUtils.h</label>
+        <link refid="of_g_l_utils_8h"/>
+      </node>
+      <node id="6209">
+        <label>iostream</label>
+      </node>
+      <node id="6226">
+        <label>ofMesh.h</label>
+        <link refid="of_mesh_8h"/>
+        <childnode refid="6219" relation="include">
+        </childnode>
+        <childnode refid="6220" relation="include">
+        </childnode>
+        <childnode refid="6223" relation="include">
+        </childnode>
+        <childnode refid="6227" relation="include">
+        </childnode>
+        <childnode refid="6197" relation="include">
+        </childnode>
+        <childnode refid="6235" relation="include">
+        </childnode>
+      </node>
+      <node id="6227">
+        <label>ofUtils.h</label>
+        <link refid="of_utils_8h"/>
+        <childnode refid="6197" relation="include">
+        </childnode>
+        <childnode refid="6228" relation="include">
+        </childnode>
+        <childnode refid="6229" relation="include">
+        </childnode>
+      </node>
+      <node id="6222">
+        <label>ofRectangle.h</label>
+        <link refid="of_rectangle_8h"/>
+        <childnode refid="6218" relation="include">
+        </childnode>
+      </node>
+      <node id="6200">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="6234">
+        <label>Poco/Mutex.h</label>
+      </node>
+      <node id="6211">
+        <label>cstring</label>
+      </node>
+      <node id="6233">
+        <label>tr1/memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>ofGstVideoUtils.cpp</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>16/01/2011</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>arturo</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_gst_video_player_8h" kindref="compound">ofGstVideoPlayer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gst/video/video.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><ref refid="classof_gst_video_player_1a58ab6dd84de3277bd997f93d647d12b8" kindref="member">ofGstVideoPlayer::ofGstVideoPlayer</ref>(){</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nFrames<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>internalPixelFormat<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="of_constants_8h_1ae227396622740556688053d3dc0f1693a4404cf07bb97240a53ff7bcf077608e9" kindref="member">OF_PIXELS_RGB</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bIsStream<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>videoUtils.<ref refid="classof_gst_utils_1ab3d18babb241883af12d3b1c1e4de5a8" kindref="member">setSinkListener</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="classof_gst_video_player_1ad47f3a3c7070024d3d84d0334c886f3e" kindref="member">ofGstVideoPlayer::~ofGstVideoPlayer</ref>(){</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;deleting<sp/>video<sp/>player&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1a0d9ca9df7d4b7e2c91608c2a5fda393b" kindref="member" tooltip="needs to be called before loadMovie">ofGstVideoPlayer::setPixelFormat</ref>(<ref refid="of_constants_8h_1ae227396622740556688053d3dc0f1693" kindref="member">ofPixelFormat</ref><sp/>pixelFormat){</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>internalPixelFormat<sp/>=<sp/>pixelFormat;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1a55638695b70894345e2ff837afb2cc92" kindref="member">ofGstVideoPlayer::loadMovie</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name){</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_gst_video_player_1a3c6486852eecbf2873b456eda03f8879" kindref="member">close</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>name.find(<sp/></highlight><highlight class="stringliteral">&quot;://&quot;</highlight><highlight class="normal">,0<sp/>)<sp/>==<sp/>string::npos){</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;file://&quot;</highlight><highlight class="normal">+<ref refid="of_utils_8cpp_1ab63c4765a81958e1573817738c684bba" kindref="member">ofToDataPath</ref>(name,</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bIsStream<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bIsStream<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_log" kindref="compound" tooltip="a streaming log interface">ofLog</ref>(<ref refid="of_log_8h_1a6b3aba959377cae6ed3afbb9d5826fe4a344bd0fb24d6bd1f23f6d7e09a1ada2f" kindref="member">OF_LOG_VERBOSE</ref>,</highlight><highlight class="stringliteral">&quot;loading<sp/>&quot;</highlight><highlight class="normal">+name);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//GMainLoop*<sp/>loop<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g_main_loop_new<sp/>(NULL,<sp/>FALSE);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GstElement<sp/>*<sp/>gstPipeline<sp/>=<sp/>gst_element_factory_make(</highlight><highlight class="stringliteral">&quot;playbin2&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;player&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g_object_set(G_OBJECT(gstPipeline),<sp/></highlight><highlight class="stringliteral">&quot;uri&quot;</highlight><highlight class="normal">,<sp/>name.c_str(),<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)NULL);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>the<sp/>oF<sp/>appsink<sp/>for<sp/>video<sp/>rgb<sp/>without<sp/>sync<sp/>to<sp/>clock</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GstElement<sp/>*<sp/>gstSink<sp/>=<sp/>gst_element_factory_make(</highlight><highlight class="stringliteral">&quot;appsink&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;sink&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bpp;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>mime;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(internalPixelFormat){</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="of_constants_8h_1ae227396622740556688053d3dc0f1693a5f942d75a0fa2695cc1f6a12eca41a02" kindref="member">OF_PIXELS_MONO</ref>:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mime<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;video/x-raw-gray&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bpp<sp/>=<sp/>8;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="of_constants_8h_1ae227396622740556688053d3dc0f1693a4404cf07bb97240a53ff7bcf077608e9" kindref="member">OF_PIXELS_RGB</ref>:</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mime<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;video/x-raw-rgb&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bpp<sp/>=<sp/>24;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="of_constants_8h_1ae227396622740556688053d3dc0f1693a8751ed3001114961e4f909cc3a10553b" kindref="member">OF_PIXELS_RGBA</ref>:</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="of_constants_8h_1ae227396622740556688053d3dc0f1693a2fec47e004b55e8111f0f1f8b48e850c" kindref="member">OF_PIXELS_BGRA</ref>:</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mime<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;video/x-raw-rgb&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bpp<sp/>=<sp/>32;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mime<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;video/x-raw-rgb&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bpp=24;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GstCaps<sp/>*caps<sp/>=<sp/>gst_caps_new_simple(mime.c_str(),</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;bpp&quot;</highlight><highlight class="normal">,<sp/>G_TYPE_INT,<sp/>bpp,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&quot;depth&quot;,<sp/>G_TYPE_INT,<sp/>24,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*&quot;endianness&quot;,G_TYPE_INT,4321,</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;red_mask&quot;,G_TYPE_INT,0xff0000,</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;green_mask&quot;,G_TYPE_INT,0x00ff00,</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;blue_mask&quot;,G_TYPE_INT,0x0000ff,*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NULL);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gst_app_sink_set_caps(GST_APP_SINK(gstSink),<sp/>caps);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gst_caps_unref(caps);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gst_base_sink_set_sync(GST_BASE_SINK(gstSink),<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gst_app_sink_set_drop<sp/>(GST_APP_SINK(gstSink),</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g_object_set<sp/>(G_OBJECT(gstPipeline),</highlight><highlight class="stringliteral">&quot;video-sink&quot;</highlight><highlight class="normal">,gstSink,(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)NULL);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GstElement<sp/>*audioSink<sp/>=<sp/>gst_element_factory_make(</highlight><highlight class="stringliteral">&quot;gconfaudiosink&quot;</highlight><highlight class="normal">,<sp/>NULL);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g_object_set<sp/>(G_OBJECT(gstPipeline),</highlight><highlight class="stringliteral">&quot;audio-sink&quot;</highlight><highlight class="normal">,audioSink,(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)NULL);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>videoUtils.<ref refid="classof_gst_utils_1a816c80e57bb82d7f909a1bc77d861767" kindref="member">setPipelineWithSink</ref>(gstPipeline,gstSink,bIsStream);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!bIsStream)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1a61cbfc95314a9bbcdc1e15c6450541c7" kindref="member">allocate</ref>();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1a61cbfc95314a9bbcdc1e15c6450541c7" kindref="member">ofGstVideoPlayer::allocate</ref>(){</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(bIsAllocated)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>guint64<sp/>durationNanos<sp/>=<sp/>videoUtils.<ref refid="classof_gst_utils_1a99d3a1edadd3e8e28e7c58ab4fe31ac8" kindref="member">getDurationNanos</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nFrames<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(GstPad*<sp/>pad<sp/>=<sp/>gst_element_get_static_pad(videoUtils.<ref refid="classof_gst_utils_1a1b2b368aaa363fd114671725828abebe" kindref="member">getSink</ref>(),<sp/></highlight><highlight class="stringliteral">&quot;sink&quot;</highlight><highlight class="normal">)){</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,height,bpp=24;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(gst_video_get_size(GST_PAD(pad),<sp/>&amp;width,<sp/>&amp;height)){</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!videoUtils.<ref refid="classof_gst_video_utils_1a51fc30c00bfb261a7a2835c2ea6e1cd4" kindref="member">allocate</ref>(width,height,bpp))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_log" kindref="compound" tooltip="a streaming log interface">ofLog</ref>(<ref refid="of_log_8h_1a6b3aba959377cae6ed3afbb9d5826fe4a64e5a9d8e8727e95ec14005ffd896a6d" kindref="member">OF_LOG_ERROR</ref>,</highlight><highlight class="stringliteral">&quot;GStreamer:<sp/>cannot<sp/>query<sp/>width<sp/>and<sp/>height&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>GValue<sp/>*framerate;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>framerate<sp/>=<sp/>gst_video_frame_rate(pad);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fps_n=0;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fps_d=0;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(framerate<sp/>&amp;&amp;<sp/>GST_VALUE_HOLDS_FRACTION<sp/>(framerate)){</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fps_n<sp/>=<sp/>gst_value_get_fraction_numerator<sp/>(framerate);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fps_d<sp/>=<sp/>gst_value_get_fraction_denominator<sp/>(framerate);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nFrames<sp/>=<sp/>(float)(durationNanos<sp/>/<sp/>GST_SECOND)<sp/>*<sp/>(float)fps_n/(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)fps_d;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_log" kindref="compound" tooltip="a streaming log interface">ofLog</ref>(<ref refid="of_log_8h_1a6b3aba959377cae6ed3afbb9d5826fe4a344bd0fb24d6bd1f23f6d7e09a1ada2f" kindref="member">OF_LOG_VERBOSE</ref>,</highlight><highlight class="stringliteral">&quot;ofGstUtils:<sp/>framerate:<sp/>%i/%i&quot;</highlight><highlight class="normal">,fps_n,fps_d);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_log" kindref="compound" tooltip="a streaming log interface">ofLog</ref>(<ref refid="of_log_8h_1a6b3aba959377cae6ed3afbb9d5826fe4a0ece8203f15199db94060ba73e974635" kindref="member">OF_LOG_WARNING</ref>,</highlight><highlight class="stringliteral">&quot;Gstreamer:<sp/>cannot<sp/>get<sp/>framerate,<sp/>frame<sp/>seek<sp/>won&apos;t<sp/>work&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gst_object_unref(GST_OBJECT(pad));</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bIsAllocated<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_log" kindref="compound" tooltip="a streaming log interface">ofLog</ref>(<ref refid="of_log_8h_1a6b3aba959377cae6ed3afbb9d5826fe4a64e5a9d8e8727e95ec14005ffd896a6d" kindref="member">OF_LOG_ERROR</ref>,</highlight><highlight class="stringliteral">&quot;GStreamer:<sp/>cannot<sp/>get<sp/>sink<sp/>pad&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bIsAllocated<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bIsAllocated;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1ac3d97ba6cd0b922dab0fe8c4717d8071" kindref="member">ofGstVideoPlayer::on_stream_prepared</ref>(){</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!bIsAllocated)<sp/><ref refid="classof_gst_video_player_1a61cbfc95314a9bbcdc1e15c6450541c7" kindref="member">allocate</ref>();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classof_gst_video_player_1a6ef035487aa98ae3a3121b0bbe3bc53f" kindref="member">ofGstVideoPlayer::getCurrentFrame</ref>(){</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frame<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>zach<sp/>I<sp/>think<sp/>this<sp/>may<sp/>fail<sp/>on<sp/>variable<sp/>length<sp/>frames...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>pos<sp/>=<sp/><ref refid="classof_gst_video_player_1acfe19cff475b4b25d622c3c341d38809" kindref="member">getPosition</ref>();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(pos<sp/>==<sp/>-1)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/>framePosInFloat<sp/>=<sp/>((float)<ref refid="classof_gst_video_player_1aba35b5c598886831d836dca32c7b46ff" kindref="member">getTotalNumFrames</ref>()<sp/>*<sp/>pos);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>framePosInInt<sp/>=<sp/>(int)framePosInFloat;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/>floatRemainder<sp/>=<sp/>(framePosInFloat<sp/>-<sp/>framePosInInt);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(floatRemainder<sp/>&gt;<sp/>0.5f)<sp/>framePosInInt<sp/>=<sp/>framePosInInt<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//frame<sp/>=<sp/>(int)ceil((getTotalNumFrames()<sp/>*<sp/>getPosition()));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame<sp/>=<sp/>framePosInInt;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>frame;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classof_gst_video_player_1aba35b5c598886831d836dca32c7b46ff" kindref="member">ofGstVideoPlayer::getTotalNumFrames</ref>(){</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>nFrames;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1a8ad5bb38e840d3dbf01d45f728b601ef" kindref="member">ofGstVideoPlayer::firstFrame</ref>(){</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_gst_video_player_1a360cd50b746b02430fde87b4b5387f24" kindref="member">setFrame</ref>(0);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1a411a60389cbdff46723bab0d8f12b866" kindref="member">ofGstVideoPlayer::nextFrame</ref>(){</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gint64<sp/>currentFrame<sp/>=<sp/><ref refid="classof_gst_video_player_1a6ef035487aa98ae3a3121b0bbe3bc53f" kindref="member">getCurrentFrame</ref>();</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(currentFrame!=-1)<sp/><ref refid="classof_gst_video_player_1a360cd50b746b02430fde87b4b5387f24" kindref="member">setFrame</ref>(currentFrame<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1abbda20871c24886e8a6cc6d7a92f77d3" kindref="member">ofGstVideoPlayer::previousFrame</ref>(){</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gint64<sp/>currentFrame<sp/>=<sp/><ref refid="classof_gst_video_player_1a6ef035487aa98ae3a3121b0bbe3bc53f" kindref="member">getCurrentFrame</ref>();</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(currentFrame!=-1)<sp/><ref refid="classof_gst_video_player_1a360cd50b746b02430fde87b4b5387f24" kindref="member">setFrame</ref>(currentFrame<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1a360cd50b746b02430fde87b4b5387f24" kindref="member">ofGstVideoPlayer::setFrame</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frame){<sp/></highlight><highlight class="comment">//<sp/>frame<sp/>0<sp/>=<sp/>first<sp/>frame...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>pct<sp/>=<sp/>(float)frame<sp/>/<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)nFrames;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_gst_video_player_1a372ad61528601d8302394eb1a8a17723" kindref="member">setPosition</ref>(pct);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1a2fe3918ca985635385307769052119da" kindref="member">ofGstVideoPlayer::isStream</ref>(){</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bIsStream;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1a178d0a9ed961c7d7e8415b8413ddf073" kindref="member">ofGstVideoPlayer::update</ref>(){</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>videoUtils.<ref refid="classof_gst_video_utils_1a54a95801b95b9acb3ae33669506f0ead" kindref="member">update</ref>();</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1a46e8e0606b9896be94cf6dd45bb402fd" kindref="member">ofGstVideoPlayer::play</ref>(){</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>videoUtils.<ref refid="classof_gst_utils_1a7eb877ffd5e8cbb098c7f89ef47ef6cc" kindref="member">play</ref>();</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1a9f07a105e2bb1c1d3f54a51b41deef20" kindref="member">ofGstVideoPlayer::stop</ref>(){</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>videoUtils.<ref refid="classof_gst_utils_1ae6cb3561b7c5c89f1a15fceab060ac2e" kindref="member">stop</ref>();</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1aae3fa1ecd354237b81521b61ecb4f06a" kindref="member">ofGstVideoPlayer::setPaused</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bPause){</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>videoUtils.<ref refid="classof_gst_utils_1afbcc138c11944853635325e693c47666" kindref="member">setPaused</ref>(bPause);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1a0f26089fcae28b53ce946f20f1ba7b86" kindref="member">ofGstVideoPlayer::isPaused</ref>(){</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>videoUtils.<ref refid="classof_gst_utils_1ab50b3f5aab7d51875cd173407cd1f237" kindref="member">isPaused</ref>();</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1a699e57730c69bb4c835a43e9adbf3fc7" kindref="member">ofGstVideoPlayer::isLoaded</ref>(){</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>videoUtils.<ref refid="classof_gst_utils_1a5bd506e4281b50710f1463170ab504b3" kindref="member">isLoaded</ref>();</highlight></codeline>
+<codeline lineno="202"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1a27287a200b520f1dbba0134d3aa5d317" kindref="member">ofGstVideoPlayer::isPlaying</ref>(){</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>videoUtils.<ref refid="classof_gst_utils_1ab7e9a7cbddd5ea76394900ad3bf3b381" kindref="member">isPlaying</ref>();</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1acfe19cff475b4b25d622c3c341d38809" kindref="member">ofGstVideoPlayer::getPosition</ref>(){</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>videoUtils.<ref refid="classof_gst_utils_1a0f56586ff19e8cc7c256793eb75c94af" kindref="member">getPosition</ref>();</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1addca94081de9976988edc0a363b0c593" kindref="member">ofGstVideoPlayer::getSpeed</ref>(){</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>videoUtils.<ref refid="classof_gst_utils_1a60751245ec54e52314ba9abfc4b2adc4" kindref="member">getSpeed</ref>();</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1a0da5e94743da81f2e8bbed83cb23a8e8" kindref="member">ofGstVideoPlayer::getDuration</ref>(){</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>videoUtils.<ref refid="classof_gst_utils_1a97660d4b80b24ab8f12a0ee295dad6e9" kindref="member">getDuration</ref>();</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1a31c461614a1e029b89f5bb3ae750eeb2" kindref="member">ofGstVideoPlayer::getIsMovieDone</ref>(){</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>videoUtils.<ref refid="classof_gst_utils_1afb331370b918cdf2673feaee574f40a5" kindref="member">getIsMovieDone</ref>();</highlight></codeline>
+<codeline lineno="222"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1a372ad61528601d8302394eb1a8a17723" kindref="member">ofGstVideoPlayer::setPosition</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>pct){</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>videoUtils.<ref refid="classof_gst_utils_1ae97d801679bd1149c272d2bc4256a27e" kindref="member">setPosition</ref>(pct);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1ab247f127bd795f443dc21830272859e4" kindref="member">ofGstVideoPlayer::setVolume</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>volume){</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>videoUtils.<ref refid="classof_gst_utils_1a3548908a1ed502f679e4a73af0a56abd" kindref="member">setVolume</ref>(volume);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1a268d895fb8606d7364a9593fc7fc9849" kindref="member">ofGstVideoPlayer::setLoopState</ref>(<ref refid="of_constants_8h_1a10213537a43a583f9caa5764d76ff4a4" kindref="member">ofLoopType</ref><sp/>state){</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>videoUtils.<ref refid="classof_gst_utils_1a07e3a3a5daa241016f6ee0a3af2155bd" kindref="member">setLoopState</ref>(state);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classof_gst_video_player_1ac1f3af5687e483d755c5be3a6acd3a9e" kindref="member">ofGstVideoPlayer::getLoopState</ref>(){</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>videoUtils.<ref refid="classof_gst_utils_1a3dce69dc116bd794264c61bf856305ef" kindref="member">getLoopState</ref>();</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1af3142dc9b500c0bad6071804e6b1451c" kindref="member">ofGstVideoPlayer::setSpeed</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>speed){</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>videoUtils.<ref refid="classof_gst_utils_1a2729352bcf45dbba333f4b2305579873" kindref="member">setSpeed</ref>(speed);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1a3c6486852eecbf2873b456eda03f8879" kindref="member">ofGstVideoPlayer::close</ref>(){</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bIsAllocated<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>videoUtils.<ref refid="classof_gst_video_utils_1a9c455d0326dd313597b31111d321c357" kindref="member">close</ref>();</highlight></codeline>
+<codeline lineno="247"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1a47c80f4972596eeba56af266c20a1206" kindref="member">ofGstVideoPlayer::isFrameNew</ref>(){</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>videoUtils.<ref refid="classof_gst_video_utils_1af192b063cad4fbea88f290e3b501eb06" kindref="member">isFrameNew</ref>();</highlight></codeline>
+<codeline lineno="251"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="classof_gst_video_player_1adb8ee823c3f1616c406e0d5d26218953" kindref="member">ofGstVideoPlayer::getPixels</ref>(){</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>videoUtils.<ref refid="classof_gst_video_utils_1a0c7fc633ebf27589941219d99c17f0fa" kindref="member">getPixels</ref>();</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><ref refid="classof_pixels__" kindref="compound">ofPixelsRef</ref><sp/><ref refid="classof_gst_video_player_1a03dd7044e94436eb95db728ff5ab5314" kindref="member">ofGstVideoPlayer::getPixelsRef</ref>(){</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>videoUtils.<ref refid="classof_gst_video_utils_1a144c83ce876eca7fac1262f408c8be6f" kindref="member">getPixelsRef</ref>();</highlight></codeline>
+<codeline lineno="259"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1a188530ec73fca5a05aa1dd5a42465b84" kindref="member">ofGstVideoPlayer::getHeight</ref>(){</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>videoUtils.<ref refid="classof_gst_video_utils_1ae19ad8a0c492b4750538ab147ae875a9" kindref="member">getHeight</ref>();</highlight></codeline>
+<codeline lineno="263"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1a6fa5ad3b8cd0d9f1f64020e9494ad545" kindref="member">ofGstVideoPlayer::getWidth</ref>(){</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>videoUtils.<ref refid="classof_gst_video_utils_1a2dbacae8afcfbe29dc7972c3ac8d8320" kindref="member">getWidth</ref>();</highlight></codeline>
+<codeline lineno="267"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><ref refid="classof_gst_video_utils" kindref="compound">ofGstVideoUtils</ref><sp/>*<sp/><ref refid="classof_gst_video_player_1ab7aa5de40584696a9a98158d5bbb6da0" kindref="member">ofGstVideoPlayer::getGstVideoUtils</ref>(){</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;videoUtils;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_gst_video_player_1a26846d6ea6913d224bfcbad1ac668c4a" kindref="member">ofGstVideoPlayer::setFrameByFrame</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>frameByFrame){</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>videoUtils.<ref refid="classof_gst_utils_1a276790e1db3e5427b4a217b4fd748474" kindref="member">setFrameByFrame</ref>(frameByFrame);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoPlayer.cpp"/>
+  </compounddef>
+</doxygen>

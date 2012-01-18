@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="dir_37c33448a78f2a0f43c3b1f4ce338205" kind="dir">
+    <compoundname>events/</compoundname>
+    <innerfile refid="of_events_8cpp">ofEvents.cpp</innerfile>
+    <innerfile refid="of_events_8h">ofEvents.h</innerfile>
+    <innerfile refid="of_event_utils_8h">ofEventUtils.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/events/"/>
+  </compounddef>
+</doxygen>

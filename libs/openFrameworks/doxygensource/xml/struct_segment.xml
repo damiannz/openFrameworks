@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="struct_segment" kind="struct" prot="public">
+    <compoundname>Segment</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_segment_1a7f6f7cc9db34b33281d7ea60b8821efb" prot="public" static="no" mutable="no">
+        <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+        <definition>ofPoint Segment::P0</definition>
+        <argsstring></argsstring>
+        <name>P0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofPolyline.cpp" line="551" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofPolyline.cpp" bodystart="551" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_segment_1abf8f338776c948607dfdc8b68ad91052" prot="public" static="no" mutable="no">
+        <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+        <definition>ofPoint Segment::P1</definition>
+        <argsstring></argsstring>
+        <name>P1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofPolyline.cpp" line="552" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofPolyline.cpp" bodystart="552" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="640">
+        <label>Segment</label>
+        <childnode refid="641" relation="usage">
+          <edgelabel>P0</edgelabel>
+          <edgelabel>P1</edgelabel>
+        </childnode>
+      </node>
+      <node id="641">
+        <label>ofVec3f</label>
+        <link refid="classof_vec3f"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofPolyline.cpp" line="550" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofPolyline.cpp" bodystart="550" bodyend="553"/>
+    <listofallmembers>
+      <member refid="struct_segment_1a7f6f7cc9db34b33281d7ea60b8821efb" prot="public" virt="non-virtual"><scope>Segment</scope><name>P0</name></member>
+      <member refid="struct_segment_1abf8f338776c948607dfdc8b68ad91052" prot="public" virt="non-virtual"><scope>Segment</scope><name>P1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

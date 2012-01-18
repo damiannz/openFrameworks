@@ -1,0 +1,607 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="of_camera_8cpp" kind="file">
+    <compoundname>ofCamera.cpp</compoundname>
+    <includes refid="of_camera_8h" local="yes">ofCamera.h</includes>
+    <includes refid="of_log_8h" local="yes">ofLog.h</includes>
+    <incdepgraph>
+      <node id="93">
+        <label>ofVectorMath.h</label>
+        <link refid="of_vector_math_8h"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>iomanip</label>
+      </node>
+      <node id="87">
+        <label>ofColor.h</label>
+        <link refid="of_color_8h"/>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>limits</label>
+      </node>
+      <node id="96">
+        <label>ofQuaternion.h</label>
+        <link refid="of_quaternion_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>ofPolyline.h</label>
+        <link refid="of_polyline_8h"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>ofVec4f.h</label>
+        <link refid="of_vec4f_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>GL/glx.h</label>
+      </node>
+      <node id="60">
+        <label>3d/ofCamera.cpp</label>
+        <link refid="ofCamera.cpp"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>ofPixels.h</label>
+        <link refid="of_pixels_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>ofVec2f.h</label>
+        <link refid="of_vec2f_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>cmath</label>
+      </node>
+      <node id="86">
+        <label>ofTypes.h</label>
+        <link refid="of_types_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>ofVec3f.h</label>
+        <link refid="of_vec3f_8h"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>string</label>
+      </node>
+      <node id="74">
+        <label>cstdarg</label>
+      </node>
+      <node id="68">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="105">
+        <label>Poco/File.h</label>
+      </node>
+      <node id="71">
+        <label>tesselator.h</label>
+      </node>
+      <node id="99">
+        <label>ofBaseTypes.h</label>
+        <link refid="of_base_types_8h"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>ofGLRenderer.h</label>
+        <link refid="of_g_l_renderer_8h"/>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>fstream</label>
+      </node>
+      <node id="94">
+        <label>ofMatrix3x3.h</label>
+        <link refid="of_matrix3x3_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>of3dUtils.h</label>
+        <link refid="of3d_utils_8h"/>
+      </node>
+      <node id="89">
+        <label>ofMath.h</label>
+        <link refid="of_math_8h"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>cstdio</label>
+      </node>
+      <node id="102">
+        <label>bitset</label>
+      </node>
+      <node id="76">
+        <label>ctime</label>
+      </node>
+      <node id="67">
+        <label>unistd.h</label>
+      </node>
+      <node id="111">
+        <label>stack</label>
+      </node>
+      <node id="79">
+        <label>vector</label>
+      </node>
+      <node id="103">
+        <label>ofLog.h</label>
+        <link refid="of_log_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>ofCamera.h</label>
+        <link refid="of_camera_8h"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>ofConstants.h</label>
+        <link refid="of_constants_8h"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>sstream</label>
+      </node>
+      <node id="63">
+        <label>ofPoint.h</label>
+        <link refid="of_point_8h"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>ofMatrix4x4.h</label>
+        <link refid="of_matrix4x4_8h"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>ofFileUtils.h</label>
+        <link refid="of_file_utils_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>cstdlib</label>
+      </node>
+      <node id="106">
+        <label>ofGLUtils.h</label>
+        <link refid="of_g_l_utils_8h"/>
+      </node>
+      <node id="92">
+        <label>ofNode.h</label>
+        <link refid="of_node_8h"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>iostream</label>
+      </node>
+      <node id="100">
+        <label>ofMesh.h</label>
+        <link refid="of_mesh_8h"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>deque</label>
+      </node>
+      <node id="98">
+        <label>ofGraphics.h</label>
+        <link refid="of_graphics_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>ofUtils.h</label>
+        <link refid="of_utils_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>ofAppRunner.h</label>
+        <link refid="of_app_runner_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>ofRectangle.h</label>
+        <link refid="of_rectangle_8h"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="91">
+        <label>Poco/Mutex.h</label>
+      </node>
+      <node id="80">
+        <label>cstring</label>
+      </node>
+      <node id="90">
+        <label>tr1/memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/>ofCamera.cpp</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/>openFrameworksLib</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>by<sp/>Memo<sp/>Akten<sp/>on<sp/>10/01/2011.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2011<sp/>MSA<sp/>Visuals<sp/>Ltd.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_camera_8h" kindref="compound">ofCamera.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_log_8h" kindref="compound">ofLog.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><ref refid="classof_camera_1abd30fe5920612bd673a7a7af7991fc4a" kindref="member">ofCamera::ofCamera</ref>()<sp/>:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">isOrtho(false),</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">fov(60),</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">nearClip(0),</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">farClip(0),</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">isActive(false),</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">hasStoredMatrices(false),</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">bCacheMatrices(false)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_camera_1ac79f42fa863eb5ce703625800dee236c" kindref="member">ofCamera::setFov</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>f)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fov<sp/>=<sp/>f;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_camera_1a5db36e910d18be50b551c354eef1af2c" kindref="member">ofCamera::getFov</ref>(){</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fov;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_camera_1a4ed2f176b5dbdb65e1e452b847497086" kindref="member">ofCamera::setNearClip</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>f)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nearClip<sp/>=<sp/>f;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_camera_1aef6f9ea9a776c0113900a75e54d05bb9" kindref="member">ofCamera::setFarClip</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>f)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>farClip<sp/>=<sp/>f;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_camera_1a3188281a0708f7ed030b0742ff2d3f6d" kindref="member">ofCamera::enableOrtho</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isOrtho<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_camera_1a8b9f8d32444f72544b3a05e6646fcdfc" kindref="member">ofCamera::disableOrtho</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isOrtho<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_camera_1a64ecd6f32c55d31f8570e22a1597c29a" kindref="member">ofCamera::getOrtho</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>isOrtho;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_camera_1a229cb35e80d84ce864e07d569116890e" kindref="member">ofCamera::getImagePlaneDistance</ref>(<ref refid="classof_rectangle" kindref="compound">ofRectangle</ref><sp/>viewport)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>viewport.<ref refid="classof_rectangle_1abed860bfcf89865186c704ddc1fec3a9" kindref="member">height</ref><sp/>/<sp/>(2.0f<sp/>*<sp/>tanf(<ref refid="of_constants_8h_1a598a3330b3c21701223ee0ca14316eca" kindref="member">PI</ref><sp/>*<sp/>fov<sp/>/<sp/>360.0f));</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_camera_1afb7b6b17c6b13fcb1ec05fbc8b9b407f" kindref="member">ofCamera::begin</ref>(<ref refid="classof_rectangle" kindref="compound">ofRectangle</ref><sp/>viewport)<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!isActive)<sp/><ref refid="of_graphics_8cpp_1a68017a9ee9223c29e2c87f13f98e4503" kindref="member">ofPushView</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isActive<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_graphics_8cpp_1ad9ef1ea2ced1ba354ff486af1a32348a" kindref="member">ofSetCoordHandedness</ref>(<ref refid="of_constants_8h_1a35cd63b4a2e112ecf30eaf0542f2388baf09de636bd8baf2c6b4b98d76d9558a8" kindref="member">OF_RIGHT_HANDED</ref>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>autocalculate<sp/>near/far<sp/>clip<sp/>planes<sp/>if<sp/>not<sp/>set<sp/>by<sp/>user</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>calcClipPlanes(viewport);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glMatrixMode(GL_PROJECTION);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glLoadIdentity();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(isOrtho)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(vFlip)<sp/>glOrtho(0,<sp/>width,<sp/>height,<sp/>0,<sp/>nearDist,<sp/>farDist);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TARGET_OPENGLES</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glOrtho(0,<sp/>viewport.<ref refid="classof_rectangle_1a8aff8758d86d6fc920131a1932d193e2" kindref="member">width</ref>,<sp/>0,<sp/>viewport.<ref refid="classof_rectangle_1abed860bfcf89865186c704ddc1fec3a9" kindref="member">height</ref>,<sp/>nearClip,<sp/>farClip);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_matrix4x4" kindref="compound">ofMatrix4x4</ref><sp/>ortho;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ortho.<ref refid="classof_matrix4x4_1ac4308822795d32eaa2d4c5fffd5a59b2" kindref="member">makeOrthoMatrix</ref>(0,<sp/>viewport.<ref refid="classof_rectangle_1a8aff8758d86d6fc920131a1932d193e2" kindref="member">width</ref>,<sp/>0,<sp/>viewport.<ref refid="classof_rectangle_1abed860bfcf89865186c704ddc1fec3a9" kindref="member">height</ref>,<sp/>nearClip,<sp/>farClip);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glLoadMatrixf(ortho.<ref refid="classof_matrix4x4_1af8c05f9cf9470646fc0915e8b163068f" kindref="member">getPtr</ref>());</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gluPerspective(fov,<sp/>viewport.<ref refid="classof_rectangle_1a8aff8758d86d6fc920131a1932d193e2" kindref="member">width</ref>/viewport.<ref refid="classof_rectangle_1abed860bfcf89865186c704ddc1fec3a9" kindref="member">height</ref>,<sp/>nearClip,<sp/>farClip);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glMatrixMode(GL_MODELVIEW);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glLoadMatrixf(<ref refid="classof_matrix4x4_1ae59b7e1c6c41c84d2cfa348f65e0b1ac" kindref="member">ofMatrix4x4::getInverseOf</ref>(<ref refid="classof_node_1a78a98aca9e6d389ae4918ad9783f3bf7" kindref="member">getGlobalTransformMatrix</ref>()).getPtr());</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_graphics_8cpp_1a95cb04add69b7de7403d4d022e5f0391" kindref="member">ofViewport</ref>(viewport);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//store<sp/>current<sp/>matrices</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bCacheMatrices)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glGetFloatv(GL_PROJECTION_MATRIX,<sp/>matProjection.<ref refid="classof_matrix4x4_1af8c05f9cf9470646fc0915e8b163068f" kindref="member">getPtr</ref>());</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glGetFloatv(GL_MODELVIEW_MATRIX,<sp/>matModelView.<ref refid="classof_matrix4x4_1af8c05f9cf9470646fc0915e8b163068f" kindref="member">getPtr</ref>());</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hasStoredMatrices<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">//<sp/>if<sp/>begin();<sp/>pushes<sp/>first,<sp/>then<sp/>we<sp/>need<sp/>an<sp/>end<sp/>to<sp/>pop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_camera_1a2ab2daf9b7432374e6c4bf70a5d94861" kindref="member">ofCamera::end</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isActive)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_graphics_8cpp_1a2839f3526b16f01c4e06158d6eb00393" kindref="member">ofPopView</ref>();</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isActive<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><ref refid="classof_matrix4x4" kindref="compound">ofMatrix4x4</ref><sp/><ref refid="classof_camera_1a8d34598a9542ee39aad5f1fda7d86d18" kindref="member">ofCamera::getProjectionMatrix</ref>(<ref refid="classof_rectangle" kindref="compound">ofRectangle</ref><sp/>viewport)<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bCacheMatrices)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>matProjection;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_camera_8h_1abc9f3f28ebedf30859798bb84c1d84e9" kindref="member">OF_CAMERA_MATRIX_CACHE_WARNING</ref></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>matProjection.<ref refid="classof_matrix4x4_1a5fd80395dcd3303cd7630610d91e8308" kindref="member">makePerspectiveMatrix</ref>(fov,<sp/>viewport.<ref refid="classof_rectangle_1a8aff8758d86d6fc920131a1932d193e2" kindref="member">width</ref>/viewport.<ref refid="classof_rectangle_1abed860bfcf89865186c704ddc1fec3a9" kindref="member">height</ref>,<sp/>nearClip,<sp/>farClip);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>matProjection;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><ref refid="classof_matrix4x4" kindref="compound">ofMatrix4x4</ref><sp/><ref refid="classof_camera_1ab1f75c923a80c3161ef3d3a0057e9524" kindref="member">ofCamera::getModelViewMatrix</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bCacheMatrices)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>matModelView;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_camera_8h_1abc9f3f28ebedf30859798bb84c1d84e9" kindref="member">OF_CAMERA_MATRIX_CACHE_WARNING</ref></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>matModelView.<ref refid="classof_matrix4x4_1a443f5350825e494808bad13c31eeb88b" kindref="member">makeInvertOf</ref>(<ref refid="classof_node_1a78a98aca9e6d389ae4918ad9783f3bf7" kindref="member">getGlobalTransformMatrix</ref>());</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>matModelView;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><ref refid="classof_matrix4x4" kindref="compound">ofMatrix4x4</ref><sp/><ref refid="classof_camera_1a5f888bd16155c9a9088302a2a74907a1" kindref="member">ofCamera::getModelViewProjectionMatrix</ref>(<ref refid="classof_rectangle" kindref="compound">ofRectangle</ref><sp/>viewport)<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classof_camera_1ab1f75c923a80c3161ef3d3a0057e9524" kindref="member">getModelViewMatrix</ref>()<sp/>*<sp/><ref refid="classof_camera_1a8d34598a9542ee39aad5f1fda7d86d18" kindref="member">getProjectionMatrix</ref>(viewport);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><ref refid="classof_vec3f" kindref="compound">ofVec3f</ref><sp/><ref refid="classof_camera_1ab322e7d760b8ab3508af2362478d4dd6" kindref="member">ofCamera::worldToScreen</ref>(<ref refid="classof_vec3f" kindref="compound">ofVec3f</ref><sp/>WorldXYZ,<sp/><ref refid="classof_rectangle" kindref="compound">ofRectangle</ref><sp/>viewport)<sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vec3f" kindref="compound">ofVec3f</ref><sp/>CameraXYZ<sp/>=<sp/>WorldXYZ<sp/>*<sp/><ref refid="classof_camera_1a5f888bd16155c9a9088302a2a74907a1" kindref="member">getModelViewProjectionMatrix</ref>();</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vec3f" kindref="compound">ofVec3f</ref><sp/>ScreenXYZ;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ScreenXYZ.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref><sp/>=<sp/>(CameraXYZ.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref><sp/>+<sp/>1.0f)<sp/>/<sp/>2.0f<sp/>*<sp/>viewport.<ref refid="classof_rectangle_1a8aff8758d86d6fc920131a1932d193e2" kindref="member">width</ref><sp/>+<sp/>viewport.<ref refid="classof_rectangle_1a1946a116ea66e21a6939cb569438d316" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ScreenXYZ.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref><sp/>=<sp/>(1.0f<sp/>-<sp/>CameraXYZ.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref>)<sp/>/<sp/>2.0f<sp/>*<sp/>viewport.<ref refid="classof_rectangle_1abed860bfcf89865186c704ddc1fec3a9" kindref="member">height</ref><sp/>+<sp/>viewport.<ref refid="classof_rectangle_1a4447eca416e27cad42f5137b86813dad" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ScreenXYZ.<ref refid="classof_vec3f_1aa6c8d5ae5fdaeb516242aca987ccb9bc" kindref="member">z</ref><sp/>=<sp/>CameraXYZ.<ref refid="classof_vec3f_1aa6c8d5ae5fdaeb516242aca987ccb9bc" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ScreenXYZ;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><ref refid="classof_vec3f" kindref="compound">ofVec3f</ref><sp/><ref refid="classof_camera_1a85a37e9c24c372b6824f4ada7612470e" kindref="member">ofCamera::screenToWorld</ref>(<ref refid="classof_vec3f" kindref="compound">ofVec3f</ref><sp/>ScreenXYZ,<sp/><ref refid="classof_rectangle" kindref="compound">ofRectangle</ref><sp/>viewport)<sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//convert<sp/>from<sp/>screen<sp/>to<sp/>camera</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vec3f" kindref="compound">ofVec3f</ref><sp/>CameraXYZ;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CameraXYZ.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref><sp/>=<sp/>2.0f<sp/>*<sp/>(ScreenXYZ.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref><sp/>-<sp/>viewport.<ref refid="classof_rectangle_1a1946a116ea66e21a6939cb569438d316" kindref="member">x</ref>)<sp/>/<sp/>viewport.<ref refid="classof_rectangle_1a8aff8758d86d6fc920131a1932d193e2" kindref="member">width</ref><sp/>-<sp/>1.0f;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CameraXYZ.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref><sp/>=<sp/>1.0f<sp/>-<sp/>2.0f<sp/>*(ScreenXYZ.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref><sp/>-<sp/>viewport.<ref refid="classof_rectangle_1a4447eca416e27cad42f5137b86813dad" kindref="member">y</ref>)<sp/>/<sp/>viewport.<ref refid="classof_rectangle_1abed860bfcf89865186c704ddc1fec3a9" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CameraXYZ.<ref refid="classof_vec3f_1aa6c8d5ae5fdaeb516242aca987ccb9bc" kindref="member">z</ref><sp/>=<sp/>ScreenXYZ.<ref refid="classof_vec3f_1aa6c8d5ae5fdaeb516242aca987ccb9bc" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//get<sp/>inverse<sp/>camera<sp/>matrix</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_matrix4x4" kindref="compound">ofMatrix4x4</ref><sp/>inverseCamera;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inverseCamera.<ref refid="classof_matrix4x4_1a443f5350825e494808bad13c31eeb88b" kindref="member">makeInvertOf</ref>(<ref refid="classof_camera_1a5f888bd16155c9a9088302a2a74907a1" kindref="member">getModelViewProjectionMatrix</ref>(viewport));</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//convert<sp/>camera<sp/>to<sp/>world</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>CameraXYZ<sp/>*<sp/>inverseCamera;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="173"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><ref refid="classof_vec3f" kindref="compound">ofVec3f</ref><sp/><ref refid="classof_camera_1a124675ae7ad72e82c402ce7da7978a31" kindref="member">ofCamera::worldToCamera</ref>(<ref refid="classof_vec3f" kindref="compound">ofVec3f</ref><sp/>WorldXYZ,<sp/><ref refid="classof_rectangle" kindref="compound">ofRectangle</ref><sp/>viewport)<sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>WorldXYZ<sp/>*<sp/><ref refid="classof_camera_1a5f888bd16155c9a9088302a2a74907a1" kindref="member">getModelViewProjectionMatrix</ref>(viewport);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><ref refid="classof_vec3f" kindref="compound">ofVec3f</ref><sp/><ref refid="classof_camera_1af3801bb3a2e303bc005b258670056f1f" kindref="member">ofCamera::cameraToWorld</ref>(<ref refid="classof_vec3f" kindref="compound">ofVec3f</ref><sp/>CameraXYZ,<sp/><ref refid="classof_rectangle" kindref="compound">ofRectangle</ref><sp/>viewport)<sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_matrix4x4" kindref="compound">ofMatrix4x4</ref><sp/>inverseCamera;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inverseCamera.<ref refid="classof_matrix4x4_1a443f5350825e494808bad13c31eeb88b" kindref="member">makeInvertOf</ref>(<ref refid="classof_camera_1a5f888bd16155c9a9088302a2a74907a1" kindref="member">getModelViewProjectionMatrix</ref>(viewport));</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>CameraXYZ<sp/>*<sp/>inverseCamera;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ofCamera::calcClipPlanes(<ref refid="classof_rectangle" kindref="compound">ofRectangle</ref><sp/>viewport)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>autocalculate<sp/>near/far<sp/>clip<sp/>planes<sp/>if<sp/>not<sp/>set<sp/>by<sp/>user</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(nearClip<sp/>==<sp/>0<sp/>||<sp/>farClip<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dist<sp/>=<sp/><ref refid="classof_camera_1a229cb35e80d84ce864e07d569116890e" kindref="member">getImagePlaneDistance</ref>(viewport);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nearClip<sp/>=<sp/>(nearClip<sp/>==<sp/>0)<sp/>?<sp/>dist<sp/>/<sp/>100.0f<sp/>:<sp/>nearClip;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>farClip<sp/>=<sp/>(farClip<sp/>==<sp/>0)<sp/>?<sp/>dist<sp/>*<sp/>10.0f<sp/>:<sp/>farClip;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_camera_1a9c64ce18d4ea06c77f23f6899bdb27c9" kindref="member">ofCamera::cacheMatrices</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cache){</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bCacheMatrices<sp/>=<sp/>cache;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/3d/ofCamera.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="classof_sound_stream" kind="class" prot="public">
+    <compoundname>ofSoundStream</compoundname>
+    <includes local="no">ofSoundStream.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" prot="protected" static="no" mutable="no">
+        <type><ref refid="classof_ptr" kindref="compound">ofPtr</ref>&lt; <ref refid="classof_base_sound_stream" kindref="compound">ofBaseSoundStream</ref> &gt;</type>
+        <definition>ofPtr&lt;ofBaseSoundStream&gt; ofSoundStream::soundStream</definition>
+        <argsstring></argsstring>
+        <name>soundStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.h" line="55" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classof_sound_stream_1a47d4cd0827208597bf116bc6fd954c00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ofSoundStream::ofSoundStream</definition>
+        <argsstring>()</argsstring>
+        <name>ofSoundStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.h" line="33" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" bodystart="49" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_sound_stream_1ade40e7f39e918994c45c82121e341643" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSoundStream::setSoundStream</definition>
+        <argsstring>(ofPtr&lt; ofBaseSoundStream &gt; soundStreamPtr)</argsstring>
+        <name>setSoundStream</name>
+        <param>
+          <type><ref refid="classof_ptr" kindref="compound">ofPtr</ref>&lt; <ref refid="classof_base_sound_stream" kindref="compound">ofBaseSoundStream</ref> &gt;</type>
+          <declname>soundStreamPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.h" line="35" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_sound_stream_1a646214476abc2b65545e31fb5a7facd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_ptr" kindref="compound">ofPtr</ref>&lt; <ref refid="classof_base_sound_stream" kindref="compound">ofBaseSoundStream</ref> &gt;</type>
+        <definition>ofPtr&lt; ofBaseSoundStream &gt; ofSoundStream::getSoundStream</definition>
+        <argsstring>()</argsstring>
+        <name>getSoundStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.h" line="36" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_sound_stream_1a7ab3c672a357f1b30c8e3b7db6b14fc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSoundStream::listDevices</definition>
+        <argsstring>()</argsstring>
+        <name>listDevices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.h" line="38" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" bodystart="66" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_sound_stream_1ab09bcde2d99186c5a5889da94fec5132" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSoundStream::setDeviceID</definition>
+        <argsstring>(int deviceID)</argsstring>
+        <name>setDeviceID</name>
+        <param>
+          <type>int</type>
+          <declname>deviceID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.h" line="40" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" bodystart="73" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_sound_stream_1a6e608c0034437ca0152a1fce35c11af5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofSoundStream::setup</definition>
+        <argsstring>(ofBaseApp *app, int outChannels, int inChannels, int sampleRate, int bufferSize, int nBuffers)</argsstring>
+        <name>setup</name>
+        <param>
+          <type><ref refid="classof_base_app" kindref="compound">ofBaseApp</ref> *</type>
+          <declname>app</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>outChannels</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>inChannels</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sampleRate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bufferSize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nBuffers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.h" line="42" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" bodystart="80" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_sound_stream_1ab7d7d424d44688489a79e53e3faf1131" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSoundStream::setInput</definition>
+        <argsstring>(ofBaseSoundInput *soundInput)</argsstring>
+        <name>setInput</name>
+        <param>
+          <type><ref refid="classof_base_sound_input" kindref="compound">ofBaseSoundInput</ref> *</type>
+          <declname>soundInput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.h" line="43" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" bodystart="89" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_sound_stream_1abc67980c13dd58bd16c3362c1d87c28e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSoundStream::setOutput</definition>
+        <argsstring>(ofBaseSoundOutput *soundOutput)</argsstring>
+        <name>setOutput</name>
+        <param>
+          <type><ref refid="classof_base_sound_output" kindref="compound">ofBaseSoundOutput</ref> *</type>
+          <declname>soundOutput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.h" line="44" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" bodystart="96" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_sound_stream_1acb80fe32014433d50d453bf161b45505" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofSoundStream::setup</definition>
+        <argsstring>(int outChannels, int inChannels, int sampleRate, int bufferSize, int nBuffers)</argsstring>
+        <name>setup</name>
+        <param>
+          <type>int</type>
+          <declname>outChannels</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>inChannels</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sampleRate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bufferSize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nBuffers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.h" line="45" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" bodystart="103" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_sound_stream_1a841b585c0c00e5c1475462cee9c86455" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSoundStream::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.h" line="47" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" bodystart="112" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_sound_stream_1a7204c4627954ec04e6fd86d3f1b05400" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSoundStream::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.h" line="48" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" bodystart="119" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_sound_stream_1a4e7be9ede60368dcbe1566b6a7c7937b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSoundStream::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.h" line="49" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" bodystart="126" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_sound_stream_1a7987c9afe679fa80a41a622338e181d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long unsigned long</type>
+        <definition>long unsigned long ofSoundStream::getTickCount</definition>
+        <argsstring>()</argsstring>
+        <name>getTickCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.h" line="51" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.cpp" bodystart="133" bodyend="138"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="544">
+        <label>ofSoundStream</label>
+        <link refid="classof_sound_stream"/>
+        <childnode refid="545" relation="usage">
+          <edgelabel>soundStream</edgelabel>
+        </childnode>
+      </node>
+      <node id="545">
+        <label>ofPtr&lt; ofBaseSoundStream &gt;</label>
+        <link refid="classof_ptr"/>
+        <childnode refid="546" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="546">
+        <label>std::tr1::shared_ptr&lt;ofBaseSoundStream &gt;</label>
+        <link refid="classstd_1_1tr1_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.h" line="31" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofSoundStream.h" bodystart="31" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classof_sound_stream_1a4e7be9ede60368dcbe1566b6a7c7937b" prot="public" virt="non-virtual"><scope>ofSoundStream</scope><name>close</name></member>
+      <member refid="classof_sound_stream_1a646214476abc2b65545e31fb5a7facd7" prot="public" virt="non-virtual"><scope>ofSoundStream</scope><name>getSoundStream</name></member>
+      <member refid="classof_sound_stream_1a7987c9afe679fa80a41a622338e181d5" prot="public" virt="non-virtual"><scope>ofSoundStream</scope><name>getTickCount</name></member>
+      <member refid="classof_sound_stream_1a7ab3c672a357f1b30c8e3b7db6b14fc7" prot="public" virt="non-virtual"><scope>ofSoundStream</scope><name>listDevices</name></member>
+      <member refid="classof_sound_stream_1a47d4cd0827208597bf116bc6fd954c00" prot="public" virt="non-virtual"><scope>ofSoundStream</scope><name>ofSoundStream</name></member>
+      <member refid="classof_sound_stream_1ab09bcde2d99186c5a5889da94fec5132" prot="public" virt="non-virtual"><scope>ofSoundStream</scope><name>setDeviceID</name></member>
+      <member refid="classof_sound_stream_1ab7d7d424d44688489a79e53e3faf1131" prot="public" virt="non-virtual"><scope>ofSoundStream</scope><name>setInput</name></member>
+      <member refid="classof_sound_stream_1abc67980c13dd58bd16c3362c1d87c28e" prot="public" virt="non-virtual"><scope>ofSoundStream</scope><name>setOutput</name></member>
+      <member refid="classof_sound_stream_1ade40e7f39e918994c45c82121e341643" prot="public" virt="non-virtual"><scope>ofSoundStream</scope><name>setSoundStream</name></member>
+      <member refid="classof_sound_stream_1a6e608c0034437ca0152a1fce35c11af5" prot="public" virt="non-virtual"><scope>ofSoundStream</scope><name>setup</name></member>
+      <member refid="classof_sound_stream_1acb80fe32014433d50d453bf161b45505" prot="public" virt="non-virtual"><scope>ofSoundStream</scope><name>setup</name></member>
+      <member refid="classof_sound_stream_1a9360c4f62ffaafa2f0eede977b57ad05" prot="protected" virt="non-virtual"><scope>ofSoundStream</scope><name>soundStream</name></member>
+      <member refid="classof_sound_stream_1a841b585c0c00e5c1475462cee9c86455" prot="public" virt="non-virtual"><scope>ofSoundStream</scope><name>start</name></member>
+      <member refid="classof_sound_stream_1a7204c4627954ec04e6fd86d3f1b05400" prot="public" virt="non-virtual"><scope>ofSoundStream</scope><name>stop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

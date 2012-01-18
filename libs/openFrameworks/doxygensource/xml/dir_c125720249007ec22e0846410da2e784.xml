@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="dir_c125720249007ec22e0846410da2e784" kind="dir">
+    <compoundname>video/</compoundname>
+    <innerfile refid="of_direct_show_grabber_8cpp">ofDirectShowGrabber.cpp</innerfile>
+    <innerfile refid="of_direct_show_grabber_8h">ofDirectShowGrabber.h</innerfile>
+    <innerfile refid="of_gst_utils_8cpp">ofGstUtils.cpp</innerfile>
+    <innerfile refid="of_gst_utils_8h">ofGstUtils.h</innerfile>
+    <innerfile refid="of_gst_video_grabber_8cpp">ofGstVideoGrabber.cpp</innerfile>
+    <innerfile refid="of_gst_video_grabber_8h">ofGstVideoGrabber.h</innerfile>
+    <innerfile refid="of_gst_video_player_8cpp">ofGstVideoPlayer.cpp</innerfile>
+    <innerfile refid="of_gst_video_player_8h">ofGstVideoPlayer.h</innerfile>
+    <innerfile refid="ofi_phone_video_grabber_8h">ofiPhoneVideoGrabber.h</innerfile>
+    <innerfile refid="ofi_phone_video_grabber_8mm">ofiPhoneVideoGrabber.mm</innerfile>
+    <innerfile refid="ofi_phone_video_player_8h">ofiPhoneVideoPlayer.h</innerfile>
+    <innerfile refid="ofi_phone_video_player_8mm">ofiPhoneVideoPlayer.mm</innerfile>
+    <innerfile refid="of_qt_utils_8cpp">ofQtUtils.cpp</innerfile>
+    <innerfile refid="of_qt_utils_8h">ofQtUtils.h</innerfile>
+    <innerfile refid="of_quick_time_grabber_8cpp">ofQuickTimeGrabber.cpp</innerfile>
+    <innerfile refid="of_quick_time_grabber_8h">ofQuickTimeGrabber.h</innerfile>
+    <innerfile refid="of_quick_time_player_8cpp">ofQuickTimePlayer.cpp</innerfile>
+    <innerfile refid="of_quick_time_player_8h">ofQuickTimePlayer.h</innerfile>
+    <innerfile refid="of_video_grabber_8cpp">ofVideoGrabber.cpp</innerfile>
+    <innerfile refid="of_video_grabber_8h">ofVideoGrabber.h</innerfile>
+    <innerfile refid="of_video_player_8cpp">ofVideoPlayer.cpp</innerfile>
+    <innerfile refid="of_video_player_8h">ofVideoPlayer.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/"/>
+  </compounddef>
+</doxygen>

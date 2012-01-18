@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="of_base_sound_player_8cpp" kind="file">
+    <compoundname>ofBaseSoundPlayer.cpp</compoundname>
+    <includes refid="of_base_sound_player_8h" local="yes">ofBaseSoundPlayer.h</includes>
+    <incdepgraph>
+      <node id="3856">
+        <label>sound/ofBaseSoundPlayer.cpp</label>
+        <link refid="ofBaseSoundPlayer.cpp"/>
+        <childnode refid="3857" relation="include">
+        </childnode>
+      </node>
+      <node id="3874">
+        <label>iomanip</label>
+      </node>
+      <node id="3857">
+        <label>ofBaseSoundPlayer.h</label>
+        <link refid="of_base_sound_player_8h"/>
+        <childnode refid="3858" relation="include">
+        </childnode>
+      </node>
+      <node id="3862">
+        <label>GL/glx.h</label>
+      </node>
+      <node id="3867">
+        <label>cmath</label>
+      </node>
+      <node id="3869">
+        <label>string</label>
+      </node>
+      <node id="3866">
+        <label>cstdarg</label>
+      </node>
+      <node id="3860">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="3863">
+        <label>tesselator.h</label>
+      </node>
+      <node id="3875">
+        <label>fstream</label>
+      </node>
+      <node id="3865">
+        <label>cstdio</label>
+      </node>
+      <node id="3868">
+        <label>ctime</label>
+      </node>
+      <node id="3859">
+        <label>unistd.h</label>
+      </node>
+      <node id="3871">
+        <label>vector</label>
+      </node>
+      <node id="3858">
+        <label>ofConstants.h</label>
+        <link refid="of_constants_8h"/>
+        <childnode refid="3859" relation="include">
+        </childnode>
+        <childnode refid="3860" relation="include">
+        </childnode>
+        <childnode refid="3861" relation="include">
+        </childnode>
+        <childnode refid="3862" relation="include">
+        </childnode>
+        <childnode refid="3863" relation="include">
+        </childnode>
+        <childnode refid="3864" relation="include">
+        </childnode>
+        <childnode refid="3865" relation="include">
+        </childnode>
+        <childnode refid="3866" relation="include">
+        </childnode>
+        <childnode refid="3867" relation="include">
+        </childnode>
+        <childnode refid="3868" relation="include">
+        </childnode>
+        <childnode refid="3869" relation="include">
+        </childnode>
+        <childnode refid="3870" relation="include">
+        </childnode>
+        <childnode refid="3871" relation="include">
+        </childnode>
+        <childnode refid="3872" relation="include">
+        </childnode>
+        <childnode refid="3873" relation="include">
+        </childnode>
+        <childnode refid="3874" relation="include">
+        </childnode>
+        <childnode refid="3875" relation="include">
+        </childnode>
+      </node>
+      <node id="3873">
+        <label>sstream</label>
+      </node>
+      <node id="3864">
+        <label>cstdlib</label>
+      </node>
+      <node id="3870">
+        <label>iostream</label>
+      </node>
+      <node id="3861">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="3872">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_base_sound_player_8h" kindref="compound">ofBaseSoundPlayer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.cpp"/>
+  </compounddef>
+</doxygen>

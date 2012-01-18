@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="dir_1ef0d26e3abe7f0e5929a5213fcdb132" kind="dir">
+    <compoundname>utils/</compoundname>
+    <innerfile refid="of_constants_8h">ofConstants.h</innerfile>
+    <innerfile refid="of_file_utils_8cpp">ofFileUtils.cpp</innerfile>
+    <innerfile refid="of_file_utils_8h">ofFileUtils.h</innerfile>
+    <innerfile refid="of_log_8cpp">ofLog.cpp</innerfile>
+    <innerfile refid="of_log_8h">ofLog.h</innerfile>
+    <innerfile refid="of_noise_8h">ofNoise.h</innerfile>
+    <innerfile refid="of_system_utils_8cpp">ofSystemUtils.cpp</innerfile>
+    <innerfile refid="of_system_utils_8h">ofSystemUtils.h</innerfile>
+    <innerfile refid="of_thread_8cpp">ofThread.cpp</innerfile>
+    <innerfile refid="of_thread_8h">ofThread.h</innerfile>
+    <innerfile refid="of_u_r_l_file_loader_8cpp">ofURLFileLoader.cpp</innerfile>
+    <innerfile refid="of_u_r_l_file_loader_8h">ofURLFileLoader.h</innerfile>
+    <innerfile refid="of_utils_8cpp">ofUtils.cpp</innerfile>
+    <innerfile refid="of_utils_8h">ofUtils.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/"/>
+  </compounddef>
+</doxygen>

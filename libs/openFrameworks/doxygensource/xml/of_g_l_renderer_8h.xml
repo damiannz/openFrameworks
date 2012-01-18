@@ -1,0 +1,643 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="of_g_l_renderer_8h" kind="file">
+    <compoundname>ofGLRenderer.h</compoundname>
+    <includes refid="of_base_types_8h" local="yes">ofBaseTypes.h</includes>
+    <includes refid="of_polyline_8h" local="yes">ofPolyline.h</includes>
+    <includes refid="of_matrix4x4_8h" local="yes">ofMatrix4x4.h</includes>
+    <includes local="no">stack</includes>
+    <includedby refid="of_app_runner_8cpp" local="yes">app/ofAppRunner.cpp</includedby>
+    <includedby refid="of_fbo_8cpp" local="yes">gl/ofFbo.cpp</includedby>
+    <includedby refid="of_g_l_renderer_8cpp" local="yes">gl/ofGLRenderer.cpp</includedby>
+    <includedby refid="of_graphics_8h" local="yes">graphics/ofGraphics.h</includedby>
+    <includedby refid="of_graphics_8cpp" local="yes">graphics/ofGraphics.cpp</includedby>
+    <includedby refid="of_main_8h" local="yes">ofMain.h</includedby>
+    <incdepgraph>
+      <node id="1276">
+        <label>iomanip</label>
+      </node>
+      <node id="1280">
+        <label>ofColor.h</label>
+        <link refid="of_color_8h"/>
+        <childnode refid="1281" relation="include">
+        </childnode>
+        <childnode refid="1282" relation="include">
+        </childnode>
+      </node>
+      <node id="1281">
+        <label>limits</label>
+      </node>
+      <node id="1297">
+        <label>ofQuaternion.h</label>
+        <link refid="of_quaternion_8h"/>
+        <childnode refid="1260" relation="include">
+        </childnode>
+        <childnode refid="1258" relation="include">
+        </childnode>
+        <childnode refid="1278" relation="include">
+        </childnode>
+        <childnode refid="1269" relation="include">
+        </childnode>
+      </node>
+      <node id="1294">
+        <label>ofPolyline.h</label>
+        <link refid="of_polyline_8h"/>
+        <childnode refid="1257" relation="include">
+        </childnode>
+        <childnode refid="1260" relation="include">
+        </childnode>
+        <childnode refid="1295" relation="include">
+        </childnode>
+        <childnode refid="1279" relation="include">
+        </childnode>
+      </node>
+      <node id="1278">
+        <label>ofVec4f.h</label>
+        <link refid="of_vec4f_8h"/>
+        <childnode refid="1260" relation="include">
+        </childnode>
+      </node>
+      <node id="1264">
+        <label>GL/glx.h</label>
+      </node>
+      <node id="1293">
+        <label>ofPixels.h</label>
+        <link refid="of_pixels_8h"/>
+        <childnode refid="1260" relation="include">
+        </childnode>
+        <childnode refid="1284" relation="include">
+        </childnode>
+        <childnode refid="1280" relation="include">
+        </childnode>
+        <childnode refid="1282" relation="include">
+        </childnode>
+        <childnode refid="1281" relation="include">
+        </childnode>
+      </node>
+      <node id="1259">
+        <label>ofVec2f.h</label>
+        <link refid="of_vec2f_8h"/>
+        <childnode refid="1260" relation="include">
+        </childnode>
+      </node>
+      <node id="1269">
+        <label>cmath</label>
+      </node>
+      <node id="1289">
+        <label>ofTypes.h</label>
+        <link refid="of_types_8h"/>
+        <childnode refid="1260" relation="include">
+        </childnode>
+        <childnode refid="1280" relation="include">
+        </childnode>
+        <childnode refid="1290" relation="include">
+        </childnode>
+        <childnode refid="1291" relation="include">
+        </childnode>
+      </node>
+      <node id="1258">
+        <label>ofVec3f.h</label>
+        <link refid="of_vec3f_8h"/>
+        <childnode refid="1259" relation="include">
+        </childnode>
+        <childnode refid="1278" relation="include">
+        </childnode>
+        <childnode refid="1260" relation="include">
+        </childnode>
+        <childnode refid="1269" relation="include">
+        </childnode>
+        <childnode refid="1272" relation="include">
+        </childnode>
+      </node>
+      <node id="1271">
+        <label>string</label>
+      </node>
+      <node id="1268">
+        <label>cstdarg</label>
+      </node>
+      <node id="1262">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="1288">
+        <label>Poco/File.h</label>
+      </node>
+      <node id="1265">
+        <label>tesselator.h</label>
+      </node>
+      <node id="1256">
+        <label>ofBaseTypes.h</label>
+        <link refid="of_base_types_8h"/>
+        <childnode refid="1257" relation="include">
+        </childnode>
+        <childnode refid="1279" relation="include">
+        </childnode>
+        <childnode refid="1260" relation="include">
+        </childnode>
+        <childnode refid="1280" relation="include">
+        </childnode>
+        <childnode refid="1283" relation="include">
+        </childnode>
+        <childnode refid="1293" relation="include">
+        </childnode>
+      </node>
+      <node id="1255">
+        <label>gl/ofGLRenderer.h</label>
+        <link refid="ofGLRenderer.h"/>
+        <childnode refid="1256" relation="include">
+        </childnode>
+        <childnode refid="1294" relation="include">
+        </childnode>
+        <childnode refid="1296" relation="include">
+        </childnode>
+        <childnode refid="1298" relation="include">
+        </childnode>
+      </node>
+      <node id="1277">
+        <label>fstream</label>
+      </node>
+      <node id="1282">
+        <label>ofMath.h</label>
+        <link refid="of_math_8h"/>
+        <childnode refid="1257" relation="include">
+        </childnode>
+        <childnode refid="1260" relation="include">
+        </childnode>
+      </node>
+      <node id="1267">
+        <label>cstdio</label>
+      </node>
+      <node id="1285">
+        <label>bitset</label>
+      </node>
+      <node id="1270">
+        <label>ctime</label>
+      </node>
+      <node id="1261">
+        <label>unistd.h</label>
+      </node>
+      <node id="1298">
+        <label>stack</label>
+      </node>
+      <node id="1273">
+        <label>vector</label>
+      </node>
+      <node id="1286">
+        <label>ofLog.h</label>
+        <link refid="of_log_8h"/>
+        <childnode refid="1260" relation="include">
+        </childnode>
+        <childnode refid="1287" relation="include">
+        </childnode>
+        <childnode refid="1289" relation="include">
+        </childnode>
+      </node>
+      <node id="1260">
+        <label>ofConstants.h</label>
+        <link refid="of_constants_8h"/>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1262" relation="include">
+        </childnode>
+        <childnode refid="1263" relation="include">
+        </childnode>
+        <childnode refid="1264" relation="include">
+        </childnode>
+        <childnode refid="1265" relation="include">
+        </childnode>
+        <childnode refid="1266" relation="include">
+        </childnode>
+        <childnode refid="1267" relation="include">
+        </childnode>
+        <childnode refid="1268" relation="include">
+        </childnode>
+        <childnode refid="1269" relation="include">
+        </childnode>
+        <childnode refid="1270" relation="include">
+        </childnode>
+        <childnode refid="1271" relation="include">
+        </childnode>
+        <childnode refid="1272" relation="include">
+        </childnode>
+        <childnode refid="1273" relation="include">
+        </childnode>
+        <childnode refid="1274" relation="include">
+        </childnode>
+        <childnode refid="1275" relation="include">
+        </childnode>
+        <childnode refid="1276" relation="include">
+        </childnode>
+        <childnode refid="1277" relation="include">
+        </childnode>
+      </node>
+      <node id="1275">
+        <label>sstream</label>
+      </node>
+      <node id="1257">
+        <label>ofPoint.h</label>
+        <link refid="of_point_8h"/>
+        <childnode refid="1258" relation="include">
+        </childnode>
+      </node>
+      <node id="1296">
+        <label>ofMatrix4x4.h</label>
+        <link refid="of_matrix4x4_8h"/>
+        <childnode refid="1258" relation="include">
+        </childnode>
+        <childnode refid="1278" relation="include">
+        </childnode>
+        <childnode refid="1297" relation="include">
+        </childnode>
+        <childnode refid="1260" relation="include">
+        </childnode>
+        <childnode refid="1269" relation="include">
+        </childnode>
+      </node>
+      <node id="1287">
+        <label>ofFileUtils.h</label>
+        <link refid="of_file_utils_8h"/>
+        <childnode refid="1260" relation="include">
+        </childnode>
+        <childnode refid="1288" relation="include">
+        </childnode>
+      </node>
+      <node id="1266">
+        <label>cstdlib</label>
+      </node>
+      <node id="1292">
+        <label>ofGLUtils.h</label>
+        <link refid="of_g_l_utils_8h"/>
+      </node>
+      <node id="1272">
+        <label>iostream</label>
+      </node>
+      <node id="1283">
+        <label>ofMesh.h</label>
+        <link refid="of_mesh_8h"/>
+        <childnode refid="1258" relation="include">
+        </childnode>
+        <childnode refid="1259" relation="include">
+        </childnode>
+        <childnode refid="1280" relation="include">
+        </childnode>
+        <childnode refid="1284" relation="include">
+        </childnode>
+        <childnode refid="1260" relation="include">
+        </childnode>
+        <childnode refid="1292" relation="include">
+        </childnode>
+      </node>
+      <node id="1295">
+        <label>deque</label>
+      </node>
+      <node id="1284">
+        <label>ofUtils.h</label>
+        <link refid="of_utils_8h"/>
+        <childnode refid="1260" relation="include">
+        </childnode>
+        <childnode refid="1285" relation="include">
+        </childnode>
+        <childnode refid="1286" relation="include">
+        </childnode>
+      </node>
+      <node id="1279">
+        <label>ofRectangle.h</label>
+        <link refid="of_rectangle_8h"/>
+        <childnode refid="1257" relation="include">
+        </childnode>
+      </node>
+      <node id="1263">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="1291">
+        <label>Poco/Mutex.h</label>
+      </node>
+      <node id="1274">
+        <label>cstring</label>
+      </node>
+      <node id="1290">
+        <label>tr1/memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1324">
+        <label>utils/ofUtils.cpp</label>
+        <link refid="of_utils_8cpp"/>
+      </node>
+      <node id="1302">
+        <label>gl/ofGLRenderer.cpp</label>
+        <link refid="of_g_l_renderer_8cpp"/>
+      </node>
+      <node id="1316">
+        <label>events/ofEvents.cpp</label>
+        <link refid="of_events_8cpp"/>
+      </node>
+      <node id="1310">
+        <label>ofMain.h</label>
+        <link refid="of_main_8h"/>
+      </node>
+      <node id="1320">
+        <label>graphics/ofImage.cpp</label>
+        <link refid="of_image_8cpp"/>
+      </node>
+      <node id="1307">
+        <label>3d/ofCamera.cpp</label>
+        <link refid="of_camera_8cpp"/>
+      </node>
+      <node id="1311">
+        <label>3d/ofNode.cpp</label>
+        <link refid="of_node_8cpp"/>
+      </node>
+      <node id="1301">
+        <label>gl/ofFbo.cpp</label>
+        <link refid="of_fbo_8cpp"/>
+      </node>
+      <node id="1300">
+        <label>app/ofAppRunner.cpp</label>
+        <link refid="of_app_runner_8cpp"/>
+      </node>
+      <node id="1317">
+        <label>gl/ofTexture.cpp</label>
+        <link refid="of_texture_8cpp"/>
+      </node>
+      <node id="1308">
+        <label>3d/ofEasyCam.h</label>
+        <link refid="of_easy_cam_8h"/>
+        <childnode refid="1309" relation="include">
+        </childnode>
+        <childnode refid="1310" relation="include">
+        </childnode>
+      </node>
+      <node id="1299">
+        <label>gl/ofGLRenderer.h</label>
+        <link refid="ofGLRenderer.h"/>
+        <childnode refid="1300" relation="include">
+        </childnode>
+        <childnode refid="1301" relation="include">
+        </childnode>
+        <childnode refid="1302" relation="include">
+        </childnode>
+        <childnode refid="1303" relation="include">
+        </childnode>
+        <childnode refid="1319" relation="include">
+        </childnode>
+        <childnode refid="1310" relation="include">
+        </childnode>
+      </node>
+      <node id="1312">
+        <label>gl/ofLight.h</label>
+        <link refid="of_light_8h"/>
+        <childnode refid="1313" relation="include">
+        </childnode>
+        <childnode refid="1310" relation="include">
+        </childnode>
+      </node>
+      <node id="1306">
+        <label>3d/ofCamera.h</label>
+        <link refid="of_camera_8h"/>
+        <childnode refid="1307" relation="include">
+        </childnode>
+        <childnode refid="1308" relation="include">
+        </childnode>
+        <childnode refid="1310" relation="include">
+        </childnode>
+      </node>
+      <node id="1319">
+        <label>graphics/ofGraphics.cpp</label>
+        <link refid="of_graphics_8cpp"/>
+      </node>
+      <node id="1315">
+        <label>app/ofAppGlutWindow.cpp</label>
+        <link refid="of_app_glut_window_8cpp"/>
+      </node>
+      <node id="1309">
+        <label>3d/ofEasyCam.cpp</label>
+        <link refid="of_easy_cam_8cpp"/>
+      </node>
+      <node id="1305">
+        <label>3d/ofNode.h</label>
+        <link refid="of_node_8h"/>
+        <childnode refid="1306" relation="include">
+        </childnode>
+        <childnode refid="1311" relation="include">
+        </childnode>
+        <childnode refid="1312" relation="include">
+        </childnode>
+        <childnode refid="1310" relation="include">
+        </childnode>
+      </node>
+      <node id="1304">
+        <label>3d/of3dUtils.cpp</label>
+        <link refid="of3d_utils_8cpp"/>
+      </node>
+      <node id="1303">
+        <label>graphics/ofGraphics.h</label>
+        <link refid="of_graphics_8h"/>
+        <childnode refid="1304" relation="include">
+        </childnode>
+        <childnode refid="1305" relation="include">
+        </childnode>
+        <childnode refid="1314" relation="include">
+        </childnode>
+        <childnode refid="1315" relation="include">
+        </childnode>
+        <childnode refid="1300" relation="include">
+        </childnode>
+        <childnode refid="1316" relation="include">
+        </childnode>
+        <childnode refid="1301" relation="include">
+        </childnode>
+        <childnode refid="1302" relation="include">
+        </childnode>
+        <childnode refid="1317" relation="include">
+        </childnode>
+        <childnode refid="1318" relation="include">
+        </childnode>
+        <childnode refid="1319" relation="include">
+        </childnode>
+        <childnode refid="1320" relation="include">
+        </childnode>
+        <childnode refid="1321" relation="include">
+        </childnode>
+        <childnode refid="1322" relation="include">
+        </childnode>
+        <childnode refid="1323" relation="include">
+        </childnode>
+        <childnode refid="1310" relation="include">
+        </childnode>
+        <childnode refid="1324" relation="include">
+        </childnode>
+      </node>
+      <node id="1313">
+        <label>gl/ofLight.cpp</label>
+        <link refid="of_light_8cpp"/>
+      </node>
+      <node id="1321">
+        <label>graphics/ofPath.cpp</label>
+        <link refid="of_path_8cpp"/>
+      </node>
+      <node id="1318">
+        <label>graphics/ofCairoRenderer.cpp</label>
+        <link refid="of_cairo_renderer_8cpp"/>
+      </node>
+      <node id="1322">
+        <label>graphics/ofPolyline.cpp</label>
+        <link refid="of_polyline_8cpp"/>
+      </node>
+      <node id="1314">
+        <label>3d/ofMesh.cpp</label>
+        <link refid="of_mesh_8cpp"/>
+      </node>
+      <node id="1323">
+        <label>graphics/ofTrueTypeFont.cpp</label>
+        <link refid="of_true_type_font_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classof_g_l_renderer" prot="public">ofGLRenderer</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_base_types_8h" kindref="compound">ofBaseTypes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_polyline_8h" kindref="compound">ofPolyline.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_matrix4x4_8h" kindref="compound">ofMatrix4x4.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stack&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ofShapeTessellation;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classof_mesh" kindref="compound">ofMesh</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classof_fbo" kindref="compound">ofFbo</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classof_g_l_renderer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classof_g_l_renderer" kindref="compound">ofGLRenderer</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classof_base_renderer" kindref="compound">ofBaseRenderer</ref>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_g_l_renderer_1ae86a2c8a19a32135bc8755c08e216635" kindref="member">ofGLRenderer</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>useShapeColor=</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_g_l_renderer_1a520344a2ff88ed2bb300d7f23001a009" kindref="member">~ofGLRenderer</ref>(){}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1af72653efa2cac57a844a14b40bdb9953" kindref="member">getType</ref>(){<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;GL&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a0db952bab2734147be923a8d7a6ca686" kindref="member">setCurrentFBO</ref>(<ref refid="classof_fbo" kindref="compound">ofFbo</ref><sp/>*<sp/>fbo);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1ac705138071cc37cb5faeb84cee284c9b" kindref="member">update</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a52febb41276200e7cc2838d422ac9723" kindref="member">draw</ref>(<ref refid="classof_mesh" kindref="compound">ofMesh</ref><sp/>&amp;<sp/>vertexData);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a52febb41276200e7cc2838d422ac9723" kindref="member">draw</ref>(<ref refid="classof_mesh" kindref="compound">ofMesh</ref><sp/>&amp;<sp/>vertexData,<sp/><ref refid="of_g_l_utils_8h_1a6beb1fbbaba728909c78cda1eadfe28e" kindref="member">ofPolyRenderMode</ref><sp/>renderType);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a52febb41276200e7cc2838d422ac9723" kindref="member">draw</ref>(<ref refid="classof_polyline" kindref="compound">ofPolyline</ref><sp/>&amp;<sp/>poly);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a52febb41276200e7cc2838d422ac9723" kindref="member">draw</ref>(<ref refid="classof_path" kindref="compound">ofPath</ref><sp/>&amp;<sp/>path);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a52febb41276200e7cc2838d422ac9723" kindref="member">draw</ref>(vector&lt;ofPoint&gt;<sp/>&amp;<sp/>vertexData,<sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0" kindref="member">ofPrimitiveMode</ref><sp/>drawMode);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a52febb41276200e7cc2838d422ac9723" kindref="member">draw</ref>(<ref refid="classof_image__" kindref="compound">ofImage</ref><sp/>&amp;<sp/>image,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>h);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a52febb41276200e7cc2838d422ac9723" kindref="member">draw</ref>(<ref refid="classof_image__" kindref="compound">ofFloatImage</ref><sp/>&amp;<sp/>image,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>h);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a52febb41276200e7cc2838d422ac9723" kindref="member">draw</ref>(<ref refid="classof_image__" kindref="compound">ofShortImage</ref><sp/>&amp;<sp/>image,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>h);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a34735b5f64b528d0f3103a5e37103b45" kindref="member">rendersPathPrimitives</ref>(){</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//--------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>transformations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a3535890cc1da307bc78f8f9fe60d3294" kindref="member">pushView</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a5f69c59637e3a9a3677a7985ac878a44" kindref="member">popView</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>setup<sp/>matrices<sp/>and<sp/>viewport<sp/>(upto<sp/>you<sp/>to<sp/>push<sp/>and<sp/>pop<sp/>view<sp/>before<sp/>and<sp/>after)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>width<sp/>or<sp/>height<sp/>are<sp/>0,<sp/>assume<sp/>windows<sp/>dimensions<sp/>(ofGetWidth(),<sp/>ofGetHeight())</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>nearDist<sp/>or<sp/>farDist<sp/>are<sp/>0<sp/>assume<sp/>defaults<sp/>(calculated<sp/>based<sp/>on<sp/>width<sp/>/<sp/>height)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a57e0572c4ce586b77b1157b9f6ff0f96" kindref="member">viewport</ref>(<ref refid="classof_rectangle" kindref="compound">ofRectangle</ref><sp/><ref refid="classof_g_l_renderer_1a57e0572c4ce586b77b1157b9f6ff0f96" kindref="member">viewport</ref>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a57e0572c4ce586b77b1157b9f6ff0f96" kindref="member">viewport</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>width<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>height<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>invertY<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1acab0c2098ecfa732191427c79a82dc6a" kindref="member">setupScreenPerspective</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>width<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>height<sp/>=<sp/>0,<sp/><ref refid="of_constants_8h_1a85ec4045e22bafeea5c561f9778c1f1c" kindref="member">ofOrientation</ref><sp/>orientation<sp/>=<sp/><ref refid="of_constants_8h_1a85ec4045e22bafeea5c561f9778c1f1caa38a6f3fee424ea35be626cb0b6e423b" kindref="member">OF_ORIENTATION_UNKNOWN</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>vFlip<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>fov<sp/>=<sp/>60,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>nearDist<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>farDist<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a9ecded5227f06ddb41067436e7f27aa2" kindref="member">setupScreenOrtho</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>width<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>height<sp/>=<sp/>0,<sp/><ref refid="of_constants_8h_1a85ec4045e22bafeea5c561f9778c1f1c" kindref="member">ofOrientation</ref><sp/>orientation<sp/>=<sp/><ref refid="of_constants_8h_1a85ec4045e22bafeea5c561f9778c1f1caa38a6f3fee424ea35be626cb0b6e423b" kindref="member">OF_ORIENTATION_UNKNOWN</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>vFlip<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>nearDist<sp/>=<sp/>-1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>farDist<sp/>=<sp/>1);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_rectangle" kindref="compound">ofRectangle</ref><sp/><ref refid="classof_g_l_renderer_1a6ff4e1eabd8bb996b5fad20b2a981c2b" kindref="member">getCurrentViewport</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a9337400ddb5654e03f8ad1a699a48a31" kindref="member">getViewportWidth</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1af34194f145634e2c2cfd345a74601141" kindref="member">getViewportHeight</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a499821d78e1e602de2f3ed3e31cecb8c" kindref="member">setCoordHandedness</ref>(<ref refid="of_constants_8h_1a35cd63b4a2e112ecf30eaf0542f2388b" kindref="member">ofHandednessType</ref><sp/>handedness);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_constants_8h_1a35cd63b4a2e112ecf30eaf0542f2388b" kindref="member">ofHandednessType</ref><sp/><ref refid="classof_g_l_renderer_1a64f0ffe7d2b90f1501046f5e3a4a23a6" kindref="member">getCoordHandedness</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//our<sp/>openGL<sp/>wrappers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1aa2afddce8fd2a7870521dd47c74af7a0" kindref="member">pushMatrix</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a64d1caafe69099c73802652d39588e91" kindref="member">popMatrix</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1ac90b43ad1bb96f962af54f1488e0e819" kindref="member">translate</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1ac90b43ad1bb96f962af54f1488e0e819" kindref="member">translate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>&amp;<sp/>p);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a771ba672fc6434ea280a520d133f632c" kindref="member">scale</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>xAmnt,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>yAmnt,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>zAmnt<sp/>=<sp/>1);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1aa19c82279ab5c15c8c1c8dd79e18cf4f" kindref="member">rotate</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>degrees,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vecX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vecY,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vecZ);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1ad97908ef76005fca1fdca3149e3811ad" kindref="member">rotateX</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>degrees);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1abc15d35c7c3dcdcd8292905dc4c68555" kindref="member">rotateY</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>degrees);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1adaddc8874c08b0e488c4fcbac4f828af" kindref="member">rotateZ</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>degrees);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1aa19c82279ab5c15c8c1c8dd79e18cf4f" kindref="member">rotate</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>degrees);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>screen<sp/>coordinate<sp/>things<sp/>/<sp/>default<sp/>gl<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a788951d57f6e4698b5e28d1684b771df" kindref="member">setupGraphicDefaults</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1adf20fa42653709d3c6ae3aa53ae67974" kindref="member">setupScreen</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>drawing<sp/>modes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1aacc0eab2f3d4e7e6f2ac425b209ef596" kindref="member">setFillMode</ref>(<ref refid="of_constants_8h_1ae2388165eb5c77ed1edbee0d7d68d4dc" kindref="member">ofFillFlag</ref><sp/>fill);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_constants_8h_1ae2388165eb5c77ed1edbee0d7d68d4dc" kindref="member">ofFillFlag</ref><sp/><ref refid="classof_g_l_renderer_1ae4233d9a6b431f1a50118bc84ec414d7" kindref="member">getFillMode</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a14db8e625b98e472a945bd6e9f7e19dc" kindref="member">setCircleResolution</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>res);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1ad5915cd57862078d500efaf5c7b994ed" kindref="member">setRectMode</ref>(<ref refid="of_constants_8h_1a52116548570a64993cbe3be944443fce" kindref="member">ofRectMode</ref><sp/>mode);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_constants_8h_1a52116548570a64993cbe3be944443fce" kindref="member">ofRectMode</ref><sp/><ref refid="classof_g_l_renderer_1a8e63b294df9f4a84f636b85c00469d3d" kindref="member">getRectMode</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a2d6b8de48998dc05fc023a3ca41ef135" kindref="member">setLineWidth</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>lineWidth);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1af6f3b671e6583114c5589551915c3f94" kindref="member">setLineSmoothing</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>smooth);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1ac3c8e88601fd476d18f6165f8c7d318d" kindref="member">setBlendMode</ref>(<ref refid="of_constants_8h_1a5f194ae56b1bc61651eac7184ed1ad2e" kindref="member">ofBlendMode</ref><sp/>blendMode);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a8b1c399f9c11276a73c588aaf9f1a1de" kindref="member">enablePointSprites</ref>();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1ab8d4e88def4a5b3300aab3ba1c597bc4" kindref="member">disablePointSprites</ref>();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>color<sp/>options</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a3c1195df49743118619b099a77a74a11" kindref="member">setColor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>r,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>g,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="of_matrix4x4_8cpp_1ab2d05693952610f937e5acb3c4a8fa1b" kindref="member">b</ref>);<sp/></highlight><highlight class="comment">//<sp/>0-255</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a3c1195df49743118619b099a77a74a11" kindref="member">setColor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>r,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>g,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="of_matrix4x4_8cpp_1a8d3c3518d793541417a4845125da1ae1" kindref="member">a</ref>);<sp/></highlight><highlight class="comment">//<sp/>0-255</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a3c1195df49743118619b099a77a74a11" kindref="member">setColor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_color__" kindref="compound">ofColor</ref><sp/>&amp;<sp/>color);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a3c1195df49743118619b099a77a74a11" kindref="member">setColor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_color__" kindref="compound">ofColor</ref><sp/>&amp;<sp/>color,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_a);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a3c1195df49743118619b099a77a74a11" kindref="member">setColor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>gray);<sp/></highlight><highlight class="comment">//<sp/>new<sp/>set<sp/>a<sp/>color<sp/>as<sp/>grayscale<sp/>with<sp/>one<sp/>argument</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1accb8795036878d6c3b32283b31746967" kindref="member">setHexColor</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hexColor<sp/>);<sp/></highlight><highlight class="comment">//<sp/>hex,<sp/>like<sp/>web<sp/>0xFF0033;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>bg<sp/>color</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_color__" kindref="compound">ofFloatColor</ref><sp/>&amp;<sp/><ref refid="classof_g_l_renderer_1ad45a0a0435b39aaa8ff0a4ad68a35564" kindref="member">getBgColor</ref>();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a7948f0d1aa7c192b4cee992001536cb8" kindref="member">bClearBg</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1af6e5ccbc3e326071a7cbc6ddc3396e5e" kindref="member">background</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_color__" kindref="compound">ofColor</ref><sp/>&amp;<sp/><ref refid="of_matrix4x4_8cpp_1aafc737ea9ef91f59cf9acd287fb8d085" kindref="member">c</ref>);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1af6e5ccbc3e326071a7cbc6ddc3396e5e" kindref="member">background</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>brightness);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1af6e5ccbc3e326071a7cbc6ddc3396e5e" kindref="member">background</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hexColor,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_a=255.0f);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1af6e5ccbc3e326071a7cbc6ddc3396e5e" kindref="member">background</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>r,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>g,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a=255);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a0e52b69e3652bf1d72e1736b52cc9886" kindref="member">setBackgroundAuto</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bManual);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>default<sp/>is<sp/>true</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1ab0a453bcb7d5c7b981a0c01104735633" kindref="member">clear</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>r,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>g,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>a=0);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1ab0a453bcb7d5c7b981a0c01104735633" kindref="member">clear</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>brightness,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>a=0);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a9c39e468eb9116eeb69ea41676fbe68e" kindref="member">clearAlpha</ref>();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>drawing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1ad99745cf58b3d20fd4aa6a875f5b631c" kindref="member">drawLine</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z2);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a4641d1dad06be90318f95bd134bd8070" kindref="member">drawRectangle</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>h);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1aa6d9513ab328063dc0a13975ff0bf196" kindref="member">drawTriangle</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x3,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y3,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z3);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a8995251bacac0eca21a1586794f99dfc" kindref="member">drawCircle</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a38808615f4653987ca0cb206c727d800" kindref="member">drawEllipse</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_g_l_renderer_1a6f724c04b47a855d528e489d68054678" kindref="member">drawString</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>text,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z,<sp/><ref refid="of_constants_8h_1a14966be842b99f71080a7444cebbc0b7" kindref="member">ofDrawBitmapMode</ref><sp/>mode);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>startSmoothing();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>endSmoothing();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_constants_8h_1a35cd63b4a2e112ecf30eaf0542f2388b" kindref="member">ofHandednessType</ref><sp/>coordHandedness;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stack<sp/>&lt;ofRectangle&gt;<sp/>viewportHistory;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stack<sp/>&lt;ofMatrix4x4&gt;<sp/>modelViewStack;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stack<sp/>&lt;ofMatrix4x4&gt;<sp/>projectionStack;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bBackgroundAuto;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_color__" kindref="compound">ofFloatColor</ref><sp/>bgColor;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;ofPoint&gt;<sp/>linePoints;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;ofPoint&gt;<sp/>rectPoints;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;ofPoint&gt;<sp/>triPoints;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;ofPoint&gt;<sp/>circlePoints;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_polyline" kindref="compound">ofPolyline</ref><sp/>circlePolyline;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_constants_8h_1ae2388165eb5c77ed1edbee0d7d68d4dc" kindref="member">ofFillFlag</ref><sp/>bFilled;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bSmoothHinted;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_constants_8h_1a52116548570a64993cbe3be944443fce" kindref="member">ofRectMode</ref><sp/>rectMode;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_fbo" kindref="compound">ofFbo</ref><sp/>*<sp/>currentFbo;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLRenderer.h"/>
+  </compounddef>
+</doxygen>

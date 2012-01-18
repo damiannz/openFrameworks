@@ -1,0 +1,712 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="of_u_r_l_file_loader_8cpp" kind="file">
+    <compoundname>ofURLFileLoader.cpp</compoundname>
+    <includes refid="of_u_r_l_file_loader_8h" local="yes">ofURLFileLoader.h</includes>
+    <includes refid="of_app_runner_8h" local="yes">ofAppRunner.h</includes>
+    <includes refid="of_utils_8h" local="yes">ofUtils.h</includes>
+    <includes local="yes">Poco/Net/HTTPClientSession.h</includes>
+    <includes local="yes">Poco/Net/HTTPRequest.h</includes>
+    <includes local="yes">Poco/Net/HTTPResponse.h</includes>
+    <includes local="yes">Poco/StreamCopier.h</includes>
+    <includes local="yes">Poco/Path.h</includes>
+    <includes local="yes">Poco/URI.h</includes>
+    <includes local="yes">Poco/Exception.h</includes>
+    <includes local="yes">Poco/URIStreamOpener.h</includes>
+    <includes local="yes">Poco/Net/HTTPStreamFactory.h</includes>
+    <includes refid="of_constants_8h" local="yes">ofConstants.h</includes>
+    <incdepgraph>
+      <node id="5683">
+        <label>Poco/Condition.h</label>
+      </node>
+      <node id="5667">
+        <label>iomanip</label>
+      </node>
+      <node id="5649">
+        <label>queue</label>
+      </node>
+      <node id="5696">
+        <label>Poco/URIStreamOpener.h</label>
+      </node>
+      <node id="5670">
+        <label>ofColor.h</label>
+        <link refid="of_color_8h"/>
+        <childnode refid="5671" relation="include">
+        </childnode>
+        <childnode refid="5672" relation="include">
+        </childnode>
+      </node>
+      <node id="5671">
+        <label>limits</label>
+      </node>
+      <node id="5676">
+        <label>ofVec4f.h</label>
+        <link refid="of_vec4f_8h"/>
+        <childnode refid="5651" relation="include">
+        </childnode>
+      </node>
+      <node id="5650">
+        <label>ofThread.h</label>
+        <link refid="of_thread_8h"/>
+        <childnode refid="5651" relation="include">
+        </childnode>
+        <childnode refid="5669" relation="include">
+        </childnode>
+        <childnode refid="5679" relation="include">
+        </childnode>
+      </node>
+      <node id="5697">
+        <label>Poco/Net/HTTPStreamFactory.h</label>
+      </node>
+      <node id="5690">
+        <label>Poco/Net/HTTPRequest.h</label>
+      </node>
+      <node id="5655">
+        <label>GL/glx.h</label>
+      </node>
+      <node id="5675">
+        <label>ofVec2f.h</label>
+        <link refid="of_vec2f_8h"/>
+        <childnode refid="5651" relation="include">
+        </childnode>
+      </node>
+      <node id="5660">
+        <label>cmath</label>
+      </node>
+      <node id="5669">
+        <label>ofTypes.h</label>
+        <link refid="of_types_8h"/>
+        <childnode refid="5651" relation="include">
+        </childnode>
+        <childnode refid="5670" relation="include">
+        </childnode>
+        <childnode refid="5677" relation="include">
+        </childnode>
+        <childnode refid="5678" relation="include">
+        </childnode>
+      </node>
+      <node id="5674">
+        <label>ofVec3f.h</label>
+        <link refid="of_vec3f_8h"/>
+        <childnode refid="5675" relation="include">
+        </childnode>
+        <childnode refid="5676" relation="include">
+        </childnode>
+        <childnode refid="5651" relation="include">
+        </childnode>
+        <childnode refid="5660" relation="include">
+        </childnode>
+        <childnode refid="5663" relation="include">
+        </childnode>
+      </node>
+      <node id="5662">
+        <label>string</label>
+      </node>
+      <node id="5659">
+        <label>cstdarg</label>
+      </node>
+      <node id="5653">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="5682">
+        <label>Poco/File.h</label>
+      </node>
+      <node id="5656">
+        <label>tesselator.h</label>
+      </node>
+      <node id="5668">
+        <label>fstream</label>
+      </node>
+      <node id="5694">
+        <label>Poco/URI.h</label>
+      </node>
+      <node id="5693">
+        <label>Poco/Path.h</label>
+      </node>
+      <node id="5680">
+        <label>ofEvents.h</label>
+        <link refid="of_events_8h"/>
+        <childnode refid="5651" relation="include">
+        </childnode>
+        <childnode refid="5673" relation="include">
+        </childnode>
+      </node>
+      <node id="5672">
+        <label>ofMath.h</label>
+        <link refid="of_math_8h"/>
+        <childnode refid="5673" relation="include">
+        </childnode>
+        <childnode refid="5651" relation="include">
+        </childnode>
+      </node>
+      <node id="5691">
+        <label>Poco/Net/HTTPResponse.h</label>
+      </node>
+      <node id="5679">
+        <label>pthread.h</label>
+      </node>
+      <node id="5658">
+        <label>cstdio</label>
+      </node>
+      <node id="5687">
+        <label>bitset</label>
+      </node>
+      <node id="5661">
+        <label>ctime</label>
+      </node>
+      <node id="5652">
+        <label>unistd.h</label>
+      </node>
+      <node id="5664">
+        <label>vector</label>
+      </node>
+      <node id="5692">
+        <label>Poco/StreamCopier.h</label>
+      </node>
+      <node id="5695">
+        <label>Poco/Exception.h</label>
+      </node>
+      <node id="5688">
+        <label>ofLog.h</label>
+        <link refid="of_log_8h"/>
+        <childnode refid="5651" relation="include">
+        </childnode>
+        <childnode refid="5681" relation="include">
+        </childnode>
+        <childnode refid="5669" relation="include">
+        </childnode>
+      </node>
+      <node id="5651">
+        <label>ofConstants.h</label>
+        <link refid="of_constants_8h"/>
+        <childnode refid="5652" relation="include">
+        </childnode>
+        <childnode refid="5653" relation="include">
+        </childnode>
+        <childnode refid="5654" relation="include">
+        </childnode>
+        <childnode refid="5655" relation="include">
+        </childnode>
+        <childnode refid="5656" relation="include">
+        </childnode>
+        <childnode refid="5657" relation="include">
+        </childnode>
+        <childnode refid="5658" relation="include">
+        </childnode>
+        <childnode refid="5659" relation="include">
+        </childnode>
+        <childnode refid="5660" relation="include">
+        </childnode>
+        <childnode refid="5661" relation="include">
+        </childnode>
+        <childnode refid="5662" relation="include">
+        </childnode>
+        <childnode refid="5663" relation="include">
+        </childnode>
+        <childnode refid="5664" relation="include">
+        </childnode>
+        <childnode refid="5665" relation="include">
+        </childnode>
+        <childnode refid="5666" relation="include">
+        </childnode>
+        <childnode refid="5667" relation="include">
+        </childnode>
+        <childnode refid="5668" relation="include">
+        </childnode>
+      </node>
+      <node id="5666">
+        <label>sstream</label>
+      </node>
+      <node id="5673">
+        <label>ofPoint.h</label>
+        <link refid="of_point_8h"/>
+        <childnode refid="5674" relation="include">
+        </childnode>
+      </node>
+      <node id="5647">
+        <label>ofURLFileLoader.h</label>
+        <link refid="of_u_r_l_file_loader_8h"/>
+        <childnode refid="5648" relation="include">
+        </childnode>
+        <childnode refid="5649" relation="include">
+        </childnode>
+        <childnode refid="5650" relation="include">
+        </childnode>
+        <childnode refid="5680" relation="include">
+        </childnode>
+        <childnode refid="5681" relation="include">
+        </childnode>
+        <childnode refid="5683" relation="include">
+        </childnode>
+      </node>
+      <node id="5681">
+        <label>ofFileUtils.h</label>
+        <link refid="of_file_utils_8h"/>
+        <childnode refid="5651" relation="include">
+        </childnode>
+        <childnode refid="5682" relation="include">
+        </childnode>
+      </node>
+      <node id="5657">
+        <label>cstdlib</label>
+      </node>
+      <node id="5663">
+        <label>iostream</label>
+      </node>
+      <node id="5648">
+        <label>deque</label>
+      </node>
+      <node id="5686">
+        <label>ofUtils.h</label>
+        <link refid="of_utils_8h"/>
+        <childnode refid="5651" relation="include">
+        </childnode>
+        <childnode refid="5687" relation="include">
+        </childnode>
+        <childnode refid="5688" relation="include">
+        </childnode>
+      </node>
+      <node id="5646">
+        <label>utils/ofURLFileLoader.cpp</label>
+        <link refid="ofURLFileLoader.cpp"/>
+        <childnode refid="5647" relation="include">
+        </childnode>
+        <childnode refid="5684" relation="include">
+        </childnode>
+        <childnode refid="5686" relation="include">
+        </childnode>
+        <childnode refid="5689" relation="include">
+        </childnode>
+        <childnode refid="5690" relation="include">
+        </childnode>
+        <childnode refid="5691" relation="include">
+        </childnode>
+        <childnode refid="5692" relation="include">
+        </childnode>
+        <childnode refid="5693" relation="include">
+        </childnode>
+        <childnode refid="5694" relation="include">
+        </childnode>
+        <childnode refid="5695" relation="include">
+        </childnode>
+        <childnode refid="5696" relation="include">
+        </childnode>
+        <childnode refid="5697" relation="include">
+        </childnode>
+        <childnode refid="5651" relation="include">
+        </childnode>
+      </node>
+      <node id="5684">
+        <label>ofAppRunner.h</label>
+        <link refid="of_app_runner_8h"/>
+        <childnode refid="5651" relation="include">
+        </childnode>
+        <childnode refid="5673" relation="include">
+        </childnode>
+        <childnode refid="5685" relation="include">
+        </childnode>
+        <childnode refid="5669" relation="include">
+        </childnode>
+      </node>
+      <node id="5685">
+        <label>ofRectangle.h</label>
+        <link refid="of_rectangle_8h"/>
+        <childnode refid="5673" relation="include">
+        </childnode>
+      </node>
+      <node id="5654">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="5678">
+        <label>Poco/Mutex.h</label>
+      </node>
+      <node id="5665">
+        <label>cstring</label>
+      </node>
+      <node id="5677">
+        <label>tr1/memory</label>
+      </node>
+      <node id="5689">
+        <label>Poco/Net/HTTPClientSession.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="of_u_r_l_file_loader_8cpp_1a6ace3b89c02fe1d09bc454e8707fb6c6" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool factoryLoaded</definition>
+        <argsstring></argsstring>
+        <name>factoryLoaded</name>
+        <initializer> false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofURLFileLoader.cpp" line="29" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofURLFileLoader.cpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="of_u_r_l_file_loader_8cpp_1a3c3911fd6de7457c8b75751445b2d5c0" prot="public" static="no" mutable="no">
+        <type>ofEvent&lt; <ref refid="classof_http_response" kindref="compound">ofHttpResponse</ref> &gt;</type>
+        <definition>ofEvent&lt;ofHttpResponse&gt; ofURLResponseEvent</definition>
+        <argsstring></argsstring>
+        <name>ofURLResponseEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofURLFileLoader.cpp" line="31" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofURLFileLoader.cpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="of_u_r_l_file_loader_8cpp_1a2c6384bbab3c9094b656b1e5e40d83ad" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_u_r_l_file_loader" kindref="compound">ofURLFileLoader</ref> &amp;</type>
+        <definition>static ofURLFileLoader&amp; getFileLoader</definition>
+        <argsstring>()</argsstring>
+        <name>getFileLoader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofURLFileLoader.cpp" line="190" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofURLFileLoader.cpp" bodystart="190" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="of_u_r_l_file_loader_8cpp_1aec7231f38cb45134601a635d4bd96e9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_http_response" kindref="compound">ofHttpResponse</ref></type>
+        <definition>ofHttpResponse ofLoadURL</definition>
+        <argsstring>(string url)</argsstring>
+        <name>ofLoadURL</name>
+        <param>
+          <type>string</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofURLFileLoader.cpp" line="195" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofURLFileLoader.cpp" bodystart="195" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="of_u_r_l_file_loader_8cpp_1a8ad9b795d5809a8aed9c2a8d74cdc95b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofLoadURLAsync</definition>
+        <argsstring>(string url, string name)</argsstring>
+        <name>ofLoadURLAsync</name>
+        <param>
+          <type>string</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofURLFileLoader.cpp" line="199" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofURLFileLoader.cpp" bodystart="199" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="of_u_r_l_file_loader_8cpp_1ac5ef2e1c45ebf7030948c7a5426dd1c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_http_response" kindref="compound">ofHttpResponse</ref></type>
+        <definition>ofHttpResponse ofSaveURLTo</definition>
+        <argsstring>(string url, string path)</argsstring>
+        <name>ofSaveURLTo</name>
+        <param>
+          <type>string</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofURLFileLoader.cpp" line="203" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofURLFileLoader.cpp" bodystart="203" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="of_u_r_l_file_loader_8cpp_1a8775ed7718c1e74e6cc8807b869ce44d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofSaveURLAsync</definition>
+        <argsstring>(string url, string path)</argsstring>
+        <name>ofSaveURLAsync</name>
+        <param>
+          <type>string</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofURLFileLoader.cpp" line="207" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofURLFileLoader.cpp" bodystart="207" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="of_u_r_l_file_loader_8cpp_1a7fd0bfe54ea212ec613472e805760dc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofRemoveURLRequest</definition>
+        <argsstring>(int id)</argsstring>
+        <name>ofRemoveURLRequest</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofURLFileLoader.cpp" line="211" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofURLFileLoader.cpp" bodystart="211" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="of_u_r_l_file_loader_8cpp_1afd2a31da593d20eb5f88e39281addc9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofRemoveAllURLRequests</definition>
+        <argsstring>()</argsstring>
+        <name>ofRemoveAllURLRequests</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofURLFileLoader.cpp" line="215" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofURLFileLoader.cpp" bodystart="215" bodyend="217"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_u_r_l_file_loader_8h" kindref="compound">ofURLFileLoader.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_app_runner_8h" kindref="compound">ofAppRunner.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_utils_8h" kindref="compound">ofUtils.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Poco/Net/HTTPClientSession.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Poco/Net/HTTPRequest.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Poco/Net/HTTPResponse.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Poco/StreamCopier.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Poco/Path.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Poco/URI.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Poco/Exception.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Poco/URIStreamOpener.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Poco/Net/HTTPStreamFactory.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Poco::Net::HTTPClientSession;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Poco::Net::HTTPRequest;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Poco::Net::HTTPResponse;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Poco::Net::HTTPMessage;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Poco::Net::HTTPStreamFactory;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Poco::StreamCopier;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Poco::Path;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Poco::URI;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Poco::URIStreamOpener;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Poco::Exception;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_constants_8h" kindref="compound">ofConstants.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>factoryLoaded<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>ofHttpRequest::nextID<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">ofEvent&lt;ofHttpResponse&gt;<sp/><ref refid="of_u_r_l_file_loader_8cpp_1a3c3911fd6de7457c8b75751445b2d5c0" kindref="member">ofURLResponseEvent</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="classof_u_r_l_file_loader_1ae443e07f5a78c6183656d69b22257c25" kindref="member">ofURLFileLoader::ofURLFileLoader</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!factoryLoaded){</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HTTPStreamFactory::registerFactory();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>factoryLoaded<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(Poco::SystemException<sp/>PS)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_log" kindref="compound" tooltip="a streaming log interface">ofLog</ref>(<ref refid="of_log_8h_1a6b3aba959377cae6ed3afbb9d5826fe4a64e5a9d8e8727e95ec14005ffd896a6d" kindref="member">OF_LOG_ERROR</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Got<sp/>exception<sp/>in<sp/>url<sp/>ofURLFileloader&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><ref refid="classof_http_response" kindref="compound">ofHttpResponse</ref><sp/><ref refid="classof_u_r_l_file_loader_1a393b123f73281dd774c0ee80cc4de1e1" kindref="member">ofURLFileLoader::get</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>url)<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classof_http_request" kindref="compound">ofHttpRequest</ref><sp/>request(url,url);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>handleRequest(request);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classof_u_r_l_file_loader_1a3b556e949c69983e57b76c4a310ea498" kindref="member">ofURLFileLoader::getAsync</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>url,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name){</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(name==</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>name=url;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_http_request" kindref="compound">ofHttpRequest</ref><sp/>request(url,name);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_thread_1a8b682673b3d11225785b74f68fc3ce96" kindref="member">lock</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>requests.push_back(request);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_thread_1a4969d3e3b3c281251132a305c7fae015" kindref="member">unlock</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_u_r_l_file_loader_1a450eb5217fce065a9e8dc765bab1dd1d" kindref="member">start</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>request.getID();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><ref refid="classof_http_response" kindref="compound">ofHttpResponse</ref><sp/><ref refid="classof_u_r_l_file_loader_1a84a75a50d1b40d18d4b183e3fcd580f7" kindref="member">ofURLFileLoader::saveTo</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>url,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>path){</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classof_http_request" kindref="compound">ofHttpRequest</ref><sp/>request(url,path,</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>handleRequest(request);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classof_u_r_l_file_loader_1a7c41ab8cea633b16fc27570e898a843c" kindref="member">ofURLFileLoader::saveAsync</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>url,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>path){</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_http_request" kindref="compound">ofHttpRequest</ref><sp/>request(url,path,</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_thread_1a8b682673b3d11225785b74f68fc3ce96" kindref="member">lock</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>requests.push_back(request);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_thread_1a4969d3e3b3c281251132a305c7fae015" kindref="member">unlock</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_u_r_l_file_loader_1a450eb5217fce065a9e8dc765bab1dd1d" kindref="member">start</ref>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>request.getID();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_u_r_l_file_loader_1ad7b956750adfc8d3be3f2b54dedda1b1" kindref="member">ofURLFileLoader::remove</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_thread_1a8b682673b3d11225785b74f68fc3ce96" kindref="member">lock</ref>();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;(int)requests.size();i++){</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(requests[i].getID()==id){</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>requests.erase(requests.begin()+i);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_thread_1a4969d3e3b3c281251132a305c7fae015" kindref="member">unlock</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_u_r_l_file_loader_1a2552a824a5a84d0fd0dffb9db9b36b0e" kindref="member">ofURLFileLoader::clear</ref>(){</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_thread_1a8b682673b3d11225785b74f68fc3ce96" kindref="member">lock</ref>();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>requests.clear();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!responses.empty())<sp/>responses.pop();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_thread_1a4969d3e3b3c281251132a305c7fae015" kindref="member">unlock</ref>();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_u_r_l_file_loader_1a450eb5217fce065a9e8dc765bab1dd1d" kindref="member">ofURLFileLoader::start</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classof_thread_1afadfd0e1cf3aadfb20c616dbb159025a" kindref="member">isThreadRunning</ref>()<sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_thread_1a06d7c7eeb869db8571c20799c29a0b24" kindref="member">startThread</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>blocking,<sp/>verbose</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_log" kindref="compound" tooltip="a streaming log interface">ofLog</ref>(<ref refid="of_log_8h_1a6b3aba959377cae6ed3afbb9d5826fe4a344bd0fb24d6bd1f23f6d7e09a1ada2f" kindref="member">OF_LOG_VERBOSE</ref>,</highlight><highlight class="stringliteral">&quot;signaling<sp/>new<sp/>request<sp/>condition&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>condition.signal();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_u_r_l_file_loader_1a3397a3985ff8c7bb57b6fd83cc722dba" kindref="member">ofURLFileLoader::stop</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classof_thread_1aa3d12bc071665418de14ffb5b5aad325" kindref="member">stopThread</ref>();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_u_r_l_file_loader_1ab2f0c21ed1cb176e86761370297d573f" kindref="member">ofURLFileLoader::threadedFunction</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<sp/><ref refid="classof_thread_1afadfd0e1cf3aadfb20c616dbb159025a" kindref="member">isThreadRunning</ref>()<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>){</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_thread_1a8b682673b3d11225785b74f68fc3ce96" kindref="member">lock</ref>();</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_log" kindref="compound" tooltip="a streaming log interface">ofLog</ref>(<ref refid="of_log_8h_1a6b3aba959377cae6ed3afbb9d5826fe4a344bd0fb24d6bd1f23f6d7e09a1ada2f" kindref="member">OF_LOG_VERBOSE</ref>,</highlight><highlight class="stringliteral">&quot;starting<sp/>thread<sp/>loop<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(requests.size()&gt;0){</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_log" kindref="compound" tooltip="a streaming log interface">ofLog</ref>(<ref refid="of_log_8h_1a6b3aba959377cae6ed3afbb9d5826fe4a344bd0fb24d6bd1f23f6d7e09a1ada2f" kindref="member">OF_LOG_VERBOSE</ref>,</highlight><highlight class="stringliteral">&quot;querying<sp/>request<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>requests.front().name);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_http_request" kindref="compound">ofHttpRequest</ref><sp/>request(requests.front());</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_thread_1a4969d3e3b3c281251132a305c7fae015" kindref="member">unlock</ref>();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_http_response" kindref="compound">ofHttpResponse</ref><sp/>response(handleRequest(request));</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(response.status!=-1){</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_thread_1a8b682673b3d11225785b74f68fc3ce96" kindref="member">lock</ref>();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_log" kindref="compound" tooltip="a streaming log interface">ofLog</ref>(<ref refid="of_log_8h_1a6b3aba959377cae6ed3afbb9d5826fe4a344bd0fb24d6bd1f23f6d7e09a1ada2f" kindref="member">OF_LOG_VERBOSE</ref>,</highlight><highlight class="stringliteral">&quot;got<sp/>request<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>requests.front().name);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>responses.push(response);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>requests.pop_front();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ofAddListener(ofEvents.update,</highlight><highlight class="keyword">this</highlight><highlight class="normal">,&amp;<ref refid="classof_u_r_l_file_loader_1a89aba392823ab3a6ddae0bbf8f2161cf" kindref="member">ofURLFileLoader::update</ref>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_thread_1a4969d3e3b3c281251132a305c7fae015" kindref="member">unlock</ref>();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_log" kindref="compound" tooltip="a streaming log interface">ofLog</ref>(<ref refid="of_log_8h_1a6b3aba959377cae6ed3afbb9d5826fe4a344bd0fb24d6bd1f23f6d7e09a1ada2f" kindref="member">OF_LOG_VERBOSE</ref>,</highlight><highlight class="stringliteral">&quot;failed<sp/>getting<sp/>request<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>requests.front().name);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_app_runner_8cpp_1a58fb7f5c12bf9d507f09da1a41041312" kindref="member">ofSleepMillis</ref>(10);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_log" kindref="compound" tooltip="a streaming log interface">ofLog</ref>(<ref refid="of_log_8h_1a6b3aba959377cae6ed3afbb9d5826fe4a344bd0fb24d6bd1f23f6d7e09a1ada2f" kindref="member">OF_LOG_VERBOSE</ref>,</highlight><highlight class="stringliteral">&quot;stopping<sp/>on<sp/>no<sp/>requests<sp/>condition&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>condition.wait(<ref refid="classof_thread_1a12ff152ef6ad45f82cff7dcd5b4b9742" kindref="member">mutex</ref>);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><ref refid="classof_http_response" kindref="compound">ofHttpResponse</ref><sp/>ofURLFileLoader::handleRequest(<ref refid="classof_http_request" kindref="compound">ofHttpRequest</ref><sp/>request)<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>URI<sp/>uri(request.<ref refid="classof_http_request_1ae6833ffe48daba8a1032def40617ec62" kindref="member">url</ref>);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>path(uri.getPathAndQuery());</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(path.empty())<sp/>path<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HTTPClientSession<sp/>session(uri.getHost(),<sp/>uri.getPort());</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HTTPRequest<sp/>req(HTTPRequest::HTTP_GET,<sp/>path,<sp/>HTTPMessage::HTTP_1_1);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>session.setTimeout(Poco::Timespan(20,0));</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>session.sendRequest(req);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HTTPResponse<sp/>res;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>istream&amp;<sp/>rs<sp/>=<sp/>session.receiveResponse(res);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!request.<ref refid="classof_http_request_1a89852c913e7b38b19d3e7a3503a63bb3" kindref="member">saveTo</ref>){</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classof_http_response" kindref="compound">ofHttpResponse</ref>(request,rs,res.getStatus(),res.getReason());</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_file" kindref="compound">ofFile</ref><sp/><ref refid="classof_u_r_l_file_loader_1a84a75a50d1b40d18d4b183e3fcd580f7" kindref="member">saveTo</ref>(request.<ref refid="classof_http_request_1a62b3bdcdad84b0d0ecce10889459f3c2" kindref="member">name</ref>,<ref refid="classof_file_1afc27b4186457038ca30b5471b497f2a0aff8f040e5a5c98cb4b54586e5e87a9e5" kindref="member">ofFile::WriteOnly</ref>,</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>aux_buffer[1024];</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rs.read(aux_buffer,<sp/>1024);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::streamsize<sp/>n<sp/>=<sp/>rs.gcount();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(n<sp/>&gt;<sp/>0){</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>resize<sp/>to<sp/>size+1<sp/>initialized<sp/>to<sp/>0<sp/>to<sp/>have<sp/>a<sp/>0<sp/>at<sp/>the<sp/>end<sp/>for<sp/>strings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_u_r_l_file_loader_1a84a75a50d1b40d18d4b183e3fcd580f7" kindref="member">saveTo</ref>.write(aux_buffer,n);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rs){</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rs.read(aux_buffer,<sp/>1024);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n<sp/>=<sp/>rs.gcount();</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classof_http_response" kindref="compound">ofHttpResponse</ref>(request,res.getStatus(),res.getReason());</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(Exception&amp;<sp/>exc)<sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_log" kindref="compound" tooltip="a streaming log interface">ofLog</ref>(<ref refid="of_log_8h_1a6b3aba959377cae6ed3afbb9d5826fe4a64e5a9d8e8727e95ec14005ffd896a6d" kindref="member">OF_LOG_ERROR</ref>,<sp/></highlight><highlight class="stringliteral">&quot;ofURLFileLoader<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>exc.displayText());</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classof_http_response" kindref="compound">ofHttpResponse</ref>(request,-1,exc.displayText());</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="173"><highlight class="normal">}<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_u_r_l_file_loader_1a89aba392823ab3a6ddae0bbf8f2161cf" kindref="member">ofURLFileLoader::update</ref>(ofEventArgs<sp/>&amp;<sp/>args){</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_thread_1a8b682673b3d11225785b74f68fc3ce96" kindref="member">lock</ref>();</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(responses.size()){</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_http_response" kindref="compound">ofHttpResponse</ref><sp/>response(responses.front());</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_log" kindref="compound" tooltip="a streaming log interface">ofLog</ref>(<ref refid="of_log_8h_1a6b3aba959377cae6ed3afbb9d5826fe4a344bd0fb24d6bd1f23f6d7e09a1ada2f" kindref="member">OF_LOG_VERBOSE</ref>,</highlight><highlight class="stringliteral">&quot;ofURLLoader::update:<sp/>new<sp/>response<sp/>&quot;</highlight><highlight class="normal"><sp/>+response.request.name);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>responses.pop();</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_thread_1a4969d3e3b3c281251132a305c7fae015" kindref="member">unlock</ref>();</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ofNotifyEvent(<ref refid="of_u_r_l_file_loader_8cpp_1a3c3911fd6de7457c8b75751445b2d5c0" kindref="member">ofURLResponseEvent</ref>,response);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ofRemoveListener(ofEvents.update,</highlight><highlight class="keyword">this</highlight><highlight class="normal">,&amp;<ref refid="classof_u_r_l_file_loader_1a89aba392823ab3a6ddae0bbf8f2161cf" kindref="member">ofURLFileLoader::update</ref>);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_thread_1a4969d3e3b3c281251132a305c7fae015" kindref="member">unlock</ref>();</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classof_u_r_l_file_loader" kindref="compound">ofURLFileLoader</ref><sp/>&amp;<sp/>getFileLoader(){</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classof_u_r_l_file_loader" kindref="compound">ofURLFileLoader</ref><sp/>*<sp/>fileLoader<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classof_u_r_l_file_loader" kindref="compound">ofURLFileLoader</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*fileLoader;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><ref refid="classof_http_response" kindref="compound">ofHttpResponse</ref><sp/><ref refid="of_u_r_l_file_loader_8cpp_1aec7231f38cb45134601a635d4bd96e9a" kindref="member">ofLoadURL</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>url){</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getFileLoader().<ref refid="classof_u_r_l_file_loader_1a393b123f73281dd774c0ee80cc4de1e1" kindref="member">get</ref>(url);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="of_u_r_l_file_loader_8cpp_1a8ad9b795d5809a8aed9c2a8d74cdc95b" kindref="member">ofLoadURLAsync</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>url,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name){</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getFileLoader().<ref refid="classof_u_r_l_file_loader_1a3b556e949c69983e57b76c4a310ea498" kindref="member">getAsync</ref>(url,name);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><ref refid="classof_http_response" kindref="compound">ofHttpResponse</ref><sp/><ref refid="of_u_r_l_file_loader_8cpp_1ac5ef2e1c45ebf7030948c7a5426dd1c3" kindref="member">ofSaveURLTo</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>url,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>path){</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getFileLoader().<ref refid="classof_u_r_l_file_loader_1a84a75a50d1b40d18d4b183e3fcd580f7" kindref="member">saveTo</ref>(url,path);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="of_u_r_l_file_loader_8cpp_1a8775ed7718c1e74e6cc8807b869ce44d" kindref="member">ofSaveURLAsync</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>url,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>path){</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getFileLoader().<ref refid="classof_u_r_l_file_loader_1a7c41ab8cea633b16fc27570e898a843c" kindref="member">saveAsync</ref>(url,path);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_u_r_l_file_loader_8cpp_1a7fd0bfe54ea212ec613472e805760dc4" kindref="member">ofRemoveURLRequest</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getFileLoader().<ref refid="classof_u_r_l_file_loader_1ad7b956750adfc8d3be3f2b54dedda1b1" kindref="member">remove</ref>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_u_r_l_file_loader_8cpp_1afd2a31da593d20eb5f88e39281addc9c" kindref="member">ofRemoveAllURLRequests</ref>(){</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getFileLoader().<ref refid="classof_u_r_l_file_loader_1a2552a824a5a84d0fd0dffb9db9b36b0e" kindref="member">clear</ref>();</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofURLFileLoader.cpp"/>
+  </compounddef>
+</doxygen>

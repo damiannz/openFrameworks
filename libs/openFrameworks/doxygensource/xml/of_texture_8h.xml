@@ -1,0 +1,920 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="of_texture_8h" kind="file">
+    <compoundname>ofTexture.h</compoundname>
+    <includes refid="of_point_8h" local="yes">ofPoint.h</includes>
+    <includes refid="of_rectangle_8h" local="yes">ofRectangle.h</includes>
+    <includes refid="of_base_types_8h" local="yes">ofBaseTypes.h</includes>
+    <includes refid="of_constants_8h" local="yes">ofConstants.h</includes>
+    <includedby refid="of_fbo_8h" local="yes">gl/ofFbo.h</includedby>
+    <includedby refid="of_shader_8h" local="yes">gl/ofShader.h</includedby>
+    <includedby refid="of_texture_8cpp" local="yes">gl/ofTexture.cpp</includedby>
+    <includedby refid="of_bitmap_font_8cpp" local="yes">graphics/ofBitmapFont.cpp</includedby>
+    <includedby refid="of_image_8h" local="yes">graphics/ofImage.h</includedby>
+    <includedby refid="of_true_type_font_8h" local="yes">graphics/ofTrueTypeFont.h</includedby>
+    <includedby refid="of_main_8h" local="yes">ofMain.h</includedby>
+    <includedby refid="of_direct_show_grabber_8h" local="yes">video/ofDirectShowGrabber.h</includedby>
+    <includedby refid="of_video_grabber_8h" local="yes">video/ofVideoGrabber.h</includedby>
+    <includedby refid="ofi_phone_video_player_8h" local="yes">video/ofiPhoneVideoPlayer.h</includedby>
+    <includedby refid="of_video_player_8h" local="yes">video/ofVideoPlayer.h</includedby>
+    <incdepgraph>
+      <node id="1714">
+        <label>iomanip</label>
+      </node>
+      <node id="1719">
+        <label>ofColor.h</label>
+        <link refid="of_color_8h"/>
+        <childnode refid="1720" relation="include">
+        </childnode>
+        <childnode refid="1721" relation="include">
+        </childnode>
+      </node>
+      <node id="1720">
+        <label>limits</label>
+      </node>
+      <node id="1716">
+        <label>ofVec4f.h</label>
+        <link refid="of_vec4f_8h"/>
+        <childnode refid="1698" relation="include">
+        </childnode>
+      </node>
+      <node id="1702">
+        <label>GL/glx.h</label>
+      </node>
+      <node id="1732">
+        <label>ofPixels.h</label>
+        <link refid="of_pixels_8h"/>
+        <childnode refid="1698" relation="include">
+        </childnode>
+        <childnode refid="1723" relation="include">
+        </childnode>
+        <childnode refid="1719" relation="include">
+        </childnode>
+        <childnode refid="1721" relation="include">
+        </childnode>
+        <childnode refid="1720" relation="include">
+        </childnode>
+      </node>
+      <node id="1697">
+        <label>ofVec2f.h</label>
+        <link refid="of_vec2f_8h"/>
+        <childnode refid="1698" relation="include">
+        </childnode>
+      </node>
+      <node id="1707">
+        <label>cmath</label>
+      </node>
+      <node id="1728">
+        <label>ofTypes.h</label>
+        <link refid="of_types_8h"/>
+        <childnode refid="1698" relation="include">
+        </childnode>
+        <childnode refid="1719" relation="include">
+        </childnode>
+        <childnode refid="1729" relation="include">
+        </childnode>
+        <childnode refid="1730" relation="include">
+        </childnode>
+      </node>
+      <node id="1696">
+        <label>ofVec3f.h</label>
+        <link refid="of_vec3f_8h"/>
+        <childnode refid="1697" relation="include">
+        </childnode>
+        <childnode refid="1716" relation="include">
+        </childnode>
+        <childnode refid="1698" relation="include">
+        </childnode>
+        <childnode refid="1707" relation="include">
+        </childnode>
+        <childnode refid="1710" relation="include">
+        </childnode>
+      </node>
+      <node id="1709">
+        <label>string</label>
+      </node>
+      <node id="1706">
+        <label>cstdarg</label>
+      </node>
+      <node id="1700">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="1727">
+        <label>Poco/File.h</label>
+      </node>
+      <node id="1703">
+        <label>tesselator.h</label>
+      </node>
+      <node id="1718">
+        <label>ofBaseTypes.h</label>
+        <link refid="of_base_types_8h"/>
+        <childnode refid="1695" relation="include">
+        </childnode>
+        <childnode refid="1717" relation="include">
+        </childnode>
+        <childnode refid="1698" relation="include">
+        </childnode>
+        <childnode refid="1719" relation="include">
+        </childnode>
+        <childnode refid="1722" relation="include">
+        </childnode>
+        <childnode refid="1732" relation="include">
+        </childnode>
+      </node>
+      <node id="1715">
+        <label>fstream</label>
+      </node>
+      <node id="1721">
+        <label>ofMath.h</label>
+        <link refid="of_math_8h"/>
+        <childnode refid="1695" relation="include">
+        </childnode>
+        <childnode refid="1698" relation="include">
+        </childnode>
+      </node>
+      <node id="1705">
+        <label>cstdio</label>
+      </node>
+      <node id="1724">
+        <label>bitset</label>
+      </node>
+      <node id="1708">
+        <label>ctime</label>
+      </node>
+      <node id="1699">
+        <label>unistd.h</label>
+      </node>
+      <node id="1711">
+        <label>vector</label>
+      </node>
+      <node id="1725">
+        <label>ofLog.h</label>
+        <link refid="of_log_8h"/>
+        <childnode refid="1698" relation="include">
+        </childnode>
+        <childnode refid="1726" relation="include">
+        </childnode>
+        <childnode refid="1728" relation="include">
+        </childnode>
+      </node>
+      <node id="1698">
+        <label>ofConstants.h</label>
+        <link refid="of_constants_8h"/>
+        <childnode refid="1699" relation="include">
+        </childnode>
+        <childnode refid="1700" relation="include">
+        </childnode>
+        <childnode refid="1701" relation="include">
+        </childnode>
+        <childnode refid="1702" relation="include">
+        </childnode>
+        <childnode refid="1703" relation="include">
+        </childnode>
+        <childnode refid="1704" relation="include">
+        </childnode>
+        <childnode refid="1705" relation="include">
+        </childnode>
+        <childnode refid="1706" relation="include">
+        </childnode>
+        <childnode refid="1707" relation="include">
+        </childnode>
+        <childnode refid="1708" relation="include">
+        </childnode>
+        <childnode refid="1709" relation="include">
+        </childnode>
+        <childnode refid="1710" relation="include">
+        </childnode>
+        <childnode refid="1711" relation="include">
+        </childnode>
+        <childnode refid="1712" relation="include">
+        </childnode>
+        <childnode refid="1713" relation="include">
+        </childnode>
+        <childnode refid="1714" relation="include">
+        </childnode>
+        <childnode refid="1715" relation="include">
+        </childnode>
+      </node>
+      <node id="1713">
+        <label>sstream</label>
+      </node>
+      <node id="1695">
+        <label>ofPoint.h</label>
+        <link refid="of_point_8h"/>
+        <childnode refid="1696" relation="include">
+        </childnode>
+      </node>
+      <node id="1726">
+        <label>ofFileUtils.h</label>
+        <link refid="of_file_utils_8h"/>
+        <childnode refid="1698" relation="include">
+        </childnode>
+        <childnode refid="1727" relation="include">
+        </childnode>
+      </node>
+      <node id="1704">
+        <label>cstdlib</label>
+      </node>
+      <node id="1731">
+        <label>ofGLUtils.h</label>
+        <link refid="of_g_l_utils_8h"/>
+      </node>
+      <node id="1710">
+        <label>iostream</label>
+      </node>
+      <node id="1722">
+        <label>ofMesh.h</label>
+        <link refid="of_mesh_8h"/>
+        <childnode refid="1696" relation="include">
+        </childnode>
+        <childnode refid="1697" relation="include">
+        </childnode>
+        <childnode refid="1719" relation="include">
+        </childnode>
+        <childnode refid="1723" relation="include">
+        </childnode>
+        <childnode refid="1698" relation="include">
+        </childnode>
+        <childnode refid="1731" relation="include">
+        </childnode>
+      </node>
+      <node id="1723">
+        <label>ofUtils.h</label>
+        <link refid="of_utils_8h"/>
+        <childnode refid="1698" relation="include">
+        </childnode>
+        <childnode refid="1724" relation="include">
+        </childnode>
+        <childnode refid="1725" relation="include">
+        </childnode>
+      </node>
+      <node id="1694">
+        <label>gl/ofTexture.h</label>
+        <link refid="ofTexture.h"/>
+        <childnode refid="1695" relation="include">
+        </childnode>
+        <childnode refid="1717" relation="include">
+        </childnode>
+        <childnode refid="1718" relation="include">
+        </childnode>
+        <childnode refid="1698" relation="include">
+        </childnode>
+      </node>
+      <node id="1717">
+        <label>ofRectangle.h</label>
+        <link refid="of_rectangle_8h"/>
+        <childnode refid="1695" relation="include">
+        </childnode>
+      </node>
+      <node id="1701">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="1730">
+        <label>Poco/Mutex.h</label>
+      </node>
+      <node id="1712">
+        <label>cstring</label>
+      </node>
+      <node id="1729">
+        <label>tr1/memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1746">
+        <label>utils/ofUtils.cpp</label>
+        <link refid="of_utils_8cpp"/>
+      </node>
+      <node id="1736">
+        <label>gl/ofGLRenderer.cpp</label>
+        <link refid="of_g_l_renderer_8cpp"/>
+      </node>
+      <node id="1750">
+        <label>video/ofDirectShowGrabber.cpp</label>
+        <link refid="of_direct_show_grabber_8cpp"/>
+      </node>
+      <node id="1737">
+        <label>ofMain.h</label>
+        <link refid="of_main_8h"/>
+      </node>
+      <node id="1745">
+        <label>graphics/ofImage.cpp</label>
+        <link refid="of_image_8cpp"/>
+      </node>
+      <node id="1741">
+        <label>graphics/ofBitmapFont.cpp</label>
+        <link refid="of_bitmap_font_8cpp"/>
+      </node>
+      <node id="1735">
+        <label>gl/ofFbo.cpp</label>
+        <link refid="of_fbo_8cpp"/>
+      </node>
+      <node id="1743">
+        <label>app/ofAppRunner.cpp</label>
+        <link refid="of_app_runner_8cpp"/>
+      </node>
+      <node id="1740">
+        <label>gl/ofTexture.cpp</label>
+        <link refid="of_texture_8cpp"/>
+      </node>
+      <node id="1757">
+        <label>video/ofVideoPlayer.cpp</label>
+        <link refid="of_video_player_8cpp"/>
+      </node>
+      <node id="1754">
+        <label>video/ofiPhoneVideoPlayer.h</label>
+        <link refid="ofi_phone_video_player_8h"/>
+        <childnode refid="1755" relation="include">
+        </childnode>
+      </node>
+      <node id="1749">
+        <label>video/ofDirectShowGrabber.h</label>
+        <link refid="of_direct_show_grabber_8h"/>
+        <childnode refid="1750" relation="include">
+        </childnode>
+      </node>
+      <node id="1739">
+        <label>gl/ofShader.cpp</label>
+        <link refid="of_shader_8cpp"/>
+      </node>
+      <node id="1753">
+        <label>video/ofVideoGrabber.cpp</label>
+        <link refid="of_video_grabber_8cpp"/>
+      </node>
+      <node id="1734">
+        <label>gl/ofFbo.h</label>
+        <link refid="of_fbo_8h"/>
+        <childnode refid="1735" relation="include">
+        </childnode>
+        <childnode refid="1736" relation="include">
+        </childnode>
+        <childnode refid="1737" relation="include">
+        </childnode>
+      </node>
+      <node id="1755">
+        <label>video/ofiPhoneVideoPlayer.mm</label>
+        <link refid="ofi_phone_video_player_8mm"/>
+      </node>
+      <node id="1751">
+        <label>video/ofVideoGrabber.h</label>
+        <link refid="of_video_grabber_8h"/>
+        <childnode refid="1737" relation="include">
+        </childnode>
+        <childnode refid="1752" relation="include">
+        </childnode>
+        <childnode refid="1753" relation="include">
+        </childnode>
+      </node>
+      <node id="1756">
+        <label>video/ofVideoPlayer.h</label>
+        <link refid="of_video_player_8h"/>
+        <childnode refid="1737" relation="include">
+        </childnode>
+        <childnode refid="1754" relation="include">
+        </childnode>
+        <childnode refid="1757" relation="include">
+        </childnode>
+      </node>
+      <node id="1752">
+        <label>video/ofiPhoneVideoGrabber.h</label>
+        <link refid="ofi_phone_video_grabber_8h"/>
+      </node>
+      <node id="1747">
+        <label>graphics/ofTrueTypeFont.h</label>
+        <link refid="of_true_type_font_8h"/>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1737" relation="include">
+        </childnode>
+      </node>
+      <node id="1733">
+        <label>gl/ofTexture.h</label>
+        <link refid="ofTexture.h"/>
+        <childnode refid="1734" relation="include">
+        </childnode>
+        <childnode refid="1738" relation="include">
+        </childnode>
+        <childnode refid="1740" relation="include">
+        </childnode>
+        <childnode refid="1741" relation="include">
+        </childnode>
+        <childnode refid="1742" relation="include">
+        </childnode>
+        <childnode refid="1747" relation="include">
+        </childnode>
+        <childnode refid="1737" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+        <childnode refid="1751" relation="include">
+        </childnode>
+        <childnode refid="1754" relation="include">
+        </childnode>
+        <childnode refid="1756" relation="include">
+        </childnode>
+      </node>
+      <node id="1744">
+        <label>graphics/ofCairoRenderer.cpp</label>
+        <link refid="of_cairo_renderer_8cpp"/>
+      </node>
+      <node id="1738">
+        <label>gl/ofShader.h</label>
+        <link refid="of_shader_8h"/>
+        <childnode refid="1739" relation="include">
+        </childnode>
+        <childnode refid="1737" relation="include">
+        </childnode>
+      </node>
+      <node id="1748">
+        <label>graphics/ofTrueTypeFont.cpp</label>
+        <link refid="of_true_type_font_8cpp"/>
+      </node>
+      <node id="1742">
+        <label>graphics/ofImage.h</label>
+        <link refid="of_image_8h"/>
+        <childnode refid="1743" relation="include">
+        </childnode>
+        <childnode refid="1736" relation="include">
+        </childnode>
+        <childnode refid="1744" relation="include">
+        </childnode>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1737" relation="include">
+        </childnode>
+        <childnode refid="1746" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classof_texture_data" prot="public">ofTextureData</innerclass>
+    <innerclass refid="classof_texture" prot="public">ofTexture</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="of_texture_8h_1a218c238fdc83c3d9ac235f31dfd3c895" prot="public" static="no">
+        <name>ofTexCompression</name>
+        <enumvalue id="of_texture_8h_1a218c238fdc83c3d9ac235f31dfd3c895a6054d6a854453c2cf0fa120f76a9384b" prot="public">
+          <name>OF_COMPRESS_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="of_texture_8h_1a218c238fdc83c3d9ac235f31dfd3c895aa6399fcb7ada14d9b22d2900a4c6e994" prot="public">
+          <name>OF_COMPRESS_SRGB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="of_texture_8h_1a218c238fdc83c3d9ac235f31dfd3c895a13cbc14ece371e2be3e16cd0738458a0" prot="public">
+          <name>OF_COMPRESS_ARB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.h" line="37" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.h" bodystart="36" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="of_texture_8h_1ab340063d598250e3bf7abc2db7795f3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofGetGlInternalFormat</definition>
+        <argsstring>(const ofPixels &amp;pix)</argsstring>
+        <name>ofGetGlInternalFormat</name>
+        <param>
+          <type>const <ref refid="classof_pixels__" kindref="compound">ofPixels</ref> &amp;</type>
+          <declname>pix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.h" line="8" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.cpp" bodystart="24" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="of_texture_8h_1a6951b45f3afed2f8ea7afa70e13601e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofGetGlFormatAndType</definition>
+        <argsstring>(int glInternalFormat, int &amp;glFormat, int &amp;glType)</argsstring>
+        <name>ofGetGlFormatAndType</name>
+        <param>
+          <type>int</type>
+          <declname>glInternalFormat</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>glFormat</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>glType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.h" line="11" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.cpp" bodystart="99" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="of_texture_8h_1ae78f1287f515325ceaf71c13f0efdced" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="of_constants_8h_1a9760b6b0bec0314fdc85f44793bbe951" kindref="member">ofImageType</ref></type>
+        <definition>ofImageType ofGetImageTypeFromGLType</definition>
+        <argsstring>(int glType)</argsstring>
+        <name>ofGetImageTypeFromGLType</name>
+        <param>
+          <type>int</type>
+          <declname>glType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.h" line="12" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.cpp" bodystart="219" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="of_texture_8h_1ae0f994e7424dc7c5309aff96109228da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofGetUsingArbTex</definition>
+        <argsstring>()</argsstring>
+        <name>ofGetUsingArbTex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.h" line="15" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.cpp" bodystart="309" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="of_texture_8h_1a2522ef9f2c9415f8ac2d967c6bb37b01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofEnableArbTex</definition>
+        <argsstring>()</argsstring>
+        <name>ofEnableArbTex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.h" line="16" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.cpp" bodystart="314" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="of_texture_8h_1a6b679cd9538f7a1399cec6078c227c71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofDisableArbTex</definition>
+        <argsstring>()</argsstring>
+        <name>ofDisableArbTex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.h" line="17" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.cpp" bodystart="319" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="of_texture_8h_1a88fcb7afbd579aa6ee79b0c5bb64b096" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofGetUsingNormalizedTexCoords</definition>
+        <argsstring>()</argsstring>
+        <name>ofGetUsingNormalizedTexCoords</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.h" line="20" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.cpp" bodystart="241" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="of_texture_8h_1a444caf6c6cb03c61bcd569345ee0fbe9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofEnableNormalizedTexCoords</definition>
+        <argsstring>()</argsstring>
+        <name>ofEnableNormalizedTexCoords</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.h" line="21" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.cpp" bodystart="245" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="of_texture_8h_1aeab07f8c299416402fc0ee745f099686" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofDisableNormalizedTexCoords</definition>
+        <argsstring>()</argsstring>
+        <name>ofDisableNormalizedTexCoords</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.h" line="22" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.cpp" bodystart="249" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="of_texture_8h_1a8bb3844b5e80005c2ac2fea35a00365f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSetTextureWrap</definition>
+        <argsstring>(GLfloat wrapS=GL_CLAMP_TO_EDGE, GLfloat wrapT=GL_CLAMP_TO_EDGE)</argsstring>
+        <name>ofSetTextureWrap</name>
+        <param>
+          <type>GLfloat</type>
+          <declname>wrapS</declname>
+          <defval>GL_CLAMP_TO_EDGE</defval>
+        </param>
+        <param>
+          <type>GLfloat</type>
+          <declname>wrapT</declname>
+          <defval>GL_CLAMP_TO_EDGE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.h" line="26" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.cpp" bodystart="260" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="of_texture_8h_1a8c2ccd16a076b64e2322d0eb24119ce7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofGetUsingCustomTextureWrap</definition>
+        <argsstring>()</argsstring>
+        <name>ofGetUsingCustomTextureWrap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.h" line="27" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.cpp" bodystart="273" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="of_texture_8h_1aaee286a4bb9632c17544ae330eee8cea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofRestoreTextureWrap</definition>
+        <argsstring>()</argsstring>
+        <name>ofRestoreTextureWrap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.h" line="28" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.cpp" bodystart="278" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="of_texture_8h_1a1d8492e4ce3782bb7647e7b5a1f049bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSetMinMagFilters</definition>
+        <argsstring>(GLfloat minFilter=GL_LINEAR, GLfloat maxFilter=GL_LINEAR)</argsstring>
+        <name>ofSetMinMagFilters</name>
+        <param>
+          <type>GLfloat</type>
+          <declname>minFilter</declname>
+          <defval>GL_LINEAR</defval>
+        </param>
+        <param>
+          <type>GLfloat</type>
+          <declname>maxFilter</declname>
+          <defval>GL_LINEAR</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.h" line="30" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.cpp" bodystart="283" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="of_texture_8h_1a43b3a0baaffc4acfd85ab7965ed17344" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofGetUsingCustomMinMagFilters</definition>
+        <argsstring>()</argsstring>
+        <name>ofGetUsingCustomMinMagFilters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.h" line="31" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.cpp" bodystart="296" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="of_texture_8h_1acb822a64ba1482a7f69cf4d7c1cb4d7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofRestoreMinMagFilters</definition>
+        <argsstring>()</argsstring>
+        <name>ofRestoreMinMagFilters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.h" line="32" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.cpp" bodystart="301" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="of_texture_8h_1af70a133cd74f4c448e841521287f16b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofEnableTextureEdgeHack</definition>
+        <argsstring>()</argsstring>
+        <name>ofEnableTextureEdgeHack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.h" line="88" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.cpp" bodystart="232" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="of_texture_8h_1a1c85492981b1ecaa449f6a46b2a34673" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofDisableTextureEdgeHack</definition>
+        <argsstring>()</argsstring>
+        <name>ofDisableTextureEdgeHack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.h" line="89" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.cpp" bodystart="237" bodyend="239"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_point_8h" kindref="compound">ofPoint.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_rectangle_8h" kindref="compound">ofRectangle.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_base_types_8h" kindref="compound">ofBaseTypes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_constants_8h" kindref="compound">ofConstants.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="of_texture_8cpp_1ab340063d598250e3bf7abc2db7795f3d" kindref="member">ofGetGlInternalFormat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_pixels__" kindref="compound">ofPixels</ref>&amp;<sp/>pix);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="of_texture_8cpp_1ab340063d598250e3bf7abc2db7795f3d" kindref="member">ofGetGlInternalFormat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_pixels__" kindref="compound">ofShortPixels</ref>&amp;<sp/>pix);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="of_texture_8cpp_1ab340063d598250e3bf7abc2db7795f3d" kindref="member">ofGetGlInternalFormat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_pixels__" kindref="compound">ofFloatPixels</ref>&amp;<sp/>pix);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_texture_8cpp_1a6951b45f3afed2f8ea7afa70e13601e2" kindref="member">ofGetGlFormatAndType</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>glInternalFormat,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>glFormat,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>glType);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><ref refid="of_constants_8h_1a9760b6b0bec0314fdc85f44793bbe951" kindref="member">ofImageType</ref><sp/><ref refid="of_texture_8cpp_1ae78f1287f515325ceaf71c13f0efdced" kindref="member">ofGetImageTypeFromGLType</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>glType);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//set<sp/>whether<sp/>OF<sp/>uses<sp/>ARB<sp/>rectangular<sp/>texture<sp/>or<sp/>the<sp/>more<sp/>traditonal<sp/>GL_TEXTURE_2D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="of_texture_8cpp_1ae0f994e7424dc7c5309aff96109228da" kindref="member">ofGetUsingArbTex</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_texture_8cpp_1a2522ef9f2c9415f8ac2d967c6bb37b01" kindref="member">ofEnableArbTex</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_texture_8cpp_1a6b679cd9538f7a1399cec6078c227c71" kindref="member">ofDisableArbTex</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="of_texture_8cpp_1a88fcb7afbd579aa6ee79b0c5bb64b096" kindref="member">ofGetUsingNormalizedTexCoords</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_texture_8cpp_1a444caf6c6cb03c61bcd569345ee0fbe9" kindref="member">ofEnableNormalizedTexCoords</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_texture_8cpp_1aeab07f8c299416402fc0ee745f099686" kindref="member">ofDisableNormalizedTexCoords</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//*****<sp/>add<sp/>global<sp/>functions<sp/>to<sp/>override<sp/>texture<sp/>settings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_texture_8cpp_1a4804b412c789b866234f3049de856883" kindref="member">ofSetTextureWrap</ref>(GLfloat<sp/>wrapS<sp/>=<sp/>GL_CLAMP_TO_EDGE,<sp/>GLfloat<sp/>wrapT<sp/>=<sp/>GL_CLAMP_TO_EDGE);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="of_texture_8cpp_1a8c2ccd16a076b64e2322d0eb24119ce7" kindref="member">ofGetUsingCustomTextureWrap</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_texture_8cpp_1aaee286a4bb9632c17544ae330eee8cea" kindref="member">ofRestoreTextureWrap</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_texture_8cpp_1a7c6a161195040432447dbf899fa5c19d" kindref="member">ofSetMinMagFilters</ref>(GLfloat<sp/>minFilter<sp/>=<sp/>GL_LINEAR,<sp/>GLfloat<sp/>maxFilter<sp/>=<sp/>GL_LINEAR);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="of_texture_8cpp_1a43b3a0baaffc4acfd85ab7965ed17344" kindref="member">ofGetUsingCustomMinMagFilters</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_texture_8cpp_1acb822a64ba1482a7f69cf4d7c1cb4d7c" kindref="member">ofRestoreMinMagFilters</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//*****</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//Sosolimited:<sp/>texture<sp/>compression</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="of_texture_8h_1a218c238fdc83c3d9ac235f31dfd3c895" kindref="member">ofTexCompression</ref></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_texture_8h_1a218c238fdc83c3d9ac235f31dfd3c895a6054d6a854453c2cf0fa120f76a9384b" kindref="member">OF_COMPRESS_NONE</ref>,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_texture_8h_1a218c238fdc83c3d9ac235f31dfd3c895aa6399fcb7ada14d9b22d2900a4c6e994" kindref="member">OF_COMPRESS_SRGB</ref>,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_texture_8h_1a218c238fdc83c3d9ac235f31dfd3c895a13cbc14ece371e2be3e16cd0738458a0" kindref="member">OF_COMPRESS_ARB</ref></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classof_texture_data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classof_texture_data" kindref="compound">ofTextureData</ref><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_texture_data_1ae3766bd02c26dbb2f93f2311577b2c15" kindref="member">ofTextureData</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_texture_data_1a8521140c30a62b5cdb0045cd119e396c" kindref="member">textureID</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TARGET_OPENGLES</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_texture_data_1a2349f7972cb95234e0b726e51d0d8a10" kindref="member">glTypeInternal</ref><sp/>=<sp/>GL_RGB8;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_texture_data_1a5158e9375dc0805de85e9c1553b415eb" kindref="member">textureTarget</ref><sp/>=<sp/>GL_TEXTURE_RECTANGLE_ARB;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_texture_data_1a2349f7972cb95234e0b726e51d0d8a10" kindref="member">glTypeInternal</ref><sp/>=<sp/>GL_RGB;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_texture_data_1a5158e9375dc0805de85e9c1553b415eb" kindref="member">textureTarget</ref><sp/>=<sp/>GL_TEXTURE_2D;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_texture_data_1aaaf761282f83f19733b844791cce7162" kindref="member">glType</ref><sp/>=<sp/>GL_RGB;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_texture_data_1a245c1f6982b7fc7d64726608511bc8fa" kindref="member">pixelType</ref><sp/>=<sp/>GL_UNSIGNED_BYTE;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_texture_data_1ad3d54f040cfac8522bb693904867994b" kindref="member">tex_t</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_texture_data_1a64d6c37e0569a8ad8842cef263185c14" kindref="member">tex_u</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_texture_data_1a2b9ce30701c4d957a73f7bc17863b569" kindref="member">tex_w</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_texture_data_1a0127cecdfee0fdf8ec2958a4d5c6a946" kindref="member">tex_h</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_texture_data_1a615b0e90bc4d881ee64b57d4125fb0aa" kindref="member">width</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_texture_data_1a100f21d392ce8dfb29529a40394f1a16" kindref="member">height</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_texture_data_1a0067ab9b185e86e9961336ddb1159b29" kindref="member">bFlipTexture</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_texture_data_1a5fb03608ad56543ed65caa0c544975d3" kindref="member">compressionType</ref><sp/>=<sp/><ref refid="of_texture_8h_1a218c238fdc83c3d9ac235f31dfd3c895a6054d6a854453c2cf0fa120f76a9384b" kindref="member">OF_COMPRESS_NONE</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_texture_data_1a5dee9955398c2f5c9b244c019b38265e" kindref="member">bAllocated</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classof_texture_data_1a8521140c30a62b5cdb0045cd119e396c" kindref="member">textureID</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classof_texture_data_1a5158e9375dc0805de85e9c1553b415eb" kindref="member">textureTarget</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classof_texture_data_1a2349f7972cb95234e0b726e51d0d8a10" kindref="member">glTypeInternal</ref>;<sp/></highlight><highlight class="comment">//<sp/>internalFormat,<sp/>e.g.,<sp/>GL_RGB8.<sp/>should<sp/>be<sp/>named<sp/>glInternalFormat</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classof_texture_data_1aaaf761282f83f19733b844791cce7162" kindref="member">glType</ref>;<sp/></highlight><highlight class="comment">//<sp/>format,<sp/>e.g.,<sp/>GL_RGB.<sp/>should<sp/>be<sp/>named<sp/>glFormat</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classof_texture_data_1a245c1f6982b7fc7d64726608511bc8fa" kindref="member">pixelType</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>type,<sp/>e.g.,<sp/>GL_UNSIGNED_BYTE.<sp/>should<sp/>be<sp/>named<sp/>glType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_texture_data_1ad3d54f040cfac8522bb693904867994b" kindref="member">tex_t</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_texture_data_1a64d6c37e0569a8ad8842cef263185c14" kindref="member">tex_u</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_texture_data_1a2b9ce30701c4d957a73f7bc17863b569" kindref="member">tex_w</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_texture_data_1a0127cecdfee0fdf8ec2958a4d5c6a946" kindref="member">tex_h</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_texture_data_1a615b0e90bc4d881ee64b57d4125fb0aa" kindref="member">width</ref>,<sp/><ref refid="classof_texture_data_1a100f21d392ce8dfb29529a40394f1a16" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_texture_data_1a0067ab9b185e86e9961336ddb1159b29" kindref="member">bFlipTexture</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_texture_8h_1a218c238fdc83c3d9ac235f31dfd3c895" kindref="member">ofTexCompression</ref><sp/><ref refid="classof_texture_data_1a5fb03608ad56543ed65caa0c544975d3" kindref="member">compressionType</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_texture_data_1a5dee9955398c2f5c9b244c019b38265e" kindref="member">bAllocated</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//enable<sp/>/<sp/>disable<sp/>the<sp/>slight<sp/>offset<sp/>we<sp/>add<sp/>to<sp/>ofTexture&apos;s<sp/>texture<sp/>coords<sp/>to<sp/>compensate<sp/>for<sp/>bad<sp/>edge<sp/>artifiacts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//enabled<sp/>by<sp/>default</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_texture_8cpp_1af70a133cd74f4c448e841521287f16b2" kindref="member">ofEnableTextureEdgeHack</ref>();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_texture_8cpp_1a1c85492981b1ecaa449f6a46b2a34673" kindref="member">ofDisableTextureEdgeHack</ref>();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="classof_texture" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classof_texture" kindref="compound">ofTexture</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classof_base_draws" kindref="compound">ofBaseDraws</ref><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_texture_1ae091e52a2a4a86bc57bf8f17833bbfb8" kindref="member">ofTexture</ref>();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_texture_1ae091e52a2a4a86bc57bf8f17833bbfb8" kindref="member">ofTexture</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_texture" kindref="compound">ofTexture</ref><sp/>&amp;<sp/>mom);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_texture" kindref="compound">ofTexture</ref>&amp;<sp/><ref refid="classof_texture_1a152b6e78436b0525f2d2688fd6304338" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_texture" kindref="compound">ofTexture</ref><sp/>&amp;<sp/>mom);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1a9d0bbb24231157b2795b99241183b297" kindref="member">~ofTexture</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1a37e50fcd472023e3879fda915d356d24" kindref="member">allocate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_texture_data" kindref="compound">ofTextureData</ref><sp/>&amp;<sp/>textureData);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1a37e50fcd472023e3879fda915d356d24" kindref="member">allocate</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>glInternalFormat);<sp/></highlight><highlight class="comment">//uses<sp/>the<sp/>currently<sp/>set<sp/>OF<sp/>texture<sp/>type<sp/>-<sp/>default<sp/>ARB<sp/>texture</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1a37e50fcd472023e3879fda915d356d24" kindref="member">allocate</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>glInternalFormat,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bUseARBExtention);<sp/></highlight><highlight class="comment">//lets<sp/>you<sp/>overide<sp/>the<sp/>default<sp/>OF<sp/>texture<sp/>type</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1a3c220c8be60de9261f1e4788e1a418b7" kindref="member">clear</ref>();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1a1bf3f2171ac0876e17204476e6d0e576" kindref="member">loadData</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>glFormat);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1a1bf3f2171ac0876e17204476e6d0e576" kindref="member">loadData</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>glFormat);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1a1bf3f2171ac0876e17204476e6d0e576" kindref="member">loadData</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal">*<sp/>data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>glFormat);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1a1bf3f2171ac0876e17204476e6d0e576" kindref="member">loadData</ref>(<ref refid="classof_pixels__" kindref="compound">ofPixels</ref><sp/>&amp;<sp/>pix);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1a1bf3f2171ac0876e17204476e6d0e576" kindref="member">loadData</ref>(<ref refid="classof_pixels__" kindref="compound">ofShortPixels</ref><sp/>&amp;<sp/>pix);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1a1bf3f2171ac0876e17204476e6d0e576" kindref="member">loadData</ref>(<ref refid="classof_pixels__" kindref="compound">ofFloatPixels</ref><sp/>&amp;<sp/>pix);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1a0a514787330456b4f5962091a7ee434a" kindref="member">loadScreenData</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//the<sp/>anchor<sp/>is<sp/>the<sp/>point<sp/>the<sp/>image<sp/>is<sp/>drawn<sp/>around.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//this<sp/>can<sp/>be<sp/>useful<sp/>if<sp/>you<sp/>want<sp/>to<sp/>rotate<sp/>an<sp/>image<sp/>around<sp/>a<sp/>particular<sp/>point.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1a5409b3dfe503bc05d7e06c1977ead2ac" kindref="member">setAnchorPercent</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>xPct,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>yPct);<sp/></highlight><highlight class="comment">//set<sp/>the<sp/>anchor<sp/>as<sp/>a<sp/>percentage<sp/>of<sp/>the<sp/>image<sp/>width/height<sp/>(<sp/>0.0-1.0<sp/>range<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1a294061077b44d033ee778615679d5b78" kindref="member">setAnchorPoint</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y);<sp/></highlight><highlight class="comment">//set<sp/>the<sp/>anchor<sp/>point<sp/>in<sp/>pixels</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1abc09e6df3f365142faff8b929a846bab" kindref="member">resetAnchor</ref>();<sp/></highlight><highlight class="comment">//resets<sp/>the<sp/>anchor<sp/>to<sp/>(0,<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1adeb9b690ad862873e2df870695db7f9b" kindref="member">draw</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_rectangle" kindref="compound">ofRectangle</ref><sp/>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1adeb9b690ad862873e2df870695db7f9b" kindref="member">draw</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>&amp;<sp/>p,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>h);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1adeb9b690ad862873e2df870695db7f9b" kindref="member">draw</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>h);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1adeb9b690ad862873e2df870695db7f9b" kindref="member">draw</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>h);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1adeb9b690ad862873e2df870695db7f9b" kindref="member">draw</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>&amp;<sp/>p);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1adeb9b690ad862873e2df870695db7f9b" kindref="member">draw</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1adeb9b690ad862873e2df870695db7f9b" kindref="member">draw</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1adeb9b690ad862873e2df870695db7f9b" kindref="member">draw</ref>(<ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>p1,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>p2,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>p3,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>p4);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1a81005e21996bb1c08ee46119d9b496cc" kindref="member">readToPixels</ref>(<ref refid="classof_pixels__" kindref="compound">ofPixels</ref><sp/>&amp;<sp/>pixels);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1a81005e21996bb1c08ee46119d9b496cc" kindref="member">readToPixels</ref>(<ref refid="classof_pixels__" kindref="compound">ofShortPixels</ref><sp/>&amp;<sp/>pixels);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1a81005e21996bb1c08ee46119d9b496cc" kindref="member">readToPixels</ref>(<ref refid="classof_pixels__" kindref="compound">ofFloatPixels</ref><sp/>&amp;<sp/>pixels);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//for<sp/>the<sp/>advanced<sp/>user<sp/>who<sp/>wants<sp/>to<sp/>draw<sp/>textures<sp/>in<sp/>their<sp/>own<sp/>way</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1afac285fb4c90927401db15887cb75fa5" kindref="member">bind</ref>();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1afc5be354bfe9e13b03e02f44f3982322" kindref="member">unbind</ref>();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>these<sp/>are<sp/>helpers<sp/>to<sp/>allow<sp/>you<sp/>to<sp/>get<sp/>points<sp/>for<sp/>the<sp/>texture<sp/>ala<sp/>&quot;glTexCoordf&quot;<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>but<sp/>are<sp/>texture<sp/>type<sp/>independent.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>use<sp/>them<sp/>for<sp/>immediate<sp/>or<sp/>non<sp/>immediate<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/><ref refid="classof_texture_1a699da66185cd0b61eaf2aa4b76da7a4b" kindref="member">getCoordFromPoint</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>xPos,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>yPos);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/><ref refid="classof_texture_1afcca2b15db836fe03c9a965b477f2f89" kindref="member">getCoordFromPercent</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>xPts,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>yPts);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1ac980af43af2cacdbd57e1bfcd8e222e2" kindref="member">setTextureWrap</ref>(GLint<sp/>wrapModeHorizontal,<sp/>GLint<sp/>wrapModeVertical);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1a71bf583e729e1510cc32d0358a60d72f" kindref="member">setTextureMinMagFilter</ref>(GLint<sp/>minFilter,<sp/>GLint<sp/>maxFilter);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1a40e4284b661dbf0819089cd242c5bc6c" kindref="member">setCompression</ref>(<ref refid="of_texture_8h_1a218c238fdc83c3d9ac235f31dfd3c895" kindref="member">ofTexCompression</ref><sp/>compression);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1a872d4679b1ab826fec051416bf20e53e" kindref="member">bAllocated</ref>();</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1ad57124f5751fb19cf2a5102475ef6180" kindref="member">isAllocated</ref>();</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_texture_data" kindref="compound">ofTextureData</ref><sp/><ref refid="classof_texture_1af5f743ca045e5ecd6fad6a22036e86ed" kindref="member">getTextureData</ref>();</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>reference<sp/>to<sp/>the<sp/>actual<sp/>textureData<sp/>inside<sp/>the<sp/>smart<sp/>pointer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>backwards<sp/>compatibility</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_texture_data" kindref="compound">ofTextureData</ref><sp/><ref refid="classof_texture_1a4c203e4b4c0516e8ee8ebe11de63eb95" kindref="member">texData</ref>;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1ac14833c0221c45645d3ca16d3687a613" kindref="member">getHeight</ref>();</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1a45d8511f11af12cfebd04ebcaadba12f" kindref="member">getWidth</ref>();</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1a1bf3f2171ac0876e17204476e6d0e576" kindref="member">loadData</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>glFormat);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/><ref refid="classof_texture_1afa0a8aa4148384f2f4590873781915d1" kindref="member">anchor</ref>;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_texture_1ab70fdce4a1a2af7d3992400d571254f3" kindref="member">bAnchorIsPct</ref>;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofTexture.h"/>
+  </compounddef>
+</doxygen>

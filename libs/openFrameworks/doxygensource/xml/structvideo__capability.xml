@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="structvideo__capability" kind="struct" prot="public">
+    <compoundname>video_capability</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvideo__capability_1a7917305d8c49f431c4663ba3be97ae55" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char video_capability::name[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" line="37" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvideo__capability_1a1be8b04b83ae4b868244cbcdfba3c1f7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int video_capability::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" line="38" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvideo__capability_1a576f9007f0c0145d6da97014dcf5b718" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int video_capability::channels</definition>
+        <argsstring></argsstring>
+        <name>channels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" line="39" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvideo__capability_1a7f8880a856d6c6912297fb88a3a6f83a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int video_capability::audios</definition>
+        <argsstring></argsstring>
+        <name>audios</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" line="40" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvideo__capability_1aa5b01658626009fe0d4c97f8d846e4bb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int video_capability::maxwidth</definition>
+        <argsstring></argsstring>
+        <name>maxwidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" line="41" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvideo__capability_1a204cfb15ed1a3a288f3ed9619bb9cd33" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int video_capability::maxheight</definition>
+        <argsstring></argsstring>
+        <name>maxheight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" line="42" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvideo__capability_1aefbcba5eae14d6c58a3c2e85b6a89549" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int video_capability::minwidth</definition>
+        <argsstring></argsstring>
+        <name>minwidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" line="43" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvideo__capability_1a1ee1474d191262939231bbe060fe92fe" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int video_capability::minheight</definition>
+        <argsstring></argsstring>
+        <name>minheight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" line="44" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" line="36" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="35" bodyend="45"/>
+    <listofallmembers>
+      <member refid="structvideo__capability_1a7f8880a856d6c6912297fb88a3a6f83a" prot="public" virt="non-virtual"><scope>video_capability</scope><name>audios</name></member>
+      <member refid="structvideo__capability_1a576f9007f0c0145d6da97014dcf5b718" prot="public" virt="non-virtual"><scope>video_capability</scope><name>channels</name></member>
+      <member refid="structvideo__capability_1a204cfb15ed1a3a288f3ed9619bb9cd33" prot="public" virt="non-virtual"><scope>video_capability</scope><name>maxheight</name></member>
+      <member refid="structvideo__capability_1aa5b01658626009fe0d4c97f8d846e4bb" prot="public" virt="non-virtual"><scope>video_capability</scope><name>maxwidth</name></member>
+      <member refid="structvideo__capability_1a1ee1474d191262939231bbe060fe92fe" prot="public" virt="non-virtual"><scope>video_capability</scope><name>minheight</name></member>
+      <member refid="structvideo__capability_1aefbcba5eae14d6c58a3c2e85b6a89549" prot="public" virt="non-virtual"><scope>video_capability</scope><name>minwidth</name></member>
+      <member refid="structvideo__capability_1a7917305d8c49f431c4663ba3be97ae55" prot="public" virt="non-virtual"><scope>video_capability</scope><name>name</name></member>
+      <member refid="structvideo__capability_1a1be8b04b83ae4b868244cbcdfba3c1f7" prot="public" virt="non-virtual"><scope>video_capability</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,983 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="of_g_l_utils_8h" kind="file">
+    <compoundname>ofGLUtils.h</compoundname>
+    <includedby refid="of_mesh_8h" local="yes">3d/ofMesh.h</includedby>
+    <includedby refid="of_g_l_renderer_8cpp" local="yes">gl/ofGLRenderer.cpp</includedby>
+    <includedby refid="of_vbo_8h" local="yes">gl/ofVbo.h</includedby>
+    <includedby refid="of_main_8h" local="yes">ofMain.h</includedby>
+    <invincdepgraph>
+      <node id="1389">
+        <label>video/ofGstVideoGrabber.cpp</label>
+        <link refid="of_gst_video_grabber_8cpp"/>
+      </node>
+      <node id="1350">
+        <label>sound/ofSoundStream.cpp</label>
+        <link refid="of_sound_stream_8cpp"/>
+      </node>
+      <node id="1360">
+        <label>utils/ofUtils.cpp</label>
+        <link refid="of_utils_8cpp"/>
+      </node>
+      <node id="1329">
+        <label>gl/ofGLRenderer.cpp</label>
+        <link refid="of_g_l_renderer_8cpp"/>
+      </node>
+      <node id="1343">
+        <label>graphics/ofTessellator.cpp</label>
+        <link refid="of_tessellator_8cpp"/>
+      </node>
+      <node id="1349">
+        <label>sound/ofSoundStream.h</label>
+        <link refid="of_sound_stream_8h"/>
+        <childnode refid="1347" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+        <childnode refid="1350" relation="include">
+        </childnode>
+      </node>
+      <node id="1392">
+        <label>video/ofQuickTimePlayer.h</label>
+        <link refid="of_quick_time_player_8h"/>
+        <childnode refid="1393" relation="include">
+        </childnode>
+      </node>
+      <node id="1385">
+        <label>types/ofBaseTypes.cpp</label>
+        <link refid="of_base_types_8cpp"/>
+      </node>
+      <node id="1348">
+        <label>events/ofEvents.cpp</label>
+        <link refid="of_events_8cpp"/>
+      </node>
+      <node id="1362">
+        <label>video/ofDirectShowGrabber.cpp</label>
+        <link refid="of_direct_show_grabber_8cpp"/>
+      </node>
+      <node id="1334">
+        <label>ofMain.h</label>
+        <link refid="of_main_8h"/>
+      </node>
+      <node id="1384">
+        <label>sound/ofSoundPlayer.cpp</label>
+        <link refid="of_sound_player_8cpp"/>
+      </node>
+      <node id="1333">
+        <label>gl/ofVboMesh.cpp</label>
+        <link refid="of_vbo_mesh_8cpp"/>
+      </node>
+      <node id="1342">
+        <label>graphics/ofTessellator.h</label>
+        <link refid="of_tessellator_8h"/>
+        <childnode refid="1335" relation="include">
+        </childnode>
+        <childnode refid="1339" relation="include">
+        </childnode>
+        <childnode refid="1343" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+      </node>
+      <node id="1359">
+        <label>graphics/ofImage.cpp</label>
+        <link refid="of_image_8cpp"/>
+      </node>
+      <node id="1357">
+        <label>graphics/ofBitmapFont.cpp</label>
+        <link refid="of_bitmap_font_8cpp"/>
+      </node>
+      <node id="1375">
+        <label>3d/ofCamera.cpp</label>
+        <link refid="of_camera_8cpp"/>
+      </node>
+      <node id="1331">
+        <label>gl/ofVbo.cpp</label>
+        <link refid="of_vbo_8cpp"/>
+      </node>
+      <node id="1378">
+        <label>3d/ofNode.cpp</label>
+        <link refid="of_node_8cpp"/>
+      </node>
+      <node id="1353">
+        <label>gl/ofFbo.cpp</label>
+        <link refid="of_fbo_8cpp"/>
+      </node>
+      <node id="1386">
+        <label>video/ofGstUtils.h</label>
+        <link refid="of_gst_utils_8h"/>
+        <childnode refid="1387" relation="include">
+        </childnode>
+        <childnode refid="1388" relation="include">
+        </childnode>
+        <childnode refid="1390" relation="include">
+        </childnode>
+      </node>
+      <node id="1347">
+        <label>app/ofAppRunner.cpp</label>
+        <link refid="of_app_runner_8cpp"/>
+      </node>
+      <node id="1388">
+        <label>video/ofGstVideoGrabber.h</label>
+        <link refid="of_gst_video_grabber_8h"/>
+        <childnode refid="1389" relation="include">
+        </childnode>
+        <childnode refid="1363" relation="include">
+        </childnode>
+      </node>
+      <node id="1356">
+        <label>gl/ofTexture.cpp</label>
+        <link refid="of_texture_8cpp"/>
+      </node>
+      <node id="1376">
+        <label>3d/ofEasyCam.h</label>
+        <link refid="of_easy_cam_8h"/>
+        <childnode refid="1377" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+      </node>
+      <node id="1369">
+        <label>video/ofVideoPlayer.cpp</label>
+        <link refid="of_video_player_8cpp"/>
+      </node>
+      <node id="1344">
+        <label>types/ofBaseTypes.h</label>
+        <link refid="of_base_types_8h"/>
+        <childnode refid="1345" relation="include">
+        </childnode>
+        <childnode refid="1351" relation="include">
+        </childnode>
+        <childnode refid="1370" relation="include">
+        </childnode>
+        <childnode refid="1354" relation="include">
+        </childnode>
+        <childnode refid="1336" relation="include">
+        </childnode>
+        <childnode refid="1335" relation="include">
+        </childnode>
+        <childnode refid="1371" relation="include">
+        </childnode>
+        <childnode refid="1358" relation="include">
+        </childnode>
+        <childnode refid="1338" relation="include">
+        </childnode>
+        <childnode refid="1382" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+        <childnode refid="1383" relation="include">
+        </childnode>
+        <childnode refid="1349" relation="include">
+        </childnode>
+        <childnode refid="1385" relation="include">
+        </childnode>
+        <childnode refid="1361" relation="include">
+        </childnode>
+        <childnode refid="1386" relation="include">
+        </childnode>
+        <childnode refid="1363" relation="include">
+        </childnode>
+        <childnode refid="1366" relation="include">
+        </childnode>
+        <childnode refid="1368" relation="include">
+        </childnode>
+        <childnode refid="1392" relation="include">
+        </childnode>
+        <childnode refid="1365" relation="include">
+        </childnode>
+      </node>
+      <node id="1370">
+        <label>gl/ofGLRenderer.h</label>
+        <link refid="of_g_l_renderer_8h"/>
+        <childnode refid="1347" relation="include">
+        </childnode>
+        <childnode refid="1353" relation="include">
+        </childnode>
+        <childnode refid="1329" relation="include">
+        </childnode>
+        <childnode refid="1371" relation="include">
+        </childnode>
+        <childnode refid="1338" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+      </node>
+      <node id="1382">
+        <label>graphics/ofRendererCollection.h</label>
+        <link refid="of_renderer_collection_8h"/>
+        <childnode refid="1338" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+      </node>
+      <node id="1366">
+        <label>video/ofiPhoneVideoPlayer.h</label>
+        <link refid="ofi_phone_video_player_8h"/>
+        <childnode refid="1367" relation="include">
+        </childnode>
+      </node>
+      <node id="1361">
+        <label>video/ofDirectShowGrabber.h</label>
+        <link refid="of_direct_show_grabber_8h"/>
+        <childnode refid="1362" relation="include">
+        </childnode>
+      </node>
+      <node id="1336">
+        <label>graphics/ofCairoRenderer.h</label>
+        <link refid="of_cairo_renderer_8h"/>
+        <childnode refid="1337" relation="include">
+        </childnode>
+        <childnode refid="1338" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+      </node>
+      <node id="1335">
+        <label>graphics/ofPath.h</label>
+        <link refid="of_path_8h"/>
+        <childnode refid="1329" relation="include">
+        </childnode>
+        <childnode refid="1336" relation="include">
+        </childnode>
+        <childnode refid="1338" relation="include">
+        </childnode>
+        <childnode refid="1339" relation="include">
+        </childnode>
+        <childnode refid="1340" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+      </node>
+      <node id="1355">
+        <label>gl/ofShader.cpp</label>
+        <link refid="of_shader_8cpp"/>
+      </node>
+      <node id="1390">
+        <label>video/ofGstVideoPlayer.h</label>
+        <link refid="of_gst_video_player_8h"/>
+        <childnode refid="1391" relation="include">
+        </childnode>
+        <childnode refid="1368" relation="include">
+        </childnode>
+      </node>
+      <node id="1379">
+        <label>gl/ofLight.h</label>
+        <link refid="of_light_8h"/>
+        <childnode refid="1380" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+      </node>
+      <node id="1365">
+        <label>video/ofVideoGrabber.cpp</label>
+        <link refid="of_video_grabber_8cpp"/>
+      </node>
+      <node id="1374">
+        <label>3d/ofCamera.h</label>
+        <link refid="of_camera_8h"/>
+        <childnode refid="1375" relation="include">
+        </childnode>
+        <childnode refid="1376" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+      </node>
+      <node id="1338">
+        <label>graphics/ofGraphics.cpp</label>
+        <link refid="of_graphics_8cpp"/>
+      </node>
+      <node id="1352">
+        <label>gl/ofFbo.h</label>
+        <link refid="of_fbo_8h"/>
+        <childnode refid="1353" relation="include">
+        </childnode>
+        <childnode refid="1329" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+      </node>
+      <node id="1367">
+        <label>video/ofiPhoneVideoPlayer.mm</label>
+        <link refid="ofi_phone_video_player_8mm"/>
+      </node>
+      <node id="1387">
+        <label>video/ofGstUtils.cpp</label>
+        <link refid="of_gst_utils_8cpp"/>
+      </node>
+      <node id="1383">
+        <label>sound/ofSoundPlayer.h</label>
+        <link refid="of_sound_player_8h"/>
+        <childnode refid="1347" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+        <childnode refid="1384" relation="include">
+        </childnode>
+      </node>
+      <node id="1363">
+        <label>video/ofVideoGrabber.h</label>
+        <link refid="of_video_grabber_8h"/>
+        <childnode refid="1334" relation="include">
+        </childnode>
+        <childnode refid="1364" relation="include">
+        </childnode>
+        <childnode refid="1365" relation="include">
+        </childnode>
+      </node>
+      <node id="1346">
+        <label>app/ofAppGlutWindow.cpp</label>
+        <link refid="of_app_glut_window_8cpp"/>
+      </node>
+      <node id="1377">
+        <label>3d/ofEasyCam.cpp</label>
+        <link refid="of_easy_cam_8cpp"/>
+      </node>
+      <node id="1332">
+        <label>gl/ofVboMesh.h</label>
+        <link refid="of_vbo_mesh_8h"/>
+        <childnode refid="1333" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+      </node>
+      <node id="1391">
+        <label>video/ofGstVideoPlayer.cpp</label>
+        <link refid="of_gst_video_player_8cpp"/>
+      </node>
+      <node id="1368">
+        <label>video/ofVideoPlayer.h</label>
+        <link refid="of_video_player_8h"/>
+        <childnode refid="1334" relation="include">
+        </childnode>
+        <childnode refid="1366" relation="include">
+        </childnode>
+        <childnode refid="1369" relation="include">
+        </childnode>
+      </node>
+      <node id="1326">
+        <label>gl/ofGLUtils.h</label>
+        <link refid="ofGLUtils.h"/>
+        <childnode refid="1327" relation="include">
+        </childnode>
+        <childnode refid="1329" relation="include">
+        </childnode>
+        <childnode refid="1330" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+      </node>
+      <node id="1373">
+        <label>3d/ofNode.h</label>
+        <link refid="of_node_8h"/>
+        <childnode refid="1374" relation="include">
+        </childnode>
+        <childnode refid="1378" relation="include">
+        </childnode>
+        <childnode refid="1379" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+      </node>
+      <node id="1372">
+        <label>3d/of3dUtils.cpp</label>
+        <link refid="of3d_utils_8cpp"/>
+      </node>
+      <node id="1327">
+        <label>3d/ofMesh.h</label>
+        <link refid="of_mesh_8h"/>
+        <childnode refid="1328" relation="include">
+        </childnode>
+        <childnode refid="1329" relation="include">
+        </childnode>
+        <childnode refid="1330" relation="include">
+        </childnode>
+        <childnode refid="1332" relation="include">
+        </childnode>
+        <childnode refid="1335" relation="include">
+        </childnode>
+        <childnode refid="1342" relation="include">
+        </childnode>
+        <childnode refid="1337" relation="include">
+        </childnode>
+        <childnode refid="1340" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+        <childnode refid="1344" relation="include">
+        </childnode>
+      </node>
+      <node id="1371">
+        <label>graphics/ofGraphics.h</label>
+        <link refid="of_graphics_8h"/>
+        <childnode refid="1372" relation="include">
+        </childnode>
+        <childnode refid="1373" relation="include">
+        </childnode>
+        <childnode refid="1328" relation="include">
+        </childnode>
+        <childnode refid="1346" relation="include">
+        </childnode>
+        <childnode refid="1347" relation="include">
+        </childnode>
+        <childnode refid="1348" relation="include">
+        </childnode>
+        <childnode refid="1353" relation="include">
+        </childnode>
+        <childnode refid="1329" relation="include">
+        </childnode>
+        <childnode refid="1356" relation="include">
+        </childnode>
+        <childnode refid="1337" relation="include">
+        </childnode>
+        <childnode refid="1338" relation="include">
+        </childnode>
+        <childnode refid="1359" relation="include">
+        </childnode>
+        <childnode refid="1339" relation="include">
+        </childnode>
+        <childnode refid="1381" relation="include">
+        </childnode>
+        <childnode refid="1341" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+        <childnode refid="1360" relation="include">
+        </childnode>
+      </node>
+      <node id="1380">
+        <label>gl/ofLight.cpp</label>
+        <link refid="of_light_8cpp"/>
+      </node>
+      <node id="1339">
+        <label>graphics/ofPath.cpp</label>
+        <link refid="of_path_8cpp"/>
+      </node>
+      <node id="1364">
+        <label>video/ofiPhoneVideoGrabber.h</label>
+        <link refid="ofi_phone_video_grabber_8h"/>
+      </node>
+      <node id="1340">
+        <label>graphics/ofTrueTypeFont.h</label>
+        <link refid="of_true_type_font_8h"/>
+        <childnode refid="1341" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+      </node>
+      <node id="1393">
+        <label>video/ofQuickTimePlayer.cpp</label>
+        <link refid="of_quick_time_player_8cpp"/>
+      </node>
+      <node id="1351">
+        <label>gl/ofTexture.h</label>
+        <link refid="of_texture_8h"/>
+        <childnode refid="1352" relation="include">
+        </childnode>
+        <childnode refid="1354" relation="include">
+        </childnode>
+        <childnode refid="1356" relation="include">
+        </childnode>
+        <childnode refid="1357" relation="include">
+        </childnode>
+        <childnode refid="1358" relation="include">
+        </childnode>
+        <childnode refid="1340" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+        <childnode refid="1361" relation="include">
+        </childnode>
+        <childnode refid="1363" relation="include">
+        </childnode>
+        <childnode refid="1366" relation="include">
+        </childnode>
+        <childnode refid="1368" relation="include">
+        </childnode>
+      </node>
+      <node id="1337">
+        <label>graphics/ofCairoRenderer.cpp</label>
+        <link refid="of_cairo_renderer_8cpp"/>
+      </node>
+      <node id="1330">
+        <label>gl/ofVbo.h</label>
+        <link refid="of_vbo_8h"/>
+        <childnode refid="1331" relation="include">
+        </childnode>
+        <childnode refid="1332" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+      </node>
+      <node id="1354">
+        <label>gl/ofShader.h</label>
+        <link refid="of_shader_8h"/>
+        <childnode refid="1355" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+      </node>
+      <node id="1381">
+        <label>graphics/ofPolyline.cpp</label>
+        <link refid="of_polyline_8cpp"/>
+      </node>
+      <node id="1328">
+        <label>3d/ofMesh.cpp</label>
+        <link refid="of_mesh_8cpp"/>
+      </node>
+      <node id="1341">
+        <label>graphics/ofTrueTypeFont.cpp</label>
+        <link refid="of_true_type_font_8cpp"/>
+      </node>
+      <node id="1358">
+        <label>graphics/ofImage.h</label>
+        <link refid="of_image_8h"/>
+        <childnode refid="1347" relation="include">
+        </childnode>
+        <childnode refid="1329" relation="include">
+        </childnode>
+        <childnode refid="1337" relation="include">
+        </childnode>
+        <childnode refid="1359" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+        <childnode refid="1360" relation="include">
+        </childnode>
+      </node>
+      <node id="1345">
+        <label>app/ofBaseApp.h</label>
+        <link refid="of_base_app_8h"/>
+        <childnode refid="1346" relation="include">
+        </childnode>
+        <childnode refid="1347" relation="include">
+        </childnode>
+        <childnode refid="1348" relation="include">
+        </childnode>
+        <childnode refid="1334" relation="include">
+        </childnode>
+        <childnode refid="1349" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="of_g_l_utils_8h_1a1a0910ed41c2c57da5af91547a85784c" prot="public" static="no">
+        <name>OF_TRIANGLES_MODE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" line="22" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="of_g_l_utils_8h_1a6fe64123f2dac6a61927095ad64552bb" prot="public" static="no">
+        <name>OF_TRIANGLE_STRIP_MODE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" line="23" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="of_g_l_utils_8h_1a6d2fc4556c70eaac0d6ff9a14b1f34d2" prot="public" static="no">
+        <name>OF_TRIANGLE_FAN_MODE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" line="24" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="of_g_l_utils_8h_1aa6e99f322e7b2ede5a16e157cad5b9e0" prot="public" static="no">
+        <name>OF_LINES_MODE</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" line="25" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="of_g_l_utils_8h_1a7f683c9a910ac7b847662df1e8fde7d2" prot="public" static="no">
+        <name>OF_LINE_STRIP_MODE</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" line="26" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="of_g_l_utils_8h_1a03190c0988196e46bb8d06367403e27c" prot="public" static="no">
+        <name>OF_LINE_LOOP_MODE</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" line="27" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="of_g_l_utils_8h_1a6800bac0c505b8ddd83e1ededc5dc9e7" prot="public" static="no">
+        <name>OF_POINTS_MODE</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" line="28" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0" prot="public" static="no">
+        <name>ofPrimitiveMode</name>
+        <enumvalue id="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0a56773d485b35d619c99840afc4b02193" prot="public">
+          <name>OF_PRIMITIVE_TRIANGLES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0a5799605679284702ca188191180c44c6" prot="public">
+          <name>OF_PRIMITIVE_TRIANGLE_STRIP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0a5628f14a650656cfc4f34eef05c9864b" prot="public">
+          <name>OF_PRIMITIVE_TRIANGLE_FAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0ad5386d25de3d0740b722db775ab27942" prot="public">
+          <name>OF_PRIMITIVE_LINES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0ab55aaf5ce0b1bfcfeb8dc9e7bcf0ac16" prot="public">
+          <name>OF_PRIMITIVE_LINE_STRIP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0aae74b9431bb39b282303f7679904ea19" prot="public">
+          <name>OF_PRIMITIVE_LINE_LOOP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0a70a3b95dff9eeeaa681988960f6092c5" prot="public">
+          <name>OF_PRIMITIVE_POINTS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" line="11" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" bodystart="11" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="enum" id="of_g_l_utils_8h_1a6beb1fbbaba728909c78cda1eadfe28e" prot="public" static="no">
+        <name>ofPolyRenderMode</name>
+        <enumvalue id="of_g_l_utils_8h_1a6beb1fbbaba728909c78cda1eadfe28eaeb889f7c31ce5f7073b65418fb932430" prot="public">
+          <name>OF_MESH_POINTS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="of_g_l_utils_8h_1a6beb1fbbaba728909c78cda1eadfe28ea4e21a33555a62f1cd1a45ea79b09925c" prot="public">
+          <name>OF_MESH_WIREFRAME</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="of_g_l_utils_8h_1a6beb1fbbaba728909c78cda1eadfe28eaee7a8bf844bb59e3b9219cb448ed7475" prot="public">
+          <name>OF_MESH_FILL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" line="30" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" bodystart="30" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="of_g_l_utils_8h_1ab4c3ae872231262c88bf73881a6e7ec3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GLuint</type>
+        <definition>GLuint ofGetGLPolyMode</definition>
+        <argsstring>(ofPolyRenderMode m)</argsstring>
+        <name>ofGetGLPolyMode</name>
+        <param>
+          <type><ref refid="of_g_l_utils_8h_1a6beb1fbbaba728909c78cda1eadfe28e" kindref="member">ofPolyRenderMode</ref></type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" line="37" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" bodystart="37" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="of_g_l_utils_8h_1a7d86d2bb2f1a0352cbd917f1eb1cf636" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="of_g_l_utils_8h_1a6beb1fbbaba728909c78cda1eadfe28e" kindref="member">ofPolyRenderMode</ref></type>
+        <definition>ofPolyRenderMode ofGetOFPolyMode</definition>
+        <argsstring>(GLuint m)</argsstring>
+        <name>ofGetOFPolyMode</name>
+        <param>
+          <type>GLuint</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" line="59" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" bodystart="59" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="of_g_l_utils_8h_1a4355b78c04af2c5253f518847449c8e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GLuint</type>
+        <definition>GLuint ofGetGLPrimitiveMode</definition>
+        <argsstring>(ofPrimitiveMode mode)</argsstring>
+        <name>ofGetGLPrimitiveMode</name>
+        <param>
+          <type><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0" kindref="member">ofPrimitiveMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" line="82" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" bodystart="82" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="of_g_l_utils_8h_1ab60a9f964930c5c42e895c4a2987a42d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0" kindref="member">ofPrimitiveMode</ref></type>
+        <definition>ofPrimitiveMode ofGetOFPrimitiveMode</definition>
+        <argsstring>(GLuint mode)</argsstring>
+        <name>ofGetOFPrimitiveMode</name>
+        <param>
+          <type>GLuint</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" line="112" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" bodystart="112" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="of_g_l_utils_8h_1a9e61c82188155f957c8b7561670dfd6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofGetGLTypeFromPixelFormat</definition>
+        <argsstring>(ofPixelFormat pixelFormat)</argsstring>
+        <name>ofGetGLTypeFromPixelFormat</name>
+        <param>
+          <type><ref refid="of_constants_8h_1ae227396622740556688053d3dc0f1693" kindref="member">ofPixelFormat</ref></type>
+          <declname>pixelFormat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" line="142" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h" bodystart="142" bodyend="153"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>ofGLUtils.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>02/03/2011</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>arturo</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>OFGLUTILS_H_</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OFGLUTILS_H_</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0" kindref="member">ofPrimitiveMode</ref>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0a56773d485b35d619c99840afc4b02193" kindref="member">OF_PRIMITIVE_TRIANGLES</ref>,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0a5799605679284702ca188191180c44c6" kindref="member">OF_PRIMITIVE_TRIANGLE_STRIP</ref>,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0a5628f14a650656cfc4f34eef05c9864b" kindref="member">OF_PRIMITIVE_TRIANGLE_FAN</ref>,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0ad5386d25de3d0740b722db775ab27942" kindref="member">OF_PRIMITIVE_LINES</ref>,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0ab55aaf5ce0b1bfcfeb8dc9e7bcf0ac16" kindref="member">OF_PRIMITIVE_LINE_STRIP</ref>,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0aae74b9431bb39b282303f7679904ea19" kindref="member">OF_PRIMITIVE_LINE_LOOP</ref>,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0a70a3b95dff9eeeaa681988960f6092c5" kindref="member">OF_PRIMITIVE_POINTS</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//legacy<sp/>-<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OF_TRIANGLES_MODE<sp/>0</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OF_TRIANGLE_STRIP_MODE<sp/>1</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OF_TRIANGLE_FAN_MODE<sp/>2</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OF_LINES_MODE<sp/>3</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OF_LINE_STRIP_MODE<sp/>4</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OF_LINE_LOOP_MODE<sp/>5</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OF_POINTS_MODE<sp/>6</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a6beb1fbbaba728909c78cda1eadfe28e" kindref="member">ofPolyRenderMode</ref>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_g_l_utils_8h_1a6beb1fbbaba728909c78cda1eadfe28eaeb889f7c31ce5f7073b65418fb932430" kindref="member">OF_MESH_POINTS</ref>,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_g_l_utils_8h_1a6beb1fbbaba728909c78cda1eadfe28ea4e21a33555a62f1cd1a45ea79b09925c" kindref="member">OF_MESH_WIREFRAME</ref>,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_g_l_utils_8h_1a6beb1fbbaba728909c78cda1eadfe28eaee7a8bf844bb59e3b9219cb448ed7475" kindref="member">OF_MESH_FILL</ref></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>GLuint<sp/><ref refid="of_g_l_utils_8h_1ab4c3ae872231262c88bf73881a6e7ec3" kindref="member">ofGetGLPolyMode</ref>(<ref refid="of_g_l_utils_8h_1a6beb1fbbaba728909c78cda1eadfe28e" kindref="member">ofPolyRenderMode</ref><sp/>m){</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TARGET_OPENGLES</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(m){</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal">(<ref refid="of_g_l_utils_8h_1a6beb1fbbaba728909c78cda1eadfe28eaeb889f7c31ce5f7073b65418fb932430" kindref="member">OF_MESH_POINTS</ref>):</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GL_POINT;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal">(<ref refid="of_g_l_utils_8h_1a6beb1fbbaba728909c78cda1eadfe28ea4e21a33555a62f1cd1a45ea79b09925c" kindref="member">OF_MESH_WIREFRAME</ref>):</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GL_LINE;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal">(<ref refid="of_g_l_utils_8h_1a6beb1fbbaba728909c78cda1eadfe28eaee7a8bf844bb59e3b9219cb448ed7475" kindref="member">OF_MESH_FILL</ref>):</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GL_FILL;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_log" kindref="compound" tooltip="a streaming log interface">ofLog</ref>(<ref refid="of_log_8h_1a6b3aba959377cae6ed3afbb9d5826fe4a64e5a9d8e8727e95ec14005ffd896a6d" kindref="member">OF_LOG_ERROR</ref>,</highlight><highlight class="stringliteral">&quot;asked<sp/>for<sp/>unsupported<sp/>or<sp/>non<sp/>existant<sp/>poly<sp/>mode<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="of_utils_8h_1aac3a56563e3bbf91aa94d9ff5c3b8cc5" kindref="member">ofToString</ref>(m)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>returning<sp/>GL_FILL&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GL_FILL;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a6beb1fbbaba728909c78cda1eadfe28e" kindref="member">ofPolyRenderMode</ref><sp/><ref refid="of_g_l_utils_8h_1a7d86d2bb2f1a0352cbd917f1eb1cf636" kindref="member">ofGetOFPolyMode</ref>(GLuint<sp/>m){</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TARGET_OPENGLES</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(m){</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal">(GL_POINT):</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a6beb1fbbaba728909c78cda1eadfe28eaeb889f7c31ce5f7073b65418fb932430" kindref="member">OF_MESH_POINTS</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal">(GL_LINE):</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a6beb1fbbaba728909c78cda1eadfe28ea4e21a33555a62f1cd1a45ea79b09925c" kindref="member">OF_MESH_WIREFRAME</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal">(GL_FILL):</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a6beb1fbbaba728909c78cda1eadfe28eaee7a8bf844bb59e3b9219cb448ed7475" kindref="member">OF_MESH_FILL</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_log" kindref="compound" tooltip="a streaming log interface">ofLog</ref>(<ref refid="of_log_8h_1a6b3aba959377cae6ed3afbb9d5826fe4a64e5a9d8e8727e95ec14005ffd896a6d" kindref="member">OF_LOG_ERROR</ref>,</highlight><highlight class="stringliteral">&quot;asked<sp/>for<sp/>non<sp/>existant<sp/>glPolygonMode<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="of_utils_8h_1aac3a56563e3bbf91aa94d9ff5c3b8cc5" kindref="member">ofToString</ref>(m)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>returning<sp/>OF_MESH_FILL&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a6beb1fbbaba728909c78cda1eadfe28eaee7a8bf844bb59e3b9219cb448ed7475" kindref="member">OF_MESH_FILL</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a6beb1fbbaba728909c78cda1eadfe28eaee7a8bf844bb59e3b9219cb448ed7475" kindref="member">OF_MESH_FILL</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>GLuint<sp/><ref refid="of_g_l_utils_8h_1a4355b78c04af2c5253f518847449c8e2" kindref="member">ofGetGLPrimitiveMode</ref>(<ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0" kindref="member">ofPrimitiveMode</ref><sp/>mode){</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(mode){</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0a56773d485b35d619c99840afc4b02193" kindref="member">OF_PRIMITIVE_TRIANGLES</ref>:</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GL_TRIANGLES;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0a5799605679284702ca188191180c44c6" kindref="member">OF_PRIMITIVE_TRIANGLE_STRIP</ref>:</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GL_TRIANGLE_STRIP;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0a5628f14a650656cfc4f34eef05c9864b" kindref="member">OF_PRIMITIVE_TRIANGLE_FAN</ref>:</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GL_TRIANGLE_FAN;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0ad5386d25de3d0740b722db775ab27942" kindref="member">OF_PRIMITIVE_LINES</ref>:</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GL_LINES;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0ab55aaf5ce0b1bfcfeb8dc9e7bcf0ac16" kindref="member">OF_PRIMITIVE_LINE_STRIP</ref>:</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GL_LINE_STRIP;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0aae74b9431bb39b282303f7679904ea19" kindref="member">OF_PRIMITIVE_LINE_LOOP</ref>:</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GL_LINE_LOOP;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0a70a3b95dff9eeeaa681988960f6092c5" kindref="member">OF_PRIMITIVE_POINTS</ref>:</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GL_POINTS;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_log" kindref="compound" tooltip="a streaming log interface">ofLog</ref>(<ref refid="of_log_8h_1a6b3aba959377cae6ed3afbb9d5826fe4a64e5a9d8e8727e95ec14005ffd896a6d" kindref="member">OF_LOG_ERROR</ref>,</highlight><highlight class="stringliteral">&quot;asked<sp/>for<sp/>unsupported<sp/>or<sp/>non<sp/>existant<sp/>primitive<sp/>mode<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="of_utils_8h_1aac3a56563e3bbf91aa94d9ff5c3b8cc5" kindref="member">ofToString</ref>(mode)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>returning<sp/>GL_TRIANGLES&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GL_TRIANGLES;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0" kindref="member">ofPrimitiveMode</ref><sp/><ref refid="of_g_l_utils_8h_1ab60a9f964930c5c42e895c4a2987a42d" kindref="member">ofGetOFPrimitiveMode</ref>(GLuint<sp/>mode){</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(mode){</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GL_TRIANGLES:</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0a56773d485b35d619c99840afc4b02193" kindref="member">OF_PRIMITIVE_TRIANGLES</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GL_TRIANGLE_STRIP:</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0a5799605679284702ca188191180c44c6" kindref="member">OF_PRIMITIVE_TRIANGLE_STRIP</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GL_TRIANGLE_FAN:</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0a5628f14a650656cfc4f34eef05c9864b" kindref="member">OF_PRIMITIVE_TRIANGLE_FAN</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GL_LINES:</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0ad5386d25de3d0740b722db775ab27942" kindref="member">OF_PRIMITIVE_LINES</ref>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GL_LINE_STRIP:</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0ab55aaf5ce0b1bfcfeb8dc9e7bcf0ac16" kindref="member">OF_PRIMITIVE_LINE_STRIP</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GL_LINE_LOOP:</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0aae74b9431bb39b282303f7679904ea19" kindref="member">OF_PRIMITIVE_LINE_LOOP</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GL_POINTS:</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0a70a3b95dff9eeeaa681988960f6092c5" kindref="member">OF_PRIMITIVE_POINTS</ref>;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_log" kindref="compound" tooltip="a streaming log interface">ofLog</ref>(<ref refid="of_log_8h_1a6b3aba959377cae6ed3afbb9d5826fe4a64e5a9d8e8727e95ec14005ffd896a6d" kindref="member">OF_LOG_ERROR</ref>,</highlight><highlight class="stringliteral">&quot;asked<sp/>for<sp/>non<sp/>existant<sp/>primitive<sp/>mode<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="of_utils_8h_1aac3a56563e3bbf91aa94d9ff5c3b8cc5" kindref="member">ofToString</ref>(mode)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>returning<sp/>OF_PRIMITIVE_TRIANGLES&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a0f71f0b23a18629a446952d5540e16e0a56773d485b35d619c99840afc4b02193" kindref="member">OF_PRIMITIVE_TRIANGLES</ref>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="of_g_l_utils_8h_1a9e61c82188155f957c8b7561670dfd6d" kindref="member">ofGetGLTypeFromPixelFormat</ref>(<ref refid="of_constants_8h_1ae227396622740556688053d3dc0f1693" kindref="member">ofPixelFormat</ref><sp/>pixelFormat){</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(pixelFormat){</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="of_constants_8h_1ae227396622740556688053d3dc0f1693a2fec47e004b55e8111f0f1f8b48e850c" kindref="member">OF_PIXELS_BGRA</ref>:</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GL_RGBA;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="of_constants_8h_1ae227396622740556688053d3dc0f1693a5f942d75a0fa2695cc1f6a12eca41a02" kindref="member">OF_PIXELS_MONO</ref>:</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GL_LUMINANCE;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="of_constants_8h_1ae227396622740556688053d3dc0f1693a4404cf07bb97240a53ff7bcf077608e9" kindref="member">OF_PIXELS_RGB</ref>:</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GL_RGB;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="of_constants_8h_1ae227396622740556688053d3dc0f1693a8751ed3001114961e4f909cc3a10553b" kindref="member">OF_PIXELS_RGBA</ref>:</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GL_RGBA;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>OFGLUTILS_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofGLUtils.h"/>
+  </compounddef>
+</doxygen>

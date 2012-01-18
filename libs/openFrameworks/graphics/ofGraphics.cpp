@@ -33,7 +33,7 @@
 #ifdef TARGET_OSX
 	#include <GLUT/glut.h>
 #endif
-#ifdef TARGET_LINUX
+#if defined(TARGET_LINUX) && !defined(TARGET_ARMV7L_GENERIC)
 	#include <GL/glut.h>
 #endif
 

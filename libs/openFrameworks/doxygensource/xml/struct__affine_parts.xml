@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="struct__affine_parts" kind="struct" prot="public">
+    <compoundname>_affineParts</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__affine_parts_1a5d588e12c87acab2b1780f363d3289d8" prot="public" static="no" mutable="no">
+        <type><ref refid="classof_vec4f" kindref="compound">ofVec4f</ref></type>
+        <definition>ofVec4f _affineParts::t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMatrix4x4.cpp" line="951" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMatrix4x4.cpp" bodystart="951" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__affine_parts_1a8216eff6db4e9608fb8dd3a607d74a1a" prot="public" static="no" mutable="no">
+        <type><ref refid="classof_quaternion" kindref="compound">ofQuaternion</ref></type>
+        <definition>ofQuaternion _affineParts::q</definition>
+        <argsstring></argsstring>
+        <name>q</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMatrix4x4.cpp" line="952" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMatrix4x4.cpp" bodystart="952" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__affine_parts_1abca2d5c5fe5e1d2d3f0761d37f22f9fe" prot="public" static="no" mutable="no">
+        <type><ref refid="classof_quaternion" kindref="compound">ofQuaternion</ref></type>
+        <definition>ofQuaternion _affineParts::u</definition>
+        <argsstring></argsstring>
+        <name>u</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMatrix4x4.cpp" line="953" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMatrix4x4.cpp" bodystart="953" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__affine_parts_1a3949f810e13be0338e0fc4e9f677f8ad" prot="public" static="no" mutable="no">
+        <type><ref refid="classof_quaternion" kindref="compound">HVect</ref></type>
+        <definition>HVect _affineParts::k</definition>
+        <argsstring></argsstring>
+        <name>k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMatrix4x4.cpp" line="954" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMatrix4x4.cpp" bodystart="954" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__affine_parts_1ac19329cb3ef2e5be6ccaad700f23bf50" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double _affineParts::f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMatrix4x4.cpp" line="955" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMatrix4x4.cpp" bodystart="955" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>ofVec4f</label>
+        <link refid="classof_vec4f"/>
+      </node>
+      <node id="2">
+        <label>ofQuaternion</label>
+        <link refid="classof_quaternion"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_v</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>_affineParts</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>k</edgelabel>
+          <edgelabel>q</edgelabel>
+          <edgelabel>u</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>t</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMatrix4x4.cpp" line="950" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMatrix4x4.cpp" bodystart="949" bodyend="956"/>
+    <listofallmembers>
+      <member refid="struct__affine_parts_1ac19329cb3ef2e5be6ccaad700f23bf50" prot="public" virt="non-virtual"><scope>_affineParts</scope><name>f</name></member>
+      <member refid="struct__affine_parts_1a3949f810e13be0338e0fc4e9f677f8ad" prot="public" virt="non-virtual"><scope>_affineParts</scope><name>k</name></member>
+      <member refid="struct__affine_parts_1a8216eff6db4e9608fb8dd3a607d74a1a" prot="public" virt="non-virtual"><scope>_affineParts</scope><name>q</name></member>
+      <member refid="struct__affine_parts_1a5d588e12c87acab2b1780f363d3289d8" prot="public" virt="non-virtual"><scope>_affineParts</scope><name>t</name></member>
+      <member refid="struct__affine_parts_1abca2d5c5fe5e1d2d3f0761d37f22f9fe" prot="public" virt="non-virtual"><scope>_affineParts</scope><name>u</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

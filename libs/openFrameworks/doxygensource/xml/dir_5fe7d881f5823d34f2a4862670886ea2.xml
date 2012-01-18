@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="dir_5fe7d881f5823d34f2a4862670886ea2" kind="dir">
+    <compoundname>communication/</compoundname>
+    <innerfile refid="of_arduino_8cpp">ofArduino.cpp</innerfile>
+    <innerfile refid="of_arduino_8h">ofArduino.h</innerfile>
+    <innerfile refid="of_serial_8cpp">ofSerial.cpp</innerfile>
+    <innerfile refid="of_serial_8h">ofSerial.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/communication/"/>
+  </compounddef>
+</doxygen>

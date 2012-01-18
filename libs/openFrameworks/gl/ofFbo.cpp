@@ -398,7 +398,7 @@ void ofFbo::allocate(Settings _settings) {
 				depthBuffer = createAndAttachRenderbuffer(GL_DEPTH_COMPONENT, GL_DEPTH_ATTACHMENT);
 				retainRB(depthBuffer);
 			}else{
-				glGenTextures(1, &depthBuffer);
+				/*glGenTextures(1, &depthBuffer);
 				//retainRB(depthBuffer);
 				glBindTexture(GL_TEXTURE_2D, depthBuffer);
 
@@ -413,7 +413,22 @@ void ofFbo::allocate(Settings _settings) {
 			#endif
 				glTexImage2D( GL_TEXTURE_2D, 0, GL_DEPTH_COMPONENT, settings.width, settings.height, 0, GL_DEPTH_COMPONENT, GL_UNSIGNED_BYTE, 0 );
 				glBindTexture( GL_TEXTURE_2D, 0 );
-				glFramebufferTexture2D(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT,GL_TEXTURE_2D, depthBuffer, 0);
+				glFramebufferTexture2D(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT,GL_TEXTURE_2D, depthBuffer, 0);*/
+
+				// allocate depthBufferTex as depth buffer;
+				ofTextureData texData;
+				texData = getTextureReference().getTextureData();
+				texData.textureID = depthBuffer;
+				texData.glTypeInternal = GL_DEPTH_COMPONENT;
+				texData.glType = GL_UNSIGNED_BYTE;
+				texData.pixelType = GL_UNSIGNED_BYTE;
+				texData.textureTarget = GL_TEXTURE_2D;
+				texData.width = settings.width;
+				texData.height = settings.height;
+				texData.bFlipTexture = true;
+
+				depthBufferTex.allocate(texData);
+
 			}
 		}
 
@@ -439,6 +454,9 @@ void ofFbo::allocate(Settings _settings) {
 #endif
 	// now create all textures and color buffers
 	for(int i=0; i<settings.numColorbuffers; i++) createAndAttachTexture(i);
+
+
+
 
 	// if textures are attached to a different fbo (e.g. if using MSAA) check it's status
 	if(fbo != fboTextures) {
@@ -748,6 +766,16 @@ bool ofFbo::checkStatus() {
 	}
 
 	return false;
+}
+
+ofTexture & ofFbo::getDepthTexture(){
+	if(!settings.depthAsTexture){
+		ofLogError() << "fbo not allocated with depthAsTexture";
+	}
+	if(!settings.useDepth){
+		ofLogError() << "fbo not allocated with useDepth";
+	}
+	return depthBufferTex;
 }
 
 //#endif

@@ -1,0 +1,522 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="classof_gst_video_grabber" kind="class" prot="public">
+    <compoundname>ofGstVideoGrabber</compoundname>
+    <basecompoundref refid="classof_base_video_grabber" prot="public" virt="non-virtual">ofBaseVideoGrabber</basecompoundref>
+    <includes local="no">ofGstVideoGrabber.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classof_gst_video_grabber_1a65dbe953510a6ea3d6094b58f12840de" prot="private" static="no" mutable="no">
+        <type><ref refid="structof_gst_cam_data" kindref="compound">ofGstCamData</ref></type>
+        <definition>ofGstCamData ofGstVideoGrabber::camData</definition>
+        <argsstring></argsstring>
+        <name>camData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="61" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_gst_video_grabber_1a66fc242ced4ce196cbca92afdd20ca65" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ofGstVideoGrabber::bIsCamera</definition>
+        <argsstring></argsstring>
+        <name>bIsCamera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="62" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_gst_video_grabber_1afe7c8e2954eab762515b099dcd75413d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ofGstVideoGrabber::attemptFramerate</definition>
+        <argsstring></argsstring>
+        <name>attemptFramerate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="63" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_gst_video_grabber_1a9ee7a22907f7cb3645ee76a80286b266" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ofGstVideoGrabber::deviceID</definition>
+        <argsstring></argsstring>
+        <name>deviceID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="64" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_gst_video_grabber_1a0ca7e279cf6c461613535e4cfda4edbe" prot="private" static="no" mutable="no">
+        <type><ref refid="of_constants_8h_1ae227396622740556688053d3dc0f1693" kindref="member">ofPixelFormat</ref></type>
+        <definition>ofPixelFormat ofGstVideoGrabber::internalPixelFormat</definition>
+        <argsstring></argsstring>
+        <name>internalPixelFormat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="65" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_gst_video_grabber_1a757a156ed62a6704d2a935340666df37" prot="private" static="no" mutable="no">
+        <type><ref refid="classof_gst_video_utils" kindref="compound">ofGstVideoUtils</ref></type>
+        <definition>ofGstVideoUtils ofGstVideoGrabber::videoUtils</definition>
+        <argsstring></argsstring>
+        <name>videoUtils</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="66" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classof_gst_video_grabber_1a7d2490075151f6a65f70462a9f5b7fbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ofGstVideoGrabber::ofGstVideoGrabber</definition>
+        <argsstring>()</argsstring>
+        <name>ofGstVideoGrabber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="33" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="435" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_gst_video_grabber_1ada6936b978359779b52eca47cc6e9113" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ofGstVideoGrabber::~ofGstVideoGrabber</definition>
+        <argsstring>()</argsstring>
+        <name>~ofGstVideoGrabber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="34" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="444" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_gst_video_grabber_1a627db28d07be7a1470d21d6574289143" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ofGstVideoGrabber::setPixelFormat</definition>
+        <argsstring>(ofPixelFormat pixelFormat)</argsstring>
+        <name>setPixelFormat</name>
+        <reimplements refid="classof_base_video_grabber_1a3c369941aa22cf3474e8a8060b9b5877">setPixelFormat</reimplements>
+        <param>
+          <type><ref refid="of_constants_8h_1ae227396622740556688053d3dc0f1693" kindref="member">ofPixelFormat</ref></type>
+          <declname>pixelFormat</declname>
+        </param>
+        <briefdescription>
+<para>needs to be called before initGrabber </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="37" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="448" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_gst_video_grabber_1abac46aa81c7a50386398f9f358615c8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void ofGstVideoGrabber::videoSettings</definition>
+        <argsstring>()</argsstring>
+        <name>videoSettings</name>
+        <reimplements refid="classof_base_video_grabber_1a940fe78603fc08b111cf329047f9429d">videoSettings</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="38" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_gst_video_grabber_1ab21f6214be63c89a9ae75562ff9bf7a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ofGstVideoGrabber::listDevices</definition>
+        <argsstring>()</argsstring>
+        <name>listDevices</name>
+        <reimplements refid="classof_base_video_grabber_1a0ee487203961b1d6b635598a181a9835">listDevices</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="40" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="457" bodyend="462"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_gst_video_grabber_1a2d9434f03798a7217f20d98555130fa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ofGstVideoGrabber::setDeviceID</definition>
+        <argsstring>(int id)</argsstring>
+        <name>setDeviceID</name>
+        <reimplements refid="classof_base_video_grabber_1a557779bf16372e5fe66a401606780954">setDeviceID</reimplements>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="41" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="464" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_gst_video_grabber_1a02aeaf88681b341faa1580873a1a273b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ofGstVideoGrabber::setDesiredFrameRate</definition>
+        <argsstring>(int framerate)</argsstring>
+        <name>setDesiredFrameRate</name>
+        <reimplements refid="classof_base_video_grabber_1a16846e532be7f6e80516cc12568afd00">setDesiredFrameRate</reimplements>
+        <param>
+          <type>int</type>
+          <declname>framerate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="42" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="561" bodyend="563"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_gst_video_grabber_1a6450e8b568e28e8d5f0559230606ee14" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ofGstVideoGrabber::initGrabber</definition>
+        <argsstring>(int w, int h)</argsstring>
+        <name>initGrabber</name>
+        <reimplements refid="classof_base_video_grabber_1a7dc4e14ca5c1bf64f6c9ef49fff421e3">initGrabber</reimplements>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="43" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="494" bodyend="559"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_gst_video_grabber_1a221290453f8283bf8b4542833c8d10e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ofGstVideoGrabber::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <reimplements refid="classof_base_video_grabber_1afa0adff5581f2aeb2f2973a5686097de">update</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="45" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="570" bodyend="572"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_gst_video_grabber_1af3edeb02c89e43dc4ad0a02b376d4a07" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ofGstVideoGrabber::isFrameNew</definition>
+        <argsstring>()</argsstring>
+        <name>isFrameNew</name>
+        <reimplements refid="classof_base_video_grabber_1a49571efac6ac055c07b5147e15a98643">isFrameNew</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="46" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="574" bodyend="576"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_gst_video_grabber_1a96fb7659d28b1404265d0007f8aff0e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>unsigned char *</type>
+        <definition>unsigned char * ofGstVideoGrabber::getPixels</definition>
+        <argsstring>()</argsstring>
+        <name>getPixels</name>
+        <reimplements refid="classof_base_video_grabber_1a7a9d9dc85963036f16d937cee730f654">getPixels</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="48" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="578" bodyend="580"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_gst_video_grabber_1a82629d46c4013b68ff18203d62a1f85f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classof_pixels__" kindref="compound">ofPixelsRef</ref></type>
+        <definition>ofPixelsRef ofGstVideoGrabber::getPixelsRef</definition>
+        <argsstring>()</argsstring>
+        <name>getPixelsRef</name>
+        <reimplements refid="classof_base_has_pixels___1a0e74503eeea2afb44a8f5d6b65422f45">getPixelsRef</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="49" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="582" bodyend="584"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_gst_video_grabber_1ab6aa141cd4c31cfce96230d19539bb37" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float ofGstVideoGrabber::getHeight</definition>
+        <argsstring>()</argsstring>
+        <name>getHeight</name>
+        <reimplements refid="classof_base_video_grabber_1adc370b3e10351d456a70c3097e5a25bd">getHeight</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="51" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="586" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_gst_video_grabber_1a7fd170dd9f1f740c0c344f9db348f1f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float ofGstVideoGrabber::getWidth</definition>
+        <argsstring>()</argsstring>
+        <name>getWidth</name>
+        <reimplements refid="classof_base_video_grabber_1a92e4e75c73b92c7eb3da31cdfbf9927e">getWidth</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="52" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="590" bodyend="592"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_gst_video_grabber_1aba7ede0a638a3f61c628f86f4e409406" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ofGstVideoGrabber::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <reimplements refid="classof_base_video_grabber_1a8c7237c2cf5d2aac261d37a0fc22a2a3">close</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="53" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="594" bodyend="596"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_gst_video_grabber_1aeb63237b2af0546d49cccc6a7269e2ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ofGstVideoGrabber::setVerbose</definition>
+        <argsstring>(bool bVerbose)</argsstring>
+        <name>setVerbose</name>
+        <reimplements refid="classof_base_video_grabber_1a936b9b488373760e66fab3dea78a975c">setVerbose</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>bVerbose</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="55" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="452" bodyend="455"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_gst_video_grabber_1af081ee1025e25b5c41ab9b76e5e54e5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_gst_video_utils" kindref="compound">ofGstVideoUtils</ref> *</type>
+        <definition>ofGstVideoUtils * ofGstVideoGrabber::getGstVideoUtils</definition>
+        <argsstring>()</argsstring>
+        <name>getGstVideoUtils</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="57" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="565" bodyend="567"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classof_gst_video_grabber_1a95de9984b22af4acea52e96bd8c3dbca" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structof_gst_video_format" kindref="compound">ofGstVideoFormat</ref> &amp;</type>
+        <definition>ofGstVideoFormat &amp; ofGstVideoGrabber::selectFormat</definition>
+        <argsstring>(int w, int h, int desired_framerate)</argsstring>
+        <name>selectFormat</name>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>desired_framerate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="59" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.cpp" bodystart="473" bodyend="492"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="312">
+        <label>ofGstVideoGrabber</label>
+        <link refid="classof_gst_video_grabber"/>
+        <childnode refid="313" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="315">
+        <label>ofBaseHasPixels</label>
+        <link refid="classof_base_has_pixels__"/>
+        <childnode refid="316" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="314">
+        <label>ofBaseVideo</label>
+        <link refid="classof_base_video"/>
+        <childnode refid="315" relation="public-inheritance">
+        </childnode>
+        <childnode refid="317" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="317">
+        <label>ofBaseUpdates</label>
+        <link refid="classof_base_updates"/>
+      </node>
+      <node id="313">
+        <label>ofBaseVideoGrabber</label>
+        <link refid="classof_base_video_grabber"/>
+        <childnode refid="314" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="316">
+        <label>ofAbstractHasPixels</label>
+        <link refid="classof_abstract_has_pixels"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="318">
+        <label>ofGstVideoGrabber</label>
+        <link refid="classof_gst_video_grabber"/>
+        <childnode refid="319" relation="public-inheritance">
+        </childnode>
+        <childnode refid="324" relation="usage">
+          <edgelabel>videoUtils</edgelabel>
+        </childnode>
+        <childnode refid="328" relation="usage">
+          <edgelabel>camData</edgelabel>
+        </childnode>
+      </node>
+      <node id="321">
+        <label>ofBaseHasPixels</label>
+        <link refid="classof_base_has_pixels__"/>
+        <childnode refid="322" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="326">
+        <label>ofGstAppSink</label>
+        <link refid="classof_gst_app_sink"/>
+      </node>
+      <node id="320">
+        <label>ofBaseVideo</label>
+        <link refid="classof_base_video"/>
+        <childnode refid="321" relation="public-inheritance">
+        </childnode>
+        <childnode refid="323" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="323">
+        <label>ofBaseUpdates</label>
+        <link refid="classof_base_updates"/>
+      </node>
+      <node id="319">
+        <label>ofBaseVideoGrabber</label>
+        <link refid="classof_base_video_grabber"/>
+        <childnode refid="320" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="325">
+        <label>ofGstUtils</label>
+        <link refid="classof_gst_utils"/>
+        <childnode refid="326" relation="usage">
+          <edgelabel>appsink</edgelabel>
+        </childnode>
+      </node>
+      <node id="328">
+        <label>ofGstCamData</label>
+        <link refid="structof_gst_cam_data"/>
+      </node>
+      <node id="327">
+        <label>ofPixels_&lt; unsigned char &gt;</label>
+        <link refid="classof_pixels__"/>
+      </node>
+      <node id="324">
+        <label>ofGstVideoUtils</label>
+        <link refid="classof_gst_video_utils"/>
+        <childnode refid="320" relation="public-inheritance">
+        </childnode>
+        <childnode refid="325" relation="public-inheritance">
+        </childnode>
+        <childnode refid="327" relation="usage">
+          <edgelabel>backPixels</edgelabel>
+          <edgelabel>pixels</edgelabel>
+        </childnode>
+      </node>
+      <node id="322">
+        <label>ofAbstractHasPixels</label>
+        <link refid="classof_abstract_has_pixels"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="31" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" bodystart="31" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classof_gst_video_grabber_1afe7c8e2954eab762515b099dcd75413d" prot="private" virt="non-virtual"><scope>ofGstVideoGrabber</scope><name>attemptFramerate</name></member>
+      <member refid="classof_gst_video_grabber_1a66fc242ced4ce196cbca92afdd20ca65" prot="private" virt="non-virtual"><scope>ofGstVideoGrabber</scope><name>bIsCamera</name></member>
+      <member refid="classof_gst_video_grabber_1a65dbe953510a6ea3d6094b58f12840de" prot="private" virt="non-virtual"><scope>ofGstVideoGrabber</scope><name>camData</name></member>
+      <member refid="classof_gst_video_grabber_1aba7ede0a638a3f61c628f86f4e409406" prot="public" virt="virtual"><scope>ofGstVideoGrabber</scope><name>close</name></member>
+      <member refid="classof_gst_video_grabber_1a9ee7a22907f7cb3645ee76a80286b266" prot="private" virt="non-virtual"><scope>ofGstVideoGrabber</scope><name>deviceID</name></member>
+      <member refid="classof_gst_video_grabber_1af081ee1025e25b5c41ab9b76e5e54e5c" prot="public" virt="non-virtual"><scope>ofGstVideoGrabber</scope><name>getGstVideoUtils</name></member>
+      <member refid="classof_gst_video_grabber_1ab6aa141cd4c31cfce96230d19539bb37" prot="public" virt="virtual"><scope>ofGstVideoGrabber</scope><name>getHeight</name></member>
+      <member refid="classof_base_video_grabber_1ae3521402a4ee9b7ff99e503746e16e18" prot="public" virt="virtual"><scope>ofGstVideoGrabber</scope><name>getPixelFormat</name></member>
+      <member refid="classof_gst_video_grabber_1a96fb7659d28b1404265d0007f8aff0e5" prot="public" virt="virtual"><scope>ofGstVideoGrabber</scope><name>getPixels</name></member>
+      <member refid="classof_gst_video_grabber_1a82629d46c4013b68ff18203d62a1f85f" prot="public" virt="virtual"><scope>ofGstVideoGrabber</scope><name>getPixelsRef</name></member>
+      <member refid="classof_gst_video_grabber_1a7fd170dd9f1f740c0c344f9db348f1f8" prot="public" virt="virtual"><scope>ofGstVideoGrabber</scope><name>getWidth</name></member>
+      <member refid="classof_gst_video_grabber_1a6450e8b568e28e8d5f0559230606ee14" prot="public" virt="virtual"><scope>ofGstVideoGrabber</scope><name>initGrabber</name></member>
+      <member refid="classof_gst_video_grabber_1a0ca7e279cf6c461613535e4cfda4edbe" prot="private" virt="non-virtual"><scope>ofGstVideoGrabber</scope><name>internalPixelFormat</name></member>
+      <member refid="classof_gst_video_grabber_1af3edeb02c89e43dc4ad0a02b376d4a07" prot="public" virt="virtual"><scope>ofGstVideoGrabber</scope><name>isFrameNew</name></member>
+      <member refid="classof_gst_video_grabber_1ab21f6214be63c89a9ae75562ff9bf7a8" prot="public" virt="virtual"><scope>ofGstVideoGrabber</scope><name>listDevices</name></member>
+      <member refid="classof_gst_video_grabber_1a7d2490075151f6a65f70462a9f5b7fbd" prot="public" virt="non-virtual"><scope>ofGstVideoGrabber</scope><name>ofGstVideoGrabber</name></member>
+      <member refid="classof_gst_video_grabber_1a95de9984b22af4acea52e96bd8c3dbca" prot="private" virt="non-virtual"><scope>ofGstVideoGrabber</scope><name>selectFormat</name></member>
+      <member refid="classof_gst_video_grabber_1a02aeaf88681b341faa1580873a1a273b" prot="public" virt="virtual"><scope>ofGstVideoGrabber</scope><name>setDesiredFrameRate</name></member>
+      <member refid="classof_gst_video_grabber_1a2d9434f03798a7217f20d98555130fa3" prot="public" virt="virtual"><scope>ofGstVideoGrabber</scope><name>setDeviceID</name></member>
+      <member refid="classof_gst_video_grabber_1a627db28d07be7a1470d21d6574289143" prot="public" virt="virtual"><scope>ofGstVideoGrabber</scope><name>setPixelFormat</name></member>
+      <member refid="classof_gst_video_grabber_1aeb63237b2af0546d49cccc6a7269e2ea" prot="public" virt="virtual"><scope>ofGstVideoGrabber</scope><name>setVerbose</name></member>
+      <member refid="classof_gst_video_grabber_1a221290453f8283bf8b4542833c8d10e9" prot="public" virt="virtual"><scope>ofGstVideoGrabber</scope><name>update</name></member>
+      <member refid="classof_gst_video_grabber_1abac46aa81c7a50386398f9f358615c8b" prot="public" virt="virtual"><scope>ofGstVideoGrabber</scope><name>videoSettings</name></member>
+      <member refid="classof_gst_video_grabber_1a757a156ed62a6704d2a935340666df37" prot="private" virt="non-virtual"><scope>ofGstVideoGrabber</scope><name>videoUtils</name></member>
+      <member refid="classof_abstract_has_pixels_1ad47946469061dbdfbe106f61e80a1b33" prot="public" virt="virtual"><scope>ofGstVideoGrabber</scope><name>~ofAbstractHasPixels</name></member>
+      <member refid="classof_base_has_pixels___1a62cfed9db02b38b104b6870a542031ee" prot="public" virt="virtual"><scope>ofGstVideoGrabber</scope><name>~ofBaseHasPixels_</name></member>
+      <member refid="classof_base_updates_1a48cbac34caf49b4b72092888a7e63b27" prot="public" virt="virtual"><scope>ofGstVideoGrabber</scope><name>~ofBaseUpdates</name></member>
+      <member refid="classof_base_video_1af8004a840c98637ba7572b2c34bbc249" prot="public" virt="virtual"><scope>ofGstVideoGrabber</scope><name>~ofBaseVideo</name></member>
+      <member refid="classof_base_video_grabber_1ae26d74772c498046a1c2f2765b45b77d" prot="public" virt="virtual"><scope>ofGstVideoGrabber</scope><name>~ofBaseVideoGrabber</name></member>
+      <member refid="classof_gst_video_grabber_1ada6936b978359779b52eca47cc6e9113" prot="public" virt="non-virtual"><scope>ofGstVideoGrabber</scope><name>~ofGstVideoGrabber</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

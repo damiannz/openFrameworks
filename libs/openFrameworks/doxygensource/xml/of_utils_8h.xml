@@ -1,0 +1,2164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="of_utils_8h" kind="file">
+    <compoundname>ofUtils.h</compoundname>
+    <includes refid="of_constants_8h" local="yes">ofConstants.h</includes>
+    <includes local="no">bitset</includes>
+    <includes refid="of_log_8h" local="yes">ofLog.h</includes>
+    <includedby refid="of_easy_cam_8cpp" local="yes">3d/ofEasyCam.cpp</includedby>
+    <includedby refid="of_mesh_8h" local="yes">3d/ofMesh.h</includedby>
+    <includedby refid="of_app_glut_window_8cpp" local="yes">app/ofAppGlutWindow.cpp</includedby>
+    <includedby refid="of_app_runner_8cpp" local="yes">app/ofAppRunner.cpp</includedby>
+    <includedby refid="of_arduino_8cpp" local="yes">communication/ofArduino.cpp</includedby>
+    <includedby refid="of_serial_8cpp" local="yes">communication/ofSerial.cpp</includedby>
+    <includedby refid="of_events_8cpp" local="yes">events/ofEvents.cpp</includedby>
+    <includedby refid="of_fbo_8cpp" local="yes">gl/ofFbo.cpp</includedby>
+    <includedby refid="of_light_8cpp" local="yes">gl/ofLight.cpp</includedby>
+    <includedby refid="of_shader_8cpp" local="yes">gl/ofShader.cpp</includedby>
+    <includedby refid="of_texture_8cpp" local="yes">gl/ofTexture.cpp</includedby>
+    <includedby refid="of_vbo_8h" local="yes">gl/ofVbo.h</includedby>
+    <includedby refid="of_vbo_8cpp" local="yes">gl/ofVbo.cpp</includedby>
+    <includedby refid="of_cairo_renderer_8cpp" local="yes">graphics/ofCairoRenderer.cpp</includedby>
+    <includedby refid="of_pixels_8h" local="yes">graphics/ofPixels.h</includedby>
+    <includedby refid="of_graphics_8cpp" local="yes">graphics/ofGraphics.cpp</includedby>
+    <includedby refid="of_true_type_font_8cpp" local="yes">graphics/ofTrueTypeFont.cpp</includedby>
+    <includedby refid="of_math_8cpp" local="yes">math/ofMath.cpp</includedby>
+    <includedby refid="of_main_8h" local="yes">ofMain.h</includedby>
+    <includedby refid="of_fmod_sound_player_8cpp" local="yes">sound/ofFmodSoundPlayer.cpp</includedby>
+    <includedby refid="of_sound_player_8cpp" local="yes">sound/ofSoundPlayer.cpp</includedby>
+    <includedby refid="of_base_types_8cpp" local="yes">types/ofBaseTypes.cpp</includedby>
+    <includedby refid="of_file_utils_8cpp" local="yes">utils/ofFileUtils.cpp</includedby>
+    <includedby refid="of_log_8cpp" local="no">utils/ofLog.cpp</includedby>
+    <includedby refid="of_u_r_l_file_loader_8cpp" local="yes">utils/ofURLFileLoader.cpp</includedby>
+    <includedby refid="of_utils_8cpp" local="yes">utils/ofUtils.cpp</includedby>
+    <includedby refid="of_direct_show_grabber_8cpp" local="yes">video/ofDirectShowGrabber.cpp</includedby>
+    <includedby refid="of_gst_utils_8cpp" local="yes">video/ofGstUtils.cpp</includedby>
+    <includedby refid="of_quick_time_grabber_8cpp" local="yes">video/ofQuickTimeGrabber.cpp</includedby>
+    <includedby refid="of_quick_time_player_8cpp" local="yes">video/ofQuickTimePlayer.cpp</includedby>
+    <includedby refid="of_video_grabber_8cpp" local="yes">video/ofVideoGrabber.cpp</includedby>
+    <includedby refid="of_video_player_8cpp" local="yes">video/ofVideoPlayer.cpp</includedby>
+    <incdepgraph>
+      <node id="5813">
+        <label>iomanip</label>
+      </node>
+      <node id="5820">
+        <label>ofColor.h</label>
+        <link refid="of_color_8h"/>
+        <childnode refid="5821" relation="include">
+        </childnode>
+        <childnode refid="5822" relation="include">
+        </childnode>
+      </node>
+      <node id="5821">
+        <label>limits</label>
+      </node>
+      <node id="5826">
+        <label>ofVec4f.h</label>
+        <link refid="of_vec4f_8h"/>
+        <childnode refid="5797" relation="include">
+        </childnode>
+      </node>
+      <node id="5801">
+        <label>GL/glx.h</label>
+      </node>
+      <node id="5825">
+        <label>ofVec2f.h</label>
+        <link refid="of_vec2f_8h"/>
+        <childnode refid="5797" relation="include">
+        </childnode>
+      </node>
+      <node id="5806">
+        <label>cmath</label>
+      </node>
+      <node id="5819">
+        <label>ofTypes.h</label>
+        <link refid="of_types_8h"/>
+        <childnode refid="5797" relation="include">
+        </childnode>
+        <childnode refid="5820" relation="include">
+        </childnode>
+        <childnode refid="5827" relation="include">
+        </childnode>
+        <childnode refid="5828" relation="include">
+        </childnode>
+      </node>
+      <node id="5824">
+        <label>ofVec3f.h</label>
+        <link refid="of_vec3f_8h"/>
+        <childnode refid="5825" relation="include">
+        </childnode>
+        <childnode refid="5826" relation="include">
+        </childnode>
+        <childnode refid="5797" relation="include">
+        </childnode>
+        <childnode refid="5806" relation="include">
+        </childnode>
+        <childnode refid="5809" relation="include">
+        </childnode>
+      </node>
+      <node id="5808">
+        <label>string</label>
+      </node>
+      <node id="5805">
+        <label>cstdarg</label>
+      </node>
+      <node id="5799">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="5818">
+        <label>Poco/File.h</label>
+      </node>
+      <node id="5802">
+        <label>tesselator.h</label>
+      </node>
+      <node id="5814">
+        <label>fstream</label>
+      </node>
+      <node id="5822">
+        <label>ofMath.h</label>
+        <link refid="of_math_8h"/>
+        <childnode refid="5823" relation="include">
+        </childnode>
+        <childnode refid="5797" relation="include">
+        </childnode>
+      </node>
+      <node id="5804">
+        <label>cstdio</label>
+      </node>
+      <node id="5815">
+        <label>bitset</label>
+      </node>
+      <node id="5807">
+        <label>ctime</label>
+      </node>
+      <node id="5798">
+        <label>unistd.h</label>
+      </node>
+      <node id="5810">
+        <label>vector</label>
+      </node>
+      <node id="5816">
+        <label>ofLog.h</label>
+        <link refid="of_log_8h"/>
+        <childnode refid="5797" relation="include">
+        </childnode>
+        <childnode refid="5817" relation="include">
+        </childnode>
+        <childnode refid="5819" relation="include">
+        </childnode>
+      </node>
+      <node id="5797">
+        <label>ofConstants.h</label>
+        <link refid="of_constants_8h"/>
+        <childnode refid="5798" relation="include">
+        </childnode>
+        <childnode refid="5799" relation="include">
+        </childnode>
+        <childnode refid="5800" relation="include">
+        </childnode>
+        <childnode refid="5801" relation="include">
+        </childnode>
+        <childnode refid="5802" relation="include">
+        </childnode>
+        <childnode refid="5803" relation="include">
+        </childnode>
+        <childnode refid="5804" relation="include">
+        </childnode>
+        <childnode refid="5805" relation="include">
+        </childnode>
+        <childnode refid="5806" relation="include">
+        </childnode>
+        <childnode refid="5807" relation="include">
+        </childnode>
+        <childnode refid="5808" relation="include">
+        </childnode>
+        <childnode refid="5809" relation="include">
+        </childnode>
+        <childnode refid="5810" relation="include">
+        </childnode>
+        <childnode refid="5811" relation="include">
+        </childnode>
+        <childnode refid="5812" relation="include">
+        </childnode>
+        <childnode refid="5813" relation="include">
+        </childnode>
+        <childnode refid="5814" relation="include">
+        </childnode>
+      </node>
+      <node id="5812">
+        <label>sstream</label>
+      </node>
+      <node id="5823">
+        <label>ofPoint.h</label>
+        <link refid="of_point_8h"/>
+        <childnode refid="5824" relation="include">
+        </childnode>
+      </node>
+      <node id="5817">
+        <label>ofFileUtils.h</label>
+        <link refid="of_file_utils_8h"/>
+        <childnode refid="5797" relation="include">
+        </childnode>
+        <childnode refid="5818" relation="include">
+        </childnode>
+      </node>
+      <node id="5803">
+        <label>cstdlib</label>
+      </node>
+      <node id="5809">
+        <label>iostream</label>
+      </node>
+      <node id="5796">
+        <label>utils/ofUtils.h</label>
+        <link refid="ofUtils.h"/>
+        <childnode refid="5797" relation="include">
+        </childnode>
+        <childnode refid="5815" relation="include">
+        </childnode>
+        <childnode refid="5816" relation="include">
+        </childnode>
+      </node>
+      <node id="5800">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="5828">
+        <label>Poco/Mutex.h</label>
+      </node>
+      <node id="5811">
+        <label>cstring</label>
+      </node>
+      <node id="5827">
+        <label>tr1/memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5892">
+        <label>video/ofGstVideoGrabber.cpp</label>
+        <link refid="of_gst_video_grabber_8cpp"/>
+      </node>
+      <node id="5898">
+        <label>communication/ofSerial.cpp</label>
+        <link refid="of_serial_8cpp"/>
+      </node>
+      <node id="5854">
+        <label>sound/ofSoundStream.cpp</label>
+        <link refid="of_sound_stream_8cpp"/>
+      </node>
+      <node id="5864">
+        <label>utils/ofUtils.cpp</label>
+        <link refid="of_utils_8cpp"/>
+      </node>
+      <node id="5833">
+        <label>gl/ofGLRenderer.cpp</label>
+        <link refid="of_g_l_renderer_8cpp"/>
+      </node>
+      <node id="5847">
+        <label>graphics/ofTessellator.cpp</label>
+        <link refid="of_tessellator_8cpp"/>
+      </node>
+      <node id="5853">
+        <label>sound/ofSoundStream.h</label>
+        <link refid="of_sound_stream_8h"/>
+        <childnode refid="5851" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+        <childnode refid="5854" relation="include">
+        </childnode>
+      </node>
+      <node id="5895">
+        <label>video/ofQuickTimePlayer.h</label>
+        <link refid="of_quick_time_player_8h"/>
+        <childnode refid="5896" relation="include">
+        </childnode>
+      </node>
+      <node id="5888">
+        <label>types/ofBaseTypes.cpp</label>
+        <link refid="of_base_types_8cpp"/>
+      </node>
+      <node id="5852">
+        <label>events/ofEvents.cpp</label>
+        <link refid="of_events_8cpp"/>
+      </node>
+      <node id="5906">
+        <label>video/ofQuickTimeGrabber.cpp</label>
+        <link refid="of_quick_time_grabber_8cpp"/>
+      </node>
+      <node id="5866">
+        <label>video/ofDirectShowGrabber.cpp</label>
+        <link refid="of_direct_show_grabber_8cpp"/>
+      </node>
+      <node id="5838">
+        <label>ofMain.h</label>
+        <link refid="of_main_8h"/>
+      </node>
+      <node id="5887">
+        <label>sound/ofSoundPlayer.cpp</label>
+        <link refid="of_sound_player_8cpp"/>
+      </node>
+      <node id="5837">
+        <label>gl/ofVboMesh.cpp</label>
+        <link refid="of_vbo_mesh_8cpp"/>
+      </node>
+      <node id="5846">
+        <label>graphics/ofTessellator.h</label>
+        <link refid="of_tessellator_8h"/>
+        <childnode refid="5839" relation="include">
+        </childnode>
+        <childnode refid="5843" relation="include">
+        </childnode>
+        <childnode refid="5847" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+      </node>
+      <node id="5903">
+        <label>utils/ofFileUtils.cpp</label>
+        <link refid="of_file_utils_8cpp"/>
+      </node>
+      <node id="5863">
+        <label>graphics/ofImage.cpp</label>
+        <link refid="of_image_8cpp"/>
+      </node>
+      <node id="5861">
+        <label>graphics/ofBitmapFont.cpp</label>
+        <link refid="of_bitmap_font_8cpp"/>
+      </node>
+      <node id="5879">
+        <label>3d/ofCamera.cpp</label>
+        <link refid="of_camera_8cpp"/>
+      </node>
+      <node id="5899">
+        <label>graphics/ofPixels.h</label>
+        <link refid="of_pixels_8h"/>
+        <childnode refid="5860" relation="include">
+        </childnode>
+        <childnode refid="5862" relation="include">
+        </childnode>
+        <childnode refid="5900" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+        <childnode refid="5848" relation="include">
+        </childnode>
+        <childnode refid="5865" relation="include">
+        </childnode>
+        <childnode refid="5889" relation="include">
+        </childnode>
+        <childnode refid="5867" relation="include">
+        </childnode>
+        <childnode refid="5870" relation="include">
+        </childnode>
+        <childnode refid="5895" relation="include">
+        </childnode>
+      </node>
+      <node id="5835">
+        <label>gl/ofVbo.cpp</label>
+        <link refid="of_vbo_8cpp"/>
+      </node>
+      <node id="5881">
+        <label>3d/ofNode.cpp</label>
+        <link refid="of_node_8cpp"/>
+      </node>
+      <node id="5857">
+        <label>gl/ofFbo.cpp</label>
+        <link refid="of_fbo_8cpp"/>
+      </node>
+      <node id="5889">
+        <label>video/ofGstUtils.h</label>
+        <link refid="of_gst_utils_8h"/>
+        <childnode refid="5890" relation="include">
+        </childnode>
+        <childnode refid="5891" relation="include">
+        </childnode>
+        <childnode refid="5893" relation="include">
+        </childnode>
+      </node>
+      <node id="5851">
+        <label>app/ofAppRunner.cpp</label>
+        <link refid="of_app_runner_8cpp"/>
+      </node>
+      <node id="5891">
+        <label>video/ofGstVideoGrabber.h</label>
+        <link refid="of_gst_video_grabber_8h"/>
+        <childnode refid="5892" relation="include">
+        </childnode>
+        <childnode refid="5867" relation="include">
+        </childnode>
+      </node>
+      <node id="5860">
+        <label>gl/ofTexture.cpp</label>
+        <link refid="of_texture_8cpp"/>
+      </node>
+      <node id="5880">
+        <label>3d/ofEasyCam.h</label>
+        <link refid="of_easy_cam_8h"/>
+        <childnode refid="5830" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+      </node>
+      <node id="5873">
+        <label>video/ofVideoPlayer.cpp</label>
+        <link refid="of_video_player_8cpp"/>
+      </node>
+      <node id="5848">
+        <label>types/ofBaseTypes.h</label>
+        <link refid="of_base_types_8h"/>
+        <childnode refid="5849" relation="include">
+        </childnode>
+        <childnode refid="5855" relation="include">
+        </childnode>
+        <childnode refid="5874" relation="include">
+        </childnode>
+        <childnode refid="5858" relation="include">
+        </childnode>
+        <childnode refid="5840" relation="include">
+        </childnode>
+        <childnode refid="5839" relation="include">
+        </childnode>
+        <childnode refid="5875" relation="include">
+        </childnode>
+        <childnode refid="5862" relation="include">
+        </childnode>
+        <childnode refid="5842" relation="include">
+        </childnode>
+        <childnode refid="5885" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+        <childnode refid="5886" relation="include">
+        </childnode>
+        <childnode refid="5853" relation="include">
+        </childnode>
+        <childnode refid="5888" relation="include">
+        </childnode>
+        <childnode refid="5865" relation="include">
+        </childnode>
+        <childnode refid="5889" relation="include">
+        </childnode>
+        <childnode refid="5867" relation="include">
+        </childnode>
+        <childnode refid="5870" relation="include">
+        </childnode>
+        <childnode refid="5872" relation="include">
+        </childnode>
+        <childnode refid="5895" relation="include">
+        </childnode>
+        <childnode refid="5869" relation="include">
+        </childnode>
+      </node>
+      <node id="5901">
+        <label>math/ofMath.cpp</label>
+        <link refid="of_math_8cpp"/>
+      </node>
+      <node id="5874">
+        <label>gl/ofGLRenderer.h</label>
+        <link refid="of_g_l_renderer_8h"/>
+        <childnode refid="5851" relation="include">
+        </childnode>
+        <childnode refid="5857" relation="include">
+        </childnode>
+        <childnode refid="5833" relation="include">
+        </childnode>
+        <childnode refid="5875" relation="include">
+        </childnode>
+        <childnode refid="5842" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+      </node>
+      <node id="5885">
+        <label>graphics/ofRendererCollection.h</label>
+        <link refid="of_renderer_collection_8h"/>
+        <childnode refid="5842" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+      </node>
+      <node id="5870">
+        <label>video/ofiPhoneVideoPlayer.h</label>
+        <link refid="ofi_phone_video_player_8h"/>
+        <childnode refid="5871" relation="include">
+        </childnode>
+      </node>
+      <node id="5865">
+        <label>video/ofDirectShowGrabber.h</label>
+        <link refid="of_direct_show_grabber_8h"/>
+        <childnode refid="5866" relation="include">
+        </childnode>
+      </node>
+      <node id="5904">
+        <label>utils/ofLog.cpp</label>
+        <link refid="of_log_8cpp"/>
+      </node>
+      <node id="5840">
+        <label>graphics/ofCairoRenderer.h</label>
+        <link refid="of_cairo_renderer_8h"/>
+        <childnode refid="5841" relation="include">
+        </childnode>
+        <childnode refid="5842" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+      </node>
+      <node id="5839">
+        <label>graphics/ofPath.h</label>
+        <link refid="of_path_8h"/>
+        <childnode refid="5833" relation="include">
+        </childnode>
+        <childnode refid="5840" relation="include">
+        </childnode>
+        <childnode refid="5842" relation="include">
+        </childnode>
+        <childnode refid="5843" relation="include">
+        </childnode>
+        <childnode refid="5844" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+      </node>
+      <node id="5900">
+        <label>graphics/ofPixels.cpp</label>
+        <link refid="of_pixels_8cpp"/>
+      </node>
+      <node id="5859">
+        <label>gl/ofShader.cpp</label>
+        <link refid="of_shader_8cpp"/>
+      </node>
+      <node id="5893">
+        <label>video/ofGstVideoPlayer.h</label>
+        <link refid="of_gst_video_player_8h"/>
+        <childnode refid="5894" relation="include">
+        </childnode>
+        <childnode refid="5872" relation="include">
+        </childnode>
+      </node>
+      <node id="5882">
+        <label>gl/ofLight.h</label>
+        <link refid="of_light_8h"/>
+        <childnode refid="5883" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+      </node>
+      <node id="5869">
+        <label>video/ofVideoGrabber.cpp</label>
+        <link refid="of_video_grabber_8cpp"/>
+      </node>
+      <node id="5878">
+        <label>3d/ofCamera.h</label>
+        <link refid="of_camera_8h"/>
+        <childnode refid="5879" relation="include">
+        </childnode>
+        <childnode refid="5880" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+      </node>
+      <node id="5842">
+        <label>graphics/ofGraphics.cpp</label>
+        <link refid="of_graphics_8cpp"/>
+      </node>
+      <node id="5856">
+        <label>gl/ofFbo.h</label>
+        <link refid="of_fbo_8h"/>
+        <childnode refid="5857" relation="include">
+        </childnode>
+        <childnode refid="5833" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+      </node>
+      <node id="5871">
+        <label>video/ofiPhoneVideoPlayer.mm</label>
+        <link refid="ofi_phone_video_player_8mm"/>
+      </node>
+      <node id="5890">
+        <label>video/ofGstUtils.cpp</label>
+        <link refid="of_gst_utils_8cpp"/>
+      </node>
+      <node id="5886">
+        <label>sound/ofSoundPlayer.h</label>
+        <link refid="of_sound_player_8h"/>
+        <childnode refid="5851" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+        <childnode refid="5887" relation="include">
+        </childnode>
+      </node>
+      <node id="5867">
+        <label>video/ofVideoGrabber.h</label>
+        <link refid="of_video_grabber_8h"/>
+        <childnode refid="5838" relation="include">
+        </childnode>
+        <childnode refid="5868" relation="include">
+        </childnode>
+        <childnode refid="5869" relation="include">
+        </childnode>
+      </node>
+      <node id="5850">
+        <label>app/ofAppGlutWindow.cpp</label>
+        <link refid="of_app_glut_window_8cpp"/>
+      </node>
+      <node id="5830">
+        <label>3d/ofEasyCam.cpp</label>
+        <link refid="of_easy_cam_8cpp"/>
+      </node>
+      <node id="5836">
+        <label>gl/ofVboMesh.h</label>
+        <link refid="of_vbo_mesh_8h"/>
+        <childnode refid="5837" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+      </node>
+      <node id="5894">
+        <label>video/ofGstVideoPlayer.cpp</label>
+        <link refid="of_gst_video_player_8cpp"/>
+      </node>
+      <node id="5872">
+        <label>video/ofVideoPlayer.h</label>
+        <link refid="of_video_player_8h"/>
+        <childnode refid="5838" relation="include">
+        </childnode>
+        <childnode refid="5870" relation="include">
+        </childnode>
+        <childnode refid="5873" relation="include">
+        </childnode>
+      </node>
+      <node id="5877">
+        <label>3d/ofNode.h</label>
+        <link refid="of_node_8h"/>
+        <childnode refid="5878" relation="include">
+        </childnode>
+        <childnode refid="5881" relation="include">
+        </childnode>
+        <childnode refid="5882" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+      </node>
+      <node id="5876">
+        <label>3d/of3dUtils.cpp</label>
+        <link refid="of3d_utils_8cpp"/>
+      </node>
+      <node id="5831">
+        <label>3d/ofMesh.h</label>
+        <link refid="of_mesh_8h"/>
+        <childnode refid="5832" relation="include">
+        </childnode>
+        <childnode refid="5833" relation="include">
+        </childnode>
+        <childnode refid="5834" relation="include">
+        </childnode>
+        <childnode refid="5836" relation="include">
+        </childnode>
+        <childnode refid="5839" relation="include">
+        </childnode>
+        <childnode refid="5846" relation="include">
+        </childnode>
+        <childnode refid="5841" relation="include">
+        </childnode>
+        <childnode refid="5844" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+        <childnode refid="5848" relation="include">
+        </childnode>
+      </node>
+      <node id="5875">
+        <label>graphics/ofGraphics.h</label>
+        <link refid="of_graphics_8h"/>
+        <childnode refid="5876" relation="include">
+        </childnode>
+        <childnode refid="5877" relation="include">
+        </childnode>
+        <childnode refid="5832" relation="include">
+        </childnode>
+        <childnode refid="5850" relation="include">
+        </childnode>
+        <childnode refid="5851" relation="include">
+        </childnode>
+        <childnode refid="5852" relation="include">
+        </childnode>
+        <childnode refid="5857" relation="include">
+        </childnode>
+        <childnode refid="5833" relation="include">
+        </childnode>
+        <childnode refid="5860" relation="include">
+        </childnode>
+        <childnode refid="5841" relation="include">
+        </childnode>
+        <childnode refid="5842" relation="include">
+        </childnode>
+        <childnode refid="5863" relation="include">
+        </childnode>
+        <childnode refid="5843" relation="include">
+        </childnode>
+        <childnode refid="5884" relation="include">
+        </childnode>
+        <childnode refid="5845" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+        <childnode refid="5864" relation="include">
+        </childnode>
+      </node>
+      <node id="5829">
+        <label>utils/ofUtils.h</label>
+        <link refid="ofUtils.h"/>
+        <childnode refid="5830" relation="include">
+        </childnode>
+        <childnode refid="5831" relation="include">
+        </childnode>
+        <childnode refid="5850" relation="include">
+        </childnode>
+        <childnode refid="5851" relation="include">
+        </childnode>
+        <childnode refid="5897" relation="include">
+        </childnode>
+        <childnode refid="5898" relation="include">
+        </childnode>
+        <childnode refid="5852" relation="include">
+        </childnode>
+        <childnode refid="5857" relation="include">
+        </childnode>
+        <childnode refid="5883" relation="include">
+        </childnode>
+        <childnode refid="5859" relation="include">
+        </childnode>
+        <childnode refid="5860" relation="include">
+        </childnode>
+        <childnode refid="5834" relation="include">
+        </childnode>
+        <childnode refid="5835" relation="include">
+        </childnode>
+        <childnode refid="5841" relation="include">
+        </childnode>
+        <childnode refid="5899" relation="include">
+        </childnode>
+        <childnode refid="5842" relation="include">
+        </childnode>
+        <childnode refid="5845" relation="include">
+        </childnode>
+        <childnode refid="5901" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+        <childnode refid="5902" relation="include">
+        </childnode>
+        <childnode refid="5887" relation="include">
+        </childnode>
+        <childnode refid="5888" relation="include">
+        </childnode>
+        <childnode refid="5903" relation="include">
+        </childnode>
+        <childnode refid="5904" relation="include">
+        </childnode>
+        <childnode refid="5905" relation="include">
+        </childnode>
+        <childnode refid="5864" relation="include">
+        </childnode>
+        <childnode refid="5866" relation="include">
+        </childnode>
+        <childnode refid="5890" relation="include">
+        </childnode>
+        <childnode refid="5906" relation="include">
+        </childnode>
+        <childnode refid="5896" relation="include">
+        </childnode>
+        <childnode refid="5869" relation="include">
+        </childnode>
+        <childnode refid="5873" relation="include">
+        </childnode>
+      </node>
+      <node id="5883">
+        <label>gl/ofLight.cpp</label>
+        <link refid="of_light_8cpp"/>
+      </node>
+      <node id="5843">
+        <label>graphics/ofPath.cpp</label>
+        <link refid="of_path_8cpp"/>
+      </node>
+      <node id="5905">
+        <label>utils/ofURLFileLoader.cpp</label>
+        <link refid="of_u_r_l_file_loader_8cpp"/>
+      </node>
+      <node id="5868">
+        <label>video/ofiPhoneVideoGrabber.h</label>
+        <link refid="ofi_phone_video_grabber_8h"/>
+      </node>
+      <node id="5844">
+        <label>graphics/ofTrueTypeFont.h</label>
+        <link refid="of_true_type_font_8h"/>
+        <childnode refid="5845" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+      </node>
+      <node id="5896">
+        <label>video/ofQuickTimePlayer.cpp</label>
+        <link refid="of_quick_time_player_8cpp"/>
+      </node>
+      <node id="5855">
+        <label>gl/ofTexture.h</label>
+        <link refid="of_texture_8h"/>
+        <childnode refid="5856" relation="include">
+        </childnode>
+        <childnode refid="5858" relation="include">
+        </childnode>
+        <childnode refid="5860" relation="include">
+        </childnode>
+        <childnode refid="5861" relation="include">
+        </childnode>
+        <childnode refid="5862" relation="include">
+        </childnode>
+        <childnode refid="5844" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+        <childnode refid="5865" relation="include">
+        </childnode>
+        <childnode refid="5867" relation="include">
+        </childnode>
+        <childnode refid="5870" relation="include">
+        </childnode>
+        <childnode refid="5872" relation="include">
+        </childnode>
+      </node>
+      <node id="5841">
+        <label>graphics/ofCairoRenderer.cpp</label>
+        <link refid="of_cairo_renderer_8cpp"/>
+      </node>
+      <node id="5834">
+        <label>gl/ofVbo.h</label>
+        <link refid="of_vbo_8h"/>
+        <childnode refid="5835" relation="include">
+        </childnode>
+        <childnode refid="5836" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+      </node>
+      <node id="5858">
+        <label>gl/ofShader.h</label>
+        <link refid="of_shader_8h"/>
+        <childnode refid="5859" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+      </node>
+      <node id="5884">
+        <label>graphics/ofPolyline.cpp</label>
+        <link refid="of_polyline_8cpp"/>
+      </node>
+      <node id="5832">
+        <label>3d/ofMesh.cpp</label>
+        <link refid="of_mesh_8cpp"/>
+      </node>
+      <node id="5845">
+        <label>graphics/ofTrueTypeFont.cpp</label>
+        <link refid="of_true_type_font_8cpp"/>
+      </node>
+      <node id="5897">
+        <label>communication/ofArduino.cpp</label>
+        <link refid="of_arduino_8cpp"/>
+      </node>
+      <node id="5902">
+        <label>sound/ofFmodSoundPlayer.cpp</label>
+        <link refid="of_fmod_sound_player_8cpp"/>
+      </node>
+      <node id="5862">
+        <label>graphics/ofImage.h</label>
+        <link refid="of_image_8h"/>
+        <childnode refid="5851" relation="include">
+        </childnode>
+        <childnode refid="5833" relation="include">
+        </childnode>
+        <childnode refid="5841" relation="include">
+        </childnode>
+        <childnode refid="5863" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+        <childnode refid="5864" relation="include">
+        </childnode>
+      </node>
+      <node id="5849">
+        <label>app/ofBaseApp.h</label>
+        <link refid="of_base_app_8h"/>
+        <childnode refid="5850" relation="include">
+        </childnode>
+        <childnode refid="5851" relation="include">
+        </childnode>
+        <childnode refid="5852" relation="include">
+        </childnode>
+        <childnode refid="5838" relation="include">
+        </childnode>
+        <childnode refid="5853" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="of_utils_8h_1addcdb1a477a137f6515917598b4d47b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofNextPow2</definition>
+        <argsstring>(int input)</argsstring>
+        <name>ofNextPow2</name>
+        <param>
+          <type>int</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="13" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="14" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1aea0bc115291cf9119ea1b9f5ac70ca56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofResetElapsedTimeCounter</definition>
+        <argsstring>()</argsstring>
+        <name>ofResetElapsedTimeCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="15" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="72" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1afe74f75f42101a88aa6b91f684484c78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofGetElapsedTimef</definition>
+        <argsstring>()</argsstring>
+        <name>ofGetElapsedTimef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="16" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a480a2f6114995058aee9f09b946f2840" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofGetElapsedTimeMillis</definition>
+        <argsstring>()</argsstring>
+        <name>ofGetElapsedTimeMillis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="17" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="57" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a3aeb0006fa40f5de6c2f2f1db87585f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned long</type>
+        <definition>unsigned long ofGetElapsedTimeMicros</definition>
+        <argsstring>()</argsstring>
+        <name>ofGetElapsedTimeMicros</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="18" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a3fe28889b15534a5a1c827a4ecb2ef26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofGetFrameNum</definition>
+        <argsstring>()</argsstring>
+        <name>ofGetFrameNum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="19" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/app/ofAppRunner.cpp" bodystart="195" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1aa70e381f3cd98884c5b9a048dc327e93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofGetSeconds</definition>
+        <argsstring>()</argsstring>
+        <name>ofGetSeconds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="21" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="132" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a24d379ebf610c2819476ccb509290008" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofGetMinutes</definition>
+        <argsstring>()</argsstring>
+        <name>ofGetMinutes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="22" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="141" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a6ccd64cce2cd952ba3d92ec3c7d3fdcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofGetHours</definition>
+        <argsstring>()</argsstring>
+        <name>ofGetHours</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="23" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="150" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1adf108cb5b8cbd5cf5b70aeb472d390df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ofGetUnixTime</definition>
+        <argsstring>()</argsstring>
+        <name>ofGetUnixTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="26" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="112" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1af2b6fc47f2ee0d042f495c76e46384e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned long</type>
+        <definition>unsigned long ofGetSystemTime</definition>
+        <argsstring>()</argsstring>
+        <name>ofGetSystemTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="28" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="83" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a33954cd008efa7842ad5db56f09108c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned long</type>
+        <definition>unsigned long ofGetSystemTimeMicros</definition>
+        <argsstring>()</argsstring>
+        <name>ofGetSystemTimeMicros</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="29" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="97" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a5b56fd313fa71344f9040a636289f586" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ofGetTimestampString</definition>
+        <argsstring>()</argsstring>
+        <name>ofGetTimestampString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="32" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="118" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1af7d408ddd8dc6384e5fd3c8588f9e219" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ofGetTimestampString</definition>
+        <argsstring>(string timestampFormat)</argsstring>
+        <name>ofGetTimestampString</name>
+        <param>
+          <type>string</type>
+          <declname>timestampFormat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="33" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="126" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a5e8e9c0b83e712a9a69c6a50f21a3950" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofGetYear</definition>
+        <argsstring>()</argsstring>
+        <name>ofGetYear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="36" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="159" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a5c10fdef145283615e2ab0f92523e916" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofGetMonth</definition>
+        <argsstring>()</argsstring>
+        <name>ofGetMonth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="37" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="169" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1aa655e6ae2ab15b03f3429432fb4fbbc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofGetDay</definition>
+        <argsstring>()</argsstring>
+        <name>ofGetDay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="38" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="179" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1aedebb8ecdac415d22042d7b681ca1d43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofGetWeekday</definition>
+        <argsstring>()</argsstring>
+        <name>ofGetWeekday</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="39" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="188" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1aaec488f8c77857f240dd79ae9f63d0e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofLaunchBrowser</definition>
+        <argsstring>(string url)</argsstring>
+        <name>ofLaunchBrowser</name>
+        <param>
+          <type>string</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="41" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="593" bodyend="640"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a5dd69e44833bd031c2c776804d535146" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofEnableDataPath</definition>
+        <argsstring>()</argsstring>
+        <name>ofEnableDataPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="43" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="197" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1abc29e22b96ebfb8d5c7588181469cad9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofDisableDataPath</definition>
+        <argsstring>()</argsstring>
+        <name>ofDisableDataPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="44" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="202" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a69c60cde985ce0527fe8985bc7aea748" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ofToDataPath</definition>
+        <argsstring>(string path, bool absolute=false)</argsstring>
+        <name>ofToDataPath</name>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>absolute</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="45" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="259" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a772e5a0b69cb0a96355c4779a3b8f406" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ofRandomize</definition>
+        <argsstring>(vector&lt; T &gt; &amp;values)</argsstring>
+        <name>ofRandomize</name>
+        <param>
+          <type>vector&lt; T &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="48" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a0bfa26d76873951b49efbeb8f90150bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>class BoolFunction</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ofRemove</definition>
+        <argsstring>(vector&lt; T &gt; &amp;values, BoolFunction shouldErase)</argsstring>
+        <name>ofRemove</name>
+        <param>
+          <type>vector&lt; T &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>BoolFunction</type>
+          <declname>shouldErase</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="53" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1aa5a0b30330f1d982b99af0909b626626" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ofSort</definition>
+        <argsstring>(vector&lt; T &gt; &amp;values)</argsstring>
+        <name>ofSort</name>
+        <param>
+          <type>vector&lt; T &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="58" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1af8a99e875eb541116ae21e1216b18cb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>unsigned int</type>
+        <definition>unsigned int ofFind</definition>
+        <argsstring>(const vector&lt; T &gt; &amp;values, const T &amp;target)</argsstring>
+        <name>ofFind</name>
+        <param>
+          <type>const vector&lt; T &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="63" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a6ffcbe4a4463c261b2bf0d5f9d706b89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool ofContains</definition>
+        <argsstring>(const vector&lt; T &gt; &amp;values, const T &amp;target)</argsstring>
+        <name>ofContains</name>
+        <param>
+          <type>const vector&lt; T &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="68" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a291ee9dd260f01969aa29e0d76d07295" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSetDataPathRoot</definition>
+        <argsstring>(string root)</argsstring>
+        <name>ofSetDataPathRoot</name>
+        <param>
+          <type>string</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="74" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="219" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1aac3a56563e3bbf91aa94d9ff5c3b8cc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>string</type>
+        <definition>string ofToString</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>ofToString</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="77" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" bodystart="77" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a1ae4887155b7f21ea097f2830d229ec3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>string</type>
+        <definition>string ofToString</definition>
+        <argsstring>(const T &amp;value, int precision)</argsstring>
+        <name>ofToString</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>precision</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="84" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" bodystart="84" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a191d03b31da3a74bcab960f7fe8bff86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>string</type>
+        <definition>string ofToString</definition>
+        <argsstring>(const vector&lt; T &gt; &amp;values)</argsstring>
+        <name>ofToString</name>
+        <param>
+          <type>const vector&lt; T &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="91" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" bodystart="91" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a9018116c934c972694d18f1719a1506b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>string</type>
+        <definition>string ofToHex</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>ofToHex</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="106" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" bodystart="106" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a0c0a2f6a29f55109428eab18b2794304" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>string</type>
+        <definition>string ofToHex</definition>
+        <argsstring>(const string &amp;value)</argsstring>
+        <name>ofToHex</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="120" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="302" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1ae89db4d890bd5857bfb9fc3f7934af0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ofToHex</definition>
+        <argsstring>(const char *value)</argsstring>
+        <name>ofToHex</name>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="121" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="314" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a15c08362f3a3a08b564a03f8198e0c91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofHexToInt</definition>
+        <argsstring>(const string &amp;intHexString)</argsstring>
+        <name>ofHexToInt</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>intHexString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="123" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="329" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1af10a159a72a7ffe2e21a7f0e524d2647" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char ofHexToChar</definition>
+        <argsstring>(const string &amp;charHexString)</argsstring>
+        <name>ofHexToChar</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>charHexString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="124" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="337" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a1c2be299902ddf28f9f3880562137ab2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofHexToFloat</definition>
+        <argsstring>(const string &amp;floatHexString)</argsstring>
+        <name>ofHexToFloat</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>floatHexString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="125" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="345" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1afcdc71a74c9249e72d93097701fed3ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ofHexToString</definition>
+        <argsstring>(const string &amp;stringHexString)</argsstring>
+        <name>ofHexToString</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>stringHexString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="126" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="353" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a02ff3334da0e43587cc19190433fa77b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofToInt</definition>
+        <argsstring>(const string &amp;intString)</argsstring>
+        <name>ofToInt</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>intString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="128" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="321" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a4b1ca14d38d0fd9f224de0d9c7c4df80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char ofToChar</definition>
+        <argsstring>(const string &amp;charString)</argsstring>
+        <name>ofToChar</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>charString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="129" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="399" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a9b92372035fbb1582c8d8a4fc0bcb132" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofToFloat</definition>
+        <argsstring>(const string &amp;floatString)</argsstring>
+        <name>ofToFloat</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>floatString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="130" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="374" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1acd94e88f1393f0a00e4e6a3c85d88433" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofToBool</definition>
+        <argsstring>(const string &amp;boolString)</argsstring>
+        <name>ofToBool</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>boolString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="131" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="382" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1aa1564b66099aee83ce1de2c9ae833c95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>string</type>
+        <definition>string ofToBinary</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>ofToBinary</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="134" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" bodystart="134" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1ac825478a2e294623da3432707a138629" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>string</type>
+        <definition>string ofToBinary</definition>
+        <argsstring>(const string &amp;value)</argsstring>
+        <name>ofToBinary</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="147" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="407" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a8ca987c0317c097a52c74d16fac874cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ofToBinary</definition>
+        <argsstring>(const char *value)</argsstring>
+        <name>ofToBinary</name>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="148" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="418" bodyend="422"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1ae3860664864159916164ed9ab1608339" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofBinaryToInt</definition>
+        <argsstring>(const string &amp;value)</argsstring>
+        <name>ofBinaryToInt</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="150" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="425" bodyend="429"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1ade60b17beae5e41cd433975998fef037" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char ofBinaryToChar</definition>
+        <argsstring>(const string &amp;value)</argsstring>
+        <name>ofBinaryToChar</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="151" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="432" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a3399487cdb9e2808b3fc380d7c5645dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofBinaryToFloat</definition>
+        <argsstring>(const string &amp;value)</argsstring>
+        <name>ofBinaryToFloat</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="152" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="439" bodyend="449"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1ad930367d2a3bd2514f0a6d5516fd855e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ofBinaryToString</definition>
+        <argsstring>(const string &amp;value)</argsstring>
+        <name>ofBinaryToString</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="153" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="452" bodyend="462"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1ace6bb3ddbbe185712808047277dab043" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ofGetVersionInfo</definition>
+        <argsstring>()</argsstring>
+        <name>ofGetVersionInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="155" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="643" bodyend="648"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a6fff50ce3fcfcb18dc2543d99822d645" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSaveScreen</definition>
+        <argsstring>(string filename)</argsstring>
+        <name>ofSaveScreen</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="157" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="654" bodyend="659"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1aab3fb9d1d4dbd94705f8853d4288dbf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSaveFrame</definition>
+        <argsstring>(bool bUseViewport=false)</argsstring>
+        <name>ofSaveFrame</name>
+        <param>
+          <type>bool</type>
+          <declname>bUseViewport</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="158" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="673" bodyend="681"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a4a664064ed1310da6b9e5c104ae53862" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSaveViewport</definition>
+        <argsstring>(string filename)</argsstring>
+        <name>ofSaveViewport</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="159" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="662" bodyend="669"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1ab145673fc8b58076ed7a55eb26911a08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt;string&gt; ofSplitString</definition>
+        <argsstring>(const string &amp;source, const string &amp;delimiter, bool ignoreEmpty=false, bool trim=false)</argsstring>
+        <name>ofSplitString</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>delimiter</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ignoreEmpty</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>trim</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="162" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="465" bodyend="487"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a3c4fbf2edf8845a96811f96127c19df6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ofJoinString</definition>
+        <argsstring>(vector&lt; string &gt; stringElements, const string &amp;delimiter)</argsstring>
+        <name>ofJoinString</name>
+        <param>
+          <type>vector&lt; string &gt;</type>
+          <declname>stringElements</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>delimiter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="163" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="490" bodyend="503"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a113181215ce9fb80d06b60f9ae09e659" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofStringReplace</definition>
+        <argsstring>(string &amp;input, string searchStr, string replaceStr)</argsstring>
+        <name>ofStringReplace</name>
+        <param>
+          <type>string &amp;</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>searchStr</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>replaceStr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="164" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="506" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1afb1e5425f758ed665faf87d3f29b350c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofIsStringInString</definition>
+        <argsstring>(string haystack, string needle)</argsstring>
+        <name>ofIsStringInString</name>
+        <param>
+          <type>string</type>
+          <declname>haystack</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>needle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="165" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="522" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a92c303a15a7649f987b8dce1e5eec26c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ofToLower</definition>
+        <argsstring>(const string &amp;src)</argsstring>
+        <name>ofToLower</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="167" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="527" bodyend="531"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1ac90c47cb2710aa90def41ddef75d5adf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ofToUpper</definition>
+        <argsstring>(const string &amp;src)</argsstring>
+        <name>ofToUpper</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="168" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="534" bodyend="538"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a666d0d4cc9f1781386de7a678618b35e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ofVAArgsToString</definition>
+        <argsstring>(const char *format,...)</argsstring>
+        <name>ofVAArgsToString</name>
+        <param>
+          <type>const char *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="170" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="541" bodyend="575"/>
+      </memberdef>
+      <memberdef kind="function" id="of_utils_8h_1a63462eb8758cd1ebf85491c8050f8bb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ofVAArgsToString</definition>
+        <argsstring>(const char *format, va_list args)</argsstring>
+        <name>ofVAArgsToString</name>
+        <param>
+          <type>const char *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h" line="171" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.cpp" bodystart="577" bodyend="590"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_constants_8h" kindref="compound">ofConstants.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;bitset&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>for<sp/>ofToBinary</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_log_8h" kindref="compound">ofLog.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>TARGET_WIN32<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>for<sp/>ofLaunchBrowser</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#include<sp/>&lt;shellapi.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1a0e50654e98b730299945741b53853421" kindref="member">ofNextPow2</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>input);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="of_utils_8cpp_1aea0bc115291cf9119ea1b9f5ac70ca56" kindref="member">ofResetElapsedTimeCounter</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>this<sp/>happens<sp/>on<sp/>the<sp/>first<sp/>frame</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="of_utils_8cpp_1afe74f75f42101a88aa6b91f684484c78" kindref="member">ofGetElapsedTimef</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_utils_8cpp_1a480a2f6114995058aee9f09b946f2840" kindref="member">ofGetElapsedTimeMillis</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1a3aeb0006fa40f5de6c2f2f1db87585f3" kindref="member">ofGetElapsedTimeMicros</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="of_app_runner_8cpp_1a3fe28889b15534a5a1c827a4ecb2ef26" kindref="member">ofGetFrameNum</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="of_utils_8cpp_1aa70e381f3cd98884c5b9a048dc327e93" kindref="member">ofGetSeconds</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="of_utils_8cpp_1a24d379ebf610c2819476ccb509290008" kindref="member">ofGetMinutes</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="of_utils_8cpp_1a6ccd64cce2cd952ba3d92ec3c7d3fdcd" kindref="member">ofGetHours</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//number<sp/>of<sp/>seconds<sp/>since<sp/>1970</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1adf108cb5b8cbd5cf5b70aeb472d390df" kindref="member">ofGetUnixTime</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1af2b6fc47f2ee0d042f495c76e46384e7" kindref="member">ofGetSystemTime</ref>(<sp/>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>system<sp/>time<sp/>in<sp/>milliseconds;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1a33954cd008efa7842ad5db56f09108c3" kindref="member">ofGetSystemTimeMicros</ref>(<sp/>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>system<sp/>time<sp/>in<sp/>microseconds;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//returns<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1a5b56fd313fa71344f9040a636289f586" kindref="member">ofGetTimestampString</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1a5b56fd313fa71344f9040a636289f586" kindref="member">ofGetTimestampString</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>timestampFormat);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="of_utils_8cpp_1a5e8e9c0b83e712a9a69c6a50f21a3950" kindref="member">ofGetYear</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="of_utils_8cpp_1a5c10fdef145283615e2ab0f92523e916" kindref="member">ofGetMonth</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="of_utils_8cpp_1aa655e6ae2ab15b03f3429432fb4fbbc8" kindref="member">ofGetDay</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="of_utils_8cpp_1aedebb8ecdac415d22042d7b681ca1d43" kindref="member">ofGetWeekday</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="of_utils_8cpp_1aaec488f8c77857f240dd79ae9f63d0e6" kindref="member">ofLaunchBrowser</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>url);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="of_utils_8cpp_1a5dd69e44833bd031c2c776804d535146" kindref="member">ofEnableDataPath</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="of_utils_8cpp_1abc29e22b96ebfb8d5c7588181469cad9" kindref="member">ofDisableDataPath</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><ref refid="of_utils_8cpp_1ab63c4765a81958e1573817738c684bba" kindref="member">ofToDataPath</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>path,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>absolute=</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_utils_8h_1a772e5a0b69cb0a96355c4779a3b8f406" kindref="member">ofRandomize</ref>(vector&lt;T&gt;&amp;<sp/>values)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>random_shuffle(values.begin(),<sp/>values.end());</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>BoolFunction&gt;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_utils_8h_1a0bfa26d76873951b49efbeb8f90150bf" kindref="member">ofRemove</ref>(vector&lt;T&gt;&amp;<sp/>values,<sp/>BoolFunction<sp/>shouldErase)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>values.erase(remove_if(values.begin(),<sp/>values.end(),<sp/>shouldErase),<sp/>values.end());</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_utils_8h_1aa5a0b30330f1d982b99af0909b626626" kindref="member">ofSort</ref>(vector&lt;T&gt;&amp;<sp/>values)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sort(values.begin(),<sp/>values.end());</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="of_utils_8h_1af8a99e875eb541116ae21e1216b18cb8" kindref="member">ofFind</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;T&gt;&amp;<sp/>values,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>target)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>distance(values.begin(),<sp/>find(values.begin(),<sp/>values.end(),<sp/>target));</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="of_utils_8h_1a6ffcbe4a4463c261b2bf0d5f9d706b89" kindref="member">ofContains</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;T&gt;&amp;<sp/>values,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>target)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="of_utils_8h_1af8a99e875eb541116ae21e1216b18cb8" kindref="member">ofFind</ref>(values,<sp/>target)<sp/>!=<sp/>values.size();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//set<sp/>the<sp/>root<sp/>path<sp/>that<sp/>ofToDataPath<sp/>will<sp/>use<sp/>to<sp/>search<sp/>for<sp/>files<sp/>relative<sp/>to<sp/>the<sp/>app</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//the<sp/>path<sp/>must<sp/>have<sp/>a<sp/>trailing<sp/>slash<sp/>(/)<sp/>!!!!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="of_utils_8cpp_1ae03274e04d163cc47463effa53a1d565" kindref="member">ofSetDataPathRoot</ref>(<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>root<sp/>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="of_utils_8h_1aac3a56563e3bbf91aa94d9ff5c3b8cc5" kindref="member">ofToString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>value){</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ostringstream<sp/>out;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>value;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out.str();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="of_utils_8h_1aac3a56563e3bbf91aa94d9ff5c3b8cc5" kindref="member">ofToString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>value,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>precision){</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ostringstream<sp/>out;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>fixed<sp/>&lt;&lt;<sp/>setprecision(precision)<sp/>&lt;&lt;<sp/>value;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out.str();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="of_utils_8h_1aac3a56563e3bbf91aa94d9ff5c3b8cc5" kindref="member">ofToString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;T&gt;&amp;<sp/>values)<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stringstream<sp/>out;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>values.size();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;{&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(n<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n<sp/>-<sp/>1;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>values[i]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>values[n<sp/>-<sp/>1];</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;}&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out.str();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1a0c0a2f6a29f55109428eab18b2794304" kindref="member">ofToHex</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ostringstream<sp/>out;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pretend<sp/>that<sp/>the<sp/>value<sp/>is<sp/>a<sp/>bunch<sp/>of<sp/>bytes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>valuePtr<sp/>=<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<sp/>&amp;value;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>number<sp/>of<sp/>bytes<sp/>is<sp/>determined<sp/>by<sp/>the<sp/>datatype</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numBytes<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>bytes<sp/>are<sp/>stored<sp/>backwards<sp/>(least<sp/>significant<sp/>first)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>numBytes<sp/>-<sp/>1;<sp/>i<sp/>&gt;=<sp/>0;<sp/>i--)<sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>print<sp/>each<sp/>byte<sp/>out<sp/>as<sp/>a<sp/>2-character<sp/>wide<sp/>hex<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>setfill(</highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>setw(2)<sp/>&lt;&lt;<sp/>hex<sp/>&lt;&lt;<sp/>(int)<sp/>valuePtr[i];</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out.str();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1a0c0a2f6a29f55109428eab18b2794304" kindref="member">ofToHex</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1a0c0a2f6a29f55109428eab18b2794304" kindref="member">ofToHex</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>value);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1a15c08362f3a3a08b564a03f8198e0c91" kindref="member">ofHexToInt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>intHexString);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1af10a159a72a7ffe2e21a7f0e524d2647" kindref="member">ofHexToChar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>charHexString);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1a1c2be299902ddf28f9f3880562137ab2" kindref="member">ofHexToFloat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>floatHexString);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1afcdc71a74c9249e72d93097701fed3ec" kindref="member">ofHexToString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>stringHexString);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1a02ff3334da0e43587cc19190433fa77b" kindref="member">ofToInt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>intString);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1a4b1ca14d38d0fd9f224de0d9c7c4df80" kindref="member">ofToChar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>charString);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1a9b92372035fbb1582c8d8a4fc0bcb132" kindref="member">ofToFloat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>floatString);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1acd94e88f1393f0a00e4e6a3c85d88433" kindref="member">ofToBool</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>boolString);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1ac825478a2e294623da3432707a138629" kindref="member">ofToBinary</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ostringstream<sp/>out;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>data<sp/>=<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<sp/>&amp;value;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>number<sp/>of<sp/>bytes<sp/>is<sp/>determined<sp/>by<sp/>the<sp/>datatype</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numBytes<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>bytes<sp/>are<sp/>stored<sp/>backwards<sp/>(least<sp/>significant<sp/>first)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>numBytes<sp/>-<sp/>1;<sp/>i<sp/>&gt;=<sp/>0;<sp/>i--)<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bitset&lt;8&gt;<sp/>cur(data[i]);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>cur;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out.str();</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1ac825478a2e294623da3432707a138629" kindref="member">ofToBinary</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1ac825478a2e294623da3432707a138629" kindref="member">ofToBinary</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>value);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1ae3860664864159916164ed9ab1608339" kindref="member">ofBinaryToInt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1ade60b17beae5e41cd433975998fef037" kindref="member">ofBinaryToChar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1a3399487cdb9e2808b3fc380d7c5645dc" kindref="member">ofBinaryToFloat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1ad930367d2a3bd2514f0a6d5516fd855e" kindref="member">ofBinaryToString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/><ref refid="of_utils_8cpp_1ace6bb3ddbbe185712808047277dab043" kindref="member">ofGetVersionInfo</ref>();</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="of_utils_8cpp_1a6fff50ce3fcfcb18dc2543d99822d645" kindref="member">ofSaveScreen</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="of_utils_8cpp_1aeae0d89876f81c5b4062b4a72ca76253" kindref="member">ofSaveFrame</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bUseViewport<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="of_utils_8cpp_1a4a664064ed1310da6b9e5c104ae53862" kindref="member">ofSaveViewport</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal">vector<sp/>&lt;string&gt;<sp/><ref refid="of_utils_8cpp_1a98dd60cdd03981911102688dd6f1662d" kindref="member">ofSplitString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;<sp/>source,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;<sp/>delimiter,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ignoreEmpty<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>trim<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1a3c4fbf2edf8845a96811f96127c19df6" kindref="member">ofJoinString</ref>(vector<sp/>&lt;string&gt;<sp/>stringElements,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;<sp/>delimiter);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1a113181215ce9fb80d06b60f9ae09e659" kindref="member">ofStringReplace</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>input,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>searchStr,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>replaceStr);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1afb1e5425f758ed665faf87d3f29b350c" kindref="member">ofIsStringInString</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>haystack,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>needle);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1a92c303a15a7649f987b8dce1e5eec26c" kindref="member">ofToLower</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;<sp/>src);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1ac90c47cb2710aa90def41ddef75d5adf" kindref="member">ofToUpper</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;<sp/>src);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1a666d0d4cc9f1781386de7a678618b35e" kindref="member">ofVAArgsToString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>format,<sp/>...);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="of_utils_8cpp_1a666d0d4cc9f1781386de7a678618b35e" kindref="member">ofVAArgsToString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>format,<sp/>va_list<sp/>args);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofUtils.h"/>
+  </compounddef>
+</doxygen>

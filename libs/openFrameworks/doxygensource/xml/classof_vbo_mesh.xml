@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="classof_vbo_mesh" kind="class" prot="public">
+    <compoundname>ofVboMesh</compoundname>
+    <basecompoundref refid="classof_mesh" prot="public" virt="non-virtual">ofMesh</basecompoundref>
+    <includes local="no">ofVboMesh.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classof_vbo_mesh_1af5229350358d115e4812b56dad4b728b" prot="private" static="no" mutable="no">
+        <type><ref refid="classof_vbo" kindref="compound">ofVbo</ref></type>
+        <definition>ofVbo ofVboMesh::vbo</definition>
+        <argsstring></argsstring>
+        <name>vbo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.h" line="17" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_vbo_mesh_1a7b6aee635794d10e13b02c814716aba0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ofVboMesh::usage</definition>
+        <argsstring></argsstring>
+        <name>usage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.h" line="18" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_vbo_mesh_1a1ec44d7961dad5bc20d8c728cd98f098" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ofVboMesh::vboNumVerts</definition>
+        <argsstring></argsstring>
+        <name>vboNumVerts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.h" line="19" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_vbo_mesh_1a2ebaa8ac498ae1cbc1b4fb52e54d2738" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ofVboMesh::vboNumIndices</definition>
+        <argsstring></argsstring>
+        <name>vboNumIndices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.h" line="19" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_vbo_mesh_1ac7c4ac70b89a7b686bf5d3c65ed4776b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ofVboMesh::vboNumNormals</definition>
+        <argsstring></argsstring>
+        <name>vboNumNormals</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.h" line="19" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_vbo_mesh_1adf64237f5a5b3260ebaf3a046f5d3009" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ofVboMesh::vboNumTexCoords</definition>
+        <argsstring></argsstring>
+        <name>vboNumTexCoords</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.h" line="19" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_vbo_mesh_1aed8be850595e6b472c20c790c30372f1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ofVboMesh::vboNumColors</definition>
+        <argsstring></argsstring>
+        <name>vboNumColors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.h" line="19" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classof_vbo_mesh_1af148219c2bf064301d81403b0582abb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ofVboMesh::ofVboMesh</definition>
+        <argsstring>()</argsstring>
+        <name>ofVboMesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.h" line="9" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.cpp" bodystart="3" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_vbo_mesh_1aeeba79d4aa3c81e2723d0bb715a4fad3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ofVboMesh::ofVboMesh</definition>
+        <argsstring>(const ofMesh &amp;mom)</argsstring>
+        <name>ofVboMesh</name>
+        <param>
+          <type>const <ref refid="classof_mesh" kindref="compound">ofMesh</ref> &amp;</type>
+          <declname>mom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.h" line="10" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.cpp" bodystart="7" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_vbo_mesh_1ac02e0fd9f08d40fb9d8cc63838654fd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofVboMesh::setUsage</definition>
+        <argsstring>(int usage)</argsstring>
+        <name>setUsage</name>
+        <param>
+          <type>int</type>
+          <declname>usage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.h" line="11" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.cpp" bodystart="13" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classof_vbo_mesh_1a5a2216a500fc32692d02e78f0405e801" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ofVboMesh::draw</definition>
+        <argsstring>(ofPolyRenderMode drawMode)</argsstring>
+        <name>draw</name>
+        <reimplements refid="classof_mesh_1aa69e4d157ce3f84cad22fbf996b5f11c">draw</reimplements>
+        <param>
+          <type><ref refid="of_g_l_utils_8h_1a6beb1fbbaba728909c78cda1eadfe28e" kindref="member">ofPolyRenderMode</ref></type>
+          <declname>drawMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.h" line="14" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.cpp" bodystart="17" bodyend="113"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="578">
+        <label>ofVboMesh</label>
+        <link refid="classof_vbo_mesh"/>
+        <childnode refid="579" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="579">
+        <label>ofMesh</label>
+        <link refid="classof_mesh"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="582">
+        <label>ofVbo</label>
+        <link refid="classof_vbo"/>
+      </node>
+      <node id="580">
+        <label>ofVboMesh</label>
+        <link refid="classof_vbo_mesh"/>
+        <childnode refid="581" relation="public-inheritance">
+        </childnode>
+        <childnode refid="582" relation="usage">
+          <edgelabel>vbo</edgelabel>
+        </childnode>
+      </node>
+      <node id="581">
+        <label>ofMesh</label>
+        <link refid="classof_mesh"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.h" line="6" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.h" bodystart="6" bodyend="20"/>
+    <listofallmembers>
+      <member refid="classof_mesh_1acbaef665f6314833b590fa4fae9c05ff" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>addColor</name></member>
+      <member refid="classof_mesh_1a699d3b304f2e57ce2501fd295600d2de" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>addColors</name></member>
+      <member refid="classof_mesh_1a9ac03a1b0b1547909d1cd455c2ca8d6a" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>addColors</name></member>
+      <member refid="classof_mesh_1a1a9c5465e90e7faf40d66a896d0bfc90" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>addIndex</name></member>
+      <member refid="classof_mesh_1a1378ca9b5cee56274aee9756668ebfc0" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>addIndices</name></member>
+      <member refid="classof_mesh_1acc02919186820fb6e7b1ef7bc3d8882a" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>addIndices</name></member>
+      <member refid="classof_mesh_1a2a8e205209d7e98538bead28742e2e80" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>addNormal</name></member>
+      <member refid="classof_mesh_1a86f849a45aadc67fec7ed0d76aadfac9" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>addNormals</name></member>
+      <member refid="classof_mesh_1abdad05ec197d4b0d34cfc30c3068aab0" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>addNormals</name></member>
+      <member refid="classof_mesh_1a1470a135a7eabd35a31205f0e25cdc23" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>addTexCoord</name></member>
+      <member refid="classof_mesh_1a095c75e860dab3813f3bd2305523e7cf" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>addTexCoords</name></member>
+      <member refid="classof_mesh_1af0ce3b676cc80cf52c453177537b7db7" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>addTexCoords</name></member>
+      <member refid="classof_mesh_1a1ef8238528c08850c387e7ce57ff0548" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>addTriangle</name></member>
+      <member refid="classof_mesh_1a14be43bd2e272fed5e030d4f51e61dbf" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>addVertex</name></member>
+      <member refid="classof_mesh_1a71e7a3d050abd65ec3cf881535df889e" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>addVertices</name></member>
+      <member refid="classof_mesh_1a9a5b693358f1771b6c8f150303c52655" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>addVertices</name></member>
+      <member refid="classof_mesh_1a3f84e571d711ee21c45ebaa11bde422e" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>clear</name></member>
+      <member refid="classof_mesh_1ad59ef8a34a9d252d28e8d2abd3a3d8e3" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>clearColors</name></member>
+      <member refid="classof_mesh_1aed651bb80b9ab296094d2bd62145eac7" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>clearIndices</name></member>
+      <member refid="classof_mesh_1a81d5eb9c9c3ca7a5d2096019efb70a19" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>clearNormals</name></member>
+      <member refid="classof_mesh_1ad39901f6dfd43b9374adeb25626d96db" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>clearTexCoords</name></member>
+      <member refid="classof_mesh_1af93146321d946367eb2cd56986d84e5e" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>clearVertices</name></member>
+      <member refid="classof_vbo_mesh_1a5a2216a500fc32692d02e78f0405e801" prot="protected" virt="virtual"><scope>ofVboMesh</scope><name>draw</name></member>
+      <member refid="classof_mesh_1aa97850592c56c4e52492afe0a5643c93" prot="public" virt="non-virtual" ambiguityscope="ofMesh::"><scope>ofVboMesh</scope><name>draw</name></member>
+      <member refid="classof_mesh_1aaae0a950f6e838422dd7c43ec9fdf748" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>drawFaces</name></member>
+      <member refid="classof_mesh_1acefb2d5ed24498988ecbf4f5dc5fa898" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>drawVertices</name></member>
+      <member refid="classof_mesh_1adbcca7869370497dd2d9b486ec4898a6" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>drawWireframe</name></member>
+      <member refid="classof_mesh_1acbac3d141ee803d7123c2454e815e842" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getCentroid</name></member>
+      <member refid="classof_mesh_1a33bed8a9d5f95dcfc416f45bf8fe7c55" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getColor</name></member>
+      <member refid="classof_mesh_1a0fae8088852c05a58b22afeb9d5d8102" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getColors</name></member>
+      <member refid="classof_mesh_1a4f1285a37a2145b79448cb15c334311b" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getColors</name></member>
+      <member refid="classof_mesh_1a2a197f2dda30372b8886207468aa30a8" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getColorsPointer</name></member>
+      <member refid="classof_mesh_1ae8836b110619a575d4d426f2c6a12765" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getColorsPointer</name></member>
+      <member refid="classof_mesh_1ad1b2bf3302c51306e17df889d1bbaf0d" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getFace</name></member>
+      <member refid="classof_mesh_1ab4b7ac2da50b70b79a31e40a518d3c89" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getIndex</name></member>
+      <member refid="classof_mesh_1aff81d2d6063f10bb3907c57a05ba5760" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getIndexPointer</name></member>
+      <member refid="classof_mesh_1a67c3efa73d0d0edd1fc8105be2304321" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getIndexPointer</name></member>
+      <member refid="classof_mesh_1acf727a93d0e042c855583fcb949380cf" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getIndices</name></member>
+      <member refid="classof_mesh_1a975724315c09f2ad00f2480ecbb4264d" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getIndices</name></member>
+      <member refid="classof_mesh_1a9ecefc7c940cc76fc6c9e3648d73d99d" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getMode</name></member>
+      <member refid="classof_mesh_1a732b670501ef4bce36a555cad70f9252" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getNormal</name></member>
+      <member refid="classof_mesh_1ac78f5fdd4e20781da19b9316108ec44f" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getNormals</name></member>
+      <member refid="classof_mesh_1af30ab18bc4b7ba76e12327ba82bc2a0d" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getNormals</name></member>
+      <member refid="classof_mesh_1a6c451abd17d9982621a5dcff7d9beacc" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getNormalsPointer</name></member>
+      <member refid="classof_mesh_1a6c0124b1f31d59be3a8d7efc1cb0c56a" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getNormalsPointer</name></member>
+      <member refid="classof_mesh_1a8be552e86134942fe574c39237da6f92" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getNumColors</name></member>
+      <member refid="classof_mesh_1a566c70e505b5270d281c65b80c160e1d" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getNumIndices</name></member>
+      <member refid="classof_mesh_1a4c483a94a87485b5c90b9180f6fdc7e0" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getNumNormals</name></member>
+      <member refid="classof_mesh_1ac101b06ebefb3905fff8ce0947e26435" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getNumTexCoords</name></member>
+      <member refid="classof_mesh_1ae2d9f9ca63ae1f5febd68b00ebd3a371" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getNumVertices</name></member>
+      <member refid="classof_mesh_1a97ec5e80deac2645c22076aebe7a4d04" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getTexCoord</name></member>
+      <member refid="classof_mesh_1a943c41c666988c7a36b9dc633f019484" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getTexCoords</name></member>
+      <member refid="classof_mesh_1a55684fd802ef1d3702d8aaf494969f77" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getTexCoords</name></member>
+      <member refid="classof_mesh_1a4ffebae46bb320c243824bce66f7f51b" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getTexCoordsPointer</name></member>
+      <member refid="classof_mesh_1a82c6a4e52374e38b33befb2d3c6fe684" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getTexCoordsPointer</name></member>
+      <member refid="classof_mesh_1a57540f5958f4fda4e0f30119403a69a8" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getVertex</name></member>
+      <member refid="classof_mesh_1ada0d7a5f3c7813f6414c32b46987e7e1" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getVertices</name></member>
+      <member refid="classof_mesh_1a37350ffc014d2fff17390b084462079a" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getVertices</name></member>
+      <member refid="classof_mesh_1add367fe228c4ed4f8293caad2caac06d" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getVerticesPointer</name></member>
+      <member refid="classof_mesh_1a93fa8715a095c965da8665d63f49b9e3" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>getVerticesPointer</name></member>
+      <member refid="classof_mesh_1a24c09fd7825c947d089487182c56ea45" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>hasColors</name></member>
+      <member refid="classof_mesh_1a08150f40370116168878f31dcb5b12b5" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>hasIndices</name></member>
+      <member refid="classof_mesh_1a11804f7e3f242e32e5970c2e6e89975d" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>hasNormals</name></member>
+      <member refid="classof_mesh_1acde62714579a941f57de587874a4050e" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>hasTexCoords</name></member>
+      <member refid="classof_mesh_1a07acb9241b3fa789bf6ffb32d31439d8" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>hasVertices</name></member>
+      <member refid="classof_mesh_1a9b8a658247548c364c481c2fefacee95" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>haveColorsChanged</name></member>
+      <member refid="classof_mesh_1a720d91d34321fb273c585b8469215efd" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>haveIndicesChanged</name></member>
+      <member refid="classof_mesh_1a5277897643031ed700dd0ff3e0d89bf7" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>haveNormalsChanged</name></member>
+      <member refid="classof_mesh_1acd571a2fb9cf9c3eb4baa7db60097e49" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>haveTexCoordsChanged</name></member>
+      <member refid="classof_mesh_1ada9a3c0d67fb8242def99959dbc31b3c" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>haveVertsChanged</name></member>
+      <member refid="classof_mesh_1a3ffeb1343321a13b07250eae05ce357e" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>ofMesh</name></member>
+      <member refid="classof_mesh_1a519331c973bbf145a43edfa6636f7fd2" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>ofMesh</name></member>
+      <member refid="classof_vbo_mesh_1af148219c2bf064301d81403b0582abb5" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>ofVboMesh</name></member>
+      <member refid="classof_vbo_mesh_1aeeba79d4aa3c81e2723d0bb715a4fad3" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>ofVboMesh</name></member>
+      <member refid="classof_mesh_1a32bff33721edf71f2168b40cc667f467" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classof_mesh_1a1ca5b92a6644c45a6272d2bd4e4d31a6" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>removeColor</name></member>
+      <member refid="classof_mesh_1ad806ed59175ad4df63aeeb144cbb1bda" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>removeIndex</name></member>
+      <member refid="classof_mesh_1ac7d3b449fda7e15c8dcc7753c9165040" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>removeNormal</name></member>
+      <member refid="classof_mesh_1afa233d0f7762976386f0e54c91d0fd7d" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>removeTexCoord</name></member>
+      <member refid="classof_mesh_1ad3c44f598d35443fd952ff0843d70420" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>removeVertex</name></member>
+      <member refid="classof_mesh_1a669eb47a53bd7a84c294d1ea4d848639" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>setColor</name></member>
+      <member refid="classof_mesh_1ab7a853b8ce5cf1088fc7d55ac5fe5b47" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>setIndex</name></member>
+      <member refid="classof_mesh_1a472d0c5866e27efd96687ca98c024f14" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>setMode</name></member>
+      <member refid="classof_mesh_1addcd757c72f5d7f15770bf9e2d591437" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>setName</name></member>
+      <member refid="classof_mesh_1a8f58b17c3bdb974aa9dbab51e269107c" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>setNormal</name></member>
+      <member refid="classof_mesh_1a14edefb5cd84af4c4afbbc02ae5402ef" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>setTexCoord</name></member>
+      <member refid="classof_mesh_1a8c365cae4b0864698c7cd41e11f7ddd3" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>setupIndicesAuto</name></member>
+      <member refid="classof_vbo_mesh_1ac02e0fd9f08d40fb9d8cc63838654fd8" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>setUsage</name></member>
+      <member refid="classof_mesh_1a353bb0de4125f289d68ff7d3dfd57135" prot="public" virt="non-virtual"><scope>ofVboMesh</scope><name>setVertex</name></member>
+      <member refid="classof_vbo_mesh_1a7b6aee635794d10e13b02c814716aba0" prot="private" virt="non-virtual"><scope>ofVboMesh</scope><name>usage</name></member>
+      <member refid="classof_vbo_mesh_1af5229350358d115e4812b56dad4b728b" prot="private" virt="non-virtual"><scope>ofVboMesh</scope><name>vbo</name></member>
+      <member refid="classof_vbo_mesh_1aed8be850595e6b472c20c790c30372f1" prot="private" virt="non-virtual"><scope>ofVboMesh</scope><name>vboNumColors</name></member>
+      <member refid="classof_vbo_mesh_1a2ebaa8ac498ae1cbc1b4fb52e54d2738" prot="private" virt="non-virtual"><scope>ofVboMesh</scope><name>vboNumIndices</name></member>
+      <member refid="classof_vbo_mesh_1ac7c4ac70b89a7b686bf5d3c65ed4776b" prot="private" virt="non-virtual"><scope>ofVboMesh</scope><name>vboNumNormals</name></member>
+      <member refid="classof_vbo_mesh_1adf64237f5a5b3260ebaf3a046f5d3009" prot="private" virt="non-virtual"><scope>ofVboMesh</scope><name>vboNumTexCoords</name></member>
+      <member refid="classof_vbo_mesh_1a1ec44d7961dad5bc20d8c728cd98f098" prot="private" virt="non-virtual"><scope>ofVboMesh</scope><name>vboNumVerts</name></member>
+      <member refid="classof_mesh_1a7caa88fce14c9aa5b5f67a094b6233ba" prot="public" virt="virtual"><scope>ofVboMesh</scope><name>~ofMesh</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="dir_58e75995f67e228c0773e2470006e252" kind="dir">
+    <compoundname>graphics/</compoundname>
+    <innerfile refid="of_bitmap_font_8cpp">ofBitmapFont.cpp</innerfile>
+    <innerfile refid="of_bitmap_font_8h">ofBitmapFont.h</innerfile>
+    <innerfile refid="of_cairo_renderer_8cpp">ofCairoRenderer.cpp</innerfile>
+    <innerfile refid="of_cairo_renderer_8h">ofCairoRenderer.h</innerfile>
+    <innerfile refid="of_graphics_8cpp">ofGraphics.cpp</innerfile>
+    <innerfile refid="of_graphics_8h">ofGraphics.h</innerfile>
+    <innerfile refid="of_image_8cpp">ofImage.cpp</innerfile>
+    <innerfile refid="of_image_8h">ofImage.h</innerfile>
+    <innerfile refid="of_path_8cpp">ofPath.cpp</innerfile>
+    <innerfile refid="of_path_8h">ofPath.h</innerfile>
+    <innerfile refid="of_pixels_8cpp">ofPixels.cpp</innerfile>
+    <innerfile refid="of_pixels_8h">ofPixels.h</innerfile>
+    <innerfile refid="of_polyline_8cpp">ofPolyline.cpp</innerfile>
+    <innerfile refid="of_polyline_8h">ofPolyline.h</innerfile>
+    <innerfile refid="of_renderer_collection_8h">ofRendererCollection.h</innerfile>
+    <innerfile refid="of_tessellator_8cpp">ofTessellator.cpp</innerfile>
+    <innerfile refid="of_tessellator_8h">ofTessellator.h</innerfile>
+    <innerfile refid="of_true_type_font_8cpp">ofTrueTypeFont.cpp</innerfile>
+    <innerfile refid="of_true_type_font_8h">ofTrueTypeFont.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/"/>
+  </compounddef>
+</doxygen>

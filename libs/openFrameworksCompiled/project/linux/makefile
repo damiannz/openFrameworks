@@ -31,7 +31,7 @@ ifeq ($(ARCH),android)
 	NDK_PLATFORM = android-8
 else
 ifeq ($(ARCH),armv7l)
-	COMPILER_OPTIMIZATION = -march=armv7-a -mtune=cortex-a8 -finline-functions -funroll-all-loops  -O3 -funsafe-math-optimizations -mfpu=neon -ftree-vectorize -mfloat-abi=softfp
+	COMPILER_OPTIMIZATION = -march=armv7-a -mtune=cortex-a8 -finline-functions -funroll-all-loops  -O3 -funsafe-math-optimizations -mfpu=neon -ftree-vectorize -mfloat-abi=hard -mfpu=vfp
 else
 	COMPILER_OPTIMIZATION = -march=native -mtune=native -finline-functions -funroll-all-loops  -Os
 endif
@@ -93,7 +93,11 @@ ifeq ($(ARCH),android)
 	INCLUDES_FLAGS += -I../../../glu/include_android
  	INCLUDES_FLAGS += -I../../../../addons/ofxAndroid/src
 else
- 	INCLUDES_FLAGS += -I../../../glu/include
+    ifeq ($(ARCH),armv7l)
+        INCLUDES_FLAGS += -I../../../glu/include_android
+    else
+     	INCLUDES_FLAGS += -I../../../glu/include
+    endif
 endif
 
 CFLAGS += -Wall -fexceptions

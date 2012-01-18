@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="of_thread_8cpp" kind="file">
+    <compoundname>ofThread.cpp</compoundname>
+    <includes refid="of_thread_8h" local="yes">ofThread.h</includes>
+    <incdepgraph>
+      <node id="5596">
+        <label>iomanip</label>
+      </node>
+      <node id="5599">
+        <label>ofColor.h</label>
+        <link refid="of_color_8h"/>
+        <childnode refid="5600" relation="include">
+        </childnode>
+        <childnode refid="5601" relation="include">
+        </childnode>
+      </node>
+      <node id="5600">
+        <label>limits</label>
+      </node>
+      <node id="5605">
+        <label>ofVec4f.h</label>
+        <link refid="of_vec4f_8h"/>
+        <childnode refid="5580" relation="include">
+        </childnode>
+      </node>
+      <node id="5579">
+        <label>ofThread.h</label>
+        <link refid="of_thread_8h"/>
+        <childnode refid="5580" relation="include">
+        </childnode>
+        <childnode refid="5598" relation="include">
+        </childnode>
+        <childnode refid="5608" relation="include">
+        </childnode>
+      </node>
+      <node id="5584">
+        <label>GL/glx.h</label>
+      </node>
+      <node id="5604">
+        <label>ofVec2f.h</label>
+        <link refid="of_vec2f_8h"/>
+        <childnode refid="5580" relation="include">
+        </childnode>
+      </node>
+      <node id="5589">
+        <label>cmath</label>
+      </node>
+      <node id="5598">
+        <label>ofTypes.h</label>
+        <link refid="of_types_8h"/>
+        <childnode refid="5580" relation="include">
+        </childnode>
+        <childnode refid="5599" relation="include">
+        </childnode>
+        <childnode refid="5606" relation="include">
+        </childnode>
+        <childnode refid="5607" relation="include">
+        </childnode>
+      </node>
+      <node id="5603">
+        <label>ofVec3f.h</label>
+        <link refid="of_vec3f_8h"/>
+        <childnode refid="5604" relation="include">
+        </childnode>
+        <childnode refid="5605" relation="include">
+        </childnode>
+        <childnode refid="5580" relation="include">
+        </childnode>
+        <childnode refid="5589" relation="include">
+        </childnode>
+        <childnode refid="5592" relation="include">
+        </childnode>
+      </node>
+      <node id="5591">
+        <label>string</label>
+      </node>
+      <node id="5588">
+        <label>cstdarg</label>
+      </node>
+      <node id="5582">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="5585">
+        <label>tesselator.h</label>
+      </node>
+      <node id="5597">
+        <label>fstream</label>
+      </node>
+      <node id="5601">
+        <label>ofMath.h</label>
+        <link refid="of_math_8h"/>
+        <childnode refid="5602" relation="include">
+        </childnode>
+        <childnode refid="5580" relation="include">
+        </childnode>
+      </node>
+      <node id="5608">
+        <label>pthread.h</label>
+      </node>
+      <node id="5587">
+        <label>cstdio</label>
+      </node>
+      <node id="5590">
+        <label>ctime</label>
+      </node>
+      <node id="5578">
+        <label>utils/ofThread.cpp</label>
+        <link refid="ofThread.cpp"/>
+        <childnode refid="5579" relation="include">
+        </childnode>
+      </node>
+      <node id="5581">
+        <label>unistd.h</label>
+      </node>
+      <node id="5593">
+        <label>vector</label>
+      </node>
+      <node id="5580">
+        <label>ofConstants.h</label>
+        <link refid="of_constants_8h"/>
+        <childnode refid="5581" relation="include">
+        </childnode>
+        <childnode refid="5582" relation="include">
+        </childnode>
+        <childnode refid="5583" relation="include">
+        </childnode>
+        <childnode refid="5584" relation="include">
+        </childnode>
+        <childnode refid="5585" relation="include">
+        </childnode>
+        <childnode refid="5586" relation="include">
+        </childnode>
+        <childnode refid="5587" relation="include">
+        </childnode>
+        <childnode refid="5588" relation="include">
+        </childnode>
+        <childnode refid="5589" relation="include">
+        </childnode>
+        <childnode refid="5590" relation="include">
+        </childnode>
+        <childnode refid="5591" relation="include">
+        </childnode>
+        <childnode refid="5592" relation="include">
+        </childnode>
+        <childnode refid="5593" relation="include">
+        </childnode>
+        <childnode refid="5594" relation="include">
+        </childnode>
+        <childnode refid="5595" relation="include">
+        </childnode>
+        <childnode refid="5596" relation="include">
+        </childnode>
+        <childnode refid="5597" relation="include">
+        </childnode>
+      </node>
+      <node id="5595">
+        <label>sstream</label>
+      </node>
+      <node id="5602">
+        <label>ofPoint.h</label>
+        <link refid="of_point_8h"/>
+        <childnode refid="5603" relation="include">
+        </childnode>
+      </node>
+      <node id="5586">
+        <label>cstdlib</label>
+      </node>
+      <node id="5592">
+        <label>iostream</label>
+      </node>
+      <node id="5583">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="5607">
+        <label>Poco/Mutex.h</label>
+      </node>
+      <node id="5594">
+        <label>cstring</label>
+      </node>
+      <node id="5606">
+        <label>tr1/memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_thread_8h" kindref="compound">ofThread.h</ref>&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//-------------------------------------------------<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><ref refid="classof_thread_1a6e9afd83f8dd763f7230d13286611a9c" kindref="member">ofThread::ofThread</ref>(){<sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><ref refid="classof_thread_1adbcdde30d1304bd2b61de8c30237a417" kindref="member">threadRunning</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><ref refid="classof_thread_1ac4ad0b7c3602106ea883d6a8be791817" kindref="member">verbose</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}<sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//-------------------------------------------------<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><ref refid="classof_thread_1a8faffc9621a184465b9fdfef0b36b2fd" kindref="member">ofThread::~ofThread</ref>(){<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><ref refid="classof_thread_1aa3d12bc071665418de14ffb5b5aad325" kindref="member">stopThread</ref>();<sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}<sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//-------------------------------------------------<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_thread_1afadfd0e1cf3aadfb20c616dbb159025a" kindref="member">ofThread::isThreadRunning</ref>(){<sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//should<sp/>be<sp/>thread<sp/>safe<sp/>-<sp/>no<sp/>writing<sp/>of<sp/>vars<sp/>here<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classof_thread_1adbcdde30d1304bd2b61de8c30237a417" kindref="member">threadRunning</ref>;<sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}<sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//-------------------------------------------------<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_thread_1a06d7c7eeb869db8571c20799c29a0b24" kindref="member">ofThread::startThread</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_blocking,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_verbose){<sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/><ref refid="classof_thread_1adbcdde30d1304bd2b61de8c30237a417" kindref="member">threadRunning</ref><sp/>){<sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classof_thread_1ac4ad0b7c3602106ea883d6a8be791817" kindref="member">verbose</ref>)printf(</highlight><highlight class="stringliteral">&quot;ofThread:<sp/>thread<sp/>already<sp/>running\n&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//have<sp/>to<sp/>put<sp/>this<sp/>here<sp/>because<sp/>the<sp/>thread<sp/>can<sp/>be<sp/>running<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//before<sp/>the<sp/>call<sp/>to<sp/>create<sp/>it<sp/>returns<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><ref refid="classof_thread_1adbcdde30d1304bd2b61de8c30237a417" kindref="member">threadRunning</ref><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#ifdef<sp/>TARGET_WIN32<sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//InitializeCriticalSection(&amp;critSec);<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_thread_1ac014ed3ed729c6870bf4721df96f5cfc" kindref="member">myThread</ref><sp/>=<sp/>(HANDLE)_beginthreadex(NULL,<sp/>0,<sp/>this-&gt;<ref refid="classof_thread_1a8bd4ec6027466e89101a02b4a248158b" kindref="member">thread</ref>,<sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>0,<sp/>NULL);<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#else<sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//pthread_mutex_init(&amp;myMutex,<sp/>NULL);<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pthread_create(&amp;<ref refid="classof_thread_1ac014ed3ed729c6870bf4721df96f5cfc" kindref="member">myThread</ref>,<sp/>NULL,<sp/><ref refid="classof_thread_1a8bd4ec6027466e89101a02b4a248158b" kindref="member">thread</ref>,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)</highlight><highlight class="keyword">this</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#endif<sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><ref refid="classof_thread_1a67cc9e89594ffa191166531ac9e7b6ce" kindref="member">blocking</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/>_blocking;<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><ref refid="classof_thread_1ac4ad0b7c3602106ea883d6a8be791817" kindref="member">verbose</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>_verbose;<sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}<sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//-------------------------------------------------<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//returns<sp/>false<sp/>if<sp/>it<sp/>can&apos;t<sp/>lock<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_thread_1a8b682673b3d11225785b74f68fc3ce96" kindref="member">ofThread::lock</ref>(){<sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classof_thread_1a67cc9e89594ffa191166531ac9e7b6ce" kindref="member">blocking</ref><sp/>)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classof_thread_1ac4ad0b7c3602106ea883d6a8be791817" kindref="member">verbose</ref>)printf(</highlight><highlight class="stringliteral">&quot;ofThread:<sp/>waiting<sp/>till<sp/>mutex<sp/>is<sp/>unlocked\n&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_thread_1a12ff152ef6ad45f82cff7dcd5b4b9742" kindref="member">mutex</ref>.lock();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!<ref refid="classof_thread_1a12ff152ef6ad45f82cff7dcd5b4b9742" kindref="member">mutex</ref>.tryLock()<sp/>)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classof_thread_1ac4ad0b7c3602106ea883d6a8be791817" kindref="member">verbose</ref>)printf(</highlight><highlight class="stringliteral">&quot;ofThread:<sp/>mutex<sp/>is<sp/>busy<sp/>-<sp/>already<sp/>locked\n&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classof_thread_1ac4ad0b7c3602106ea883d6a8be791817" kindref="member">verbose</ref>)printf(</highlight><highlight class="stringliteral">&quot;ofThread:<sp/>we<sp/>are<sp/>in<sp/>--<sp/>mutex<sp/>is<sp/>now<sp/>locked<sp/>\n&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}<sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//-------------------------------------------------<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_thread_1a4969d3e3b3c281251132a305c7fae015" kindref="member">ofThread::unlock</ref>(){<sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_thread_1a12ff152ef6ad45f82cff7dcd5b4b9742" kindref="member">mutex</ref>.unlock();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classof_thread_1ac4ad0b7c3602106ea883d6a8be791817" kindref="member">verbose</ref>)printf(</highlight><highlight class="stringliteral">&quot;ofThread:<sp/>we<sp/>are<sp/>out<sp/>--<sp/>mutex<sp/>is<sp/>now<sp/>unlocked<sp/>\n&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}<sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//-------------------------------------------------<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_thread_1aa3d12bc071665418de14ffb5b5aad325" kindref="member">ofThread::stopThread</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>close){</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classof_thread_1adbcdde30d1304bd2b61de8c30237a417" kindref="member">threadRunning</ref>){</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(close){</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>TARGET_WIN32</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CloseHandle(<ref refid="classof_thread_1ac014ed3ed729c6870bf4721df96f5cfc" kindref="member">myThread</ref>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//pthread_mutex_destroy(&amp;myMutex);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_detach(<ref refid="classof_thread_1ac014ed3ed729c6870bf4721df96f5cfc" kindref="member">myThread</ref>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classof_thread_1ac4ad0b7c3602106ea883d6a8be791817" kindref="member">verbose</ref>)printf(</highlight><highlight class="stringliteral">&quot;ofThread:<sp/>thread<sp/>stopped\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_thread_1adbcdde30d1304bd2b61de8c30237a417" kindref="member">threadRunning</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classof_thread_1ac4ad0b7c3602106ea883d6a8be791817" kindref="member">verbose</ref>)printf(</highlight><highlight class="stringliteral">&quot;ofThread:<sp/>thread<sp/>already<sp/>stopped\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">//-------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_thread_1ac7a358dcd8571203eeef98e31c0fc358" kindref="member">ofThread::waitForThread</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>stop){</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classof_thread_1adbcdde30d1304bd2b61de8c30237a417" kindref="member">threadRunning</ref>){</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reset<sp/>the<sp/>thread<sp/>state</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(stop){</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_thread_1adbcdde30d1304bd2b61de8c30237a417" kindref="member">threadRunning</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classof_thread_1ac4ad0b7c3602106ea883d6a8be791817" kindref="member">verbose</ref>)printf(</highlight><highlight class="stringliteral">&quot;ofThread:<sp/>stopping<sp/>thread\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classof_thread_1ac4ad0b7c3602106ea883d6a8be791817" kindref="member">verbose</ref>)printf(</highlight><highlight class="stringliteral">&quot;ofThread:<sp/>waiting<sp/>for<sp/>thread<sp/>to<sp/>stop\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Wait<sp/>for<sp/>the<sp/>thread<sp/>to<sp/>finish</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>TARGET_WIN32</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WaitForSingleObject(<ref refid="classof_thread_1ac014ed3ed729c6870bf4721df96f5cfc" kindref="member">myThread</ref>,<sp/>INFINITE);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CloseHandle(<ref refid="classof_thread_1ac014ed3ed729c6870bf4721df96f5cfc" kindref="member">myThread</ref>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(pthread_self()==<ref refid="classof_thread_1ac014ed3ed729c6870bf4721df96f5cfc" kindref="member">myThread</ref>)<sp/>printf(</highlight><highlight class="stringliteral">&quot;ofThread:<sp/>error,<sp/>waitForThread<sp/>should<sp/>only<sp/>be<sp/>called<sp/>from<sp/>outside<sp/>the<sp/>thread&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_join(<ref refid="classof_thread_1ac014ed3ed729c6870bf4721df96f5cfc" kindref="member">myThread</ref>,<sp/>NULL);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classof_thread_1ac4ad0b7c3602106ea883d6a8be791817" kindref="member">verbose</ref>)printf(</highlight><highlight class="stringliteral">&quot;ofThread:<sp/>thread<sp/>stopped\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//myThread<sp/>=<sp/>NULL;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classof_thread_1ac4ad0b7c3602106ea883d6a8be791817" kindref="member">verbose</ref>)printf(</highlight><highlight class="stringliteral">&quot;ofThread:<sp/>thread<sp/>already<sp/>stopped\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofThread.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="of_base_sound_stream_8cpp" kind="file">
+    <compoundname>ofBaseSoundStream.cpp</compoundname>
+    <includes refid="of_base_sound_stream_8h" local="yes">ofBaseSoundStream.h</includes>
+    <incdepgraph>
+      <node id="3922">
+        <label>iomanip</label>
+      </node>
+      <node id="3910">
+        <label>GL/glx.h</label>
+      </node>
+      <node id="3915">
+        <label>cmath</label>
+      </node>
+      <node id="3917">
+        <label>string</label>
+      </node>
+      <node id="3914">
+        <label>cstdarg</label>
+      </node>
+      <node id="3908">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="3911">
+        <label>tesselator.h</label>
+      </node>
+      <node id="3923">
+        <label>fstream</label>
+      </node>
+      <node id="3913">
+        <label>cstdio</label>
+      </node>
+      <node id="3916">
+        <label>ctime</label>
+      </node>
+      <node id="3907">
+        <label>unistd.h</label>
+      </node>
+      <node id="3919">
+        <label>vector</label>
+      </node>
+      <node id="3906">
+        <label>ofConstants.h</label>
+        <link refid="of_constants_8h"/>
+        <childnode refid="3907" relation="include">
+        </childnode>
+        <childnode refid="3908" relation="include">
+        </childnode>
+        <childnode refid="3909" relation="include">
+        </childnode>
+        <childnode refid="3910" relation="include">
+        </childnode>
+        <childnode refid="3911" relation="include">
+        </childnode>
+        <childnode refid="3912" relation="include">
+        </childnode>
+        <childnode refid="3913" relation="include">
+        </childnode>
+        <childnode refid="3914" relation="include">
+        </childnode>
+        <childnode refid="3915" relation="include">
+        </childnode>
+        <childnode refid="3916" relation="include">
+        </childnode>
+        <childnode refid="3917" relation="include">
+        </childnode>
+        <childnode refid="3918" relation="include">
+        </childnode>
+        <childnode refid="3919" relation="include">
+        </childnode>
+        <childnode refid="3920" relation="include">
+        </childnode>
+        <childnode refid="3921" relation="include">
+        </childnode>
+        <childnode refid="3922" relation="include">
+        </childnode>
+        <childnode refid="3923" relation="include">
+        </childnode>
+      </node>
+      <node id="3921">
+        <label>sstream</label>
+      </node>
+      <node id="3912">
+        <label>cstdlib</label>
+      </node>
+      <node id="3918">
+        <label>iostream</label>
+      </node>
+      <node id="3904">
+        <label>sound/ofBaseSoundStream.cpp</label>
+        <link refid="ofBaseSoundStream.cpp"/>
+        <childnode refid="3905" relation="include">
+        </childnode>
+      </node>
+      <node id="3905">
+        <label>ofBaseSoundStream.h</label>
+        <link refid="of_base_sound_stream_8h"/>
+        <childnode refid="3906" relation="include">
+        </childnode>
+      </node>
+      <node id="3909">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="3920">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/>ofBaseSoundStream.cpp</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/>openFrameworksLib</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>by<sp/>theo<sp/>on<sp/>27/02/2011.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>2011<sp/>__MyCompanyName__.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_base_sound_stream_8h" kindref="compound">ofBaseSoundStream.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundStream.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,898 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="classof_directory" kind="class" prot="public">
+    <compoundname>ofDirectory</compoundname>
+    <includes local="no">ofFileUtils.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classof_directory_1a2c353bc9c94d1c6efba71579754773bf" prot="private" static="no" mutable="no">
+        <type>Poco::File</type>
+        <definition>Poco::File ofDirectory::myDir</definition>
+        <argsstring></argsstring>
+        <name>myDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="266" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_directory_1a9338a0b394dd0b8358f9ab0c9d42b2c1" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ofDirectory::originalDirectory</definition>
+        <argsstring></argsstring>
+        <name>originalDirectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="267" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_directory_1afc2357b59848fa9dda84f28653d93250" prot="private" static="no" mutable="no">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt;string&gt; ofDirectory::extensions</definition>
+        <argsstring></argsstring>
+        <name>extensions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="268" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_directory_1a66009af9edb3ab82ecf1e54227f23930" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classof_file" kindref="compound">ofFile</ref> &gt;</type>
+        <definition>vector&lt;ofFile&gt; ofDirectory::files</definition>
+        <argsstring></argsstring>
+        <name>files</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="269" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_directory_1afe811ab27c1ba2febf0c7d33e994e2f9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ofDirectory::showHidden</definition>
+        <argsstring></argsstring>
+        <name>showHidden</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="270" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classof_directory_1a6ee431852c1f91b0b3cc4b52993a919a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ofDirectory::ofDirectory</definition>
+        <argsstring>()</argsstring>
+        <name>ofDirectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="189" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="680" bodyend="682"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a4ba737a7b2a431806b0678473523b0d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ofDirectory::ofDirectory</definition>
+        <argsstring>(string path)</argsstring>
+        <name>ofDirectory</name>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="190" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="685" bodyend="688"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1ad28de9ed742100e299a621dfc49cfe69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofDirectory::open</definition>
+        <argsstring>(string path)</argsstring>
+        <name>open</name>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="192" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="691" bodyend="696"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a9af7171c87bce2a80bffadf6bfee006d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofDirectory::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="193" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="699" bodyend="701"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1acf13db2d7afa7b924a4937d18c777f16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofDirectory::create</definition>
+        <argsstring>(bool recursive=false)</argsstring>
+        <name>create</name>
+        <param>
+          <type>bool</type>
+          <declname>recursive</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="194" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="704" bodyend="717"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1af682c819e8261556f065236a37c7b7e8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofDirectory::exists</definition>
+        <argsstring>() const </argsstring>
+        <name>exists</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="196" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="720" bodyend="722"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1ab8262cf0b850c3e988521155c081e8ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ofDirectory::path</definition>
+        <argsstring>() const </argsstring>
+        <name>path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="197" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="725" bodyend="727"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a49b9b8f7502b321466037e288149e2f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofDirectory::canRead</definition>
+        <argsstring>() const </argsstring>
+        <name>canRead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a175908a8aedb9d667b6e6f89e73beec4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofDirectory::canWrite</definition>
+        <argsstring>() const </argsstring>
+        <name>canWrite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1aba76ca883269bb8dc1417af8057efb15" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofDirectory::canExecute</definition>
+        <argsstring>() const </argsstring>
+        <name>canExecute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a1198324724c3441d837b8de92f874623" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofDirectory::isDirectory</definition>
+        <argsstring>() const </argsstring>
+        <name>isDirectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="203" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="755" bodyend="757"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1ae5cf30e1635424b0f8ae3910dfc79f64" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofDirectory::isHidden</definition>
+        <argsstring>() const </argsstring>
+        <name>isHidden</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="204" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="730" bodyend="732"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a888fe9f0de590d5fa7e5e8e19cdc3c1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofDirectory::setWriteable</definition>
+        <argsstring>(bool writeable)</argsstring>
+        <name>setWriteable</name>
+        <param>
+          <type>bool</type>
+          <declname>writeable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="206" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="735" bodyend="737"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a1c88fedc8048ce36736ac76fbd733fdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofDirectory::setReadOnly</definition>
+        <argsstring>(bool readable)</argsstring>
+        <name>setReadOnly</name>
+        <param>
+          <type>bool</type>
+          <declname>readable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="207" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="740" bodyend="742"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a6aeaef9506aa8fa101099ce9983403e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofDirectory::setExecutable</definition>
+        <argsstring>(bool executable)</argsstring>
+        <name>setExecutable</name>
+        <param>
+          <type>bool</type>
+          <declname>executable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="208" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="745" bodyend="747"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1aa3cab514a63a76cb0c698dd7db3adcdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofDirectory::setShowHidden</definition>
+        <argsstring>(bool showHidden)</argsstring>
+        <name>setShowHidden</name>
+        <param>
+          <type>bool</type>
+          <declname>showHidden</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="209" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="750" bodyend="752"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a93ad5d3e53b614e0f4b6540428925855" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofDirectory::copyTo</definition>
+        <argsstring>(string path, bool bRelativeToData=true, bool overwrite=false)</argsstring>
+        <name>copyTo</name>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bRelativeToData</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>overwrite</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="211" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="760" bodyend="785"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a5e50e3526f0be07be60f478f804d2a42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofDirectory::moveTo</definition>
+        <argsstring>(string path, bool bRelativeToData=true, bool overwrite=false)</argsstring>
+        <name>moveTo</name>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bRelativeToData</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>overwrite</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="212" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="788" bodyend="813"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a608c7b6290b5bc8dfc5beba1cddb5503" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofDirectory::renameTo</definition>
+        <argsstring>(string path, bool bRelativeToData=true, bool overwrite=false)</argsstring>
+        <name>renameTo</name>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bRelativeToData</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>overwrite</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="213" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="816" bodyend="841"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a81a223d5f587a5fdb8edcdc93d7e60ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofDirectory::remove</definition>
+        <argsstring>(bool recursive)</argsstring>
+        <name>remove</name>
+        <param>
+          <type>bool</type>
+          <declname>recursive</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="216" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="844" bodyend="857"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a9084fb19ee81529892707a5689263bc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofDirectory::allowExt</definition>
+        <argsstring>(string extension)</argsstring>
+        <name>allowExt</name>
+        <param>
+          <type>string</type>
+          <declname>extension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="221" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="860" bodyend="865"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a13f19e4c59dc88844d19183ceff1da3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofDirectory::listDir</definition>
+        <argsstring>(string path)</argsstring>
+        <name>listDir</name>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="222" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="868" bodyend="871"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a9885501c235cfe855662a413ba1f0886" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofDirectory::listDir</definition>
+        <argsstring>()</argsstring>
+        <name>listDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="223" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="874" bodyend="909"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1aeb31cddeddf70af7c567e1ea5231daa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ofDirectory::getOriginalDirectory</definition>
+        <argsstring>()</argsstring>
+        <name>getOriginalDirectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="225" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="912" bodyend="914"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1adbb4d42ee13348c8eb3622c6df805c8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ofDirectory::getName</definition>
+        <argsstring>(unsigned int position)</argsstring>
+        <name>getName</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="226" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="917" bodyend="920"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a026fb80addec0a2d1eeecb2aebb4780e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string ofDirectory::getPath</definition>
+        <argsstring>(unsigned int position)</argsstring>
+        <name>getPath</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="227" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="923" bodyend="925"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a5560125fe387ca7b12f14e7be813a22b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_file" kindref="compound">ofFile</ref></type>
+        <definition>ofFile ofDirectory::getFile</definition>
+        <argsstring>(unsigned int position, ofFile::Mode mode=ofFile::Reference, bool binary=false)</argsstring>
+        <name>getFile</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_file_1afc27b4186457038ca30b5471b497f2a0" kindref="member">ofFile::Mode</ref></type>
+          <declname>mode</declname>
+          <defval>ofFile::Reference</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>binary</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="228" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="928" bodyend="932"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a3180b487d1b586a3768ac1b9195f3c18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="classof_file" kindref="compound">ofFile</ref> &gt;</type>
+        <definition>vector&lt; ofFile &gt; ofDirectory::getFiles</definition>
+        <argsstring>()</argsstring>
+        <name>getFiles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="229" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="939" bodyend="941"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a7476c09b775096e862f0eb9013bf939e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_file" kindref="compound">ofFile</ref></type>
+        <definition>ofFile ofDirectory::operator[]</definition>
+        <argsstring>(unsigned int position)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="231" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="934" bodyend="936"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a0012ca47639c4129d951e5145a5ad5ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofDirectory::getShowHidden</definition>
+        <argsstring>()</argsstring>
+        <name>getShowHidden</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="233" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="944" bodyend="946"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a5f3cd0db7a454115fb7223630168fd66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofDirectory::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="235" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="949" bodyend="951"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1aabc46e208c593d310f423de8be5b6ee5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofDirectory::sort</definition>
+        <argsstring>()</argsstring>
+        <name>sort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="236" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="954" bodyend="956"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1af20ddc5b7da6266c408d78c0cd636555" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ofDirectory::size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="238" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="959" bodyend="961"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a791eb3d185cf3f9578cef92a39afc913" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofDirectory::numFiles</definition>
+        <argsstring>()</argsstring>
+        <name>numFiles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="239" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="964" bodyend="966"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a27ea22732195089bfb60d101e8dc8cf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Poco::File &amp;</type>
+        <definition>Poco::File &amp; ofDirectory::getPocoFile</definition>
+        <argsstring>()</argsstring>
+        <name>getPocoFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="244" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="1033" bodyend="1035"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1af3babd21f107ee5dd194bc3b3ce2105d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofDirectory::operator==</definition>
+        <argsstring>(const ofDirectory &amp;dir)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classof_directory" kindref="compound">ofDirectory</ref> &amp;</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="247" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="1038" bodyend="1040"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1aa0098f0ac9e0262b57bb6dcca9738245" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofDirectory::operator!=</definition>
+        <argsstring>(const ofDirectory &amp;dir)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classof_directory" kindref="compound">ofDirectory</ref> &amp;</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="248" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="1043" bodyend="1045"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a1c583924ea0befd2ba5aa2b243f2c0d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofDirectory::operator&lt;</definition>
+        <argsstring>(const ofDirectory &amp;dir)</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="classof_directory" kindref="compound">ofDirectory</ref> &amp;</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="249" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="1048" bodyend="1050"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a5cdbad28e37861262d2329fe8b93d8dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofDirectory::operator&lt;=</definition>
+        <argsstring>(const ofDirectory &amp;dir)</argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type>const <ref refid="classof_directory" kindref="compound">ofDirectory</ref> &amp;</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="250" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="1053" bodyend="1055"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1aad86ef4ad00eea46055d215b3d878e5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofDirectory::operator&gt;</definition>
+        <argsstring>(const ofDirectory &amp;dir)</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>const <ref refid="classof_directory" kindref="compound">ofDirectory</ref> &amp;</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="251" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="1058" bodyend="1060"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a18eeccccc9112d2c2bcf884efd4cb0c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofDirectory::operator&gt;=</definition>
+        <argsstring>(const ofDirectory &amp;dir)</argsstring>
+        <name>operator&gt;=</name>
+        <param>
+          <type>const <ref refid="classof_directory" kindref="compound">ofDirectory</ref> &amp;</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="252" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="1063" bodyend="1065"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classof_directory_1a3b80554c15020a36328caf787e5b9d6d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofDirectory::createDirectory</definition>
+        <argsstring>(string dirPath, bool bRelativeToData=true, bool recursive=false)</argsstring>
+        <name>createDirectory</name>
+        <param>
+          <type>string</type>
+          <declname>dirPath</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bRelativeToData</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>recursive</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="259" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="986" bodyend="1009"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a8a8b6b61b8ee95200140dbcdedd9a4d3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofDirectory::isDirectoryEmpty</definition>
+        <argsstring>(string dirPath, bool bRelativeToData=true)</argsstring>
+        <name>isDirectoryEmpty</name>
+        <param>
+          <type>string</type>
+          <declname>dirPath</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bRelativeToData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="260" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="1019" bodyend="1030"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1aa09dd5389d97bb1471c5bb1422967ba9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofDirectory::doesDirectoryExist</definition>
+        <argsstring>(string dirPath, bool bRelativeToData=true)</argsstring>
+        <name>doesDirectoryExist</name>
+        <param>
+          <type>string</type>
+          <declname>dirPath</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bRelativeToData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="261" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="1012" bodyend="1016"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_directory_1a5249380873c1ed7da418b21095b4c725" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofDirectory::removeDirectory</definition>
+        <argsstring>(string path, bool deleteIfNotEmpty, bool bRelativeToData=true)</argsstring>
+        <name>removeDirectory</name>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>deleteIfNotEmpty</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bRelativeToData</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="262" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.cpp" bodystart="973" bodyend="983"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" line="186" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h" bodystart="186" bodyend="272"/>
+    <listofallmembers>
+      <member refid="classof_directory_1a9084fb19ee81529892707a5689263bc0" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>allowExt</name></member>
+      <member refid="classof_directory_1aba76ca883269bb8dc1417af8057efb15" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>canExecute</name></member>
+      <member refid="classof_directory_1a49b9b8f7502b321466037e288149e2f5" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>canRead</name></member>
+      <member refid="classof_directory_1a175908a8aedb9d667b6e6f89e73beec4" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>canWrite</name></member>
+      <member refid="classof_directory_1a9af7171c87bce2a80bffadf6bfee006d" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>close</name></member>
+      <member refid="classof_directory_1a93ad5d3e53b614e0f4b6540428925855" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>copyTo</name></member>
+      <member refid="classof_directory_1acf13db2d7afa7b924a4937d18c777f16" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>create</name></member>
+      <member refid="classof_directory_1a3b80554c15020a36328caf787e5b9d6d" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>createDirectory</name></member>
+      <member refid="classof_directory_1aa09dd5389d97bb1471c5bb1422967ba9" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>doesDirectoryExist</name></member>
+      <member refid="classof_directory_1af682c819e8261556f065236a37c7b7e8" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>exists</name></member>
+      <member refid="classof_directory_1afc2357b59848fa9dda84f28653d93250" prot="private" virt="non-virtual"><scope>ofDirectory</scope><name>extensions</name></member>
+      <member refid="classof_directory_1a66009af9edb3ab82ecf1e54227f23930" prot="private" virt="non-virtual"><scope>ofDirectory</scope><name>files</name></member>
+      <member refid="classof_directory_1a5560125fe387ca7b12f14e7be813a22b" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>getFile</name></member>
+      <member refid="classof_directory_1a3180b487d1b586a3768ac1b9195f3c18" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>getFiles</name></member>
+      <member refid="classof_directory_1adbb4d42ee13348c8eb3622c6df805c8f" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>getName</name></member>
+      <member refid="classof_directory_1aeb31cddeddf70af7c567e1ea5231daa8" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>getOriginalDirectory</name></member>
+      <member refid="classof_directory_1a026fb80addec0a2d1eeecb2aebb4780e" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>getPath</name></member>
+      <member refid="classof_directory_1a27ea22732195089bfb60d101e8dc8cf5" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>getPocoFile</name></member>
+      <member refid="classof_directory_1a0012ca47639c4129d951e5145a5ad5ba" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>getShowHidden</name></member>
+      <member refid="classof_directory_1a1198324724c3441d837b8de92f874623" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>isDirectory</name></member>
+      <member refid="classof_directory_1a8a8b6b61b8ee95200140dbcdedd9a4d3" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>isDirectoryEmpty</name></member>
+      <member refid="classof_directory_1ae5cf30e1635424b0f8ae3910dfc79f64" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>isHidden</name></member>
+      <member refid="classof_directory_1a13f19e4c59dc88844d19183ceff1da3f" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>listDir</name></member>
+      <member refid="classof_directory_1a9885501c235cfe855662a413ba1f0886" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>listDir</name></member>
+      <member refid="classof_directory_1a5e50e3526f0be07be60f478f804d2a42" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>moveTo</name></member>
+      <member refid="classof_directory_1a2c353bc9c94d1c6efba71579754773bf" prot="private" virt="non-virtual"><scope>ofDirectory</scope><name>myDir</name></member>
+      <member refid="classof_directory_1a791eb3d185cf3f9578cef92a39afc913" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>numFiles</name></member>
+      <member refid="classof_directory_1a6ee431852c1f91b0b3cc4b52993a919a" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>ofDirectory</name></member>
+      <member refid="classof_directory_1a4ba737a7b2a431806b0678473523b0d6" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>ofDirectory</name></member>
+      <member refid="classof_directory_1ad28de9ed742100e299a621dfc49cfe69" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>open</name></member>
+      <member refid="classof_directory_1aa0098f0ac9e0262b57bb6dcca9738245" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>operator!=</name></member>
+      <member refid="classof_directory_1a1c583924ea0befd2ba5aa2b243f2c0d7" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>operator&lt;</name></member>
+      <member refid="classof_directory_1a5cdbad28e37861262d2329fe8b93d8dd" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>operator&lt;=</name></member>
+      <member refid="classof_directory_1af3babd21f107ee5dd194bc3b3ce2105d" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>operator==</name></member>
+      <member refid="classof_directory_1aad86ef4ad00eea46055d215b3d878e5b" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>operator&gt;</name></member>
+      <member refid="classof_directory_1a18eeccccc9112d2c2bcf884efd4cb0c6" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>operator&gt;=</name></member>
+      <member refid="classof_directory_1a7476c09b775096e862f0eb9013bf939e" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>operator[]</name></member>
+      <member refid="classof_directory_1a9338a0b394dd0b8358f9ab0c9d42b2c1" prot="private" virt="non-virtual"><scope>ofDirectory</scope><name>originalDirectory</name></member>
+      <member refid="classof_directory_1ab8262cf0b850c3e988521155c081e8ec" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>path</name></member>
+      <member refid="classof_directory_1a81a223d5f587a5fdb8edcdc93d7e60ec" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>remove</name></member>
+      <member refid="classof_directory_1a5249380873c1ed7da418b21095b4c725" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>removeDirectory</name></member>
+      <member refid="classof_directory_1a608c7b6290b5bc8dfc5beba1cddb5503" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>renameTo</name></member>
+      <member refid="classof_directory_1a5f3cd0db7a454115fb7223630168fd66" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>reset</name></member>
+      <member refid="classof_directory_1a6aeaef9506aa8fa101099ce9983403e3" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>setExecutable</name></member>
+      <member refid="classof_directory_1a1c88fedc8048ce36736ac76fbd733fdf" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>setReadOnly</name></member>
+      <member refid="classof_directory_1aa3cab514a63a76cb0c698dd7db3adcdf" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>setShowHidden</name></member>
+      <member refid="classof_directory_1a888fe9f0de590d5fa7e5e8e19cdc3c1d" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>setWriteable</name></member>
+      <member refid="classof_directory_1afe811ab27c1ba2febf0c7d33e994e2f9" prot="private" virt="non-virtual"><scope>ofDirectory</scope><name>showHidden</name></member>
+      <member refid="classof_directory_1af20ddc5b7da6266c408d78c0cd636555" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>size</name></member>
+      <member refid="classof_directory_1aabc46e208c593d310f423de8be5b6ee5" prot="public" virt="non-virtual"><scope>ofDirectory</scope><name>sort</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

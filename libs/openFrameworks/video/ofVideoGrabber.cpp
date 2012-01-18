@@ -166,7 +166,7 @@ void ofVideoGrabber::update(){
 				tex.loadData(grabber->getPixels(), (int)tex.getWidth(), (int)tex.getHeight(), GL_RGB);
 			else if(internalPixelFormat == OF_PIXELS_RGBA)
 				tex.loadData(grabber->getPixels(), (int)tex.getWidth(), (int)tex.getHeight(), GL_RGBA);
-#ifndef TARGET_ANDROID
+#if !defined (TARGET_ANDROID) && !defined(TARGET_ARMV7L_GENERIC)
 			else if(internalPixelFormat == OF_PIXELS_BGRA)
 				tex.loadData(grabber->getPixels(), (int)tex.getWidth(), (int)tex.getHeight(), GL_BGRA);
 #else

@@ -1,0 +1,1506 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="of_math_8cpp" kind="file">
+    <compoundname>ofMath.cpp</compoundname>
+    <includes refid="of_math_8h" local="yes">ofMath.h</includes>
+    <includes refid="of_utils_8h" local="yes">ofUtils.h</includes>
+    <includes refid="of_app_runner_8h" local="yes">ofAppRunner.h</includes>
+    <includes local="yes">float.h</includes>
+    <includes local="no">sys/time.h</includes>
+    <includes refid="of_noise_8h" local="yes">ofNoise.h</includes>
+    <includes refid="of_polyline_8h" local="yes">ofPolyline.h</includes>
+    <incdepgraph>
+      <node id="2934">
+        <label>ofNoise.h</label>
+        <link refid="of_noise_8h"/>
+      </node>
+      <node id="2917">
+        <label>iomanip</label>
+      </node>
+      <node id="2926">
+        <label>ofColor.h</label>
+        <link refid="of_color_8h"/>
+        <childnode refid="2927" relation="include">
+        </childnode>
+        <childnode refid="2897" relation="include">
+        </childnode>
+      </node>
+      <node id="2927">
+        <label>limits</label>
+      </node>
+      <node id="2935">
+        <label>ofPolyline.h</label>
+        <link refid="of_polyline_8h"/>
+        <childnode refid="2898" relation="include">
+        </childnode>
+        <childnode refid="2901" relation="include">
+        </childnode>
+        <childnode refid="2936" relation="include">
+        </childnode>
+        <childnode refid="2931" relation="include">
+        </childnode>
+      </node>
+      <node id="2919">
+        <label>ofVec4f.h</label>
+        <link refid="of_vec4f_8h"/>
+        <childnode refid="2901" relation="include">
+        </childnode>
+      </node>
+      <node id="2932">
+        <label>float.h</label>
+      </node>
+      <node id="2905">
+        <label>GL/glx.h</label>
+      </node>
+      <node id="2900">
+        <label>ofVec2f.h</label>
+        <link refid="of_vec2f_8h"/>
+        <childnode refid="2901" relation="include">
+        </childnode>
+      </node>
+      <node id="2910">
+        <label>cmath</label>
+      </node>
+      <node id="2925">
+        <label>ofTypes.h</label>
+        <link refid="of_types_8h"/>
+        <childnode refid="2901" relation="include">
+        </childnode>
+        <childnode refid="2926" relation="include">
+        </childnode>
+        <childnode refid="2928" relation="include">
+        </childnode>
+        <childnode refid="2929" relation="include">
+        </childnode>
+      </node>
+      <node id="2899">
+        <label>ofVec3f.h</label>
+        <link refid="of_vec3f_8h"/>
+        <childnode refid="2900" relation="include">
+        </childnode>
+        <childnode refid="2919" relation="include">
+        </childnode>
+        <childnode refid="2901" relation="include">
+        </childnode>
+        <childnode refid="2910" relation="include">
+        </childnode>
+        <childnode refid="2913" relation="include">
+        </childnode>
+      </node>
+      <node id="2912">
+        <label>string</label>
+      </node>
+      <node id="2909">
+        <label>cstdarg</label>
+      </node>
+      <node id="2903">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="2924">
+        <label>Poco/File.h</label>
+      </node>
+      <node id="2906">
+        <label>tesselator.h</label>
+      </node>
+      <node id="2896">
+        <label>math/ofMath.cpp</label>
+        <link refid="ofMath.cpp"/>
+        <childnode refid="2897" relation="include">
+        </childnode>
+        <childnode refid="2920" relation="include">
+        </childnode>
+        <childnode refid="2930" relation="include">
+        </childnode>
+        <childnode refid="2932" relation="include">
+        </childnode>
+        <childnode refid="2933" relation="include">
+        </childnode>
+        <childnode refid="2934" relation="include">
+        </childnode>
+        <childnode refid="2935" relation="include">
+        </childnode>
+      </node>
+      <node id="2918">
+        <label>fstream</label>
+      </node>
+      <node id="2897">
+        <label>ofMath.h</label>
+        <link refid="of_math_8h"/>
+        <childnode refid="2898" relation="include">
+        </childnode>
+        <childnode refid="2901" relation="include">
+        </childnode>
+      </node>
+      <node id="2908">
+        <label>cstdio</label>
+      </node>
+      <node id="2921">
+        <label>bitset</label>
+      </node>
+      <node id="2911">
+        <label>ctime</label>
+      </node>
+      <node id="2902">
+        <label>unistd.h</label>
+      </node>
+      <node id="2914">
+        <label>vector</label>
+      </node>
+      <node id="2922">
+        <label>ofLog.h</label>
+        <link refid="of_log_8h"/>
+        <childnode refid="2901" relation="include">
+        </childnode>
+        <childnode refid="2923" relation="include">
+        </childnode>
+        <childnode refid="2925" relation="include">
+        </childnode>
+      </node>
+      <node id="2901">
+        <label>ofConstants.h</label>
+        <link refid="of_constants_8h"/>
+        <childnode refid="2902" relation="include">
+        </childnode>
+        <childnode refid="2903" relation="include">
+        </childnode>
+        <childnode refid="2904" relation="include">
+        </childnode>
+        <childnode refid="2905" relation="include">
+        </childnode>
+        <childnode refid="2906" relation="include">
+        </childnode>
+        <childnode refid="2907" relation="include">
+        </childnode>
+        <childnode refid="2908" relation="include">
+        </childnode>
+        <childnode refid="2909" relation="include">
+        </childnode>
+        <childnode refid="2910" relation="include">
+        </childnode>
+        <childnode refid="2911" relation="include">
+        </childnode>
+        <childnode refid="2912" relation="include">
+        </childnode>
+        <childnode refid="2913" relation="include">
+        </childnode>
+        <childnode refid="2914" relation="include">
+        </childnode>
+        <childnode refid="2915" relation="include">
+        </childnode>
+        <childnode refid="2916" relation="include">
+        </childnode>
+        <childnode refid="2917" relation="include">
+        </childnode>
+        <childnode refid="2918" relation="include">
+        </childnode>
+      </node>
+      <node id="2916">
+        <label>sstream</label>
+      </node>
+      <node id="2898">
+        <label>ofPoint.h</label>
+        <link refid="of_point_8h"/>
+        <childnode refid="2899" relation="include">
+        </childnode>
+      </node>
+      <node id="2923">
+        <label>ofFileUtils.h</label>
+        <link refid="of_file_utils_8h"/>
+        <childnode refid="2901" relation="include">
+        </childnode>
+        <childnode refid="2924" relation="include">
+        </childnode>
+      </node>
+      <node id="2907">
+        <label>cstdlib</label>
+      </node>
+      <node id="2933">
+        <label>sys/time.h</label>
+      </node>
+      <node id="2913">
+        <label>iostream</label>
+      </node>
+      <node id="2936">
+        <label>deque</label>
+      </node>
+      <node id="2920">
+        <label>ofUtils.h</label>
+        <link refid="of_utils_8h"/>
+        <childnode refid="2901" relation="include">
+        </childnode>
+        <childnode refid="2921" relation="include">
+        </childnode>
+        <childnode refid="2922" relation="include">
+        </childnode>
+      </node>
+      <node id="2930">
+        <label>ofAppRunner.h</label>
+        <link refid="of_app_runner_8h"/>
+        <childnode refid="2901" relation="include">
+        </childnode>
+        <childnode refid="2898" relation="include">
+        </childnode>
+        <childnode refid="2931" relation="include">
+        </childnode>
+        <childnode refid="2925" relation="include">
+        </childnode>
+      </node>
+      <node id="2931">
+        <label>ofRectangle.h</label>
+        <link refid="of_rectangle_8h"/>
+        <childnode refid="2898" relation="include">
+        </childnode>
+      </node>
+      <node id="2904">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="2929">
+        <label>Poco/Mutex.h</label>
+      </node>
+      <node id="2915">
+        <label>cstring</label>
+      </node>
+      <node id="2928">
+        <label>tr1/memory</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="of_math_8cpp_1a0e50654e98b730299945741b53853421" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofNextPow2</definition>
+        <argsstring>(int a)</argsstring>
+        <name>ofNextPow2</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="14" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="14" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1a0df526ceae8b4f80f169d6d3918540e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSeedRandom</definition>
+        <argsstring>()</argsstring>
+        <name>ofSeedRandom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="22" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="22" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1a54f5c56b8cfc33bbc059aeb147d4bbef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSeedRandom</definition>
+        <argsstring>(int val)</argsstring>
+        <name>ofSeedRandom</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="39" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1ae93bfe2a2080f0e2a03df835e72c7521" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofRandom</definition>
+        <argsstring>(float max)</argsstring>
+        <name>ofRandom</name>
+        <param>
+          <type>float</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="44" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1a216b84e8f3d48ac59fcd86c0c9d94a64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofRandom</definition>
+        <argsstring>(float x, float y)</argsstring>
+        <name>ofRandom</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="49" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="49" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1aea7a1685224b49b4949899d4b283af51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofRandomf</definition>
+        <argsstring>()</argsstring>
+        <name>ofRandomf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="63" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="63" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1ab701838d1aa2e4ad8f04bad401c21a0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofRandomuf</definition>
+        <argsstring>()</argsstring>
+        <name>ofRandomuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="70" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="70" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1aeda138c0500e2d10b0763e4c1ac1cc53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofNormalize</definition>
+        <argsstring>(float value, float min, float max)</argsstring>
+        <name>ofNormalize</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="80" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="80" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1aa36b88c917a1cebc82570eed1641120f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofMap</definition>
+        <argsstring>(float value, float inputMin, float inputMax, float outputMin, float outputMax, bool clamp)</argsstring>
+        <name>ofMap</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>inputMin</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>inputMax</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>outputMin</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>outputMax</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clamp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="86" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="86" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1aa866e5d80a66299e18b89bf9f879b3f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofDist</definition>
+        <argsstring>(float x1, float y1, float x2, float y2)</argsstring>
+        <name>ofDist</name>
+        <param>
+          <type>float</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="109" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="109" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1acca6b68f9a67cbc302866c6b60f55899" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofDistSquared</definition>
+        <argsstring>(float x1, float y1, float x2, float y2)</argsstring>
+        <name>ofDistSquared</name>
+        <param>
+          <type>float</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="114" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="114" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1a4b2fc21e53bfb8521923300b0d30afdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofClamp</definition>
+        <argsstring>(float value, float min, float max)</argsstring>
+        <name>ofClamp</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="119" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="119" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1a7f39494418fc89efee2378ec2ac989f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofSign</definition>
+        <argsstring>(float n)</argsstring>
+        <name>ofSign</name>
+        <param>
+          <type>float</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="125" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="125" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1aa078cdd83eb6d3dd355897e7f15a2f33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofInRange</definition>
+        <argsstring>(float t, float min, float max)</argsstring>
+        <name>ofInRange</name>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="132" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="132" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1a7d02e72641780bca037f6c63f7b6e508" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofRadToDeg</definition>
+        <argsstring>(float radians)</argsstring>
+        <name>ofRadToDeg</name>
+        <param>
+          <type>float</type>
+          <declname>radians</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="137" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="137" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1a70a120b33471d10ce0e755ee43c32b25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofDegToRad</definition>
+        <argsstring>(float degrees)</argsstring>
+        <name>ofDegToRad</name>
+        <param>
+          <type>float</type>
+          <declname>degrees</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="142" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="142" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1a851eb0ea11c2bfe151665de8e3c66561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofLerp</definition>
+        <argsstring>(float start, float stop, float amt)</argsstring>
+        <name>ofLerp</name>
+        <param>
+          <type>float</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>stop</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>amt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="147" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="147" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1af727c186564d950c4b65c6a4b4aa276e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofWrapRadians</definition>
+        <argsstring>(float angle, float from, float to)</argsstring>
+        <name>ofWrapRadians</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="152" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="152" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1ae4ba80015162a1c7be1cc5eb39e205ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofWrapDegrees</definition>
+        <argsstring>(float angle, float from, float to)</argsstring>
+        <name>ofWrapDegrees</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="159" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="159" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1a3b9d058406f6fc2c2dc378057e789a60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofLerpDegrees</definition>
+        <argsstring>(float currentAngle, float targetAngle, float pct)</argsstring>
+        <name>ofLerpDegrees</name>
+        <param>
+          <type>float</type>
+          <declname>currentAngle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>targetAngle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="167" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="167" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1ae1f8c65595c036c675cc390c2d90d166" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofLerpRadians</definition>
+        <argsstring>(float currentAngle, float targetAngle, float pct)</argsstring>
+        <name>ofLerpRadians</name>
+        <param>
+          <type>float</type>
+          <declname>currentAngle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>targetAngle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="172" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="172" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1a9a9226ad2046591bf4aa5d2707ebba2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofRandomWidth</definition>
+        <argsstring>()</argsstring>
+        <name>ofRandomWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="177" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="177" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1ac0e9ce331e6b98373845f16e778548df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofRandomHeight</definition>
+        <argsstring>()</argsstring>
+        <name>ofRandomHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="182" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="182" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1a94cb5392d5d0a5ed7908c5fd31ae97d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofNoise</definition>
+        <argsstring>(float x)</argsstring>
+        <name>ofNoise</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="187" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="187" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1a21b4f1d491303ad4a36d892a2ab4f4be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofNoise</definition>
+        <argsstring>(float x, float y)</argsstring>
+        <name>ofNoise</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="192" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="192" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1a9e780ac96e9ca3fc409b2e17b85c9e61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofNoise</definition>
+        <argsstring>(float x, float y, float z)</argsstring>
+        <name>ofNoise</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="197" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="197" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1ac27bf743a5ae09ec44fbf95969f031ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofNoise</definition>
+        <argsstring>(float x, float y, float z, float w)</argsstring>
+        <name>ofNoise</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="202" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="202" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1a16196baebc57f663f27f9aff40c518e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofSignedNoise</definition>
+        <argsstring>(float x)</argsstring>
+        <name>ofSignedNoise</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="207" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="207" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1a7850c901fdde189ca52645017fa55c4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofSignedNoise</definition>
+        <argsstring>(float x, float y)</argsstring>
+        <name>ofSignedNoise</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="212" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="212" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1a95e125e2fb6e73c3fcda31baebef2c69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofSignedNoise</definition>
+        <argsstring>(float x, float y, float z)</argsstring>
+        <name>ofSignedNoise</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="217" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="217" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1a29682c90a71c5931f30e855b35014b4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofSignedNoise</definition>
+        <argsstring>(float x, float y, float z, float w)</argsstring>
+        <name>ofSignedNoise</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="222" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="222" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1ac178b7fee13d26870dbbe2af54778785" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofInsidePoly</definition>
+        <argsstring>(float x, float y, const vector&lt; ofPoint &gt; &amp;polygon)</argsstring>
+        <name>ofInsidePoly</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const vector&lt; <ref refid="classof_vec3f" kindref="compound">ofPoint</ref> &gt; &amp;</type>
+          <declname>polygon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="227" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="227" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1aafee3b18d9dccdfa85aa1b925a346029" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofInsidePoly</definition>
+        <argsstring>(const ofPoint &amp;p, const vector&lt; ofPoint &gt; &amp;poly)</argsstring>
+        <name>ofInsidePoly</name>
+        <param>
+          <type>const <ref refid="classof_vec3f" kindref="compound">ofPoint</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const vector&lt; <ref refid="classof_vec3f" kindref="compound">ofPoint</ref> &gt; &amp;</type>
+          <declname>poly</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="232" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="232" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1a6dc7132fb85eb90d7cf3194ad6c054cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofLineSegmentIntersection</definition>
+        <argsstring>(ofPoint line1Start, ofPoint line1End, ofPoint line2Start, ofPoint line2End, ofPoint &amp;intersection)</argsstring>
+        <name>ofLineSegmentIntersection</name>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>line1Start</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>line1End</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>line2Start</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>line2End</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref> &amp;</type>
+          <declname>intersection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="237" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="237" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1ae41684be82f712ce9afe52366c57f9a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+        <definition>ofPoint ofBezierPoint</definition>
+        <argsstring>(ofPoint a, ofPoint b, ofPoint c, ofPoint d, float t)</argsstring>
+        <name>ofBezierPoint</name>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="267" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="267" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1abb059119ae6349bbbde274ac2b1b5e26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+        <definition>ofPoint ofCurvePoint</definition>
+        <argsstring>(ofPoint a, ofPoint b, ofPoint c, ofPoint d, float t)</argsstring>
+        <name>ofCurvePoint</name>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="273" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="273" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1af7ef7086c0cb61b4883a15873dd2b87e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+        <definition>ofPoint ofBezierTangent</definition>
+        <argsstring>(ofPoint a, ofPoint b, ofPoint c, ofPoint d, float t)</argsstring>
+        <name>ofBezierTangent</name>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="289" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="289" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1ae12c7ac240f0bd70fb212c16a9022f0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+        <definition>ofPoint ofCurveTangent</definition>
+        <argsstring>(ofPoint a, ofPoint b, ofPoint c, ofPoint d, float t)</argsstring>
+        <name>ofCurveTangent</name>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="294" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="294" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1a9187e3d0572b394eb8f341ec88b575f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofAngleDifferenceDegrees</definition>
+        <argsstring>(float currentAngle, float targetAngle)</argsstring>
+        <name>ofAngleDifferenceDegrees</name>
+        <param>
+          <type>float</type>
+          <declname>currentAngle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>targetAngle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="302" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="302" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8cpp_1a10ed9288cb91336033e7c3eeb159f604" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofAngleDifferenceRadians</definition>
+        <argsstring>(float currentAngle, float targetAngle)</argsstring>
+        <name>ofAngleDifferenceRadians</name>
+        <param>
+          <type>float</type>
+          <declname>currentAngle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>targetAngle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" line="307" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="307" bodyend="309"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_math_8h" kindref="compound">ofMath.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_utils_8h" kindref="compound">ofUtils.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_app_runner_8h" kindref="compound">ofAppRunner.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;float.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TARGET_WIN32</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#include<sp/>&lt;sys/time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_noise_8h" kindref="compound" tooltip="C implementation of Perlin Simplex Noise over 1,2,3, and 4 dimensions.">ofNoise.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_polyline_8h" kindref="compound">ofPolyline.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1a0e50654e98b730299945741b53853421" kindref="member">ofNextPow2</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a){</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>from<sp/>nehe.gamedev.net<sp/>lesson<sp/>43</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rval=1;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(rval&lt;a)<sp/>rval&lt;&lt;=1;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rval;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1a0df526ceae8b4f80f169d6d3918540e5" kindref="member">ofSeedRandom</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>good<sp/>info<sp/>here:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>http://stackoverflow.com/questions/322938/recommended-way-to-initialize-srand</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>TARGET_WIN32</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srand(GetTickCount());</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>use<sp/>XOR&apos;d<sp/>second,<sp/>microsecond<sp/>precision<sp/>AND<sp/>pid<sp/>as<sp/>seed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">timeval<sp/>tv;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gettimeofday(&amp;tv,<sp/>0);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>(tv.tv_sec<sp/>^<sp/>tv.tv_usec)<sp/>^<sp/>getpid();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srand(n);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1a0df526ceae8b4f80f169d6d3918540e5" kindref="member">ofSeedRandom</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srand((</highlight><highlight class="keywordtype">long</highlight><highlight class="normal">)<sp/>val);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1ae93bfe2a2080f0e2a03df835e72c7521" kindref="member">ofRandom</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>max<sp/>*<sp/>rand()<sp/>/<sp/>(RAND_MAX<sp/>+<sp/>1.0f);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1ae93bfe2a2080f0e2a03df835e72c7521" kindref="member">ofRandom</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y)<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>high<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>low<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>randNum<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>there<sp/>is<sp/>no<sp/>range,<sp/>return<sp/>the<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(x<sp/>==<sp/>y)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>float<sp/>==<sp/>?,<sp/>wise?<sp/>epsilon?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>high<sp/>=<sp/><ref refid="of_constants_8h_1aacc3ee1a7f283f8ef65cea31f4436a95" kindref="member">MAX</ref>(x,y);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>low<sp/>=<sp/><ref refid="of_constants_8h_1a74e75242132eaabbc1c512488a135926" kindref="member">MIN</ref>(x,y);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>randNum<sp/>=<sp/>low<sp/>+<sp/>((high-low)<sp/>*<sp/>rand()/(RAND_MAX<sp/>+<sp/>1.0));</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>randNum;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1aea7a1685224b49b4949899d4b283af51" kindref="member">ofRandomf</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>randNum<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>randNum<sp/>=<sp/>(rand()/(RAND_MAX<sp/>+<sp/>1.0))<sp/>*<sp/>2.0<sp/>-<sp/>1.0;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>randNum;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1ab701838d1aa2e4ad8f04bad401c21a0a" kindref="member">ofRandomuf</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>randNum<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>randNum<sp/>=<sp/>rand()/(RAND_MAX<sp/>+<sp/>1.0);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>randNum;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">//----<sp/>new<sp/>to<sp/>006</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//from<sp/>the<sp/>forums<sp/>http://www.openframeworks.cc/forum/viewtopic.php?t=1413</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1aeda138c0500e2d10b0763e4c1ac1cc53" kindref="member">ofNormalize</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max){</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1a4b2fc21e53bfb8521923300b0d30afdb" kindref="member">ofClamp</ref>(<sp/>(value<sp/>-<sp/>min)<sp/>/<sp/>(max<sp/>-<sp/>min),<sp/>0,<sp/>1);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//check<sp/>for<sp/>division<sp/>by<sp/>zero???</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1aa36b88c917a1cebc82570eed1641120f" kindref="member">ofMap</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>inputMin,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>inputMax,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>outputMin,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>outputMax,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>clamp)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fabs(inputMin<sp/>-<sp/>inputMax)<sp/>&lt;<sp/>FLT_EPSILON){</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_log" kindref="compound" tooltip="a streaming log interface">ofLog</ref>(<ref refid="of_log_8h_1a6b3aba959377cae6ed3afbb9d5826fe4a0ece8203f15199db94060ba73e974635" kindref="member">OF_LOG_WARNING</ref>,<sp/></highlight><highlight class="stringliteral">&quot;ofMap:<sp/>avoiding<sp/>possible<sp/>divide<sp/>by<sp/>zero,<sp/>check<sp/>inputMin<sp/>and<sp/>inputMax\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>outputMin;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>outVal<sp/>=<sp/>((value<sp/>-<sp/>inputMin)<sp/>/<sp/>(inputMax<sp/>-<sp/>inputMin)<sp/>*<sp/>(outputMax<sp/>-<sp/>outputMin)<sp/>+<sp/>outputMin);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>clamp<sp/>){</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(outputMax<sp/>&lt;<sp/>outputMin){</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>outVal<sp/>&lt;<sp/>outputMax<sp/>)outVal<sp/>=<sp/>outputMax;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>outVal<sp/>&gt;<sp/>outputMin<sp/>)outVal<sp/>=<sp/>outputMin;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>outVal<sp/>&gt;<sp/>outputMax<sp/>)outVal<sp/>=<sp/>outputMax;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>outVal<sp/>&lt;<sp/>outputMin<sp/>)outVal<sp/>=<sp/>outputMin;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>outVal;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1aa866e5d80a66299e18b89bf9f879b3f5" kindref="member">ofDist</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y2)<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrt(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">((x1<sp/>-<sp/>x2)<sp/>*<sp/>(x1<sp/>-<sp/>x2)<sp/>+<sp/>(y1<sp/>-<sp/>y2)<sp/>*<sp/>(y1<sp/>-<sp/>y2)));</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1acca6b68f9a67cbc302866c6b60f55899" kindref="member">ofDistSquared</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y2)<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<sp/>(x1<sp/>-<sp/>x2)<sp/>*<sp/>(x1<sp/>-<sp/>x2)<sp/>+<sp/>(y1<sp/>-<sp/>y2)<sp/>*<sp/>(y1<sp/>-<sp/>y2)<sp/>);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1a4b2fc21e53bfb8521923300b0d30afdb" kindref="member">ofClamp</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max)<sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value<sp/>&lt;<sp/>min<sp/>?<sp/>min<sp/>:<sp/>value<sp/>&gt;<sp/>max<sp/>?<sp/>max<sp/>:<sp/>value;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment">//<sp/>return<sp/>sign<sp/>of<sp/>the<sp/>number</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1a7f39494418fc89efee2378ec2ac989f8" kindref="member">ofSign</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>n)<sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>n<sp/>&gt;<sp/>0<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(n<sp/>&lt;<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1aa078cdd83eb6d3dd355897e7f15a2f33" kindref="member">ofInRange</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max)<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>t&gt;=min<sp/>&amp;&amp;<sp/>t&lt;=max;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1a7d02e72641780bca037f6c63f7b6e508" kindref="member">ofRadToDeg</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radians)<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>radians<sp/>*<sp/><ref refid="of_constants_8h_1a89e47af0449640d4f15191aba5ca24c6" kindref="member">RAD_TO_DEG</ref>;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1a70a120b33471d10ce0e755ee43c32b25" kindref="member">ofDegToRad</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>degrees)<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>degrees<sp/>*<sp/><ref refid="of_constants_8h_1a212460e743fecb084d717bb2180c5a56" kindref="member">DEG_TO_RAD</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1a851eb0ea11c2bfe151665de8e3c66561" kindref="member">ofLerp</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>start,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>stop,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>amt)<sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>start<sp/>+<sp/>(stop-start)<sp/>*<sp/>amt;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1af727c186564d950c4b65c6a4b4aa276e" kindref="member">ofWrapRadians</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>from,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>to){</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(angle<sp/>&gt;<sp/>to<sp/>)<sp/>angle<sp/>-=<sp/><ref refid="of_constants_8h_1a3b947f4b635461030ff2d87833e5049e" kindref="member">TWO_PI</ref>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(angle<sp/>&lt;<sp/>from<sp/>)<sp/>angle<sp/>+=<sp/><ref refid="of_constants_8h_1a3b947f4b635461030ff2d87833e5049e" kindref="member">TWO_PI</ref>;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>angle;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1ae4ba80015162a1c7be1cc5eb39e205ef" kindref="member">ofWrapDegrees</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>from,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>to){</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(angle<sp/>&gt;<sp/>to<sp/>)<sp/>angle-=360;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(angle<sp/>&lt;<sp/>from<sp/>)<sp/>angle+=360;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>angle;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1a3b9d058406f6fc2c2dc378057e789a60" kindref="member">ofLerpDegrees</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>currentAngle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>targetAngle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>pct)<sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>currentAngle<sp/>+<sp/><ref refid="of_math_8cpp_1a9187e3d0572b394eb8f341ec88b575f4" kindref="member">ofAngleDifferenceDegrees</ref>(currentAngle,targetAngle)<sp/>*<sp/>pct;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1ae1f8c65595c036c675cc390c2d90d166" kindref="member">ofLerpRadians</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>currentAngle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>targetAngle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>pct)<sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>currentAngle<sp/>+<sp/><ref refid="of_math_8cpp_1a10ed9288cb91336033e7c3eeb159f604" kindref="member">ofAngleDifferenceRadians</ref>(currentAngle,targetAngle)<sp/>*<sp/>pct;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1a9a9226ad2046591bf4aa5d2707ebba2f" kindref="member">ofRandomWidth</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1ae93bfe2a2080f0e2a03df835e72c7521" kindref="member">ofRandom</ref>(0,<sp/><ref refid="of_app_runner_8cpp_1a28bb1c518b5c68ee2eae655bd4e56445" kindref="member">ofGetWidth</ref>());</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1ac0e9ce331e6b98373845f16e778548df" kindref="member">ofRandomHeight</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1ae93bfe2a2080f0e2a03df835e72c7521" kindref="member">ofRandom</ref>(0,<sp/><ref refid="of_app_runner_8cpp_1a415b5eadf885ebd1f4799cc40e5db137" kindref="member">ofGetHeight</ref>());</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1a94cb5392d5d0a5ed7908c5fd31ae97d2" kindref="member">ofNoise</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x){</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_slang_library_noise1(x)*0.5f<sp/>+<sp/>0.5f;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1a94cb5392d5d0a5ed7908c5fd31ae97d2" kindref="member">ofNoise</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y){</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_slang_library_noise2(x,y)*0.5f<sp/>+<sp/>0.5f;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1a94cb5392d5d0a5ed7908c5fd31ae97d2" kindref="member">ofNoise</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z){</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_slang_library_noise3(x,y,z)*0.5f<sp/>+<sp/>0.5f;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1a94cb5392d5d0a5ed7908c5fd31ae97d2" kindref="member">ofNoise</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>w){</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_slang_library_noise4(x,y,z,w)*0.5f<sp/>+<sp/>0.5f;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1a16196baebc57f663f27f9aff40c518e3" kindref="member">ofSignedNoise</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x){</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_slang_library_noise1(x);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1a16196baebc57f663f27f9aff40c518e3" kindref="member">ofSignedNoise</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y){</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_slang_library_noise2(x,y);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1a16196baebc57f663f27f9aff40c518e3" kindref="member">ofSignedNoise</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z){</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_slang_library_noise3(x,y,z);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1a16196baebc57f663f27f9aff40c518e3" kindref="member">ofSignedNoise</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>w){</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_slang_library_noise4(x,y,z,w);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1ac178b7fee13d26870dbbe2af54778785" kindref="member">ofInsidePoly</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;ofPoint&gt;<sp/>&amp;<sp/>polygon){</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1ab4c8495d2bee752b9c4054ea5776cf80" kindref="member">ofPolyline::inside</ref>(x,y,<sp/><ref refid="classof_polyline" kindref="compound">ofPolyline</ref>(polygon));</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1ac178b7fee13d26870dbbe2af54778785" kindref="member">ofInsidePoly</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>&amp;<sp/>p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;ofPoint&gt;<sp/>&amp;<sp/>poly){</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1ab4c8495d2bee752b9c4054ea5776cf80" kindref="member">ofPolyline::inside</ref>(p.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref>,p.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref>,<sp/><ref refid="classof_polyline" kindref="compound">ofPolyline</ref>(poly));</highlight></codeline>
+<codeline lineno="234"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1a6dc7132fb85eb90d7cf3194ad6c054cc" kindref="member">ofLineSegmentIntersection</ref>(<ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>line1Start,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>line1End,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>line2Start,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>line2End,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>&amp;<sp/>intersection){</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>diffLA,<sp/>diffLB;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>compareA,<sp/>compareB;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>diffLA<sp/>=<sp/>line1End<sp/>-<sp/>line1Start;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>diffLB<sp/>=<sp/>line2End<sp/>-<sp/>line2Start;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>compareA<sp/>=<sp/>diffLA.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref>*line1Start.y<sp/>-<sp/>diffLA.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref>*line1Start.x;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>compareB<sp/>=<sp/>diffLB.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref>*line2Start.y<sp/>-<sp/>diffLB.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref>*line2Start.x;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>(<sp/>diffLA.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref>*line2Start.y<sp/>-<sp/>diffLA.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref>*line2Start.x<sp/>)<sp/>&lt;<sp/>compareA<sp/>)<sp/>^</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>(<sp/>diffLA.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref>*line2End.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref><sp/>-<sp/>diffLA.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref>*line2End.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref><sp/>)<sp/>&lt;<sp/>compareA<sp/>)</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>(<sp/>diffLB.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref>*line1Start.y<sp/>-<sp/>diffLB.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref>*line1Start.x<sp/>)<sp/>&lt;<sp/>compareB<sp/>)<sp/>^</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>(<sp/>diffLB.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref>*line1End.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref><sp/>-<sp/>diffLB.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref>*line1End.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref>)<sp/>&lt;<sp/>compareB<sp/>)</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>lDetDivInv<sp/>=<sp/>1<sp/>/<sp/>((diffLA.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref>*diffLB.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref>)<sp/>-<sp/>(diffLA.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref>*diffLB.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref>));</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>intersection.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref><sp/>=<sp/><sp/>-((diffLA.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref>*compareB)<sp/>-<sp/>(compareA*diffLB.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref>))<sp/>*<sp/>lDetDivInv<sp/>;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>intersection.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref><sp/>=<sp/><sp/>-((diffLA.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref>*compareB)<sp/>-<sp/>(compareA*diffLB.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref>))<sp/>*<sp/>lDetDivInv<sp/>;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/><ref refid="of_math_8cpp_1ae41684be82f712ce9afe52366c57f9a0" kindref="member">ofBezierPoint</ref>(<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>a,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>b,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>c,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/><ref refid="of_polyline_8cpp_1ae629cf86d3fc5a1280de48f9c0efeb13" kindref="member">d</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t){</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>tp<sp/>=<sp/>1.0<sp/>-<sp/>t;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a*tp*tp*tp<sp/>+<sp/>b*3*t*tp*tp<sp/>+<sp/>c*3*t*t*tp<sp/>+<sp/>d*t*t*t;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/><ref refid="of_math_8cpp_1abb059119ae6349bbbde274ac2b1b5e26" kindref="member">ofCurvePoint</ref>(<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>a,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>b,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>c,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/><ref refid="of_polyline_8cpp_1ae629cf86d3fc5a1280de48f9c0efeb13" kindref="member">d</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t){</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>pt;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t2<sp/>=<sp/>t<sp/>*<sp/>t;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t3<sp/>=<sp/>t2<sp/>*<sp/>t;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>pt.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref><sp/>=<sp/>0.5f<sp/>*<sp/>(<sp/>(<sp/>2.0f<sp/>*<sp/>b.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref><sp/>)<sp/>+</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>-a.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref><sp/>+<sp/>c.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref><sp/>)<sp/>*<sp/>t<sp/>+</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>2.0f<sp/>*<sp/>a.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref><sp/>-<sp/>5.0f<sp/>*<sp/>b.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref><sp/>+<sp/>4<sp/>*<sp/>c.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref><sp/>-<sp/>d.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref><sp/>)<sp/>*<sp/>t2<sp/>+</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>-a.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref><sp/>+<sp/>3.0f<sp/>*<sp/>b.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref><sp/>-<sp/>3.0f<sp/>*<sp/>c.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref><sp/>+<sp/>d.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref><sp/>)<sp/>*<sp/>t3<sp/>);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>pt.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref><sp/>=<sp/>0.5f<sp/>*<sp/>(<sp/>(<sp/>2.0f<sp/>*<sp/>b.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref><sp/>)<sp/>+</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>-a.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref><sp/>+<sp/>c.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref><sp/>)<sp/>*<sp/>t<sp/>+</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>2.0f<sp/>*<sp/>a.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref><sp/>-<sp/>5.0f<sp/>*<sp/>b.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref><sp/>+<sp/>4<sp/>*<sp/>c.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref><sp/>-<sp/>d.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref><sp/>)<sp/>*<sp/>t2<sp/>+</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>-a.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref><sp/>+<sp/>3.0f<sp/>*<sp/>b.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref><sp/>-<sp/>3.0f<sp/>*<sp/>c.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref><sp/>+<sp/>d.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref><sp/>)<sp/>*<sp/>t3<sp/>);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pt;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/><ref refid="of_math_8cpp_1af7ef7086c0cb61b4883a15873dd2b87e" kindref="member">ofBezierTangent</ref>(<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>a,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>b,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>c,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>d,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t){</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(d-a-c*3+b*3)*(t*t)*3<sp/>+<sp/>(a+c-b*2)*t*6<sp/>-<sp/>a*3+b*3;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/><ref refid="of_math_8cpp_1ae12c7ac240f0bd70fb212c16a9022f0d" kindref="member">ofCurveTangent</ref>(<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>a,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>b,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>c,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>d,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t){</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>v0<sp/>=<sp/>(<sp/>c<sp/>-<sp/>a<sp/>)*0.5;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>v1<sp/>=<sp/>(<sp/>d<sp/>-<sp/>b<sp/>)*0.5;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<sp/>b*2<sp/>-c*2<sp/>+<sp/>v0<sp/>+<sp/>v1)*(3*t*t)<sp/>+<sp/>(<sp/>c*3<sp/>-<sp/>b*3<sp/>-<sp/>v1<sp/>-<sp/>v0*2<sp/>)*(<sp/>2*t)<sp/>+<sp/>v0;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1a9187e3d0572b394eb8f341ec88b575f4" kindref="member">ofAngleDifferenceDegrees</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>currentAngle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>targetAngle)<sp/>{</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1ae4ba80015162a1c7be1cc5eb39e205ef" kindref="member">ofWrapDegrees</ref>(targetAngle<sp/>-<sp/>currentAngle);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1a10ed9288cb91336033e7c3eeb159f604" kindref="member">ofAngleDifferenceRadians</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>currentAngle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>targetAngle)<sp/>{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/><ref refid="of_math_8cpp_1af727c186564d950c4b65c6a4b4aa276e" kindref="member">ofWrapRadians</ref>(targetAngle<sp/>-<sp/>currentAngle);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp"/>
+  </compounddef>
+</doxygen>

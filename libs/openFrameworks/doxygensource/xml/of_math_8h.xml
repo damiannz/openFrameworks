@@ -1,0 +1,2092 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="of_math_8h" kind="file">
+    <compoundname>ofMath.h</compoundname>
+    <includes refid="of_point_8h" local="yes">ofPoint.h</includes>
+    <includes refid="of_constants_8h" local="yes">ofConstants.h</includes>
+    <includedby refid="of_easy_cam_8cpp" local="yes">3d/ofEasyCam.cpp</includedby>
+    <includedby refid="of_node_8cpp" local="yes">3d/ofNode.cpp</includedby>
+    <includedby refid="of_app_runner_8cpp" local="yes">app/ofAppRunner.cpp</includedby>
+    <includedby refid="of_pixels_8h" local="yes">graphics/ofPixels.h</includedby>
+    <includedby refid="of_pixels_8cpp" local="yes">graphics/ofPixels.cpp</includedby>
+    <includedby refid="of_math_8cpp" local="yes">math/ofMath.cpp</includedby>
+    <includedby refid="of_quaternion_8cpp" local="yes">math/ofQuaternion.cpp</includedby>
+    <includedby refid="of_main_8h" local="yes">ofMain.h</includedby>
+    <includedby refid="of_color_8h" local="yes">types/ofColor.h</includedby>
+    <incdepgraph>
+      <node id="2958">
+        <label>iomanip</label>
+      </node>
+      <node id="2960">
+        <label>ofVec4f.h</label>
+        <link refid="of_vec4f_8h"/>
+        <childnode refid="2942" relation="include">
+        </childnode>
+      </node>
+      <node id="2946">
+        <label>GL/glx.h</label>
+      </node>
+      <node id="2941">
+        <label>ofVec2f.h</label>
+        <link refid="of_vec2f_8h"/>
+        <childnode refid="2942" relation="include">
+        </childnode>
+      </node>
+      <node id="2951">
+        <label>cmath</label>
+      </node>
+      <node id="2940">
+        <label>ofVec3f.h</label>
+        <link refid="of_vec3f_8h"/>
+        <childnode refid="2941" relation="include">
+        </childnode>
+        <childnode refid="2960" relation="include">
+        </childnode>
+        <childnode refid="2942" relation="include">
+        </childnode>
+        <childnode refid="2951" relation="include">
+        </childnode>
+        <childnode refid="2954" relation="include">
+        </childnode>
+      </node>
+      <node id="2953">
+        <label>string</label>
+      </node>
+      <node id="2950">
+        <label>cstdarg</label>
+      </node>
+      <node id="2944">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="2947">
+        <label>tesselator.h</label>
+      </node>
+      <node id="2959">
+        <label>fstream</label>
+      </node>
+      <node id="2938">
+        <label>math/ofMath.h</label>
+        <link refid="ofMath.h"/>
+        <childnode refid="2939" relation="include">
+        </childnode>
+        <childnode refid="2942" relation="include">
+        </childnode>
+      </node>
+      <node id="2949">
+        <label>cstdio</label>
+      </node>
+      <node id="2952">
+        <label>ctime</label>
+      </node>
+      <node id="2943">
+        <label>unistd.h</label>
+      </node>
+      <node id="2955">
+        <label>vector</label>
+      </node>
+      <node id="2942">
+        <label>ofConstants.h</label>
+        <link refid="of_constants_8h"/>
+        <childnode refid="2943" relation="include">
+        </childnode>
+        <childnode refid="2944" relation="include">
+        </childnode>
+        <childnode refid="2945" relation="include">
+        </childnode>
+        <childnode refid="2946" relation="include">
+        </childnode>
+        <childnode refid="2947" relation="include">
+        </childnode>
+        <childnode refid="2948" relation="include">
+        </childnode>
+        <childnode refid="2949" relation="include">
+        </childnode>
+        <childnode refid="2950" relation="include">
+        </childnode>
+        <childnode refid="2951" relation="include">
+        </childnode>
+        <childnode refid="2952" relation="include">
+        </childnode>
+        <childnode refid="2953" relation="include">
+        </childnode>
+        <childnode refid="2954" relation="include">
+        </childnode>
+        <childnode refid="2955" relation="include">
+        </childnode>
+        <childnode refid="2956" relation="include">
+        </childnode>
+        <childnode refid="2957" relation="include">
+        </childnode>
+        <childnode refid="2958" relation="include">
+        </childnode>
+        <childnode refid="2959" relation="include">
+        </childnode>
+      </node>
+      <node id="2957">
+        <label>sstream</label>
+      </node>
+      <node id="2939">
+        <label>ofPoint.h</label>
+        <link refid="of_point_8h"/>
+        <childnode refid="2940" relation="include">
+        </childnode>
+      </node>
+      <node id="2948">
+        <label>cstdlib</label>
+      </node>
+      <node id="2954">
+        <label>iostream</label>
+      </node>
+      <node id="2945">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="2956">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3019">
+        <label>video/ofGstVideoGrabber.cpp</label>
+        <link refid="of_gst_video_grabber_8cpp"/>
+      </node>
+      <node id="3045">
+        <label>communication/ofSerial.cpp</label>
+        <link refid="of_serial_8cpp"/>
+      </node>
+      <node id="2979">
+        <label>sound/ofSoundStream.cpp</label>
+        <link refid="of_sound_stream_8cpp"/>
+      </node>
+      <node id="3046">
+        <label>sound/ofPASoundStream.h</label>
+        <link refid="of_p_a_sound_stream_8h"/>
+        <childnode refid="3047" relation="include">
+        </childnode>
+      </node>
+      <node id="2972">
+        <label>utils/ofUtils.cpp</label>
+        <link refid="of_utils_8cpp"/>
+      </node>
+      <node id="3026">
+        <label>types/ofColor.h</label>
+        <link refid="of_color_8h"/>
+        <childnode refid="3027" relation="include">
+        </childnode>
+        <childnode refid="3004" relation="include">
+        </childnode>
+        <childnode refid="3034" relation="include">
+        </childnode>
+        <childnode refid="3028" relation="include">
+        </childnode>
+        <childnode refid="3011" relation="include">
+        </childnode>
+        <childnode refid="2998" relation="include">
+        </childnode>
+        <childnode refid="2965" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+        <childnode refid="2974" relation="include">
+        </childnode>
+        <childnode refid="3036" relation="include">
+        </childnode>
+        <childnode refid="3037" relation="include">
+        </childnode>
+      </node>
+      <node id="3049">
+        <label>sound/ofRtAudioSoundStream.cpp</label>
+        <link refid="of_rt_audio_sound_stream_8cpp"/>
+      </node>
+      <node id="2968">
+        <label>gl/ofGLRenderer.cpp</label>
+        <link refid="of_g_l_renderer_8cpp"/>
+      </node>
+      <node id="3033">
+        <label>graphics/ofTessellator.cpp</label>
+        <link refid="of_tessellator_8cpp"/>
+      </node>
+      <node id="2978">
+        <label>sound/ofSoundStream.h</label>
+        <link refid="of_sound_stream_8h"/>
+        <childnode refid="2964" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+        <childnode refid="2979" relation="include">
+        </childnode>
+      </node>
+      <node id="3022">
+        <label>video/ofQuickTimePlayer.h</label>
+        <link refid="of_quick_time_player_8h"/>
+        <childnode refid="3023" relation="include">
+        </childnode>
+      </node>
+      <node id="3015">
+        <label>types/ofBaseTypes.cpp</label>
+        <link refid="of_base_types_8cpp"/>
+      </node>
+      <node id="2977">
+        <label>events/ofEvents.cpp</label>
+        <link refid="of_events_8cpp"/>
+      </node>
+      <node id="3058">
+        <label>utils/ofThread.h</label>
+        <link refid="of_thread_8h"/>
+        <childnode refid="2971" relation="include">
+        </childnode>
+        <childnode refid="3059" relation="include">
+        </childnode>
+        <childnode refid="3060" relation="include">
+        </childnode>
+      </node>
+      <node id="3057">
+        <label>video/ofQuickTimeGrabber.cpp</label>
+        <link refid="of_quick_time_grabber_8cpp"/>
+      </node>
+      <node id="2989">
+        <label>video/ofDirectShowGrabber.cpp</label>
+        <link refid="of_direct_show_grabber_8cpp"/>
+      </node>
+      <node id="2971">
+        <label>ofMain.h</label>
+        <link refid="of_main_8h"/>
+      </node>
+      <node id="3014">
+        <label>sound/ofSoundPlayer.cpp</label>
+        <link refid="of_sound_player_8cpp"/>
+      </node>
+      <node id="3031">
+        <label>gl/ofVboMesh.cpp</label>
+        <link refid="of_vbo_mesh_8cpp"/>
+      </node>
+      <node id="3032">
+        <label>graphics/ofTessellator.h</label>
+        <link refid="of_tessellator_8h"/>
+        <childnode refid="3011" relation="include">
+        </childnode>
+        <childnode refid="3008" relation="include">
+        </childnode>
+        <childnode refid="3033" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+      </node>
+      <node id="3039">
+        <label>app/ofAppGlutWindow.h</label>
+        <link refid="of_app_glut_window_8h"/>
+        <childnode refid="2976" relation="include">
+        </childnode>
+        <childnode refid="2964" relation="include">
+        </childnode>
+      </node>
+      <node id="3055">
+        <label>utils/ofFileUtils.cpp</label>
+        <link refid="of_file_utils_8cpp"/>
+      </node>
+      <node id="3036">
+        <label>types/ofColor.cpp</label>
+        <link refid="of_color_8cpp"/>
+      </node>
+      <node id="2970">
+        <label>graphics/ofImage.cpp</label>
+        <link refid="of_image_8cpp"/>
+      </node>
+      <node id="2985">
+        <label>graphics/ofBitmapFont.cpp</label>
+        <link refid="of_bitmap_font_8cpp"/>
+      </node>
+      <node id="3002">
+        <label>3d/ofCamera.cpp</label>
+        <link refid="of_camera_8cpp"/>
+      </node>
+      <node id="2965">
+        <label>graphics/ofPixels.h</label>
+        <link refid="of_pixels_8h"/>
+        <childnode refid="2966" relation="include">
+        </childnode>
+        <childnode refid="2967" relation="include">
+        </childnode>
+        <childnode refid="2973" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+        <childnode refid="2974" relation="include">
+        </childnode>
+        <childnode refid="2988" relation="include">
+        </childnode>
+        <childnode refid="3016" relation="include">
+        </childnode>
+        <childnode refid="2990" relation="include">
+        </childnode>
+        <childnode refid="2993" relation="include">
+        </childnode>
+        <childnode refid="3022" relation="include">
+        </childnode>
+      </node>
+      <node id="3029">
+        <label>gl/ofVbo.cpp</label>
+        <link refid="of_vbo_8cpp"/>
+      </node>
+      <node id="2963">
+        <label>3d/ofNode.cpp</label>
+        <link refid="of_node_8cpp"/>
+      </node>
+      <node id="2982">
+        <label>gl/ofFbo.cpp</label>
+        <link refid="of_fbo_8cpp"/>
+      </node>
+      <node id="3016">
+        <label>video/ofGstUtils.h</label>
+        <link refid="of_gst_utils_8h"/>
+        <childnode refid="3017" relation="include">
+        </childnode>
+        <childnode refid="3018" relation="include">
+        </childnode>
+        <childnode refid="3020" relation="include">
+        </childnode>
+      </node>
+      <node id="3037">
+        <label>types/ofTypes.h</label>
+        <link refid="of_types_8h"/>
+        <childnode refid="3038" relation="include">
+        </childnode>
+        <childnode refid="3039" relation="include">
+        </childnode>
+        <childnode refid="3040" relation="include">
+        </childnode>
+        <childnode refid="3042" relation="include">
+        </childnode>
+        <childnode refid="3045" relation="include">
+        </childnode>
+        <childnode refid="3032" relation="include">
+        </childnode>
+        <childnode refid="2998" relation="include">
+        </childnode>
+        <childnode refid="2970" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+        <childnode refid="3046" relation="include">
+        </childnode>
+        <childnode refid="3048" relation="include">
+        </childnode>
+        <childnode refid="3013" relation="include">
+        </childnode>
+        <childnode refid="2978" relation="include">
+        </childnode>
+        <childnode refid="3050" relation="include">
+        </childnode>
+        <childnode refid="3052" relation="include">
+        </childnode>
+        <childnode refid="3058" relation="include">
+        </childnode>
+        <childnode refid="2972" relation="include">
+        </childnode>
+        <childnode refid="3016" relation="include">
+        </childnode>
+        <childnode refid="2990" relation="include">
+        </childnode>
+        <childnode refid="2995" relation="include">
+        </childnode>
+      </node>
+      <node id="3043">
+        <label>communication/ofArduino.h</label>
+        <link refid="of_arduino_8h"/>
+        <childnode refid="3044" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+      </node>
+      <node id="3048">
+        <label>sound/ofRtAudioSoundStream.h</label>
+        <link refid="of_rt_audio_sound_stream_8h"/>
+        <childnode refid="3049" relation="include">
+        </childnode>
+      </node>
+      <node id="2964">
+        <label>app/ofAppRunner.cpp</label>
+        <link refid="of_app_runner_8cpp"/>
+      </node>
+      <node id="3018">
+        <label>video/ofGstVideoGrabber.h</label>
+        <link refid="of_gst_video_grabber_8h"/>
+        <childnode refid="3019" relation="include">
+        </childnode>
+        <childnode refid="2990" relation="include">
+        </childnode>
+      </node>
+      <node id="2966">
+        <label>gl/ofTexture.cpp</label>
+        <link refid="of_texture_8cpp"/>
+      </node>
+      <node id="3003">
+        <label>3d/ofEasyCam.h</label>
+        <link refid="of_easy_cam_8h"/>
+        <childnode refid="2962" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+      </node>
+      <node id="2996">
+        <label>video/ofVideoPlayer.cpp</label>
+        <link refid="of_video_player_8cpp"/>
+      </node>
+      <node id="2974">
+        <label>types/ofBaseTypes.h</label>
+        <link refid="of_base_types_8h"/>
+        <childnode refid="2975" relation="include">
+        </childnode>
+        <childnode refid="2980" relation="include">
+        </childnode>
+        <childnode refid="2997" relation="include">
+        </childnode>
+        <childnode refid="2983" relation="include">
+        </childnode>
+        <childnode refid="3010" relation="include">
+        </childnode>
+        <childnode refid="3011" relation="include">
+        </childnode>
+        <childnode refid="2998" relation="include">
+        </childnode>
+        <childnode refid="2967" relation="include">
+        </childnode>
+        <childnode refid="3007" relation="include">
+        </childnode>
+        <childnode refid="3012" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+        <childnode refid="3013" relation="include">
+        </childnode>
+        <childnode refid="2978" relation="include">
+        </childnode>
+        <childnode refid="3015" relation="include">
+        </childnode>
+        <childnode refid="2988" relation="include">
+        </childnode>
+        <childnode refid="3016" relation="include">
+        </childnode>
+        <childnode refid="2990" relation="include">
+        </childnode>
+        <childnode refid="2993" relation="include">
+        </childnode>
+        <childnode refid="2995" relation="include">
+        </childnode>
+        <childnode refid="3022" relation="include">
+        </childnode>
+        <childnode refid="2992" relation="include">
+        </childnode>
+      </node>
+      <node id="3024">
+        <label>math/ofMath.cpp</label>
+        <link refid="of_math_8cpp"/>
+      </node>
+      <node id="2997">
+        <label>gl/ofGLRenderer.h</label>
+        <link refid="of_g_l_renderer_8h"/>
+        <childnode refid="2964" relation="include">
+        </childnode>
+        <childnode refid="2982" relation="include">
+        </childnode>
+        <childnode refid="2968" relation="include">
+        </childnode>
+        <childnode refid="2998" relation="include">
+        </childnode>
+        <childnode refid="3007" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+      </node>
+      <node id="3012">
+        <label>graphics/ofRendererCollection.h</label>
+        <link refid="of_renderer_collection_8h"/>
+        <childnode refid="3007" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+      </node>
+      <node id="2993">
+        <label>video/ofiPhoneVideoPlayer.h</label>
+        <link refid="ofi_phone_video_player_8h"/>
+        <childnode refid="2994" relation="include">
+        </childnode>
+      </node>
+      <node id="2988">
+        <label>video/ofDirectShowGrabber.h</label>
+        <link refid="of_direct_show_grabber_8h"/>
+        <childnode refid="2989" relation="include">
+        </childnode>
+      </node>
+      <node id="3025">
+        <label>math/ofQuaternion.cpp</label>
+        <link refid="of_quaternion_8cpp"/>
+      </node>
+      <node id="3056">
+        <label>utils/ofLog.cpp</label>
+        <link refid="of_log_8cpp"/>
+      </node>
+      <node id="3010">
+        <label>graphics/ofCairoRenderer.h</label>
+        <link refid="of_cairo_renderer_8h"/>
+        <childnode refid="2969" relation="include">
+        </childnode>
+        <childnode refid="3007" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+      </node>
+      <node id="3042">
+        <label>communication/ofSerial.h</label>
+        <link refid="of_serial_8h"/>
+        <childnode refid="3043" relation="include">
+        </childnode>
+        <childnode refid="3045" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+      </node>
+      <node id="3011">
+        <label>graphics/ofPath.h</label>
+        <link refid="of_path_8h"/>
+        <childnode refid="2968" relation="include">
+        </childnode>
+        <childnode refid="3010" relation="include">
+        </childnode>
+        <childnode refid="3007" relation="include">
+        </childnode>
+        <childnode refid="3008" relation="include">
+        </childnode>
+        <childnode refid="2986" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+      </node>
+      <node id="2961">
+        <label>math/ofMath.h</label>
+        <link refid="ofMath.h"/>
+        <childnode refid="2962" relation="include">
+        </childnode>
+        <childnode refid="2963" relation="include">
+        </childnode>
+        <childnode refid="2964" relation="include">
+        </childnode>
+        <childnode refid="2965" relation="include">
+        </childnode>
+        <childnode refid="2973" relation="include">
+        </childnode>
+        <childnode refid="3024" relation="include">
+        </childnode>
+        <childnode refid="3025" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+        <childnode refid="3026" relation="include">
+        </childnode>
+      </node>
+      <node id="2973">
+        <label>graphics/ofPixels.cpp</label>
+        <link refid="of_pixels_8cpp"/>
+      </node>
+      <node id="3047">
+        <label>sound/ofPASoundStream.cpp</label>
+        <link refid="of_p_a_sound_stream_8cpp"/>
+      </node>
+      <node id="2984">
+        <label>gl/ofShader.cpp</label>
+        <link refid="of_shader_8cpp"/>
+      </node>
+      <node id="3020">
+        <label>video/ofGstVideoPlayer.h</label>
+        <link refid="of_gst_video_player_8h"/>
+        <childnode refid="3021" relation="include">
+        </childnode>
+        <childnode refid="2995" relation="include">
+        </childnode>
+      </node>
+      <node id="3059">
+        <label>utils/ofThread.cpp</label>
+        <link refid="of_thread_8cpp"/>
+      </node>
+      <node id="3004">
+        <label>gl/ofLight.h</label>
+        <link refid="of_light_8h"/>
+        <childnode refid="3005" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+      </node>
+      <node id="2992">
+        <label>video/ofVideoGrabber.cpp</label>
+        <link refid="of_video_grabber_8cpp"/>
+      </node>
+      <node id="3052">
+        <label>utils/ofLog.h</label>
+        <link refid="of_log_8h"/>
+        <childnode refid="3002" relation="include">
+        </childnode>
+        <childnode refid="2963" relation="include">
+        </childnode>
+        <childnode refid="3005" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+        <childnode refid="3053" relation="include">
+        </childnode>
+        <childnode refid="3056" relation="include">
+        </childnode>
+      </node>
+      <node id="3001">
+        <label>3d/ofCamera.h</label>
+        <link refid="of_camera_8h"/>
+        <childnode refid="3002" relation="include">
+        </childnode>
+        <childnode refid="3003" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+      </node>
+      <node id="3007">
+        <label>graphics/ofGraphics.cpp</label>
+        <link refid="of_graphics_8cpp"/>
+      </node>
+      <node id="2981">
+        <label>gl/ofFbo.h</label>
+        <link refid="of_fbo_8h"/>
+        <childnode refid="2982" relation="include">
+        </childnode>
+        <childnode refid="2968" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+      </node>
+      <node id="2994">
+        <label>video/ofiPhoneVideoPlayer.mm</label>
+        <link refid="ofi_phone_video_player_8mm"/>
+      </node>
+      <node id="3017">
+        <label>video/ofGstUtils.cpp</label>
+        <link refid="of_gst_utils_8cpp"/>
+      </node>
+      <node id="3013">
+        <label>sound/ofSoundPlayer.h</label>
+        <link refid="of_sound_player_8h"/>
+        <childnode refid="2964" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+        <childnode refid="3014" relation="include">
+        </childnode>
+      </node>
+      <node id="2990">
+        <label>video/ofVideoGrabber.h</label>
+        <link refid="of_video_grabber_8h"/>
+        <childnode refid="2971" relation="include">
+        </childnode>
+        <childnode refid="2991" relation="include">
+        </childnode>
+        <childnode refid="2992" relation="include">
+        </childnode>
+      </node>
+      <node id="2976">
+        <label>app/ofAppGlutWindow.cpp</label>
+        <link refid="of_app_glut_window_8cpp"/>
+      </node>
+      <node id="2962">
+        <label>3d/ofEasyCam.cpp</label>
+        <link refid="of_easy_cam_8cpp"/>
+      </node>
+      <node id="3060">
+        <label>utils/ofURLFileLoader.h</label>
+        <link refid="of_u_r_l_file_loader_8h"/>
+        <childnode refid="2970" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+        <childnode refid="3041" relation="include">
+        </childnode>
+      </node>
+      <node id="3030">
+        <label>gl/ofVboMesh.h</label>
+        <link refid="of_vbo_mesh_8h"/>
+        <childnode refid="3031" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+      </node>
+      <node id="3021">
+        <label>video/ofGstVideoPlayer.cpp</label>
+        <link refid="of_gst_video_player_8cpp"/>
+      </node>
+      <node id="2995">
+        <label>video/ofVideoPlayer.h</label>
+        <link refid="of_video_player_8h"/>
+        <childnode refid="2971" relation="include">
+        </childnode>
+        <childnode refid="2993" relation="include">
+        </childnode>
+        <childnode refid="2996" relation="include">
+        </childnode>
+      </node>
+      <node id="3000">
+        <label>3d/ofNode.h</label>
+        <link refid="of_node_8h"/>
+        <childnode refid="3001" relation="include">
+        </childnode>
+        <childnode refid="2963" relation="include">
+        </childnode>
+        <childnode refid="3004" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+      </node>
+      <node id="3038">
+        <label>app/ofAppBaseWindow.h</label>
+        <link refid="of_app_base_window_8h"/>
+        <childnode refid="3039" relation="include">
+        </childnode>
+        <childnode refid="2964" relation="include">
+        </childnode>
+      </node>
+      <node id="2999">
+        <label>3d/of3dUtils.cpp</label>
+        <link refid="of3d_utils_8cpp"/>
+      </node>
+      <node id="3051">
+        <label>sound/ofxiPhoneSoundStream.mm</label>
+        <link refid="ofxi_phone_sound_stream_8mm"/>
+      </node>
+      <node id="3027">
+        <label>3d/ofMesh.h</label>
+        <link refid="of_mesh_8h"/>
+        <childnode refid="3006" relation="include">
+        </childnode>
+        <childnode refid="2968" relation="include">
+        </childnode>
+        <childnode refid="3028" relation="include">
+        </childnode>
+        <childnode refid="3030" relation="include">
+        </childnode>
+        <childnode refid="3011" relation="include">
+        </childnode>
+        <childnode refid="3032" relation="include">
+        </childnode>
+        <childnode refid="2969" relation="include">
+        </childnode>
+        <childnode refid="2986" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+        <childnode refid="2974" relation="include">
+        </childnode>
+      </node>
+      <node id="3035">
+        <label>gl/ofMaterial.cpp</label>
+        <link refid="of_material_8cpp"/>
+      </node>
+      <node id="2998">
+        <label>graphics/ofGraphics.h</label>
+        <link refid="of_graphics_8h"/>
+        <childnode refid="2999" relation="include">
+        </childnode>
+        <childnode refid="3000" relation="include">
+        </childnode>
+        <childnode refid="3006" relation="include">
+        </childnode>
+        <childnode refid="2976" relation="include">
+        </childnode>
+        <childnode refid="2964" relation="include">
+        </childnode>
+        <childnode refid="2977" relation="include">
+        </childnode>
+        <childnode refid="2982" relation="include">
+        </childnode>
+        <childnode refid="2968" relation="include">
+        </childnode>
+        <childnode refid="2966" relation="include">
+        </childnode>
+        <childnode refid="2969" relation="include">
+        </childnode>
+        <childnode refid="3007" relation="include">
+        </childnode>
+        <childnode refid="2970" relation="include">
+        </childnode>
+        <childnode refid="3008" relation="include">
+        </childnode>
+        <childnode refid="3009" relation="include">
+        </childnode>
+        <childnode refid="2987" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+        <childnode refid="2972" relation="include">
+        </childnode>
+      </node>
+      <node id="3053">
+        <label>utils/ofUtils.h</label>
+        <link refid="of_utils_8h"/>
+        <childnode refid="2962" relation="include">
+        </childnode>
+        <childnode refid="3027" relation="include">
+        </childnode>
+        <childnode refid="2976" relation="include">
+        </childnode>
+        <childnode refid="2964" relation="include">
+        </childnode>
+        <childnode refid="3044" relation="include">
+        </childnode>
+        <childnode refid="3045" relation="include">
+        </childnode>
+        <childnode refid="2977" relation="include">
+        </childnode>
+        <childnode refid="2982" relation="include">
+        </childnode>
+        <childnode refid="3005" relation="include">
+        </childnode>
+        <childnode refid="2984" relation="include">
+        </childnode>
+        <childnode refid="2966" relation="include">
+        </childnode>
+        <childnode refid="3028" relation="include">
+        </childnode>
+        <childnode refid="3029" relation="include">
+        </childnode>
+        <childnode refid="2969" relation="include">
+        </childnode>
+        <childnode refid="2965" relation="include">
+        </childnode>
+        <childnode refid="3007" relation="include">
+        </childnode>
+        <childnode refid="2987" relation="include">
+        </childnode>
+        <childnode refid="3024" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+        <childnode refid="3054" relation="include">
+        </childnode>
+        <childnode refid="3014" relation="include">
+        </childnode>
+        <childnode refid="3015" relation="include">
+        </childnode>
+        <childnode refid="3055" relation="include">
+        </childnode>
+        <childnode refid="3056" relation="include">
+        </childnode>
+        <childnode refid="3041" relation="include">
+        </childnode>
+        <childnode refid="2972" relation="include">
+        </childnode>
+        <childnode refid="2989" relation="include">
+        </childnode>
+        <childnode refid="3017" relation="include">
+        </childnode>
+        <childnode refid="3057" relation="include">
+        </childnode>
+        <childnode refid="3023" relation="include">
+        </childnode>
+        <childnode refid="2992" relation="include">
+        </childnode>
+        <childnode refid="2996" relation="include">
+        </childnode>
+      </node>
+      <node id="3005">
+        <label>gl/ofLight.cpp</label>
+        <link refid="of_light_8cpp"/>
+      </node>
+      <node id="3008">
+        <label>graphics/ofPath.cpp</label>
+        <link refid="of_path_8cpp"/>
+      </node>
+      <node id="3041">
+        <label>utils/ofURLFileLoader.cpp</label>
+        <link refid="of_u_r_l_file_loader_8cpp"/>
+      </node>
+      <node id="2991">
+        <label>video/ofiPhoneVideoGrabber.h</label>
+        <link refid="ofi_phone_video_grabber_8h"/>
+      </node>
+      <node id="2986">
+        <label>graphics/ofTrueTypeFont.h</label>
+        <link refid="of_true_type_font_8h"/>
+        <childnode refid="2987" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+      </node>
+      <node id="3034">
+        <label>gl/ofMaterial.h</label>
+        <link refid="of_material_8h"/>
+        <childnode refid="3035" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+      </node>
+      <node id="3050">
+        <label>sound/ofxiPhoneSoundStream.h</label>
+        <link refid="ofxi_phone_sound_stream_8h"/>
+        <childnode refid="3051" relation="include">
+        </childnode>
+      </node>
+      <node id="3023">
+        <label>video/ofQuickTimePlayer.cpp</label>
+        <link refid="of_quick_time_player_8cpp"/>
+      </node>
+      <node id="2980">
+        <label>gl/ofTexture.h</label>
+        <link refid="of_texture_8h"/>
+        <childnode refid="2981" relation="include">
+        </childnode>
+        <childnode refid="2983" relation="include">
+        </childnode>
+        <childnode refid="2966" relation="include">
+        </childnode>
+        <childnode refid="2985" relation="include">
+        </childnode>
+        <childnode refid="2967" relation="include">
+        </childnode>
+        <childnode refid="2986" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+        <childnode refid="2988" relation="include">
+        </childnode>
+        <childnode refid="2990" relation="include">
+        </childnode>
+        <childnode refid="2993" relation="include">
+        </childnode>
+        <childnode refid="2995" relation="include">
+        </childnode>
+      </node>
+      <node id="3040">
+        <label>app/ofAppRunner.h</label>
+        <link refid="of_app_runner_8h"/>
+        <childnode refid="3001" relation="include">
+        </childnode>
+        <childnode refid="2976" relation="include">
+        </childnode>
+        <childnode refid="2964" relation="include">
+        </childnode>
+        <childnode refid="2977" relation="include">
+        </childnode>
+        <childnode refid="2982" relation="include">
+        </childnode>
+        <childnode refid="2968" relation="include">
+        </childnode>
+        <childnode refid="2966" relation="include">
+        </childnode>
+        <childnode refid="2969" relation="include">
+        </childnode>
+        <childnode refid="3007" relation="include">
+        </childnode>
+        <childnode refid="2970" relation="include">
+        </childnode>
+        <childnode refid="3024" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+        <childnode refid="2979" relation="include">
+        </childnode>
+        <childnode refid="3041" relation="include">
+        </childnode>
+        <childnode refid="2972" relation="include">
+        </childnode>
+      </node>
+      <node id="2969">
+        <label>graphics/ofCairoRenderer.cpp</label>
+        <link refid="of_cairo_renderer_8cpp"/>
+      </node>
+      <node id="3028">
+        <label>gl/ofVbo.h</label>
+        <link refid="of_vbo_8h"/>
+        <childnode refid="3029" relation="include">
+        </childnode>
+        <childnode refid="3030" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+      </node>
+      <node id="2983">
+        <label>gl/ofShader.h</label>
+        <link refid="of_shader_8h"/>
+        <childnode refid="2984" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+      </node>
+      <node id="3009">
+        <label>graphics/ofPolyline.cpp</label>
+        <link refid="of_polyline_8cpp"/>
+      </node>
+      <node id="3006">
+        <label>3d/ofMesh.cpp</label>
+        <link refid="of_mesh_8cpp"/>
+      </node>
+      <node id="2987">
+        <label>graphics/ofTrueTypeFont.cpp</label>
+        <link refid="of_true_type_font_8cpp"/>
+      </node>
+      <node id="3044">
+        <label>communication/ofArduino.cpp</label>
+        <link refid="of_arduino_8cpp"/>
+      </node>
+      <node id="3054">
+        <label>sound/ofFmodSoundPlayer.cpp</label>
+        <link refid="of_fmod_sound_player_8cpp"/>
+      </node>
+      <node id="2967">
+        <label>graphics/ofImage.h</label>
+        <link refid="of_image_8h"/>
+        <childnode refid="2964" relation="include">
+        </childnode>
+        <childnode refid="2968" relation="include">
+        </childnode>
+        <childnode refid="2969" relation="include">
+        </childnode>
+        <childnode refid="2970" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+        <childnode refid="2972" relation="include">
+        </childnode>
+      </node>
+      <node id="2975">
+        <label>app/ofBaseApp.h</label>
+        <link refid="of_base_app_8h"/>
+        <childnode refid="2976" relation="include">
+        </childnode>
+        <childnode refid="2964" relation="include">
+        </childnode>
+        <childnode refid="2977" relation="include">
+        </childnode>
+        <childnode refid="2971" relation="include">
+        </childnode>
+        <childnode refid="2978" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="of_math_8h_1a0e50654e98b730299945741b53853421" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofNextPow2</definition>
+        <argsstring>(int a)</argsstring>
+        <name>ofNextPow2</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="18" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="14" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1a0df526ceae8b4f80f169d6d3918540e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSeedRandom</definition>
+        <argsstring>()</argsstring>
+        <name>ofSeedRandom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="19" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="22" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1a54f5c56b8cfc33bbc059aeb147d4bbef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofSeedRandom</definition>
+        <argsstring>(int val)</argsstring>
+        <name>ofSeedRandom</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="20" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1ae93bfe2a2080f0e2a03df835e72c7521" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofRandom</definition>
+        <argsstring>(float max)</argsstring>
+        <name>ofRandom</name>
+        <param>
+          <type>float</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="21" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1a4f89011a70f981bab979cc82b9713f85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofRandom</definition>
+        <argsstring>(float val0, float val1)</argsstring>
+        <name>ofRandom</name>
+        <param>
+          <type>float</type>
+          <declname>val0</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>val1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="22" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="49" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1aea7a1685224b49b4949899d4b283af51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofRandomf</definition>
+        <argsstring>()</argsstring>
+        <name>ofRandomf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="23" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="63" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1ab701838d1aa2e4ad8f04bad401c21a0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofRandomuf</definition>
+        <argsstring>()</argsstring>
+        <name>ofRandomuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="24" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="70" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1aeda138c0500e2d10b0763e4c1ac1cc53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofNormalize</definition>
+        <argsstring>(float value, float min, float max)</argsstring>
+        <name>ofNormalize</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="26" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="80" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1aed7db854914e53ba53ded1f9a4ff47da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofMap</definition>
+        <argsstring>(float value, float inputMin, float inputMax, float outputMin, float outputMax, bool clamp=false)</argsstring>
+        <name>ofMap</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>inputMin</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>inputMax</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>outputMin</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>outputMax</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clamp</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="27" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="86" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1a4b2fc21e53bfb8521923300b0d30afdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofClamp</definition>
+        <argsstring>(float value, float min, float max)</argsstring>
+        <name>ofClamp</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="28" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="119" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1a851eb0ea11c2bfe151665de8e3c66561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofLerp</definition>
+        <argsstring>(float start, float stop, float amt)</argsstring>
+        <name>ofLerp</name>
+        <param>
+          <type>float</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>stop</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>amt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="29" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="147" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1aa866e5d80a66299e18b89bf9f879b3f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofDist</definition>
+        <argsstring>(float x1, float y1, float x2, float y2)</argsstring>
+        <name>ofDist</name>
+        <param>
+          <type>float</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="30" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="109" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1acca6b68f9a67cbc302866c6b60f55899" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofDistSquared</definition>
+        <argsstring>(float x1, float y1, float x2, float y2)</argsstring>
+        <name>ofDistSquared</name>
+        <param>
+          <type>float</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="31" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="114" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1a7f39494418fc89efee2378ec2ac989f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofSign</definition>
+        <argsstring>(float n)</argsstring>
+        <name>ofSign</name>
+        <param>
+          <type>float</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="32" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="125" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1aa078cdd83eb6d3dd355897e7f15a2f33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofInRange</definition>
+        <argsstring>(float t, float min, float max)</argsstring>
+        <name>ofInRange</name>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="33" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="132" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1a7d02e72641780bca037f6c63f7b6e508" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofRadToDeg</definition>
+        <argsstring>(float radians)</argsstring>
+        <name>ofRadToDeg</name>
+        <param>
+          <type>float</type>
+          <declname>radians</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="35" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="137" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1a70a120b33471d10ce0e755ee43c32b25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofDegToRad</definition>
+        <argsstring>(float degrees)</argsstring>
+        <name>ofDegToRad</name>
+        <param>
+          <type>float</type>
+          <declname>degrees</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="36" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="142" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1a3b9d058406f6fc2c2dc378057e789a60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofLerpDegrees</definition>
+        <argsstring>(float currentAngle, float targetAngle, float pct)</argsstring>
+        <name>ofLerpDegrees</name>
+        <param>
+          <type>float</type>
+          <declname>currentAngle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>targetAngle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="37" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="167" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1ae1f8c65595c036c675cc390c2d90d166" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofLerpRadians</definition>
+        <argsstring>(float currentAngle, float targetAngle, float pct)</argsstring>
+        <name>ofLerpRadians</name>
+        <param>
+          <type>float</type>
+          <declname>currentAngle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>targetAngle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="38" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="172" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1a9187e3d0572b394eb8f341ec88b575f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofAngleDifferenceDegrees</definition>
+        <argsstring>(float currentAngle, float targetAngle)</argsstring>
+        <name>ofAngleDifferenceDegrees</name>
+        <param>
+          <type>float</type>
+          <declname>currentAngle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>targetAngle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="39" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="302" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1a10ed9288cb91336033e7c3eeb159f604" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofAngleDifferenceRadians</definition>
+        <argsstring>(float currentAngle, float targetAngle)</argsstring>
+        <name>ofAngleDifferenceRadians</name>
+        <param>
+          <type>float</type>
+          <declname>currentAngle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>targetAngle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="40" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="307" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1a535e06f6ceacbab6bf7eb1a171b0a71d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofAngleSumRadians</definition>
+        <argsstring>(float currentAngle, float targetAngle)</argsstring>
+        <name>ofAngleSumRadians</name>
+        <param>
+          <type>float</type>
+          <declname>currentAngle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>targetAngle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="41"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1a34be4c1bb0fedb406eb7dcfd7cf743bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofWrapRadians</definition>
+        <argsstring>(float angle, float from=-PI, float to=+PI)</argsstring>
+        <name>ofWrapRadians</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>from</declname>
+          <defval>-PI</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>to</declname>
+          <defval>+PI</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="42" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="152" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1a33e3f2421ab89bc4ee00a0f67d09aa0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofWrapDegrees</definition>
+        <argsstring>(float angle, float from=-180, float to=+180)</argsstring>
+        <name>ofWrapDegrees</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>from</declname>
+          <defval>-180</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>to</declname>
+          <defval>+180</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="43" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="159" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1a9a9226ad2046591bf4aa5d2707ebba2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofRandomWidth</definition>
+        <argsstring>()</argsstring>
+        <name>ofRandomWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="45" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="177" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1ac0e9ce331e6b98373845f16e778548df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofRandomHeight</definition>
+        <argsstring>()</argsstring>
+        <name>ofRandomHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="46" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="182" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1a94cb5392d5d0a5ed7908c5fd31ae97d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofNoise</definition>
+        <argsstring>(float x)</argsstring>
+        <name>ofNoise</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="49" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="187" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1a21b4f1d491303ad4a36d892a2ab4f4be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofNoise</definition>
+        <argsstring>(float x, float y)</argsstring>
+        <name>ofNoise</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="50" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="192" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1a9e780ac96e9ca3fc409b2e17b85c9e61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofNoise</definition>
+        <argsstring>(float x, float y, float z)</argsstring>
+        <name>ofNoise</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="51" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="197" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1ac27bf743a5ae09ec44fbf95969f031ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofNoise</definition>
+        <argsstring>(float x, float y, float z, float w)</argsstring>
+        <name>ofNoise</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="52" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="202" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1a16196baebc57f663f27f9aff40c518e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofSignedNoise</definition>
+        <argsstring>(float x)</argsstring>
+        <name>ofSignedNoise</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="55" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="207" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1a7850c901fdde189ca52645017fa55c4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofSignedNoise</definition>
+        <argsstring>(float x, float y)</argsstring>
+        <name>ofSignedNoise</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="56" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="212" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1a95e125e2fb6e73c3fcda31baebef2c69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofSignedNoise</definition>
+        <argsstring>(float x, float y, float z)</argsstring>
+        <name>ofSignedNoise</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="57" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="217" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1a29682c90a71c5931f30e855b35014b4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofSignedNoise</definition>
+        <argsstring>(float x, float y, float z, float w)</argsstring>
+        <name>ofSignedNoise</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="58" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="222" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1ade445c844b18f82fdf311268eec5400c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofInsidePoly</definition>
+        <argsstring>(float x, float y, const vector&lt; ofPoint &gt; &amp;poly)</argsstring>
+        <name>ofInsidePoly</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const vector&lt; <ref refid="classof_vec3f" kindref="compound">ofPoint</ref> &gt; &amp;</type>
+          <declname>poly</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="60" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="227" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1aafee3b18d9dccdfa85aa1b925a346029" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofInsidePoly</definition>
+        <argsstring>(const ofPoint &amp;p, const vector&lt; ofPoint &gt; &amp;poly)</argsstring>
+        <name>ofInsidePoly</name>
+        <param>
+          <type>const <ref refid="classof_vec3f" kindref="compound">ofPoint</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const vector&lt; <ref refid="classof_vec3f" kindref="compound">ofPoint</ref> &gt; &amp;</type>
+          <declname>poly</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="61" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="232" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1a6dc7132fb85eb90d7cf3194ad6c054cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofLineSegmentIntersection</definition>
+        <argsstring>(ofPoint line1Start, ofPoint line1End, ofPoint line2Start, ofPoint line2End, ofPoint &amp;intersection)</argsstring>
+        <name>ofLineSegmentIntersection</name>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>line1Start</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>line1End</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>line2Start</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>line2End</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref> &amp;</type>
+          <declname>intersection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="63" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="237" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1ae41684be82f712ce9afe52366c57f9a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+        <definition>ofPoint ofBezierPoint</definition>
+        <argsstring>(ofPoint a, ofPoint b, ofPoint c, ofPoint d, float t)</argsstring>
+        <name>ofBezierPoint</name>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="65" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="267" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1abb059119ae6349bbbde274ac2b1b5e26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+        <definition>ofPoint ofCurvePoint</definition>
+        <argsstring>(ofPoint a, ofPoint b, ofPoint c, ofPoint d, float t)</argsstring>
+        <name>ofCurvePoint</name>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="66" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="273" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1af7ef7086c0cb61b4883a15873dd2b87e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+        <definition>ofPoint ofBezierTangent</definition>
+        <argsstring>(ofPoint a, ofPoint b, ofPoint c, ofPoint d, float t)</argsstring>
+        <name>ofBezierTangent</name>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="67" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="289" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="of_math_8h_1ae12c7ac240f0bd70fb212c16a9022f0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+        <definition>ofPoint ofCurveTangent</definition>
+        <argsstring>(ofPoint a, ofPoint b, ofPoint c, ofPoint d, float t)</argsstring>
+        <name>ofCurveTangent</name>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_vec3f" kindref="compound">ofPoint</ref></type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h" line="68" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.cpp" bodystart="294" bodyend="299"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>notes:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>for<sp/>fast<sp/>things<sp/>look<sp/>here:<sp/>http://musicdsp.org/archive.php?classid=5#115</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>random<sp/>()<sp/>calls<sp/>are<sp/>based<sp/>on<sp/>misconceptions<sp/>described<sp/>here:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>http://www.azillionmonkeys.com/qed/random.html</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(Bad<sp/>advice<sp/>from<sp/>C.L.C.<sp/>FAQ)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>we<sp/>should<sp/>correct<sp/>this<sp/>--<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_point_8h" kindref="compound">ofPoint.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_constants_8h" kindref="compound">ofConstants.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1a0e50654e98b730299945741b53853421" kindref="member">ofNextPow2</ref><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a<sp/>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1a0df526ceae8b4f80f169d6d3918540e5" kindref="member">ofSeedRandom</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1a0df526ceae8b4f80f169d6d3918540e5" kindref="member">ofSeedRandom</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="of_math_8cpp_1ae93bfe2a2080f0e2a03df835e72c7521" kindref="member">ofRandom</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max);<sp/></highlight><highlight class="comment">//<sp/>random<sp/>(0<sp/>-<sp/>max)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1ae93bfe2a2080f0e2a03df835e72c7521" kindref="member">ofRandom</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>val0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>val1);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>random<sp/>(x<sp/>-<sp/>y)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1aea7a1685224b49b4949899d4b283af51" kindref="member">ofRandomf</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>random<sp/>(-1<sp/>-<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1ab701838d1aa2e4ad8f04bad401c21a0a" kindref="member">ofRandomuf</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>random<sp/>(0<sp/>-<sp/>1)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1aeda138c0500e2d10b0763e4c1ac1cc53" kindref="member">ofNormalize</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1aa36b88c917a1cebc82570eed1641120f" kindref="member">ofMap</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>inputMin,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>inputMax,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>outputMin,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>outputMax,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>clamp<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1a4b2fc21e53bfb8521923300b0d30afdb" kindref="member">ofClamp</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1a851eb0ea11c2bfe151665de8e3c66561" kindref="member">ofLerp</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>start,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>stop,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>amt);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1aa866e5d80a66299e18b89bf9f879b3f5" kindref="member">ofDist</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y2);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1acca6b68f9a67cbc302866c6b60f55899" kindref="member">ofDistSquared</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y2);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1a7f39494418fc89efee2378ec2ac989f8" kindref="member">ofSign</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1aa078cdd83eb6d3dd355897e7f15a2f33" kindref="member">ofInRange</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1a7d02e72641780bca037f6c63f7b6e508" kindref="member">ofRadToDeg</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radians);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1a70a120b33471d10ce0e755ee43c32b25" kindref="member">ofDegToRad</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>degrees);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1a3b9d058406f6fc2c2dc378057e789a60" kindref="member">ofLerpDegrees</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>currentAngle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>targetAngle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>pct);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1ae1f8c65595c036c675cc390c2d90d166" kindref="member">ofLerpRadians</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>currentAngle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>targetAngle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>pct);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1a9187e3d0572b394eb8f341ec88b575f4" kindref="member">ofAngleDifferenceDegrees</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>currentAngle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>targetAngle);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1a10ed9288cb91336033e7c3eeb159f604" kindref="member">ofAngleDifferenceRadians</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>currentAngle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>targetAngle);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8h_1a535e06f6ceacbab6bf7eb1a171b0a71d" kindref="member">ofAngleSumRadians</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>currentAngle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>targetAngle);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1af727c186564d950c4b65c6a4b4aa276e" kindref="member">ofWrapRadians</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>from<sp/>=<sp/>-<ref refid="of_constants_8h_1a598a3330b3c21701223ee0ca14316eca" kindref="member">PI</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>to=+<ref refid="of_constants_8h_1a598a3330b3c21701223ee0ca14316eca" kindref="member">PI</ref>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1ae4ba80015162a1c7be1cc5eb39e205ef" kindref="member">ofWrapDegrees</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>from<sp/>=<sp/>-180,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>to=+180);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1a9a9226ad2046591bf4aa5d2707ebba2f" kindref="member">ofRandomWidth</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1ac0e9ce331e6b98373845f16e778548df" kindref="member">ofRandomHeight</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//returns<sp/>noise<sp/>in<sp/>0.0<sp/>to<sp/>1.0<sp/>range</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1a94cb5392d5d0a5ed7908c5fd31ae97d2" kindref="member">ofNoise</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1a94cb5392d5d0a5ed7908c5fd31ae97d2" kindref="member">ofNoise</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1a94cb5392d5d0a5ed7908c5fd31ae97d2" kindref="member">ofNoise</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1a94cb5392d5d0a5ed7908c5fd31ae97d2" kindref="member">ofNoise</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>w);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//returns<sp/>noise<sp/>in<sp/>-1.0<sp/>to<sp/>1.0<sp/>range</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1a16196baebc57f663f27f9aff40c518e3" kindref="member">ofSignedNoise</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1a16196baebc57f663f27f9aff40c518e3" kindref="member">ofSignedNoise</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1a16196baebc57f663f27f9aff40c518e3" kindref="member">ofSignedNoise</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1a16196baebc57f663f27f9aff40c518e3" kindref="member">ofSignedNoise</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>w);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1ac178b7fee13d26870dbbe2af54778785" kindref="member">ofInsidePoly</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;ofPoint&gt;<sp/>&amp;<sp/>poly);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1ac178b7fee13d26870dbbe2af54778785" kindref="member">ofInsidePoly</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>&amp;<sp/>p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;ofPoint&gt;<sp/>&amp;<sp/>poly);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1a6dc7132fb85eb90d7cf3194ad6c054cc" kindref="member">ofLineSegmentIntersection</ref>(<ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>line1Start,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>line1End,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>line2Start,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>line2End,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>&amp;<sp/>intersection);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1ae41684be82f712ce9afe52366c57f9a0" kindref="member">ofBezierPoint</ref>(<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>a,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>b,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>c,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/><ref refid="of_polyline_8cpp_1ae629cf86d3fc5a1280de48f9c0efeb13" kindref="member">d</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1abb059119ae6349bbbde274ac2b1b5e26" kindref="member">ofCurvePoint</ref>(<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>a,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>b,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>c,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/><ref refid="of_polyline_8cpp_1ae629cf86d3fc5a1280de48f9c0efeb13" kindref="member">d</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1af7ef7086c0cb61b4883a15873dd2b87e" kindref="member">ofBezierTangent</ref>(<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>a,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>b,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>c,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/><ref refid="of_polyline_8cpp_1ae629cf86d3fc5a1280de48f9c0efeb13" kindref="member">d</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_math_8cpp_1ae12c7ac240f0bd70fb212c16a9022f0d" kindref="member">ofCurveTangent</ref>(<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>a,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>b,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>c,<sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/><ref refid="of_polyline_8cpp_1ae629cf86d3fc5a1280de48f9c0efeb13" kindref="member">d</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofMath.h"/>
+  </compounddef>
+</doxygen>

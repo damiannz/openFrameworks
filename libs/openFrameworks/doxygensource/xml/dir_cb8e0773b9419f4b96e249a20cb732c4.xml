@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="dir_cb8e0773b9419f4b96e249a20cb732c4" kind="dir">
+    <compoundname>3d/</compoundname>
+    <innerfile refid="of3d_utils_8cpp">of3dUtils.cpp</innerfile>
+    <innerfile refid="of3d_utils_8h">of3dUtils.h</innerfile>
+    <innerfile refid="of_camera_8cpp">ofCamera.cpp</innerfile>
+    <innerfile refid="of_camera_8h">ofCamera.h</innerfile>
+    <innerfile refid="of_easy_cam_8cpp">ofEasyCam.cpp</innerfile>
+    <innerfile refid="of_easy_cam_8h">ofEasyCam.h</innerfile>
+    <innerfile refid="of_mesh_8cpp">ofMesh.cpp</innerfile>
+    <innerfile refid="of_mesh_8h">ofMesh.h</innerfile>
+    <innerfile refid="of_node_8cpp">ofNode.cpp</innerfile>
+    <innerfile refid="of_node_8h">ofNode.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/3d/"/>
+  </compounddef>
+</doxygen>

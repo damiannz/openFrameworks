@@ -1,0 +1,998 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="of_pixels_8h" kind="file">
+    <compoundname>ofPixels.h</compoundname>
+    <includes refid="of_constants_8h" local="yes">ofConstants.h</includes>
+    <includes refid="of_utils_8h" local="yes">ofUtils.h</includes>
+    <includes refid="of_color_8h" local="yes">ofColor.h</includes>
+    <includes refid="of_math_8h" local="yes">ofMath.h</includes>
+    <includes local="no">limits</includes>
+    <includedby refid="of_texture_8cpp" local="yes">gl/ofTexture.cpp</includedby>
+    <includedby refid="of_image_8h" local="yes">graphics/ofImage.h</includedby>
+    <includedby refid="of_pixels_8cpp" local="yes">graphics/ofPixels.cpp</includedby>
+    <includedby refid="of_main_8h" local="yes">ofMain.h</includedby>
+    <includedby refid="of_base_types_8h" local="yes">types/ofBaseTypes.h</includedby>
+    <includedby refid="of_direct_show_grabber_8h" local="yes">video/ofDirectShowGrabber.h</includedby>
+    <includedby refid="of_gst_utils_8h" local="yes">video/ofGstUtils.h</includedby>
+    <includedby refid="of_video_grabber_8h" local="yes">video/ofVideoGrabber.h</includedby>
+    <includedby refid="ofi_phone_video_player_8h" local="yes">video/ofiPhoneVideoPlayer.h</includedby>
+    <includedby refid="of_quick_time_player_8h" local="yes">video/ofQuickTimePlayer.h</includedby>
+    <incdepgraph>
+      <node id="2475">
+        <label>iomanip</label>
+      </node>
+      <node id="2483">
+        <label>ofColor.h</label>
+        <link refid="of_color_8h"/>
+        <childnode refid="2484" relation="include">
+        </childnode>
+        <childnode refid="2485" relation="include">
+        </childnode>
+      </node>
+      <node id="2484">
+        <label>limits</label>
+      </node>
+      <node id="2489">
+        <label>ofVec4f.h</label>
+        <link refid="of_vec4f_8h"/>
+        <childnode refid="2459" relation="include">
+        </childnode>
+      </node>
+      <node id="2463">
+        <label>GL/glx.h</label>
+      </node>
+      <node id="2458">
+        <label>graphics/ofPixels.h</label>
+        <link refid="ofPixels.h"/>
+        <childnode refid="2459" relation="include">
+        </childnode>
+        <childnode refid="2477" relation="include">
+        </childnode>
+        <childnode refid="2483" relation="include">
+        </childnode>
+        <childnode refid="2485" relation="include">
+        </childnode>
+        <childnode refid="2484" relation="include">
+        </childnode>
+      </node>
+      <node id="2488">
+        <label>ofVec2f.h</label>
+        <link refid="of_vec2f_8h"/>
+        <childnode refid="2459" relation="include">
+        </childnode>
+      </node>
+      <node id="2468">
+        <label>cmath</label>
+      </node>
+      <node id="2482">
+        <label>ofTypes.h</label>
+        <link refid="of_types_8h"/>
+        <childnode refid="2459" relation="include">
+        </childnode>
+        <childnode refid="2483" relation="include">
+        </childnode>
+        <childnode refid="2490" relation="include">
+        </childnode>
+        <childnode refid="2491" relation="include">
+        </childnode>
+      </node>
+      <node id="2487">
+        <label>ofVec3f.h</label>
+        <link refid="of_vec3f_8h"/>
+        <childnode refid="2488" relation="include">
+        </childnode>
+        <childnode refid="2489" relation="include">
+        </childnode>
+        <childnode refid="2459" relation="include">
+        </childnode>
+        <childnode refid="2468" relation="include">
+        </childnode>
+        <childnode refid="2471" relation="include">
+        </childnode>
+      </node>
+      <node id="2470">
+        <label>string</label>
+      </node>
+      <node id="2467">
+        <label>cstdarg</label>
+      </node>
+      <node id="2461">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="2481">
+        <label>Poco/File.h</label>
+      </node>
+      <node id="2464">
+        <label>tesselator.h</label>
+      </node>
+      <node id="2476">
+        <label>fstream</label>
+      </node>
+      <node id="2485">
+        <label>ofMath.h</label>
+        <link refid="of_math_8h"/>
+        <childnode refid="2486" relation="include">
+        </childnode>
+        <childnode refid="2459" relation="include">
+        </childnode>
+      </node>
+      <node id="2466">
+        <label>cstdio</label>
+      </node>
+      <node id="2478">
+        <label>bitset</label>
+      </node>
+      <node id="2469">
+        <label>ctime</label>
+      </node>
+      <node id="2460">
+        <label>unistd.h</label>
+      </node>
+      <node id="2472">
+        <label>vector</label>
+      </node>
+      <node id="2479">
+        <label>ofLog.h</label>
+        <link refid="of_log_8h"/>
+        <childnode refid="2459" relation="include">
+        </childnode>
+        <childnode refid="2480" relation="include">
+        </childnode>
+        <childnode refid="2482" relation="include">
+        </childnode>
+      </node>
+      <node id="2459">
+        <label>ofConstants.h</label>
+        <link refid="of_constants_8h"/>
+        <childnode refid="2460" relation="include">
+        </childnode>
+        <childnode refid="2461" relation="include">
+        </childnode>
+        <childnode refid="2462" relation="include">
+        </childnode>
+        <childnode refid="2463" relation="include">
+        </childnode>
+        <childnode refid="2464" relation="include">
+        </childnode>
+        <childnode refid="2465" relation="include">
+        </childnode>
+        <childnode refid="2466" relation="include">
+        </childnode>
+        <childnode refid="2467" relation="include">
+        </childnode>
+        <childnode refid="2468" relation="include">
+        </childnode>
+        <childnode refid="2469" relation="include">
+        </childnode>
+        <childnode refid="2470" relation="include">
+        </childnode>
+        <childnode refid="2471" relation="include">
+        </childnode>
+        <childnode refid="2472" relation="include">
+        </childnode>
+        <childnode refid="2473" relation="include">
+        </childnode>
+        <childnode refid="2474" relation="include">
+        </childnode>
+        <childnode refid="2475" relation="include">
+        </childnode>
+        <childnode refid="2476" relation="include">
+        </childnode>
+      </node>
+      <node id="2474">
+        <label>sstream</label>
+      </node>
+      <node id="2486">
+        <label>ofPoint.h</label>
+        <link refid="of_point_8h"/>
+        <childnode refid="2487" relation="include">
+        </childnode>
+      </node>
+      <node id="2480">
+        <label>ofFileUtils.h</label>
+        <link refid="of_file_utils_8h"/>
+        <childnode refid="2459" relation="include">
+        </childnode>
+        <childnode refid="2481" relation="include">
+        </childnode>
+      </node>
+      <node id="2465">
+        <label>cstdlib</label>
+      </node>
+      <node id="2471">
+        <label>iostream</label>
+      </node>
+      <node id="2477">
+        <label>ofUtils.h</label>
+        <link refid="of_utils_8h"/>
+        <childnode refid="2459" relation="include">
+        </childnode>
+        <childnode refid="2478" relation="include">
+        </childnode>
+        <childnode refid="2479" relation="include">
+        </childnode>
+      </node>
+      <node id="2462">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="2491">
+        <label>Poco/Mutex.h</label>
+      </node>
+      <node id="2473">
+        <label>cstring</label>
+      </node>
+      <node id="2490">
+        <label>tr1/memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2549">
+        <label>video/ofGstVideoGrabber.cpp</label>
+        <link refid="of_gst_video_grabber_8cpp"/>
+      </node>
+      <node id="2507">
+        <label>sound/ofSoundStream.cpp</label>
+        <link refid="of_sound_stream_8cpp"/>
+      </node>
+      <node id="2500">
+        <label>utils/ofUtils.cpp</label>
+        <link refid="of_utils_8cpp"/>
+      </node>
+      <node id="2496">
+        <label>gl/ofGLRenderer.cpp</label>
+        <link refid="of_g_l_renderer_8cpp"/>
+      </node>
+      <node id="2506">
+        <label>sound/ofSoundStream.h</label>
+        <link refid="of_sound_stream_8h"/>
+        <childnode refid="2495" relation="include">
+        </childnode>
+        <childnode refid="2499" relation="include">
+        </childnode>
+        <childnode refid="2507" relation="include">
+        </childnode>
+      </node>
+      <node id="2552">
+        <label>video/ofQuickTimePlayer.h</label>
+        <link refid="of_quick_time_player_8h"/>
+        <childnode refid="2553" relation="include">
+        </childnode>
+      </node>
+      <node id="2545">
+        <label>types/ofBaseTypes.cpp</label>
+        <link refid="of_base_types_8cpp"/>
+      </node>
+      <node id="2505">
+        <label>events/ofEvents.cpp</label>
+        <link refid="of_events_8cpp"/>
+      </node>
+      <node id="2517">
+        <label>video/ofDirectShowGrabber.cpp</label>
+        <link refid="of_direct_show_grabber_8cpp"/>
+      </node>
+      <node id="2499">
+        <label>ofMain.h</label>
+        <link refid="of_main_8h"/>
+      </node>
+      <node id="2544">
+        <label>sound/ofSoundPlayer.cpp</label>
+        <link refid="of_sound_player_8cpp"/>
+      </node>
+      <node id="2498">
+        <label>graphics/ofImage.cpp</label>
+        <link refid="of_image_8cpp"/>
+      </node>
+      <node id="2513">
+        <label>graphics/ofBitmapFont.cpp</label>
+        <link refid="of_bitmap_font_8cpp"/>
+      </node>
+      <node id="2530">
+        <label>3d/ofCamera.cpp</label>
+        <link refid="of_camera_8cpp"/>
+      </node>
+      <node id="2492">
+        <label>graphics/ofPixels.h</label>
+        <link refid="ofPixels.h"/>
+        <childnode refid="2493" relation="include">
+        </childnode>
+        <childnode refid="2494" relation="include">
+        </childnode>
+        <childnode refid="2501" relation="include">
+        </childnode>
+        <childnode refid="2499" relation="include">
+        </childnode>
+        <childnode refid="2502" relation="include">
+        </childnode>
+        <childnode refid="2516" relation="include">
+        </childnode>
+        <childnode refid="2546" relation="include">
+        </childnode>
+        <childnode refid="2518" relation="include">
+        </childnode>
+        <childnode refid="2521" relation="include">
+        </childnode>
+        <childnode refid="2552" relation="include">
+        </childnode>
+      </node>
+      <node id="2533">
+        <label>3d/ofNode.cpp</label>
+        <link refid="of_node_8cpp"/>
+      </node>
+      <node id="2510">
+        <label>gl/ofFbo.cpp</label>
+        <link refid="of_fbo_8cpp"/>
+      </node>
+      <node id="2546">
+        <label>video/ofGstUtils.h</label>
+        <link refid="of_gst_utils_8h"/>
+        <childnode refid="2547" relation="include">
+        </childnode>
+        <childnode refid="2548" relation="include">
+        </childnode>
+        <childnode refid="2550" relation="include">
+        </childnode>
+      </node>
+      <node id="2495">
+        <label>app/ofAppRunner.cpp</label>
+        <link refid="of_app_runner_8cpp"/>
+      </node>
+      <node id="2548">
+        <label>video/ofGstVideoGrabber.h</label>
+        <link refid="of_gst_video_grabber_8h"/>
+        <childnode refid="2549" relation="include">
+        </childnode>
+        <childnode refid="2518" relation="include">
+        </childnode>
+      </node>
+      <node id="2493">
+        <label>gl/ofTexture.cpp</label>
+        <link refid="of_texture_8cpp"/>
+      </node>
+      <node id="2531">
+        <label>3d/ofEasyCam.h</label>
+        <link refid="of_easy_cam_8h"/>
+        <childnode refid="2532" relation="include">
+        </childnode>
+        <childnode refid="2499" relation="include">
+        </childnode>
+      </node>
+      <node id="2524">
+        <label>video/ofVideoPlayer.cpp</label>
+        <link refid="of_video_player_8cpp"/>
+      </node>
+      <node id="2502">
+        <label>types/ofBaseTypes.h</label>
+        <link refid="of_base_types_8h"/>
+        <childnode refid="2503" relation="include">
+        </childnode>
+        <childnode refid="2508" relation="include">
+        </childnode>
+        <childnode refid="2525" relation="include">
+        </childnode>
+        <childnode refid="2511" relation="include">
+        </childnode>
+        <childnode refid="2540" relation="include">
+        </childnode>
+        <childnode refid="2541" relation="include">
+        </childnode>
+        <childnode refid="2526" relation="include">
+        </childnode>
+        <childnode refid="2494" relation="include">
+        </childnode>
+        <childnode refid="2537" relation="include">
+        </childnode>
+        <childnode refid="2542" relation="include">
+        </childnode>
+        <childnode refid="2499" relation="include">
+        </childnode>
+        <childnode refid="2543" relation="include">
+        </childnode>
+        <childnode refid="2506" relation="include">
+        </childnode>
+        <childnode refid="2545" relation="include">
+        </childnode>
+        <childnode refid="2516" relation="include">
+        </childnode>
+        <childnode refid="2546" relation="include">
+        </childnode>
+        <childnode refid="2518" relation="include">
+        </childnode>
+        <childnode refid="2521" relation="include">
+        </childnode>
+        <childnode refid="2523" relation="include">
+        </childnode>
+        <childnode refid="2552" relation="include">
+        </childnode>
+        <childnode refid="2520" relation="include">
+        </childnode>
+      </node>
+      <node id="2525">
+        <label>gl/ofGLRenderer.h</label>
+        <link refid="of_g_l_renderer_8h"/>
+        <childnode refid="2495" relation="include">
+        </childnode>
+        <childnode refid="2510" relation="include">
+        </childnode>
+        <childnode refid="2496" relation="include">
+        </childnode>
+        <childnode refid="2526" relation="include">
+        </childnode>
+        <childnode refid="2537" relation="include">
+        </childnode>
+        <childnode refid="2499" relation="include">
+        </childnode>
+      </node>
+      <node id="2542">
+        <label>graphics/ofRendererCollection.h</label>
+        <link refid="of_renderer_collection_8h"/>
+        <childnode refid="2537" relation="include">
+        </childnode>
+        <childnode refid="2499" relation="include">
+        </childnode>
+      </node>
+      <node id="2521">
+        <label>video/ofiPhoneVideoPlayer.h</label>
+        <link refid="ofi_phone_video_player_8h"/>
+        <childnode refid="2522" relation="include">
+        </childnode>
+      </node>
+      <node id="2516">
+        <label>video/ofDirectShowGrabber.h</label>
+        <link refid="of_direct_show_grabber_8h"/>
+        <childnode refid="2517" relation="include">
+        </childnode>
+      </node>
+      <node id="2540">
+        <label>graphics/ofCairoRenderer.h</label>
+        <link refid="of_cairo_renderer_8h"/>
+        <childnode refid="2497" relation="include">
+        </childnode>
+        <childnode refid="2537" relation="include">
+        </childnode>
+        <childnode refid="2499" relation="include">
+        </childnode>
+      </node>
+      <node id="2541">
+        <label>graphics/ofPath.h</label>
+        <link refid="of_path_8h"/>
+        <childnode refid="2496" relation="include">
+        </childnode>
+        <childnode refid="2540" relation="include">
+        </childnode>
+        <childnode refid="2537" relation="include">
+        </childnode>
+        <childnode refid="2538" relation="include">
+        </childnode>
+        <childnode refid="2514" relation="include">
+        </childnode>
+        <childnode refid="2499" relation="include">
+        </childnode>
+      </node>
+      <node id="2501">
+        <label>graphics/ofPixels.cpp</label>
+        <link refid="of_pixels_8cpp"/>
+      </node>
+      <node id="2512">
+        <label>gl/ofShader.cpp</label>
+        <link refid="of_shader_8cpp"/>
+      </node>
+      <node id="2550">
+        <label>video/ofGstVideoPlayer.h</label>
+        <link refid="of_gst_video_player_8h"/>
+        <childnode refid="2551" relation="include">
+        </childnode>
+        <childnode refid="2523" relation="include">
+        </childnode>
+      </node>
+      <node id="2534">
+        <label>gl/ofLight.h</label>
+        <link refid="of_light_8h"/>
+        <childnode refid="2535" relation="include">
+        </childnode>
+        <childnode refid="2499" relation="include">
+        </childnode>
+      </node>
+      <node id="2520">
+        <label>video/ofVideoGrabber.cpp</label>
+        <link refid="of_video_grabber_8cpp"/>
+      </node>
+      <node id="2529">
+        <label>3d/ofCamera.h</label>
+        <link refid="of_camera_8h"/>
+        <childnode refid="2530" relation="include">
+        </childnode>
+        <childnode refid="2531" relation="include">
+        </childnode>
+        <childnode refid="2499" relation="include">
+        </childnode>
+      </node>
+      <node id="2537">
+        <label>graphics/ofGraphics.cpp</label>
+        <link refid="of_graphics_8cpp"/>
+      </node>
+      <node id="2509">
+        <label>gl/ofFbo.h</label>
+        <link refid="of_fbo_8h"/>
+        <childnode refid="2510" relation="include">
+        </childnode>
+        <childnode refid="2496" relation="include">
+        </childnode>
+        <childnode refid="2499" relation="include">
+        </childnode>
+      </node>
+      <node id="2522">
+        <label>video/ofiPhoneVideoPlayer.mm</label>
+        <link refid="ofi_phone_video_player_8mm"/>
+      </node>
+      <node id="2547">
+        <label>video/ofGstUtils.cpp</label>
+        <link refid="of_gst_utils_8cpp"/>
+      </node>
+      <node id="2543">
+        <label>sound/ofSoundPlayer.h</label>
+        <link refid="of_sound_player_8h"/>
+        <childnode refid="2495" relation="include">
+        </childnode>
+        <childnode refid="2499" relation="include">
+        </childnode>
+        <childnode refid="2544" relation="include">
+        </childnode>
+      </node>
+      <node id="2518">
+        <label>video/ofVideoGrabber.h</label>
+        <link refid="of_video_grabber_8h"/>
+        <childnode refid="2499" relation="include">
+        </childnode>
+        <childnode refid="2519" relation="include">
+        </childnode>
+        <childnode refid="2520" relation="include">
+        </childnode>
+      </node>
+      <node id="2504">
+        <label>app/ofAppGlutWindow.cpp</label>
+        <link refid="of_app_glut_window_8cpp"/>
+      </node>
+      <node id="2532">
+        <label>3d/ofEasyCam.cpp</label>
+        <link refid="of_easy_cam_8cpp"/>
+      </node>
+      <node id="2551">
+        <label>video/ofGstVideoPlayer.cpp</label>
+        <link refid="of_gst_video_player_8cpp"/>
+      </node>
+      <node id="2523">
+        <label>video/ofVideoPlayer.h</label>
+        <link refid="of_video_player_8h"/>
+        <childnode refid="2499" relation="include">
+        </childnode>
+        <childnode refid="2521" relation="include">
+        </childnode>
+        <childnode refid="2524" relation="include">
+        </childnode>
+      </node>
+      <node id="2528">
+        <label>3d/ofNode.h</label>
+        <link refid="of_node_8h"/>
+        <childnode refid="2529" relation="include">
+        </childnode>
+        <childnode refid="2533" relation="include">
+        </childnode>
+        <childnode refid="2534" relation="include">
+        </childnode>
+        <childnode refid="2499" relation="include">
+        </childnode>
+      </node>
+      <node id="2527">
+        <label>3d/of3dUtils.cpp</label>
+        <link refid="of3d_utils_8cpp"/>
+      </node>
+      <node id="2526">
+        <label>graphics/ofGraphics.h</label>
+        <link refid="of_graphics_8h"/>
+        <childnode refid="2527" relation="include">
+        </childnode>
+        <childnode refid="2528" relation="include">
+        </childnode>
+        <childnode refid="2536" relation="include">
+        </childnode>
+        <childnode refid="2504" relation="include">
+        </childnode>
+        <childnode refid="2495" relation="include">
+        </childnode>
+        <childnode refid="2505" relation="include">
+        </childnode>
+        <childnode refid="2510" relation="include">
+        </childnode>
+        <childnode refid="2496" relation="include">
+        </childnode>
+        <childnode refid="2493" relation="include">
+        </childnode>
+        <childnode refid="2497" relation="include">
+        </childnode>
+        <childnode refid="2537" relation="include">
+        </childnode>
+        <childnode refid="2498" relation="include">
+        </childnode>
+        <childnode refid="2538" relation="include">
+        </childnode>
+        <childnode refid="2539" relation="include">
+        </childnode>
+        <childnode refid="2515" relation="include">
+        </childnode>
+        <childnode refid="2499" relation="include">
+        </childnode>
+        <childnode refid="2500" relation="include">
+        </childnode>
+      </node>
+      <node id="2535">
+        <label>gl/ofLight.cpp</label>
+        <link refid="of_light_8cpp"/>
+      </node>
+      <node id="2538">
+        <label>graphics/ofPath.cpp</label>
+        <link refid="of_path_8cpp"/>
+      </node>
+      <node id="2519">
+        <label>video/ofiPhoneVideoGrabber.h</label>
+        <link refid="ofi_phone_video_grabber_8h"/>
+      </node>
+      <node id="2514">
+        <label>graphics/ofTrueTypeFont.h</label>
+        <link refid="of_true_type_font_8h"/>
+        <childnode refid="2515" relation="include">
+        </childnode>
+        <childnode refid="2499" relation="include">
+        </childnode>
+      </node>
+      <node id="2553">
+        <label>video/ofQuickTimePlayer.cpp</label>
+        <link refid="of_quick_time_player_8cpp"/>
+      </node>
+      <node id="2508">
+        <label>gl/ofTexture.h</label>
+        <link refid="of_texture_8h"/>
+        <childnode refid="2509" relation="include">
+        </childnode>
+        <childnode refid="2511" relation="include">
+        </childnode>
+        <childnode refid="2493" relation="include">
+        </childnode>
+        <childnode refid="2513" relation="include">
+        </childnode>
+        <childnode refid="2494" relation="include">
+        </childnode>
+        <childnode refid="2514" relation="include">
+        </childnode>
+        <childnode refid="2499" relation="include">
+        </childnode>
+        <childnode refid="2516" relation="include">
+        </childnode>
+        <childnode refid="2518" relation="include">
+        </childnode>
+        <childnode refid="2521" relation="include">
+        </childnode>
+        <childnode refid="2523" relation="include">
+        </childnode>
+      </node>
+      <node id="2497">
+        <label>graphics/ofCairoRenderer.cpp</label>
+        <link refid="of_cairo_renderer_8cpp"/>
+      </node>
+      <node id="2511">
+        <label>gl/ofShader.h</label>
+        <link refid="of_shader_8h"/>
+        <childnode refid="2512" relation="include">
+        </childnode>
+        <childnode refid="2499" relation="include">
+        </childnode>
+      </node>
+      <node id="2539">
+        <label>graphics/ofPolyline.cpp</label>
+        <link refid="of_polyline_8cpp"/>
+      </node>
+      <node id="2536">
+        <label>3d/ofMesh.cpp</label>
+        <link refid="of_mesh_8cpp"/>
+      </node>
+      <node id="2515">
+        <label>graphics/ofTrueTypeFont.cpp</label>
+        <link refid="of_true_type_font_8cpp"/>
+      </node>
+      <node id="2494">
+        <label>graphics/ofImage.h</label>
+        <link refid="of_image_8h"/>
+        <childnode refid="2495" relation="include">
+        </childnode>
+        <childnode refid="2496" relation="include">
+        </childnode>
+        <childnode refid="2497" relation="include">
+        </childnode>
+        <childnode refid="2498" relation="include">
+        </childnode>
+        <childnode refid="2499" relation="include">
+        </childnode>
+        <childnode refid="2500" relation="include">
+        </childnode>
+      </node>
+      <node id="2503">
+        <label>app/ofBaseApp.h</label>
+        <link refid="of_base_app_8h"/>
+        <childnode refid="2504" relation="include">
+        </childnode>
+        <childnode refid="2495" relation="include">
+        </childnode>
+        <childnode refid="2505" relation="include">
+        </childnode>
+        <childnode refid="2499" relation="include">
+        </childnode>
+        <childnode refid="2506" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classof_pixels__" prot="public">ofPixels_</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="of_pixels_8h_1a50ccb4005c338a4abfadca9101d45019" prot="public" static="no">
+        <name>ofInterpolationMethod</name>
+        <enumvalue id="of_pixels_8h_1a50ccb4005c338a4abfadca9101d45019a017adaba33cd641e29f40d23b44edb74" prot="public">
+          <name>OF_INTERPOLATE_NEAREST_NEIGHBOR</name>
+          <initializer>1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="of_pixels_8h_1a50ccb4005c338a4abfadca9101d45019ad41962b7836c59a6ba53b153614b7d0e" prot="public">
+          <name>OF_INTERPOLATE_BILINEAR</name>
+          <initializer>2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="of_pixels_8h_1a50ccb4005c338a4abfadca9101d45019a7b22cedb1e15377da2a2094907e5dcb3" prot="public">
+          <name>OF_INTERPOLATE_BICUBIC</name>
+          <initializer>3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofPixels.h" line="10" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofPixels.h" bodystart="10" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="of_pixels_8h_1a590f460ea8c9e40214543c26ca3b386a" prot="public" static="no">
+        <type><ref refid="classof_pixels__" kindref="compound">ofPixels_</ref>&lt; unsigned char &gt;</type>
+        <definition>typedef ofPixels_&lt;unsigned char&gt; ofPixels</definition>
+        <argsstring></argsstring>
+        <name>ofPixels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofPixels.h" line="112" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofPixels.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="of_pixels_8h_1a0b4153db947c5a20408140e5f24ab1e0" prot="public" static="no">
+        <type><ref refid="classof_pixels__" kindref="compound">ofPixels_</ref>&lt; float &gt;</type>
+        <definition>typedef ofPixels_&lt;float&gt; ofFloatPixels</definition>
+        <argsstring></argsstring>
+        <name>ofFloatPixels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofPixels.h" line="113" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofPixels.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="of_pixels_8h_1ac39b31393829b504dee01ae495ffaaa0" prot="public" static="no">
+        <type><ref refid="classof_pixels__" kindref="compound">ofPixels_</ref>&lt; unsigned short &gt;</type>
+        <definition>typedef ofPixels_&lt;unsigned short&gt; ofShortPixels</definition>
+        <argsstring></argsstring>
+        <name>ofShortPixels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofPixels.h" line="114" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofPixels.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="of_pixels_8h_1af934cec3ae4fc641202e2c1f48c182db" prot="public" static="no">
+        <type><ref refid="classof_pixels__" kindref="compound">ofPixels</ref> &amp;</type>
+        <definition>typedef ofPixels&amp; ofPixelsRef</definition>
+        <argsstring></argsstring>
+        <name>ofPixelsRef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofPixels.h" line="117" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofPixels.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_constants_8h" kindref="compound">ofConstants.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_utils_8h" kindref="compound">ofUtils.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_color_8h" kindref="compound">ofColor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_math_8h" kindref="compound">ofMath.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;limits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//---------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="of_pixels_8h_1a50ccb4005c338a4abfadca9101d45019" kindref="member">ofInterpolationMethod</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_pixels_8h_1a50ccb4005c338a4abfadca9101d45019a017adaba33cd641e29f40d23b44edb74" kindref="member">OF_INTERPOLATE_NEAREST_NEIGHBOR</ref><sp/>=1,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_pixels_8h_1a50ccb4005c338a4abfadca9101d45019ad41962b7836c59a6ba53b153614b7d0e" kindref="member">OF_INTERPOLATE_BILINEAR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=2,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_pixels_8h_1a50ccb4005c338a4abfadca9101d45019a7b22cedb1e15377da2a2094907e5dcb3" kindref="member">OF_INTERPOLATE_BICUBIC</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=3</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>PixelType&gt;</highlight></codeline>
+<codeline lineno="17" refid="classof_pixels__" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classof_pixels__" kindref="compound">ofPixels_</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classof_pixels___1ae17bf43a25e9b7ebddae0de4b7ba66e3" kindref="member">ofPixelUtils</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_pixels___1af108a001c5dab31e348d39d21cd90798" kindref="member">ofPixels_</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_pixels___1a0899582d8818f6ed30ee31453c15d1e5" kindref="member">~ofPixels_</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_pixels___1af108a001c5dab31e348d39d21cd90798" kindref="member">ofPixels_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_pixels__" kindref="compound">ofPixels_&lt;PixelType&gt;</ref><sp/>&amp;<sp/>mom);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_pixels__" kindref="compound">ofPixels_&lt;PixelType&gt;</ref>&amp;<sp/><ref refid="classof_pixels___1af2d2767e42fdae80b312fde713ded3ee" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_pixels__" kindref="compound">ofPixels_&lt;PixelType&gt;</ref><sp/>&amp;<sp/>mom);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>SrcType&gt;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_pixels___1af108a001c5dab31e348d39d21cd90798" kindref="member">ofPixels_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_pixels__" kindref="compound">ofPixels_&lt;SrcType&gt;</ref><sp/>&amp;<sp/>mom);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>SrcType&gt;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_pixels__" kindref="compound">ofPixels_&lt;PixelType&gt;</ref>&amp;<sp/><ref refid="classof_pixels___1af2d2767e42fdae80b312fde713ded3ee" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_pixels__" kindref="compound">ofPixels_&lt;SrcType&gt;</ref><sp/>&amp;<sp/>mom);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1a02b8aa5dd03f4403e37186c8eadaa872" kindref="member">allocate</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>channels);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1a02b8aa5dd03f4403e37186c8eadaa872" kindref="member">allocate</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/><ref refid="of_constants_8h_1ae227396622740556688053d3dc0f1693" kindref="member">ofPixelFormat</ref><sp/>type);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1a02b8aa5dd03f4403e37186c8eadaa872" kindref="member">allocate</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/><ref refid="of_constants_8h_1a9760b6b0bec0314fdc85f44793bbe951" kindref="member">ofImageType</ref><sp/>type);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(PixelType<sp/>val);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>channel,PixelType<sp/>val);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1a1f0f57c453de1515dfb3d9608baaf998" kindref="member">setFromPixels</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PixelType<sp/>*<sp/>newPixels,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>channels);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1a1f0f57c453de1515dfb3d9608baaf998" kindref="member">setFromPixels</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PixelType<sp/>*<sp/>newPixels,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/><ref refid="of_constants_8h_1a9760b6b0bec0314fdc85f44793bbe951" kindref="member">ofImageType</ref><sp/>type);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1afbb8498d2b71f9925fcede6863e739be" kindref="member">setFromExternalPixels</ref>(PixelType<sp/>*<sp/>newPixels,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>channels);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1af0a1573a60d77d4d9bd48d387f5c6486" kindref="member">setFromAlignedPixels</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PixelType<sp/>*<sp/>newPixels,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>channels,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stride);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//From<sp/>ofPixelsUtils</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>crop<sp/>to<sp/>a<sp/>new<sp/>width<sp/>and<sp/>height,<sp/>this<sp/>reallocates<sp/>memory.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1afd50b91ada0eaa98218fab6626dccb40" kindref="member">crop</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>not<sp/>in<sp/>place</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1af34c9eed1505f85d4fbdd2348f34e12c" kindref="member">cropTo</ref>(<ref refid="classof_pixels__" kindref="compound">ofPixels_&lt;PixelType&gt;</ref><sp/>&amp;toPix,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_height);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>crop<sp/>to<sp/>a<sp/>new<sp/>width<sp/>and<sp/>height,<sp/>this<sp/>reallocates<sp/>memory.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1a3c1bae7e9a6df9f4b221842a347ab1e6" kindref="member">rotate90</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nClockwiseRotations);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1a3e65f083698f7f4cee1d528bcea4c073" kindref="member">mirror</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>vertically,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>horizontal);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1acc59c5ccd146c119de24192ee8d9864d" kindref="member">resize</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dstWidth,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dstHeight,<sp/><ref refid="of_pixels_8h_1a50ccb4005c338a4abfadca9101d45019" kindref="member">ofInterpolationMethod</ref><sp/>interpMethod=<ref refid="of_pixels_8h_1a50ccb4005c338a4abfadca9101d45019a017adaba33cd641e29f40d23b44edb74" kindref="member">OF_INTERPOLATE_NEAREST_NEIGHBOR</ref>);<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1a4ede495923b45be203974b82f17efd80" kindref="member">resizeTo</ref>(<ref refid="classof_pixels__" kindref="compound">ofPixels_&lt;PixelType&gt;</ref><sp/>&amp;<sp/>dst,<sp/><ref refid="of_pixels_8h_1a50ccb4005c338a4abfadca9101d45019" kindref="member">ofInterpolationMethod</ref><sp/>interpMethod=<ref refid="of_pixels_8h_1a50ccb4005c338a4abfadca9101d45019a017adaba33cd641e29f40d23b44edb74" kindref="member">OF_INTERPOLATE_NEAREST_NEIGHBOR</ref>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1a9653b0e2aaf754523268f7167f64cb06" kindref="member">pasteInto</ref>(<ref refid="classof_pixels__" kindref="compound">ofPixels_&lt;PixelType&gt;</ref><sp/>&amp;dst,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1ab0228cce4f8c6da57775a842fe36fb83" kindref="member">swapRgb</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1a4a9f443ed29eed90fb2ad44515328dbe" kindref="member">clear</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PixelType<sp/>*<sp/><ref refid="classof_pixels___1a0293aef85bbef5d929c20a3307b84c90" kindref="member">getPixels</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PixelType<sp/>*<sp/><ref refid="classof_pixels___1a0293aef85bbef5d929c20a3307b84c90" kindref="member">getPixels</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1a4c9bd76b744cb393e3ee8fc425ccd0d1" kindref="member">getPixelIndex</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_color__" kindref="compound">ofColor_&lt;PixelType&gt;</ref><sp/><ref refid="classof_pixels___1a32eba650aa1300338ea910bb434f1522" kindref="member">getColor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1a1475bf924dbd75563e660d89a8cd8089" kindref="member">setColor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/><ref refid="classof_color__" kindref="compound">ofColor_&lt;PixelType&gt;</ref><sp/>color);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PixelType&amp;<sp/><ref refid="classof_pixels___1ad7b5fa45ae78789c5b2fed1a9d82dc67" kindref="member">operator[]</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pos)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PixelType&amp;<sp/><ref refid="classof_pixels___1ad7b5fa45ae78789c5b2fed1a9d82dc67" kindref="member">operator[]</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pos);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1a55124dbd4cf544b651074a8afba69840" kindref="member">isAllocated</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1a4bd70bd65600e800cbe7e4368c7343ed" kindref="member">getWidth</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1a3c01aa308c3888e3cd3d479861922f74" kindref="member">getHeight</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1a66f09e90ae12d0aec01ec243d5fdb33a" kindref="member">getBytesPerPixel</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1a3ca4f9d3e99c837403e1fa0502cd9349" kindref="member">getBitsPerPixel</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1ac91a10893be297b566c32e979ff88f3c" kindref="member">getBytesPerChannel</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1affd985c1637d8a601db45bcdb6bb9646" kindref="member">getBitsPerChannel</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1a72d8f39a66fd3d37db5aeab113676439" kindref="member">getNumChannels</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_pixels__" kindref="compound">ofPixels_&lt;PixelType&gt;</ref><sp/><ref refid="classof_pixels___1accb34589c1e0413470a8076868e50907" kindref="member">getChannel</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>channel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1adeb3c08b1e8e85e27c95c4efb893fccf" kindref="member">setChannel</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>channel,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_pixels__" kindref="compound">ofPixels_&lt;PixelType&gt;</ref><sp/>channelPixels);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="of_constants_8h_1a9760b6b0bec0314fdc85f44793bbe951" kindref="member">ofImageType</ref><sp/><ref refid="classof_pixels___1a958efb35639925f9ce95b01f379970e8" kindref="member">getImageType</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classof_pixels___1a11f1c38cc853ffedd6b5a3ac1ccdde60" kindref="member">size</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>bicubicInterpolate(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*patch,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x2,</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x3,</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y3);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copyFrom(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_pixels__" kindref="compound">ofPixels_&lt;PixelType&gt;</ref>&amp;<sp/>mom<sp/>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>SrcType&gt;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copyFrom(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_pixels__" kindref="compound">ofPixels_&lt;SrcType&gt;</ref>&amp;<sp/>mom<sp/>);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PixelType<sp/>*<sp/>pixels;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>channels;<sp/></highlight><highlight class="comment">//<sp/>1,<sp/>3,<sp/>4<sp/>channels<sp/>per<sp/>pixel<sp/>(grayscale,<sp/>rgb,<sp/>rgba)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//GLint<sp/>glDataType;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>GL_LUMINANCE,<sp/>GL_RGB,<sp/>GL_RGBA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//ofImageType<sp/>imageType;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>OF_IMAGE_GRAYSCALE,<sp/>OF_IMAGE_COLOR,<sp/>OF_IMAGE_COLOR_ALPHA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>bAllocated;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>pixelsOwner;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>set<sp/>from<sp/>external<sp/>data<sp/>don&apos;t<sp/>delete<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classof_pixels__" kindref="compound">ofPixels_&lt;unsigned char&gt;</ref><sp/><ref refid="of_pixels_8h_1a590f460ea8c9e40214543c26ca3b386a" kindref="member">ofPixels</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classof_pixels__" kindref="compound">ofPixels_&lt;float&gt;</ref><sp/><ref refid="of_pixels_8h_1a0b4153db947c5a20408140e5f24ab1e0" kindref="member">ofFloatPixels</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classof_pixels__" kindref="compound">ofPixels_&lt;unsigned short&gt;</ref><sp/><ref refid="of_pixels_8h_1ac39b31393829b504dee01ae495ffaaa0" kindref="member">ofShortPixels</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classof_pixels__" kindref="compound">ofPixels</ref>&amp;<sp/><ref refid="of_pixels_8h_1af934cec3ae4fc641202e2c1f48c182db" kindref="member">ofPixelsRef</ref>;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">//<sp/>sorry<sp/>for<sp/>these<sp/>ones,<sp/>being<sp/>templated<sp/>functions<sp/>inside<sp/>a<sp/>template<sp/>i<sp/>needed<sp/>to<sp/>do<sp/>it<sp/>in<sp/>the<sp/>.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">//<sp/>they<sp/>allow<sp/>to<sp/>do<sp/>things<sp/>like:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ofPixels<sp/>pix;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ofFloatPixels<sp/>pixf;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">//<sp/>pix<sp/>=<sp/>pixf;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>PixelType&gt;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>SrcType&gt;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><ref refid="classof_pixels___1af108a001c5dab31e348d39d21cd90798" kindref="member">ofPixels_&lt;PixelType&gt;::ofPixels_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_pixels__" kindref="compound">ofPixels_&lt;SrcType&gt;</ref><sp/>&amp;<sp/>mom){</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bAllocated<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixelsOwner<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>channels<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixels<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>copyFrom(<sp/>mom<sp/>);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>PixelType&gt;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>SrcType&gt;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><ref refid="classof_pixels__" kindref="compound">ofPixels_&lt;PixelType&gt;</ref>&amp;<sp/><ref refid="classof_pixels___1af2d2767e42fdae80b312fde713ded3ee" kindref="member">ofPixels_&lt;PixelType&gt;::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_pixels__" kindref="compound">ofPixels_&lt;SrcType&gt;</ref><sp/>&amp;<sp/>mom){</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>copyFrom(<sp/>mom<sp/>);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>PixelType&gt;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>SrcType&gt;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_pixels__" kindref="compound">ofPixels_&lt;PixelType&gt;::copyFrom</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_pixels__" kindref="compound">ofPixels_&lt;SrcType&gt;</ref><sp/>&amp;<sp/>mom){</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(mom.<ref refid="classof_pixels___1a55124dbd4cf544b651074a8afba69840" kindref="member">isAllocated</ref>()){</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>allocate(mom.<ref refid="classof_pixels___1a4bd70bd65600e800cbe7e4368c7343ed" kindref="member">getWidth</ref>(),mom.<ref refid="classof_pixels___1a3c01aa308c3888e3cd3d479861922f74" kindref="member">getHeight</ref>(),mom.<ref refid="classof_pixels___1a72d8f39a66fd3d37db5aeab113676439" kindref="member">getNumChannels</ref>());</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>srcMax<sp/>=<sp/>(<sp/>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(SrcType)<sp/>==<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>)<sp/>?<sp/>1.f<sp/>:<sp/>numeric_limits&lt;SrcType&gt;::max()<sp/>);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dstMax<sp/>=<sp/>(<sp/>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(PixelType)<sp/>==<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>)<sp/>?<sp/>1.f<sp/>:<sp/>numeric_limits&lt;PixelType&gt;::max()<sp/>);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>factor<sp/>=<sp/>dstMax<sp/>/<sp/>srcMax;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(SrcType)<sp/>==<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(float))<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>coming<sp/>from<sp/>float<sp/>we<sp/>need<sp/>a<sp/>special<sp/>case<sp/>to<sp/>clamp<sp/>the<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>mom.<ref refid="classof_pixels___1a11f1c38cc853ffedd6b5a3ac1ccdde60" kindref="member">size</ref>();<sp/>i++){</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixels[i]<sp/>=<sp/><ref refid="of_math_8cpp_1a4b2fc21e53bfb8521923300b0d30afdb" kindref="member">ofClamp</ref>(mom[i],<sp/>0,<sp/>1)<sp/>*<sp/>factor;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>everything<sp/>else<sp/>is<sp/>a<sp/>straight<sp/>scaling</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>mom.<ref refid="classof_pixels___1a11f1c38cc853ffedd6b5a3ac1ccdde60" kindref="member">size</ref>();<sp/>i++){</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pixels[i]<sp/>=<sp/>mom[i]<sp/>*<sp/>factor;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofPixels.h"/>
+  </compounddef>
+</doxygen>

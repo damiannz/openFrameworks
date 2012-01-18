@@ -1,0 +1,1386 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="classof_color__" kind="class" prot="public">
+    <compoundname>ofColor_</compoundname>
+    <includes local="no">ofColor.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>PixelType</declname>
+        <defname>PixelType</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classof_color___1a57f71c445227e5daac21c776b867472c" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>const ofColor_&lt; PixelType &gt; ofColor_&lt; PixelType &gt;::white</definition>
+        <argsstring></argsstring>
+        <name>white</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="27" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classof_color___1a3cc97e269364093d7eb42d86fc5a7ad0" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>const ofColor_&lt; PixelType &gt; ofColor_&lt; PixelType &gt;::gray</definition>
+        <argsstring></argsstring>
+        <name>gray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="27" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_color___1ab7574632fb16870d96c2a2025d85dbba" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>const ofColor_&lt; PixelType &gt; ofColor_&lt; PixelType &gt;::black</definition>
+        <argsstring></argsstring>
+        <name>black</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="27" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_color___1ac367432852af8ffd84574c6bdb6dba74" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>const ofColor_&lt; PixelType &gt; ofColor_&lt; PixelType &gt;::red</definition>
+        <argsstring></argsstring>
+        <name>red</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="27" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_color___1ab934ba3ea7932eff445de1863129ce58" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>const ofColor_&lt; PixelType &gt; ofColor_&lt; PixelType &gt;::green</definition>
+        <argsstring></argsstring>
+        <name>green</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="27" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_color___1ad554b41b21288b6e692ca5d59295e29a" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>const ofColor_&lt; PixelType &gt; ofColor_&lt; PixelType &gt;::blue</definition>
+        <argsstring></argsstring>
+        <name>blue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="27" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_color___1aaa5834351c09e97eeb280d2b8f07a578" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>const ofColor_&lt; PixelType &gt; ofColor_&lt; PixelType &gt;::cyan</definition>
+        <argsstring></argsstring>
+        <name>cyan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="27" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_color___1af977be86e108340a764f79d6b4308afd" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>const ofColor_&lt; PixelType &gt; ofColor_&lt; PixelType &gt;::magenta</definition>
+        <argsstring></argsstring>
+        <name>magenta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="27" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_color___1a9105f57222e87b3d0762936f646db8f1" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>const ofColor_&lt; PixelType &gt; ofColor_&lt; PixelType &gt;::yellow</definition>
+        <argsstring></argsstring>
+        <name>yellow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="27" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_color___1a6f49bc7e4aec1f65d9598599ade9b692" prot="public" static="no" mutable="no">
+        <type>PixelType</type>
+        <definition>PixelType ofColor_&lt; PixelType &gt;::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="109" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_color___1a699d911542ce1f27122fb5c375ab3530" prot="public" static="no" mutable="no">
+        <type>PixelType</type>
+        <definition>PixelType ofColor_&lt; PixelType &gt;::g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="109" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_color___1af302cc728daa97b0b5a858271c273000" prot="public" static="no" mutable="no">
+        <type>PixelType</type>
+        <definition>PixelType ofColor_&lt; PixelType &gt;::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="109" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_color___1a840394f5ccf4d3f4012ec09d320fa7c7" prot="public" static="no" mutable="no">
+        <type>PixelType</type>
+        <definition>PixelType ofColor_&lt; PixelType &gt;::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="109" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_color___1a36bbabc2239993534dee47bc7b9f524c" prot="public" static="no" mutable="no">
+        <type>PixelType</type>
+        <definition>PixelType ofColor_&lt; PixelType &gt;::v[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>v</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="111" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classof_color___1ac32822b87ddcf4aad7e17bfa2ff043bf" prot="public" static="no" mutable="no">
+        <type>union ofColor_::@0</type>
+        <definition>union ofColor_::@0 ofColor_&lt; PixelType &gt;::@1</definition>
+        <argsstring></argsstring>
+        <name>@1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="112"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classof_color___1a08a59b4376aa75de38276ba3b069c3b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ofColor_&lt; PixelType &gt;::ofColor_</definition>
+        <argsstring>()</argsstring>
+        <name>ofColor_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="13" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="25" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1ace571761ada0c4acb9d9c969b3add480" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ofColor_&lt; PixelType &gt;::~ofColor_</definition>
+        <argsstring>()</argsstring>
+        <name>~ofColor_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="14" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a2c0fd93b89becb56b9349082d9c58e1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ofColor_&lt; PixelType &gt;::ofColor_</definition>
+        <argsstring>(float _r, float _g, float _b, float _a=limit())</argsstring>
+        <name>ofColor_</name>
+        <param>
+          <type>float</type>
+          <declname>_r</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_g</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_b</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_a</declname>
+          <defval>limit()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="16" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="36" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a9b935ccb46b95228951d85bfa1a435a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ofColor_&lt; PixelType &gt;::ofColor_</definition>
+        <argsstring>(const ofColor_&lt; PixelType &gt; &amp;color)</argsstring>
+        <name>ofColor_</name>
+        <param>
+          <type>const <ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="17" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="44" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1aa346a0af9046ae1beb3b23d615147911" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ofColor_&lt; PixelType &gt;::ofColor_</definition>
+        <argsstring>(const ofColor_&lt; PixelType &gt; &amp;color, float _a)</argsstring>
+        <name>ofColor_</name>
+        <param>
+          <type>const <ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="18" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="52" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a3eaedfe171b23bfc39910577d19723be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ofColor_&lt; PixelType &gt;::ofColor_</definition>
+        <argsstring>(float gray, float _a=limit())</argsstring>
+        <name>ofColor_</name>
+        <param>
+          <type>float</type>
+          <declname>gray</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_a</declname>
+          <defval>limit()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="19" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a0e1b3567a1ab9e233ec31cad3c81d02d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SrcType</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>ofColor_&lt; PixelType &gt;::ofColor_</definition>
+        <argsstring>(const ofColor_&lt; SrcType &gt; &amp;color)</argsstring>
+        <name>ofColor_</name>
+        <param>
+          <type>const <ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; SrcType &gt; &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="22" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" bodystart="126" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1ac8b8c8b21d0b2c2debf7b9876fdfecd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofColor_&lt; PixelType &gt;::set</definition>
+        <argsstring>(float _r, float _g, float _b, float _a=limit())</argsstring>
+        <name>set</name>
+        <param>
+          <type>float</type>
+          <declname>_r</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_g</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_b</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_a</declname>
+          <defval>limit()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="29" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="82" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a3f670605ae4d64e62433ac099c180287" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofColor_&lt; PixelType &gt;::set</definition>
+        <argsstring>(float _gray, float _a=limit())</argsstring>
+        <name>set</name>
+        <param>
+          <type>float</type>
+          <declname>_gray</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_a</declname>
+          <defval>limit()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="30" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a5f9c6bff972404da858df9874b219f34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofColor_&lt; PixelType &gt;::set</definition>
+        <argsstring>(ofColor_&lt; PixelType &gt; const &amp;color)</argsstring>
+        <name>set</name>
+        <param>
+          <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; const &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="31" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="98" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1ad6e89a08aa11f2d2815ba9be89033ccf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofColor_&lt; PixelType &gt;::setHex</definition>
+        <argsstring>(int hexColor, float alpha=limit())</argsstring>
+        <name>setHex</name>
+        <param>
+          <type>int</type>
+          <declname>hexColor</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>alpha</declname>
+          <defval>limit()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="33" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="107" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a7a721db7497d984c3ee81002bcd7237b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofColor_&lt; PixelType &gt;::getHex</definition>
+        <argsstring>() const </argsstring>
+        <name>getHex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="34" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="356" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a90df86b31f2d2411deeca42b228d5381" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; &amp;</type>
+        <definition>ofColor_&lt; PixelType &gt; &amp; ofColor_&lt; PixelType &gt;::clamp</definition>
+        <argsstring>()</argsstring>
+        <name>clamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="36" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="116" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1ac7dab5a53453d15d18b3c486ee655103" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; &amp;</type>
+        <definition>ofColor_&lt; PixelType &gt; &amp; ofColor_&lt; PixelType &gt;::invert</definition>
+        <argsstring>()</argsstring>
+        <name>invert</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="37" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="126" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a383be8c22b569253381ea7e5ed80f51d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; &amp;</type>
+        <definition>ofColor_&lt; PixelType &gt; &amp; ofColor_&lt; PixelType &gt;::normalize</definition>
+        <argsstring>()</argsstring>
+        <name>normalize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="38" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="135" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a777831b6851dbc27fd7d2d4b5288d16b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; &amp;</type>
+        <definition>ofColor_&lt; PixelType &gt; &amp; ofColor_&lt; PixelType &gt;::lerp</definition>
+        <argsstring>(const ofColor_&lt; PixelType &gt; &amp;target, float amount)</argsstring>
+        <name>lerp</name>
+        <param>
+          <type>const <ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="39" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="145" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a756c104c401ec4e42d27ee5b7d8a3912" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>ofColor_&lt; PixelType &gt; ofColor_&lt; PixelType &gt;::getClamped</definition>
+        <argsstring>() const </argsstring>
+        <name>getClamped</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="41" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="156" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a11bc8c7ef629174d09fd3168c18660e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>ofColor_&lt; PixelType &gt; ofColor_&lt; PixelType &gt;::getInverted</definition>
+        <argsstring>() const </argsstring>
+        <name>getInverted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="42" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="164" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a371c0b6475599a3191d2f08672d8b771" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>ofColor_&lt; PixelType &gt; ofColor_&lt; PixelType &gt;::getNormalized</definition>
+        <argsstring>() const </argsstring>
+        <name>getNormalized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="43" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="172" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a070e475f03ccfee7eb0ecd47443fbe07" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>ofColor_&lt; PixelType &gt; ofColor_&lt; PixelType &gt;::getLerped</definition>
+        <argsstring>(const ofColor_&lt; PixelType &gt; &amp;target, float amount) const </argsstring>
+        <name>getLerped</name>
+        <param>
+          <type>const <ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="44" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="180" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a59959aa62173b96f31d0833327e2772f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofColor_&lt; PixelType &gt;::getHue</definition>
+        <argsstring>() const </argsstring>
+        <name>getHue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="46" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="189" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a0569370be88bfa5fddbd6529b5230de3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofColor_&lt; PixelType &gt;::getSaturation</definition>
+        <argsstring>() const </argsstring>
+        <name>getSaturation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="47" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="197" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a7b73e7b52d0e967277c034d9e539d7b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofColor_&lt; PixelType &gt;::getBrightness</definition>
+        <argsstring>() const </argsstring>
+        <name>getBrightness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="48" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="210" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1ada21fed669a9f098466643e044ca2ada" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofColor_&lt; PixelType &gt;::getLightness</definition>
+        <argsstring>() const </argsstring>
+        <name>getLightness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="49" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="227" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a6c340043e0fa64d77a2688709f7c0787" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofColor_&lt; PixelType &gt;::getHsb</definition>
+        <argsstring>(float &amp;hue, float &amp;saturation, float &amp;brightness) const </argsstring>
+        <name>getHsb</name>
+        <param>
+          <type>float &amp;</type>
+          <declname>hue</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>saturation</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>brightness</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="50" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="234" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a2b20f282fa99ff0fb540bcf8718863eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofColor_&lt; PixelType &gt;::setHue</definition>
+        <argsstring>(float hue)</argsstring>
+        <name>setHue</name>
+        <param>
+          <type>float</type>
+          <declname>hue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="52" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="269" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1aa3301f40e7f4dc0bd1563f32cba9def7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofColor_&lt; PixelType &gt;::setSaturation</definition>
+        <argsstring>(float saturation)</argsstring>
+        <name>setSaturation</name>
+        <param>
+          <type>float</type>
+          <declname>saturation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="53" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="277" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1ae316135040740fb2f37f6cd8d23454bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofColor_&lt; PixelType &gt;::setBrightness</definition>
+        <argsstring>(float brightness)</argsstring>
+        <name>setBrightness</name>
+        <param>
+          <type>float</type>
+          <declname>brightness</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="54" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="285" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a039bf82ba6d780dd2f6b21512cd857cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofColor_&lt; PixelType &gt;::setHsb</definition>
+        <argsstring>(float hue, float saturation, float brightness, float alpha)</argsstring>
+        <name>setHsb</name>
+        <param>
+          <type>float</type>
+          <declname>hue</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>saturation</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>brightness</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="55" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="293" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a7913575820818c9e44a3b7e5f8d48edd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofColor_&lt; PixelType &gt;::setHsb</definition>
+        <argsstring>(float hue, float saturation, float brightness)</argsstring>
+        <name>setHsb</name>
+        <param>
+          <type>float</type>
+          <declname>hue</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>saturation</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>brightness</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="56" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="304" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a8ec698a0fce1c4cacf0096e1dd8ef453" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; &amp;</type>
+        <definition>ofColor_&lt; PixelType &gt; &amp; ofColor_&lt; PixelType &gt;::operator=</definition>
+        <argsstring>(ofColor_&lt; PixelType &gt; const &amp;color)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; const &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="58" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="365" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1abf5850bb14e3bda9dfce23e4c034b7f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SrcType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; &amp;</type>
+        <definition>ofColor_&lt; PixelType &gt; &amp; ofColor_&lt; PixelType &gt;::operator=</definition>
+        <argsstring>(ofColor_&lt; SrcType &gt; const &amp;color)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; SrcType &gt; const &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="61" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" bodystart="132" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a50d9d9c7a4830d1119b8ef3eccb401a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; &amp;</type>
+        <definition>ofColor_&lt; PixelType &gt; &amp; ofColor_&lt; PixelType &gt;::operator=</definition>
+        <argsstring>(float const &amp;val)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>float const &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="63" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="375" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1afce42ff7645e7cd486c0e730c0c39b12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofColor_&lt; PixelType &gt;::operator==</definition>
+        <argsstring>(ofColor_&lt; PixelType &gt; const &amp;color)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; const &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="64" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="385" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a8908d4c719fabd53cda10f07bfad8293" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ofColor_&lt; PixelType &gt;::operator!=</definition>
+        <argsstring>(ofColor_&lt; PixelType &gt; const &amp;color)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; const &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="65" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="391" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a16bc606ecf656647fe0dfd4919f23245" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>ofColor_&lt; PixelType &gt; ofColor_&lt; PixelType &gt;::operator+</definition>
+        <argsstring>(ofColor_&lt; PixelType &gt; const &amp;color) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; const &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="66" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="397" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a4379505c6a075cd0f1ce8eec9b5aeddc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>ofColor_&lt; PixelType &gt; ofColor_&lt; PixelType &gt;::operator+</definition>
+        <argsstring>(float const &amp;val) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type>float const &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="67" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="403" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a4516998e1fb72ba30ed8a965fcfcdf26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; &amp;</type>
+        <definition>ofColor_&lt; PixelType &gt; &amp; ofColor_&lt; PixelType &gt;::operator+=</definition>
+        <argsstring>(ofColor_&lt; PixelType &gt; const &amp;color)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; const &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="68" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="409" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1af3f11c2e537165884f331c63b905fffe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; &amp;</type>
+        <definition>ofColor_&lt; PixelType &gt; &amp; ofColor_&lt; PixelType &gt;::operator+=</definition>
+        <argsstring>(float const &amp;val)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>float const &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="69" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="419" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1af10f9b4f4dfc0ca9565f0d36b1ff301f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>ofColor_&lt; PixelType &gt; ofColor_&lt; PixelType &gt;::operator-</definition>
+        <argsstring>(ofColor_&lt; PixelType &gt; const &amp;color) const </argsstring>
+        <name>operator-</name>
+        <param>
+          <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; const &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="70" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="429" bodyend="431"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a33584398ac5dbe5b0a36abee27149786" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>ofColor_&lt; PixelType &gt; ofColor_&lt; PixelType &gt;::operator-</definition>
+        <argsstring>(float const &amp;val) const </argsstring>
+        <name>operator-</name>
+        <param>
+          <type>float const &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="71" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="435" bodyend="437"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1aa6b761178c49b2e3f0ff0552cff66f0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; &amp;</type>
+        <definition>ofColor_&lt; PixelType &gt; &amp; ofColor_&lt; PixelType &gt;::operator-=</definition>
+        <argsstring>(ofColor_&lt; PixelType &gt; const &amp;color)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; const &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="72" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="441" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1aebfb1006ff964bd0a34506cac8840088" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; &amp;</type>
+        <definition>ofColor_&lt; PixelType &gt; &amp; ofColor_&lt; PixelType &gt;::operator-=</definition>
+        <argsstring>(float const &amp;val)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>float const &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="73" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="451" bodyend="457"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a7b9fd729d4dc2de68fc28a16764a3767" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>ofColor_&lt; PixelType &gt; ofColor_&lt; PixelType &gt;::operator*</definition>
+        <argsstring>(ofColor_&lt; PixelType &gt; const &amp;color) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; const &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="74" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="461" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1ab001c05790362e0d5616dd071bc4e556" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>ofColor_&lt; PixelType &gt; ofColor_&lt; PixelType &gt;::operator*</definition>
+        <argsstring>(float const &amp;val) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>float const &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="75" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="467" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a1bffa15b76e7469bf7007730f937e7b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; &amp;</type>
+        <definition>ofColor_&lt; PixelType &gt; &amp; ofColor_&lt; PixelType &gt;::operator*=</definition>
+        <argsstring>(ofColor_&lt; PixelType &gt; const &amp;color)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; const &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="76" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="474" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1ad47ea2d12ec27ce741e89907d83743b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; &amp;</type>
+        <definition>ofColor_&lt; PixelType &gt; &amp; ofColor_&lt; PixelType &gt;::operator*=</definition>
+        <argsstring>(float const &amp;val)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>float const &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="77" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="483" bodyend="489"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1aea43d230654067bf71e09d457c6566bd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>ofColor_&lt; PixelType &gt; ofColor_&lt; PixelType &gt;::operator/</definition>
+        <argsstring>(ofColor_&lt; PixelType &gt; const &amp;color) const </argsstring>
+        <name>operator/</name>
+        <param>
+          <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; const &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="78" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="493" bodyend="495"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1aff3d7a52171a095af355aa5cfbf3cf2d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>ofColor_&lt; PixelType &gt; ofColor_&lt; PixelType &gt;::operator/</definition>
+        <argsstring>(float const &amp;val) const </argsstring>
+        <name>operator/</name>
+        <param>
+          <type>float const &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="79" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="499" bodyend="504"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1ae2f677d1f6966e9dcb147802f6570069" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; &amp;</type>
+        <definition>ofColor_&lt; PixelType &gt; &amp; ofColor_&lt; PixelType &gt;::operator/=</definition>
+        <argsstring>(ofColor_&lt; PixelType &gt; const &amp;color)</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; const &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="80" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="508" bodyend="513"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a49ee40436700f2ddccdd4d082a758015" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; &amp;</type>
+        <definition>ofColor_&lt; PixelType &gt; &amp; ofColor_&lt; PixelType &gt;::operator/=</definition>
+        <argsstring>(float const &amp;val)</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type>float const &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="81" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="517" bodyend="527"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1a4aa6cd7ee596bfcaa1504487349ec775" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const PixelType &amp;</type>
+        <definition>const PixelType &amp; ofColor_&lt; PixelType &gt;::operator[]</definition>
+        <argsstring>(int n) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="82" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="531" bodyend="545"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1ac7d336bf3fac6e2e04f77751d9d7e0fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PixelType &amp;</type>
+        <definition>PixelType &amp; ofColor_&lt; PixelType &gt;::operator[]</definition>
+        <argsstring>(int n)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="83" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="548" bodyend="562"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classof_color___1a298d1603eb1628dcb5f71906b581dd5c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>ofColor_&lt; PixelType &gt; ofColor_&lt; PixelType &gt;::fromHsb</definition>
+        <argsstring>(float hue, float saturation, float brightness, float alpha=limit())</argsstring>
+        <name>fromHsb</name>
+        <param>
+          <type>float</type>
+          <declname>hue</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>saturation</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>brightness</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>alpha</declname>
+          <defval>limit()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="24" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="66" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1aa14c7cb5a9912e22887db4e87c4f85b4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt;</type>
+        <definition>ofColor_&lt; PixelType &gt; ofColor_&lt; PixelType &gt;::fromHex</definition>
+        <argsstring>(int hexColor, float alpha=limit())</argsstring>
+        <name>fromHex</name>
+        <param>
+          <type>int</type>
+          <declname>hexColor</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>alpha</declname>
+          <defval>limit()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="25" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="74" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_color___1aef7c0aabbaab6d6ac09cf60080eb5b6f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ofColor_&lt; PixelType &gt;::limit</definition>
+        <argsstring>()</argsstring>
+        <name>limit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="105" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classof_color___1a555fbf0f2cce3a33dae1e873f11d4883" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;os, const ofColor_&lt; PixelType &gt; &amp;color)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="85" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" bodystart="85" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="friend" id="classof_color___1a33614cc8b66824683b616558fd43e835" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend istream &amp;</type>
+        <definition>istream&amp; operator&gt;&gt;</definition>
+        <argsstring>(istream &amp;is, ofColor_&lt; PixelType &gt; &amp;color)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>istream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type><ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; PixelType &gt; &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="94" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" bodystart="94" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classof_color___1a292032849a11afbd98fa78fa06245ea3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SrcType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ofColor_&lt; PixelType &gt;::copyFrom</definition>
+        <argsstring>(const ofColor_&lt; SrcType &gt; &amp;mom)</argsstring>
+        <name>copyFrom</name>
+        <param>
+          <type>const <ref refid="classof_color__" kindref="compound">ofColor_</ref>&lt; SrcType &gt; &amp;</type>
+          <declname>mom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="116" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" bodystart="139" bodyend="155"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="231">
+        <label>PixelType</label>
+      </node>
+      <node id="230">
+        <label>ofColor_&lt; PixelType &gt;</label>
+        <link refid="classof_color__"/>
+        <childnode refid="231" relation="usage">
+          <edgelabel>g</edgelabel>
+          <edgelabel>a</edgelabel>
+          <edgelabel>r</edgelabel>
+          <edgelabel>b</edgelabel>
+          <edgelabel>v</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" line="10" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/ofColor.h" bodystart="10" bodyend="117"/>
+    <listofallmembers>
+      <member refid="classof_color___1a840394f5ccf4d3f4012ec09d320fa7c7" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>a</name></member>
+      <member refid="classof_color___1af302cc728daa97b0b5a858271c273000" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>b</name></member>
+      <member refid="classof_color___1ab7574632fb16870d96c2a2025d85dbba" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>black</name></member>
+      <member refid="classof_color___1ad554b41b21288b6e692ca5d59295e29a" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>blue</name></member>
+      <member refid="classof_color___1a90df86b31f2d2411deeca42b228d5381" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>clamp</name></member>
+      <member refid="classof_color___1a292032849a11afbd98fa78fa06245ea3" prot="private" virt="non-virtual"><scope>ofColor_</scope><name>copyFrom</name></member>
+      <member refid="classof_color___1aaa5834351c09e97eeb280d2b8f07a578" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>cyan</name></member>
+      <member refid="classof_color___1aa14c7cb5a9912e22887db4e87c4f85b4" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>fromHex</name></member>
+      <member refid="classof_color___1a298d1603eb1628dcb5f71906b581dd5c" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>fromHsb</name></member>
+      <member refid="classof_color___1a699d911542ce1f27122fb5c375ab3530" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>g</name></member>
+      <member refid="classof_color___1a7b73e7b52d0e967277c034d9e539d7b7" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>getBrightness</name></member>
+      <member refid="classof_color___1a756c104c401ec4e42d27ee5b7d8a3912" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>getClamped</name></member>
+      <member refid="classof_color___1a7a721db7497d984c3ee81002bcd7237b" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>getHex</name></member>
+      <member refid="classof_color___1a6c340043e0fa64d77a2688709f7c0787" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>getHsb</name></member>
+      <member refid="classof_color___1a59959aa62173b96f31d0833327e2772f" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>getHue</name></member>
+      <member refid="classof_color___1a11bc8c7ef629174d09fd3168c18660e9" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>getInverted</name></member>
+      <member refid="classof_color___1a070e475f03ccfee7eb0ecd47443fbe07" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>getLerped</name></member>
+      <member refid="classof_color___1ada21fed669a9f098466643e044ca2ada" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>getLightness</name></member>
+      <member refid="classof_color___1a371c0b6475599a3191d2f08672d8b771" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>getNormalized</name></member>
+      <member refid="classof_color___1a0569370be88bfa5fddbd6529b5230de3" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>getSaturation</name></member>
+      <member refid="classof_color___1a3cc97e269364093d7eb42d86fc5a7ad0" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>gray</name></member>
+      <member refid="classof_color___1ab934ba3ea7932eff445de1863129ce58" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>green</name></member>
+      <member refid="classof_color___1ac7dab5a53453d15d18b3c486ee655103" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>invert</name></member>
+      <member refid="classof_color___1a777831b6851dbc27fd7d2d4b5288d16b" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>lerp</name></member>
+      <member refid="classof_color___1aef7c0aabbaab6d6ac09cf60080eb5b6f" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>limit</name></member>
+      <member refid="classof_color___1af977be86e108340a764f79d6b4308afd" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>magenta</name></member>
+      <member refid="classof_color___1a383be8c22b569253381ea7e5ed80f51d" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>normalize</name></member>
+      <member refid="classof_color___1a08a59b4376aa75de38276ba3b069c3b1" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>ofColor_</name></member>
+      <member refid="classof_color___1a2c0fd93b89becb56b9349082d9c58e1c" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>ofColor_</name></member>
+      <member refid="classof_color___1a9b935ccb46b95228951d85bfa1a435a8" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>ofColor_</name></member>
+      <member refid="classof_color___1aa346a0af9046ae1beb3b23d615147911" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>ofColor_</name></member>
+      <member refid="classof_color___1a3eaedfe171b23bfc39910577d19723be" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>ofColor_</name></member>
+      <member refid="classof_color___1a0e1b3567a1ab9e233ec31cad3c81d02d" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>ofColor_</name></member>
+      <member refid="classof_color___1a8908d4c719fabd53cda10f07bfad8293" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator!=</name></member>
+      <member refid="classof_color___1a7b9fd729d4dc2de68fc28a16764a3767" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator*</name></member>
+      <member refid="classof_color___1ab001c05790362e0d5616dd071bc4e556" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator*</name></member>
+      <member refid="classof_color___1a1bffa15b76e7469bf7007730f937e7b9" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator*=</name></member>
+      <member refid="classof_color___1ad47ea2d12ec27ce741e89907d83743b9" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator*=</name></member>
+      <member refid="classof_color___1a16bc606ecf656647fe0dfd4919f23245" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator+</name></member>
+      <member refid="classof_color___1a4379505c6a075cd0f1ce8eec9b5aeddc" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator+</name></member>
+      <member refid="classof_color___1a4516998e1fb72ba30ed8a965fcfcdf26" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator+=</name></member>
+      <member refid="classof_color___1af3f11c2e537165884f331c63b905fffe" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator+=</name></member>
+      <member refid="classof_color___1af10f9b4f4dfc0ca9565f0d36b1ff301f" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator-</name></member>
+      <member refid="classof_color___1a33584398ac5dbe5b0a36abee27149786" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator-</name></member>
+      <member refid="classof_color___1aa6b761178c49b2e3f0ff0552cff66f0c" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator-=</name></member>
+      <member refid="classof_color___1aebfb1006ff964bd0a34506cac8840088" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator-=</name></member>
+      <member refid="classof_color___1aea43d230654067bf71e09d457c6566bd" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator/</name></member>
+      <member refid="classof_color___1aff3d7a52171a095af355aa5cfbf3cf2d" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator/</name></member>
+      <member refid="classof_color___1ae2f677d1f6966e9dcb147802f6570069" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator/=</name></member>
+      <member refid="classof_color___1a49ee40436700f2ddccdd4d082a758015" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator/=</name></member>
+      <member refid="classof_color___1a555fbf0f2cce3a33dae1e873f11d4883" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classof_color___1a8ec698a0fce1c4cacf0096e1dd8ef453" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator=</name></member>
+      <member refid="classof_color___1abf5850bb14e3bda9dfce23e4c034b7f4" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator=</name></member>
+      <member refid="classof_color___1a50d9d9c7a4830d1119b8ef3eccb401a3" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator=</name></member>
+      <member refid="classof_color___1afce42ff7645e7cd486c0e730c0c39b12" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator==</name></member>
+      <member refid="classof_color___1a33614cc8b66824683b616558fd43e835" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator&gt;&gt;</name></member>
+      <member refid="classof_color___1a4aa6cd7ee596bfcaa1504487349ec775" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator[]</name></member>
+      <member refid="classof_color___1ac7d336bf3fac6e2e04f77751d9d7e0fc" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>operator[]</name></member>
+      <member refid="classof_color___1a6f49bc7e4aec1f65d9598599ade9b692" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>r</name></member>
+      <member refid="classof_color___1ac367432852af8ffd84574c6bdb6dba74" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>red</name></member>
+      <member refid="classof_color___1ac8b8c8b21d0b2c2debf7b9876fdfecd6" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>set</name></member>
+      <member refid="classof_color___1a3f670605ae4d64e62433ac099c180287" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>set</name></member>
+      <member refid="classof_color___1a5f9c6bff972404da858df9874b219f34" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>set</name></member>
+      <member refid="classof_color___1ae316135040740fb2f37f6cd8d23454bb" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>setBrightness</name></member>
+      <member refid="classof_color___1ad6e89a08aa11f2d2815ba9be89033ccf" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>setHex</name></member>
+      <member refid="classof_color___1a039bf82ba6d780dd2f6b21512cd857cf" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>setHsb</name></member>
+      <member refid="classof_color___1a7913575820818c9e44a3b7e5f8d48edd" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>setHsb</name></member>
+      <member refid="classof_color___1a2b20f282fa99ff0fb540bcf8718863eb" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>setHue</name></member>
+      <member refid="classof_color___1aa3301f40e7f4dc0bd1563f32cba9def7" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>setSaturation</name></member>
+      <member refid="classof_color___1a36bbabc2239993534dee47bc7b9f524c" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>v</name></member>
+      <member refid="classof_color___1a57f71c445227e5daac21c776b867472c" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>white</name></member>
+      <member refid="classof_color___1a9105f57222e87b3d0762936f646db8f1" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>yellow</name></member>
+      <member refid="classof_color___1ace571761ada0c4acb9d9c969b3add480" prot="public" virt="non-virtual"><scope>ofColor_</scope><name>~ofColor_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

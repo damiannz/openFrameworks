@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="of_fmod_sound_player_8h" kind="file">
+    <compoundname>ofFmodSoundPlayer.h</compoundname>
+    <includes refid="of_constants_8h" local="yes">ofConstants.h</includes>
+    <includes refid="of_base_sound_player_8h" local="yes">ofBaseSoundPlayer.h</includes>
+    <includes local="yes">fmod.h</includes>
+    <includes local="yes">fmod_errors.h</includes>
+    <includedby refid="of_fmod_sound_player_8cpp" local="yes">sound/ofFmodSoundPlayer.cpp</includedby>
+    <incdepgraph>
+      <node id="4012">
+        <label>iomanip</label>
+      </node>
+      <node id="4014">
+        <label>ofBaseSoundPlayer.h</label>
+        <link refid="of_base_sound_player_8h"/>
+        <childnode refid="3996" relation="include">
+        </childnode>
+      </node>
+      <node id="4000">
+        <label>GL/glx.h</label>
+      </node>
+      <node id="4005">
+        <label>cmath</label>
+      </node>
+      <node id="4015">
+        <label>fmod.h</label>
+      </node>
+      <node id="4007">
+        <label>string</label>
+      </node>
+      <node id="4004">
+        <label>cstdarg</label>
+      </node>
+      <node id="3998">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="4001">
+        <label>tesselator.h</label>
+      </node>
+      <node id="4013">
+        <label>fstream</label>
+      </node>
+      <node id="4003">
+        <label>cstdio</label>
+      </node>
+      <node id="4006">
+        <label>ctime</label>
+      </node>
+      <node id="3997">
+        <label>unistd.h</label>
+      </node>
+      <node id="4009">
+        <label>vector</label>
+      </node>
+      <node id="3995">
+        <label>sound/ofFmodSoundPlayer.h</label>
+        <link refid="ofFmodSoundPlayer.h"/>
+        <childnode refid="3996" relation="include">
+        </childnode>
+        <childnode refid="4014" relation="include">
+        </childnode>
+        <childnode refid="4015" relation="include">
+        </childnode>
+        <childnode refid="4016" relation="include">
+        </childnode>
+      </node>
+      <node id="3996">
+        <label>ofConstants.h</label>
+        <link refid="of_constants_8h"/>
+        <childnode refid="3997" relation="include">
+        </childnode>
+        <childnode refid="3998" relation="include">
+        </childnode>
+        <childnode refid="3999" relation="include">
+        </childnode>
+        <childnode refid="4000" relation="include">
+        </childnode>
+        <childnode refid="4001" relation="include">
+        </childnode>
+        <childnode refid="4002" relation="include">
+        </childnode>
+        <childnode refid="4003" relation="include">
+        </childnode>
+        <childnode refid="4004" relation="include">
+        </childnode>
+        <childnode refid="4005" relation="include">
+        </childnode>
+        <childnode refid="4006" relation="include">
+        </childnode>
+        <childnode refid="4007" relation="include">
+        </childnode>
+        <childnode refid="4008" relation="include">
+        </childnode>
+        <childnode refid="4009" relation="include">
+        </childnode>
+        <childnode refid="4010" relation="include">
+        </childnode>
+        <childnode refid="4011" relation="include">
+        </childnode>
+        <childnode refid="4012" relation="include">
+        </childnode>
+        <childnode refid="4013" relation="include">
+        </childnode>
+      </node>
+      <node id="4011">
+        <label>sstream</label>
+      </node>
+      <node id="4016">
+        <label>fmod_errors.h</label>
+      </node>
+      <node id="4002">
+        <label>cstdlib</label>
+      </node>
+      <node id="4008">
+        <label>iostream</label>
+      </node>
+      <node id="3999">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="4010">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4017">
+        <label>sound/ofFmodSoundPlayer.h</label>
+        <link refid="ofFmodSoundPlayer.h"/>
+        <childnode refid="4018" relation="include">
+        </childnode>
+      </node>
+      <node id="4018">
+        <label>sound/ofFmodSoundPlayer.cpp</label>
+        <link refid="of_fmod_sound_player_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classof_fmod_sound_player" prot="public">ofFmodSoundPlayer</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="of_fmod_sound_player_8h_1a49c3bc1c7416f7e97837d7c4e4602966" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofFmodSoundStopAll</definition>
+        <argsstring>()</argsstring>
+        <name>ofFmodSoundStopAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofFmodSoundPlayer.h" line="28" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofFmodSoundPlayer.cpp" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="of_fmod_sound_player_8h_1aa909b1e88e40e7253ae69e9662c7df6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofFmodSoundSetVolume</definition>
+        <argsstring>(float vol)</argsstring>
+        <name>ofFmodSoundSetVolume</name>
+        <param>
+          <type>float</type>
+          <declname>vol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofFmodSoundPlayer.h" line="29" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofFmodSoundPlayer.cpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="of_fmod_sound_player_8h_1a64e5035ef720d2e112890385853d37f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ofFmodSoundUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>ofFmodSoundUpdate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofFmodSoundPlayer.h" line="30" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofFmodSoundPlayer.cpp" bodystart="35" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="of_fmod_sound_player_8h_1ad4db5a2505ea50cbbb7dee70172270ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float *</type>
+        <definition>float* ofFmodSoundGetSpectrum</definition>
+        <argsstring>(int nBands)</argsstring>
+        <name>ofFmodSoundGetSpectrum</name>
+        <param>
+          <type>int</type>
+          <declname>nBands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofFmodSoundPlayer.h" line="31" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofFmodSoundPlayer.cpp" bodystart="42" bodyend="124"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_constants_8h" kindref="compound">ofConstants.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_base_sound_player_8h" kindref="compound">ofBaseSoundPlayer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;fmod.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;fmod_errors.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TO<sp/>DO<sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>---------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-fft<sp/>via<sp/>fmod,<sp/>as<sp/>in<sp/>the<sp/>last<sp/>time...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-close<sp/>fmod<sp/>if<sp/>it&apos;s<sp/>up</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-loadSoundForStreaming(char<sp/>*<sp/>fileName);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>---------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>interesting:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>http://www.compuphase.com/mp3/mp3loops.htm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------------------------------------<sp/>SOUND<sp/>SYSTEM<sp/>FMOD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------<sp/>global<sp/>functions:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_fmod_sound_player_8cpp_1a49c3bc1c7416f7e97837d7c4e4602966" kindref="member">ofFmodSoundStopAll</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_fmod_sound_player_8cpp_1aa909b1e88e40e7253ae69e9662c7df6d" kindref="member">ofFmodSoundSetVolume</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vol);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="of_fmod_sound_player_8cpp_1a64e5035ef720d2e112890385853d37f4" kindref="member">ofFmodSoundUpdate</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>calls<sp/>FMOD<sp/>update.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/><ref refid="of_fmod_sound_player_8cpp_1ad4db5a2505ea50cbbb7dee70172270ee" kindref="member">ofFmodSoundGetSpectrum</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nBands);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>max<sp/>512...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------<sp/>player<sp/>functions:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classof_fmod_sound_player" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classof_fmod_sound_player" kindref="compound">ofFmodSoundPlayer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classof_base_sound_player" kindref="compound">ofBaseSoundPlayer</ref><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_fmod_sound_player_1a6e0277ecd4b2078e68b8b2ed9b449ff8" kindref="member">ofFmodSoundPlayer</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1a799a11c5de514b6d7dda9a8863265dd5" kindref="member">~ofFmodSoundPlayer</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1ae345958f71675c0c53d99db9b9e1b046" kindref="member">loadSound</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>fileName,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>stream<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1ae83434059344e4074290fffd04d30658" kindref="member">unloadSound</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1ad34a14cddbdd2c130c1744c39dce8686" kindref="member">play</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1a5a33512cbf6044e3cbe9f64d668051a7" kindref="member">stop</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1a190e4d187c87cb22661f557bceb26455" kindref="member">setVolume</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vol);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1a051b97f0d757cbbd933ac0cb01446e05" kindref="member">setPan</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vol);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1a543d6d876c39feeb759ebd77c351b36e" kindref="member">setSpeed</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>spd);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1a0cb0e9743706e6b3699a839713aca892" kindref="member">setPaused</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bP);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1a60120b4b5aa3ecae87078e8f189b76d8" kindref="member">setLoop</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bLp);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1a24d7bbe01cc94c31b3b0c8ea32b0285b" kindref="member">setMultiPlay</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bMp);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1ae2cb9b2e9599174f4e4f6f29a99b4c9a" kindref="member">setPosition</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>pct);<sp/></highlight><highlight class="comment">//<sp/>0<sp/>=<sp/>start,<sp/>1<sp/>=<sp/>end;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1adffceb806890e8dcb4fa18bf892c02b2" kindref="member">setPositionMS</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ms);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1a82cf6a361d806526f66458b4540bafbc" kindref="member">getPosition</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1a76f7e6d7800fe3203de9cefe7e4e8fc8" kindref="member">getPositionMS</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1a96c8a16661296a02438e0ee0debe70ac" kindref="member">getIsPlaying</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1a5aa8f07d031387925ad3fe824b7cc159" kindref="member">getSpeed</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1a280fcf4cb1e63a083d5a5f17bf4d7789" kindref="member">getPan</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1af9be3f827d2fe8081568bd3f37dc2040" kindref="member">initializeFmod</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1a5253ee468c5e998867974a0bf7f1632a" kindref="member">closeFmod</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1a14c2dcc99f3a496b03e1f136f714f24d" kindref="member">isStreaming</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1a2cfe1cbc54878bb30bbf89b09ffae0ff" kindref="member">bMultiPlay</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1a371f84c331fe267a9c14ce44db71a60a" kindref="member">bLoop</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1a7cd755a467813dc65bba46f534969ac0" kindref="member">bLoadedOk</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1acfaea8c57f0afd6be7c4203d9e247eeb" kindref="member">bPaused</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1ade7729906b571b98c1c9ac46adc830c7" kindref="member">pan</ref>;<sp/></highlight><highlight class="comment">//<sp/>0<sp/>-<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1aa360543c9b81880dfcef01a03c2fffb5" kindref="member">volume</ref>;<sp/></highlight><highlight class="comment">//<sp/>0<sp/>-<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1ab1828b976c63fd067c3a8f8cd3aa0447" kindref="member">internalFreq</ref>;<sp/></highlight><highlight class="comment">//<sp/>44100<sp/>?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1aef24cf745ab8aee942edacca1362d236" kindref="member">speed</ref>;<sp/></highlight><highlight class="comment">//<sp/>-n<sp/>to<sp/>n,<sp/>1<sp/>=<sp/>normal,<sp/>-1<sp/>backwards</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classof_fmod_sound_player_1a484e583e9f62defcee6cce48878e2a60" kindref="member">length</ref>;<sp/></highlight><highlight class="comment">//<sp/>in<sp/>samples;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FMOD_RESULT<sp/><ref refid="classof_fmod_sound_player_1ac70585c086b000b30b945463a14894e1" kindref="member">result</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FMOD_CHANNEL<sp/>*<sp/><ref refid="classof_fmod_sound_player_1afa7d8b9b27883bec0e0f18ae7dd4484e" kindref="member">channel</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FMOD_SOUND<sp/>*<sp/><ref refid="classof_fmod_sound_player_1a3cef570ec5be6f9eecec3eb952db020b" kindref="member">sound</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofFmodSoundPlayer.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="dir_e167d3d435ab5700f9e02e3db2ebcc56" kind="dir">
+    <compoundname>types/</compoundname>
+    <innerfile refid="of_base_types_8cpp">ofBaseTypes.cpp</innerfile>
+    <innerfile refid="of_base_types_8h">ofBaseTypes.h</innerfile>
+    <innerfile refid="of_color_8cpp">ofColor.cpp</innerfile>
+    <innerfile refid="of_color_8h">ofColor.h</innerfile>
+    <innerfile refid="of_point_8cpp">ofPoint.cpp</innerfile>
+    <innerfile refid="of_point_8h">ofPoint.h</innerfile>
+    <innerfile refid="of_rectangle_8cpp">ofRectangle.cpp</innerfile>
+    <innerfile refid="of_rectangle_8h">ofRectangle.h</innerfile>
+    <innerfile refid="of_types_8h">ofTypes.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/types/"/>
+  </compounddef>
+</doxygen>

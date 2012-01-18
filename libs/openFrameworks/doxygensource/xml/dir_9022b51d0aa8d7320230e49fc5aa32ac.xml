@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="dir_9022b51d0aa8d7320230e49fc5aa32ac" kind="dir">
+    <compoundname>math/</compoundname>
+    <innerfile refid="of_math_8cpp">ofMath.cpp</innerfile>
+    <innerfile refid="of_math_8h">ofMath.h</innerfile>
+    <innerfile refid="of_matrix3x3_8cpp">ofMatrix3x3.cpp</innerfile>
+    <innerfile refid="of_matrix3x3_8h">ofMatrix3x3.h</innerfile>
+    <innerfile refid="of_matrix4x4_8cpp">ofMatrix4x4.cpp</innerfile>
+    <innerfile refid="of_matrix4x4_8h">ofMatrix4x4.h</innerfile>
+    <innerfile refid="of_quaternion_8cpp">ofQuaternion.cpp</innerfile>
+    <innerfile refid="of_quaternion_8h">ofQuaternion.h</innerfile>
+    <innerfile refid="of_vec2f_8cpp">ofVec2f.cpp</innerfile>
+    <innerfile refid="of_vec2f_8h">ofVec2f.h</innerfile>
+    <innerfile refid="of_vec3f_8h">ofVec3f.h</innerfile>
+    <innerfile refid="of_vec4f_8cpp">ofVec4f.cpp</innerfile>
+    <innerfile refid="of_vec4f_8h">ofVec4f.h</innerfile>
+    <innerfile refid="of_vector_math_8h">ofVectorMath.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/"/>
+  </compounddef>
+</doxygen>

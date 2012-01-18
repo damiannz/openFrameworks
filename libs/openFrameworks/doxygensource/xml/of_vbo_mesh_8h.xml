@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="of_vbo_mesh_8h" kind="file">
+    <compoundname>ofVboMesh.h</compoundname>
+    <includes refid="of_mesh_8h" local="yes">ofMesh.h</includes>
+    <includes refid="of_vbo_8h" local="yes">ofVbo.h</includes>
+    <includedby refid="of_vbo_mesh_8cpp" local="yes">gl/ofVboMesh.cpp</includedby>
+    <includedby refid="of_main_8h" local="yes">ofMain.h</includedby>
+    <incdepgraph>
+      <node id="1897">
+        <label>iomanip</label>
+      </node>
+      <node id="1900">
+        <label>ofColor.h</label>
+        <link refid="of_color_8h"/>
+        <childnode refid="1901" relation="include">
+        </childnode>
+        <childnode refid="1902" relation="include">
+        </childnode>
+      </node>
+      <node id="1901">
+        <label>limits</label>
+      </node>
+      <node id="1899">
+        <label>ofVec4f.h</label>
+        <link refid="of_vec4f_8h"/>
+        <childnode refid="1881" relation="include">
+        </childnode>
+      </node>
+      <node id="1885">
+        <label>GL/glx.h</label>
+      </node>
+      <node id="1880">
+        <label>ofVec2f.h</label>
+        <link refid="of_vec2f_8h"/>
+        <childnode refid="1881" relation="include">
+        </childnode>
+      </node>
+      <node id="1890">
+        <label>cmath</label>
+      </node>
+      <node id="1909">
+        <label>ofTypes.h</label>
+        <link refid="of_types_8h"/>
+        <childnode refid="1881" relation="include">
+        </childnode>
+        <childnode refid="1900" relation="include">
+        </childnode>
+        <childnode refid="1910" relation="include">
+        </childnode>
+        <childnode refid="1911" relation="include">
+        </childnode>
+      </node>
+      <node id="1879">
+        <label>ofVec3f.h</label>
+        <link refid="of_vec3f_8h"/>
+        <childnode refid="1880" relation="include">
+        </childnode>
+        <childnode refid="1899" relation="include">
+        </childnode>
+        <childnode refid="1881" relation="include">
+        </childnode>
+        <childnode refid="1890" relation="include">
+        </childnode>
+        <childnode refid="1893" relation="include">
+        </childnode>
+      </node>
+      <node id="1892">
+        <label>string</label>
+      </node>
+      <node id="1889">
+        <label>cstdarg</label>
+      </node>
+      <node id="1883">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="1908">
+        <label>Poco/File.h</label>
+      </node>
+      <node id="1886">
+        <label>tesselator.h</label>
+      </node>
+      <node id="1898">
+        <label>fstream</label>
+      </node>
+      <node id="1902">
+        <label>ofMath.h</label>
+        <link refid="of_math_8h"/>
+        <childnode refid="1903" relation="include">
+        </childnode>
+        <childnode refid="1881" relation="include">
+        </childnode>
+      </node>
+      <node id="1888">
+        <label>cstdio</label>
+      </node>
+      <node id="1905">
+        <label>bitset</label>
+      </node>
+      <node id="1891">
+        <label>ctime</label>
+      </node>
+      <node id="1882">
+        <label>unistd.h</label>
+      </node>
+      <node id="1894">
+        <label>vector</label>
+      </node>
+      <node id="1906">
+        <label>ofLog.h</label>
+        <link refid="of_log_8h"/>
+        <childnode refid="1881" relation="include">
+        </childnode>
+        <childnode refid="1907" relation="include">
+        </childnode>
+        <childnode refid="1909" relation="include">
+        </childnode>
+      </node>
+      <node id="1881">
+        <label>ofConstants.h</label>
+        <link refid="of_constants_8h"/>
+        <childnode refid="1882" relation="include">
+        </childnode>
+        <childnode refid="1883" relation="include">
+        </childnode>
+        <childnode refid="1884" relation="include">
+        </childnode>
+        <childnode refid="1885" relation="include">
+        </childnode>
+        <childnode refid="1886" relation="include">
+        </childnode>
+        <childnode refid="1887" relation="include">
+        </childnode>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+        <childnode refid="1890" relation="include">
+        </childnode>
+        <childnode refid="1891" relation="include">
+        </childnode>
+        <childnode refid="1892" relation="include">
+        </childnode>
+        <childnode refid="1893" relation="include">
+        </childnode>
+        <childnode refid="1894" relation="include">
+        </childnode>
+        <childnode refid="1895" relation="include">
+        </childnode>
+        <childnode refid="1896" relation="include">
+        </childnode>
+        <childnode refid="1897" relation="include">
+        </childnode>
+        <childnode refid="1898" relation="include">
+        </childnode>
+      </node>
+      <node id="1896">
+        <label>sstream</label>
+      </node>
+      <node id="1903">
+        <label>ofPoint.h</label>
+        <link refid="of_point_8h"/>
+        <childnode refid="1879" relation="include">
+        </childnode>
+      </node>
+      <node id="1877">
+        <label>gl/ofVboMesh.h</label>
+        <link refid="ofVboMesh.h"/>
+        <childnode refid="1878" relation="include">
+        </childnode>
+        <childnode refid="1913" relation="include">
+        </childnode>
+      </node>
+      <node id="1907">
+        <label>ofFileUtils.h</label>
+        <link refid="of_file_utils_8h"/>
+        <childnode refid="1881" relation="include">
+        </childnode>
+        <childnode refid="1908" relation="include">
+        </childnode>
+      </node>
+      <node id="1887">
+        <label>cstdlib</label>
+      </node>
+      <node id="1912">
+        <label>ofGLUtils.h</label>
+        <link refid="of_g_l_utils_8h"/>
+      </node>
+      <node id="1893">
+        <label>iostream</label>
+      </node>
+      <node id="1878">
+        <label>ofMesh.h</label>
+        <link refid="of_mesh_8h"/>
+        <childnode refid="1879" relation="include">
+        </childnode>
+        <childnode refid="1880" relation="include">
+        </childnode>
+        <childnode refid="1900" relation="include">
+        </childnode>
+        <childnode refid="1904" relation="include">
+        </childnode>
+        <childnode refid="1881" relation="include">
+        </childnode>
+        <childnode refid="1912" relation="include">
+        </childnode>
+      </node>
+      <node id="1904">
+        <label>ofUtils.h</label>
+        <link refid="of_utils_8h"/>
+        <childnode refid="1881" relation="include">
+        </childnode>
+        <childnode refid="1905" relation="include">
+        </childnode>
+        <childnode refid="1906" relation="include">
+        </childnode>
+      </node>
+      <node id="1913">
+        <label>ofVbo.h</label>
+        <link refid="of_vbo_8h"/>
+        <childnode refid="1881" relation="include">
+        </childnode>
+        <childnode refid="1879" relation="include">
+        </childnode>
+        <childnode refid="1900" relation="include">
+        </childnode>
+        <childnode refid="1904" relation="include">
+        </childnode>
+        <childnode refid="1878" relation="include">
+        </childnode>
+        <childnode refid="1912" relation="include">
+        </childnode>
+      </node>
+      <node id="1884">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="1911">
+        <label>Poco/Mutex.h</label>
+      </node>
+      <node id="1895">
+        <label>cstring</label>
+      </node>
+      <node id="1910">
+        <label>tr1/memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1916">
+        <label>ofMain.h</label>
+        <link refid="of_main_8h"/>
+      </node>
+      <node id="1915">
+        <label>gl/ofVboMesh.cpp</label>
+        <link refid="of_vbo_mesh_8cpp"/>
+      </node>
+      <node id="1914">
+        <label>gl/ofVboMesh.h</label>
+        <link refid="ofVboMesh.h"/>
+        <childnode refid="1915" relation="include">
+        </childnode>
+        <childnode refid="1916" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classof_vbo_mesh" prot="public">ofVboMesh</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_mesh_8h" kindref="compound">ofMesh.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_vbo_8h" kindref="compound">ofVbo.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classof_vbo_mesh" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classof_vbo_mesh" kindref="compound">ofVboMesh</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classof_mesh" kindref="compound">ofMesh</ref>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classof_mesh_1aa97850592c56c4e52492afe0a5643c93" kindref="member">ofMesh::draw</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vbo_mesh_1af148219c2bf064301d81403b0582abb5" kindref="member">ofVboMesh</ref>();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vbo_mesh_1af148219c2bf064301d81403b0582abb5" kindref="member">ofVboMesh</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_mesh" kindref="compound">ofMesh</ref><sp/>&amp;<sp/>mom);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_vbo_mesh_1ac02e0fd9f08d40fb9d8cc63838654fd8" kindref="member">setUsage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>usage);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_mesh_1aa97850592c56c4e52492afe0a5643c93" kindref="member">draw</ref>(<ref refid="of_g_l_utils_8h_1a6beb1fbbaba728909c78cda1eadfe28e" kindref="member">ofPolyRenderMode</ref><sp/>drawMode);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vbo" kindref="compound">ofVbo</ref><sp/>vbo;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>usage;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>vboNumVerts,<sp/>vboNumIndices,<sp/>vboNumNormals,<sp/>vboNumTexCoords,<sp/>vboNumColors;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofVboMesh.h"/>
+  </compounddef>
+</doxygen>

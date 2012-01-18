@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="structof_gst_framerate" kind="struct" prot="public">
+    <compoundname>ofGstFramerate</compoundname>
+    <includes local="no">ofGstVideoGrabber.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structof_gst_framerate_1af481a123d5295602ac00843666d10da8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ofGstFramerate::numerator</definition>
+        <argsstring></argsstring>
+        <name>numerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="6" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structof_gst_framerate_1ac6a3f4271b7cdfe95d8d410b177bfa16" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ofGstFramerate::denominator</definition>
+        <argsstring></argsstring>
+        <name>denominator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="7" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" line="5" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/video/ofGstVideoGrabber.h" bodystart="5" bodyend="8"/>
+    <listofallmembers>
+      <member refid="structof_gst_framerate_1ac6a3f4271b7cdfe95d8d410b177bfa16" prot="public" virt="non-virtual"><scope>ofGstFramerate</scope><name>denominator</name></member>
+      <member refid="structof_gst_framerate_1af481a123d5295602ac00843666d10da8" prot="public" virt="non-virtual"><scope>ofGstFramerate</scope><name>numerator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

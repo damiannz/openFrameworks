@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="classof_base_sound_player" kind="class" prot="public">
+    <compoundname>ofBaseSoundPlayer</compoundname>
+    <derivedcompoundref refid="classof_fmod_sound_player" prot="public" virt="non-virtual">ofFmodSoundPlayer</derivedcompoundref>
+    <derivedcompoundref refid="classof_sound_player" prot="public" virt="non-virtual">ofSoundPlayer</derivedcompoundref>
+    <includes local="no">ofBaseSoundPlayer.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classof_base_sound_player_1ad705fe243610e1b203fe38b13b264cb6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ofBaseSoundPlayer::ofBaseSoundPlayer</definition>
+        <argsstring>()</argsstring>
+        <name>ofBaseSoundPlayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h" line="15" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_base_sound_player_1a8defee0b9e692647917e4cc78e2b27d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ofBaseSoundPlayer::~ofBaseSoundPlayer</definition>
+        <argsstring>()</argsstring>
+        <name>~ofBaseSoundPlayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h" line="16" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_base_sound_player_1ac261744b9815d7f31ca5580d8230e91c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ofBaseSoundPlayer::loadSound</definition>
+        <argsstring>(string fileName, bool stream=false)=0</argsstring>
+        <name>loadSound</name>
+        <reimplementedby refid="classof_sound_player_1a719bdd9e5ec88ac764d2fe62be42f138">loadSound</reimplementedby>
+        <reimplementedby refid="classof_fmod_sound_player_1ae345958f71675c0c53d99db9b9e1b046">loadSound</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>stream</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h" line="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_base_sound_player_1a9d4f87a9c835c9521d63677a40cc2378" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ofBaseSoundPlayer::unloadSound</definition>
+        <argsstring>()=0</argsstring>
+        <name>unloadSound</name>
+        <reimplementedby refid="classof_sound_player_1af34f51c6db954cca3ccf9f0a7f7bdca3">unloadSound</reimplementedby>
+        <reimplementedby refid="classof_fmod_sound_player_1ae83434059344e4074290fffd04d30658">unloadSound</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h" line="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_base_sound_player_1a75724561c5bfd5b36099ae13b4a448ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ofBaseSoundPlayer::play</definition>
+        <argsstring>()=0</argsstring>
+        <name>play</name>
+        <reimplementedby refid="classof_sound_player_1a0b33f32cd5330619a7c4d9a812a201bf">play</reimplementedby>
+        <reimplementedby refid="classof_fmod_sound_player_1ad34a14cddbdd2c130c1744c39dce8686">play</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h" line="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_base_sound_player_1a815bdc74ee89a4953eeb55803d220ad5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ofBaseSoundPlayer::stop</definition>
+        <argsstring>()=0</argsstring>
+        <name>stop</name>
+        <reimplementedby refid="classof_sound_player_1a47cc0ae78fbb5a8b62f9c9d92279932f">stop</reimplementedby>
+        <reimplementedby refid="classof_fmod_sound_player_1a5a33512cbf6044e3cbe9f64d668051a7">stop</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h" line="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_base_sound_player_1a8dd48f4e7cad15d4df5c2ab572a243af" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ofBaseSoundPlayer::setVolume</definition>
+        <argsstring>(float vol)=0</argsstring>
+        <name>setVolume</name>
+        <reimplementedby refid="classof_sound_player_1acaa80eb92af43c4889a1f2968849dd80">setVolume</reimplementedby>
+        <reimplementedby refid="classof_fmod_sound_player_1a190e4d187c87cb22661f557bceb26455">setVolume</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>vol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h" line="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_base_sound_player_1a84e70f38b1ae07380fb2d902f3e21e61" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ofBaseSoundPlayer::setPan</definition>
+        <argsstring>(float vol)=0</argsstring>
+        <name>setPan</name>
+        <reimplementedby refid="classof_sound_player_1afe9153ef6ccff90698f2c0f32aecf264">setPan</reimplementedby>
+        <reimplementedby refid="classof_fmod_sound_player_1a051b97f0d757cbbd933ac0cb01446e05">setPan</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>vol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h" line="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_base_sound_player_1a1b44d5401ee7c0d20fb9d1b9b4d507f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ofBaseSoundPlayer::setSpeed</definition>
+        <argsstring>(float spd)=0</argsstring>
+        <name>setSpeed</name>
+        <reimplementedby refid="classof_sound_player_1ad0d545c135fae29a5ae3f53e6b8c5a36">setSpeed</reimplementedby>
+        <reimplementedby refid="classof_fmod_sound_player_1a543d6d876c39feeb759ebd77c351b36e">setSpeed</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>spd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h" line="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_base_sound_player_1ab3a7af6b4cbb14ecaf12f836d05d7c8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ofBaseSoundPlayer::setPaused</definition>
+        <argsstring>(bool bP)=0</argsstring>
+        <name>setPaused</name>
+        <reimplementedby refid="classof_sound_player_1ad78dcd06f67c3ade7e0f81cf7ec48f7a">setPaused</reimplementedby>
+        <reimplementedby refid="classof_fmod_sound_player_1a0cb0e9743706e6b3699a839713aca892">setPaused</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>bP</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h" line="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_base_sound_player_1af99466881ec3c5b0fb9d374d353ff7b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ofBaseSoundPlayer::setLoop</definition>
+        <argsstring>(bool bLp)=0</argsstring>
+        <name>setLoop</name>
+        <reimplementedby refid="classof_sound_player_1a83b6cdb9c183a25f1f0f3834b0ea75da">setLoop</reimplementedby>
+        <reimplementedby refid="classof_fmod_sound_player_1a60120b4b5aa3ecae87078e8f189b76d8">setLoop</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>bLp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h" line="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_base_sound_player_1a576345622ea19d09d5c4e5e3cf6cb653" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ofBaseSoundPlayer::setMultiPlay</definition>
+        <argsstring>(bool bMp)=0</argsstring>
+        <name>setMultiPlay</name>
+        <reimplementedby refid="classof_sound_player_1a05aa20552192e95abc716e426fe2c26e">setMultiPlay</reimplementedby>
+        <reimplementedby refid="classof_fmod_sound_player_1a24d7bbe01cc94c31b3b0c8ea32b0285b">setMultiPlay</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>bMp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h" line="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_base_sound_player_1ae302cd3a5f42cef51ea72f950f6a2b10" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ofBaseSoundPlayer::setPosition</definition>
+        <argsstring>(float pct)=0</argsstring>
+        <name>setPosition</name>
+        <reimplementedby refid="classof_sound_player_1ac9179fcb91159811bee454488b19ba9f">setPosition</reimplementedby>
+        <reimplementedby refid="classof_fmod_sound_player_1ae2cb9b2e9599174f4e4f6f29a99b4c9a">setPosition</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>pct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h" line="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_base_sound_player_1a39d353e9765a15e18916d2cba4477cf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ofBaseSoundPlayer::setPositionMS</definition>
+        <argsstring>(int ms)=0</argsstring>
+        <name>setPositionMS</name>
+        <reimplementedby refid="classof_sound_player_1ac9971abc1e86caf996fa18688cfe3f23">setPositionMS</reimplementedby>
+        <reimplementedby refid="classof_fmod_sound_player_1adffceb806890e8dcb4fa18bf892c02b2">setPositionMS</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h" line="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_base_sound_player_1aa397af6f05c4451866bd343692c1aa33" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float ofBaseSoundPlayer::getPosition</definition>
+        <argsstring>()=0</argsstring>
+        <name>getPosition</name>
+        <reimplementedby refid="classof_sound_player_1ab323f725c722b7c858e5fb2cd26d054e">getPosition</reimplementedby>
+        <reimplementedby refid="classof_fmod_sound_player_1a82cf6a361d806526f66458b4540bafbc">getPosition</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h" line="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_base_sound_player_1a03deb9c7833a9e765e885c68214559b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int ofBaseSoundPlayer::getPositionMS</definition>
+        <argsstring>()=0</argsstring>
+        <name>getPositionMS</name>
+        <reimplementedby refid="classof_sound_player_1a030e9784d82c0e5e100f88c3c24a4209">getPositionMS</reimplementedby>
+        <reimplementedby refid="classof_fmod_sound_player_1a76f7e6d7800fe3203de9cefe7e4e8fc8">getPositionMS</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h" line="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_base_sound_player_1aa3445838a28c7622edecb778f7400bd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool ofBaseSoundPlayer::getIsPlaying</definition>
+        <argsstring>()=0</argsstring>
+        <name>getIsPlaying</name>
+        <reimplementedby refid="classof_sound_player_1a5b6d6347a3a94823f64df7c34da29fcb">getIsPlaying</reimplementedby>
+        <reimplementedby refid="classof_fmod_sound_player_1a96c8a16661296a02438e0ee0debe70ac">getIsPlaying</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h" line="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_base_sound_player_1ac81d07b18bde46e618ca026e088b1e19" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float ofBaseSoundPlayer::getSpeed</definition>
+        <argsstring>()=0</argsstring>
+        <name>getSpeed</name>
+        <reimplementedby refid="classof_sound_player_1a7ce70d482070ef585016d4a47b016a04">getSpeed</reimplementedby>
+        <reimplementedby refid="classof_fmod_sound_player_1a5aa8f07d031387925ad3fe824b7cc159">getSpeed</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h" line="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classof_base_sound_player_1ab17c0b5c5684ce988eb1f52259477aae" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float ofBaseSoundPlayer::getPan</definition>
+        <argsstring>()=0</argsstring>
+        <name>getPan</name>
+        <reimplementedby refid="classof_sound_player_1a45fae5c6233c598671bbce9ecac9e017">getPan</reimplementedby>
+        <reimplementedby refid="classof_fmod_sound_player_1a280fcf4cb1e63a083d5a5f17bf4d7789">getPan</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h" line="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="124">
+        <label>ofSoundPlayer</label>
+        <link refid="classof_sound_player"/>
+        <childnode refid="122" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>ofFmodSoundPlayer</label>
+        <link refid="classof_fmod_sound_player"/>
+        <childnode refid="122" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>ofBaseSoundPlayer</label>
+        <link refid="classof_base_sound_player"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h" line="11" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofBaseSoundPlayer.h" bodystart="11" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classof_base_sound_player_1aa3445838a28c7622edecb778f7400bd6" prot="public" virt="pure-virtual"><scope>ofBaseSoundPlayer</scope><name>getIsPlaying</name></member>
+      <member refid="classof_base_sound_player_1ab17c0b5c5684ce988eb1f52259477aae" prot="public" virt="pure-virtual"><scope>ofBaseSoundPlayer</scope><name>getPan</name></member>
+      <member refid="classof_base_sound_player_1aa397af6f05c4451866bd343692c1aa33" prot="public" virt="pure-virtual"><scope>ofBaseSoundPlayer</scope><name>getPosition</name></member>
+      <member refid="classof_base_sound_player_1a03deb9c7833a9e765e885c68214559b5" prot="public" virt="pure-virtual"><scope>ofBaseSoundPlayer</scope><name>getPositionMS</name></member>
+      <member refid="classof_base_sound_player_1ac81d07b18bde46e618ca026e088b1e19" prot="public" virt="pure-virtual"><scope>ofBaseSoundPlayer</scope><name>getSpeed</name></member>
+      <member refid="classof_base_sound_player_1ac261744b9815d7f31ca5580d8230e91c" prot="public" virt="pure-virtual"><scope>ofBaseSoundPlayer</scope><name>loadSound</name></member>
+      <member refid="classof_base_sound_player_1ad705fe243610e1b203fe38b13b264cb6" prot="public" virt="non-virtual"><scope>ofBaseSoundPlayer</scope><name>ofBaseSoundPlayer</name></member>
+      <member refid="classof_base_sound_player_1a75724561c5bfd5b36099ae13b4a448ed" prot="public" virt="pure-virtual"><scope>ofBaseSoundPlayer</scope><name>play</name></member>
+      <member refid="classof_base_sound_player_1af99466881ec3c5b0fb9d374d353ff7b1" prot="public" virt="pure-virtual"><scope>ofBaseSoundPlayer</scope><name>setLoop</name></member>
+      <member refid="classof_base_sound_player_1a576345622ea19d09d5c4e5e3cf6cb653" prot="public" virt="pure-virtual"><scope>ofBaseSoundPlayer</scope><name>setMultiPlay</name></member>
+      <member refid="classof_base_sound_player_1a84e70f38b1ae07380fb2d902f3e21e61" prot="public" virt="pure-virtual"><scope>ofBaseSoundPlayer</scope><name>setPan</name></member>
+      <member refid="classof_base_sound_player_1ab3a7af6b4cbb14ecaf12f836d05d7c8b" prot="public" virt="pure-virtual"><scope>ofBaseSoundPlayer</scope><name>setPaused</name></member>
+      <member refid="classof_base_sound_player_1ae302cd3a5f42cef51ea72f950f6a2b10" prot="public" virt="pure-virtual"><scope>ofBaseSoundPlayer</scope><name>setPosition</name></member>
+      <member refid="classof_base_sound_player_1a39d353e9765a15e18916d2cba4477cf8" prot="public" virt="pure-virtual"><scope>ofBaseSoundPlayer</scope><name>setPositionMS</name></member>
+      <member refid="classof_base_sound_player_1a1b44d5401ee7c0d20fb9d1b9b4d507f9" prot="public" virt="pure-virtual"><scope>ofBaseSoundPlayer</scope><name>setSpeed</name></member>
+      <member refid="classof_base_sound_player_1a8dd48f4e7cad15d4df5c2ab572a243af" prot="public" virt="pure-virtual"><scope>ofBaseSoundPlayer</scope><name>setVolume</name></member>
+      <member refid="classof_base_sound_player_1a815bdc74ee89a4953eeb55803d220ad5" prot="public" virt="pure-virtual"><scope>ofBaseSoundPlayer</scope><name>stop</name></member>
+      <member refid="classof_base_sound_player_1a9d4f87a9c835c9521d63677a40cc2378" prot="public" virt="pure-virtual"><scope>ofBaseSoundPlayer</scope><name>unloadSound</name></member>
+      <member refid="classof_base_sound_player_1a8defee0b9e692647917e4cc78e2b27d1" prot="public" virt="virtual"><scope>ofBaseSoundPlayer</scope><name>~ofBaseSoundPlayer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

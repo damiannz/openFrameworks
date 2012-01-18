@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="of_material_8cpp" kind="file">
+    <compoundname>ofMaterial.cpp</compoundname>
+    <includes refid="of_material_8h" local="yes">ofMaterial.h</includes>
+    <includes refid="of_constants_8h" local="yes">ofConstants.h</includes>
+    <incdepgraph>
+      <node id="1524">
+        <label>iomanip</label>
+      </node>
+      <node id="1502">
+        <label>ofColor.h</label>
+        <link refid="of_color_8h"/>
+        <childnode refid="1503" relation="include">
+        </childnode>
+        <childnode refid="1504" relation="include">
+        </childnode>
+      </node>
+      <node id="1503">
+        <label>limits</label>
+      </node>
+      <node id="1526">
+        <label>ofVec4f.h</label>
+        <link refid="of_vec4f_8h"/>
+        <childnode refid="1508" relation="include">
+        </childnode>
+      </node>
+      <node id="1512">
+        <label>GL/glx.h</label>
+      </node>
+      <node id="1507">
+        <label>ofVec2f.h</label>
+        <link refid="of_vec2f_8h"/>
+        <childnode refid="1508" relation="include">
+        </childnode>
+      </node>
+      <node id="1517">
+        <label>cmath</label>
+      </node>
+      <node id="1506">
+        <label>ofVec3f.h</label>
+        <link refid="of_vec3f_8h"/>
+        <childnode refid="1507" relation="include">
+        </childnode>
+        <childnode refid="1526" relation="include">
+        </childnode>
+        <childnode refid="1508" relation="include">
+        </childnode>
+        <childnode refid="1517" relation="include">
+        </childnode>
+        <childnode refid="1520" relation="include">
+        </childnode>
+      </node>
+      <node id="1519">
+        <label>string</label>
+      </node>
+      <node id="1516">
+        <label>cstdarg</label>
+      </node>
+      <node id="1510">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="1513">
+        <label>tesselator.h</label>
+      </node>
+      <node id="1525">
+        <label>fstream</label>
+      </node>
+      <node id="1504">
+        <label>ofMath.h</label>
+        <link refid="of_math_8h"/>
+        <childnode refid="1505" relation="include">
+        </childnode>
+        <childnode refid="1508" relation="include">
+        </childnode>
+      </node>
+      <node id="1515">
+        <label>cstdio</label>
+      </node>
+      <node id="1518">
+        <label>ctime</label>
+      </node>
+      <node id="1509">
+        <label>unistd.h</label>
+      </node>
+      <node id="1521">
+        <label>vector</label>
+      </node>
+      <node id="1508">
+        <label>ofConstants.h</label>
+        <link refid="of_constants_8h"/>
+        <childnode refid="1509" relation="include">
+        </childnode>
+        <childnode refid="1510" relation="include">
+        </childnode>
+        <childnode refid="1511" relation="include">
+        </childnode>
+        <childnode refid="1512" relation="include">
+        </childnode>
+        <childnode refid="1513" relation="include">
+        </childnode>
+        <childnode refid="1514" relation="include">
+        </childnode>
+        <childnode refid="1515" relation="include">
+        </childnode>
+        <childnode refid="1516" relation="include">
+        </childnode>
+        <childnode refid="1517" relation="include">
+        </childnode>
+        <childnode refid="1518" relation="include">
+        </childnode>
+        <childnode refid="1519" relation="include">
+        </childnode>
+        <childnode refid="1520" relation="include">
+        </childnode>
+        <childnode refid="1521" relation="include">
+        </childnode>
+        <childnode refid="1522" relation="include">
+        </childnode>
+        <childnode refid="1523" relation="include">
+        </childnode>
+        <childnode refid="1524" relation="include">
+        </childnode>
+        <childnode refid="1525" relation="include">
+        </childnode>
+      </node>
+      <node id="1523">
+        <label>sstream</label>
+      </node>
+      <node id="1505">
+        <label>ofPoint.h</label>
+        <link refid="of_point_8h"/>
+        <childnode refid="1506" relation="include">
+        </childnode>
+      </node>
+      <node id="1514">
+        <label>cstdlib</label>
+      </node>
+      <node id="1520">
+        <label>iostream</label>
+      </node>
+      <node id="1500">
+        <label>gl/ofMaterial.cpp</label>
+        <link refid="ofMaterial.cpp"/>
+        <childnode refid="1501" relation="include">
+        </childnode>
+        <childnode refid="1508" relation="include">
+        </childnode>
+      </node>
+      <node id="1501">
+        <label>ofMaterial.h</label>
+        <link refid="of_material_8h"/>
+        <childnode refid="1502" relation="include">
+        </childnode>
+      </node>
+      <node id="1511">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="1522">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_material_8h" kindref="compound">ofMaterial.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_constants_8h" kindref="compound">ofConstants.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><ref refid="classof_material_1a836158031f0b3e24f06833f513197b64" kindref="member">ofMaterial::ofMaterial</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>diffuse.<ref refid="classof_color___1ac8b8c8b21d0b2c2debf7b9876fdfecd6" kindref="member">set</ref>(0.8f,<sp/>0.8f,<sp/>0.8f,<sp/>1.0f);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>specular.<ref refid="classof_color___1ac8b8c8b21d0b2c2debf7b9876fdfecd6" kindref="member">set</ref>(0.0f,<sp/>0.0f,<sp/>0.0f,<sp/>1.0f);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>ambient.<ref refid="classof_color___1ac8b8c8b21d0b2c2debf7b9876fdfecd6" kindref="member">set</ref>(0.2f,<sp/>0.2f,<sp/>0.2f,<sp/>1.0f);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>emissive.<ref refid="classof_color___1ac8b8c8b21d0b2c2debf7b9876fdfecd6" kindref="member">set</ref>(0.0f,<sp/>0.0f,<sp/>0.0f,<sp/>1.0f);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>shininess<sp/>=<sp/>0.2;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_material_1acc3e3f6f1bd89c1d18fa2993795694bb" kindref="member">ofMaterial::setColors</ref>(<ref refid="classof_color__" kindref="compound">ofFloatColor</ref><sp/>oDiffuse,<sp/><ref refid="classof_color__" kindref="compound">ofFloatColor</ref><sp/>oAmbient,<sp/><ref refid="classof_color__" kindref="compound">ofFloatColor</ref><sp/>oSpecular,<sp/><ref refid="classof_color__" kindref="compound">ofFloatColor</ref><sp/>oEmissive)<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_material_1a1916597b2a4107544e83803abdc96364" kindref="member">setDiffuseColor</ref>(oDiffuse);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_material_1ae7a2900d52b294eb7da2501201d6eb57" kindref="member">setAmbientColor</ref>(oAmbient);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_material_1a29881de4785f72e8725d342a9e00db57" kindref="member">setSpecularColor</ref>(oSpecular);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_material_1a7c23e5215e6a6a473ce85b97e72d32d9" kindref="member">setEmissiveColor</ref>(oEmissive);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_material_1a1916597b2a4107544e83803abdc96364" kindref="member">ofMaterial::setDiffuseColor</ref>(<ref refid="classof_color__" kindref="compound">ofFloatColor</ref><sp/>oDiffuse)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>diffuse<sp/>=<sp/>oDiffuse;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_material_1ae7a2900d52b294eb7da2501201d6eb57" kindref="member">ofMaterial::setAmbientColor</ref>(<ref refid="classof_color__" kindref="compound">ofFloatColor</ref><sp/>oAmbient)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ambient<sp/>=<sp/>oAmbient;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_material_1a29881de4785f72e8725d342a9e00db57" kindref="member">ofMaterial::setSpecularColor</ref>(<ref refid="classof_color__" kindref="compound">ofFloatColor</ref><sp/>oSpecular)<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>specular<sp/>=<sp/>oSpecular;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_material_1a7c23e5215e6a6a473ce85b97e72d32d9" kindref="member">ofMaterial::setEmissiveColor</ref>(<ref refid="classof_color__" kindref="compound">ofFloatColor</ref><sp/>oEmissive)<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>emissive<sp/>=<sp/>oEmissive;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_material_1ad3208cb58a891c4524da923574668f0e" kindref="member">ofMaterial::setShininess</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>nShininess)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shininess<sp/>=<sp/>nShininess;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_material_1a7e5b3feec51113f102c1cdf61e69c4c9" kindref="member">ofMaterial::getShininess</ref>(){</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>shininess;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><ref refid="classof_color__" kindref="compound">ofFloatColor</ref><sp/><ref refid="classof_material_1aa4e8add9fb77a75a6fd079ee42aa1a70" kindref="member">ofMaterial::getDiffuseColor</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>diffuse;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><ref refid="classof_color__" kindref="compound">ofFloatColor</ref><sp/><ref refid="classof_material_1a04bb61813039acb6e9d0d9fa71f34bb2" kindref="member">ofMaterial::getAmbientColor</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ambient;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><ref refid="classof_color__" kindref="compound">ofFloatColor</ref><sp/><ref refid="classof_material_1a60c6885bb1daf29da3c07973d5d065d2" kindref="member">ofMaterial::getSpecularColor</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>specular;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><ref refid="classof_color__" kindref="compound">ofFloatColor</ref><sp/><ref refid="classof_material_1a250ba78d554ca163023dcad20295d433" kindref="member">ofMaterial::getEmissiveColor</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>emissive;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_material_1abcace3dacc3da0bba1559e4c6a7e4a3a" kindref="member">ofMaterial::begin</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>save<sp/>previous<sp/>values,<sp/>opengl<sp/>es<sp/>cannot<sp/>use<sp/>push/pop<sp/>attrib</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glGetMaterialfv(GL_FRONT_AND_BACK,GL_DIFFUSE,&amp;prev_diffuse.<ref refid="classof_color___1a6f49bc7e4aec1f65d9598599ade9b692" kindref="member">r</ref>);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glGetMaterialfv(GL_FRONT_AND_BACK,GL_SPECULAR,&amp;prev_specular.<ref refid="classof_color___1a6f49bc7e4aec1f65d9598599ade9b692" kindref="member">r</ref>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glGetMaterialfv(GL_FRONT_AND_BACK,GL_AMBIENT,&amp;prev_ambient.<ref refid="classof_color___1a6f49bc7e4aec1f65d9598599ade9b692" kindref="member">r</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glGetMaterialfv(GL_FRONT_AND_BACK,GL_EMISSION,&amp;prev_emissive.<ref refid="classof_color___1a6f49bc7e4aec1f65d9598599ade9b692" kindref="member">r</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glGetMaterialfv(GL_FRONT_AND_BACK,<sp/>GL_SHININESS,<sp/>&amp;shininess);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Material<sp/>colors<sp/>and<sp/>properties</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glMaterialfv(GL_FRONT_AND_BACK,<sp/>GL_DIFFUSE,<sp/>&amp;diffuse.<ref refid="classof_color___1a6f49bc7e4aec1f65d9598599ade9b692" kindref="member">r</ref>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glMaterialfv(GL_FRONT_AND_BACK,<sp/>GL_SPECULAR,<sp/>&amp;specular.<ref refid="classof_color___1a6f49bc7e4aec1f65d9598599ade9b692" kindref="member">r</ref>);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glMaterialfv(GL_FRONT_AND_BACK,<sp/>GL_AMBIENT,<sp/>&amp;ambient.<ref refid="classof_color___1a6f49bc7e4aec1f65d9598599ade9b692" kindref="member">r</ref>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glMaterialfv(GL_FRONT_AND_BACK,<sp/>GL_EMISSION,<sp/>&amp;emissive.<ref refid="classof_color___1a6f49bc7e4aec1f65d9598599ade9b692" kindref="member">r</ref>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glMaterialf(GL_FRONT_AND_BACK,<sp/>GL_SHININESS,<sp/>shininess);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_material_1adcf3d82a4888b535bd1724900536c01a" kindref="member">ofMaterial::end</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>previous<sp/>material<sp/>colors<sp/>and<sp/>properties</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glMaterialfv(GL_FRONT_AND_BACK,<sp/>GL_DIFFUSE,<sp/>&amp;prev_diffuse.<ref refid="classof_color___1a6f49bc7e4aec1f65d9598599ade9b692" kindref="member">r</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glMaterialfv(GL_FRONT_AND_BACK,<sp/>GL_SPECULAR,<sp/>&amp;prev_specular.<ref refid="classof_color___1a6f49bc7e4aec1f65d9598599ade9b692" kindref="member">r</ref>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glMaterialfv(GL_FRONT_AND_BACK,<sp/>GL_AMBIENT,<sp/>&amp;prev_ambient.<ref refid="classof_color___1a6f49bc7e4aec1f65d9598599ade9b692" kindref="member">r</ref>);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glMaterialfv(GL_FRONT_AND_BACK,<sp/>GL_EMISSION,<sp/>&amp;prev_emissive.<ref refid="classof_color___1a6f49bc7e4aec1f65d9598599ade9b692" kindref="member">r</ref>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glMaterialf(GL_FRONT_AND_BACK,<sp/>GL_SHININESS,<sp/>prev_shininess);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/gl/ofMaterial.cpp"/>
+  </compounddef>
+</doxygen>

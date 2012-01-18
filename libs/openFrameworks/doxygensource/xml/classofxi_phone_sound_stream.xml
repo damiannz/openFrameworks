@@ -1,0 +1,362 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="classofxi_phone_sound_stream" kind="class" prot="public">
+    <compoundname>ofxiPhoneSoundStream</compoundname>
+    <basecompoundref refid="classof_base_sound_stream" prot="public" virt="non-virtual">ofBaseSoundStream</basecompoundref>
+    <includes local="no">ofxiPhoneSoundStream.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classofxi_phone_sound_stream_1a1fc5bde93f230d4a3d7e96d28154a1b6" prot="private" static="no" mutable="no">
+        <type>long unsigned long</type>
+        <definition>long unsigned long ofxiPhoneSoundStream::tickCount</definition>
+        <argsstring></argsstring>
+        <name>tickCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" line="32" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classofxi_phone_sound_stream_1ae849b5806539386631493a0e380e48b0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ofxiPhoneSoundStream::nInputChannels</definition>
+        <argsstring></argsstring>
+        <name>nInputChannels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" line="33" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classofxi_phone_sound_stream_1a6ba8c19a359e5deca3bdafa2e47c95ba" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ofxiPhoneSoundStream::nOutputChannels</definition>
+        <argsstring></argsstring>
+        <name>nOutputChannels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" line="34" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classofxi_phone_sound_stream_1aeacc3786aa5191b887a4e220bb7f30b2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ofxiPhoneSoundStream::sampleRate</definition>
+        <argsstring></argsstring>
+        <name>sampleRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" line="35" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classofxi_phone_sound_stream_1ae3d75a85437cd630f794d0765f6f73d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ofxiPhoneSoundStream::ofxiPhoneSoundStream</definition>
+        <argsstring>()</argsstring>
+        <name>ofxiPhoneSoundStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" line="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classofxi_phone_sound_stream_1a941a7e8bc3351a4173d0c450352429d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ofxiPhoneSoundStream::~ofxiPhoneSoundStream</definition>
+        <argsstring>()</argsstring>
+        <name>~ofxiPhoneSoundStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" line="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classofxi_phone_sound_stream_1a35b062b888f313abaf3e612ae4289de5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ofxiPhoneSoundStream::listDevices</definition>
+        <argsstring>()</argsstring>
+        <name>listDevices</name>
+        <reimplements refid="classof_base_sound_stream_1aec4462be763b5b784a91aa569733d94e">listDevices</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" line="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classofxi_phone_sound_stream_1afdc75a18c57437b04a3e29d9c673684c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ofxiPhoneSoundStream::setDeviceID</definition>
+        <argsstring>(int deviceID)</argsstring>
+        <name>setDeviceID</name>
+        <reimplements refid="classof_base_sound_stream_1a309be9bbda641649d801093359a3b2c5">setDeviceID</reimplements>
+        <param>
+          <type>int</type>
+          <declname>deviceID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" line="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classofxi_phone_sound_stream_1aa6e3ffccbbed3df2c4629b88c18fc8ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ofxiPhoneSoundStream::setInput</definition>
+        <argsstring>(ofBaseSoundInput *soundInput)</argsstring>
+        <name>setInput</name>
+        <reimplements refid="classof_base_sound_stream_1a1fa47c366b7790ee7419513b3efcd0e5">setInput</reimplements>
+        <param>
+          <type><ref refid="classof_base_sound_input" kindref="compound">ofBaseSoundInput</ref> *</type>
+          <declname>soundInput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" line="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classofxi_phone_sound_stream_1ad10e5a06e8dba17fa0956156e6462e97" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ofxiPhoneSoundStream::setOutput</definition>
+        <argsstring>(ofBaseSoundOutput *soundOutput)</argsstring>
+        <name>setOutput</name>
+        <reimplements refid="classof_base_sound_stream_1a7ab9e9a649a08921bfbde67cd6a752f7">setOutput</reimplements>
+        <param>
+          <type><ref refid="classof_base_sound_output" kindref="compound">ofBaseSoundOutput</ref> *</type>
+          <declname>soundOutput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" line="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classofxi_phone_sound_stream_1a246082d2a9800dc8ecd2f82283e80a46" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ofxiPhoneSoundStream::setup</definition>
+        <argsstring>(int outChannels, int inChannels, int sampleRate, int bufferSize, int nBuffers)</argsstring>
+        <name>setup</name>
+        <reimplements refid="classof_base_sound_stream_1a603054248acf232b3a36c944cbe5fdb4">setup</reimplements>
+        <param>
+          <type>int</type>
+          <declname>outChannels</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>inChannels</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sampleRate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bufferSize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nBuffers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" line="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classofxi_phone_sound_stream_1a784b07bb7ebc9d89a3ef7a97bc10850a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ofxiPhoneSoundStream::setup</definition>
+        <argsstring>(ofBaseApp *app, int outChannels, int inChannels, int sampleRate, int bufferSize, int nBuffers)</argsstring>
+        <name>setup</name>
+        <reimplements refid="classof_base_sound_stream_1aad3e1f8d7f77e24699cbfe28f2c1f8ef">setup</reimplements>
+        <param>
+          <type><ref refid="classof_base_app" kindref="compound">ofBaseApp</ref> *</type>
+          <declname>app</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>outChannels</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>inChannels</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sampleRate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bufferSize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nBuffers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" line="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classofxi_phone_sound_stream_1a95af3acd84cfa592f7ebc13210eb4486" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ofxiPhoneSoundStream::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <reimplements refid="classof_base_sound_stream_1a68cb0a39471073a6bc9ca14abeb60c61">start</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" line="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classofxi_phone_sound_stream_1a270b2ea148d969297b6ffabe01a91768" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ofxiPhoneSoundStream::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <reimplements refid="classof_base_sound_stream_1a500ed10a32ae3b6efa223cfba115086e">stop</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" line="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classofxi_phone_sound_stream_1ab10a2994aaa80e58189d709f80771715" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ofxiPhoneSoundStream::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <reimplements refid="classof_base_sound_stream_1a972327e868ca15ecc79476919fbd25bf">close</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" line="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classofxi_phone_sound_stream_1a848ef691d4cf07ad2f08a56e244eb23d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>long unsigned long</type>
+        <definition>long unsigned long ofxiPhoneSoundStream::getTickCount</definition>
+        <argsstring>()</argsstring>
+        <name>getTickCount</name>
+        <reimplements refid="classof_base_sound_stream_1a8f0693f0fb84d3a83763b32e3ee8496c">getTickCount</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" line="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classofxi_phone_sound_stream_1ae1ab22eb6feb077736fcdd77adeb0e8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofxiPhoneSoundStream::getNumInputChannels</definition>
+        <argsstring>()</argsstring>
+        <name>getNumInputChannels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" line="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classofxi_phone_sound_stream_1a42d2fdc8162e706d1b0bb066d25e01da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ofxiPhoneSoundStream::getNumOutputChannels</definition>
+        <argsstring>()</argsstring>
+        <name>getNumOutputChannels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" line="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="636">
+        <label>ofBaseSoundStream</label>
+        <link refid="classof_base_sound_stream"/>
+      </node>
+      <node id="635">
+        <label>ofxiPhoneSoundStream</label>
+        <link refid="classofxi_phone_sound_stream"/>
+        <childnode refid="636" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="638">
+        <label>ofBaseSoundStream</label>
+        <link refid="classof_base_sound_stream"/>
+      </node>
+      <node id="637">
+        <label>ofxiPhoneSoundStream</label>
+        <link refid="classofxi_phone_sound_stream"/>
+        <childnode refid="638" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" line="9" bodyfile="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/sound/ofxiPhoneSoundStream.h" bodystart="9" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classofxi_phone_sound_stream_1ab10a2994aaa80e58189d709f80771715" prot="public" virt="virtual"><scope>ofxiPhoneSoundStream</scope><name>close</name></member>
+      <member refid="classofxi_phone_sound_stream_1ae1ab22eb6feb077736fcdd77adeb0e8b" prot="public" virt="non-virtual"><scope>ofxiPhoneSoundStream</scope><name>getNumInputChannels</name></member>
+      <member refid="classofxi_phone_sound_stream_1a42d2fdc8162e706d1b0bb066d25e01da" prot="public" virt="non-virtual"><scope>ofxiPhoneSoundStream</scope><name>getNumOutputChannels</name></member>
+      <member refid="classofxi_phone_sound_stream_1a848ef691d4cf07ad2f08a56e244eb23d" prot="public" virt="virtual"><scope>ofxiPhoneSoundStream</scope><name>getTickCount</name></member>
+      <member refid="classofxi_phone_sound_stream_1a35b062b888f313abaf3e612ae4289de5" prot="public" virt="virtual"><scope>ofxiPhoneSoundStream</scope><name>listDevices</name></member>
+      <member refid="classofxi_phone_sound_stream_1ae849b5806539386631493a0e380e48b0" prot="private" virt="non-virtual"><scope>ofxiPhoneSoundStream</scope><name>nInputChannels</name></member>
+      <member refid="classofxi_phone_sound_stream_1a6ba8c19a359e5deca3bdafa2e47c95ba" prot="private" virt="non-virtual"><scope>ofxiPhoneSoundStream</scope><name>nOutputChannels</name></member>
+      <member refid="classofxi_phone_sound_stream_1ae3d75a85437cd630f794d0765f6f73d4" prot="public" virt="non-virtual"><scope>ofxiPhoneSoundStream</scope><name>ofxiPhoneSoundStream</name></member>
+      <member refid="classofxi_phone_sound_stream_1aeacc3786aa5191b887a4e220bb7f30b2" prot="private" virt="non-virtual"><scope>ofxiPhoneSoundStream</scope><name>sampleRate</name></member>
+      <member refid="classofxi_phone_sound_stream_1afdc75a18c57437b04a3e29d9c673684c" prot="public" virt="virtual"><scope>ofxiPhoneSoundStream</scope><name>setDeviceID</name></member>
+      <member refid="classofxi_phone_sound_stream_1aa6e3ffccbbed3df2c4629b88c18fc8ce" prot="public" virt="virtual"><scope>ofxiPhoneSoundStream</scope><name>setInput</name></member>
+      <member refid="classofxi_phone_sound_stream_1ad10e5a06e8dba17fa0956156e6462e97" prot="public" virt="virtual"><scope>ofxiPhoneSoundStream</scope><name>setOutput</name></member>
+      <member refid="classofxi_phone_sound_stream_1a246082d2a9800dc8ecd2f82283e80a46" prot="public" virt="virtual"><scope>ofxiPhoneSoundStream</scope><name>setup</name></member>
+      <member refid="classofxi_phone_sound_stream_1a784b07bb7ebc9d89a3ef7a97bc10850a" prot="public" virt="virtual"><scope>ofxiPhoneSoundStream</scope><name>setup</name></member>
+      <member refid="classofxi_phone_sound_stream_1a95af3acd84cfa592f7ebc13210eb4486" prot="public" virt="virtual"><scope>ofxiPhoneSoundStream</scope><name>start</name></member>
+      <member refid="classofxi_phone_sound_stream_1a270b2ea148d969297b6ffabe01a91768" prot="public" virt="virtual"><scope>ofxiPhoneSoundStream</scope><name>stop</name></member>
+      <member refid="classofxi_phone_sound_stream_1a1fc5bde93f230d4a3d7e96d28154a1b6" prot="private" virt="non-virtual"><scope>ofxiPhoneSoundStream</scope><name>tickCount</name></member>
+      <member refid="classof_base_sound_stream_1a238e638c8990dce27b1b2f2774f0aa68" prot="public" virt="virtual"><scope>ofxiPhoneSoundStream</scope><name>~ofBaseSoundStream</name></member>
+      <member refid="classofxi_phone_sound_stream_1a941a7e8bc3351a4173d0c450352429d3" prot="public" virt="non-virtual"><scope>ofxiPhoneSoundStream</scope><name>~ofxiPhoneSoundStream</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

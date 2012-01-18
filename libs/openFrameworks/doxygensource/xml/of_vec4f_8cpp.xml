@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="of_vec4f_8cpp" kind="file">
+    <compoundname>ofVec4f.cpp</compoundname>
+    <includes refid="of_vec2f_8h" local="yes">ofVec2f.h</includes>
+    <includes refid="of_vec3f_8h" local="yes">ofVec3f.h</includes>
+    <includes refid="of_vec4f_8h" local="yes">ofVec4f.h</includes>
+    <incdepgraph>
+      <node id="3565">
+        <label>math/ofVec4f.cpp</label>
+        <link refid="ofVec4f.cpp"/>
+        <childnode refid="3566" relation="include">
+        </childnode>
+        <childnode refid="3585" relation="include">
+        </childnode>
+        <childnode refid="3586" relation="include">
+        </childnode>
+      </node>
+      <node id="3583">
+        <label>iomanip</label>
+      </node>
+      <node id="3586">
+        <label>ofVec4f.h</label>
+        <link refid="of_vec4f_8h"/>
+        <childnode refid="3567" relation="include">
+        </childnode>
+      </node>
+      <node id="3571">
+        <label>GL/glx.h</label>
+      </node>
+      <node id="3566">
+        <label>ofVec2f.h</label>
+        <link refid="of_vec2f_8h"/>
+        <childnode refid="3567" relation="include">
+        </childnode>
+      </node>
+      <node id="3576">
+        <label>cmath</label>
+      </node>
+      <node id="3585">
+        <label>ofVec3f.h</label>
+        <link refid="of_vec3f_8h"/>
+        <childnode refid="3566" relation="include">
+        </childnode>
+        <childnode refid="3586" relation="include">
+        </childnode>
+        <childnode refid="3567" relation="include">
+        </childnode>
+        <childnode refid="3576" relation="include">
+        </childnode>
+        <childnode refid="3579" relation="include">
+        </childnode>
+      </node>
+      <node id="3578">
+        <label>string</label>
+      </node>
+      <node id="3575">
+        <label>cstdarg</label>
+      </node>
+      <node id="3569">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="3572">
+        <label>tesselator.h</label>
+      </node>
+      <node id="3584">
+        <label>fstream</label>
+      </node>
+      <node id="3574">
+        <label>cstdio</label>
+      </node>
+      <node id="3577">
+        <label>ctime</label>
+      </node>
+      <node id="3568">
+        <label>unistd.h</label>
+      </node>
+      <node id="3580">
+        <label>vector</label>
+      </node>
+      <node id="3567">
+        <label>ofConstants.h</label>
+        <link refid="of_constants_8h"/>
+        <childnode refid="3568" relation="include">
+        </childnode>
+        <childnode refid="3569" relation="include">
+        </childnode>
+        <childnode refid="3570" relation="include">
+        </childnode>
+        <childnode refid="3571" relation="include">
+        </childnode>
+        <childnode refid="3572" relation="include">
+        </childnode>
+        <childnode refid="3573" relation="include">
+        </childnode>
+        <childnode refid="3574" relation="include">
+        </childnode>
+        <childnode refid="3575" relation="include">
+        </childnode>
+        <childnode refid="3576" relation="include">
+        </childnode>
+        <childnode refid="3577" relation="include">
+        </childnode>
+        <childnode refid="3578" relation="include">
+        </childnode>
+        <childnode refid="3579" relation="include">
+        </childnode>
+        <childnode refid="3580" relation="include">
+        </childnode>
+        <childnode refid="3581" relation="include">
+        </childnode>
+        <childnode refid="3582" relation="include">
+        </childnode>
+        <childnode refid="3583" relation="include">
+        </childnode>
+        <childnode refid="3584" relation="include">
+        </childnode>
+      </node>
+      <node id="3582">
+        <label>sstream</label>
+      </node>
+      <node id="3573">
+        <label>cstdlib</label>
+      </node>
+      <node id="3579">
+        <label>iostream</label>
+      </node>
+      <node id="3570">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="3581">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_vec2f_8h" kindref="compound">ofVec2f.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_vec3f_8h" kindref="compound">ofVec3f.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_vec4f_8h" kindref="compound">ofVec4f.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="classof_vec4f_1a76e2c14d2236abaa04a7bf9b0b99f8f8" kindref="member">ofVec4f::ofVec4f</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec3f" kindref="compound">ofVec3f</ref>&amp;<sp/>vec)<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vec4f_1a20598461757aaad1950614d7b42954d7" kindref="member">x</ref><sp/>=<sp/>vec.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vec4f_1a6660d60e0af7f9db6d224061dabd4cae" kindref="member">y</ref><sp/>=<sp/>vec.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vec4f_1a2fffa6cc623c8f6d7e60aa9f9c7ae9d0" kindref="member">z</ref><sp/>=<sp/>vec.<ref refid="classof_vec3f_1aa6c8d5ae5fdaeb516242aca987ccb9bc" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vec4f_1a0b55d23e9fa321c34a60752605c19bae" kindref="member">w</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><ref refid="classof_vec4f_1a76e2c14d2236abaa04a7bf9b0b99f8f8" kindref="member">ofVec4f::ofVec4f</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec2f" kindref="compound">ofVec2f</ref>&amp;<sp/>vec)<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vec4f_1a20598461757aaad1950614d7b42954d7" kindref="member">x</ref><sp/>=<sp/>vec.<ref refid="classof_vec2f_1a81763bfaf27b7db5f734055212ca6ec5" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vec4f_1a6660d60e0af7f9db6d224061dabd4cae" kindref="member">y</ref><sp/>=<sp/>vec.<ref refid="classof_vec2f_1a4be985445b601e54d3ca5917c3d7ac8d" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vec4f_1a2fffa6cc623c8f6d7e60aa9f9c7ae9d0" kindref="member">z</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vec4f_1a0b55d23e9fa321c34a60752605c19bae" kindref="member">w</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/math/ofVec4f.cpp"/>
+  </compounddef>
+</doxygen>

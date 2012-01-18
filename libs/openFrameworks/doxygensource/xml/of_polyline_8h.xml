@@ -1,0 +1,528 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="of_polyline_8h" kind="file">
+    <compoundname>ofPolyline.h</compoundname>
+    <includes refid="of_point_8h" local="yes">ofPoint.h</includes>
+    <includes refid="of_constants_8h" local="yes">ofConstants.h</includes>
+    <includes local="no">deque</includes>
+    <includes refid="of_rectangle_8h" local="yes">ofRectangle.h</includes>
+    <includedby refid="of_g_l_renderer_8h" local="yes">gl/ofGLRenderer.h</includedby>
+    <includedby refid="of_path_8h" local="yes">graphics/ofPath.h</includedby>
+    <includedby refid="of_tessellator_8h" local="yes">graphics/ofTessellator.h</includedby>
+    <includedby refid="of_polyline_8cpp" local="yes">graphics/ofPolyline.cpp</includedby>
+    <includedby refid="of_math_8cpp" local="yes">math/ofMath.cpp</includedby>
+    <includedby refid="of_main_8h" local="yes">ofMain.h</includedby>
+    <incdepgraph>
+      <node id="2621">
+        <label>iomanip</label>
+      </node>
+      <node id="2601">
+        <label>graphics/ofPolyline.h</label>
+        <link refid="ofPolyline.h"/>
+        <childnode refid="2602" relation="include">
+        </childnode>
+        <childnode refid="2605" relation="include">
+        </childnode>
+        <childnode refid="2624" relation="include">
+        </childnode>
+        <childnode refid="2625" relation="include">
+        </childnode>
+      </node>
+      <node id="2623">
+        <label>ofVec4f.h</label>
+        <link refid="of_vec4f_8h"/>
+        <childnode refid="2605" relation="include">
+        </childnode>
+      </node>
+      <node id="2609">
+        <label>GL/glx.h</label>
+      </node>
+      <node id="2604">
+        <label>ofVec2f.h</label>
+        <link refid="of_vec2f_8h"/>
+        <childnode refid="2605" relation="include">
+        </childnode>
+      </node>
+      <node id="2614">
+        <label>cmath</label>
+      </node>
+      <node id="2603">
+        <label>ofVec3f.h</label>
+        <link refid="of_vec3f_8h"/>
+        <childnode refid="2604" relation="include">
+        </childnode>
+        <childnode refid="2623" relation="include">
+        </childnode>
+        <childnode refid="2605" relation="include">
+        </childnode>
+        <childnode refid="2614" relation="include">
+        </childnode>
+        <childnode refid="2617" relation="include">
+        </childnode>
+      </node>
+      <node id="2616">
+        <label>string</label>
+      </node>
+      <node id="2613">
+        <label>cstdarg</label>
+      </node>
+      <node id="2607">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="2610">
+        <label>tesselator.h</label>
+      </node>
+      <node id="2622">
+        <label>fstream</label>
+      </node>
+      <node id="2612">
+        <label>cstdio</label>
+      </node>
+      <node id="2615">
+        <label>ctime</label>
+      </node>
+      <node id="2606">
+        <label>unistd.h</label>
+      </node>
+      <node id="2618">
+        <label>vector</label>
+      </node>
+      <node id="2605">
+        <label>ofConstants.h</label>
+        <link refid="of_constants_8h"/>
+        <childnode refid="2606" relation="include">
+        </childnode>
+        <childnode refid="2607" relation="include">
+        </childnode>
+        <childnode refid="2608" relation="include">
+        </childnode>
+        <childnode refid="2609" relation="include">
+        </childnode>
+        <childnode refid="2610" relation="include">
+        </childnode>
+        <childnode refid="2611" relation="include">
+        </childnode>
+        <childnode refid="2612" relation="include">
+        </childnode>
+        <childnode refid="2613" relation="include">
+        </childnode>
+        <childnode refid="2614" relation="include">
+        </childnode>
+        <childnode refid="2615" relation="include">
+        </childnode>
+        <childnode refid="2616" relation="include">
+        </childnode>
+        <childnode refid="2617" relation="include">
+        </childnode>
+        <childnode refid="2618" relation="include">
+        </childnode>
+        <childnode refid="2619" relation="include">
+        </childnode>
+        <childnode refid="2620" relation="include">
+        </childnode>
+        <childnode refid="2621" relation="include">
+        </childnode>
+        <childnode refid="2622" relation="include">
+        </childnode>
+      </node>
+      <node id="2620">
+        <label>sstream</label>
+      </node>
+      <node id="2602">
+        <label>ofPoint.h</label>
+        <link refid="of_point_8h"/>
+        <childnode refid="2603" relation="include">
+        </childnode>
+      </node>
+      <node id="2611">
+        <label>cstdlib</label>
+      </node>
+      <node id="2617">
+        <label>iostream</label>
+      </node>
+      <node id="2624">
+        <label>deque</label>
+      </node>
+      <node id="2625">
+        <label>ofRectangle.h</label>
+        <link refid="of_rectangle_8h"/>
+        <childnode refid="2602" relation="include">
+        </childnode>
+      </node>
+      <node id="2608">
+        <label>GL/gl.h</label>
+      </node>
+      <node id="2619">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2652">
+        <label>utils/ofUtils.cpp</label>
+        <link refid="of_utils_8cpp"/>
+      </node>
+      <node id="2630">
+        <label>gl/ofGLRenderer.cpp</label>
+        <link refid="of_g_l_renderer_8cpp"/>
+      </node>
+      <node id="2657">
+        <label>graphics/ofTessellator.cpp</label>
+        <link refid="of_tessellator_8cpp"/>
+      </node>
+      <node id="2626">
+        <label>graphics/ofPolyline.h</label>
+        <link refid="ofPolyline.h"/>
+        <childnode refid="2627" relation="include">
+        </childnode>
+        <childnode refid="2653" relation="include">
+        </childnode>
+        <childnode refid="2656" relation="include">
+        </childnode>
+        <childnode refid="2650" relation="include">
+        </childnode>
+        <childnode refid="2658" relation="include">
+        </childnode>
+        <childnode refid="2638" relation="include">
+        </childnode>
+      </node>
+      <node id="2644">
+        <label>events/ofEvents.cpp</label>
+        <link refid="of_events_8cpp"/>
+      </node>
+      <node id="2638">
+        <label>ofMain.h</label>
+        <link refid="of_main_8h"/>
+      </node>
+      <node id="2656">
+        <label>graphics/ofTessellator.h</label>
+        <link refid="of_tessellator_8h"/>
+        <childnode refid="2653" relation="include">
+        </childnode>
+        <childnode refid="2649" relation="include">
+        </childnode>
+        <childnode refid="2657" relation="include">
+        </childnode>
+        <childnode refid="2638" relation="include">
+        </childnode>
+      </node>
+      <node id="2648">
+        <label>graphics/ofImage.cpp</label>
+        <link refid="of_image_8cpp"/>
+      </node>
+      <node id="2635">
+        <label>3d/ofCamera.cpp</label>
+        <link refid="of_camera_8cpp"/>
+      </node>
+      <node id="2639">
+        <label>3d/ofNode.cpp</label>
+        <link refid="of_node_8cpp"/>
+      </node>
+      <node id="2629">
+        <label>gl/ofFbo.cpp</label>
+        <link refid="of_fbo_8cpp"/>
+      </node>
+      <node id="2628">
+        <label>app/ofAppRunner.cpp</label>
+        <link refid="of_app_runner_8cpp"/>
+      </node>
+      <node id="2645">
+        <label>gl/ofTexture.cpp</label>
+        <link refid="of_texture_8cpp"/>
+      </node>
+      <node id="2636">
+        <label>3d/ofEasyCam.h</label>
+        <link refid="of_easy_cam_8h"/>
+        <childnode refid="2637" relation="include">
+        </childnode>
+        <childnode refid="2638" relation="include">
+        </childnode>
+      </node>
+      <node id="2658">
+        <label>math/ofMath.cpp</label>
+        <link refid="of_math_8cpp"/>
+      </node>
+      <node id="2627">
+        <label>gl/ofGLRenderer.h</label>
+        <link refid="of_g_l_renderer_8h"/>
+        <childnode refid="2628" relation="include">
+        </childnode>
+        <childnode refid="2629" relation="include">
+        </childnode>
+        <childnode refid="2630" relation="include">
+        </childnode>
+        <childnode refid="2631" relation="include">
+        </childnode>
+        <childnode refid="2647" relation="include">
+        </childnode>
+        <childnode refid="2638" relation="include">
+        </childnode>
+      </node>
+      <node id="2654">
+        <label>graphics/ofCairoRenderer.h</label>
+        <link refid="of_cairo_renderer_8h"/>
+        <childnode refid="2646" relation="include">
+        </childnode>
+        <childnode refid="2647" relation="include">
+        </childnode>
+        <childnode refid="2638" relation="include">
+        </childnode>
+      </node>
+      <node id="2653">
+        <label>graphics/ofPath.h</label>
+        <link refid="of_path_8h"/>
+        <childnode refid="2630" relation="include">
+        </childnode>
+        <childnode refid="2654" relation="include">
+        </childnode>
+        <childnode refid="2647" relation="include">
+        </childnode>
+        <childnode refid="2649" relation="include">
+        </childnode>
+        <childnode refid="2655" relation="include">
+        </childnode>
+        <childnode refid="2638" relation="include">
+        </childnode>
+      </node>
+      <node id="2640">
+        <label>gl/ofLight.h</label>
+        <link refid="of_light_8h"/>
+        <childnode refid="2641" relation="include">
+        </childnode>
+        <childnode refid="2638" relation="include">
+        </childnode>
+      </node>
+      <node id="2634">
+        <label>3d/ofCamera.h</label>
+        <link refid="of_camera_8h"/>
+        <childnode refid="2635" relation="include">
+        </childnode>
+        <childnode refid="2636" relation="include">
+        </childnode>
+        <childnode refid="2638" relation="include">
+        </childnode>
+      </node>
+      <node id="2647">
+        <label>graphics/ofGraphics.cpp</label>
+        <link refid="of_graphics_8cpp"/>
+      </node>
+      <node id="2643">
+        <label>app/ofAppGlutWindow.cpp</label>
+        <link refid="of_app_glut_window_8cpp"/>
+      </node>
+      <node id="2637">
+        <label>3d/ofEasyCam.cpp</label>
+        <link refid="of_easy_cam_8cpp"/>
+      </node>
+      <node id="2633">
+        <label>3d/ofNode.h</label>
+        <link refid="of_node_8h"/>
+        <childnode refid="2634" relation="include">
+        </childnode>
+        <childnode refid="2639" relation="include">
+        </childnode>
+        <childnode refid="2640" relation="include">
+        </childnode>
+        <childnode refid="2638" relation="include">
+        </childnode>
+      </node>
+      <node id="2632">
+        <label>3d/of3dUtils.cpp</label>
+        <link refid="of3d_utils_8cpp"/>
+      </node>
+      <node id="2631">
+        <label>graphics/ofGraphics.h</label>
+        <link refid="of_graphics_8h"/>
+        <childnode refid="2632" relation="include">
+        </childnode>
+        <childnode refid="2633" relation="include">
+        </childnode>
+        <childnode refid="2642" relation="include">
+        </childnode>
+        <childnode refid="2643" relation="include">
+        </childnode>
+        <childnode refid="2628" relation="include">
+        </childnode>
+        <childnode refid="2644" relation="include">
+        </childnode>
+        <childnode refid="2629" relation="include">
+        </childnode>
+        <childnode refid="2630" relation="include">
+        </childnode>
+        <childnode refid="2645" relation="include">
+        </childnode>
+        <childnode refid="2646" relation="include">
+        </childnode>
+        <childnode refid="2647" relation="include">
+        </childnode>
+        <childnode refid="2648" relation="include">
+        </childnode>
+        <childnode refid="2649" relation="include">
+        </childnode>
+        <childnode refid="2650" relation="include">
+        </childnode>
+        <childnode refid="2651" relation="include">
+        </childnode>
+        <childnode refid="2638" relation="include">
+        </childnode>
+        <childnode refid="2652" relation="include">
+        </childnode>
+      </node>
+      <node id="2641">
+        <label>gl/ofLight.cpp</label>
+        <link refid="of_light_8cpp"/>
+      </node>
+      <node id="2649">
+        <label>graphics/ofPath.cpp</label>
+        <link refid="of_path_8cpp"/>
+      </node>
+      <node id="2655">
+        <label>graphics/ofTrueTypeFont.h</label>
+        <link refid="of_true_type_font_8h"/>
+        <childnode refid="2651" relation="include">
+        </childnode>
+        <childnode refid="2638" relation="include">
+        </childnode>
+      </node>
+      <node id="2646">
+        <label>graphics/ofCairoRenderer.cpp</label>
+        <link refid="of_cairo_renderer_8cpp"/>
+      </node>
+      <node id="2650">
+        <label>graphics/ofPolyline.cpp</label>
+        <link refid="of_polyline_8cpp"/>
+      </node>
+      <node id="2642">
+        <label>3d/ofMesh.cpp</label>
+        <link refid="of_mesh_8cpp"/>
+      </node>
+      <node id="2651">
+        <label>graphics/ofTrueTypeFont.cpp</label>
+        <link refid="of_true_type_font_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classof_polyline" prot="public">ofPolyline</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_point_8h" kindref="compound">ofPoint.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_constants_8h" kindref="compound">ofConstants.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;deque&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="of_rectangle_8h" kindref="compound">ofRectangle.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ofPolyline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>line<sp/>composed<sp/>of<sp/>straight<sp/>line<sp/>segments.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classof_polyline" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classof_polyline" kindref="compound">ofPolyline</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_polyline_1ab8b6c33d5cb672d393aa107434d908c2" kindref="member">ofPolyline</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_polyline_1ab8b6c33d5cb672d393aa107434d908c2" kindref="member">ofPolyline</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;ofPoint&gt;&amp;<sp/><ref refid="of_bitmap_font_8cpp_1aaebd14048566bff4d6920e945b7de664" kindref="member">verts</ref>);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1a8087ebabf60380f8736282d0e98118bc" kindref="member" tooltip="remove all the points">clear</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1a39230dd712cb2e9647ed0679eef06124" kindref="member" tooltip="add a vertex">addVertex</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref>&amp;<sp/>p<sp/>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1a39230dd712cb2e9647ed0679eef06124" kindref="member" tooltip="add a vertex">addVertex</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z=0<sp/>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1a4d8c037817568d2ec9bb924e25258adf" kindref="member">addVertexes</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;ofPoint&gt;&amp;<sp/>verts<sp/>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1a4d8c037817568d2ec9bb924e25258adf" kindref="member">addVertexes</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref>*<sp/>verts,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numverts);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>adds<sp/>a<sp/>straight<sp/>line<sp/>to<sp/>the<sp/>polyline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1a4c7d5b95780ebf1aefb079f55bcf8d7a" kindref="member">lineTo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>&amp;<sp/>to<sp/>){<sp/><ref refid="classof_polyline_1a39230dd712cb2e9647ed0679eef06124" kindref="member" tooltip="add a vertex">addVertex</ref>(to);<sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1a4c7d5b95780ebf1aefb079f55bcf8d7a" kindref="member">lineTo</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z=0){</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_polyline_1a39230dd712cb2e9647ed0679eef06124" kindref="member" tooltip="add a vertex">addVertex</ref>(x,y,z);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>adds<sp/>an<sp/>arc<sp/>to<sp/>the<sp/>polyline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>the<sp/>arc<sp/>doesn&apos;t<sp/>start<sp/>at<sp/>the<sp/>same<sp/>point</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>last<sp/>vertex<sp/>finished<sp/>a<sp/>straight<sp/>line<sp/>will</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>be<sp/>created<sp/>to<sp/>join<sp/>both</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1ad651321496a4cdc7011d44eaacf5159c" kindref="member">arc</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>&amp;<sp/>center,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radiusX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radiusY,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angleBegin,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angleEnd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>curveResolution=20<sp/>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1ad651321496a4cdc7011d44eaacf5159c" kindref="member">arc</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radiusX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radiusY,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angleBegin,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angleEnd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>curveResolution=20){</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_polyline_1ad651321496a4cdc7011d44eaacf5159c" kindref="member">arc</ref>(<ref refid="of_point_8h_1a0e9c5f9596918593de99ee1bd275476f" kindref="member">ofPoint</ref>(x,y),radiusX,radiusY,angleBegin,angleEnd,curveResolution);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1ad651321496a4cdc7011d44eaacf5159c" kindref="member">arc</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radiusX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radiusY,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angleBegin,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angleEnd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>curveResolution=20){</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_polyline_1ad651321496a4cdc7011d44eaacf5159c" kindref="member">arc</ref>(<ref refid="of_point_8h_1a0e9c5f9596918593de99ee1bd275476f" kindref="member">ofPoint</ref>(x,y,z),radiusX,radiusY,angleBegin,angleEnd,curveResolution);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>catmull-rom<sp/>curve</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1a8f749f4980bf8f1d5e6485c60c427881" kindref="member">curveTo</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>&amp;<sp/>to,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>curveResolution=16<sp/>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1a8f749f4980bf8f1d5e6485c60c427881" kindref="member">curveTo</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z=0,<sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>curveResolution=16<sp/>){</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_polyline_1a8f749f4980bf8f1d5e6485c60c427881" kindref="member">curveTo</ref>(<ref refid="of_point_8h_1a0e9c5f9596918593de99ee1bd275476f" kindref="member">ofPoint</ref>(x,y,z),curveResolution);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1adcb0cecaf02bd617b2dd0e1dad9f1d37" kindref="member" tooltip="cubic bezier">bezierTo</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>&amp;<sp/>cp1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>&amp;<sp/>cp2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>&amp;<sp/>to,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>curveResolution<sp/>=<sp/>16);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1adcb0cecaf02bd617b2dd0e1dad9f1d37" kindref="member" tooltip="cubic bezier">bezierTo</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cx1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cy1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cx2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cy2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>curveResolution=16){</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_polyline_1adcb0cecaf02bd617b2dd0e1dad9f1d37" kindref="member" tooltip="cubic bezier">bezierTo</ref>(<ref refid="of_point_8h_1a0e9c5f9596918593de99ee1bd275476f" kindref="member">ofPoint</ref>(cx1,cy1),<ref refid="of_point_8h_1a0e9c5f9596918593de99ee1bd275476f" kindref="member">ofPoint</ref>(cx2,cy2),<ref refid="of_point_8h_1a0e9c5f9596918593de99ee1bd275476f" kindref="member">ofPoint</ref>(x,y));</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1adcb0cecaf02bd617b2dd0e1dad9f1d37" kindref="member" tooltip="cubic bezier">bezierTo</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cx1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cy1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cz1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cx2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cy2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cz2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>curveResolution=16){</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_polyline_1adcb0cecaf02bd617b2dd0e1dad9f1d37" kindref="member" tooltip="cubic bezier">bezierTo</ref>(<ref refid="of_point_8h_1a0e9c5f9596918593de99ee1bd275476f" kindref="member">ofPoint</ref>(cx1,cy1,cz1),<ref refid="of_point_8h_1a0e9c5f9596918593de99ee1bd275476f" kindref="member">ofPoint</ref>(cx2,cy2,cz2),<ref refid="of_point_8h_1a0e9c5f9596918593de99ee1bd275476f" kindref="member">ofPoint</ref>(x,y,z),curveResolution);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1a0a85cd8239ccdc4ccc7cb9c040aeda5e" kindref="member" tooltip="quadratic bezier (lower resolution than cubic)">quadBezierTo</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cx1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cy1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cz1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cx2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cy2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cz2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>curveResolution=16);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1a0a85cd8239ccdc4ccc7cb9c040aeda5e" kindref="member" tooltip="quadratic bezier (lower resolution than cubic)">quadBezierTo</ref>(<sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>&amp;<sp/>p2,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>&amp;<sp/>p3,<sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>curveResolution=16<sp/>){</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_polyline_1a0a85cd8239ccdc4ccc7cb9c040aeda5e" kindref="member" tooltip="quadratic bezier (lower resolution than cubic)">quadBezierTo</ref>(p1.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref>,p1.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref>,p1.<ref refid="classof_vec3f_1aa6c8d5ae5fdaeb516242aca987ccb9bc" kindref="member">z</ref>,p2.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref>,p2.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref>,p2.<ref refid="classof_vec3f_1aa6c8d5ae5fdaeb516242aca987ccb9bc" kindref="member">z</ref>,p3.<ref refid="classof_vec3f_1aa69e24cc27cb6dda01d1e4c69e18f682" kindref="member">x</ref>,p3.<ref refid="classof_vec3f_1aa6ae388131850902c9de244d12931f49" kindref="member">y</ref>,p3.<ref refid="classof_vec3f_1aa6c8d5ae5fdaeb516242aca987ccb9bc" kindref="member">z</ref>,curveResolution);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1a0a85cd8239ccdc4ccc7cb9c040aeda5e" kindref="member" tooltip="quadratic bezier (lower resolution than cubic)">quadBezierTo</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cx1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cy1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cx2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cy2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>curveResolution=16){</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_polyline_1a0a85cd8239ccdc4ccc7cb9c040aeda5e" kindref="member" tooltip="quadratic bezier (lower resolution than cubic)">quadBezierTo</ref>(cx1,cy1,0,cx2,cy2,0,x,y,0,curveResolution);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_polyline" kindref="compound">ofPolyline</ref><sp/><ref refid="classof_polyline_1a9dd4d7bd3893646a2113d34031065449" kindref="member">getSmoothed</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>smoothingSize,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>smoothingShape<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>resample<sp/>a<sp/>polyline<sp/>based<sp/>on<sp/>the<sp/>distance<sp/>between<sp/>the<sp/>points</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_polyline" kindref="compound">ofPolyline</ref><sp/><ref refid="classof_polyline_1a90c7d2040aff73aa29b68754f54ddfdb" kindref="member">getResampledBySpacing</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>spacing);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>resample<sp/>a<sp/>polyline<sp/>based<sp/>on<sp/>the<sp/>total<sp/>point<sp/>count</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_polyline" kindref="compound">ofPolyline</ref><sp/><ref refid="classof_polyline_1a6eeaa3a902be5a10ca2267e29f668621" kindref="member">getResampledByCount</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>the<sp/>bounding<sp/>box<sp/>of<sp/>a<sp/>polyline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_rectangle" kindref="compound">ofRectangle</ref><sp/><ref refid="classof_polyline_1acc41df4f84f253128e9de7e38e1069e2" kindref="member">getBoundingBox</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>find<sp/>the<sp/>closest<sp/>point<sp/>&apos;target&apos;<sp/>on<sp/>a<sp/>polyline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>optionally<sp/>pass<sp/>a<sp/>pointer<sp/>to/address<sp/>of<sp/>an<sp/>unsigned<sp/>int<sp/>to<sp/>get<sp/>the<sp/>index<sp/>of<sp/>the<sp/>closest<sp/>vertex</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/><ref refid="classof_polyline_1a9da6811ca1a47f4f303dfe7c4522e8cb" kindref="member">getClosestPoint</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref>&amp;<sp/>target,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>nearestIndex<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>check<sp/>wheteher<sp/>a<sp/>point<sp/>is<sp/>inside<sp/>the<sp/>area<sp/>enclosed<sp/>by<sp/>the<sp/>polyline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1ab4c8495d2bee752b9c4054ea5776cf80" kindref="member">inside</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_polyline" kindref="compound">ofPolyline</ref><sp/>&amp;<sp/>polyline);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1ab4c8495d2bee752b9c4054ea5776cf80" kindref="member">inside</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>&amp;<sp/>p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_polyline" kindref="compound">ofPolyline</ref><sp/>&amp;<sp/>polyline);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>non-static<sp/>versions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1ab4c8495d2bee752b9c4054ea5776cf80" kindref="member">inside</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1ab4c8495d2bee752b9c4054ea5776cf80" kindref="member">inside</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/>&amp;<sp/>p);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1aadbd40bd1205fbe5106ed42e79243ee7" kindref="member">simplify</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>tolerance=0.3);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1ad88dd26a8298d54abb9dd3b1f55d00f8" kindref="member" tooltip="points vector access">size</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref>&amp;<sp/><ref refid="classof_polyline_1a2ad4d76dc14ddaa777e5326466bc43ef" kindref="member">operator[] </ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref>&amp;<sp/><ref refid="classof_polyline_1a2ad4d76dc14ddaa777e5326466bc43ef" kindref="member">operator[] </ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1a49e172bae1f49fce0b763fe05b33c53e" kindref="member">resize</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1a2b7d22e0d3c5dfed22ebefcd7e79c35f" kindref="member" tooltip="closed">setClosed</ref>(<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>tf<sp/>);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1a166b386bb2b1bd7225e05ff67528cd2a" kindref="member">isClosed</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1a1de14888c9c361bbe772789a69dd5e45" kindref="member">close</ref>();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1abd08a523635b4a9203fb08a1447e9e38" kindref="member">hasChanged</ref>();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;ofPoint&gt;<sp/>&amp;<sp/><ref refid="classof_polyline_1a193202a0774fe5509f3b90827201fe8a" kindref="member">getVertices</ref>();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1adbf01c8cdc85d3f1d88b2bc985498159" kindref="member">getPerimeter</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1af6b1b7fc338691bcc897329f2f5137a6" kindref="member">getArea</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classof_vec3f" kindref="compound">ofPoint</ref><sp/><ref refid="classof_polyline_1a95c7c97460efb5f91e752ec05dac7897" kindref="member">getCentroid2D</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classof_polyline_1af6ea639f218d4ccf8ff616d68ec2bfa6" kindref="member">draw</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setCircleResolution(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>res);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;ofPoint&gt;<sp/>points;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>deque&lt;ofPoint&gt;<sp/>curveVertices;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;ofPoint&gt;<sp/>circlePoints;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bClosed;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bHasChanged;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/arturo/Escritorio/openFrameworks/libs/openFrameworks/graphics/ofPolyline.h"/>
+  </compounddef>
+</doxygen>
