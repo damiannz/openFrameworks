@@ -121,6 +121,8 @@ void ofSetupOpenGL(int w, int h, int screenMode){
 
 void ofExitCallback(){
 
+	ofNotifyExit();
+
 	//------------------------
 	// try to close engine if needed:
 	ofSoundShutdown();
@@ -143,7 +145,6 @@ void ofExitCallback(){
 		timeEndPeriod(1);
 	#endif
 
-	ofNotifyExit();
 }
 
 //--------------------------------------
