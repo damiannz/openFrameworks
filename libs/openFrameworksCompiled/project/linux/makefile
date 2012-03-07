@@ -94,7 +94,8 @@ ifeq ($(ARCH),android)
  	INCLUDES_FLAGS += -I../../../../addons/ofxAndroid/src
 else
     ifeq ($(ARCH),armv7l)
-        INCLUDES_FLAGS += -I../../../glu/include_android
+        INCLUDES_FLAGS += -I../../../glu/include_android 
+	INCLUDES_FLAGS += -I../../../glutes/include
     else
      	INCLUDES_FLAGS += -I../../../glu/include
     endif
