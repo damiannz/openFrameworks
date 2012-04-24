@@ -508,30 +508,104 @@ ofFileDialogResult ofSystemSaveDialog(string defaultName, string messageName){
 
 	return results;
 }
-// Step 4: the Window Procedure
-LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
+
+#ifdef TARGET_WIN32
+
+// from http://blogs.msdn.com/b/oldnewthing/archive/2005/04/29/412577.aspx
+// Raymond Chen 'Building a dialog template at run-time'
+
+
+#include <windowsx.h>
+
+class DialogTemplate {
+public:
+ LPCDLGTEMPLATE Template() { return (LPCDLGTEMPLATE)&v[0]; }
+ void AlignToDword()
+  { if (v.size() % 4) Write(NULL, 4 - (v.size() % 4)); }
+ void Write(LPCVOID pvWrite, DWORD cbWrite) {
+  v.insert(v.end(), cbWrite, 0);
+  if (pvWrite) CopyMemory(&v[v.size() - cbWrite], pvWrite, cbWrite);
+ }
+ template<typename T> void Write(T t) { Write(&t, sizeof(T)); }
+ void WriteString(LPCWSTR psz)
+  { Write(psz, (lstrlenW(psz) + 1) * sizeof(WCHAR)); }
+
+void DumpCArray()
 {
-    cout << msg << endl;
-    switch(msg)
+    printf("static const char textDialogTemplateData[%i] = {", v.size() );
+    for ( int i=0; i<v.size(); i++ )
     {
-        case WM_CLOSE:
-            DestroyWindow(hwnd);
-        break;
-        case WM_DESTROY:
-            PostQuitMessage(0);
-        break;
-        default:
-            return DefWindowProc(hwnd, msg, wParam, lParam);
+        if ( i%10 == 0 )
+            printf("\n   ");
+
+        printf("% 4i, ", int(v[i]) );
     }
-    return 0;
+    printf("\n};\n");
+    printf("static const LPCDLGTEMPLATE textDialogTemplate = (LPCDLGTEMPLATE)textDialogTemplateData;\n");
 }
 
-// Step 4: the Window Procedure
-INT_PTR CALLBACK DlgProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
+private:
+ vector<BYTE> v;
+};
+
+// and the output
+static const char textDialogTemplateData[164] = {
+      1,    0,  255,  255,    0,    0,    0,    0,    0,    0,
+      0,    0,  192,    0,  200,    0,    3,    0,   32,    0,
+     32,    0,  200,    0,   80,    0,    0,    0,    0,    0,
+      0,    0,    8,    0,  144,    1,    0,    1,   84,    0,
+     97,    0,  104,    0,  111,    0,  109,    0,   97,    0,
+      0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+      0,    0,    0,   80,    7,    0,    7,    0,  186,    0,
+     42,    0,  255,  255,  255,  255,  255,  255,  129,    0,
+      0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+      0,    0,    1,    0,    3,   80,   35,    0,   59,    0,
+     50,    0,   14,    0,    1,    0,    0,    0,  255,  255,
+    128,    0,   79,    0,   75,    0,    0,    0,    0,    0,
+      0,    0,    0,    0,    0,    0,    0,    0,    1,    0,
+      3,   80,  115,    0,   59,    0,   50,    0,   14,    0,
+      2,    0,    0,    0,  255,  255,  128,    0,   67,    0,
+     97,    0,  110,    0,   99,    0,  101,    0,  108,    0,
+      0,    0,    0,    0,
+};
+static const LPCDLGTEMPLATE textDialogTemplate = (LPCDLGTEMPLATE)textDialogTemplateData;
+typedef struct {
+    string question;
+    string text;
+    bool okClicked;
+} TextDialogResult;
+
+INT_PTR CALLBACK DlgProc(HWND hwnd, UINT wm, WPARAM wParam, LPARAM lParam)
 {
+    // this is an ugly hack
+   static TextDialogResult* results = NULL;
 
-    return 1;
+ switch (wm) {
+ case WM_INITDIALOG:
+    results = (TextDialogResult*)lParam;
+    SetDlgItemTextA( hwnd, -1, results->text.c_str() );
+    SetWindowTextA( hwnd, results->question.c_str() );
+    return TRUE;
+ case WM_COMMAND:
+    if ( GET_WM_COMMAND_ID(wParam, lParam) == IDOK )
+        {
+            // fetch item text and display
+            char buf[16384];
+            GetDlgItemTextA( hwnd, -1, buf, 16384 );
+            results->text = buf;
+            EndDialog( hwnd, 1 );
+        }
+        else if ( GET_WM_COMMAND_ID(wParam, lParam) == IDCANCEL )
+        {
+            EndDialog( hwnd, 0 );
+        }
+  break;
+ }
+ return FALSE;
 }
+
+
+#endif
 
 
 string ofSystemTextBoxDialog(string question, string text){
@@ -569,6 +643,115 @@ string ofSystemTextBoxDialog(string question, string text){
 #endif
 
 #ifdef TARGET_WIN32
+
+    HWND hwnd = WindowFromDC(wglGetCurrentDC());
+
+
+ BOOL fSuccess = FALSE;
+ HDC hdc = GetDC(NULL);
+ if (hdc) {
+  NONCLIENTMETRICSW ncm = { sizeof(ncm) };
+  if (SystemParametersInfoW(SPI_GETNONCLIENTMETRICS, 0, &ncm, 0)) {
+      /*
+   DialogTemplate tmp;
+
+   // values from DLGITEMTEMPLATE docs
+   // http://msdn.microsoft.com/en-us/library/windows/desktop/ms644997(v=vs.85).aspx
+   static const DWORD MAGIC_EDIT = 0x0081ffff;
+   static const DWORD MAGIC_BUTTON = 0x0080ffff;
+   static const DWORD MAGIC_STATIC = 0x0082ffff;
+
+   // Write out the extended dialog template header
+   tmp.Write<WORD>(1); // dialog version
+   tmp.Write<WORD>(0xFFFF); // extended dialog template
+   tmp.Write<DWORD>(0); // help ID
+   tmp.Write<DWORD>(0); // extended style
+   tmp.Write<DWORD>(WS_CAPTION | WS_SYSMENU | DS_SETFONT | DS_MODALFRAME);
+   tmp.Write<WORD>(3); // number of controls
+   tmp.Write<WORD>(32); // X
+   tmp.Write<WORD>(32); // Y
+   tmp.Write<WORD>(200); // width
+   tmp.Write<WORD>(80); // height
+   tmp.WriteString(L""); // no menu
+   tmp.WriteString(L""); // default dialog class
+   tmp.WriteString(L""); // title
+
+   // Next comes the font description.
+   // See text for discussion of fancy formula.
+   if (ncm.lfMessageFont.lfHeight < 0) {
+     ncm.lfMessageFont.lfHeight = -MulDiv(ncm.lfMessageFont.lfHeight,
+              72, GetDeviceCaps(hdc, LOGPIXELSY));
+   }
+   tmp.Write<WORD>((WORD)ncm.lfMessageFont.lfHeight); // point
+   tmp.Write<WORD>((WORD)ncm.lfMessageFont.lfWeight); // weight
+   tmp.Write<BYTE>(ncm.lfMessageFont.lfItalic); // Italic
+   tmp.Write<BYTE>(ncm.lfMessageFont.lfCharSet); // CharSet
+   tmp.WriteString(ncm.lfMessageFont.lfFaceName);
+
+   // Then come the two controls.  First is the static text.
+   tmp.AlignToDword();
+   tmp.Write<DWORD>(0); // help id
+   tmp.Write<DWORD>(0); // window extended style
+   tmp.Write<DWORD>(WS_CHILD | WS_VISIBLE); // style
+   tmp.Write<WORD>(7); // x
+   tmp.Write<WORD>(7); // y
+   tmp.Write<WORD>(200-14); // width
+   tmp.Write<WORD>(80-7-14-7-10); // height
+   //tmp.Write<WORD>(20);
+   tmp.Write<DWORD>(-1); // control ID
+   tmp.Write<DWORD>(MAGIC_EDIT); // edit
+   //tmp.Write<DWORD>((DWORD)(unsigned char*)"STATIC");
+   tmp.WriteString(L""); // text
+   tmp.Write<WORD>(0); // no extra data
+
+   // Second control is the OK button.
+   tmp.AlignToDword();
+   tmp.Write<DWORD>(0); // help id
+   tmp.Write<DWORD>(0); // window extended style
+   tmp.Write<DWORD>(WS_CHILD | WS_VISIBLE |
+                    WS_GROUP | WS_TABSTOP | BS_DEFPUSHBUTTON); // style
+   tmp.Write<WORD>(35); // x
+   tmp.Write<WORD>(80-7-14); // y
+   tmp.Write<WORD>(50); // width
+   tmp.Write<WORD>(14); // height
+   tmp.Write<DWORD>(IDOK); // control ID
+   tmp.Write<DWORD>(MAGIC_BUTTON); // static
+   tmp.WriteString(L"OK"); // text
+   tmp.Write<WORD>(0); // no extra data
+
+
+   // Third control is the Cancel button.
+   tmp.AlignToDword();
+   tmp.Write<DWORD>(0); // help id
+   tmp.Write<DWORD>(0); // window extended style
+   tmp.Write<DWORD>(WS_CHILD | WS_VISIBLE |
+                    WS_GROUP | WS_TABSTOP | BS_DEFPUSHBUTTON); // style
+   tmp.Write<WORD>(115); // x
+   tmp.Write<WORD>(80-7-14); // y
+   tmp.Write<WORD>(50); // width
+   tmp.Write<WORD>(14); // height
+   tmp.Write<DWORD>(IDCANCEL); // control ID
+   tmp.Write<DWORD>(MAGIC_BUTTON); // static
+   tmp.WriteString(L"Cancel"); // text
+   tmp.Write<WORD>(0); // no extra data
+
+    tmp.DumpCArray();
+*/
+   // Template is ready - go display it.
+   TextDialogResult results;
+   results.question= question;
+   results.text = text;
+   int dialogBoxReturnCode = DialogBoxIndirectParam(GetModuleHandle(0), textDialogTemplate, hwnd, DlgProc, (LPARAM)&results );
+   // if ok was clicked
+   if ( dialogBoxReturnCode == 1){
+       text = results.text;
+   }
+   //fSuccess = DialogBoxIndirect( GetModuleHandle(0), textDialogTemplate, hwnd, DlgProc) >= 0;
+   //ofLog( OF_LOG_NOTICE, "dialog box: %s clicked, string %s", results.okClicked?"OK":"Cancel", results.text.c_str() );
+  }
+  ReleaseDC(NULL, hdc); // fixed 11 May
+ }
+/*
     // we need to convert error message to a wide char message.
     // first, figure out the length and allocate a wchar_t at that length + 1 (the +1 is for a terminating character)
 
@@ -627,7 +810,7 @@ string ofSystemTextBoxDialog(string question, string text){
     while(true)
     {
         WaitForSingleObject(dialog,10);
-    }
+    }*/
 #endif
 
 	return text;
