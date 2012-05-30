@@ -1,6 +1,7 @@
 basic howto for Pandaboard:
 
-. download ubuntu-11.10-preinstalled-desktop-armel+omap4.img.gz , extract to memory stick and follow the install procedure as per https://wiki.ubuntu.com/ARM/OMAP 
+. download ubuntu-11.10-preinstalled-desktop-armel+omap4.img.gz , extract to SDCard and follow the install 
+procedure as per https://wiki.ubuntu.com/ARM/OMAP 
 
 . once installed drop to a terminal and install ubuntu-omap4-extras and ubuntu-omap4-extras-graphics-dev
 
