@@ -1,4 +1,5 @@
 #include "ofxThreadedImageLoader.h"
+#include "ofAppRunner.h"
 #include <sstream>
 ofxThreadedImageLoader::ofxThreadedImageLoader() 
 :ofThread()
@@ -6,8 +7,13 @@ ofxThreadedImageLoader::ofxThreadedImageLoader()
 	num_loading = 0;
 	ofAddListener(ofEvents().update, this, &ofxThreadedImageLoader::update);
 	ofRegisterURLNotification(this);
+	latencyMillis = 100;
 }
 
+void ofxThreadedImageLoader::setMaxLatency(int millis)
+{
+	latencyMillis = max(0,millis);
+}
 
 // Load an image from disk.
 //--------------------------------------------------------------
@@ -42,15 +48,18 @@ void ofxThreadedImageLoader::loadFromURL(ofImage* image, string url) {
 	images_to_load.push_back(entry);
 	
 	unlock();
+	ofLogNotice("ofxThreadedImageLoader", "loading image from url "+url );
+	
 }
 
 
 // Reads from the queue and loads new images.
 //--------------------------------------------------------------
 void ofxThreadedImageLoader::threadedFunction() {
-	while(true) {
+	while(isThreadRunning()) {
 		if(shouldLoadImages()) {
 			ofImageLoaderEntry entry = getNextImageToLoad();
+			
 			if(entry.image == NULL) {
 				continue;
 			}
@@ -64,13 +73,14 @@ void ofxThreadedImageLoader::threadedFunction() {
 			else if(entry.type == OF_LOAD_FROM_URL) {
 				lock();
 				images_async_loading.push_back(entry);
+				ofLogNotice("ofxThreadedImageLoader", "loading url " + entry.url + " (fname " + entry.filename + ")" );
 				unlock();	
 				ofLoadURLAsync(entry.url, entry.name);
 			}
 		}
 		else {
-			// TODO: what do we do when there ar eno entries left?
-		//	ofSleepMillis(1000);
+			// sleep until a new request arrives
+			ofSleepMillis(latencyMillis);
 		}
 	}
 }
@@ -92,7 +102,11 @@ void ofxThreadedImageLoader::urlResponse(ofHttpResponse & response) {
 			images_async_loading.erase(it);
 		}
 		
+		
 		unlock();
+		
+		ofLogNotice("ofxThreadeImageLoader", "loaded "+(*it).filename );
+
 	}
 	else {
 		// log error.
@@ -169,6 +183,7 @@ ofImageLoaderEntry ofxThreadedImageLoader::getNextImageToLoad() {
 		images_to_load.pop_front();
 	}
 	unlock();
+	ofLogNotice("ofxThreadedImageLoader", "loading image " + entry.filename );
 	return entry;
 }
 
@@ -176,5 +191,49 @@ ofImageLoaderEntry ofxThreadedImageLoader::getNextImageToLoad() {
 //--------------------------------------------------------------
 bool ofxThreadedImageLoader::shouldLoadImages() {
 	return (images_to_load.size() > 0);
+}
+
+
+
+void ofxThreadedImageLoader::start()
+{
+	startThread( false, false );
+}
+
+
+void ofxThreadedImageLoader::logStatus()
+{
+	deque<ofImageLoaderEntry>::const_iterator it = images_async_loading.begin();
+	string chan =  "ofxThreadedImageLoader";
+	if(it != images_async_loading.end()) {
+		ofLogNotice( chan, "Currently loading from url\n-----------------------" );
+		while(it != images_async_loading.end()) {
+			ofLogNotice( chan, "Loading: " + (*it).url );
+			++it;
+		}
+	}
+	
+	ofLogNotice( chan, "To be loaded from disk\n-----------------------" );
+	it = images_to_load.begin();
+	if(it != images_to_load.end()) {
+		
+		while(it != images_to_load.end()) {
+			if ((*it).type == OF_LOAD_FROM_DISK) {
+				ofLogNotice( chan, (*it).filename );
+			}
+			++it;
+		}
+	}
+	
+	it = images_to_load.begin();
+	if(it != images_to_load.end()) {
+		ofLogNotice( chan, "To be loaded from url\n-----------------------" );
+		while(it != images_to_load.end()) {
+			if((*it).type == OF_LOAD_FROM_URL) {
+				ofLogNotice( chan, (*it).url );
+			}
+			++it;
+		}
+	}
 }
 

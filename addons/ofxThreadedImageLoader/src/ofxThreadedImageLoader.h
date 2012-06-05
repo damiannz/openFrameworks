@@ -39,8 +39,13 @@ typedef deque<ofImageLoaderEntry>::iterator entry_iterator;
 class ofxThreadedImageLoader : public ofThread {
 public:
 	ofxThreadedImageLoader();
+	
+	/// once the queue is empty, how long to sleep before checking for new requests. default 100ms. 
+	void setMaxLatency( int millis );
+	
 	void loadFromDisk(ofImage* image, string file);
 	void loadFromURL(ofImage* image, string url);
+
 	void start();
 	void update(ofEventArgs & a);
 	virtual void threadedFunction();
@@ -52,54 +57,16 @@ public:
 	deque<ofImageLoaderEntry> images_to_load;
 	deque<ofImageLoaderEntry> images_to_update;
 	
+	/// print the current status to the log
+	void logStatus();
+	
 private:
 	bool shouldLoadImages();
 	ofImageLoaderEntry getNextImageToLoad();
 	ofImageLoaderEntry getNextImageToUpdate();
 	
 	int num_loading;
+	int latencyMillis;
 
 	
 };
-
-//TODO: Theo - THIS DOESN'T MAKE SENSE! You are overloading the << operator but its not clear what that is doing. 
-//its not a data structure like ofPoint or ofRect which << overloading makes sense for. 
-//itnerally it should call ofLog for the approproate log levels. 
-inline ostream& operator<<(ostream& os,  const ofxThreadedImageLoader& loader) {
-	
-	deque<ofImageLoaderEntry>::const_iterator it = loader.images_async_loading.begin();
-	if(it != loader.images_async_loading.end()) {
-		os << "Loading from url\n-----------------------\n" << std::endl;
-		while(it != loader.images_async_loading.end()) {
-			os << "Loading: " << (*it).url << std::endl;
-			++it;
-		}
-		os << std::endl;
-	}
-
-	os << "To be loaded from disk\n-----------------------\n";
-	it = loader.images_to_load.begin();
-	if(it != loader.images_to_load.end()) {
-		
-		while(it != loader.images_to_load.end()) {
-			if ((*it).type == OF_LOAD_FROM_DISK) {
-				os << (*it).filename << std::endl;
-			}
-			++it;
-		}
-		os << std::endl;
-	}
-	
-	it = loader.images_to_load.begin();
-	if(it != loader.images_to_load.end()) {
-		os << "To be loaded from url\n-----------------------\n";
-		while(it != loader.images_to_load.end()) {
-			if((*it).type == OF_LOAD_FROM_URL) {
-				os << (*it).url << std::endl;
-			}
-			++it;
-		}
-		os << std::endl;
-	}
-	return os;
-}
