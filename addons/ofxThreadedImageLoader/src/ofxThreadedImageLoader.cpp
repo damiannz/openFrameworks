@@ -8,11 +8,17 @@ ofxThreadedImageLoader::ofxThreadedImageLoader()
 	ofAddListener(ofEvents().update, this, &ofxThreadedImageLoader::update);
 	ofRegisterURLNotification(this);
 	latencyMillis = 100;
+	timeoutSeconds = 10.0f;
 }
 
 void ofxThreadedImageLoader::setMaxLatency(int millis)
 {
 	latencyMillis = max(0,millis);
+}
+
+void ofxThreadedImageLoader::setTimeout(float seconds)
+{
+	timeoutSeconds = max(0.0f,seconds);
 }
 
 // Load an image from disk.
@@ -84,7 +90,7 @@ void ofxThreadedImageLoader::threadedFunction() {
 				unlock();
 			}
 			else if(entry.type == OF_LOAD_FROM_URL) {
-				entry.timeoutTime = ofGetElapsedTimeMillis()+1*1000;
+				entry.timeoutTime = ofGetElapsedTimeMillis()+timeoutSeconds*1000;
 				lock();
 				images_async_loading.push_back(entry);
 				ofLogNotice("ofxThreadedImageLoader", "loading url " + entry.url + " (fname " + entry.filename + ")" );

@@ -43,6 +43,8 @@ public:
 	
 	/// once the queue is empty, how long to sleep before checking for new requests. default 100ms. 
 	void setMaxLatency( int millis );
+	/// set the timeout on image loading, default 10s
+	void setTimeout( float seconds );
 	
 	void loadFromDisk(ofImage* image, string file);
 	void loadFromURL(ofImage* image, string url);
@@ -68,6 +70,7 @@ private:
 	
 	int num_loading;
 	int latencyMillis;
+	float timeoutSeconds;
 
 	
 };
