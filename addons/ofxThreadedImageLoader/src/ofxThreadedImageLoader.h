@@ -30,6 +30,7 @@ struct ofImageLoaderEntry {
 	string filename;
 	string url;
 	string name;
+	long timeoutTime;
 	int id;
 };
 

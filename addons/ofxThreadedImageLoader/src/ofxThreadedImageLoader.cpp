@@ -57,6 +57,19 @@ void ofxThreadedImageLoader::loadFromURL(ofImage* image, string url) {
 //--------------------------------------------------------------
 void ofxThreadedImageLoader::threadedFunction() {
 	while(isThreadRunning()) {
+		lock();
+		for ( int i=0; i<images_async_loading.size(); i++ )
+		{
+			ofImageLoaderEntry& entry = images_async_loading[i];
+			if ( entry.type == OF_LOAD_FROM_URL && entry.timeoutTime < ofGetElapsedTimeMillis() )
+			{
+				ofRemoveURLRequest(entry.id);
+				images_async_loading.erase( images_async_loading.begin()+i );
+				i--;
+			}
+		}
+		unlock();
+		
 		if(shouldLoadImages()) {
 			ofImageLoaderEntry entry = getNextImageToLoad();
 			
@@ -71,11 +84,15 @@ void ofxThreadedImageLoader::threadedFunction() {
 				unlock();
 			}
 			else if(entry.type == OF_LOAD_FROM_URL) {
+				entry.timeoutTime = ofGetElapsedTimeMillis()+1*1000;
 				lock();
 				images_async_loading.push_back(entry);
 				ofLogNotice("ofxThreadedImageLoader", "loading url " + entry.url + " (fname " + entry.filename + ")" );
+				unlock();
+				int id = ofLoadURLAsync(entry.url, entry.name);
+				lock();
+				images_async_loading.back().id = id;
 				unlock();	
-				ofLoadURLAsync(entry.url, entry.name);
 			}
 		}
 		else {
