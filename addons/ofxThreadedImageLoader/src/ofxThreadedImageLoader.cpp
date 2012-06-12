@@ -125,10 +125,7 @@ void ofxThreadedImageLoader::urlResponse(ofHttpResponse & response) {
 			images_async_loading.erase(it);
 		}
 		
-		
 		unlock();
-		
-		ofLogNotice("ofxThreadeImageLoader", "loaded "+(*it).filename );
 
 	}
 	else {
