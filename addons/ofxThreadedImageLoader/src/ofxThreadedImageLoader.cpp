@@ -15,6 +15,11 @@ void ofxThreadedImageLoader::setMaxLatency(int millis)
 	latencyMillis = max(0,millis);
 }
 
+ofxThreadedImageLoader* ofxThreadedImageLoader::get(){
+	static ofxThreadedImageLoader* instance = new ofxThreadedImageLoader();
+	return instance;
+}
+
 // Load an image from disk.
 //--------------------------------------------------------------
 void ofxThreadedImageLoader::loadFromDisk(ofImage* image, string filename) {
@@ -63,6 +68,13 @@ void ofxThreadedImageLoader::threadedFunction() {
 			if(entry.image == NULL) {
 				continue;
 			}
+			lock();
+			if (images_to_cancel.count(entry.image)) {
+				images_to_cancel.erase(entry.image);
+				unlock();
+				continue;
+			}
+			unlock();
 		
 			if(entry.type == OF_LOAD_FROM_DISK) {
 				entry.image->loadImage(entry.filename);
@@ -72,7 +84,7 @@ void ofxThreadedImageLoader::threadedFunction() {
 			}
 			else if(entry.type == OF_LOAD_FROM_URL) {
 				lock();
-				images_async_loading.push_back(entry);
+				images_loading_from_url.push_back(entry);
 				ofLogNotice("ofxThreadedImageLoader", "loading url " + entry.url + " (fname " + entry.filename + ")" );
 				unlock();	
 				ofLoadURLAsync(entry.url, entry.name);
@@ -96,10 +108,16 @@ void ofxThreadedImageLoader::urlResponse(ofHttpResponse & response) {
 		
 		// Get the loaded url from the async queue and move it into the update queue.
 		entry_iterator it = getEntryFromAsyncQueue(response.request.name);
-		if(it != images_async_loading.end()) {
-			(*it).image->loadImage(response.data);
-			images_to_update.push_back((*it));
-			images_async_loading.erase(it);
+		if(it != images_loading_from_url.end()) {
+			if ( images_to_cancel.count((*it).image) )
+			{
+				images_to_cancel.erase((*it).image);
+			}
+			else {
+				(*it).image->loadImage(response.data);
+				images_to_update.push_back((*it));
+			}
+			images_loading_from_url.erase(it);
 		}
 		
 		
@@ -117,8 +135,8 @@ void ofxThreadedImageLoader::urlResponse(ofHttpResponse & response) {
 		// remove the entry from the queue
 		lock();
 		entry_iterator it = getEntryFromAsyncQueue(response.request.name);
-		if(it != images_async_loading.end()) {
-			images_async_loading.erase(it);
+		if(it != images_loading_from_url.end()) {
+			images_loading_from_url.erase(it);
 		}
 		else {
 			ofLog(OF_LOG_WARNING, "Cannot find image in load-from-url queue");
@@ -130,13 +148,13 @@ void ofxThreadedImageLoader::urlResponse(ofHttpResponse & response) {
 // Find an entry in the aysnc queue.
 //--------------------------------------------------------------
 entry_iterator ofxThreadedImageLoader::getEntryFromAsyncQueue(string name) {
-	entry_iterator it = images_async_loading.begin();		
-	while(it != images_async_loading.end()) {
+	entry_iterator it = images_loading_from_url.begin();		
+	while(it != images_loading_from_url.end()) {
 		if((*it).name == name) {
 			return it;			
 		}
 	}
-	return images_async_loading.end();
+	return images_loading_from_url.end();
 }
 
 
@@ -145,16 +163,23 @@ entry_iterator ofxThreadedImageLoader::getEntryFromAsyncQueue(string name) {
 void ofxThreadedImageLoader::update(ofEventArgs & a){
 	ofImageLoaderEntry entry = getNextImageToUpdate();
 	if (entry.image != NULL) {
-
-		const ofPixels& pix = entry.image->getPixelsRef();
-		entry.image->getTextureReference().allocate(
-				 pix.getWidth()
-				,pix.getHeight()
-				,ofGetGlInternalFormat(pix)
-		);
-		
-		entry.image->setUseTexture(true);
-		entry.image->update();
+		lock();
+		if ( images_to_cancel.count(entry.image) ){
+			images_to_cancel.erase(entry.image);
+			unlock();
+		}
+		else {
+			unlock();
+			const ofPixels& pix = entry.image->getPixelsRef();
+			entry.image->getTextureReference().allocate(
+					 pix.getWidth()
+					,pix.getHeight()
+					,ofGetGlInternalFormat(pix)
+			);
+			
+			entry.image->setUseTexture(true);
+			entry.image->update();
+		}
 	}
 }
 
@@ -190,7 +215,10 @@ ofImageLoaderEntry ofxThreadedImageLoader::getNextImageToLoad() {
 // Check if there are still images in the queue.
 //--------------------------------------------------------------
 bool ofxThreadedImageLoader::shouldLoadImages() {
-	return (images_to_load.size() > 0);
+	lock();
+	bool tf = (images_to_load.size() > 0);
+	unlock();
+	return tf;
 }
 
 
@@ -200,14 +228,20 @@ void ofxThreadedImageLoader::start()
 	startThread( false, false );
 }
 
+void ofxThreadedImageLoader::cancelLoad(ofImage *image)
+{
+	lock();
+	images_to_cancel.insert( image );
+	unlock();
+}
 
 void ofxThreadedImageLoader::logStatus()
 {
-	deque<ofImageLoaderEntry>::const_iterator it = images_async_loading.begin();
+	deque<ofImageLoaderEntry>::const_iterator it = images_loading_from_url.begin();
 	string chan =  "ofxThreadedImageLoader";
-	if(it != images_async_loading.end()) {
+	if(it != images_loading_from_url.end()) {
 		ofLogNotice( chan, "Currently loading from url\n-----------------------" );
-		while(it != images_async_loading.end()) {
+		while(it != images_loading_from_url.end()) {
 			ofLogNotice( chan, "Loading: " + (*it).url );
 			++it;
 		}

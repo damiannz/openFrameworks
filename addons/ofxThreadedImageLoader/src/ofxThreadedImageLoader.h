@@ -5,6 +5,7 @@
 #include "ofImage.h"
 #include "ofURLFileLoader.h"
 #include "ofTypes.h" 
+#include <set>
 
 using namespace std;
 
@@ -39,28 +40,29 @@ typedef deque<ofImageLoaderEntry>::iterator entry_iterator;
 class ofxThreadedImageLoader : public ofThread {
 public:
 	ofxThreadedImageLoader();
+	static ofxThreadedImageLoader* get(); // singleton instance
 	
 	/// once the queue is empty, how long to sleep before checking for new requests. default 100ms. 
 	void setMaxLatency( int millis );
 	
 	void loadFromDisk(ofImage* image, string file);
 	void loadFromURL(ofImage* image, string url);
-
+	void cancelLoad(ofImage* image);
+	
+	/// start running
 	void start();
-	void update(ofEventArgs & a);
-	virtual void threadedFunction();
-	void urlResponse(ofHttpResponse & response);
-	entry_iterator getEntryFromAsyncQueue(string name);
-	friend ostream& operator<<(ostream& os, const ofxThreadedImageLoader& loader);
-
-	deque<ofImageLoaderEntry> images_async_loading; // keeps track of images which are loading async
-	deque<ofImageLoaderEntry> images_to_load;
-	deque<ofImageLoaderEntry> images_to_update;
 	
 	/// print the current status to the log
 	void logStatus();
-	
+
+	/// url callback (i wish this could be private)
+	void urlResponse(ofHttpResponse & response);
 private:
+	virtual void threadedFunction();
+
+	void update(ofEventArgs & a);
+	entry_iterator getEntryFromAsyncQueue(string name);
+
 	bool shouldLoadImages();
 	ofImageLoaderEntry getNextImageToLoad();
 	ofImageLoaderEntry getNextImageToUpdate();
@@ -68,5 +70,11 @@ private:
 	int num_loading;
 	int latencyMillis;
 
+
+	deque<ofImageLoaderEntry> images_loading_from_url; // keeps track of images which are loading async
+	deque<ofImageLoaderEntry> images_to_load;
+	deque<ofImageLoaderEntry> images_to_update;
+	set<ofImage*> images_to_cancel;
+	
 	
 };
