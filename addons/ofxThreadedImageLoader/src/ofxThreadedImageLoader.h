@@ -36,6 +36,10 @@ struct ofImageLoaderEntry {
 
 typedef deque<ofImageLoaderEntry>::iterator entry_iterator;
 
+typedef struct {
+	ofImage* image;
+	bool wasCancelled;
+} ofxThreadedImageLoaderEventArgs;
 
 class ofxThreadedImageLoader : public ofThread {
 public:
@@ -57,8 +61,14 @@ public:
 
 	/// url callback (i wish this could be private)
 	void urlResponse(ofHttpResponse & response);
+	
+	/// event that fires on the main thread once the image is ready, or not
+	ofEvent<ofxThreadedImageLoaderEventArgs> imageFinishedEv;
 private:
 	virtual void threadedFunction();
+	
+	
+	void notifyImageDone( ofImage* image, bool wasCancelled );
 
 	void update(ofEventArgs & a);
 	entry_iterator getEntryFromAsyncQueue(string name);

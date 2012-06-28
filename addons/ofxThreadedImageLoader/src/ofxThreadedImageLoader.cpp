@@ -69,8 +69,9 @@ void ofxThreadedImageLoader::threadedFunction() {
 				continue;
 			}
 			lock();
+			// has this image been cancelled already?
 			if (images_to_cancel.count(entry.image)) {
-				images_to_cancel.erase(entry.image);
+				images_to_update.push_back(entry);
 				unlock();
 				continue;
 			}
@@ -167,6 +168,7 @@ void ofxThreadedImageLoader::update(ofEventArgs & a){
 		if ( images_to_cancel.count(entry.image) ){
 			images_to_cancel.erase(entry.image);
 			unlock();
+			notifyImageDone( entry.image, true );
 		}
 		else {
 			unlock();
@@ -179,6 +181,8 @@ void ofxThreadedImageLoader::update(ofEventArgs & a){
 			
 			entry.image->setUseTexture(true);
 			entry.image->update();
+			notifyImageDone( entry.image, false );
+			
 		}
 	}
 }
@@ -231,7 +235,47 @@ void ofxThreadedImageLoader::start()
 void ofxThreadedImageLoader::cancelLoad(ofImage *image)
 {
 	lock();
-	images_to_cancel.insert( image );
+	
+	bool found = false;
+	// first check the queue
+	for ( int i=0; i<images_to_load.size(); i++ )
+	{
+		if ( images_to_load[i].image == image )
+		{
+			found = true;
+			break;
+		}
+	}
+	if ( !found )
+	{
+		// not in queue, check images loading from URL
+		for ( int i=0; i<images_loading_from_url.size(); i++ )
+		{
+			if ( images_loading_from_url[i].image == image )
+			{
+				found = true;
+				break;
+			}
+		}
+	}
+	if ( !found )
+	{
+		// not in queue or loading from URL, check images ready to be updated
+		for ( int i=0; i<images_to_update.size(); i++ )
+		{
+			if ( images_to_update[i].image == image )
+			{
+				found = true;
+				break;
+			}
+		}
+	}
+	// found? great!
+	if ( found )
+		images_to_cancel.insert( image );
+	else {
+		ofLogWarning("ofxThreadedImageLoader") << "couldn't cancel image " << (unsigned long long)image << " because it was not found in any queue";
+	}
 	unlock();
 }
 
@@ -269,5 +313,13 @@ void ofxThreadedImageLoader::logStatus()
 			++it;
 		}
 	}
+}
+
+void ofxThreadedImageLoader::notifyImageDone( ofImage* image, bool wasCancelled )
+{
+	ofxThreadedImageLoaderEventArgs args;
+	args.image = image;
+	args.wasCancelled = wasCancelled;
+	ofNotifyEvent( imageFinishedEv, args );
 }
 
