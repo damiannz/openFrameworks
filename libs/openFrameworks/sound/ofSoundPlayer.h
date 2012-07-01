@@ -18,11 +18,6 @@ void ofSoundShutdown();
 #include "ofBaseSoundPlayer.h"
 
 
-#ifdef OF_SOUND_PLAYER_QUICKTIME
-#include "ofQuicktimeSoundPlayer.h"
-#define OF_SOUND_PLAYER_TYPE ofQuicktimeSoundPlayer
-#endif
-
 #ifdef OF_SOUND_PLAYER_FMOD
 #include "ofFmodSoundPlayer.h"
 #define OF_SOUND_PLAYER_TYPE ofFmodSoundPlayer
@@ -33,16 +28,19 @@ void ofSoundShutdown();
 #define OF_SOUND_PLAYER_TYPE ofOpenALSoundPlayer
 #endif
 
+/*
 #ifdef TARGET_OF_IPHONE
 #include "ofxOpenALSoundPlayer.h"
 #define OF_SOUND_PLAYER_TYPE ofxOpenALSoundPlayer
 #endif
+*/
 
 #ifdef TARGET_ANDROID
 #include "ofxAndroidSoundPlayer.h"
 #define OF_SOUND_PLAYER_TYPE ofxAndroidSoundPlayer
 inline void ofSoundShutdown(){}
 #endif
+ 
 
 //---------------------------------------------
 class ofSoundPlayer : public ofBaseSoundPlayer {
@@ -55,7 +53,9 @@ class ofSoundPlayer : public ofBaseSoundPlayer {
 		ofPtr<ofBaseSoundPlayer> getPlayer();
 
 		bool loadSound(string fileName, bool stream = false);
+	bool loadSound( ofSoundBuffer buffer );
 		void unloadSound();
+	
 		void play();
 		void stop();
 

@@ -15,6 +15,8 @@
 #include <AL/alc.h>
 #endif
 
+#include "ofSoundBuffer.h"
+
 #include "kiss_fft.h"
 #include "kiss_fftr.h"
 #include <sndfile.h>
@@ -54,6 +56,7 @@ class ofOpenALSoundPlayer : public ofBaseSoundPlayer, public ofThread {
 		virtual ~ofOpenALSoundPlayer();
 
 		bool loadSound(string fileName, bool stream = false);
+		bool loadSound( ofSoundBuffer buffer );
 		void unloadSound();
 		void play();
 		void stop();

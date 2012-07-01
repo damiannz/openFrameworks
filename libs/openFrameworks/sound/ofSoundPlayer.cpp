@@ -72,6 +72,13 @@ bool ofSoundPlayer::loadSound(string fileName, bool stream){
 	}
 }
 
+bool ofSoundPlayer::loadSound( ofSoundBuffer buffer )
+{
+	if ( player != NULL ){
+		return player->loadSound(buffer);
+	}
+}
+
 //--------------------------------------------------------------------
 void ofSoundPlayer::unloadSound(){
 	if( player != NULL ){

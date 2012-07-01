@@ -2,7 +2,7 @@
 #pragma once
 
 #include "ofConstants.h"
-
+#include "ofSoundBuffer.h"
 
 
 //----------------------------------------------------------
@@ -16,6 +16,7 @@ public:
 	virtual ~ofBaseSoundPlayer(){};
 	
 	virtual bool loadSound(string fileName, bool stream = false) = 0;
+	virtual bool loadSound( ofSoundBuffer buffer ) {};
 	virtual void unloadSound() = 0;
 	virtual void play() = 0;
 	virtual void stop() = 0;
