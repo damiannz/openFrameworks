@@ -245,10 +245,8 @@ typedef TESSindex ofIndexType;
 
 //------------------------------------------------ soundplayer
 // check if any soundplayer api is defined from the compiler
-#if !defined(OF_SOUND_PLAYER_QUICKTIME) && !defined(OF_SOUND_PLAYER_FMOD) && !defined(OF_SOUND_PLAYER_OPENAL)
-  #ifdef TARGET_OF_IPHONE
-  	#define OF_SOUND_PLAYER_IPHONE
-  #elif defined TARGET_LINUX
+#if !defined(OF_SOUND_PLAYER_FMOD) && !defined(OF_SOUND_PLAYER_OPENAL)
+  #if defined TARGET_LINUX || defined TARGET_OSX
   	#define OF_SOUND_PLAYER_OPENAL
   #elif !defined(TARGET_ANDROID)
   	#define OF_SOUND_PLAYER_FMOD

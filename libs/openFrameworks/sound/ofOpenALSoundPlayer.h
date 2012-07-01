@@ -18,9 +18,12 @@
 #include "kiss_fft.h"
 #include "kiss_fftr.h"
 #include <sndfile.h>
+#define OF_USING_MPG123
 #ifdef OF_USING_MPG123
 	#include <mpg123.h>
 #endif
+
+#include <set>
 
 //		TO DO :
 //		---------------------------
@@ -50,7 +53,7 @@ class ofOpenALSoundPlayer : public ofBaseSoundPlayer, public ofThread {
 		ofOpenALSoundPlayer();
 		virtual ~ofOpenALSoundPlayer();
 
-		void loadSound(string fileName, bool stream = false);
+		bool loadSound(string fileName, bool stream = false);
 		void unloadSound();
 		void play();
 		void stop();
@@ -80,7 +83,7 @@ class ofOpenALSoundPlayer : public ofBaseSoundPlayer, public ofThread {
 		float * getSpectrum(int bands);
 
 		static float * getSystemSpectrum(int bands);
-
+	
 	protected:
 		void threadedFunction();
 
@@ -101,8 +104,8 @@ class ofOpenALSoundPlayer : public ofBaseSoundPlayer, public ofThread {
 		bool mpg123Stream(string path,vector<short> & buffer,vector<float> & fftAuxBuffer);
 #endif
 
-		void readFile(string fileName,vector<short> & buffer);
-		void stream(string fileName, vector<short> & buffer);
+		bool readFile(string fileName,vector<short> & buffer);
+		bool stream(string fileName, vector<short> & buffer);
 
 		bool isStreaming;
 		bool bMultiPlay;
@@ -150,8 +153,15 @@ class ofOpenALSoundPlayer : public ofBaseSoundPlayer, public ofThread {
 		double stream_scale;
 		vector<short> buffer;
 		vector<float> fftAuxBuffer;
+	
+		void setAutoUpdate( bool tf ); // enable/disable listening for ofEvents().update to auto update
+		bool addedAsListener;
 
 		bool stream_end;
+	
+		static set<ofOpenALSoundPlayer*>* players;	
+		static void addPlayer( ofOpenALSoundPlayer* p );
+		static void removePlayer( ofOpenALSoundPlayer* p );
 };
 
 #endif
