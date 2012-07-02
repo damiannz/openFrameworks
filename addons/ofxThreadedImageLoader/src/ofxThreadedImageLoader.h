@@ -51,7 +51,8 @@ public:
 	
 	void loadFromDisk(ofImage* image, string file);
 	void loadFromURL(ofImage* image, string url);
-	void cancelLoad(ofImage* image);
+	/// cancel a pending load. if the load has already completed, return false, else return true.
+	bool cancelLoad(ofImage* image);
 	
 	/// start running
 	void start();

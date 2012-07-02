@@ -53,7 +53,6 @@ void ofxThreadedImageLoader::loadFromURL(ofImage* image, string url) {
 	images_to_load.push_back(entry);
 	
 	unlock();
-	ofLogNotice("ofxThreadedImageLoader", "loading image from url "+url );
 	
 }
 
@@ -78,6 +77,7 @@ void ofxThreadedImageLoader::threadedFunction() {
 			unlock();
 		
 			if(entry.type == OF_LOAD_FROM_DISK) {
+				ofLogVerbose("ofxThreadedImageLoader", "loading image from disk: " + entry.filename );
 				entry.image->loadImage(entry.filename);
 				lock();
 				images_to_update.push_back(entry);
@@ -86,7 +86,7 @@ void ofxThreadedImageLoader::threadedFunction() {
 			else if(entry.type == OF_LOAD_FROM_URL) {
 				lock();
 				images_loading_from_url.push_back(entry);
-				ofLogNotice("ofxThreadedImageLoader", "loading url " + entry.url + " (fname " + entry.filename + ")" );
+				ofLogNotice("ofxThreadedImageLoader", "loading image from url: " + entry.url );
 				unlock();	
 				ofLoadURLAsync(entry.url, entry.name);
 			}
@@ -212,7 +212,6 @@ ofImageLoaderEntry ofxThreadedImageLoader::getNextImageToLoad() {
 		images_to_load.pop_front();
 	}
 	unlock();
-	ofLogNotice("ofxThreadedImageLoader", "loading image " + entry.filename );
 	return entry;
 }
 
@@ -232,7 +231,7 @@ void ofxThreadedImageLoader::start()
 	startThread( false, false );
 }
 
-void ofxThreadedImageLoader::cancelLoad(ofImage *image)
+bool ofxThreadedImageLoader::cancelLoad(ofImage *image)
 {
 	lock();
 	
@@ -274,9 +273,10 @@ void ofxThreadedImageLoader::cancelLoad(ofImage *image)
 	if ( found )
 		images_to_cancel.insert( image );
 	else {
-		ofLogWarning("ofxThreadedImageLoader") << "couldn't cancel image " << (unsigned long long)image << " because it was not found in any queue";
+		ofLogWarning("ofxThreadedImageLoader") << "couldn't cancel image* " << (unsigned long long)image << " because it was not found in any queue";
 	}
 	unlock();
+	return found;
 }
 
 void ofxThreadedImageLoader::logStatus()
