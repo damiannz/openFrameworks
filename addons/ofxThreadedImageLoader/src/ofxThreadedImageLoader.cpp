@@ -8,6 +8,7 @@ ofxThreadedImageLoader::ofxThreadedImageLoader()
 	ofAddListener(ofEvents().update, this, &ofxThreadedImageLoader::update);
 	ofRegisterURLNotification(this);
 	latencyMillis = 100;
+	timeoutSeconds = 10.0f;
 }
 
 void ofxThreadedImageLoader::setMaxLatency(int millis)
@@ -18,6 +19,10 @@ void ofxThreadedImageLoader::setMaxLatency(int millis)
 ofxThreadedImageLoader* ofxThreadedImageLoader::get(){
 	static ofxThreadedImageLoader* instance = new ofxThreadedImageLoader();
 	return instance;
+}
+void ofxThreadedImageLoader::setTimeout(float seconds)
+{
+	timeoutSeconds = max(0.0f,seconds);
 }
 
 // Load an image from disk.
@@ -61,6 +66,23 @@ void ofxThreadedImageLoader::loadFromURL(ofImage* image, string url) {
 //--------------------------------------------------------------
 void ofxThreadedImageLoader::threadedFunction() {
 	while(isThreadRunning()) {
+		lock();
+		for ( int i=0; i<images_loading_from_url.size(); i++ )
+		{
+			ofImageLoaderEntry& entry = images_loading_from_url[i];
+			if ( entry.type == OF_LOAD_FROM_URL && entry.timeoutTime < ofGetElapsedTimeMillis() )
+			{
+				ofRemoveURLRequest(entry.id);
+				images_loading_from_url.erase( images_loading_from_url.begin()+i );
+				ofLogNotice("ofxThreadedImageLoader") << "loading image from url " << entry.url << " timed out, cancelling";
+				// still need to notify finished, but let's say we were cancelled
+				images_to_cancel.insert(entry.image);
+				images_to_update.push_back(entry);
+				i--;
+			}
+		}
+		unlock();
+		
 		if(shouldLoadImages()) {
 			ofImageLoaderEntry entry = getNextImageToLoad();
 			
@@ -84,11 +106,13 @@ void ofxThreadedImageLoader::threadedFunction() {
 				unlock();
 			}
 			else if(entry.type == OF_LOAD_FROM_URL) {
+				entry.timeoutTime = ofGetElapsedTimeMillis()+timeoutSeconds*1000;
 				lock();
 				images_loading_from_url.push_back(entry);
 				ofLogNotice("ofxThreadedImageLoader", "loading image from url: " + entry.url );
+				int id = ofLoadURLAsync(entry.url, entry.name);
+				images_loading_from_url.back().id = id;
 				unlock();	
-				ofLoadURLAsync(entry.url, entry.name);
 			}
 		}
 		else {
@@ -121,10 +145,7 @@ void ofxThreadedImageLoader::urlResponse(ofHttpResponse & response) {
 			images_loading_from_url.erase(it);
 		}
 		
-		
 		unlock();
-		
-		ofLogNotice("ofxThreadeImageLoader", "loaded "+(*it).filename );
 
 	}
 	else {
