@@ -33,15 +33,21 @@ ofxiPhoneKeyboard::~ofxiPhoneKeyboard()
 
 
 //--------------------------------------------------------------
-void ofxiPhoneKeyboard::setVisible(bool visible)
+void ofxiPhoneKeyboard::setVisible(bool visible, float fadeTime)
 {
 	if(visible)
 	{
-		[keyboard showText];
+		if ( fadeTime > 0 )
+			[keyboard showTextFade:fadeTime];
+		else
+			[keyboard showText];
 	}
 	else
 	{
-		[keyboard hideText];
+		if ( fadeTime > 0 )
+			[keyboard hideTextFade:fadeTime];
+		else
+			[keyboard hideText];
 	}
 	
 }
@@ -78,6 +84,11 @@ void ofxiPhoneKeyboard::setFontSize(int ptSize)
 	[keyboard setFontSize: ptSize];
 }
 
+void ofxiPhoneKeyboard::setFont(string fontName)
+{
+	[keyboard setFont:[NSString stringWithCString:fontName.c_str() encoding:NSUTF8StringEncoding]];
+}
+
 //--------------------------------------------------------------
 void ofxiPhoneKeyboard::setFontColor(int r, int g, int b, int a)
 {
@@ -101,6 +112,7 @@ void ofxiPhoneKeyboard::setText(string _text)
 {
 	NSString * text = [[[NSString alloc] initWithCString: _text.c_str()] autorelease];
 	[keyboard setText:text];
+	ofLogNotice("ofxiPhoneKeyboard", "set text on keyboard %x to "+_text );
 }
 
 //--------------------------------------------------------------
@@ -115,7 +127,7 @@ string ofxiPhoneKeyboard::getText()
 {
 	if([keyboard getText] == nil)
 	{
-		return "";
+		return "nil";
 	}
 	else
 	{
@@ -141,6 +153,11 @@ void ofxiPhoneKeyboard::openKeyboard()
 	[keyboard openKeyboard];
 }
 
+void ofxiPhoneKeyboard::closeKeyboard()
+{
+	[keyboard closeKeyboard];
+}
+
 bool ofxiPhoneKeyboard::isKeyboardShowing()
 {
 	return [keyboard isKeyboardShowing];
@@ -157,6 +174,7 @@ void ofxiPhoneKeyboard::updateOrientation()
 //----------------------------------------------------------------
 @implementation ofxiPhoneKeyboardDelegate
 
+@synthesize fontName;
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
@@ -202,6 +220,8 @@ void ofxiPhoneKeyboard::updateOrientation()
 		_xOriginal = x;
 		_yOriginal = y;
 		
+		self.fontName = @"Helvetica";
+		
 		switch (ofxiPhoneGetOrientation()) 
 		{
             // TODO: Move all these positions transformations to setFrame
@@ -231,8 +251,10 @@ void ofxiPhoneKeyboard::updateOrientation()
 		[_textField setDelegate:self];
 		[_textField setBackgroundColor:[UIColor colorWithWhite:0.0 alpha:0.0]];
 		[_textField setTextColor:[UIColor whiteColor]];
-		[_textField setFont:[UIFont fontWithName:@"Helvetica" size:16]];
-		[_textField setPlaceholder:@""];	
+		[_textField setFont:[UIFont fontWithName:fontName size:16]];
+		[_textField setPlaceholder:@""];
+		
+		[_textField setOpaque:NO];
 		
 		fieldLength = -1;
 	}
@@ -302,6 +324,16 @@ void ofxiPhoneKeyboard::updateOrientation()
 - (void) showText
 {
 	[ofxiPhoneGetUIWindow() addSubview:_textField];
+	[_textField setAlpha:1.0f];
+}
+- (void) showTextFade:(float)fadeTime
+{
+	[ofxiPhoneGetUIWindow() addSubview:_textField];
+	[UIView animateWithDuration:fadeTime 
+					 animations:^{
+						 [_textField setAlpha:1.0f];
+					 } 
+	 ];
 }
 
 //--------------------------------------------------------------
@@ -309,6 +341,19 @@ void ofxiPhoneKeyboard::updateOrientation()
 {
 	[_textField endEditing:YES];
 	[_textField removeFromSuperview];
+}
+//--------------------------------------------------------------
+- (void) hideTextFade:(float)fadeTime
+{
+	[_textField endEditing:YES];
+	[UIView animateWithDuration:fadeTime 
+					 animations:^{
+						 [_textField setAlpha:0.0f];
+					 } 
+					 completion:^(BOOL finished){
+						 [_textField removeFromSuperview];
+					 }
+	 ];
 }
 
 //--------------------------------------------------------------
@@ -324,9 +369,17 @@ void ofxiPhoneKeyboard::updateOrientation()
 }
 
 //--------------------------------------------------------------
+- (void) setFont:(NSString*)_fontName
+{
+	self.fontName = _fontName;
+	float size = [[_textField font] pointSize];
+	[self setFontSize:size];
+}
+
+//--------------------------------------------------------------
 - (void) setFontSize: (int)size
 {
-	[_textField setFont:[UIFont fontWithName:@"Helvetica" size:size]];
+	[_textField setFont:[UIFont fontWithName:fontName size:size]];
 }
 
 //--------------------------------------------------------------
@@ -410,7 +463,9 @@ void ofxiPhoneKeyboard::updateOrientation()
     NSMutableString *newValue = [[textField.text mutableCopy] autorelease];
     [newValue replaceCharactersInRange:range withString:string];
 	
-	cout<<[newValue length]<<" "<<fieldLength;
+	//cout<<[newValue length]<<" "<<fieldLength;
+	std::string updatedString = [newValue cStringUsingEncoding:NSUTF8StringEncoding];
+	ofNotifyEvent( textUpdatedEv, updatedString );
 	
 	if(fieldLength != -1)
 	{
@@ -428,5 +483,15 @@ void ofxiPhoneKeyboard::updateOrientation()
 {
 	[_textField becomeFirstResponder];
 }
+- (void) closeKeyboard
+{
+	[_textField resignFirstResponder];
+}
+
 //--------------------------------------------------------------
+
+- (ofEvent<string>&) textUpdatedEvent
+{
+	return textUpdatedEv;
+}
 @end

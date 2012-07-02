@@ -24,13 +24,22 @@
 	int						_xOriginal;
 	int						_yOriginal;
 	int						fieldLength;
+	
+	/// event -- the string returned is autoreleased
+	ofEvent<string>			textUpdatedEv;
 }
+
+@property (copy) NSString* fontName;
+
 - (id) init: (int)x y:(int)y width:(int)w height:(int)h;
 - (void) showText;
+- (void) showTextFade:(float)fadeTime;
 - (void) hideText;
+- (void) hideTextFade:(float)fadeTime;
 - (char *) getText;
 - (const char*) getLabelText;
 - (void) setText: (NSString *)text;
+- (void) setFont:(NSString*)fontName;
 - (void) setFontSize: (int)size;
 - (void) setFontColorRed: (int)r green: (int)g blue:(int)b alpha:(int)a;
 - (void) setBgColorRed: (int)r green: (int)g blue:(int)b alpha:(int)a;
@@ -38,9 +47,11 @@
 - (void) setFrame: (CGRect) rect;
 - (void) setPlaceholder: (NSString *)text;
 - (void) openKeyboard;
+- (void) closeKeyboard;
 - (void) updateOrientation;
 - (void) makeSecure;
 - (void) setFieldLength: (int)len;
+- (ofEvent<string>&) textUpdatedEvent;
 
 
 @end
@@ -53,16 +64,18 @@ public:
 	ofxiPhoneKeyboard(int _x, int _y, int _w, int _h);
 	~ofxiPhoneKeyboard();
 	
-	void setVisible(bool visible);
+	void setVisible(bool visible, float fadeTime = 0 );
 	
 	void setPosition(int _x, int _y);
 	void setSize(int _w, int _h);
 	void setFontSize(int ptSize);
+	void setFont(string fontName);
 	void setFontColor(int r, int g, int b, int a);
 	void setBgColor(int r, int g, int b, int a);
 	void setText(string _text);
 	void setPlaceholder(string _text);
 	void openKeyboard();
+	void closeKeyboard();
 	void updateOrientation();
 	void makeSecure();
 	void setMaxChars(int max);
@@ -71,7 +84,7 @@ public:
 	string getLabelText();
 	bool isKeyboardShowing();
 	
-	
+	ofEvent<string>& getTextUpdatedEvent() { return [keyboard textUpdatedEvent]; }
 	
 protected:
 	
