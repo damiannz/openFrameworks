@@ -26,7 +26,7 @@ typedef struct {
 typedef ofPath ofTTFCharacter;
 
 //--------------------------------------------------
-#define NUM_CHARACTER_TO_START		33		// 0 - 32 are control characters, no graphics needed.
+#define NUM_CHARACTER_TO_START		32		// 0 - 31 are control characters, no graphics needed.
 
 class ofTrueTypeFont{
 
@@ -36,11 +36,17 @@ public:
 	ofTrueTypeFont();
 	virtual ~ofTrueTypeFont();
 	
-	//set the default dpi for all typefaces.
-	static void setGlobalDpi(int newDpi);
+	/// set the default glpyh dpi for all typefaces.
+	static void setGlobalDpi(int newDpi, bool alsoSetDisplayDpi = true );
+	/// set the dpi of the display device for all typefaces. useful for retina.
+	/// if the global glpyh dpi is 144 and the display dpi is 72, fonts will be rendered at half their internal scale.
+	static void setGlobalDisplayDpi( int displayDpi );
+	/// set the default simplify amount. initially 0.3f. 0.0f is no simplification.
+	static void setGlobalSimplify( float simplifyAmt );
+	
 			
-	// 			-- default (without dpi), non-full char set, anti aliased, 96 dpi:
-	bool 		loadFont(string filename, int fontsize, bool _bAntiAliased=true, bool _bFullCharacterSet=false, bool makeContours=false, float simplifyAmt=0.3, int dpi=0);
+	/// default: non-full char set, anti aliased, not full char set, no contours, simplifyAmount set from global default, dpi set from global DPI:
+	bool 		loadFont(string filename, int fontsize, bool _bAntiAliased=true, bool _bFullCharacterSet=false, bool makeContours=false, float simplifyAmt=-1, int dpi=0);
 	
 	bool		isLoaded();
 	bool		isAntiAliased();
@@ -48,11 +54,11 @@ public:
 
     int         getSize();
     float       getLineHeight();
-  	void 		setLineHeight(float height);
-	float 		getLetterSpacing();
-	void 		setLetterSpacing(float spacing);
+  	void 		setLineHeight(float height); // in OpenGL/screen/display units
+	float 		getLetterSpacing(); 
+	void 		setLetterSpacing(float spacing); // scale factor relative to glyph width
 	float 		getSpaceSize();
-	void 		setSpaceSize(float size);
+	void 		setSpaceSize(float size); // scale factor relative to normal space width
 	float 		stringWidth(string s);
 	float 		stringHeight(string s);
 	
@@ -67,10 +73,15 @@ public:
 	ofTTFCharacter getCharacterAsPoints(int character);
 	vector<ofTTFCharacter> getStringAsPoints(string str);
 
-	void bind();
+	/// begin collecting font drawing commands
+	void bind( ofPoint initialOffset=ofPoint(0,0,0) );
+	/// font drawing, if any, actually happens in unbind();
 	void unbind();
 
 protected:
+	
+	inline float	getGlyphScale();
+	
 	bool			bLoadedOk;
 	bool 			bAntiAliased;
 	bool 			bFullCharacterSet;
@@ -81,10 +92,10 @@ protected:
 	float 			lineHeight;
 	float			letterSpacing;
 	float			spaceSize;
-
+	
 	vector<charProps> 	cps;			// properties for each character
 
-	int				fontSize;
+	float				fontSize;
 	bool			bMakeContours;
 	float 			simplifyAmt;
 	int 			dpi;
@@ -97,6 +108,8 @@ protected:
 
 	ofTexture texAtlas;
 	bool binded;
+	ofPoint bindInitialOffset;
+	float bindedGlyphScale; // getGlyphScale() at the time we called bind()
 	ofMesh stringQuads;
 
 private:

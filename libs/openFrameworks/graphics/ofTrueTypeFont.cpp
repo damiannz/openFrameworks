@@ -14,10 +14,24 @@
 
 static bool printVectorInfo = false;
 static int ttfGlobalDpi = 96;
+static int ttfDisplayDpi = ttfGlobalDpi;
+static float ttfGlobalSimplify = 0.3f;
 
 //--------------------------------------------------------
-void ofTrueTypeFont::setGlobalDpi(int newDpi){
+void ofTrueTypeFont::setGlobalDpi(int newDpi, bool alsoSetDisplayDpi ){
 	ttfGlobalDpi = newDpi;
+	if ( alsoSetDisplayDpi )
+		setGlobalDisplayDpi(newDpi);
+}
+
+//--------------------------------------------------------
+void ofTrueTypeFont::setGlobalDisplayDpi( int newDpi ){
+	ttfDisplayDpi = newDpi;
+}
+
+//--------------------------------------------------------
+void ofTrueTypeFont::setGlobalSimplify(float simplifyAmt){
+	ttfGlobalSimplify = simplifyAmt;
 }
 
 //--------------------------------------------------------
@@ -241,10 +255,14 @@ bool ofTrueTypeFont::loadFont(string _filename, int _fontSize, bool _bAntiAliase
 	}
 	//------------------------------------------------
 
+	if ( _simplifyAmt < 0 ){
+		_simplifyAmt = ttfGlobalSimplify;
+	}
+	
 	if( _dpi == 0 ){
 		_dpi = ttfGlobalDpi;
 	}
-
+	
 	filename = ofToDataPath(_filename,true);
 
 	bLoadedOk 			= false;
@@ -254,7 +272,7 @@ bool ofTrueTypeFont::loadFont(string _filename, int _fontSize, bool _bAntiAliase
 	bMakeContours 		= _makeContours;
 	simplifyAmt			= _simplifyAmt;
 	dpi 				= _dpi;
-
+	
 	//--------------- load the library and typeface
 	
     FT_Error err;
@@ -278,8 +296,13 @@ bool ofTrueTypeFont::loadFont(string _filename, int _fontSize, bool _bAntiAliase
 		return false;
 	}
 
-	FT_Set_Char_Size( face, fontSize << 6, fontSize << 6, dpi, dpi);
-	lineHeight = fontSize * 1.43f;
+	// '26.6 fractional points' is a fixed point format with the rightmost 6 bits representing the floating point part
+	// so just << 6 as we're dealing with an integer here
+	int size266 = (int)(fontSize * (1 << 6));
+	FT_Set_Char_Size( face, size266, size266, dpi, dpi);
+	
+	float lineHeightMultiplier = (1.43/96)*dpi; // is dependant on the dpi
+	lineHeight = fontSize * lineHeightMultiplier;
 
 	//------------------------------------------------------
 	//kerning would be great to support:
@@ -455,7 +478,6 @@ bool ofTrueTypeFont::loadFont(string _filename, int _fontSize, bool _bAntiAliase
 	}
 
 
-
 	ofPixels atlasPixels;
 	atlasPixels.allocate(w,h,2);
 	atlasPixels.set(0,255);
@@ -485,7 +507,7 @@ bool ofTrueTypeFont::loadFont(string _filename, int _fontSize, bool _bAntiAliase
 
 	texAtlas.allocate(atlasPixels.getWidth(),atlasPixels.getHeight(),GL_LUMINANCE_ALPHA,false);
 
-	if(bAntiAliased && fontSize>20){
+	if(bAntiAliased && fontSize>14){
 		texAtlas.setTextureMinMagFilter(GL_LINEAR,GL_LINEAR);
 	}else{
 		texAtlas.setTextureMinMagFilter(GL_NEAREST,GL_NEAREST);
@@ -522,12 +544,12 @@ int ofTrueTypeFont::getSize() {
 
 //-----------------------------------------------------------
 void ofTrueTypeFont::setLineHeight(float _newLineHeight) {
-	lineHeight = _newLineHeight;
+	lineHeight = _newLineHeight/getGlyphScale();
 }
 
 //-----------------------------------------------------------
 float ofTrueTypeFont::getLineHeight(){
-	return lineHeight;
+	return lineHeight*getGlyphScale();
 }
 
 //-----------------------------------------------------------
@@ -732,10 +754,10 @@ ofRectangle ofTrueTypeFont::getStringBoundingBox(string c, float x, float y){
     	index++;
     }
 
-    myRect.x        = minx;
-    myRect.y        = miny;
-    myRect.width    = maxx-minx;
-    myRect.height   = maxy-miny;
+    myRect.x        = minx*getGlyphScale();
+    myRect.y        = miny*getGlyphScale();
+    myRect.width    = (maxx-minx)*getGlyphScale();
+    myRect.height   = (maxy-miny)*getGlyphScale();
     return myRect;
 }
 
@@ -746,7 +768,7 @@ float ofTrueTypeFont::stringHeight(string c) {
 }
 
 //=====================================================================
-void ofTrueTypeFont::drawString(string c, float x, float y) {
+void ofTrueTypeFont::drawString(string c, float _x, float _y) {
 
     /*glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
@@ -757,15 +779,25 @@ void ofTrueTypeFont::drawString(string c, float x, float y) {
     	return;
     };
 
-	GLint		index	= 0;
-	GLfloat		X		= x;
-	GLfloat		Y		= y;
-
-
+	
+	// handle translation in case we're already bound
+	ofPoint initialOffset( _x, _y );
+	ofPoint offsetCompensated( 0, 0 );
 	bool alreadyBinded = binded;
+	if (alreadyBinded){
+		offsetCompensated = (initialOffset-bindInitialOffset)/bindedGlyphScale;
+	}
+	else{
+		bind(initialOffset);
+		offsetCompensated.set(0,0);
+	}	
+	
+	float x = offsetCompensated.x; 
+	float y = offsetCompensated.y;
 
-	if(!alreadyBinded) bind();
-
+	GLint		index	= 0;
+	GLfloat		X		= x; 
+	GLfloat		Y		= y;
 	int len = (int)c.length();
 
 	while(index < len){
@@ -780,6 +812,7 @@ void ofTrueTypeFont::drawString(string c, float x, float y) {
 				 int cy = (int)'p' - NUM_CHARACTER_TO_START;
 				 X += cps[cy].width * letterSpacing * spaceSize;
 		  } else {
+			  // note: draw actually hapens in unbind();
 				drawChar(cy, X, Y);
 				X += cps[cy].setWidth * letterSpacing;
 		  }
@@ -787,13 +820,16 @@ void ofTrueTypeFont::drawString(string c, float x, float y) {
 		index++;
 	}
 
+	// drawing actually happens here
 	if(!alreadyBinded) unbind();
-
+	
 }
 
 //-----------------------------------------------------------
-void ofTrueTypeFont::bind(){
+void ofTrueTypeFont::bind( ofPoint initialOffset ){
 	if(!binded){
+		bindInitialOffset = initialOffset;
+		bindedGlyphScale = getGlyphScale();
 	    // we need transparency to draw text, but we don't know
 	    // if that is set up in outside of this function
 	    // we "pushAttrib", turn on alpha and "popAttrib"
@@ -829,7 +865,13 @@ void ofTrueTypeFont::bind(){
 //-----------------------------------------------------------
 void ofTrueTypeFont::unbind(){
 	if(binded){
+		
+		ofPushMatrix();
+		ofTranslate( bindInitialOffset.x, bindInitialOffset.y );
+		ofScale( bindedGlyphScale, bindedGlyphScale );
 		stringQuads.drawFaces();
+		ofPopMatrix();
+		
 		texAtlas.unbind();
 
 		#ifndef TARGET_OPENGLES
@@ -895,4 +937,9 @@ void ofTrueTypeFont::drawStringAsShapes(string c, float x, float y) {
 //-----------------------------------------------------------
 int ofTrueTypeFont::getNumCharacters() {
 	return nCharacters;
+}
+
+//-----------------------------------------------------------
+float ofTrueTypeFont::getGlyphScale(){
+	return float(ttfDisplayDpi)/dpi;
 }
