@@ -115,7 +115,7 @@ ofSoundBuffer ofSampleReaderApple::readSample( string path )
 
 	int nBytesPerChannel = fileFormat.mBitsPerChannel/8;
 	if ( nBytesPerChannel == 2 )
-		buffer.copyFromRawData( (uint16_t*)data, nFrames, nChannelsPerFrame, sampleRate, isInterleaved ); 
+		buffer.copyFromRawData( (int16_t*)data, nFrames, nChannelsPerFrame, sampleRate, isInterleaved ); 
 	else
 		buffer.copyFromRawDataNativeEndian( (void*)data, nBytesPerChannel, nFrames, nChannelsPerFrame, sampleRate, isInterleaved );
 /*	

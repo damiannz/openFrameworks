@@ -1,8 +1,14 @@
 #include "testApp.h"
+#include "ofSampleReaderApple.h"
+#include "ofSoundBuffer.h"
 
 //--------------------------------------------------------------
 void testApp::setup(){
-	synth.loadSound("sounds/synth.wav");
+	ofSampleReaderApple reader;
+	ofSoundBuffer buffer = reader.readSample("sounds/synth.wav");
+	ofLogNotice("testApp") << "ofSoundBuffer says duration is " << buffer.getDuration();
+	//synth.loadSound("sounds/synth.wav");
+	synth.loadSound( buffer );
 	beats.loadSound("sounds/1085.mp3");
 	vocals.loadSound("sounds/Violet.mp3");
 	synth.setVolume(0.75f);
@@ -11,6 +17,7 @@ void testApp::setup(){
 	font.loadFont("Sudbury_Basin_3D.ttf", 32);
 	beats.setMultiPlay(false);
 	vocals.setMultiPlay(true);
+	
 }
 
 //--------------------------------------------------------------

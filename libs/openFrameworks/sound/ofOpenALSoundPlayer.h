@@ -91,6 +91,7 @@ class ofOpenALSoundPlayer : public ofBaseSoundPlayer, public ofThread {
 		void threadedFunction();
 
 	private:
+		bool setupALSourcesAndBuffers( string logAppend );
 		friend void ofOpenALSoundUpdate();
 		void update(ofEventArgs & args);
 		void initFFT(int bands);

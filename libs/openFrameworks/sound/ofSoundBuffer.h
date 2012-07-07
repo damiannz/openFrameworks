@@ -17,7 +17,7 @@ public:
 	~ofSoundBuffer();
 	
 	// make a copy of data
-	void copyFromRawData( uint16_t* data, int nFrames, int nChannels, int sampleRate, bool isInterleaved );
+	void copyFromRawData( int16_t* data, int nFrames, int nChannels, int sampleRate, bool isInterleaved );
 	void copyFromRawDataNativeEndian( void* data, int nBytesPerSample, int nFrames, int nChannels, int sampleRate, bool isInterleaved );
 	
 	void copyTo( vector<short>& buffer );
@@ -30,7 +30,7 @@ public:
 	
 private:
 	
-	ofPtr<uint16_t> data;
+	ofPtr<int16_t> data;
 	int nFrames;
 	int nChannels;
 	int sampleRate;

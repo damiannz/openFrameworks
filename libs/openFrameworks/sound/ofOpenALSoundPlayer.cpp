@@ -373,86 +373,8 @@ bool ofOpenALSoundPlayer::loadSound( ofSoundBuffer sBuffer )
 	int numFrames = sBuffer.getNumFrames();
 	sBuffer.copyTo( buffer );
 	
-	
-	
-	/*
-	for(int i=0;i<channels;i++){
-		fftBuffers[i].resize(numFrames);
-		for(int j=0;j<numFrames;j++){
-			fftBuffers[i][j] = fftAuxBuffer[j*channels+i];
-		}
-	}*/
-	
-	buffers.resize(channels);
 
-	alGenBuffers(buffers.size(), &buffers[0]);
-	int err;
-	if(channels==1){
-		sources.resize(1);
-		alGenSources(1, &sources[0]);
-		err = alGetError();
-		if (err != AL_NO_ERROR)
-		{
-			ofLogError("ofOpenALSoundPlayer") << "error " << err << " generating source from ofSoundBuffer";
-			return false;
-		}
-		
-		for(int i=0; i<(int)buffers.size(); i++){
-			alBufferData(buffers[i],format,&buffer[0],buffer.size()*2,samplerate);
-			err = alGetError();
-			if (err != AL_NO_ERROR){
-				ofLogError("ofOpenALSoundPlayer:") << "error " << err << " creating buffer from ofSoundBuffer";
-				return false;
-			}
-		}
-		alSourcei (sources[0], AL_BUFFER,   buffers[0]);
-		
-		alSourcef (sources[0], AL_PITCH,    1.0f);
-		alSourcef (sources[0], AL_GAIN,     1.0f);
-	    alSourcef (sources[0], AL_ROLLOFF_FACTOR,  0.0);
-	    alSourcei (sources[0], AL_SOURCE_RELATIVE, AL_TRUE);
-	}else{
-		vector<vector<short> > multibuffer;
-		multibuffer.resize(channels);
-		sources.resize(channels);
-		alGenSources(channels, &sources[0]);
-		err = alGetError();
-		if (err != AL_NO_ERROR){
-			ofLogError("ofOpenALSoundPlayer") << "error " << err << " creating stereo sources from ofSoundBuffer";
-			return false;
-		}
-		
-
-		for(int i=0;i<channels;i++){
-			multibuffer[i].resize(buffer.size()/channels);
-			for(int j=0;j<numFrames;j++){
-				multibuffer[i][j] = buffer[j*channels+i];
-			}
-			alBufferData(buffers[i],format,&multibuffer[i][0],buffer.size()/channels*2,samplerate);
-			err = alGetError();
-			if (err != AL_NO_ERROR){
-				ofLogError("ofOpenALSoundPlayer") << "error " << err << " creating stereo buffers from ofSoundBuffer";
-				return false;
-			}
-			alSourcei (sources[i], AL_BUFFER,   buffers[i]   );
-		}
-		
-		for(int i=0;i<channels;i++){
-			// only stereo panning
-			if(i==0){
-				float pos[3] = {-1,0,0};
-				alSourcefv(sources[i],AL_POSITION,pos);
-			}else{
-				float pos[3] = {1,0,0};
-				alSourcefv(sources[i],AL_POSITION,pos);
-			}
-			alSourcef (sources[i], AL_ROLLOFF_FACTOR,  0.0);
-			alSourcei (sources[i], AL_SOURCE_RELATIVE, AL_TRUE);
-		}
-	}
-	
-	bLoadedOk = true;
-	return bLoadedOk;
+	setupALSourcesAndBuffers( "ofSoundBuffer 0x"+ofToHex(&sBuffer) );
 
 }
 
@@ -472,7 +394,6 @@ bool ofOpenALSoundPlayer::loadSound(string fileName, bool is_stream){
 	// [2] init sound systems, if necessary
 	initialize();
 
-	ALenum format=AL_FORMAT_MONO16;
 	bLoadedOk = false;
 
 	if(!isStreaming){
@@ -482,7 +403,18 @@ bool ofOpenALSoundPlayer::loadSound(string fileName, bool is_stream){
 	}
 	if ( !bLoadedOk )
 		return false;
+	
+	return setupALSourcesAndBuffers( fileName );
+}
 
+bool ofOpenALSoundPlayer::setupALSourcesAndBuffers( string logAppend )
+{
+	ALenum format;
+	if ( channels == 1 )
+		format = AL_FORMAT_MONO16;
+	else
+		format = AL_FORMAT_STEREO16;
+	
 	int numFrames = buffer.size()/channels;
 
 	if(isStreaming){
@@ -498,7 +430,7 @@ bool ofOpenALSoundPlayer::loadSound(string fileName, bool is_stream){
 		err = alGetError();
 		if (err != AL_NO_ERROR)
 		{
-			ofLogError("ofOpenALSoundPlayer") << "error " << err << " generating source for " << fileName;
+			ofLogError("ofOpenALSoundPlayer") << "error " << err << " generating source for " << logAppend;
 			return false;
 		}
 
@@ -506,7 +438,7 @@ bool ofOpenALSoundPlayer::loadSound(string fileName, bool is_stream){
 			alBufferData(buffers[i],format,&buffer[0],buffer.size()*2,samplerate);
 			err = alGetError();
 			if (err != AL_NO_ERROR){
-				ofLogError("ofOpenALSoundPlayer:") << "error " << err << " creating buffer for " << fileName;
+				ofLogError("ofOpenALSoundPlayer:") << "error " << err << " creating buffer for " << logAppend;
 				return false;
 			}
 			if(isStreaming){
@@ -530,7 +462,7 @@ bool ofOpenALSoundPlayer::loadSound(string fileName, bool is_stream){
 		alGenSources(channels, &sources[0]);
 		err = alGetError();
 		if (err != AL_NO_ERROR){
-			ofLogError("ofOpenALSoundPlayer") << "error " << err << " creating stereo sources for " + fileName;
+			ofLogError("ofOpenALSoundPlayer") << "error " << err << " creating stereo sources for " + logAppend;
 			return false;
 		}
 
@@ -544,7 +476,7 @@ bool ofOpenALSoundPlayer::loadSound(string fileName, bool is_stream){
 					alBufferData(buffers[s*2+i],format,&multibuffer[i][0],buffer.size()/channels*2,samplerate);
 					err = alGetError();
 					if ( err != AL_NO_ERROR){
-						ofLogError("ofOpenALSoundPlayer") << "error " << err << " creating stereo buffers for " + fileName;
+						ofLogError("ofOpenALSoundPlayer") << "error " << err << " creating stereo buffers for " + logAppend;
 						return false;
 					}
 					alSourceQueueBuffers(sources[i],1,&buffers[s*2+i]);
@@ -560,7 +492,7 @@ bool ofOpenALSoundPlayer::loadSound(string fileName, bool is_stream){
 				alBufferData(buffers[i],format,&multibuffer[i][0],buffer.size()/channels*2,samplerate);
 				err = alGetError();
 				if (err != AL_NO_ERROR){
-					ofLogError("ofOpenALSoundPlayer") << "error " << err << " creating stereo buffers for " + fileName;
+					ofLogError("ofOpenALSoundPlayer") << "error " << err << " creating stereo buffers for " + logAppend;
 					return false;
 				}
 				alSourcei (sources[i], AL_BUFFER,   buffers[i]   );

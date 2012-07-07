@@ -18,25 +18,25 @@ ofSoundBuffer::~ofSoundBuffer()
 {
 }
 
-void ofSoundBuffer::copyFromRawData( uint16_t *_data, int _nFrames, int _nChannels, int _sampleRate, bool _isInterleaved )
+void ofSoundBuffer::copyFromRawData( int16_t *_data, int _nFrames, int _nChannels, int _sampleRate, bool _isInterleaved )
 {
 	nFrames = _nFrames;
 	nChannels = _nChannels;
 	sampleRate = _sampleRate;
 	isInterleaved = _isInterleaved;
-	data = ofPtr<uint16_t>(new uint16_t[nFrames*nChannels]);
+	data = ofPtr<int16_t>(new int16_t[nFrames*nChannels]);
 	// make a copy of the data
-	memcpy( data.get(), _data, _nChannels*_nFrames*sizeof(uint16_t));
+	memcpy( data.get(), _data, _nChannels*_nFrames*sizeof(int16_t));
 }
 
 template < class T >
-void fillBufferFromRawDataNativeEndian( T* _data, int count, ofPtr<uint16_t> output )
+void fillBufferFromRawDataNativeEndian( T* _data, int count, ofPtr<int16_t> output )
 {
 	unsigned long sampleMax = numeric_limits<T>::max();
-	unsigned long outputMax = numeric_limits<uint16_t>::max();
+	unsigned long outputMax = numeric_limits<int16_t>::max();
 	int nBytesPerChannel = sizeof(T);
 	// convert the data to float
-	uint16_t* out = output.get();
+	int16_t* out = output.get();
 	T* in = _data;
 	while( count-- )
 	{
@@ -55,7 +55,7 @@ void ofSoundBuffer::copyFromRawDataNativeEndian( void* _data, int nBytesPerSampl
 	nChannels = _nChannels;
 	sampleRate = _sampleRate;
 	isInterleaved = _isInterleaved;
-	data = ofPtr<uint16_t>(new uint16_t[nFrames*nChannels]);
+	data = ofPtr<int16_t>(new int16_t[nFrames*nChannels]);
 	
 	int count = nFrames*nChannels;
 	if ( nBytesPerSample == 1 )
