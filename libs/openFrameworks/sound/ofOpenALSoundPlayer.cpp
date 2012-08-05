@@ -373,10 +373,11 @@ bool ofOpenALSoundPlayer::loadSound(string fileName, bool is_stream){
 		buffers.resize(channels);
 	}
 	alGenBuffers(buffers.size(), &buffers[0]);
+	int err = 0;
 	if(channels==1){
 		sources.resize(1);
 		alGenSources(1, &sources[0]);
-		int err = alGetError();
+		err = alGetError();
 		if (err != AL_NO_ERROR)
 		{
 			ofLogError("ofOpenALSoundPlayer") << "error " << err << " generating source for " << fileName;
