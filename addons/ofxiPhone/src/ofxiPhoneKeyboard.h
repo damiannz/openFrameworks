@@ -36,6 +36,7 @@
 - (void) showTextFade:(float)fadeTime;
 - (void) hideText;
 - (void) hideTextFade:(float)fadeTime;
+- (void) setUserInteractionEnabled:(BOOL)yn;
 - (char *) getText;
 - (const char*) getLabelText;
 - (void) setText: (NSString *)text;

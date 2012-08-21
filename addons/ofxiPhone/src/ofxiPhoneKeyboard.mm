@@ -37,6 +37,7 @@ void ofxiPhoneKeyboard::setVisible(bool visible, float fadeTime)
 {
 	if(visible)
 	{
+		[keyboard setUserInteractionEnabled:YES];
 		if ( fadeTime > 0 )
 			[keyboard showTextFade:fadeTime];
 		else
@@ -44,6 +45,7 @@ void ofxiPhoneKeyboard::setVisible(bool visible, float fadeTime)
 	}
 	else
 	{
+		[keyboard setUserInteractionEnabled:NO];
 		if ( fadeTime > 0 )
 			[keyboard hideTextFade:fadeTime];
 		else
@@ -342,6 +344,12 @@ void ofxiPhoneKeyboard::updateOrientation()
 	[_textField endEditing:YES];
 	[_textField removeFromSuperview];
 }
+
+- (void) setUserInteractionEnabled:(BOOL)yn
+{
+	[_textField setUserInteractionEnabled:yn];
+}
+
 //--------------------------------------------------------------
 - (void) hideTextFade:(float)fadeTime
 {

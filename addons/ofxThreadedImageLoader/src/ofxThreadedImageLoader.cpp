@@ -294,7 +294,7 @@ bool ofxThreadedImageLoader::cancelLoad(ofImage *image)
 	if ( found )
 		images_to_cancel.insert( image );
 	else {
-		ofLogWarning("ofxThreadedImageLoader") << "couldn't cancel image* " << (unsigned long long)image << " because it was not found in any queue";
+		ofLogWarning("ofxThreadedImageLoader") << "couldn't cancel image* " << ofToHex((unsigned long long)image) << " because it was not found in any queue";
 	}
 	unlock();
 	return found;
