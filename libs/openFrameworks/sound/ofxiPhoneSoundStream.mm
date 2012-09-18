@@ -19,6 +19,7 @@
 #include "ofMath.h"
 #include "ofUtils.h"
 #import <AudioToolbox/AudioToolbox.h>
+#import <AudioUnit/AudioUnit.h>
 #import "ofxiPhone.h"
 
 static bool							isSetup			= false;
@@ -30,7 +31,7 @@ static ofBaseSoundInput *			soundInputPtr	= NULL;
 static ofBaseSoundOutput *			soundOutputPtr	= NULL;
 
 // intermediate buffer for sample scaling
-#define MAX_BUFFER_SIZE 4096
+#define MAX_BUFFER_SIZE 65536
 float scaleBuffer[MAX_BUFFER_SIZE];
 
 #define kOutputBus	0
@@ -200,12 +201,11 @@ bool ofxiPhoneSoundStream::setup(int outChannels, int inChannels, int _sampleRat
 	}
 	
 	Float32 preferredBufferSize = (float) bufferSize/sampleRate; 
-	
-	
 	status = AudioSessionSetProperty(kAudioSessionProperty_PreferredHardwareIOBufferDuration, sizeof(preferredBufferSize), &preferredBufferSize);
 	if(checkStatus(status)) {
 		ofLog(OF_LOG_ERROR, "ofxiPhoneSoundStream: Couldn't set i/o buffer duration");
 	}
+	
 	
 	
 	// describe audio component
@@ -286,6 +286,34 @@ bool ofxiPhoneSoundStream::setup(int outChannels, int inChannels, int _sampleRat
 		if(checkStatus(status)) {
 			ofLog(OF_LOG_ERROR, "ofxiPhoneSoundStream: Couldn't set output callback");
 		}
+		
+		Float64 latency;
+		UInt32 dataSize = sizeof(latency);
+		status = AudioUnitGetProperty(audioUnit,
+										  kAudioUnitProperty_Latency,
+										  kAudioUnitScope_Global,
+										  kOutputBus,
+										  &latency, 
+										  &dataSize);
+		/*
+		if(checkStatus(status)) {
+			ofLog(OF_LOG_ERROR, "ofxiPhoneSoundStream: Couldn't get latency");
+		}*/
+		
+		Boolean writeable;
+		status = AudioUnitGetPropertyInfo(audioUnit,
+										  kAudioUnitProperty_Latency,
+										  kAudioUnitScope_Global,
+										  kOutputBus,
+										  NULL,
+										  &writeable);
+		/*
+		if(checkStatus(status)) {
+			ofLog(OF_LOG_ERROR, "ofxiPhoneSoundStream: Couldn't get latency info");
+		}
+		ofLogNotice("ofxiPhoneSoundStream")<<"latency: " << latency << " writeable " << (int)writeable;
+		*/
+		
 	}
 	
 	if(inChannels > 0) {

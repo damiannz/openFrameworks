@@ -7,15 +7,15 @@ void testApp::setup(){
 	//old OF default is 96 - but this results in fonts looking larger than in other programs. 
 	ofTrueTypeFont::setGlobalDpi(72);
 
-	verdana14.loadFont("verdana.ttf", 14, true, true);
+	verdana14.loadFont("GothamHTF-Book.otf", 14, true, true);
 	verdana14.setLineHeight(18.0f);
 	verdana14.setLetterSpacing(1.037);
 
-	verdana30.loadFont("verdana.ttf", 30, true, true);
+	verdana30.loadFont("GothamHTF-Book.otf", 30, true, true);
 	verdana30.setLineHeight(34.0f);
 	verdana30.setLetterSpacing(1.035);
 	
-	verdana14A.loadFont("frabk.ttf", 14, false);
+	verdana14A.loadFont("GothamHTF-Book.otf", 14, false);
 	verdana14A.setLineHeight(18.0f);
 	verdana14A.setLetterSpacing(1.037);
 

@@ -151,13 +151,19 @@ void ofxThreadedImageLoader::urlResponse(ofHttpResponse & response) {
 	else {
 		// log error.
 		stringstream ss;
-		ss << "Could not image from url, response status: " << response.status;
+		ss << "Could not load image from url, response status: " << response.status;
 		ofLog(OF_LOG_ERROR, ss.str());
 		
 		// remove the entry from the queue
 		lock();
 		entry_iterator it = getEntryFromAsyncQueue(response.request.name);
 		if(it != images_loading_from_url.end()) {
+			if ( images_to_cancel.count((*it).image) ) {
+				images_to_cancel.erase((*it).image);
+			}
+			else {
+				images_to_update.push_back((*it));
+			}
 			images_loading_from_url.erase(it);
 		}
 		else {
@@ -294,7 +300,7 @@ bool ofxThreadedImageLoader::cancelLoad(ofImage *image)
 	if ( found )
 		images_to_cancel.insert( image );
 	else {
-		ofLogWarning("ofxThreadedImageLoader") << "couldn't cancel image* " << ofToHex((unsigned long long)image) << " because it was not found in any queue";
+		ofLogWarning("ofxThreadedImageLoader") << "couldn't cancel image 0x" << ofToHex((unsigned long)image) << " because it was not found in any queue";
 	}
 	unlock();
 	return found;

@@ -63,6 +63,7 @@ void testApp::setup() {
     
     // listen to any of the events for the game
     ofAddListener(GameEvent::events, this, &testApp::gameEvent);
+    ofAddListener(GameEvent::events, this, &testApp::gameEvent);
     
 }
 

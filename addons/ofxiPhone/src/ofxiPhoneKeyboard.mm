@@ -114,7 +114,7 @@ void ofxiPhoneKeyboard::setText(string _text)
 {
 	NSString * text = [[[NSString alloc] initWithCString: _text.c_str()] autorelease];
 	[keyboard setText:text];
-	ofLogNotice("ofxiPhoneKeyboard", "set text on keyboard %x to "+_text );
+	ofLogNotice("ofxiPhoneKeyboard") << "set text on keyboard " << ofToHex(this) << " to " << _text;
 }
 
 //--------------------------------------------------------------

@@ -597,7 +597,7 @@ class BackgroundTrackMgr
 				
 				mNumPacketsToRead = (UInt32)theFileNumPackets;
 				mBufferByteSize = inFileInfo->mFileDataSize;
-				numBuffersToQueue = 1;
+				numBuffersToQueue = 4;
 			}	
 			else
 			{

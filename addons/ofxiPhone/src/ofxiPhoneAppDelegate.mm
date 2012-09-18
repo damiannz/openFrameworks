@@ -131,12 +131,14 @@
 }
 
 -(void) applicationWillResignActive:(UIApplication *)application {
+	NSLog(@"applicationwillResignActive");
     [ofxiPhoneGetViewController() stopAnimation];
 	
 	ofxiPhoneAlerts.lostFocus();
 }
 
 -(void) applicationDidBecomeActive:(UIApplication *)application {
+	NSLog(@"applicationDidBecomeActive");
     [ofxiPhoneGetViewController() startAnimation];
 	
 	ofxiPhoneAlerts.gotFocus();
@@ -144,6 +146,7 @@
 
 
 -(void) applicationWillTerminate:(UIApplication *)application {
+	NSLog(@"applicationWillTerminate");
     [ofxiPhoneGetViewController() stopAnimation];
 	
     // stop listening for orientation change notifications
@@ -156,6 +159,7 @@
 }
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+	NSLog(@"handleOpenURL from ofxiPhoneAppDelegate");
 	NSString *urlData = [url absoluteString];
 	const char * response = [urlData UTF8String];
 	ofxiPhoneAlerts.launchedWithURL(response);

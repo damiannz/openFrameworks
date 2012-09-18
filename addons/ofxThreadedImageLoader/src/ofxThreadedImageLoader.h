@@ -66,6 +66,7 @@ public:
 	/// url callback (i wish this could be private)
 	void urlResponse(ofHttpResponse & response);
 	
+
 	/// event that fires on the main thread once the image is ready, or not
 	ofEvent<ofxThreadedImageLoaderEventArgs> imageFinishedEv;
 private:
