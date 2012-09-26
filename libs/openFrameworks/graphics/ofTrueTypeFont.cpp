@@ -811,9 +811,9 @@ void ofTrueTypeFont::drawString(string c, float _x, float _y) {
 		  }else if (c[index] == ' ') {
 				 int cy = (int)'p' - NUM_CHARACTER_TO_START;
 				 X += cps[cy].width * letterSpacing * spaceSize;
-		  } else {
+		} else {
 			  // note: draw actually hapens in unbind();
-				drawChar(cy, X, Y);
+				drawChar(cy, (int)X, Y);
 				X += cps[cy].setWidth * letterSpacing;
 		  }
 		}
