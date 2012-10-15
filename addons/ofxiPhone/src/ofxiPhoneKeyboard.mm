@@ -53,6 +53,13 @@ void ofxiPhoneKeyboard::setVisible(bool visible, float fadeTime)
 	}
 	
 }
+
+bool ofxiPhoneKeyboard::getIsVisible()
+{
+	return [keyboard textIsShowing];
+}
+
+
 //--------------------------------------------------------------
 void ofxiPhoneKeyboard::makeSecure()
 {
@@ -362,6 +369,11 @@ void ofxiPhoneKeyboard::updateOrientation()
 						 [_textField removeFromSuperview];
 					 }
 	 ];
+}
+
+- (BOOL) textIsShowing
+{
+	return [_textField alpha] > 0;
 }
 
 //--------------------------------------------------------------

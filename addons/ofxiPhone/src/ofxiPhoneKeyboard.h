@@ -36,6 +36,7 @@
 - (void) showTextFade:(float)fadeTime;
 - (void) hideText;
 - (void) hideTextFade:(float)fadeTime;
+- (BOOL) textIsShowing;
 - (void) setUserInteractionEnabled:(BOOL)yn;
 - (char *) getText;
 - (const char*) getLabelText;
@@ -66,6 +67,7 @@ public:
 	~ofxiPhoneKeyboard();
 	
 	void setVisible(bool visible, float fadeTime = 0 );
+	bool getIsVisible();
 	
 	void setPosition(int _x, int _y);
 	void setSize(int _w, int _h);
